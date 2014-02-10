@@ -7,15 +7,13 @@
 //
 
 #import "DQAppDelegate.h"
+#import "DQViewController.h"
 
 @implementation DQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    NSLog(@"Window before: %@", self.window.rootViewController);
     return YES;
 }
 
