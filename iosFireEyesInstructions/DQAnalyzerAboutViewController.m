@@ -13,8 +13,6 @@
 @end
 
 @implementation DQAnalyzerAboutViewController {
-    IBOutlet UIButton *_MenuButton;
-    IBOutlet UIButton *_WorldSpaceButton;
     IBOutlet UILabel *_AboutLabel;
 }
 

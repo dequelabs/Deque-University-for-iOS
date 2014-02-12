@@ -14,8 +14,6 @@
 
 @implementation DQHowViewController {
     IBOutlet UILabel *_UseLabel;
-    IBOutlet UIButton *_MenuButton;
-    IBOutlet UIButton *_FixIssuesButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -8,7 +8,16 @@
 
 #import "DQLabelExampleViewController.h"
 
-@interface DQLabelExampleViewController ()
+@interface DQLabelExampleViewController () {
+    IBOutlet UILabel *_ExampleLabel;
+    IBOutlet UILabel *_DogLabel;
+    IBOutlet UILabel *_CatLabel;
+    IBOutlet UILabel *_FishLabel;
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UITextView *_TextView;
+}
 
 @end
 

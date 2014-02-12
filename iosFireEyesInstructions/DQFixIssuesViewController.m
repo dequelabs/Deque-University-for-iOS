@@ -14,7 +14,6 @@
 
 @implementation DQFixIssuesViewController {
     IBOutlet UILabel *_FixLabel;
-    IBOutlet UIButton *_BackButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

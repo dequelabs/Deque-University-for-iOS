@@ -12,7 +12,13 @@
 
 @end
 
-@implementation DQBrokenHintViewController
+@implementation DQBrokenHintViewController {
+    IBOutlet UILabel *_BrokenFixedLabel;
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UITextView *_TextView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

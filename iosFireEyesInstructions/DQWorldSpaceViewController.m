@@ -16,7 +16,6 @@
     IBOutlet UILabel *_TitleLabel;
     IBOutlet UILabel *_WhatIsLabel;
     IBOutlet UILabel *_LinkLabel;
-    IBOutlet UIButton *_BackButton;
     IBOutlet UITextView *_TextView;
     IBOutlet UIImageView *_ImageView;
 }

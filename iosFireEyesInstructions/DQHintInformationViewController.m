@@ -18,7 +18,6 @@
     IBOutlet UILabel *_WhatIsHintLabel;
     IBOutlet UITextView *_TextView1;
     IBOutlet UITextView *_TextView2;
-    IBOutlet UIButton *_BackButton;
     IBOutlet UIImageView *_ImageView;
 }
 

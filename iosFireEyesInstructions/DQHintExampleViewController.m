@@ -12,7 +12,16 @@
 
 @end
 
-@implementation DQHintExampleViewController
+@implementation DQHintExampleViewController {
+    IBOutlet UILabel *_ExampleLabel;
+    IBOutlet UILabel *_DogLabel;
+    IBOutlet UILabel *_CatLabel;
+    IBOutlet UILabel *_FishLabel;
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UITextView *_TextView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

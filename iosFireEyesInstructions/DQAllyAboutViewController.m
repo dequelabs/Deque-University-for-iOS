@@ -14,9 +14,9 @@
 
 @implementation DQAllyAboutViewController {
     IBOutlet UILabel *_AboutLabel;
-    IBOutlet UIButton *_MenuButton;
-    IBOutlet UIButton *_LabelsButton;
     IBOutlet UITextView *_TextView;
+    IBOutlet UIButton *_LabelsButton;
+    IBOutlet UIButton *_HintsButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

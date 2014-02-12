@@ -19,8 +19,6 @@
     IBOutlet UILabel *_ImportantLabel;
     IBOutlet UILabel *_TitleLabel;
     IBOutlet UIImageView *_ImageView;
-    IBOutlet UIButton *_BackButton;
-    IBOutlet UIButton *_HintButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

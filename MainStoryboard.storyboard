@@ -24,7 +24,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="AfZ-OT-xRb" kind="modal" id="gUf-Ix-g4E"/>
+                                    <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="gUf-Ix-g4E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-bJ-lYw">
@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oiS-P8-OUq" kind="modal" id="31H-10-YkE"/>
+                                    <segue destination="oiS-P8-OUq" kind="modal" modalTransitionStyle="flipHorizontal" id="31H-10-YkE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-uR-5ne">
@@ -46,7 +46,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="i5W-Un-UCa" kind="modal" id="2br-yw-scn"/>
+                                    <segue destination="i5W-Un-UCa" kind="modal" modalTransitionStyle="flipHorizontal" id="2br-yw-scn"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yvz-Sq-0Mb">
@@ -88,16 +88,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44H-f5-hgP">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="flipHorizontal" id="LZa-fW-TWt"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6My-1b-XZg">
                                 <rect key="frame" x="99" y="157" width="570" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,31 +97,60 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8z-ZU-ude">
-                                <rect key="frame" x="318" y="342" width="132" height="80"/>
+                                <rect key="frame" x="318" y="418" width="132" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Labels">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KbA-rX-bWB" kind="modal" id="UaF-96-uHu"/>
+                                    <segue destination="zmn-vo-tIs" kind="modal" modalTransitionStyle="crossDissolve" id="Zgh-Os-4pH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-8h-F5j">
-                                <rect key="frame" x="318" y="584" width="132" height="80"/>
+                                <rect key="frame" x="318" y="619" width="132" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Hints">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QmI-1b-Wlq" kind="modal" modalTransitionStyle="crossDissolve" id="twA-EV-WsD"/>
+                                </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SX-vc-Fhd">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="a4d-AT-3er">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="nba-Wj-6tl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="P2w-v4-9X3"/>
+                                    <barButtonItem title="Main Menu" id="XOj-NS-zuk">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="F1h-YP-bwn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="IYy-3u-VXs"/>
+                                    <barButtonItem enabled="NO" title="Beginning of Section" id="Jlk-sy-oa1"/>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="rt5-U0-cHw"/>
+                                    <barButtonItem title="Next >" id="sD1-9Q-nws">
+                                        <connections>
+                                            <segue destination="zmn-vo-tIs" kind="modal" modalTransitionStyle="crossDissolve" id="vMD-pt-kZa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="JbG-8y-SFo"/>
                     <connections>
                         <outlet property="_AboutLabel" destination="43W-8f-5E8" id="DmS-Wv-CQV"/>
-                        <outlet property="_MenuButton" destination="44H-f5-hgP" id="qcT-Lg-lvh"/>
+                        <outlet property="_HintsButton" destination="SSc-8h-F5j" id="NsE-YV-EvI"/>
+                        <outlet property="_LabelsButton" destination="J8z-ZU-ude" id="1he-Si-qvi"/>
                         <outlet property="_TextView" destination="6My-1b-XZg" id="Aie-T8-GTR"/>
                     </connections>
                 </viewController>
@@ -151,16 +170,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpe-S6-Vqe">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="flipHorizontal" id="VI0-ai-cSc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About the Analyzer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6Z-Jh-Atc">
                                 <rect key="frame" x="213" y="45" width="343" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,24 +177,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1H7-zc-PID">
-                                <rect key="frame" x="664" y="20" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="WorldSpace">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Skk-h2-Q2H" kind="modal" id="bNC-lP-a0L"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHl-pq-Vna">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="AIF-qr-bTg">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="PLZ-rM-T0C"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="y6z-1y-Nt1"/>
+                                    <barButtonItem title="Main Menu" id="D2h-VN-X18">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="eSx-OQ-2Xz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="yV2-gS-YlC"/>
+                                    <barButtonItem enabled="NO" title="Beginning of Section" id="zNu-v7-wRi"/>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="GDG-Zb-P9S"/>
+                                    <barButtonItem title="Next >" id="bKA-ir-S31">
+                                        <connections>
+                                            <segue destination="Skk-h2-Q2H" kind="modal" modalTransitionStyle="crossDissolve" id="njm-1o-1V8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8xa-i8-Abe"/>
                     <connections>
                         <outlet property="_AboutLabel" destination="M6Z-Jh-Atc" id="cud-4b-Lwc"/>
-                        <outlet property="_MenuButton" destination="Xpe-S6-Vqe" id="Irl-Ct-fwf"/>
-                        <outlet property="_WorldSpaceButton" destination="1H7-zc-PID" id="coD-47-VOt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNA-VE-qRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -211,33 +233,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgw-XT-pDV">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="flipHorizontal" id="0pq-pf-Yh3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfG-7z-omC">
-                                <rect key="frame" x="659" y="20" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fixing Issues">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Vlx-Pv-j5R" kind="modal" id="znv-gA-Uhd"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lve-WB-p5N">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="Ysc-aU-byC">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="jqb-N7-ZeF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="rnu-b0-IE1"/>
+                                    <barButtonItem title="Main Menu" id="tyO-se-e5j">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="voT-CH-5GX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="fOc-7G-1Kq"/>
+                                    <barButtonItem enabled="NO" title="Beginning of Section" id="dZl-ah-SJn"/>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="gEt-Bc-Maa"/>
+                                    <barButtonItem title="Next >" id="dGT-qD-ZDJ">
+                                        <connections>
+                                            <segue destination="Vlx-Pv-j5R" kind="modal" modalTransitionStyle="crossDissolve" id="xFZ-lb-aaB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="H7a-Uu-aN1"/>
                     <connections>
-                        <outlet property="_FixIssuesButton" destination="JfG-7z-omC" id="YM9-wd-ylr"/>
-                        <outlet property="_MenuButton" destination="Xgw-XT-pDV" id="8Jv-7H-JxQ"/>
                         <outlet property="_UseLabel" destination="kuo-0n-LDn" id="FF4-X0-bgr"/>
                     </connections>
                 </viewController>
@@ -245,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="734" y="1091"/>
         </scene>
-        <!--Labal Information View Controller - Label Information-->
+        <!--Labal Information View Controller - LabelInfo-->
         <scene sceneID="0E2-OQ-Fjz">
             <objects>
-                <viewController title="Label Information" id="zmn-vo-tIs" customClass="DQLabalInformationViewController" sceneMemberID="viewController">
+                <viewController title="LabelInfo" id="zmn-vo-tIs" customClass="DQLabalInformationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k0q-lt-Cxj"/>
                         <viewControllerLayoutGuide type="bottom" id="JvD-8u-Ub5"/>
@@ -264,20 +289,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahh-ua-EB8">
-                                <rect key="frame" x="20" y="20" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rr-89-d6p">
-                                <rect key="frame" x="712" y="20" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Hints">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-E7-NAd">
                                 <rect key="frame" x="99" y="185" width="570" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,14 +319,45 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-bW-iOe">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="jv5-Sy-09e">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="crossDissolve" id="4DW-Qz-fUW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="hAG-SA-hFg"/>
+                                    <barButtonItem title="Main Menu" id="GI3-G2-qV4">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="94C-pU-u8Z"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="7f8-TU-NH9"/>
+                                    <barButtonItem title="Beginning of Section" id="kLm-yP-HgT">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="FKP-y2-Amb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="hVi-ra-GdP"/>
+                                    <barButtonItem title="Next >" id="iCK-QW-evd">
+                                        <connections>
+                                            <segue destination="KbA-rX-bWB" kind="modal" modalTransitionStyle="crossDissolve" id="wca-Fg-bfg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-jf-scp">
+                                <rect key="frame" x="99" y="359" width="570" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3a1-Wu-adP"/>
                     <connections>
-                        <outlet property="TitleLabel" destination="l4b-Ap-Pz1" id="nO8-Ut-JMw"/>
-                        <outlet property="_BackButton" destination="Ahh-ua-EB8" id="rzH-g9-pba"/>
-                        <outlet property="_HintButton" destination="9rr-89-d6p" id="EBU-br-dYa"/>
+                        <outlet property="_ImageView" destination="FSQ-jf-scp" id="0cI-tw-HhS"/>
                         <outlet property="_ImportantLabel" destination="Pyv-nu-e7y" id="Qra-Th-lc4"/>
                         <outlet property="_TextView1" destination="jHo-E7-NAd" id="vhm-Q6-n5S"/>
                         <outlet property="_TextView2" destination="z44-7s-ePf" id="cNQ-66-bXG"/>
@@ -327,10 +369,10 @@
             </objects>
             <point key="canvasLocation" x="1643" y="-1225"/>
         </scene>
-        <!--Hint Information View Controller - WhatIsView-->
+        <!--Hint Information View Controller - HintInfo-->
         <scene sceneID="4gd-gg-0V3">
             <objects>
-                <viewController title="WhatIsView" id="QmI-1b-Wlq" customClass="DQHintInformationViewController" sceneMemberID="viewController">
+                <viewController title="HintInfo" id="QmI-1b-Wlq" customClass="DQHintInformationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J3S-Yb-9kX"/>
                         <viewControllerLayoutGuide type="bottom" id="0yg-wB-NWK"/>
@@ -346,13 +388,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKw-7t-uyw">
-                                <rect key="frame" x="20" y="20" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h1U-4I-xrI">
                                 <rect key="frame" x="99" y="376" width="570" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -361,7 +396,7 @@
                                 <rect key="frame" x="99" y="185" width="570" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -387,12 +422,40 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="flb-JD-DqG">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="aZ6-6V-Kzo">
+                                        <connections>
+                                            <segue destination="405-GS-Ora" kind="modal" modalTransitionStyle="crossDissolve" id="xMU-mh-vO6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="G04-Fu-pJh"/>
+                                    <barButtonItem title="Main Menu" id="So9-qB-iSv">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="Bbb-eM-5Lq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="nfY-Dp-g0z"/>
+                                    <barButtonItem title="Beginning of Section" id="Z3I-K8-npj">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="4CB-gA-an2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="m5F-Es-nkC"/>
+                                    <barButtonItem title="Next >" id="NpI-qz-YC7">
+                                        <connections>
+                                            <segue destination="yE8-s9-A4g" kind="modal" modalTransitionStyle="crossDissolve" id="3TP-1z-LJT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="HXa-zI-6f7"/>
                     <connections>
-                        <outlet property="_BackButton" destination="GKw-7t-uyw" id="GQM-lW-6M6"/>
                         <outlet property="_ImageView" destination="h1U-4I-xrI" id="Yt7-qk-LeJ"/>
                         <outlet property="_ImportantLabel" destination="qzB-Ax-RD5" id="rvB-9U-d2l"/>
                         <outlet property="_TextView1" destination="6IS-y9-QAS" id="l4R-XC-L6y"/>
@@ -405,10 +468,10 @@
             </objects>
             <point key="canvasLocation" x="2538" y="-1225"/>
         </scene>
-        <!--World Space View Controller - WhatIsView-->
+        <!--World Space View Controller - WorldSpace-->
         <scene sceneID="srY-Xk-eU7">
             <objects>
-                <viewController title="WhatIsView" id="Skk-h2-Q2H" customClass="DQWorldSpaceViewController" sceneMemberID="viewController">
+                <viewController title="WorldSpace" id="Skk-h2-Q2H" customClass="DQWorldSpaceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7S5-KF-3fs"/>
                         <viewControllerLayoutGuide type="bottom" id="BiV-uE-1Y9"/>
@@ -424,16 +487,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezz-ic-Gh2">
-                                <rect key="frame" x="20" y="20" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oiS-P8-OUq" kind="modal" modalTransitionStyle="crossDissolve" id="Zua-7i-4EZ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is WorldSpace?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-7O-PGw">
                                 <rect key="frame" x="101" y="144" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -458,12 +511,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xwk-66-uDs">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="VHx-mA-gi9">
+                                        <connections>
+                                            <segue destination="oiS-P8-OUq" kind="modal" modalTransitionStyle="crossDissolve" id="TsK-ST-MXN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="8rf-lK-bJg"/>
+                                    <barButtonItem title="Main Menu" id="c1Y-cD-VL7">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="8M7-k6-rNo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="cqp-kW-TG5"/>
+                                    <barButtonItem title="Beginning of Section" id="Qvu-9n-Zep">
+                                        <connections>
+                                            <segue destination="oiS-P8-OUq" kind="modal" modalTransitionStyle="flipHorizontal" id="ICU-Ai-RK0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="9RA-gi-ARd"/>
+                                    <barButtonItem enabled="NO" title="Next >" id="HE4-wK-u8R"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Gs-ak-osB"/>
                     <connections>
-                        <outlet property="_BackButton" destination="ezz-ic-Gh2" id="nRc-EG-gNs"/>
                         <outlet property="_ImageView" destination="1l9-y6-adt" id="pdg-zN-S3n"/>
                         <outlet property="_LinkLabel" destination="5Fo-gl-IcY" id="PRl-Mj-GhC"/>
                         <outlet property="_TextView" destination="O15-ku-byq" id="3U3-VY-QNG"/>
@@ -475,10 +552,10 @@
             </objects>
             <point key="canvasLocation" x="1643" y="-69"/>
         </scene>
-        <!--Fix Issues View Controller - WhatIsView-->
+        <!--Fix Issues View Controller - FixIssues-->
         <scene sceneID="Mwb-GA-RxT">
             <objects>
-                <viewController title="WhatIsView" id="Vlx-Pv-j5R" customClass="DQFixIssuesViewController" sceneMemberID="viewController">
+                <viewController title="FixIssues" id="Vlx-Pv-j5R" customClass="DQFixIssuesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DX5-OH-UXN"/>
                         <viewControllerLayoutGuide type="bottom" id="UAI-K1-otc"/>
@@ -494,22 +571,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1p-0p-MLA">
-                                <rect key="frame" x="20" y="20" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="i5W-Un-UCa" kind="modal" modalTransitionStyle="crossDissolve" id="OZ0-DJ-Saa"/>
-                                </connections>
-                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ulb-hw-fl9">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="b4Z-iW-bYn">
+                                        <connections>
+                                            <segue destination="i5W-Un-UCa" kind="modal" modalTransitionStyle="crossDissolve" id="zJ0-fc-nbA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="HUV-oJ-jMm"/>
+                                    <barButtonItem title="Main Menu" id="Uo5-KM-RFD">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="6tr-eV-uk2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="Ycy-CT-Hr1"/>
+                                    <barButtonItem title="Beginning of Section" id="s5F-0h-MWn">
+                                        <connections>
+                                            <segue destination="i5W-Un-UCa" kind="modal" modalTransitionStyle="flipHorizontal" id="6H5-9z-Q6I"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="KcU-tX-s91"/>
+                                    <barButtonItem enabled="NO" title="Next >" id="X8q-7e-d6e"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6QQ-dR-9Z8"/>
                     <connections>
-                        <outlet property="_BackButton" destination="P1p-0p-MLA" id="TbE-Ok-Skd"/>
                         <outlet property="_FixLabel" destination="Rr6-LV-uBX" id="saI-yv-arz"/>
                     </connections>
                 </viewController>
@@ -517,10 +608,10 @@
             </objects>
             <point key="canvasLocation" x="1643" y="1091"/>
         </scene>
-        <!--Labal Information View Controller - Label Information-->
+        <!--Label Example View Controller - LabelExample-->
         <scene sceneID="Xl2-Gt-uLh">
             <objects>
-                <viewController title="Label Information" id="KbA-rX-bWB" customClass="DQLabalInformationViewController" sceneMemberID="viewController">
+                <viewController title="LabelExample" id="KbA-rX-bWB" customClass="DQLabelExampleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SGx-lk-sNj"/>
                         <viewControllerLayoutGuide type="bottom" id="mwb-5e-3fu"/>
@@ -529,27 +620,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-rl-bjS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labels Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-rl-bjS">
                                 <rect key="frame" x="233" y="49" width="303" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWm-Jr-ZoI">
-                                <rect key="frame" x="20" y="20" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVB-id-q9j">
-                                <rect key="frame" x="712" y="20" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIsplay a picture of a dog:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR5-M8-eEE">
                                 <rect key="frame" x="148" y="386" width="243" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -603,20 +680,565 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gG8-y8-3Dn">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="Hr4-aU-iAN">
+                                        <connections>
+                                            <segue destination="zmn-vo-tIs" kind="modal" modalTransitionStyle="crossDissolve" id="uIc-ef-HfQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="e1A-mL-agj"/>
+                                    <barButtonItem title="Main Menu" id="m3S-41-wEe">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="6I1-qD-S4F"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="fFv-Xm-Xp5"/>
+                                    <barButtonItem title="Beginning of Section" id="WFz-1b-W5p">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="qOz-Dm-DDS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="yFC-pN-99U"/>
+                                    <barButtonItem title="Next >" id="c9w-vL-Cla">
+                                        <connections>
+                                            <segue destination="9Fe-aq-AH3" kind="modal" modalTransitionStyle="crossDissolve" id="50W-Gg-BZs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2jt-U9-mzQ"/>
                     <connections>
-                        <outlet property="TitleLabel" destination="h0J-rl-bjS" id="a6e-Oe-gv7"/>
-                        <outlet property="_BackButton" destination="wWm-Jr-ZoI" id="wav-6R-kas"/>
-                        <outlet property="_HintButton" destination="DVB-id-q9j" id="ian-oa-FMH"/>
-                        <outlet property="_TitleLabel" destination="h0J-rl-bjS" id="lLK-I3-e8n"/>
+                        <outlet property="_CatDisplay" destination="yoH-tj-pAB" id="ncn-G2-qTA"/>
+                        <outlet property="_CatLabel" destination="NSk-CT-MDe" id="RuK-yN-XiG"/>
+                        <outlet property="_DogDisplay" destination="6mV-Og-0Eg" id="cya-Vz-7xA"/>
+                        <outlet property="_DogLabel" destination="SR5-M8-eEE" id="Y0I-Hv-P3t"/>
+                        <outlet property="_ExampleLabel" destination="h0J-rl-bjS" id="hjc-Y1-Odo"/>
+                        <outlet property="_FishDisplay" destination="wgU-sd-4fE" id="jFF-4N-jZN"/>
+                        <outlet property="_FishLabel" destination="Qhx-Ww-cCg" id="PJF-fD-Yj0"/>
+                        <outlet property="_TextView" destination="lRG-T6-YIN" id="toV-I3-kEb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-9l-o8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1643" y="-2372"/>
+        </scene>
+        <!--Broken Label View Controller - LabelBroken-->
+        <scene sceneID="m3W-Yn-ULQ">
+            <objects>
+                <viewController title="LabelBroken" id="9Fe-aq-AH3" customClass="DQBrokenLabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gjg-4K-l3X"/>
+                        <viewControllerLayoutGuide type="bottom" id="wKB-Mh-C56"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QMg-yv-4l5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labels Broken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynP-bM-CP4">
+                                <rect key="frame" x="233" y="49" width="303" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxu-x0-35I">
+                                <rect key="frame" x="341" y="386" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYj-oU-OGe">
+                                <rect key="frame" x="341" y="586" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kp8-AX-BDD">
+                                <rect key="frame" x="341" y="486" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBe-NV-O09">
+                                <rect key="frame" x="69" y="162" width="630" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-5h-5br">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="ldT-HJ-GOm">
+                                        <connections>
+                                            <segue destination="KbA-rX-bWB" kind="modal" modalTransitionStyle="crossDissolve" id="edH-UC-6Uv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="bV7-wK-VYd"/>
+                                    <barButtonItem title="Main Menu" id="3Yt-5f-zyb">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="FxD-2Z-qph"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="1yn-kJ-Fp2"/>
+                                    <barButtonItem title="Beginning of Section" id="BWF-3d-zyF">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="afH-cL-LEZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="T1l-7s-Wbu"/>
+                                    <barButtonItem title="Next >" id="iLM-k1-gFz">
+                                        <connections>
+                                            <segue destination="405-GS-Ora" kind="modal" modalTransitionStyle="crossDissolve" id="jAl-dR-OpY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sE5-Gp-kaU"/>
+                    <connections>
+                        <outlet property="_BrokenFixedLabel" destination="ynP-bM-CP4" id="63h-q3-sM7"/>
+                        <outlet property="_CatDisplay" destination="Kp8-AX-BDD" id="XPl-KA-Ncl"/>
+                        <outlet property="_DogDisplay" destination="yxu-x0-35I" id="LIJ-EE-Vef"/>
+                        <outlet property="_FishDisplay" destination="dYj-oU-OGe" id="ydK-Aq-UxO"/>
+                        <outlet property="_TextView" destination="KBe-NV-O09" id="tQF-GX-lMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktb-Ox-GXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="-3520"/>
+        </scene>
+        <!--Fixed Label View Controller - LabelFixed-->
+        <scene sceneID="0D4-HA-bGz">
+            <objects>
+                <viewController title="LabelFixed" id="405-GS-Ora" customClass="DQFixedLabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pxi-pH-MWo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vox-K4-ji3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m4K-yQ-Hkv">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labels Fixed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw0-F6-dR9">
+                                <rect key="frame" x="233" y="49" width="303" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2x-dL-M85">
+                                <rect key="frame" x="341" y="386" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-eL-NH9">
+                                <rect key="frame" x="341" y="586" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Fish"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XA-AO-BMA">
+                                <rect key="frame" x="341" y="486" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Cat"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idH-Ha-rnj">
+                                <rect key="frame" x="69" y="162" width="630" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M0y-QT-O6a">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="YCv-g1-h4T">
+                                        <connections>
+                                            <segue destination="9Fe-aq-AH3" kind="modal" modalTransitionStyle="crossDissolve" id="z6N-cc-GpK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="ETI-lw-7cG"/>
+                                    <barButtonItem title="Main Menu" id="231-RT-eNG">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="R8K-Qz-IVz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="xxw-Xz-K6X"/>
+                                    <barButtonItem title="Beginning of Section" id="VfF-xs-ghr">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="bf0-2u-Q9e"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="uFF-Yc-dMF"/>
+                                    <barButtonItem title="Next >" id="tEk-oO-SNE">
+                                        <connections>
+                                            <segue destination="QmI-1b-Wlq" kind="modal" modalTransitionStyle="crossDissolve" id="MXs-d8-MkT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1m-I7-2jB"/>
+                    <connections>
+                        <outlet property="_BrokenFixedLabel" destination="bw0-F6-dR9" id="bcu-iV-6ON"/>
+                        <outlet property="_CatDisplay" destination="Ac8-eL-NH9" id="K39-2N-Jdr"/>
+                        <outlet property="_DogDisplay" destination="I2x-dL-M85" id="cyZ-pa-EXb"/>
+                        <outlet property="_FishDisplay" destination="0XA-AO-BMA" id="s1H-dV-ZBc"/>
+                        <outlet property="_TextView" destination="idH-Ha-rnj" id="Jjw-Nc-Ubl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQI-vt-R2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="-4664"/>
+        </scene>
+        <!--Hint Example View Controller - HintExample-->
+        <scene sceneID="Q9V-Je-geC">
+            <objects>
+                <viewController title="HintExample" id="yE8-s9-A4g" customClass="DQHintExampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4R-NK-7PB"/>
+                        <viewControllerLayoutGuide type="bottom" id="7uV-dD-NKP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ITD-Lu-irC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hints Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIm-uM-kfM">
+                                <rect key="frame" x="233" y="49" width="303" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIsplay a picture of a dog:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWA-Ye-3hK">
+                                <rect key="frame" x="148" y="386" width="243" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display a picture of a fish:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynK-Hu-Hhd">
+                                <rect key="frame" x="148" y="586" width="243" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display a picture of a cat:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGj-5T-UMP">
+                                <rect key="frame" x="148" y="486" width="243" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd7-xp-HEl">
+                                <rect key="frame" x="497" y="386" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6s-xO-6Dn">
+                                <rect key="frame" x="497" y="586" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Fish"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW4-to-HGQ">
+                                <rect key="frame" x="497" y="486" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Cat"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRh-dF-dd3">
+                                <rect key="frame" x="69" y="162" width="630" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4CS-Aq-FAm">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="1qH-b6-qFN">
+                                        <connections>
+                                            <segue destination="QmI-1b-Wlq" kind="modal" modalTransitionStyle="crossDissolve" id="U2M-0Q-6Gt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="SzH-yI-Xev"/>
+                                    <barButtonItem title="Main Menu" id="qpG-gz-h7q">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="6cj-cp-lLn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="DiB-m5-Fg1"/>
+                                    <barButtonItem title="Beginning of Section" id="ILM-PY-RId">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="7wt-EF-edG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="Ehq-rJ-ddh"/>
+                                    <barButtonItem title="Next >" id="eXo-gs-jb8">
+                                        <connections>
+                                            <segue destination="8Ef-iT-OwW" kind="modal" modalTransitionStyle="crossDissolve" id="WHt-ae-wfg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LXg-AB-SM9"/>
+                    <connections>
+                        <outlet property="_CatDisplay" destination="NW4-to-HGQ" id="NuV-tR-dw0"/>
+                        <outlet property="_CatLabel" destination="gGj-5T-UMP" id="uL4-QA-NNY"/>
+                        <outlet property="_DogDisplay" destination="fd7-xp-HEl" id="CuV-WS-cag"/>
+                        <outlet property="_DogLabel" destination="kWA-Ye-3hK" id="F1W-eW-2b1"/>
+                        <outlet property="_ExampleLabel" destination="sIm-uM-kfM" id="qBB-R2-C7x"/>
+                        <outlet property="_FishDisplay" destination="V6s-xO-6Dn" id="Jlt-Qq-r3U"/>
+                        <outlet property="_FishLabel" destination="ynK-Hu-Hhd" id="3aW-u5-7ts"/>
+                        <outlet property="_TextView" destination="MRh-dF-dd3" id="zBA-kx-UnI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iz8-3F-jSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-2372"/>
+        </scene>
+        <!--Broken Hint View Controller - HintBroken-->
+        <scene sceneID="T99-o4-Jsv">
+            <objects>
+                <viewController title="HintBroken" id="8Ef-iT-OwW" customClass="DQBrokenHintViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yvp-QP-F6h"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwv-MD-g1x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PQv-SJ-GTR">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hints Broken" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2g-dv-CG4">
+                                <rect key="frame" x="233" y="49" width="303" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJm-z9-GZw">
+                                <rect key="frame" x="341" y="386" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPV-vS-aQw">
+                                <rect key="frame" x="341" y="586" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Fish"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceF-Xw-ucy">
+                                <rect key="frame" x="341" y="486" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="Cat"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9W-Y8-4o6">
+                                <rect key="frame" x="69" y="162" width="630" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Np-bg-I4E">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="2sy-aZ-FsU">
+                                        <connections>
+                                            <segue destination="yE8-s9-A4g" kind="modal" modalTransitionStyle="crossDissolve" id="HWr-hf-Ie8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="az3-x8-Qwc"/>
+                                    <barButtonItem title="Main Menu" id="zQb-zu-gzG">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="ZfE-Kz-9Kl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="j8e-LL-VAy"/>
+                                    <barButtonItem title="Beginning of Section" id="KTC-AY-kgV">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="N0p-cG-ybJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="o9W-KU-qd8"/>
+                                    <barButtonItem title="Next >" id="oCX-G8-oqY">
+                                        <connections>
+                                            <segue destination="e03-Mk-VIX" kind="modal" modalTransitionStyle="crossDissolve" id="yc1-cB-60Q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jqr-tg-aX0"/>
+                    <connections>
+                        <outlet property="_BrokenFixedLabel" destination="o2g-dv-CG4" id="9gv-7U-Lkf"/>
+                        <outlet property="_CatDisplay" destination="ceF-Xw-ucy" id="jYk-Lj-ROe"/>
+                        <outlet property="_DogDisplay" destination="WJm-z9-GZw" id="A0s-yG-yeE"/>
+                        <outlet property="_FishDisplay" destination="kPV-vS-aQw" id="yE4-W5-LUn"/>
+                        <outlet property="_TextView" destination="z9W-Y8-4o6" id="tkX-Es-7mK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hS9-ie-znY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-3520"/>
+        </scene>
+        <!--Fixed Hint View Controller - HintFixed-->
+        <scene sceneID="k9V-er-BWd">
+            <objects>
+                <viewController title="HintFixed" id="e03-Mk-VIX" customClass="DQFixedHintViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fI7-o5-Va7"/>
+                        <viewControllerLayoutGuide type="bottom" id="PBs-QE-BLD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZK1-b6-bMq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hints Fixed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxk-mH-bNh">
+                                <rect key="frame" x="233" y="49" width="303" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNr-eA-wg3">
+                                <rect key="frame" x="341" y="386" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Show a picture of a dog" label="Dog"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMj-hn-vUN">
+                                <rect key="frame" x="341" y="586" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Show a picture of a fish" label="Fish"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaZ-jE-BpG">
+                                <rect key="frame" x="341" y="486" width="86" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Show a picture of a cat" label="Cat"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Display">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-Jg-RHQ">
+                                <rect key="frame" x="69" y="162" width="630" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LVk-Qz-gTY">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="&lt; Previous" id="KdQ-Ys-RxR">
+                                        <connections>
+                                            <segue destination="8Ef-iT-OwW" kind="modal" modalTransitionStyle="crossDissolve" id="u58-Kd-TTR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="aA5-ZZ-WIb"/>
+                                    <barButtonItem title="Main Menu" id="Ig5-6Q-0Ny">
+                                        <connections>
+                                            <segue destination="7Rq-8t-xZT" kind="modal" modalTransitionStyle="crossDissolve" id="1QW-ao-yg5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="R6w-Wp-8dB"/>
+                                    <barButtonItem title="Beginning of Section" id="XYD-A1-EJH">
+                                        <connections>
+                                            <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="nqR-I3-7Lb"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="Tn5-78-F7k"/>
+                                    <barButtonItem enabled="NO" title="Next >" id="kQA-zI-W20"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Acs-Uk-Dyx"/>
+                    <connections>
+                        <outlet property="_BrokenFixedLabel" destination="Cxk-mH-bNh" id="SuC-EN-zWW"/>
+                        <outlet property="_CatDisplay" destination="xaZ-jE-BpG" id="HPC-wn-d0q"/>
+                        <outlet property="_DogDisplay" destination="uNr-eA-wg3" id="9tw-i1-Hc9"/>
+                        <outlet property="_FishDisplay" destination="mMj-hn-vUN" id="agd-01-FRD"/>
+                        <outlet property="_TextView" destination="cIT-Jg-RHQ" id="0On-6h-fi4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9QZ-Y5-SAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-4664"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -625,8 +1247,16 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Zua-7i-4EZ"/>
-        <segue reference="OZ0-DJ-Saa"/>
-        <segue reference="LZa-fW-TWt"/>
+        <segue reference="vMD-pt-kZa"/>
+        <segue reference="4CB-gA-an2"/>
+        <segue reference="twA-EV-WsD"/>
+        <segue reference="3TP-1z-LJT"/>
+        <segue reference="Bbb-eM-5Lq"/>
+        <segue reference="xMU-mh-vO6"/>
+        <segue reference="WHt-ae-wfg"/>
+        <segue reference="ICU-Ai-RK0"/>
+        <segue reference="50W-Gg-BZs"/>
+        <segue reference="edH-UC-6Uv"/>
+        <segue reference="6H5-9z-Q6I"/>
     </inferredMetricsTieBreakers>
 </document>
