@@ -34,6 +34,7 @@
 		A9D013F218A2DD6A00DC6496 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D013F118A2DD6A00DC6496 /* MainStoryboard.storyboard */; };
 		A9D013F418A2DE0D00DC6496 /* d7Rt2Rv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9D013F318A2DE0D00DC6496 /* d7Rt2Rv.jpg */; };
 		A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013F618A2DEFC00DC6496 /* DQViewController.m */; };
+		A9E6A49018B19EFC0095541D /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */; };
 		A9E961A918A95C9600D6E57D /* DQHowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E961A818A95C9600D6E57D /* DQHowViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		A9D013F318A2DE0D00DC6496 /* d7Rt2Rv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = d7Rt2Rv.jpg; path = ../../d7Rt2Rv.jpg; sourceTree = "<group>"; };
 		A9D013F518A2DEFC00DC6496 /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQViewController.h; sourceTree = "<group>"; };
 		A9D013F618A2DEFC00DC6496 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
+		A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		A9E961A718A95C9600D6E57D /* DQHowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQHowViewController.h; sourceTree = "<group>"; };
 		A9E961A818A95C9600D6E57D /* DQHowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQHowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 		A9D013B618A2DD4700DC6496 = {
 			isa = PBXGroup;
 			children = (
+				A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */,
 				A9D013F118A2DD6A00DC6496 /* MainStoryboard.storyboard */,
 				A9D013C818A2DD4700DC6496 /* iosFireEyesInstructions */,
 				A9D013E118A2DD4700DC6496 /* iosFireEyesInstructionsTests */,
@@ -298,6 +301,7 @@
 			files = (
 				A9D013F218A2DD6A00DC6496 /* MainStoryboard.storyboard in Resources */,
 				A9D013F418A2DE0D00DC6496 /* d7Rt2Rv.jpg in Resources */,
+				A9E6A49018B19EFC0095541D /* iPhoneStoryboard.storyboard in Resources */,
 				A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
 			);
@@ -454,10 +458,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/iosFireEyesInstructions-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/iosFireEyesInstructions-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -467,10 +474,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/iosFireEyesInstructions-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/iosFireEyesInstructions-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
