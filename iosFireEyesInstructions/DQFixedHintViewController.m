@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [_TextView setText:@"The song that will be played is marked in the label.  This allows users who are familiar with our application instant access to the information they need, while allowing inexperienced users to wait for additional context.  This removes any doubt about what these buttons do."];
 }
 
 - (void)didReceiveMemoryWarning
