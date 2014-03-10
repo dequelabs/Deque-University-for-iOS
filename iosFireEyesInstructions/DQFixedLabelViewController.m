@@ -32,7 +32,45 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [_TextView setText:@"Here we have added the relevant accessibility information.  Now, with voiceover turned on, you can easily tell which picture is going to be displayed."];
+    
+    [_CatDisplay setAccessibilityLabel:@"Cat"];
+    [_DogDisplay setAccessibilityLabel:@"Dog"];
+    [_FishDisplay setAccessibilityLabel:@"Fish"];
+    
+    [_CatDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+    [_DogDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+    [_FishDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+}
+
+- (void)displayAlert:(id)sender {
+    UIButton* button = (UIButton*)sender;
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:[button accessibilityLabel]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)displayDog:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:@"A dog"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)displayFish:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:@"A fish"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning

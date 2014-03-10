@@ -32,7 +32,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    [_TextView setText:@"This is the way a blind person percieves this particular view.  Notice the ambiguity of the diplay buttons.  What pictures do they display?"];
+    
+    [_CatDisplay addTarget:self action:@selector(displayCat:) forControlEvents:UIControlEventTouchDown];
+    [_DogDisplay addTarget:self action:@selector(displayDog:) forControlEvents:UIControlEventTouchDown];
+    [_FishDisplay addTarget:self action:@selector(displayFish:) forControlEvents:UIControlEventTouchDown];
+}
+
+- (void)displayCat:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:@"Cat"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)displayDog:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:@"Dog"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)displayFish:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:@"Fish"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning
