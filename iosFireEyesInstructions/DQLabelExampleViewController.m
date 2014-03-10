@@ -35,7 +35,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	[_TextView setText:@"Below is an example where the context of the buttons is obvious.  Clearly each button is going to display a picture.  The labels for each button are the pictures that are to be displayed."];
+    
+    [_CatDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+    [_DogDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+    [_FishDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+    
+    [_CatDisplay setAccessibilityLabel:@"Cat"];
+    [_DogDisplay setAccessibilityLabel:@"Dog"];
+    [_FishDisplay setAccessibilityLabel:@"Fish"];
+}
+
+- (void)displayAlert:(id)sender {
+    
+    UIButton* button = (UIButton*)sender;
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
+                                                    message:[button accessibilityLabel]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning
