@@ -18,6 +18,9 @@
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
     IBOutlet UITextView *_TextView;
+    IBOutlet UILabel *_SSB;
+    IBOutlet UILabel *_AG;
+    IBOutlet UILabel *_SITR;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,6 +43,12 @@
     [_CatDisplay setAccessibilityLabel:@"Amazing Grace"];
     
     [_FishDisplay setAccessibilityLabel:@"Singing in the Rain"];
+    
+    [_SSB setIsAccessibilityElement:false];
+    
+    [_AG setIsAccessibilityElement:false];
+    
+    [_SITR setIsAccessibilityElement:false];
     
 }
 

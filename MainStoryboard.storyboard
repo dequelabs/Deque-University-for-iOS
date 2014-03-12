@@ -334,7 +334,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-E7-NAd">
-                                <rect key="frame" x="99" y="185" width="570" height="228"/>
+                                <rect key="frame" x="99" y="185" width="570" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -392,24 +392,29 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-jf-scp">
-                                <rect key="frame" x="99" y="448" width="570" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labelspic.png" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-jf-scp">
+                                <rect key="frame" x="99" y="412" width="570" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="570" id="YuP-1z-nba"/>
+                                    <constraint firstAttribute="height" constant="200" id="kgM-ck-UOO"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pyv-nu-e7y" firstAttribute="top" secondItem="FSQ-jf-scp" secondAttribute="bottom" constant="50" id="6Bk-rp-tT2"/>
+                            <constraint firstItem="Pyv-nu-e7y" firstAttribute="top" secondItem="FSQ-jf-scp" secondAttribute="bottom" constant="30" id="6Bk-rp-tT2"/>
                             <constraint firstItem="jHo-E7-NAd" firstAttribute="top" secondItem="Xzn-UA-gsT" secondAttribute="bottom" constant="5" id="A69-nZ-cAr"/>
                             <constraint firstItem="z44-7s-ePf" firstAttribute="leading" secondItem="Pyv-nu-e7y" secondAttribute="leading" id="FVr-mR-UB1"/>
                             <constraint firstAttribute="centerX" secondItem="FSQ-jf-scp" secondAttribute="centerX" id="GnR-Sd-tnd"/>
                             <constraint firstAttribute="centerX" secondItem="l4b-Ap-Pz1" secondAttribute="centerX" id="Rei-rn-nYc"/>
                             <constraint firstItem="Xzn-UA-gsT" firstAttribute="top" secondItem="l4b-Ap-Pz1" secondAttribute="bottom" constant="40" id="Xqd-Lc-WDp"/>
                             <constraint firstAttribute="centerX" secondItem="qJl-bW-iOe" secondAttribute="centerX" id="nij-g0-laB"/>
+                            <constraint firstAttribute="centerY" secondItem="FSQ-jf-scp" secondAttribute="centerY" id="oWh-Jn-wRy"/>
                             <constraint firstItem="l4b-Ap-Pz1" firstAttribute="top" secondItem="k0q-lt-Cxj" secondAttribute="bottom" constant="30" id="pxY-3c-Wqw"/>
                             <constraint firstItem="z44-7s-ePf" firstAttribute="top" secondItem="Pyv-nu-e7y" secondAttribute="bottom" constant="5" id="qzg-8M-vQd"/>
                             <constraint firstItem="Xzn-UA-gsT" firstAttribute="leading" secondItem="jHo-E7-NAd" secondAttribute="leading" id="xkc-lj-tq5"/>
-                            <constraint firstItem="FSQ-jf-scp" firstAttribute="top" secondItem="jHo-E7-NAd" secondAttribute="bottom" constant="50" id="y4L-1k-hqs"/>
+                            <constraint firstItem="FSQ-jf-scp" firstAttribute="top" secondItem="jHo-E7-NAd" secondAttribute="bottom" constant="30" id="y4L-1k-hqs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3a1-Wu-adP"/>
@@ -1394,10 +1399,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Jqr-tg-aX0"/>
                     <connections>
+                        <outlet property="_AG" destination="ILI-fE-WmC" id="kZX-aS-Rbl"/>
                         <outlet property="_BrokenFixedLabel" destination="o2g-dv-CG4" id="9gv-7U-Lkf"/>
                         <outlet property="_CatDisplay" destination="ceF-Xw-ucy" id="jYk-Lj-ROe"/>
                         <outlet property="_DogDisplay" destination="WJm-z9-GZw" id="A0s-yG-yeE"/>
                         <outlet property="_FishDisplay" destination="kPV-vS-aQw" id="yE4-W5-LUn"/>
+                        <outlet property="_SITR" destination="T21-md-k6S" id="opa-OK-qqn"/>
+                        <outlet property="_SSB" destination="Tma-e7-T5V" id="e5r-wQ-LGW"/>
                         <outlet property="_TextView" destination="z9W-Y8-4o6" id="tkX-Es-7mK"/>
                     </connections>
                 </viewController>
@@ -1546,10 +1554,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="Acs-Uk-Dyx"/>
                     <connections>
+                        <outlet property="_AG" destination="K0y-IM-6XI" id="V2F-VY-C6k"/>
                         <outlet property="_BrokenFixedLabel" destination="Cxk-mH-bNh" id="SuC-EN-zWW"/>
                         <outlet property="_CatDisplay" destination="2XD-Dp-ivk" id="Y3n-rs-mZj"/>
                         <outlet property="_DogDisplay" destination="2Pe-I1-rHc" id="aUr-J8-F2s"/>
                         <outlet property="_FishDisplay" destination="Acj-CU-F8l" id="vWP-Bu-XD9"/>
+                        <outlet property="_SITR" destination="mz3-uF-e74" id="Hir-bp-01E"/>
+                        <outlet property="_SSB" destination="uGm-YS-A7h" id="KDk-Wc-Mwo"/>
                         <outlet property="_TextView" destination="cIT-Jg-RHQ" id="0On-6h-fi4"/>
                     </connections>
                 </viewController>
@@ -1560,6 +1571,7 @@
     </scenes>
     <resources>
         <image name="button.jpeg" width="225" height="225"/>
+        <image name="labelspic.png" width="340" height="131"/>
         <image name="play.jpeg" width="251" height="201"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1572,11 +1584,11 @@
         <segue reference="U2M-0Q-6Gt"/>
         <segue reference="HWr-hf-Ie8"/>
         <segue reference="u58-Kd-TTR"/>
-        <segue reference="ZfE-Kz-9Kl"/>
-        <segue reference="N0p-cG-ybJ"/>
         <segue reference="z6N-cc-GpK"/>
         <segue reference="uIc-ef-HfQ"/>
         <segue reference="wca-Fg-bfg"/>
+        <segue reference="94C-pU-u8Z"/>
+        <segue reference="FKP-y2-Amb"/>
         <segue reference="zJ0-fc-nbA"/>
         <segue reference="TsK-ST-MXN"/>
     </inferredMetricsTieBreakers>
