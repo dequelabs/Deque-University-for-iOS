@@ -10,6 +10,7 @@
 		0F0DCB6118BE5D08001A325F /* play.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F0DCB6018BE5D08001A325F /* play.jpeg */; };
 		0F0DCB6318BE6CDC001A325F /* button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F0DCB6218BE6CDC001A325F /* button.jpeg */; };
 		A91B176818D0EF9B00C65FA3 /* labelspic.png in Resources */ = {isa = PBXBuildFile; fileRef = A91B176718D0EF9B00C65FA3 /* labelspic.png */; };
+		A91B176C18D0F67C00C65FA3 /* hintspic.png in Resources */ = {isa = PBXBuildFile; fileRef = A91B176B18D0F67C00C65FA3 /* hintspic.png */; };
 		A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
 		A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */; };
@@ -54,6 +55,7 @@
 		0F0DCB6018BE5D08001A325F /* play.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = play.jpeg; sourceTree = "<group>"; };
 		0F0DCB6218BE6CDC001A325F /* button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button.jpeg; sourceTree = "<group>"; };
 		A91B176718D0EF9B00C65FA3 /* labelspic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = labelspic.png; path = ../labelspic.png; sourceTree = "<group>"; };
+		A91B176B18D0F67C00C65FA3 /* hintspic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hintspic.png; path = ../hintspic.png; sourceTree = "<group>"; };
 		A945B83D18A95D5C006896D8 /* DQFixIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQFixIssuesViewController.h; sourceTree = "<group>"; };
 		A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQFixIssuesViewController.m; sourceTree = "<group>"; };
 		A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAllyAboutViewController.h; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		A9D013B618A2DD4700DC6496 = {
 			isa = PBXGroup;
 			children = (
+				A91B176B18D0F67C00C65FA3 /* hintspic.png */,
 				A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */,
 				A9D013F118A2DD6A00DC6496 /* MainStoryboard.storyboard */,
 				A91B176718D0EF9B00C65FA3 /* labelspic.png */,
@@ -313,6 +316,7 @@
 				0F0DCB6118BE5D08001A325F /* play.jpeg in Resources */,
 				A9E6A49018B19EFC0095541D /* iPhoneStoryboard.storyboard in Resources */,
 				A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */,
+				A91B176C18D0F67C00C65FA3 /* hintspic.png in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
 				0F0DCB6318BE6CDC001A325F /* button.jpeg in Resources */,
 			);
@@ -476,7 +480,7 @@
 				INFOPLIST_FILE = "iosFireEyesInstructions/iosFireEyesInstructions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E1089774-0BF9-4210-B3A1-A8442C8BD455";
+				PROVISIONING_PROFILE = "B7D36361-BC64-40C3-85D2-D3145D5002F3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -494,7 +498,7 @@
 				INFOPLIST_FILE = "iosFireEyesInstructions/iosFireEyesInstructions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E1089774-0BF9-4210-B3A1-A8442C8BD455";
+				PROVISIONING_PROFILE = "B7D36361-BC64-40C3-85D2-D3145D5002F3";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

@@ -56,6 +56,7 @@
     [_DogLabel setIsAccessibilityElement:NO];
     [_CatLabel setIsAccessibilityElement:NO];
     [_FishLabel setIsAccessibilityElement:NO];
+    [_TextView setEditable:NO];
     
     
 }

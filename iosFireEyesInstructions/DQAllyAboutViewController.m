@@ -31,7 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    [_TextView setEditable:NO];
 }
 
 - (void)didReceiveMemoryWarning

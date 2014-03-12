@@ -38,6 +38,8 @@
     [_CatDisplay addTarget:self action:@selector(displayCat:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayDog:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(displayFish:) forControlEvents:UIControlEventTouchDown];
+    
+    [_TextView setEditable:NO];
 }
 
 - (void)displayCat:(id)sender {

@@ -50,6 +50,8 @@
     
     [_SITR setIsAccessibilityElement:false];
     
+    [_TextView setEditable:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -451,7 +451,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IS-y9-QAS">
-                                <rect key="frame" x="99" y="185" width="570" height="227"/>
+                                <rect key="frame" x="99" y="185" width="570" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -509,21 +509,29 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-C9-cyb">
-                                <rect key="frame" x="99" y="448" width="570" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hintspic.png" translatesAutoresizingMaskIntoConstraints="NO" id="Utu-C9-cyb">
+                                <rect key="frame" x="99" y="402" width="570" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="BB5-60-f1t"/>
+                                    <constraint firstAttribute="width" constant="570" id="CxS-bW-wrm"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Utu-C9-cyb" firstAttribute="top" secondItem="6IS-y9-QAS" secondAttribute="bottom" constant="30" id="0Em-Q2-0ZP"/>
                             <constraint firstAttribute="centerX" secondItem="flb-JD-DqG" secondAttribute="centerX" id="8bS-yT-tzW"/>
+                            <constraint firstAttribute="centerX" secondItem="Utu-C9-cyb" secondAttribute="centerX" id="FDt-g1-UK8"/>
                             <constraint firstItem="OLr-ZB-mqj" firstAttribute="top" secondItem="mha-5N-q4o" secondAttribute="bottom" constant="40" id="Kzh-UA-QP7"/>
                             <constraint firstItem="6IS-y9-QAS" firstAttribute="top" secondItem="OLr-ZB-mqj" secondAttribute="bottom" constant="5" id="Rz2-6Z-Taq"/>
                             <constraint firstItem="aY3-2E-KHK" firstAttribute="leading" secondItem="qzB-Ax-RD5" secondAttribute="leading" id="WoZ-1n-S2u"/>
+                            <constraint firstAttribute="centerY" secondItem="Utu-C9-cyb" secondAttribute="centerY" id="YNC-vW-K0r"/>
                             <constraint firstAttribute="centerX" secondItem="mha-5N-q4o" secondAttribute="centerX" constant="-9" id="b3j-WI-EOs"/>
                             <constraint firstItem="6IS-y9-QAS" firstAttribute="leading" secondItem="OLr-ZB-mqj" secondAttribute="leading" id="dgg-9H-299"/>
                             <constraint firstItem="mha-5N-q4o" firstAttribute="top" secondItem="J3S-Yb-9kX" secondAttribute="bottom" constant="30" id="ffA-w1-yZ0"/>
                             <constraint firstItem="aY3-2E-KHK" firstAttribute="top" secondItem="qzB-Ax-RD5" secondAttribute="bottom" constant="5" id="rUs-vU-mfP"/>
+                            <constraint firstItem="qzB-Ax-RD5" firstAttribute="top" secondItem="Utu-C9-cyb" secondAttribute="bottom" constant="30" id="sDv-6b-fSd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HXa-zI-6f7"/>
@@ -1571,6 +1579,7 @@
     </scenes>
     <resources>
         <image name="button.jpeg" width="225" height="225"/>
+        <image name="hintspic.png" width="437" height="193"/>
         <image name="labelspic.png" width="340" height="131"/>
         <image name="play.jpeg" width="251" height="201"/>
     </resources>
@@ -1582,14 +1591,14 @@
     <inferredMetricsTieBreakers>
         <segue reference="xMU-mh-vO6"/>
         <segue reference="U2M-0Q-6Gt"/>
-        <segue reference="HWr-hf-Ie8"/>
-        <segue reference="u58-Kd-TTR"/>
+        <segue reference="3TP-1z-LJT"/>
+        <segue reference="Bbb-eM-5Lq"/>
+        <segue reference="4CB-gA-an2"/>
         <segue reference="z6N-cc-GpK"/>
         <segue reference="uIc-ef-HfQ"/>
         <segue reference="wca-Fg-bfg"/>
-        <segue reference="94C-pU-u8Z"/>
-        <segue reference="FKP-y2-Amb"/>
         <segue reference="zJ0-fc-nbA"/>
         <segue reference="TsK-ST-MXN"/>
+        <segue reference="u58-Kd-TTR"/>
     </inferredMetricsTieBreakers>
 </document>
