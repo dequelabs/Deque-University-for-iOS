@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--View Controller - MainView-->
@@ -832,13 +832,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="2jt-U9-mzQ"/>
                     <connections>
-                        <outlet property="_CatDisplay" destination="yoH-tj-pAB" id="ncn-G2-qTA"/>
-                        <outlet property="_CatLabel" destination="NSk-CT-MDe" id="RuK-yN-XiG"/>
+                        <outlet property="_CatDisplay" destination="wgU-sd-4fE" id="tin-on-jNw"/>
+                        <outlet property="_CatLabel" destination="Qhx-Ww-cCg" id="a7s-eg-DGk"/>
                         <outlet property="_DogDisplay" destination="6mV-Og-0Eg" id="cya-Vz-7xA"/>
                         <outlet property="_DogLabel" destination="SR5-M8-eEE" id="Y0I-Hv-P3t"/>
                         <outlet property="_ExampleLabel" destination="h0J-rl-bjS" id="hjc-Y1-Odo"/>
-                        <outlet property="_FishDisplay" destination="wgU-sd-4fE" id="jFF-4N-jZN"/>
-                        <outlet property="_FishLabel" destination="Qhx-Ww-cCg" id="PJF-fD-Yj0"/>
+                        <outlet property="_FishDisplay" destination="yoH-tj-pAB" id="hy6-sg-b1g"/>
+                        <outlet property="_FishLabel" destination="NSk-CT-MDe" id="7Of-WG-Eth"/>
                         <outlet property="_TextView" destination="lRG-T6-YIN" id="toV-I3-kEb"/>
                     </connections>
                 </viewController>
@@ -1085,9 +1085,9 @@
                     <navigationItem key="navigationItem" id="y1m-I7-2jB"/>
                     <connections>
                         <outlet property="_BrokenFixedLabel" destination="bw0-F6-dR9" id="bcu-iV-6ON"/>
-                        <outlet property="_CatDisplay" destination="Ac8-eL-NH9" id="K39-2N-Jdr"/>
+                        <outlet property="_CatDisplay" destination="0XA-AO-BMA" id="PFr-dv-be9"/>
                         <outlet property="_DogDisplay" destination="I2x-dL-M85" id="cyZ-pa-EXb"/>
-                        <outlet property="_FishDisplay" destination="0XA-AO-BMA" id="s1H-dV-ZBc"/>
+                        <outlet property="_FishDisplay" destination="Ac8-eL-NH9" id="TCr-En-ahm"/>
                         <outlet property="_TextView" destination="idH-Ha-rnj" id="Jjw-Nc-Ubl"/>
                     </connections>
                 </viewController>
@@ -1495,6 +1495,9 @@
                     <navigationItem key="navigationItem" id="Acs-Uk-Dyx"/>
                     <connections>
                         <outlet property="_BrokenFixedLabel" destination="Cxk-mH-bNh" id="SuC-EN-zWW"/>
+                        <outlet property="_CatDisplay" destination="2XD-Dp-ivk" id="Y3n-rs-mZj"/>
+                        <outlet property="_DogDisplay" destination="2Pe-I1-rHc" id="aUr-J8-F2s"/>
+                        <outlet property="_FishDisplay" destination="Acj-CU-F8l" id="vWP-Bu-XD9"/>
                         <outlet property="_TextView" destination="cIT-Jg-RHQ" id="0On-6h-fi4"/>
                     </connections>
                 </viewController>
@@ -1505,6 +1508,13 @@
     </scenes>
     <resources>
         <image name="button.jpeg" width="225" height="225"/>
+        <image name="button.jpeg" width="225" height="225"/>
+        <image name="button.jpeg" width="225" height="225"/>
+        <image name="button.jpeg" width="225" height="225"/>
+        <image name="button.jpeg" width="225" height="225"/>
+        <image name="button.jpeg" width="225" height="225"/>
+        <image name="play.jpeg" width="251" height="201"/>
+        <image name="play.jpeg" width="251" height="201"/>
         <image name="play.jpeg" width="251" height="201"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1513,16 +1523,16 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vMD-pt-kZa"/>
-        <segue reference="4CB-gA-an2"/>
-        <segue reference="twA-EV-WsD"/>
-        <segue reference="xMU-mh-vO6"/>
-        <segue reference="3TP-1z-LJT"/>
-        <segue reference="z6N-cc-GpK"/>
-        <segue reference="wca-Fg-bfg"/>
-        <segue reference="TsK-ST-MXN"/>
-        <segue reference="8M7-k6-rNo"/>
-        <segue reference="u58-Kd-TTR"/>
         <segue reference="zJ0-fc-nbA"/>
+        <segue reference="R8K-Qz-IVz"/>
+        <segue reference="xMU-mh-vO6"/>
+        <segue reference="MXs-d8-MkT"/>
+        <segue reference="z6N-cc-GpK"/>
+        <segue reference="bf0-2u-Q9e"/>
+        <segue reference="uIc-ef-HfQ"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="u58-Kd-TTR"/>
+        <segue reference="HWr-hf-Ie8"/>
+        <segue reference="TsK-ST-MXN"/>
     </inferredMetricsTieBreakers>
 </document>
