@@ -36,6 +36,18 @@
 {
     [super viewDidLoad];
     [_TextView setText:@"Notice how the visual cues, like the title \"Music Player\" and the style of the \"Play Buttons\" provide context.  Because of these visual cues we already know what these buttons do."];
+    
+    [_FishDisplay setAccessibilityLabel:@"Singing in the Rain"];
+    [_CatDisplay setAccessibilityLabel:@"Amazing Grace"];
+    [_DogDisplay setAccessibilityLabel:@"Star Spangled Banner"];
+    
+    [_FishDisplay setAccessibilityHint:@"Plays Music"];
+    [_DogDisplay setAccessibilityHint:@"Plays Music"];
+    [_CatDisplay setAccessibilityHint:@"Plays Music"];
+    
+    [_DogLabel setIsAccessibilityElement:NO];
+    [_CatLabel setIsAccessibilityElement:NO];
+    [_FishLabel setIsAccessibilityElement:NO];
 }
 
 - (void)didReceiveMemoryWarning
