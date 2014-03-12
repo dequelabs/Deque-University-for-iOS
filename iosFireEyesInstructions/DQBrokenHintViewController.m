@@ -36,13 +36,10 @@
     
     
     [_DogDisplay setAccessibilityLabel:@"Star Spangled Banner"];
-    [_DogDisplay setAccessibilityHint:Nil];
     
     [_CatDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_CatDisplay setAccessibilityHint:Nil];
     
     [_FishDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_FishDisplay setAccessibilityHint:Nil];
     
 }
 
