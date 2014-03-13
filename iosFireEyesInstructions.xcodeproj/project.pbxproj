@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F0DCB6118BE5D08001A325F /* play.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F0DCB6018BE5D08001A325F /* play.jpeg */; };
-		0F0DCB6318BE6CDC001A325F /* button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F0DCB6218BE6CDC001A325F /* button.jpeg */; };
+		0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2018D21EFA00B34CC7 /* SSB.mp3 */; };
+		0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2218D21F5B00B34CC7 /* AG.mp3 */; };
+		0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2418D21FA200B34CC7 /* SIR.mp3 */; };
+		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
 		A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
 		A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */; };
@@ -50,8 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F0DCB6018BE5D08001A325F /* play.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = play.jpeg; sourceTree = "<group>"; };
-		0F0DCB6218BE6CDC001A325F /* button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button.jpeg; sourceTree = "<group>"; };
+		0F158F2018D21EFA00B34CC7 /* SSB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SSB.mp3; sourceTree = "<group>"; };
+		0F158F2218D21F5B00B34CC7 /* AG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AG.mp3; sourceTree = "<group>"; };
+		0F158F2418D21FA200B34CC7 /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
+		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A945B83D18A95D5C006896D8 /* DQFixIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQFixIssuesViewController.h; sourceTree = "<group>"; };
 		A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQFixIssuesViewController.m; sourceTree = "<group>"; };
 		A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAllyAboutViewController.h; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
@@ -124,6 +129,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F158F2618D21FB200B34CC7 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0F158F2418D21FA200B34CC7 /* SIR.mp3 */,
+				0F158F2018D21EFA00B34CC7 /* SSB.mp3 */,
+				0F158F2218D21F5B00B34CC7 /* AG.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
 		A9D013B618A2DD4700DC6496 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +163,7 @@
 		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
 				A9D013C218A2DD4700DC6496 /* Foundation.framework */,
 				A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */,
 				A9D013C618A2DD4700DC6496 /* UIKit.framework */,
@@ -197,9 +213,8 @@
 		A9D013C918A2DD4700DC6496 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F158F2618D21FB200B34CC7 /* Music */,
 				A9D013D418A2DD4700DC6496 /* Images.xcassets */,
-				0F0DCB6018BE5D08001A325F /* play.jpeg */,
-				0F0DCB6218BE6CDC001A325F /* button.jpeg */,
 				A9D013CA18A2DD4700DC6496 /* iosFireEyesInstructions-Info.plist */,
 				A9D013CB18A2DD4700DC6496 /* InfoPlist.strings */,
 				A9D013CE18A2DD4700DC6496 /* main.m */,
@@ -306,11 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D013F218A2DD6A00DC6496 /* MainStoryboard.storyboard in Resources */,
-				0F0DCB6118BE5D08001A325F /* play.jpeg in Resources */,
 				A9E6A49018B19EFC0095541D /* iPhoneStoryboard.storyboard in Resources */,
+				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
 				A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */,
+				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
+				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
-				0F0DCB6318BE6CDC001A325F /* button.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +488,7 @@
 				INFOPLIST_FILE = "iosFireEyesInstructions/iosFireEyesInstructions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E1089774-0BF9-4210-B3A1-A8442C8BD455";
+				PROVISIONING_PROFILE = "C699B04F-B400-4A37-B8F2-4C6EA1B7D45A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -490,7 +506,7 @@
 				INFOPLIST_FILE = "iosFireEyesInstructions/iosFireEyesInstructions-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E1089774-0BF9-4210-B3A1-A8442C8BD455";
+				PROVISIONING_PROFILE = "C699B04F-B400-4A37-B8F2-4C6EA1B7D45A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
