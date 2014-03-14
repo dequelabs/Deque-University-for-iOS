@@ -11,6 +11,8 @@
 		0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2218D21F5B00B34CC7 /* AG.mp3 */; };
 		0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2418D21FA200B34CC7 /* SIR.mp3 */; };
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
+		0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */; };
+		0F28517418D3A38A00CE44BB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */; };
 		A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
 		A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */; };
@@ -35,9 +37,7 @@
 		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
 		A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013E418A2DD4700DC6496 /* InfoPlist.strings */; };
 		A9D013E818A2DD4700DC6496 /* iosFireEyesInstructionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013E718A2DD4700DC6496 /* iosFireEyesInstructionsTests.m */; };
-		A9D013F218A2DD6A00DC6496 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D013F118A2DD6A00DC6496 /* MainStoryboard.storyboard */; };
 		A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013F618A2DEFC00DC6496 /* DQViewController.m */; };
-		A9E6A49018B19EFC0095541D /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */; };
 		A9E961A918A95C9600D6E57D /* DQHowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E961A818A95C9600D6E57D /* DQHowViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +56,8 @@
 		0F158F2218D21F5B00B34CC7 /* AG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AG.mp3; sourceTree = "<group>"; };
 		0F158F2418D21FA200B34CC7 /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = iosFireEyesInstructions/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
+		0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = iosFireEyesInstructions/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A945B83D18A95D5C006896D8 /* DQFixIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQFixIssuesViewController.h; sourceTree = "<group>"; };
 		A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQFixIssuesViewController.m; sourceTree = "<group>"; };
 		A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAllyAboutViewController.h; sourceTree = "<group>"; };
@@ -96,10 +98,8 @@
 		A9D013E318A2DD4700DC6496 /* iosFireEyesInstructionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iosFireEyesInstructionsTests-Info.plist"; sourceTree = "<group>"; };
 		A9D013E518A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9D013E718A2DD4700DC6496 /* iosFireEyesInstructionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosFireEyesInstructionsTests.m; sourceTree = "<group>"; };
-		A9D013F118A2DD6A00DC6496 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A9D013F518A2DEFC00DC6496 /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQViewController.h; sourceTree = "<group>"; };
 		A9D013F618A2DEFC00DC6496 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
-		A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		A9E961A718A95C9600D6E57D /* DQHowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQHowViewController.h; sourceTree = "<group>"; };
 		A9E961A818A95C9600D6E57D /* DQHowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQHowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,8 +142,8 @@
 		A9D013B618A2DD4700DC6496 = {
 			isa = PBXGroup;
 			children = (
-				A9E6A48F18B19EFC0095541D /* iPhoneStoryboard.storyboard */,
-				A9D013F118A2DD6A00DC6496 /* MainStoryboard.storyboard */,
+				0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */,
+				0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */,
 				A9D013C818A2DD4700DC6496 /* iosFireEyesInstructions */,
 				A9D013E118A2DD4700DC6496 /* iosFireEyesInstructionsTests */,
 				A9D013C118A2DD4700DC6496 /* Frameworks */,
@@ -320,12 +320,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D013F218A2DD6A00DC6496 /* MainStoryboard.storyboard in Resources */,
-				A9E6A49018B19EFC0095541D /* iPhoneStoryboard.storyboard in Resources */,
 				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
 				A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
+				0F28517418D3A38A00CE44BB /* MainStoryboard.storyboard in Resources */,
+				0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

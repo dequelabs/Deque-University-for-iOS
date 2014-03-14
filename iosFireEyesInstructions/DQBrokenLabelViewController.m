@@ -26,6 +26,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        int blah = 5/0;
     }
     return self;
 }
