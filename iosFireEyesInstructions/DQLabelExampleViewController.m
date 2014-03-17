@@ -17,6 +17,7 @@
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
     IBOutlet UITextView *_TextView;
+    IBOutlet UIImageView *_ImageView;
 }
 
 @end
@@ -37,13 +38,13 @@
     [super viewDidLoad];
 	[_TextView setText:@"Below is an example where the context of the buttons is obvious.  Clearly each button is going to display a picture.  The labels for each button are the pictures that are to be displayed."];
     
-    [_CatDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
-    [_DogDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
-    [_FishDisplay addTarget:self action:@selector(displayAlert:) forControlEvents:UIControlEventTouchDown];
+    [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
+    [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
+    [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     
-    [_CatDisplay setAccessibilityLabel:@"Display Cat"];
-    [_DogDisplay setAccessibilityLabel:@"Display Dog"];
-    [_FishDisplay setAccessibilityLabel:@"Display Fish"];
+    [_CatDisplay setAccessibilityLabel:@"Cat"];
+    [_DogDisplay setAccessibilityLabel:@"Dog"];
+    [_FishDisplay setAccessibilityLabel:@"Fish"];
     
     [_CatDisplay setAccessibilityHint:@"Modify image display"];
     [_FishDisplay setAccessibilityHint:@"Modify image display"];
@@ -58,25 +59,27 @@
     [_FishLabel setIsAccessibilityElement:NO];
     [_TextView setEditable:NO];
     
-    
+    [_ImageView setImage:[UIImage imageNamed:@"dog"]];
+    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
+    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setIsAccessibilityElement:YES];
 }
 
-- (void)displayAlert:(id)sender {
-    
+- (void)displayImage:(id)sender {
     UIButton* button = (UIButton*)sender;
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Picture"
-                                                    message:[button accessibilityLabel]
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    if (button == _CatDisplay) {
+        [self updateImage:@"cat"];
+    } else if (button == _DogDisplay) {
+        [self updateImage:@"dog"];
+    } else {
+        [self updateImage:@"fish"];
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)updateImage:(NSString*)name {
+    [_ImageView setImage:[UIImage imageNamed:name]];
+    [_ImageView setAccessibilityLabel:name];
 }
 
 @end

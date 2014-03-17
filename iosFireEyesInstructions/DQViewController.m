@@ -31,7 +31,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	[_LogoImage setImage:[UIImage imageNamed:@"DequeLogo"]];
+    
+    [_AllyButton setAccessibilityLabel:[[_AllyButton titleLabel] text]];
+    [_AllyButton setAccessibilityHint:@"Visit section content"];
+    
+    [_AnalyzerButton setAccessibilityLabel:[[_AnalyzerButton titleLabel] text]];
+    [_AnalyzerButton setAccessibilityHint:@"Visit section content"];
+    
+    [_HowButton setAccessibilityLabel:[[_HowButton titleLabel] text]];
+    [_HowButton setAccessibilityHint:@"Visit section content"];
 }
 
 - (void)didReceiveMemoryWarning

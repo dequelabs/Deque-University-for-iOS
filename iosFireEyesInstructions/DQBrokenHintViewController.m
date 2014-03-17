@@ -14,7 +14,7 @@
 
 @implementation DQBrokenHintViewController {
     IBOutlet UILabel *_BrokenFixedLabel;
-    IBOutlet UIButton *_DogDisplay;
+    __weak IBOutlet UIButton *_DogDisplay;
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
     IBOutlet UITextView *_TextView;
@@ -39,10 +39,16 @@
     
     
     [_DogDisplay setAccessibilityLabel:@"Star Spangled Banner"];
+    [_DogDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
+    //[_DogDisplay setAccessibilityHint:@"Visit wiki article"];
     
     [_CatDisplay setAccessibilityLabel:@"Amazing Grace"];
+    [_CatDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
+    //[_CatDisplay setAccessibilityHint:@"Visit wiki article"];
     
     [_FishDisplay setAccessibilityLabel:@"Singing in the Rain"];
+    [_FishDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
+    //[_FishDisplay setAccessibilityHint:@"Visit wiki article"];
     
     [_SSB setIsAccessibilityElement:false];
     
@@ -52,6 +58,20 @@
     
     [_TextView setEditable:NO];
     
+}
+
+- (void)visitWebPage:(id)sender {
+    
+    NSString* url = nil;
+    if (sender == _DogDisplay) {
+        url = @"http://en.wikipedia.org/wiki/The_Star-Spangled_Banner";
+    } else if (sender == _CatDisplay) {
+        url = @"http://en.wikipedia.org/wiki/Amazing_Grace";
+    } else {
+        url = @"http://en.wikipedia.org/wiki/Singin'_in_the_Rain";
+    }
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
 
 - (void)didReceiveMemoryWarning
