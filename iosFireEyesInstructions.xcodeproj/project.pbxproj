@@ -13,10 +13,17 @@
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
 		0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */; };
 		0F28517418D3A38A00CE44BB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */; };
+		A91D01E9192E54F300EA7137 /* DQNextedInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D01E8192E54F300EA7137 /* DQNextedInfoViewController.m */; };
 		A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */; };
+		A96470C0192E53570050646B /* DQNestedFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96470BF192E53570050646B /* DQNestedFixedViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
 		A979B25C18ECA21300776F88 /* DQUsingXcode1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A979B25B18ECA21300776F88 /* DQUsingXcode1ViewController.m */; };
 		A979B25F18ECA2CE00776F88 /* DQUsingXcode2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A979B25E18ECA2CE00776F88 /* DQUsingXcode2ViewController.m */; };
+		A9981DAA192E4A2900CB0191 /* DQTraitInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9981DA9192E4A2900CB0191 /* DQTraitInfoViewController.m */; };
+		A9981DAD192E4B1700CB0191 /* DQTraitsExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */; };
+		A9A7B0F5192E4C40001FB256 /* DQTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* DQTraitsBrokenViewController.m */; };
+		A9AB571B192E53A50048139F /* DQNestedBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB571A192E53A50048139F /* DQNestedBrokenViewController.m */; };
+		A9AB571E192E54500048139F /* DQNestedExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB571D192E54500048139F /* DQNestedExampleViewController.m */; };
 		A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */; };
 		A9AE2DFB18ABFE7800D33C6B /* DQHintExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFA18ABFE7800D33C6B /* DQHintExampleViewController.m */; };
 		A9AE2DFE18AC014500D33C6B /* DQBrokenLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFD18AC014500D33C6B /* DQBrokenLabelViewController.m */; };
@@ -41,6 +48,7 @@
 		A9D013E818A2DD4700DC6496 /* iosFireEyesInstructionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013E718A2DD4700DC6496 /* iosFireEyesInstructionsTests.m */; };
 		A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013F618A2DEFC00DC6496 /* DQViewController.m */; };
 		A9E961A918A95C9600D6E57D /* DQHowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E961A818A95C9600D6E57D /* DQHowViewController.m */; };
+		A9F1672A192E522500B37FFB /* DQTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* DQTraitsFixedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +68,28 @@
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = iosFireEyesInstructions/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = iosFireEyesInstructions/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A91D01E7192E54F300EA7137 /* DQNextedInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNextedInfoViewController.h; sourceTree = "<group>"; };
+		A91D01E8192E54F300EA7137 /* DQNextedInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNextedInfoViewController.m; sourceTree = "<group>"; };
 		A945B83D18A95D5C006896D8 /* DQFixIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQFixIssuesViewController.h; sourceTree = "<group>"; };
 		A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQFixIssuesViewController.m; sourceTree = "<group>"; };
+		A96470BE192E53570050646B /* DQNestedFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNestedFixedViewController.h; sourceTree = "<group>"; };
+		A96470BF192E53570050646B /* DQNestedFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNestedFixedViewController.m; sourceTree = "<group>"; };
 		A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAllyAboutViewController.h; sourceTree = "<group>"; };
 		A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAllyAboutViewController.m; sourceTree = "<group>"; };
 		A979B25A18ECA21300776F88 /* DQUsingXcode1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUsingXcode1ViewController.h; sourceTree = "<group>"; };
 		A979B25B18ECA21300776F88 /* DQUsingXcode1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUsingXcode1ViewController.m; sourceTree = "<group>"; };
 		A979B25D18ECA2CE00776F88 /* DQUsingXcode2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUsingXcode2ViewController.h; sourceTree = "<group>"; };
 		A979B25E18ECA2CE00776F88 /* DQUsingXcode2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUsingXcode2ViewController.m; sourceTree = "<group>"; };
+		A9981DA8192E4A2900CB0191 /* DQTraitInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTraitInfoViewController.h; sourceTree = "<group>"; };
+		A9981DA9192E4A2900CB0191 /* DQTraitInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTraitInfoViewController.m; sourceTree = "<group>"; };
+		A9981DAB192E4B1700CB0191 /* DQTraitsExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTraitsExampleViewController.h; sourceTree = "<group>"; };
+		A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTraitsExampleViewController.m; sourceTree = "<group>"; };
+		A9A7B0F3192E4C40001FB256 /* DQTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTraitsBrokenViewController.h; sourceTree = "<group>"; };
+		A9A7B0F4192E4C40001FB256 /* DQTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTraitsBrokenViewController.m; sourceTree = "<group>"; };
+		A9AB5719192E53A50048139F /* DQNestedBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNestedBrokenViewController.h; sourceTree = "<group>"; };
+		A9AB571A192E53A50048139F /* DQNestedBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNestedBrokenViewController.m; sourceTree = "<group>"; };
+		A9AB571C192E54500048139F /* DQNestedExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNestedExampleViewController.h; sourceTree = "<group>"; };
+		A9AB571D192E54500048139F /* DQNestedExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNestedExampleViewController.m; sourceTree = "<group>"; };
 		A9AE2DF618ABFE3100D33C6B /* DQLabelExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLabelExampleViewController.h; sourceTree = "<group>"; };
 		A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabelExampleViewController.m; sourceTree = "<group>"; };
 		A9AE2DF918ABFE7800D33C6B /* DQHintExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQHintExampleViewController.h; sourceTree = "<group>"; };
@@ -108,6 +130,8 @@
 		A9D013F618A2DEFC00DC6496 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
 		A9E961A718A95C9600D6E57D /* DQHowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQHowViewController.h; sourceTree = "<group>"; };
 		A9E961A818A95C9600D6E57D /* DQHowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQHowViewController.m; sourceTree = "<group>"; };
+		A9F16728192E522500B37FFB /* DQTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTraitsFixedViewController.h; sourceTree = "<group>"; };
+		A9F16729192E522500B37FFB /* DQTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTraitsFixedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +240,22 @@
 				A979B25B18ECA21300776F88 /* DQUsingXcode1ViewController.m */,
 				A979B25D18ECA2CE00776F88 /* DQUsingXcode2ViewController.h */,
 				A979B25E18ECA2CE00776F88 /* DQUsingXcode2ViewController.m */,
+				A9981DA8192E4A2900CB0191 /* DQTraitInfoViewController.h */,
+				A9981DA9192E4A2900CB0191 /* DQTraitInfoViewController.m */,
+				A9981DAB192E4B1700CB0191 /* DQTraitsExampleViewController.h */,
+				A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */,
+				A9A7B0F3192E4C40001FB256 /* DQTraitsBrokenViewController.h */,
+				A9A7B0F4192E4C40001FB256 /* DQTraitsBrokenViewController.m */,
+				A9F16728192E522500B37FFB /* DQTraitsFixedViewController.h */,
+				A9F16729192E522500B37FFB /* DQTraitsFixedViewController.m */,
+				A96470BE192E53570050646B /* DQNestedFixedViewController.h */,
+				A96470BF192E53570050646B /* DQNestedFixedViewController.m */,
+				A9AB5719192E53A50048139F /* DQNestedBrokenViewController.h */,
+				A9AB571A192E53A50048139F /* DQNestedBrokenViewController.m */,
+				A9AB571C192E54500048139F /* DQNestedExampleViewController.h */,
+				A9AB571D192E54500048139F /* DQNestedExampleViewController.m */,
+				A91D01E7192E54F300EA7137 /* DQNextedInfoViewController.h */,
+				A91D01E8192E54F300EA7137 /* DQNextedInfoViewController.m */,
 			);
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
@@ -357,16 +397,24 @@
 			files = (
 				A9D013CF18A2DD4700DC6496 /* main.m in Sources */,
 				A9C2BABD18A95642001CB073 /* DQWorldSpaceViewController.m in Sources */,
+				A9A7B0F5192E4C40001FB256 /* DQTraitsBrokenViewController.m in Sources */,
 				A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */,
 				A979B25F18ECA2CE00776F88 /* DQUsingXcode2ViewController.m in Sources */,
+				A9981DAA192E4A2900CB0191 /* DQTraitInfoViewController.m in Sources */,
+				A96470C0192E53570050646B /* DQNestedFixedViewController.m in Sources */,
 				A9AE2DFB18ABFE7800D33C6B /* DQHintExampleViewController.m in Sources */,
 				A9C2BAB718A950A8001CB073 /* DQHintInformationViewController.m in Sources */,
+				A91D01E9192E54F300EA7137 /* DQNextedInfoViewController.m in Sources */,
 				A9AE2E0118AC017E00D33C6B /* DQBrokenHintViewController.m in Sources */,
 				A9C2BAC318A9590B001CB073 /* DQAnalyzerAboutViewController.m in Sources */,
 				A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */,
 				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
 				A979B25C18ECA21300776F88 /* DQUsingXcode1ViewController.m in Sources */,
+				A9F1672A192E522500B37FFB /* DQTraitsFixedViewController.m in Sources */,
 				A9AE2DFE18AC014500D33C6B /* DQBrokenLabelViewController.m in Sources */,
+				A9AB571E192E54500048139F /* DQNestedExampleViewController.m in Sources */,
+				A9981DAD192E4B1700CB0191 /* DQTraitsExampleViewController.m in Sources */,
+				A9AB571B192E53A50048139F /* DQNestedBrokenViewController.m in Sources */,
 				A9C2BAB418A94B54001CB073 /* DQLabalInformationViewController.m in Sources */,
 				A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */,
 				A9AE2E0418AC01AE00D33C6B /* DQFixedLabelViewController.m in Sources */,
