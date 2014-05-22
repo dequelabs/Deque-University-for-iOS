@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-KN-ktV">
-                                <rect key="frame" x="190" y="445" width="388" height="104"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-KN-ktV">
+                                <rect key="frame" x="190" y="189" width="388" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="388" id="8Qj-04-AuX"/>
@@ -31,8 +31,8 @@
                                     <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="gUf-Ix-g4E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-bJ-lYw">
-                                <rect key="frame" x="190" y="587" width="388" height="104"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-bJ-lYw">
+                                <rect key="frame" x="190" y="331" width="388" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="fwt-ai-Rbq"/>
@@ -45,8 +45,8 @@
                                     <segue destination="oiS-P8-OUq" kind="modal" modalTransitionStyle="flipHorizontal" id="31H-10-YkE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-uR-5ne">
-                                <rect key="frame" x="190" y="729" width="388" height="104"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-uR-5ne">
+                                <rect key="frame" x="190" y="473" width="388" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="104" id="GC2-BC-6CP"/>
@@ -59,8 +59,8 @@
                                     <segue destination="i5W-Un-UCa" kind="modal" modalTransitionStyle="flipHorizontal" id="2br-yw-scn"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="is7-WB-h7E">
-                                <rect key="frame" x="20" y="95" width="728" height="288"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="is7-WB-h7E">
+                                <rect key="frame" x="20" y="95" width="728" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -87,6 +87,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZfL-gf-AGZ"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="_AllyButton" destination="K7x-KN-ktV" id="r5g-K4-dRB"/>
                         <outlet property="_AnalyzerButton" destination="0p8-bJ-lYw" id="oQ9-pq-pOF"/>
@@ -1817,8 +1818,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5g-Vc-sAe">
-                                <rect key="frame" x="100" y="594" width="570" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5g-Vc-sAe">
+                                <rect key="frame" x="100" y="594" width="570" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1828,8 +1829,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-u2-NoF">
-                                <rect key="frame" x="100" y="747" width="570" height="145"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-u2-NoF">
+                                <rect key="frame" x="100" y="636" width="570" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -2098,12 +2099,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="4zD-Wj-PfR"/>
                     <connections>
-                        <outlet property="_ImageView" destination="vDP-8U-E2I" id="hfr-6f-ubD"/>
-                        <outlet property="_ImportantLabel" destination="NhD-Ij-dyy" id="hyN-Gg-3eW"/>
-                        <outlet property="_TextView1" destination="zjd-GJ-Cwl" id="Dij-WL-tb8"/>
-                        <outlet property="_TextView2" destination="zy7-If-zmM" id="o5n-1T-RRE"/>
-                        <outlet property="_TitleLabel" destination="xGj-ze-ZvC" id="lJ6-l2-hLn"/>
-                        <outlet property="_WhatIsHintLabel" destination="K6H-Ms-xbA" id="3Km-HY-FIK"/>
                         <outlet property="_imageView" destination="vDP-8U-E2I" id="6Hs-R6-QBm"/>
                         <outlet property="_textView1" destination="zjd-GJ-Cwl" id="jhG-AA-9Xn"/>
                         <outlet property="_textView2" destination="zy7-If-zmM" id="Vk5-uH-T8S"/>
@@ -3255,24 +3250,24 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rjP-9W-i62"/>
+        <segue reference="gUf-Ix-g4E"/>
+        <segue reference="tUg-3e-5rc"/>
+        <segue reference="I54-zs-vd0"/>
+        <segue reference="FQY-ib-6CF"/>
+        <segue reference="Vzm-jV-Vc2"/>
+        <segue reference="u58-Kd-TTR"/>
         <segue reference="31H-10-YkE"/>
-        <segue reference="dgC-4i-YEH"/>
+        <segue reference="2br-yw-scn"/>
+        <segue reference="rjP-9W-i62"/>
+        <segue reference="twA-EV-WsD"/>
+        <segue reference="Zgh-Os-4pH"/>
+        <segue reference="3TP-1z-LJT"/>
+        <segue reference="xMU-mh-vO6"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="50W-Gg-BZs"/>
+        <segue reference="cJm-yu-tyg"/>
         <segue reference="h3v-ou-QF6"/>
         <segue reference="IWe-3t-w3v"/>
         <segue reference="Tw5-3C-3bJ"/>
-        <segue reference="hN0-rQ-YU3"/>
-        <segue reference="cJm-yu-tyg"/>
-        <segue reference="twA-EV-WsD"/>
-        <segue reference="Zgh-Os-4pH"/>
-        <segue reference="I54-zs-vd0"/>
-        <segue reference="xMU-mh-vO6"/>
-        <segue reference="3TP-1z-LJT"/>
-        <segue reference="wca-Fg-bfg"/>
-        <segue reference="50W-Gg-BZs"/>
-        <segue reference="FQY-ib-6CF"/>
-        <segue reference="u58-Kd-TTR"/>
-        <segue reference="2br-yw-scn"/>
-        <segue reference="8Do-nl-BYE"/>
     </inferredMetricsTieBreakers>
 </document>

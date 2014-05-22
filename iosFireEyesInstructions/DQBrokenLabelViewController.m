@@ -71,4 +71,8 @@
     [_ImageView setAccessibilityLabel:name];
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 @end
