@@ -8,7 +8,9 @@
 
 #import "DQViewController.h"
 
-@interface DQViewController ()
+@interface DQViewController () {
+    UIButton* blah;
+}
 
 @end
 
