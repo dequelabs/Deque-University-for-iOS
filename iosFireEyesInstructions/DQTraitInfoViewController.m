@@ -1,23 +1,25 @@
 //
-//  DQUsingXcode1ViewController.m
+//  DQTraitInfoViewController.m
 //  iosFireEyesInstructions
 //
-//  Created by Catherine Fisher on 4/2/14.
+//  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQUsingXcode1ViewController.h"
+#import "DQTraitInfoViewController.h"
 
-@interface DQUsingXcode1ViewController ()
+@interface DQTraitInfoViewController ()
 
 @end
 
-@implementation DQUsingXcode1ViewController {
-    IBOutlet UITextView *_step1;
-    IBOutlet UITextView *_step2;
-    IBOutlet UITextView *_step3;
-    IBOutlet UITextView *_step4;
-    IBOutlet UIImageView *_step4image;
+@implementation DQTraitInfoViewController {
+    IBOutlet UILabel *_traitsLabel;
+    IBOutlet UITextView *_textView1;
+    IBOutlet UITextView *_textView2;
+    IBOutlet UILabel *_whatLabel;
+    IBOutlet UILabel *_whyLabel;
+    IBOutlet UIImageView *_imageView;
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -26,8 +28,6 @@
     if (self) {
         // Custom initialization
     }
-    
-    NSLog(@"Here");
     return self;
 }
 

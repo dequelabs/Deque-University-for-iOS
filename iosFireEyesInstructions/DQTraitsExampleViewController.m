@@ -1,23 +1,26 @@
 //
-//  DQUsingXcode1ViewController.m
+//  DQTraitsExampleViewController.m
 //  iosFireEyesInstructions
 //
-//  Created by Catherine Fisher on 4/2/14.
+//  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQUsingXcode1ViewController.h"
+#import "DQTraitsExampleViewController.h"
 
-@interface DQUsingXcode1ViewController ()
+@interface DQTraitsExampleViewController ()
 
 @end
 
-@implementation DQUsingXcode1ViewController {
-    IBOutlet UITextView *_step1;
-    IBOutlet UITextView *_step2;
-    IBOutlet UITextView *_step3;
-    IBOutlet UITextView *_step4;
-    IBOutlet UIImageView *_step4image;
+@implementation DQTraitsExampleViewController {
+    IBOutlet UILabel *_ExampleLabel;
+    IBOutlet UILabel *_DogLabel;
+    IBOutlet UILabel *_CatLabel;
+    IBOutlet UILabel *_FishLabel;
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UITextView *_TextView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -26,8 +29,6 @@
     if (self) {
         // Custom initialization
     }
-    
-    NSLog(@"Here");
     return self;
 }
 

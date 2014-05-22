@@ -1,23 +1,24 @@
 //
-//  DQUsingXcode1ViewController.m
+//  DQNextedInfoViewController.m
 //  iosFireEyesInstructions
 //
-//  Created by Catherine Fisher on 4/2/14.
+//  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQUsingXcode1ViewController.h"
+#import "DQNextedInfoViewController.h"
 
-@interface DQUsingXcode1ViewController ()
+@interface DQNextedInfoViewController ()
 
 @end
 
-@implementation DQUsingXcode1ViewController {
-    IBOutlet UITextView *_step1;
-    IBOutlet UITextView *_step2;
-    IBOutlet UITextView *_step3;
-    IBOutlet UITextView *_step4;
-    IBOutlet UIImageView *_step4image;
+@implementation DQNextedInfoViewController {
+    IBOutlet UILabel *_TitleLabel;
+    IBOutlet UILabel *_ImportantLabel;
+    IBOutlet UILabel *_WhatIsHintLabel;
+    IBOutlet UITextView *_TextView1;
+    IBOutlet UITextView *_TextView2;
+    IBOutlet UIImageView *_ImageView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -26,8 +27,6 @@
     if (self) {
         // Custom initialization
     }
-    
-    NSLog(@"Here");
     return self;
 }
 

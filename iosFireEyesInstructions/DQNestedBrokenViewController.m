@@ -1,23 +1,26 @@
 //
-//  DQUsingXcode1ViewController.m
+//  DQNestedBrokenViewController.m
 //  iosFireEyesInstructions
 //
-//  Created by Catherine Fisher on 4/2/14.
+//  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQUsingXcode1ViewController.h"
+#import "DQNestedBrokenViewController.h"
 
-@interface DQUsingXcode1ViewController ()
+@interface DQNestedBrokenViewController ()
 
 @end
 
-@implementation DQUsingXcode1ViewController {
-    IBOutlet UITextView *_step1;
-    IBOutlet UITextView *_step2;
-    IBOutlet UITextView *_step3;
-    IBOutlet UITextView *_step4;
-    IBOutlet UIImageView *_step4image;
+@implementation DQNestedBrokenViewController {
+    IBOutlet UILabel *_BrokenFixedLabel;
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UITextView *_TextView;
+    IBOutlet UILabel *_SSB;
+    IBOutlet UILabel *_SITR;
+    IBOutlet UILabel *_AG;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -26,8 +29,6 @@
     if (self) {
         // Custom initialization
     }
-    
-    NSLog(@"Here");
     return self;
 }
 
