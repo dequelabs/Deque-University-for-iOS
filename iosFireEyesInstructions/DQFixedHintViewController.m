@@ -23,6 +23,7 @@
     IBOutlet UILabel *_SSB;
     IBOutlet UILabel *_SITR;
     IBOutlet UILabel *_AG;
+    IBOutlet UILabel *_MusicLabel;
     
     AVAudioPlayer* _AudioPlayer;
 }
