@@ -84,7 +84,7 @@
     
     [_AudioPlayer performSelector:@selector(stop) withObject:_AudioPlayer afterDelay:5];
     
-    if ([_AudioPlayer play]) NSLog(@"Shoudl be playing");
+    if ([_AudioPlayer play]) NSLog(@"Should be playing");
 }
 
 - (void)didReceiveMemoryWarning
