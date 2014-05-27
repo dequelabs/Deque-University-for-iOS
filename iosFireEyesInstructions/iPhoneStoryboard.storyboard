@@ -1968,6 +1968,9 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Display a picture of a dog:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cz8-b2-cOc">
                                 <rect key="frame" x="25" y="222" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" selected="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1994,7 +1997,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-n1-sVV">
                                 <rect key="frame" x="222" y="218" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                <accessibility key="accessibilityConfiguration" label="Dog">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                </accessibility>
                                 <state key="normal" title="Display">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2523,21 +2528,21 @@
         <segue reference="hqi-jv-wsD"/>
         <segue reference="KKr-Vp-Ef2"/>
         <segue reference="odM-ea-apB"/>
-        <segue reference="2C5-ya-tc5"/>
-        <segue reference="6cI-EV-LB9"/>
-        <segue reference="ygi-Zc-Yh0"/>
-        <segue reference="bUn-tt-TKI"/>
-        <segue reference="qlL-tW-iG0"/>
-        <segue reference="v8n-8H-AN0"/>
         <segue reference="ZZV-ky-it9"/>
         <segue reference="vso-JF-a4F"/>
         <segue reference="XoQ-ya-oDP"/>
         <segue reference="R4k-dN-yQs"/>
+        <segue reference="ygi-Zc-Yh0"/>
+        <segue reference="WsL-Qn-NzC"/>
+        <segue reference="KQe-BQ-Co9"/>
+        <segue reference="9gY-0Y-92E"/>
+        <segue reference="PM6-Cf-BhS"/>
+        <segue reference="GFA-sh-ZUF"/>
+        <segue reference="bUn-tt-TKI"/>
+        <segue reference="qlL-tW-iG0"/>
         <segue reference="7lG-Ct-qKN"/>
         <segue reference="IaK-ac-NcN"/>
         <segue reference="IuX-db-pJK"/>
         <segue reference="CsT-Bc-g7i"/>
-        <segue reference="PFE-cz-Sge"/>
-        <segue reference="KQe-BQ-Co9"/>
     </inferredMetricsTieBreakers>
 </document>
