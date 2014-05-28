@@ -42,6 +42,12 @@
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(visitWebPage) forControlEvents:UIControlEventTouchDown];
     
+    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:@"Fish"];
+    
+    [commentString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [commentString length])];
+    
+    [_FishDisplay setAttributedTitle:commentString forState:UIControlStateNormal];
+    
     [_CatDisplay setAccessibilityLabel:@"Cat"];
     [_DogDisplay setAccessibilityLabel:@"Dog"];
     [_FishDisplay setAccessibilityLabel:@"Fish"];
