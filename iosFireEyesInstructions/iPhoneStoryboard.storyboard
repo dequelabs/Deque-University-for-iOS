@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRj-O2-thu">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRj-O2-thu">
                                 <rect key="frame" x="60" y="313" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -25,13 +25,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="What is the Analyzer?">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="EJj-lR-C7u" kind="modal" modalTransitionStyle="flipHorizontal" id="Bqa-GI-q3i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-3q-FKv">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-3q-FKv">
                                 <rect key="frame" x="60" y="388" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -40,6 +41,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="How it works">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2525,24 +2527,24 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hqi-jv-wsD"/>
-        <segue reference="KKr-Vp-Ef2"/>
-        <segue reference="odM-ea-apB"/>
-        <segue reference="ZZV-ky-it9"/>
-        <segue reference="vso-JF-a4F"/>
-        <segue reference="XoQ-ya-oDP"/>
-        <segue reference="R4k-dN-yQs"/>
-        <segue reference="ygi-Zc-Yh0"/>
-        <segue reference="WsL-Qn-NzC"/>
-        <segue reference="KQe-BQ-Co9"/>
         <segue reference="9gY-0Y-92E"/>
-        <segue reference="PM6-Cf-BhS"/>
+        <segue reference="KQe-BQ-Co9"/>
         <segue reference="GFA-sh-ZUF"/>
+        <segue reference="PM6-Cf-BhS"/>
+        <segue reference="XSJ-RH-t7T"/>
+        <segue reference="Bqa-GI-q3i"/>
+        <segue reference="YBY-vN-lWL"/>
+        <segue reference="ygi-Zc-Yh0"/>
         <segue reference="bUn-tt-TKI"/>
         <segue reference="qlL-tW-iG0"/>
         <segue reference="7lG-Ct-qKN"/>
-        <segue reference="IaK-ac-NcN"/>
-        <segue reference="IuX-db-pJK"/>
+        <segue reference="odM-ea-apB"/>
+        <segue reference="KKr-Vp-Ef2"/>
+        <segue reference="hqi-jv-wsD"/>
+        <segue reference="ZZV-ky-it9"/>
         <segue reference="CsT-Bc-g7i"/>
+        <segue reference="IuX-db-pJK"/>
+        <segue reference="XoQ-ya-oDP"/>
+        <segue reference="R4k-dN-yQs"/>
     </inferredMetricsTieBreakers>
 </document>
