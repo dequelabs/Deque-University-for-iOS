@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -134,7 +134,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8z-ZU-ude">
-                                <rect key="frame" x="318" y="485" width="132" height="80"/>
+                                <rect key="frame" x="318" y="449" width="132" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="132" id="PfI-og-dut"/>
@@ -148,9 +148,12 @@
                                     <segue destination="zmn-vo-tIs" kind="modal" modalTransitionStyle="crossDissolve" id="Zgh-Os-4pH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-8h-F5j">
-                                <rect key="frame" x="318" y="573" width="132" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-8h-F5j">
+                                <rect key="frame" x="318" y="549" width="132" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EYc-oh-XYy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Hints">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,9 +190,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9h-Ri-xjI">
-                                <rect key="frame" x="318" y="661" width="132" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9h-Ri-xjI">
+                                <rect key="frame" x="355" y="649" width="59" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="atY-DF-4os"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Traits">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,22 +223,20 @@
                         <constraints>
                             <constraint firstItem="J8z-ZU-ude" firstAttribute="leading" secondItem="SSc-8h-F5j" secondAttribute="leading" id="0eK-D7-csv"/>
                             <constraint firstItem="43W-8f-5E8" firstAttribute="top" secondItem="JJq-xm-vsf" secondAttribute="bottom" constant="25" id="F34-QX-6GU"/>
-                            <constraint firstItem="SSc-8h-F5j" firstAttribute="top" secondItem="J8z-ZU-ude" secondAttribute="bottom" constant="8" symbolic="YES" id="F5o-mK-p6G"/>
-                            <constraint firstItem="KLP-tP-xA6" firstAttribute="top" secondItem="h9h-Ri-xjI" secondAttribute="bottom" constant="8" symbolic="YES" id="HqM-3p-KUc"/>
-                            <constraint firstAttribute="bottom" secondItem="KLP-tP-xA6" secondAttribute="bottom" constant="195" id="J70-QI-wEN"/>
-                            <constraint firstItem="J8z-ZU-ude" firstAttribute="top" secondItem="6My-1b-XZg" secondAttribute="bottom" constant="86" id="JeD-PF-4ES"/>
+                            <constraint firstItem="SSc-8h-F5j" firstAttribute="top" secondItem="J8z-ZU-ude" secondAttribute="bottom" constant="20" id="F5o-mK-p6G"/>
+                            <constraint firstItem="KLP-tP-xA6" firstAttribute="top" secondItem="h9h-Ri-xjI" secondAttribute="bottom" constant="20" id="HqM-3p-KUc"/>
+                            <constraint firstItem="J8z-ZU-ude" firstAttribute="top" secondItem="6My-1b-XZg" secondAttribute="bottom" constant="50" id="JeD-PF-4ES"/>
                             <constraint firstItem="6My-1b-XZg" firstAttribute="top" secondItem="43W-8f-5E8" secondAttribute="bottom" constant="40" id="O1D-Sc-3HJ"/>
                             <constraint firstItem="KLP-tP-xA6" firstAttribute="centerX" secondItem="5SX-vc-Fhd" secondAttribute="centerX" id="OMt-rQ-yUZ"/>
                             <constraint firstItem="J8z-ZU-ude" firstAttribute="centerX" secondItem="h9h-Ri-xjI" secondAttribute="centerX" id="SuV-Rh-2Dz"/>
                             <constraint firstItem="5SX-vc-Fhd" firstAttribute="leading" secondItem="VEM-qC-NT1" secondAttribute="leading" id="WwP-ES-Nhn"/>
                             <constraint firstItem="J8z-ZU-ude" firstAttribute="trailing" secondItem="SSc-8h-F5j" secondAttribute="trailing" id="cic-Tk-NfK"/>
-                            <constraint firstItem="J8z-ZU-ude" firstAttribute="trailing" secondItem="h9h-Ri-xjI" secondAttribute="trailing" id="e2u-Vi-PXz"/>
                             <constraint firstItem="93k-VV-Osh" firstAttribute="top" secondItem="5SX-vc-Fhd" secondAttribute="bottom" id="f6a-og-4IQ"/>
+                            <constraint firstItem="h9h-Ri-xjI" firstAttribute="top" secondItem="SSc-8h-F5j" secondAttribute="bottom" constant="20" id="gJZ-WU-xeg"/>
                             <constraint firstItem="J8z-ZU-ude" firstAttribute="centerX" secondItem="KLP-tP-xA6" secondAttribute="centerX" id="hmf-KP-Qa5"/>
                             <constraint firstAttribute="trailing" secondItem="5SX-vc-Fhd" secondAttribute="trailing" id="lgb-8f-IqO"/>
                             <constraint firstItem="J8z-ZU-ude" firstAttribute="centerX" secondItem="SSc-8h-F5j" secondAttribute="centerX" id="o0Q-Qr-DWv"/>
                             <constraint firstAttribute="centerX" secondItem="6My-1b-XZg" secondAttribute="centerX" id="oMe-4U-3ew"/>
-                            <constraint firstItem="J8z-ZU-ude" firstAttribute="leading" secondItem="h9h-Ri-xjI" secondAttribute="leading" id="pZR-zd-hhZ"/>
                             <constraint firstAttribute="centerX" secondItem="43W-8f-5E8" secondAttribute="centerX" id="r51-Z9-7a0"/>
                         </constraints>
                     </view>
@@ -3250,24 +3254,24 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="2br-yw-scn"/>
+        <segue reference="nba-Wj-6tl"/>
         <segue reference="gUf-Ix-g4E"/>
-        <segue reference="tUg-3e-5rc"/>
         <segue reference="I54-zs-vd0"/>
+        <segue reference="mao-IN-Jc0"/>
+        <segue reference="twA-EV-WsD"/>
+        <segue reference="Zgh-Os-4pH"/>
         <segue reference="FQY-ib-6CF"/>
         <segue reference="Vzm-jV-Vc2"/>
         <segue reference="u58-Kd-TTR"/>
-        <segue reference="31H-10-YkE"/>
-        <segue reference="2br-yw-scn"/>
-        <segue reference="rjP-9W-i62"/>
-        <segue reference="twA-EV-WsD"/>
-        <segue reference="Zgh-Os-4pH"/>
-        <segue reference="3TP-1z-LJT"/>
-        <segue reference="xMU-mh-vO6"/>
-        <segue reference="wca-Fg-bfg"/>
-        <segue reference="50W-Gg-BZs"/>
         <segue reference="cJm-yu-tyg"/>
-        <segue reference="h3v-ou-QF6"/>
         <segue reference="IWe-3t-w3v"/>
         <segue reference="Tw5-3C-3bJ"/>
+        <segue reference="xMU-mh-vO6"/>
+        <segue reference="3TP-1z-LJT"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="50W-Gg-BZs"/>
+        <segue reference="31H-10-YkE"/>
+        <segue reference="rjP-9W-i62"/>
     </inferredMetricsTieBreakers>
 </document>
