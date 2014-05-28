@@ -34,24 +34,54 @@
 {
     [super viewDidLoad];
     [_TextView setText:@"Notice the last button appropriately has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interraction).  To enable both the button and link traits is redundant and unnecessary."];
+    
+    [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
+    [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
+    [_FishDisplay addTarget:self action:@selector(visitWebPage) forControlEvents:UIControlEventTouchDown];
+    
+    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:@"Fish"];
+    
+    [commentString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [commentString length])];
+    
+    [_FishDisplay setAttributedTitle:commentString forState:UIControlStateNormal];
+    
+    [_CatDisplay setAccessibilityLabel:@"Cat"];
+    [_DogDisplay setAccessibilityLabel:@"Dog"];
+    [_FishDisplay setAccessibilityLabel:@"Fish"];
+    
+    [_CatDisplay setAccessibilityHint:@"Modify image display"];
+    [_FishDisplay setAccessibilityHint:@"Modify image display"];
+    [_DogDisplay setAccessibilityHint:@"Modify image display"];
+    
+    [_TextView setEditable:NO];
+    
+    [_ImageView setImage:[UIImage imageNamed:@"dog"]];
+    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
+    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setIsAccessibilityElement:YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)displayImage:(id)sender {
+    UIButton* button = (UIButton*)sender;
+    
+    if (button == _CatDisplay) {
+        [self updateImage:@"cat"];
+    } else if (button == _DogDisplay) {
+        [self updateImage:@"dog"];
+    } else {
+        [self updateImage:@"fish"];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)visitWebPage {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://lmgtfy.com/?q=fish"]];
 }
-*/
+
+- (void)updateImage:(NSString*)name {
+    [_ImageView setImage:[UIImage imageNamed:name]];
+    [_ImageView setAccessibilityLabel:name];
+}
+
 
 - (BOOL)shouldAutorotate {
     return NO;
