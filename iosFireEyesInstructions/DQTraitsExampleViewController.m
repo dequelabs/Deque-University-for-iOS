@@ -35,7 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [_TextView setText:@"Below is a screen similar to the one in the Labels example, however, notice that one of the buttons looks a little different.  It's appearance would suggest that it is a link."];
 }
 
 - (void)didReceiveMemoryWarning

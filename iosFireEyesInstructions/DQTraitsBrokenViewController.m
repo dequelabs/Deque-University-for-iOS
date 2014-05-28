@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [_TextView setText:@"The button that is a link should have "];
 }
 
 - (void)didReceiveMemoryWarning
