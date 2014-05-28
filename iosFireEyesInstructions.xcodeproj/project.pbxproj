@@ -12,13 +12,13 @@
 		0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2418D21FA200B34CC7 /* SIR.mp3 */; };
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
 		0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */; };
-		0F28517418D3A38A00CE44BB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */; };
 		A91D01E9192E54F300EA7137 /* DQNextedInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D01E8192E54F300EA7137 /* DQNextedInfoViewController.m */; };
 		A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */; };
 		A96470C0192E53570050646B /* DQNestedFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96470BF192E53570050646B /* DQNestedFixedViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
 		A979B25C18ECA21300776F88 /* DQUsingXcode1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A979B25B18ECA21300776F88 /* DQUsingXcode1ViewController.m */; };
 		A979B25F18ECA2CE00776F88 /* DQUsingXcode2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A979B25E18ECA2CE00776F88 /* DQUsingXcode2ViewController.m */; };
+		A983BDE919361EF400070619 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983BDEB19361EF400070619 /* MainStoryboard.storyboard */; };
 		A9981DAA192E4A2900CB0191 /* DQTraitInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9981DA9192E4A2900CB0191 /* DQTraitInfoViewController.m */; };
 		A9981DAD192E4B1700CB0191 /* DQTraitsExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */; };
 		A9A7B0F5192E4C40001FB256 /* DQTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* DQTraitsBrokenViewController.m */; };
@@ -67,9 +67,6 @@
 		0F158F2418D21FA200B34CC7 /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = iosFireEyesInstructions/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
-		0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = iosFireEyesInstructions/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0F389DFB19361FD700189526 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0F389DFC19361FD700189526 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A91D01E7192E54F300EA7137 /* DQNextedInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNextedInfoViewController.h; sourceTree = "<group>"; };
 		A91D01E8192E54F300EA7137 /* DQNextedInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNextedInfoViewController.m; sourceTree = "<group>"; };
 		A945B83D18A95D5C006896D8 /* DQFixIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQFixIssuesViewController.h; sourceTree = "<group>"; };
@@ -82,6 +79,9 @@
 		A979B25B18ECA21300776F88 /* DQUsingXcode1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUsingXcode1ViewController.m; sourceTree = "<group>"; };
 		A979B25D18ECA2CE00776F88 /* DQUsingXcode2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUsingXcode2ViewController.h; sourceTree = "<group>"; };
 		A979B25E18ECA2CE00776F88 /* DQUsingXcode2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUsingXcode2ViewController.m; sourceTree = "<group>"; };
+		A983BDEA19361EF400070619 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A983BDEF1936214600070619 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A983BDF01936214600070619 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9981DA8192E4A2900CB0191 /* DQTraitInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTraitInfoViewController.h; sourceTree = "<group>"; };
 		A9981DA9192E4A2900CB0191 /* DQTraitInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTraitInfoViewController.m; sourceTree = "<group>"; };
 		A9981DAB192E4B1700CB0191 /* DQTraitsExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTraitsExampleViewController.h; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */,
-				0F28517218D3A38A00CE44BB /* MainStoryboard.storyboard */,
+				A983BDEB19361EF400070619 /* MainStoryboard.storyboard */,
 				A9D013C818A2DD4700DC6496 /* iosFireEyesInstructions */,
 				A9D013E118A2DD4700DC6496 /* iosFireEyesInstructionsTests */,
 				A9D013C118A2DD4700DC6496 /* Frameworks */,
@@ -207,7 +207,6 @@
 		A9D013C818A2DD4700DC6496 /* iosFireEyesInstructions */ = {
 			isa = PBXGroup;
 			children = (
-				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 				A9C2BABB18A95642001CB073 /* DQWorldSpaceViewController.h */,
 				A9C2BABC18A95642001CB073 /* DQWorldSpaceViewController.m */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
@@ -218,6 +217,7 @@
 				A9C2BAB318A94B54001CB073 /* DQLabalInformationViewController.m */,
 				A9C2BAB518A950A8001CB073 /* DQHintInformationViewController.h */,
 				A9C2BAB618A950A8001CB073 /* DQHintInformationViewController.m */,
+				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 				A9C2BAC118A9590B001CB073 /* DQAnalyzerAboutViewController.h */,
 				A9C2BAC218A9590B001CB073 /* DQAnalyzerAboutViewController.m */,
 				A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */,
@@ -355,7 +355,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				fr,
+				ja,
 			);
 			mainGroup = A9D013B618A2DD4700DC6496;
 			productRefGroup = A9D013C018A2DD4700DC6496 /* Products */;
@@ -377,7 +377,7 @@
 				A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
-				0F28517418D3A38A00CE44BB /* MainStoryboard.storyboard in Resources */,
+				A983BDE919361EF400070619 /* MainStoryboard.storyboard in Resources */,
 				0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
 			);
@@ -446,11 +446,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A983BDEB19361EF400070619 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A983BDEA19361EF400070619 /* en */,
+				A983BDEF1936214600070619 /* ja */,
+			);
+			name = MainStoryboard.storyboard;
+			path = iosFireEyesInstructions;
+			sourceTree = "<group>";
+		};
 		A9D013CB18A2DD4700DC6496 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A9D013CC18A2DD4700DC6496 /* en */,
-				0F389DFB19361FD700189526 /* fr */,
+				A983BDF01936214600070619 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -459,7 +469,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A9D013E518A2DD4700DC6496 /* en */,
-				0F389DFC19361FD700189526 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -483,6 +492,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Catherine Fisher (KRD5N26DXM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -503,6 +513,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -522,6 +533,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Catherine Fisher (KRD5N26DXM)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;

@@ -23,6 +23,7 @@
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
     IBOutlet UITextView *_TextView;
+    IBOutlet UILabel *_MusicLabel;
     
     AVAudioPlayer* _AudioPlayer;
 }
@@ -79,11 +80,11 @@
     if (error) NSLog(@"Error: %@", error);
     
     _AudioPlayer.numberOfLoops = 0;
-    _AudioPlayer.volume = 1000;
+    _AudioPlayer.volume = 50;
     
     [_AudioPlayer performSelector:@selector(stop) withObject:_AudioPlayer afterDelay:5];
     
-    if ([_AudioPlayer play]) NSLog(@"Shoudl be playing");
+    if ([_AudioPlayer play]) NSLog(@"Should be playing");
 }
 
 - (void)didReceiveMemoryWarning

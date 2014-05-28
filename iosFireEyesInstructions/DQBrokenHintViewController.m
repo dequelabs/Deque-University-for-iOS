@@ -21,6 +21,7 @@
     IBOutlet UILabel *_SSB;
     IBOutlet UILabel *_AG;
     IBOutlet UILabel *_SITR;
+    IBOutlet UILabel *_MusicLabel;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
