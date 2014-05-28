@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [_TextView setText:@"Remember our music player?  In this view we have added a parent view around our entire player.  This is a very reasonable separation of functionality"];
 }
 
 - (void)didReceiveMemoryWarning
