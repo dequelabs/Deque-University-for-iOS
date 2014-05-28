@@ -32,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:@"Notice the last button appropriate has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interraction).  To enable both the button and link traits is redundant and unnecessary."];
+    [_TextView setText:@"Notice the last button appropriately has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interraction).  To enable both the button and link traits is redundant and unnecessary."];
 }
 
 - (void)didReceiveMemoryWarning
