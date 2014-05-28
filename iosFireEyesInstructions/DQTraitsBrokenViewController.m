@@ -18,9 +18,6 @@
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
     IBOutlet UITextView *_TextView;
-    IBOutlet UILabel *_SSB;
-    IBOutlet UILabel *_AG;
-    IBOutlet UILabel *_SITR;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:@"The button that is a link should have "];
+    [_TextView setText:@"Notice the last button appropriate has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interraction).  To enable both the button and link traits is redundant and unnecessary."];
 }
 
 - (void)didReceiveMemoryWarning

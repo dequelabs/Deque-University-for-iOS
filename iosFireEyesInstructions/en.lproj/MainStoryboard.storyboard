@@ -2296,7 +2296,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="OT8-tt-a7h"/>
                     <connections>
+                        <outlet property="_CatDisplay" destination="rIA-pF-bsM" id="uRh-JX-bzF"/>
+                        <outlet property="_CatLabel" destination="XvD-Mp-bCS" id="yBl-Xz-jz3"/>
+                        <outlet property="_DogDisplay" destination="rFz-x4-xzn" id="LeX-8l-dWi"/>
+                        <outlet property="_DogLabel" destination="ekp-jP-N6S" id="wct-3t-NHw"/>
                         <outlet property="_ExampleLabel" destination="yoB-cT-Nyz" id="v3C-CP-i35"/>
+                        <outlet property="_FishDisplay" destination="c15-PN-Bfy" id="yKq-G2-aEx"/>
+                        <outlet property="_FishLabel" destination="vgV-hX-XLN" id="K4b-V4-AWM"/>
+                        <outlet property="_ImageView" destination="NNd-rg-eQw" id="8vG-t0-pmb"/>
                         <outlet property="_TextView" destination="rJH-TI-vbH" id="iti-As-eFY"/>
                     </connections>
                 </viewController>
@@ -2326,12 +2333,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-jG-Uoj">
-                                <rect key="frame" x="19" y="125" width="730" height="125"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw6-jG-Uoj">
+                                <rect key="frame" x="19" y="125" width="730" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="iBQ-6W-N7K"/>
+                                    <constraint firstAttribute="height" constant="140" id="iBQ-6W-N7K"/>
                                     <constraint firstAttribute="width" constant="730" id="q3L-Vn-9Qj"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -2371,7 +2378,7 @@
                                 </items>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-Ze-YyF">
-                                <rect key="frame" x="510" y="663" width="105" height="36"/>
+                                <rect key="frame" x="510" y="678" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Dog"/>
                                 <constraints>
@@ -2384,7 +2391,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iP-VJ-yMY">
-                                <rect key="frame" x="510" y="835" width="105" height="36"/>
+                                <rect key="frame" x="510" y="850" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Fish">
                                     <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
@@ -2399,7 +2406,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYd-ew-b0n">
-                                <rect key="frame" x="530" y="749" width="65" height="36"/>
+                                <rect key="frame" x="530" y="764" width="65" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Cat">
                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
@@ -2414,7 +2421,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3sc-cB-sBw">
-                                <rect key="frame" x="232" y="305" width="305" height="258"/>
+                                <rect key="frame" x="232" y="320" width="305" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="258" id="DJn-KN-hIT"/>
@@ -3237,25 +3244,25 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wHQ-gz-Qtz"/>
+        <segue reference="UhZ-iU-51M"/>
+        <segue reference="8Do-nl-BYE"/>
+        <segue reference="Ne0-cQ-JD2"/>
+        <segue reference="jnI-LL-CIG"/>
+        <segue reference="mwe-Jx-tAa"/>
+        <segue reference="VP8-vz-fW4"/>
+        <segue reference="FQY-ib-6CF"/>
+        <segue reference="u58-Kd-TTR"/>
+        <segue reference="uIc-ef-HfQ"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="PZc-WP-kc6"/>
+        <segue reference="08U-1X-q0h"/>
+        <segue reference="z6N-cc-GpK"/>
+        <segue reference="xMU-mh-vO6"/>
+        <segue reference="MXs-d8-MkT"/>
+        <segue reference="3TP-1z-LJT"/>
+        <segue reference="6H5-9z-Q6I"/>
         <segue reference="Tw5-3C-3bJ"/>
         <segue reference="dX3-nh-UAe"/>
         <segue reference="h3v-ou-QF6"/>
-        <segue reference="R3j-Nu-A5c"/>
-        <segue reference="FQY-ib-6CF"/>
-        <segue reference="UhZ-iU-51M"/>
-        <segue reference="Vzm-jV-Vc2"/>
-        <segue reference="u58-Kd-TTR"/>
-        <segue reference="6H5-9z-Q6I"/>
-        <segue reference="3TP-1z-LJT"/>
-        <segue reference="MXs-d8-MkT"/>
-        <segue reference="xMU-mh-vO6"/>
-        <segue reference="z6N-cc-GpK"/>
-        <segue reference="PZc-WP-kc6"/>
-        <segue reference="08U-1X-q0h"/>
-        <segue reference="wca-Fg-bfg"/>
-        <segue reference="uIc-ef-HfQ"/>
-        <segue reference="a32-rH-blQ"/>
-        <segue reference="jnI-LL-CIG"/>
     </inferredMetricsTieBreakers>
 </document>
