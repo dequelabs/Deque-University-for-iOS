@@ -35,7 +35,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [_TextView setText:@"Here we have removed the unnecessary traits to clarify the purpose of the last button.  There are many examples of traits that should not be paired together."];
 }
 
 - (void)didReceiveMemoryWarning
