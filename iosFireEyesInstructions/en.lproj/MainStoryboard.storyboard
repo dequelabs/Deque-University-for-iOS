@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -31,7 +31,7 @@
                                     <segue destination="AfZ-OT-xRb" kind="modal" modalTransitionStyle="flipHorizontal" id="gUf-Ix-g4E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-bJ-lYw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p8-bJ-lYw">
                                 <rect key="frame" x="190" y="587" width="388" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -39,14 +39,13 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="What is the Analyzer?">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="oiS-P8-OUq" kind="modal" modalTransitionStyle="flipHorizontal" id="31H-10-YkE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-uR-5ne">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-uR-5ne">
                                 <rect key="frame" x="190" y="729" width="388" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -54,7 +53,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="How it Works">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -713,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJo-th-I8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2543" y="1091"/>
+            <point key="canvasLocation" x="2639" y="1099"/>
         </scene>
         <!--Fix Issues View Controller - FixIssues-->
         <scene sceneID="Mwb-GA-RxT">
@@ -2888,6 +2886,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="y90-pT-28L" firstAttribute="leading" secondItem="sjG-eG-e3s" secondAttribute="leading" id="36V-Iv-ruV"/>
                             <constraint firstItem="95O-Bz-j5E" firstAttribute="centerY" secondItem="FOZ-q3-aN0" secondAttribute="centerY" id="3AH-yp-zIf"/>
@@ -3234,25 +3235,25 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gUf-Ix-g4E"/>
-        <segue reference="nba-Wj-6tl"/>
-        <segue reference="31H-10-YkE"/>
-        <segue reference="2br-yw-scn"/>
-        <segue reference="twA-EV-WsD"/>
-        <segue reference="vMD-pt-kZa"/>
-        <segue reference="I54-zs-vd0"/>
-        <segue reference="mao-IN-Jc0"/>
-        <segue reference="3TP-1z-LJT"/>
-        <segue reference="FQY-ib-6CF"/>
-        <segue reference="u58-Kd-TTR"/>
-        <segue reference="fQB-wd-wwe"/>
+        <segue reference="wHQ-gz-Qtz"/>
         <segue reference="Tw5-3C-3bJ"/>
-        <segue reference="edH-UC-6Uv"/>
+        <segue reference="dX3-nh-UAe"/>
+        <segue reference="h3v-ou-QF6"/>
+        <segue reference="R3j-Nu-A5c"/>
+        <segue reference="FQY-ib-6CF"/>
+        <segue reference="UhZ-iU-51M"/>
+        <segue reference="Vzm-jV-Vc2"/>
+        <segue reference="u58-Kd-TTR"/>
+        <segue reference="6H5-9z-Q6I"/>
+        <segue reference="3TP-1z-LJT"/>
+        <segue reference="MXs-d8-MkT"/>
+        <segue reference="xMU-mh-vO6"/>
         <segue reference="z6N-cc-GpK"/>
-        <segue reference="jAl-dR-OpY"/>
-        <segue reference="8Do-nl-BYE"/>
+        <segue reference="PZc-WP-kc6"/>
+        <segue reference="08U-1X-q0h"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="uIc-ef-HfQ"/>
         <segue reference="a32-rH-blQ"/>
         <segue reference="jnI-LL-CIG"/>
-        <segue reference="PZc-WP-kc6"/>
     </inferredMetricsTieBreakers>
 </document>
