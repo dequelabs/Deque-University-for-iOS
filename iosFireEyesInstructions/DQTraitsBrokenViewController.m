@@ -18,6 +18,7 @@
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
     IBOutlet UITextView *_TextView;
+    IBOutlet UIImageView *_ImageView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

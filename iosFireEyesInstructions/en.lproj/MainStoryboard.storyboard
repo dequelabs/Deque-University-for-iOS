@@ -2296,7 +2296,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="OT8-tt-a7h"/>
                     <connections>
+                        <outlet property="_CatDisplay" destination="rIA-pF-bsM" id="1JH-RA-2gK"/>
+                        <outlet property="_CatLabel" destination="XvD-Mp-bCS" id="ffm-tr-9o1"/>
+                        <outlet property="_DogDisplay" destination="rFz-x4-xzn" id="p6J-0k-uya"/>
+                        <outlet property="_DogLabel" destination="ekp-jP-N6S" id="K4M-ze-yc7"/>
                         <outlet property="_ExampleLabel" destination="yoB-cT-Nyz" id="v3C-CP-i35"/>
+                        <outlet property="_FishDisplay" destination="c15-PN-Bfy" id="c3W-i6-khG"/>
+                        <outlet property="_FishLabel" destination="vgV-hX-XLN" id="qHx-qY-pDd"/>
+                        <outlet property="_ImageView" destination="NNd-rg-eQw" id="0pN-JW-zdg"/>
                         <outlet property="_TextView" destination="rJH-TI-vbH" id="iti-As-eFY"/>
                     </connections>
                 </viewController>
@@ -2446,6 +2453,10 @@
                     <navigationItem key="navigationItem" id="dkc-4y-kBV"/>
                     <connections>
                         <outlet property="_BrokenFixedLabel" destination="WFG-eC-fCB" id="NsE-Kk-jpg"/>
+                        <outlet property="_CatDisplay" destination="nYd-ew-b0n" id="Pf4-fy-ADW"/>
+                        <outlet property="_DogDisplay" destination="QQJ-Ze-YyF" id="NuN-YL-9l1"/>
+                        <outlet property="_FishDisplay" destination="7iP-VJ-yMY" id="Uwc-qe-SSa"/>
+                        <outlet property="_ImageView" destination="3sc-cB-sBw" id="uby-9b-eTs"/>
                         <outlet property="_TextView" destination="yw6-jG-Uoj" id="j7k-D1-bRn"/>
                     </connections>
                 </viewController>
@@ -2591,6 +2602,10 @@
                     <navigationItem key="navigationItem" id="bwe-dD-hzX"/>
                     <connections>
                         <outlet property="_BrokenFixedLabel" destination="0Kd-Dn-WN9" id="LJ2-hj-lGw"/>
+                        <outlet property="_CatDisplay" destination="uLl-lM-f8L" id="OlP-bc-eNQ"/>
+                        <outlet property="_DogDisplay" destination="Kce-bV-RyB" id="bT3-Wz-5nj"/>
+                        <outlet property="_FishDisplay" destination="GZM-rk-frJ" id="cBl-2b-x16"/>
+                        <outlet property="_ImageView" destination="Xfj-1V-bi8" id="Zxu-QU-PRs"/>
                         <outlet property="_TextView" destination="diL-hg-odj" id="tLX-ei-kcR"/>
                     </connections>
                 </viewController>
@@ -2660,68 +2675,92 @@
                                     <barButtonItem enabled="NO" title="Next >" id="lWj-2g-vXn"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWo-o5-8tu">
-                                <rect key="frame" x="225" y="399" width="90" height="90"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRq-WF-1UC">
+                                <rect key="frame" x="184" y="373" width="400" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Star Spangled Banner"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zld-fm-Vk9">
+                                        <rect key="frame" x="42" y="20" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Star Spangled Banner"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="GbE-lP-HIL"/>
+                                            <constraint firstAttribute="height" constant="90" id="lhV-NV-JH1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="button.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJP-A0-thQ">
+                                        <rect key="frame" x="42" y="280" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Singin in the Rain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="U6s-4f-15R"/>
+                                            <constraint firstAttribute="height" constant="90" id="syi-dN-6ey"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="button.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOf-C0-SvV">
+                                        <rect key="frame" x="42" y="150" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Amazing Grace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="0tO-eP-wTL"/>
+                                            <constraint firstAttribute="width" constant="90" id="3KM-Y3-PDP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="button.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsF-2d-4eM">
+                                        <rect key="frame" x="157" y="312" width="161" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HkB-Cf-dhV">
+                                        <rect key="frame" x="157" y="182" width="142" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5Q-D6-7RH">
+                                        <rect key="frame" x="157" y="52" width="204" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="E1z-n6-heP"/>
-                                    <constraint firstAttribute="width" constant="90" id="VbA-i1-RNY"/>
+                                    <constraint firstItem="W5Q-D6-7RH" firstAttribute="leading" secondItem="zld-fm-Vk9" secondAttribute="trailing" constant="25" id="65F-lS-z7J"/>
+                                    <constraint firstItem="zld-fm-Vk9" firstAttribute="leading" secondItem="qRq-WF-1UC" secondAttribute="leading" constant="42" id="6jh-js-Wuz"/>
+                                    <constraint firstItem="QOf-C0-SvV" firstAttribute="top" secondItem="zld-fm-Vk9" secondAttribute="bottom" constant="40" id="C79-5j-lFX"/>
+                                    <constraint firstItem="HkB-Cf-dhV" firstAttribute="centerY" secondItem="QOf-C0-SvV" secondAttribute="centerY" id="Egb-dc-cWv"/>
+                                    <constraint firstItem="QOf-C0-SvV" firstAttribute="leading" secondItem="qRq-WF-1UC" secondAttribute="leading" constant="42" id="Hh2-Le-5kv"/>
+                                    <constraint firstItem="zJP-A0-thQ" firstAttribute="top" secondItem="QOf-C0-SvV" secondAttribute="bottom" constant="40" id="Jxm-8I-1gP"/>
+                                    <constraint firstItem="ZsF-2d-4eM" firstAttribute="leading" secondItem="zJP-A0-thQ" secondAttribute="trailing" constant="25" id="MQS-xf-Xkj"/>
+                                    <constraint firstItem="zJP-A0-thQ" firstAttribute="leading" secondItem="qRq-WF-1UC" secondAttribute="leading" constant="42" id="P5P-Vd-ehs"/>
+                                    <constraint firstItem="ZsF-2d-4eM" firstAttribute="centerY" secondItem="zJP-A0-thQ" secondAttribute="centerY" id="REE-lT-lIg"/>
+                                    <constraint firstAttribute="width" constant="400" id="Zo2-mM-50H"/>
+                                    <constraint firstAttribute="bottom" secondItem="zJP-A0-thQ" secondAttribute="bottom" constant="20" id="e7c-M8-NBI"/>
+                                    <constraint firstItem="zld-fm-Vk9" firstAttribute="top" secondItem="qRq-WF-1UC" secondAttribute="top" constant="20" id="hIJ-lO-oOA"/>
+                                    <constraint firstItem="HkB-Cf-dhV" firstAttribute="leading" secondItem="QOf-C0-SvV" secondAttribute="trailing" constant="25" id="hnm-rN-RTB"/>
+                                    <constraint firstAttribute="height" constant="390" id="t3L-oy-fbU"/>
+                                    <constraint firstItem="zld-fm-Vk9" firstAttribute="centerY" secondItem="W5Q-D6-7RH" secondAttribute="centerY" id="y96-2m-GmZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="button.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nza-kR-YYg">
-                                <rect key="frame" x="225" y="659" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Singin in the Rain"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="SLe-1U-zC6"/>
-                                    <constraint firstAttribute="width" constant="90" id="oj9-fs-qRK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="button.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xj-zU-GdH">
-                                <rect key="frame" x="225" y="529" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Amazing Grace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Edv-3e-j57"/>
-                                    <constraint firstAttribute="width" constant="90" id="Prh-fa-Tg1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="button.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4p-mS-euk">
-                                <rect key="frame" x="340" y="431" width="204" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-rI-god">
-                                <rect key="frame" x="340" y="691" width="161" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JT-Gh-zib">
-                                <rect key="frame" x="340" y="561" width="142" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-oK-iEL">
-                                <rect key="frame" x="281" y="312" width="320" height="63"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-oK-iEL">
+                                <rect key="frame" x="224" y="312" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="2YC-tH-70o"/>
@@ -2735,37 +2774,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NBf-cE-1ON" firstAttribute="top" secondItem="Jea-jy-WlC" secondAttribute="bottom" id="3we-VX-idr"/>
-                            <constraint firstItem="Nza-kR-YYg" firstAttribute="centerY" secondItem="cy7-rI-god" secondAttribute="centerY" id="4SS-zV-La0"/>
-                            <constraint firstItem="lWo-o5-8tu" firstAttribute="centerY" secondItem="y4p-mS-euk" secondAttribute="centerY" id="5Bd-Ql-egd"/>
                             <constraint firstItem="6dq-0O-8xH" firstAttribute="top" secondItem="U5u-Tr-fQe" secondAttribute="bottom" constant="25" id="8VD-6F-YjK"/>
-                            <constraint firstItem="8Xj-zU-GdH" firstAttribute="centerX" secondItem="Nza-kR-YYg" secondAttribute="centerX" id="B4b-49-XPh"/>
                             <constraint firstAttribute="trailing" secondItem="Jea-jy-WlC" secondAttribute="trailing" id="Ci3-Zs-tSM"/>
-                            <constraint firstItem="8Xj-zU-GdH" firstAttribute="top" secondItem="lWo-o5-8tu" secondAttribute="bottom" constant="40" id="EgA-wQ-L8W"/>
                             <constraint firstAttribute="centerX" secondItem="6dq-0O-8xH" secondAttribute="centerX" id="LGM-4h-bJE"/>
-                            <constraint firstItem="Nza-kR-YYg" firstAttribute="leading" secondItem="LrT-uM-ZnV" secondAttribute="leading" constant="225" id="Qcm-TU-bCO"/>
-                            <constraint firstItem="8Xj-zU-GdH" firstAttribute="centerY" secondItem="4JT-Gh-zib" secondAttribute="centerY" id="Vhc-gv-qtI"/>
                             <constraint firstItem="Jea-jy-WlC" firstAttribute="leading" secondItem="LrT-uM-ZnV" secondAttribute="leading" id="W6o-sv-NhI"/>
-                            <constraint firstAttribute="centerX" secondItem="Iq3-oK-iEL" secondAttribute="centerX" constant="-57" id="aQO-mk-UCQ"/>
-                            <constraint firstItem="cy7-rI-god" firstAttribute="leading" secondItem="4JT-Gh-zib" secondAttribute="leading" id="jrj-9c-gvW"/>
-                            <constraint firstItem="y4p-mS-euk" firstAttribute="leading" secondItem="lWo-o5-8tu" secondAttribute="trailing" constant="25" id="kCI-K6-MqO"/>
+                            <constraint firstAttribute="centerX" secondItem="Iq3-oK-iEL" secondAttribute="centerX" id="cgM-Od-zH7"/>
                             <constraint firstItem="D0P-Xq-mvr" firstAttribute="top" secondItem="6dq-0O-8xH" secondAttribute="bottom" constant="40" id="lHq-da-Bmj"/>
-                            <constraint firstItem="Nza-kR-YYg" firstAttribute="top" secondItem="8Xj-zU-GdH" secondAttribute="bottom" constant="40" id="qSY-SH-ac2"/>
-                            <constraint firstItem="y4p-mS-euk" firstAttribute="leading" secondItem="4JT-Gh-zib" secondAttribute="leading" id="rii-p9-SBL"/>
-                            <constraint firstItem="lWo-o5-8tu" firstAttribute="centerX" secondItem="8Xj-zU-GdH" secondAttribute="centerX" id="sMn-4t-zBL"/>
-                            <constraint firstItem="lWo-o5-8tu" firstAttribute="top" secondItem="Iq3-oK-iEL" secondAttribute="bottom" constant="24" id="sQc-wS-sVt"/>
                             <constraint firstAttribute="centerX" secondItem="D0P-Xq-mvr" secondAttribute="centerX" id="xwX-Ho-bhQ"/>
-                            <constraint firstItem="NBf-cE-1ON" firstAttribute="top" secondItem="Nza-kR-YYg" secondAttribute="bottom" constant="275" id="yf6-Mg-CCh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8kj-TR-zpj"/>
                     <connections>
-                        <outlet property="_AG" destination="4JT-Gh-zib" id="7lw-FO-eeI"/>
                         <outlet property="_BrokenFixedLabel" destination="6dq-0O-8xH" id="X6j-1P-PFy"/>
-                        <outlet property="_CatDisplay" destination="8Xj-zU-GdH" id="JM4-8q-m01"/>
-                        <outlet property="_DogDisplay" destination="lWo-o5-8tu" id="Gqt-WK-HpY"/>
-                        <outlet property="_FishDisplay" destination="Nza-kR-YYg" id="Q35-Ij-ieX"/>
-                        <outlet property="_SITR" destination="cy7-rI-god" id="KmL-MN-frS"/>
-                        <outlet property="_SSB" destination="y4p-mS-euk" id="xUW-aB-vwM"/>
                         <outlet property="_TextView" destination="D0P-Xq-mvr" id="G0A-fy-c2F"/>
                     </connections>
                 </viewController>
@@ -2795,45 +2815,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-cx-fhU">
-                                <rect key="frame" x="225" y="399" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Star Spangled Banner"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="VMX-iy-rfd"/>
-                                    <constraint firstAttribute="width" constant="90" id="gB4-Fb-zR9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="button.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpy-ng-CJL">
-                                <rect key="frame" x="225" y="659" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Singin in the Rain"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="d8r-yF-Cos"/>
-                                    <constraint firstAttribute="height" constant="90" id="eF4-kZ-GxD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="button.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-q3-aN0">
-                                <rect key="frame" x="225" y="529" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Amazing Grace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="WOj-YB-Uby"/>
-                                    <constraint firstAttribute="height" constant="90" id="svO-zm-L5D"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="button.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIY-en-sRf">
                                 <rect key="frame" x="19" y="125" width="730" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2878,29 +2859,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMr-Nt-SFW">
-                                <rect key="frame" x="340" y="431" width="204" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-rj-fZy">
-                                <rect key="frame" x="340" y="691" width="161" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95O-Bz-j5E">
-                                <rect key="frame" x="340" y="561" width="142" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHj-XL-shT">
-                                <rect key="frame" x="251" y="312" width="320" height="63"/>
+                                <rect key="frame" x="224" y="335" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="FqP-HX-ouG"/>
@@ -2910,31 +2870,104 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaP-27-r5C">
+                                <rect key="frame" x="184" y="402" width="400" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-cx-fhU">
+                                        <rect key="frame" x="42" y="20" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Star Spangled Banner"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="VMX-iy-rfd"/>
+                                            <constraint firstAttribute="width" constant="90" id="gB4-Fb-zR9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="button.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpy-ng-CJL">
+                                        <rect key="frame" x="42" y="280" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Singin in the Rain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="d8r-yF-Cos"/>
+                                            <constraint firstAttribute="height" constant="90" id="eF4-kZ-GxD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="button.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-q3-aN0">
+                                        <rect key="frame" x="42" y="150" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="Amazing Grace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="WOj-YB-Uby"/>
+                                            <constraint firstAttribute="height" constant="90" id="svO-zm-L5D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="button.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uh-rj-fZy">
+                                        <rect key="frame" x="157" y="312" width="161" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95O-Bz-j5E">
+                                        <rect key="frame" x="157" y="182" width="142" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMr-Nt-SFW">
+                                        <rect key="frame" x="157" y="52" width="204" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Lqb-cx-fhU" firstAttribute="top" secondItem="ZaP-27-r5C" secondAttribute="top" constant="20" id="1qT-r8-CQP"/>
+                                    <constraint firstItem="fpy-ng-CJL" firstAttribute="leading" secondItem="ZaP-27-r5C" secondAttribute="leading" constant="42" id="3ju-t1-x2h"/>
+                                    <constraint firstItem="lMr-Nt-SFW" firstAttribute="leading" secondItem="Lqb-cx-fhU" secondAttribute="trailing" constant="25" id="4Bu-FR-kqf"/>
+                                    <constraint firstItem="6Uh-rj-fZy" firstAttribute="centerY" secondItem="fpy-ng-CJL" secondAttribute="centerY" id="HUM-Qz-as4"/>
+                                    <constraint firstItem="FOZ-q3-aN0" firstAttribute="top" secondItem="Lqb-cx-fhU" secondAttribute="bottom" constant="40" id="LIc-o9-yWI"/>
+                                    <constraint firstItem="FOZ-q3-aN0" firstAttribute="leading" secondItem="ZaP-27-r5C" secondAttribute="leading" constant="42" id="TTa-LO-hlF"/>
+                                    <constraint firstItem="95O-Bz-j5E" firstAttribute="centerY" secondItem="FOZ-q3-aN0" secondAttribute="centerY" id="Vy8-bP-w1N"/>
+                                    <constraint firstItem="Lqb-cx-fhU" firstAttribute="leading" secondItem="ZaP-27-r5C" secondAttribute="leading" constant="42" id="WPW-G3-WsS"/>
+                                    <constraint firstItem="Lqb-cx-fhU" firstAttribute="centerY" secondItem="lMr-Nt-SFW" secondAttribute="centerY" id="XyP-bV-bL3"/>
+                                    <constraint firstAttribute="width" constant="400" id="YFf-nW-WDm"/>
+                                    <constraint firstAttribute="bottom" secondItem="fpy-ng-CJL" secondAttribute="bottom" constant="20" id="Z8K-wo-XNK"/>
+                                    <constraint firstItem="fpy-ng-CJL" firstAttribute="top" secondItem="FOZ-q3-aN0" secondAttribute="bottom" constant="40" id="hDU-QJ-Jr4"/>
+                                    <constraint firstAttribute="height" constant="390" id="nCB-h8-rbH"/>
+                                    <constraint firstItem="6Uh-rj-fZy" firstAttribute="leading" secondItem="fpy-ng-CJL" secondAttribute="trailing" constant="25" id="pQo-IM-RZU"/>
+                                    <constraint firstItem="95O-Bz-j5E" firstAttribute="leading" secondItem="FOZ-q3-aN0" secondAttribute="trailing" constant="25" id="r9X-24-zU2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y90-pT-28L" firstAttribute="leading" secondItem="sjG-eG-e3s" secondAttribute="leading" id="36V-Iv-ruV"/>
-                            <constraint firstItem="95O-Bz-j5E" firstAttribute="centerY" secondItem="FOZ-q3-aN0" secondAttribute="centerY" id="3AH-yp-zIf"/>
                             <constraint firstItem="cVM-fm-cpD" firstAttribute="centerX" secondItem="sjG-eG-e3s" secondAttribute="centerX" id="9iB-EU-wAV"/>
-                            <constraint firstAttribute="centerX" secondItem="QHj-XL-shT" secondAttribute="centerX" constant="-27" id="AWg-sX-vRL"/>
-                            <constraint firstItem="lMr-Nt-SFW" firstAttribute="leading" secondItem="Lqb-cx-fhU" secondAttribute="trailing" constant="25" id="D6f-4e-Rzh"/>
-                            <constraint firstItem="FOZ-q3-aN0" firstAttribute="top" secondItem="Lqb-cx-fhU" secondAttribute="bottom" constant="40" id="DQv-Wp-FBH"/>
                             <constraint firstItem="Zfb-cT-81F" firstAttribute="top" secondItem="y90-pT-28L" secondAttribute="bottom" id="Ipn-HR-Zej"/>
                             <constraint firstItem="xIY-en-sRf" firstAttribute="top" secondItem="cVM-fm-cpD" secondAttribute="bottom" constant="40" id="KES-oQ-zzx"/>
-                            <constraint firstItem="FOZ-q3-aN0" firstAttribute="centerX" secondItem="fpy-ng-CJL" secondAttribute="centerX" id="NgD-uz-2ae"/>
-                            <constraint firstItem="lMr-Nt-SFW" firstAttribute="centerY" secondItem="Lqb-cx-fhU" secondAttribute="centerY" id="TAn-nz-HHd"/>
-                            <constraint firstItem="Lqb-cx-fhU" firstAttribute="centerX" secondItem="FOZ-q3-aN0" secondAttribute="centerX" id="X1T-JX-7I2"/>
+                            <constraint firstAttribute="centerY" secondItem="ZaP-27-r5C" secondAttribute="centerY" constant="-85" id="O2c-g9-PTV"/>
+                            <constraint firstAttribute="centerX" secondItem="QHj-XL-shT" secondAttribute="centerX" id="R3W-Iu-JoI"/>
                             <constraint firstItem="cVM-fm-cpD" firstAttribute="top" secondItem="QgL-nk-d3h" secondAttribute="bottom" constant="25" id="YNH-Jp-S0J"/>
                             <constraint firstItem="cVM-fm-cpD" firstAttribute="centerX" secondItem="xIY-en-sRf" secondAttribute="centerX" id="bAQ-Py-Cne"/>
-                            <constraint firstItem="6Uh-rj-fZy" firstAttribute="leading" secondItem="95O-Bz-j5E" secondAttribute="leading" id="bFI-ke-v1C"/>
                             <constraint firstItem="cVM-fm-cpD" firstAttribute="centerX" secondItem="y90-pT-28L" secondAttribute="centerX" id="eL6-hR-Spf"/>
-                            <constraint firstItem="6Uh-rj-fZy" firstAttribute="leading" secondItem="fpy-ng-CJL" secondAttribute="trailing" constant="25" id="eaR-4b-p2w"/>
-                            <constraint firstItem="Lqb-cx-fhU" firstAttribute="top" secondItem="QHj-XL-shT" secondAttribute="bottom" constant="24" id="enV-6i-2Pd"/>
-                            <constraint firstItem="fpy-ng-CJL" firstAttribute="top" secondItem="FOZ-q3-aN0" secondAttribute="bottom" constant="40" id="gsA-G2-oHe"/>
-                            <constraint firstItem="Zfb-cT-81F" firstAttribute="top" secondItem="fpy-ng-CJL" secondAttribute="bottom" constant="275" id="nKM-st-avn"/>
-                            <constraint firstItem="Lqb-cx-fhU" firstAttribute="leading" secondItem="sjG-eG-e3s" secondAttribute="leading" constant="225" id="vyv-CQ-cRv"/>
-                            <constraint firstItem="6Uh-rj-fZy" firstAttribute="centerY" secondItem="fpy-ng-CJL" secondAttribute="centerY" id="wpg-te-Vtp"/>
-                            <constraint firstItem="lMr-Nt-SFW" firstAttribute="leading" secondItem="95O-Bz-j5E" secondAttribute="leading" id="zYb-YD-x65"/>
+                            <constraint firstItem="ZaP-27-r5C" firstAttribute="top" secondItem="QHj-XL-shT" secondAttribute="bottom" constant="4" id="i6R-cZ-JsX"/>
+                            <constraint firstAttribute="centerX" secondItem="ZaP-27-r5C" secondAttribute="centerX" constant="-0.5" id="xCx-G5-lrX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QBw-Ux-Qdt"/>
