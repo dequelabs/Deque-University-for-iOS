@@ -2208,10 +2208,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display a picture of a cat:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvD-Mp-bCS">
-                                <rect key="frame" x="160" y="774" width="270" height="26"/>
+                                <rect key="frame" x="160" y="774" width="250" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="F4Y-nT-ODm"/>
+                                    <constraint firstAttribute="width" constant="250" id="F4Y-nT-ODm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2220,6 +2220,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFz-x4-xzn">
                                 <rect key="frame" x="510" y="683" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82574728260869568" green="0.82574728260869568" blue="0.82574728260869568" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Dog"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="OYI-Qh-avo"/>
@@ -2233,7 +2234,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c15-PN-Bfy">
                                 <rect key="frame" x="510" y="855" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Fish"/>
+                                <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Fish">
+                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="IF4-U5-HML"/>
                                     <constraint firstAttribute="width" constant="105" id="f3t-uY-Vq6"/>
@@ -2244,13 +2247,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIA-pF-bsM">
-                                <rect key="frame" x="530" y="769" width="65" height="36"/>
+                                <rect key="frame" x="510" y="769" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82574728259999997" green="0.82574728259999997" blue="0.82574728259999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Cat">
                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="O1B-Fu-bln"/>
+                                    <constraint firstAttribute="width" constant="105" id="O1B-Fu-bln"/>
                                     <constraint firstAttribute="height" constant="36" id="aiR-ix-hEF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -2380,6 +2384,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-Ze-YyF">
                                 <rect key="frame" x="510" y="683" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82574728259999997" green="0.82574728259999997" blue="0.82574728259999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Dog"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="3WE-Dt-bBq"/>
@@ -2406,13 +2411,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYd-ew-b0n">
-                                <rect key="frame" x="530" y="769" width="65" height="36"/>
+                                <rect key="frame" x="510" y="769" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82574728259999997" green="0.82574728259999997" blue="0.82574728259999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Cat">
                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="iqA-XR-TVv"/>
+                                    <constraint firstAttribute="width" constant="105" id="iqA-XR-TVv"/>
                                     <constraint firstAttribute="height" constant="36" id="o3U-i3-wKW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -2433,7 +2439,7 @@
                         <constraints>
                             <constraint firstItem="WFG-eC-fCB" firstAttribute="top" secondItem="nGO-9U-SoT" secondAttribute="bottom" constant="25" id="085-Vb-xRW"/>
                             <constraint firstItem="QQJ-Ze-YyF" firstAttribute="top" secondItem="3sc-cB-sBw" secondAttribute="bottom" constant="100" id="Aap-wn-caC"/>
-                            <constraint firstItem="nYd-ew-b0n" firstAttribute="leading" secondItem="0H3-Rf-mSY" secondAttribute="leading" constant="530" id="AhB-MF-f25"/>
+                            <constraint firstItem="nYd-ew-b0n" firstAttribute="leading" secondItem="0H3-Rf-mSY" secondAttribute="leading" constant="510" id="AhB-MF-f25"/>
                             <constraint firstAttribute="centerX" secondItem="3sc-cB-sBw" secondAttribute="centerX" constant="-0.5" id="E64-94-JKU"/>
                             <constraint firstItem="K18-fp-JJL" firstAttribute="top" secondItem="3sc-cB-sBw" secondAttribute="bottom" constant="396" id="ECU-ad-qv7"/>
                             <constraint firstAttribute="centerX" secondItem="yw6-jG-Uoj" secondAttribute="centerX" id="FxX-Bn-5eb"/>
@@ -2533,6 +2539,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kce-bV-RyB">
                                 <rect key="frame" x="510" y="683" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82574728259999997" green="0.82574728259999997" blue="0.82574728259999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Dog"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="8s1-pJ-4ec"/>
@@ -2559,12 +2566,13 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLl-lM-f8L">
-                                <rect key="frame" x="530" y="769" width="65" height="36"/>
+                                <rect key="frame" x="510" y="769" width="105" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82574728259999997" green="0.82574728259999997" blue="0.82574728259999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Display a picture" label="Cat"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="02F-Tw-ywf"/>
-                                    <constraint firstAttribute="width" constant="65" id="UZC-nm-RyV"/>
+                                    <constraint firstAttribute="width" constant="105" id="UZC-nm-RyV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Cat">
@@ -2675,8 +2683,8 @@
                                     <barButtonItem enabled="NO" title="Next >" id="lWj-2g-vXn"/>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRq-WF-1UC">
-                                <rect key="frame" x="184" y="373" width="400" height="390"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRq-WF-1UC">
+                                <rect key="frame" x="184" y="402" width="400" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zld-fm-Vk9">
@@ -2741,6 +2749,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="This is a music player"/>
                                 <constraints>
                                     <constraint firstItem="W5Q-D6-7RH" firstAttribute="leading" secondItem="zld-fm-Vk9" secondAttribute="trailing" constant="25" id="65F-lS-z7J"/>
                                     <constraint firstItem="zld-fm-Vk9" firstAttribute="leading" secondItem="qRq-WF-1UC" secondAttribute="leading" constant="42" id="6jh-js-Wuz"/>
@@ -2759,8 +2768,8 @@
                                     <constraint firstItem="zld-fm-Vk9" firstAttribute="centerY" secondItem="W5Q-D6-7RH" secondAttribute="centerY" id="y96-2m-GmZ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-oK-iEL">
-                                <rect key="frame" x="224" y="312" width="320" height="63"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-oK-iEL">
+                                <rect key="frame" x="224" y="335" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="2YC-tH-70o"/>
@@ -2779,14 +2788,25 @@
                             <constraint firstAttribute="centerX" secondItem="6dq-0O-8xH" secondAttribute="centerX" id="LGM-4h-bJE"/>
                             <constraint firstItem="Jea-jy-WlC" firstAttribute="leading" secondItem="LrT-uM-ZnV" secondAttribute="leading" id="W6o-sv-NhI"/>
                             <constraint firstAttribute="centerX" secondItem="Iq3-oK-iEL" secondAttribute="centerX" id="cgM-Od-zH7"/>
+                            <constraint firstItem="qRq-WF-1UC" firstAttribute="top" secondItem="Iq3-oK-iEL" secondAttribute="bottom" constant="4" id="iA2-Oh-u3P"/>
                             <constraint firstItem="D0P-Xq-mvr" firstAttribute="top" secondItem="6dq-0O-8xH" secondAttribute="bottom" constant="40" id="lHq-da-Bmj"/>
+                            <constraint firstAttribute="centerY" secondItem="qRq-WF-1UC" secondAttribute="centerY" constant="-85" id="rJb-BL-BRi"/>
+                            <constraint firstAttribute="centerX" secondItem="qRq-WF-1UC" secondAttribute="centerX" id="wwu-w5-WN1"/>
                             <constraint firstAttribute="centerX" secondItem="D0P-Xq-mvr" secondAttribute="centerX" id="xwX-Ho-bhQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8kj-TR-zpj"/>
                     <connections>
-                        <outlet property="_BrokenFixedLabel" destination="6dq-0O-8xH" id="X6j-1P-PFy"/>
+                        <outlet property="_AGDisplay" destination="QOf-C0-SvV" id="wWT-cy-Nv2"/>
+                        <outlet property="_AGLabel" destination="HkB-Cf-dhV" id="AMm-MO-I17"/>
+                        <outlet property="_ExampleLabel" destination="6dq-0O-8xH" id="xzu-Hv-6Sx"/>
+                        <outlet property="_MusicPlayer" destination="Iq3-oK-iEL" id="4la-am-Orh"/>
+                        <outlet property="_SITRDisplay" destination="zJP-A0-thQ" id="3Ig-qh-kzV"/>
+                        <outlet property="_SITRLabel" destination="ZsF-2d-4eM" id="2M9-Tt-c33"/>
+                        <outlet property="_SSBDisplay" destination="zld-fm-Vk9" id="U6p-SL-jYc"/>
+                        <outlet property="_SSBLabel" destination="W5Q-D6-7RH" id="AeE-fD-eUx"/>
                         <outlet property="_TextView" destination="D0P-Xq-mvr" id="G0A-fy-c2F"/>
+                        <outlet property="_View" destination="qRq-WF-1UC" id="ueJ-LE-j8R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H47-ZC-hlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2936,6 +2956,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="This is a music player">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstItem="Lqb-cx-fhU" firstAttribute="top" secondItem="ZaP-27-r5C" secondAttribute="top" constant="20" id="1qT-r8-CQP"/>
                                     <constraint firstItem="fpy-ng-CJL" firstAttribute="leading" secondItem="ZaP-27-r5C" secondAttribute="leading" constant="42" id="3ju-t1-x2h"/>
@@ -2972,14 +2995,16 @@
                     </view>
                     <navigationItem key="navigationItem" id="QBw-Ux-Qdt"/>
                     <connections>
-                        <outlet property="_AG" destination="95O-Bz-j5E" id="TYG-wS-BRy"/>
-                        <outlet property="_BrokenFixedLabel" destination="cVM-fm-cpD" id="Bl0-Ve-INL"/>
-                        <outlet property="_CatDisplay" destination="FOZ-q3-aN0" id="v13-dN-Aw4"/>
-                        <outlet property="_DogDisplay" destination="Lqb-cx-fhU" id="6bq-H4-Vjc"/>
-                        <outlet property="_FishDisplay" destination="fpy-ng-CJL" id="I8M-X8-LB4"/>
-                        <outlet property="_SITR" destination="6Uh-rj-fZy" id="gtO-Kf-rvL"/>
-                        <outlet property="_SSB" destination="lMr-Nt-SFW" id="6l0-10-3HM"/>
-                        <outlet property="_TextView" destination="xIY-en-sRf" id="xKn-7f-N7y"/>
+                        <outlet property="_AGDisplay" destination="FOZ-q3-aN0" id="Qi7-XU-sx9"/>
+                        <outlet property="_AGLabel" destination="95O-Bz-j5E" id="PJg-8d-w6D"/>
+                        <outlet property="_ExampleLabel" destination="cVM-fm-cpD" id="coA-A9-Vqp"/>
+                        <outlet property="_MusicPlayer" destination="QHj-XL-shT" id="AUQ-Tv-apF"/>
+                        <outlet property="_SITRDisplay" destination="fpy-ng-CJL" id="TWd-se-0Lx"/>
+                        <outlet property="_SITRLabel" destination="6Uh-rj-fZy" id="VzX-r7-4iJ"/>
+                        <outlet property="_SSBDisplay" destination="Lqb-cx-fhU" id="72a-cw-bjV"/>
+                        <outlet property="_SSBLabel" destination="lMr-Nt-SFW" id="Hrt-M0-f2z"/>
+                        <outlet property="_TextView" destination="xIY-en-sRf" id="682-qu-6sO"/>
+                        <outlet property="_View" destination="ZaP-27-r5C" id="cAS-Ee-ooZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akw-7H-VtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3009,28 +3034,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hap-kU-Yal">
-                                <rect key="frame" x="339" y="431" width="204" height="26"/>
+                                <rect key="frame" x="340" y="454" width="204" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-Gy-w1i">
-                                <rect key="frame" x="339" y="691" width="161" height="26"/>
+                                <rect key="frame" x="340" y="714" width="161" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTE-Ve-vnh">
-                                <rect key="frame" x="339" y="561" width="142" height="26"/>
+                                <rect key="frame" x="340" y="584" width="142" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5l-h8-mV2">
-                                <rect key="frame" x="224" y="399" width="90" height="90"/>
+                                <rect key="frame" x="225" y="422" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Dog"/>
                                 <constraints>
@@ -3043,7 +3068,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSG-yS-neB">
-                                <rect key="frame" x="225" y="659" width="90" height="90"/>
+                                <rect key="frame" x="226" y="682" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Fish"/>
                                 <constraints>
@@ -3056,7 +3081,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY4-0A-2RS">
-                                <rect key="frame" x="224" y="529" width="90" height="90"/>
+                                <rect key="frame" x="225" y="552" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Cat"/>
                                 <constraints>
@@ -3113,7 +3138,7 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kn4-Zh-TFx">
-                                <rect key="frame" x="225" y="312" width="320" height="63"/>
+                                <rect key="frame" x="225" y="335" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="4Rl-za-H5X"/>
@@ -3130,13 +3155,12 @@
                             <constraint firstItem="SSG-yS-neB" firstAttribute="top" secondItem="RY4-0A-2RS" secondAttribute="bottom" constant="40" id="27m-KG-AfM"/>
                             <constraint firstItem="l3r-bc-0Xu" firstAttribute="leading" secondItem="m1b-Ky-Zde" secondAttribute="leading" id="2PK-1a-lOG"/>
                             <constraint firstAttribute="centerX" secondItem="Kn4-Zh-TFx" secondAttribute="centerX" constant="-1" id="2Ru-s7-OFj"/>
-                            <constraint firstItem="w5l-h8-mV2" firstAttribute="top" secondItem="Kn4-Zh-TFx" secondAttribute="bottom" constant="24" id="D3m-Wa-V19"/>
                             <constraint firstItem="hap-kU-Yal" firstAttribute="leading" secondItem="w5l-h8-mV2" secondAttribute="trailing" constant="25" id="Dxz-Op-1K8"/>
                             <constraint firstItem="SSG-yS-neB" firstAttribute="centerX" secondItem="RY4-0A-2RS" secondAttribute="centerX" constant="1" id="GH5-75-uVl"/>
+                            <constraint firstItem="SSG-yS-neB" firstAttribute="top" secondItem="YF8-Pf-ziI" secondAttribute="bottom" constant="662" id="KM0-c6-be5"/>
                             <constraint firstItem="jkr-a6-v0x" firstAttribute="top" secondItem="YF8-Pf-ziI" secondAttribute="bottom" constant="25" id="Oes-JX-TX2"/>
                             <constraint firstItem="fLz-fv-48X" firstAttribute="top" secondItem="l3r-bc-0Xu" secondAttribute="bottom" id="V5d-MV-1gY"/>
                             <constraint firstItem="SSG-yS-neB" firstAttribute="centerY" secondItem="zeN-Gy-w1i" secondAttribute="centerY" id="Y5k-gG-8WB"/>
-                            <constraint firstItem="fLz-fv-48X" firstAttribute="top" secondItem="SSG-yS-neB" secondAttribute="bottom" constant="275" id="aZT-7R-upu"/>
                             <constraint firstItem="RY4-0A-2RS" firstAttribute="top" secondItem="w5l-h8-mV2" secondAttribute="bottom" constant="40" id="aoY-1w-ucF"/>
                             <constraint firstItem="RY4-0A-2RS" firstAttribute="centerY" secondItem="XTE-Ve-vnh" secondAttribute="centerY" id="b7z-q7-sI6"/>
                             <constraint firstAttribute="centerX" secondItem="wY8-oZ-PSQ" secondAttribute="centerX" id="cHA-Uc-PRc"/>
@@ -3144,20 +3168,22 @@
                             <constraint firstItem="XTE-Ve-vnh" firstAttribute="left" secondItem="zeN-Gy-w1i" secondAttribute="left" id="eyx-w3-v9h"/>
                             <constraint firstItem="hap-kU-Yal" firstAttribute="leading" secondItem="XTE-Ve-vnh" secondAttribute="leading" id="goU-iD-PmE"/>
                             <constraint firstItem="wY8-oZ-PSQ" firstAttribute="top" secondItem="jkr-a6-v0x" secondAttribute="bottom" constant="40" id="hWj-jv-ggW"/>
-                            <constraint firstItem="SSG-yS-neB" firstAttribute="leading" secondItem="m1b-Ky-Zde" secondAttribute="leading" constant="225" id="jsJ-lX-vIx"/>
+                            <constraint firstItem="SSG-yS-neB" firstAttribute="leading" secondItem="m1b-Ky-Zde" secondAttribute="leading" constant="226" id="jsJ-lX-vIx"/>
+                            <constraint firstItem="w5l-h8-mV2" firstAttribute="top" secondItem="Kn4-Zh-TFx" secondAttribute="bottom" constant="24" id="mNN-yl-ndT"/>
                             <constraint firstAttribute="trailing" secondItem="l3r-bc-0Xu" secondAttribute="trailing" id="ync-Q2-Ays"/>
                             <constraint firstItem="w5l-h8-mV2" firstAttribute="centerY" secondItem="hap-kU-Yal" secondAttribute="centerY" id="zuv-eb-8Np"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mav-UE-f9P"/>
                     <connections>
-                        <outlet property="_CatDisplay" destination="RY4-0A-2RS" id="Qml-p3-uQS"/>
-                        <outlet property="_CatLabel" destination="XTE-Ve-vnh" id="8nr-NG-npu"/>
-                        <outlet property="_DogDisplay" destination="w5l-h8-mV2" id="i96-Nu-t6Q"/>
-                        <outlet property="_DogLabel" destination="hap-kU-Yal" id="aX7-jH-R8j"/>
+                        <outlet property="_AGDisplay" destination="RY4-0A-2RS" id="C0D-d7-oNR"/>
+                        <outlet property="_AGLabel" destination="XTE-Ve-vnh" id="NGK-bJ-gbp"/>
                         <outlet property="_ExampleLabel" destination="jkr-a6-v0x" id="rsg-Vo-xgg"/>
-                        <outlet property="_FishDisplay" destination="SSG-yS-neB" id="nul-Ro-kM4"/>
-                        <outlet property="_FishLabel" destination="zeN-Gy-w1i" id="iN5-Ei-vOb"/>
+                        <outlet property="_MusicPlayer" destination="Kn4-Zh-TFx" id="CD3-0X-yrm"/>
+                        <outlet property="_SITRDisplay" destination="SSG-yS-neB" id="8SZ-x0-MCe"/>
+                        <outlet property="_SITRLabel" destination="zeN-Gy-w1i" id="Ghk-5R-VzQ"/>
+                        <outlet property="_SSBDisplay" destination="w5l-h8-mV2" id="ncN-Ja-757"/>
+                        <outlet property="_SSBLabel" destination="hap-kU-Yal" id="uZj-QY-2k6"/>
                         <outlet property="_TextView" destination="wY8-oZ-PSQ" id="I3e-to-k5c"/>
                     </connections>
                 </viewController>
@@ -3244,7 +3270,7 @@
                                     <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="I31-n6-sTj"/>
                                     <barButtonItem title="Next >" id="WrN-0F-BgC">
                                         <connections>
-                                            <segue destination="0HQ-ms-7vw" kind="modal" modalTransitionStyle="crossDissolve" id="fQB-wd-wwe"/>
+                                            <segue destination="0HQ-ms-7vw" kind="modal" modalTransitionStyle="crossDissolve" id="wmU-9T-7oC"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -3303,17 +3329,17 @@
         <segue reference="z6N-cc-GpK"/>
         <segue reference="h3v-ou-QF6"/>
         <segue reference="dX3-nh-UAe"/>
-        <segue reference="iXB-5E-tzd"/>
-        <segue reference="N8w-NH-q4b"/>
-        <segue reference="FMA-yf-5AZ"/>
+        <segue reference="Tw5-3C-3bJ"/>
+        <segue reference="7sw-QS-Bcm"/>
+        <segue reference="fI5-sd-L76"/>
+        <segue reference="cJm-yu-tyg"/>
+        <segue reference="a32-rH-blQ"/>
+        <segue reference="8Do-nl-BYE"/>
+        <segue reference="UhZ-iU-51M"/>
         <segue reference="6H5-9z-Q6I"/>
         <segue reference="08U-1X-q0h"/>
         <segue reference="PZc-WP-kc6"/>
         <segue reference="wca-Fg-bfg"/>
         <segue reference="uIc-ef-HfQ"/>
-        <segue reference="jnI-LL-CIG"/>
-        <segue reference="a32-rH-blQ"/>
-        <segue reference="8Do-nl-BYE"/>
-        <segue reference="UhZ-iU-51M"/>
     </inferredMetricsTieBreakers>
 </document>
