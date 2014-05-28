@@ -14,13 +14,14 @@
 
 @implementation DQNestedExampleViewController {
     IBOutlet UILabel *_ExampleLabel;
-    IBOutlet UILabel *_DogLabel;
-    IBOutlet UILabel *_CatLabel;
-    IBOutlet UILabel *_FishLabel;
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UILabel *_SSBLabel;
+    IBOutlet UILabel *_AGLabel;
+    IBOutlet UILabel *_SITRLabel;
+    IBOutlet UIButton *_SSBDisplay;
+    IBOutlet UIButton *_AGDisplay;
+    IBOutlet UIButton *_SITRDisplay;
     IBOutlet UITextView *_TextView;
+    IBOutlet UILabel *_MusicPlayer;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

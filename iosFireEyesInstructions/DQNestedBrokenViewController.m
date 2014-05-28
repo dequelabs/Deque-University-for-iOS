@@ -13,14 +13,16 @@
 @end
 
 @implementation DQNestedBrokenViewController {
-    IBOutlet UILabel *_BrokenFixedLabel;
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UILabel *_ExampleLabel;
+    IBOutlet UILabel *_SSBLabel;
+    IBOutlet UILabel *_AGLabel;
+    IBOutlet UILabel *_SITRLabel;
+    IBOutlet UIButton *_SSBDisplay;
+    IBOutlet UIButton *_AGDisplay;
+    IBOutlet UIButton *_SITRDisplay;
     IBOutlet UITextView *_TextView;
-    IBOutlet UILabel *_SSB;
-    IBOutlet UILabel *_SITR;
-    IBOutlet UILabel *_AG;
+    IBOutlet UILabel *_MusicPlayer;
+    IBOutlet UIView *_View;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
