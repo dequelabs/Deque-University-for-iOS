@@ -52,14 +52,6 @@
     [_DogDisplay setAccessibilityLabel:@"Dog"];
     [_FishDisplay setAccessibilityLabel:@"Fish"];
     
-    [_CatDisplay setAccessibilityHint:@"Modify image display"];
-    [_FishDisplay setAccessibilityHint:@"Modify image display"];
-    [_DogDisplay setAccessibilityHint:@"Modify image display"];
-    
-    [_DogLabel setText:@"Display a picture of a dog:"];
-    [_CatLabel setText:@"Display a picture of a cat:"];
-    [_FishLabel setText:@"Display a picture of a fish:"];
-    
     [_DogLabel setIsAccessibilityElement:NO];
     [_CatLabel setIsAccessibilityElement:NO];
     [_FishLabel setIsAccessibilityElement:NO];

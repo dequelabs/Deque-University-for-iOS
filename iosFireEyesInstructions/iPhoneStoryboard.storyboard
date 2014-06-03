@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -233,6 +233,9 @@
                                 <rect key="frame" x="20" y="72" width="280" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="dFa-Vz-648"/>
                                     <constraint firstAttribute="width" constant="280" id="x9w-JD-HWI"/>
@@ -978,6 +981,9 @@
                                 <rect key="frame" x="20" y="80" width="280" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="E8F-5U-bab"/>
                                     <constraint firstAttribute="width" constant="280" id="hI4-BH-7K9"/>
@@ -1079,6 +1085,9 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clz-4o-8I1">
                                 <rect key="frame" x="91" y="210" width="139" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" summaryElement="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="bj6-eA-dHx"/>
                                     <constraint firstAttribute="width" constant="139" id="eM7-lv-e8a"/>
@@ -2527,24 +2536,24 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="9gY-0Y-92E"/>
-        <segue reference="KQe-BQ-Co9"/>
-        <segue reference="PM6-Cf-BhS"/>
-        <segue reference="xrs-zS-iJO"/>
-        <segue reference="hOF-zH-0ob"/>
-        <segue reference="Cs9-bg-IQg"/>
-        <segue reference="Bqa-GI-q3i"/>
-        <segue reference="YBY-vN-lWL"/>
-        <segue reference="ygi-Zc-Yh0"/>
         <segue reference="bUn-tt-TKI"/>
-        <segue reference="qlL-tW-iG0"/>
-        <segue reference="CsT-Bc-g7i"/>
-        <segue reference="7lG-Ct-qKN"/>
+        <segue reference="ygi-Zc-Yh0"/>
+        <segue reference="rFp-3n-y2b"/>
         <segue reference="odM-ea-apB"/>
         <segue reference="KKr-Vp-Ef2"/>
         <segue reference="hqi-jv-wsD"/>
         <segue reference="ZZV-ky-it9"/>
-        <segue reference="XoQ-ya-oDP"/>
+        <segue reference="14Z-8M-zfC"/>
+        <segue reference="0RT-Ui-Zus"/>
+        <segue reference="YBY-vN-lWL"/>
+        <segue reference="Bqa-GI-q3i"/>
+        <segue reference="aPf-Zd-7Rf"/>
+        <segue reference="KkH-3d-XTv"/>
+        <segue reference="KQe-BQ-Co9"/>
+        <segue reference="Cs9-bg-IQg"/>
+        <segue reference="PM6-Cf-BhS"/>
         <segue reference="R4k-dN-yQs"/>
+        <segue reference="qlL-tW-iG0"/>
+        <segue reference="7lG-Ct-qKN"/>
     </inferredMetricsTieBreakers>
 </document>

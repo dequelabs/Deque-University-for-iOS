@@ -38,7 +38,7 @@
     [_HintsButton setAccessibilityLabel:[[_HintsButton titleLabel] text]];
     [_HintsButton setAccessibilityHint:@"Open help content"];
 	
-    _TextView.text = @"When a user interracts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  This application aims to provide scenarios and descriptions in a way that helps you to understand the difficulties users with dissabilities have with interracting with iOS applications.  As well as, the techniques and conventions you can use to portray this information, using basic iOS APIs.";
+    _TextView.text = @"When a user interracts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  This application aims to provide scenarios and descriptions in a way that helps you to understand the difficulties users with dissabilities have with interracting with iOS applications,  as well as the techniques and conventions you can use to portray this information, using basic iOS APIs.";
     
     [_TextView setEditable:NO];
 }

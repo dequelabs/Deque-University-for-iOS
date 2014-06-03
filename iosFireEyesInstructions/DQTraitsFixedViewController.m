@@ -49,10 +49,6 @@
     [_DogDisplay setAccessibilityLabel:@"Dog"];
     [_FishDisplay setAccessibilityLabel:@"Fish"];
     
-    [_CatDisplay setAccessibilityHint:@"Modify image display"];
-    [_FishDisplay setAccessibilityHint:@"Modify image display"];
-    [_DogDisplay setAccessibilityHint:@"Modify image display"];
-    
     [_TextView setEditable:NO];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
