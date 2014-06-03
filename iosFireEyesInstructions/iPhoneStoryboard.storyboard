@@ -2295,7 +2295,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGx-EI-hxz">
                                 <rect key="frame" x="50" y="248" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star Spangled Banner"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="GN8-sI-GAW"/>
                                     <constraint firstAttribute="width" constant="45" id="bX6-iI-p5I"/>
@@ -2308,7 +2308,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-yk-BvI">
                                 <rect key="frame" x="50" y="398" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Fish"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Ee0-an-kSV"/>
                                     <constraint firstAttribute="width" constant="45" id="Qtc-h5-KH6"/>
@@ -2321,7 +2321,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2Z-IY-U8c">
                                 <rect key="frame" x="50" y="323" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Cat"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing Grace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6Hm-vw-VaM"/>
                                     <constraint firstAttribute="width" constant="45" id="NWL-Tv-HTr"/>
@@ -2639,7 +2639,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgJ-9W-eji">
                                         <rect key="frame" x="5" y="5" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="DWR-b2-Rl2"/>
                                             <constraint firstAttribute="width" constant="45" id="ygX-el-cF7"/>
@@ -2652,7 +2652,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSn-d6-1Wo">
                                         <rect key="frame" x="5" y="155" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration" label="Fish"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="QJ7-6u-g6A"/>
                                             <constraint firstAttribute="height" constant="45" id="k24-8g-dJy"/>
@@ -2665,7 +2665,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry1-my-vJU">
                                         <rect key="frame" x="5" y="80" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration" label="Cat"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="bBW-ON-2ks"/>
                                             <constraint firstAttribute="width" constant="45" id="mZP-hx-agz"/>
@@ -2677,6 +2677,9 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="This is a music player">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="1Uc-Ww-LuC"/>
                                     <constraint firstItem="DgJ-9W-eji" firstAttribute="leading" secondItem="5y4-WF-xZ4" secondAttribute="leading" constant="5" id="4mG-dZ-eHd"/>
@@ -2778,7 +2781,7 @@
                                 <rect key="frame" x="230" y="470" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" hint="Visit a webpage" label="Fish">
-                                    <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
                                 </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="D7l-g3-CwO"/>
@@ -2962,7 +2965,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-vH-j1M">
                                         <rect key="frame" x="5" y="5" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration" label="Dog"/>
+                                        <accessibility key="accessibilityConfiguration" label="Star spangled banner"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="awK-T0-Z0r"/>
                                             <constraint firstAttribute="height" constant="45" id="voi-ZZ-VDl"/>
@@ -2975,7 +2978,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8J-T9-qHr">
                                         <rect key="frame" x="5" y="155" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration" label="Fish"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="g9R-wo-19J"/>
                                             <constraint firstAttribute="width" constant="45" id="gwS-Hu-j6O"/>
@@ -2988,7 +2991,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsH-6o-4dk">
                                         <rect key="frame" x="5" y="80" width="45" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration" label="Cat"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="45" id="LpH-Qj-Qu6"/>
                                             <constraint firstAttribute="height" constant="45" id="VVi-Wg-gbr"/>
@@ -3081,20 +3084,20 @@
         <segue reference="7lG-Ct-qKN"/>
         <segue reference="FLZ-Vf-p7f"/>
         <segue reference="jdG-gT-fhw"/>
-        <segue reference="qlL-tW-iG0"/>
-        <segue reference="v8n-8H-AN0"/>
-        <segue reference="6Ow-Am-KL9"/>
-        <segue reference="9gY-0Y-92E"/>
-        <segue reference="Cs9-bg-IQg"/>
-        <segue reference="CsT-Bc-g7i"/>
-        <segue reference="iTD-XV-rBk"/>
-        <segue reference="KKr-Vp-Ef2"/>
+        <segue reference="kqE-kO-wIS"/>
+        <segue reference="Bqa-GI-q3i"/>
         <segue reference="hqi-jv-wsD"/>
+        <segue reference="KKr-Vp-Ef2"/>
+        <segue reference="iTD-XV-rBk"/>
+        <segue reference="CsT-Bc-g7i"/>
+        <segue reference="Cs9-bg-IQg"/>
+        <segue reference="PFE-cz-Sge"/>
         <segue reference="ZZV-ky-it9"/>
         <segue reference="IeC-Ka-UDm"/>
         <segue reference="XoQ-ya-oDP"/>
-        <segue reference="kqE-kO-wIS"/>
-        <segue reference="Bqa-GI-q3i"/>
         <segue reference="vso-JF-a4F"/>
+        <segue reference="v8n-8H-AN0"/>
+        <segue reference="70D-0D-TmX"/>
+        <segue reference="6Ow-Am-KL9"/>
     </inferredMetricsTieBreakers>
 </document>
