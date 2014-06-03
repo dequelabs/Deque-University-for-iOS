@@ -17,6 +17,8 @@
     IBOutlet UITextView *_TextView;
     IBOutlet UIButton *_LabelsButton;
     IBOutlet UIButton *_HintsButton;
+    IBOutlet UIButton *_TraitsButton;
+    IBOutlet UIButton *_NestedButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -13,13 +13,13 @@
 @end
 
 @implementation DQTraitInfoViewController {
-    IBOutlet UILabel *_traitsLabel;
-    IBOutlet UITextView *_textView1;
-    IBOutlet UITextView *_textView2;
-    IBOutlet UILabel *_whatLabel;
-    IBOutlet UILabel *_whyLabel;
-    IBOutlet UIImageView *_imageView;
-    
+    IBOutlet UILabel *_TitleLabel;
+    IBOutlet UITextView *_TextView1;
+    IBOutlet UITextView *_TextView2;
+    IBOutlet UILabel *_WhatTrait;
+    IBOutlet UILabel *_ImportantLabel;
+    IBOutlet UIImageView *_ImageView;
+    IBOutlet UIScrollView *_ScrollView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,9 +34,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_textView1 setText:@"Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably."];
+    [_TextView1 setText:@"Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably."];
     
-    [_textView2 setText:@"When a sighted user uses an application, they get hints about what UI Elements do based on their appearance.  Traits help communicate this same information to non-sighted users."];
+    [_TextView2 setText:@"When a sighted user uses an application, they get hints about what UI Elements do based on their appearance.  Traits help communicate this same information to non-sighted users."];
     
     // Do any additional setup after loading the view.
 }

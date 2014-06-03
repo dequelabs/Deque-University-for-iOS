@@ -16,14 +16,14 @@
 
 @implementation DQFixedHintViewController {
     IBOutlet UILabel *_BrokenFixedLabel;
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UIButton *_SSBDisplay;
+    IBOutlet UIButton *_AGDisplay;
+    IBOutlet UIButton *_SITRDisplay;
     IBOutlet UITextView *_TextView;
-    IBOutlet UILabel *_SSB;
-    IBOutlet UILabel *_SITR;
-    IBOutlet UILabel *_AG;
-    IBOutlet UILabel *_MusicLabel;
+    IBOutlet UILabel *_SSBLabel;
+    IBOutlet UILabel *_SITRLabel;
+    IBOutlet UILabel *_AGLabel;
+    IBOutlet UILabel *_MusicPlayer;
     
     AVAudioPlayer* _AudioPlayer;
 }
@@ -44,24 +44,24 @@
     [_TextView setEditable:NO];
     [_TextView setText:@"Now we have added the hint information back onto the buttons.  With these hints, you know that 'Star Spangled Banner' is a song that is going to be played, and not a website that will be visited for further information."];
     
-    [_DogDisplay setAccessibilityLabel:@"Star Spangled Banner"];
-    [_DogDisplay setAccessibilityHint:@"Plays Song"];
-    [_DogDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_SSBDisplay setAccessibilityLabel:@"Star Spangled Banner"];
+    [_SSBDisplay setAccessibilityHint:@"Plays Song"];
+    [_SSBDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
     
-    [_CatDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_CatDisplay setAccessibilityHint:@"Plays Song"];
-    [_CatDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
+    [_AGDisplay setAccessibilityHint:@"Plays Song"];
+    [_AGDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
     
-    [_FishDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_FishDisplay setAccessibilityHint:@"Plays Song"];
-    [_FishDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
+    [_SITRDisplay setAccessibilityHint:@"Plays Song"];
+    [_SITRDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
-    [_SSB setIsAccessibilityElement:false];
+    [_SSBLabel setIsAccessibilityElement:false];
     
-    [_AG setIsAccessibilityElement:false];
+    [_AGLabel setIsAccessibilityElement:false];
     
-    [_SITR setIsAccessibilityElement:false];
+    [_SITRLabel setIsAccessibilityElement:false];
     
 }
 
@@ -72,9 +72,9 @@
     UIButton* button = (UIButton*)sender;
     NSString* song = nil;
     
-    if (button == _DogDisplay) {
+    if (button == _SSBDisplay) {
         song = @"SSB";
-    } else if (button == _CatDisplay) {
+    } else if (button == _AGDisplay) {
         song = @"AG";
     } else {
         song = @"SIR";

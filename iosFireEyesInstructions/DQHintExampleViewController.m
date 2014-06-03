@@ -16,14 +16,14 @@
 
 @implementation DQHintExampleViewController {
     IBOutlet UILabel *_ExampleLabel;
-    IBOutlet UILabel *_DogLabel;
-    IBOutlet UILabel *_CatLabel;
-    IBOutlet UILabel *_FishLabel;
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UILabel *_SSBLabel;
+    IBOutlet UILabel *_AGLabel;
+    IBOutlet UILabel *_SITRLabel;
+    IBOutlet UIButton *_SSBDisplay;
+    IBOutlet UIButton *_AGDisplay;
+    IBOutlet UIButton *_SITRDisplay;
     IBOutlet UITextView *_TextView;
-    IBOutlet UILabel *_MusicLabel;
+    IBOutlet UILabel *_MusicPlayer;
     
     AVAudioPlayer* _AudioPlayer;
 }
@@ -39,22 +39,22 @@
     [_TextView setEditable:NO];
     [_TextView setText:@"Notice how the visual cues, like the title \"Music Player\" and the style of the \"Play Buttons\" provide context.  Because of these visual cues we already know what these buttons do."];
     
-    [_FishDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_CatDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_DogDisplay setAccessibilityLabel:@"Star Spangled Banner"];
+    [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
+    [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
+    [_SSBDisplay setAccessibilityLabel:@"Star Spangled Banner"];
     
-    [_FishDisplay setAccessibilityHint:@"Plays Music"];
-    [_DogDisplay setAccessibilityHint:@"Plays Music"];
-    [_CatDisplay setAccessibilityHint:@"Plays Music"];
+    [_SITRDisplay setAccessibilityHint:@"Plays Music"];
+    [_SSBDisplay setAccessibilityHint:@"Plays Music"];
+    [_AGDisplay setAccessibilityHint:@"Plays Music"];
     
-    [_DogLabel setIsAccessibilityElement:NO];
-    [_CatLabel setIsAccessibilityElement:NO];
-    [_FishLabel setIsAccessibilityElement:NO];
+    [_SSBLabel setIsAccessibilityElement:NO];
+    [_AGLabel setIsAccessibilityElement:NO];
+    [_SITRLabel setIsAccessibilityElement:NO];
     
     
-    [_FishDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
-    [_CatDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
-    [_DogDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_SITRDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_AGDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_SSBDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 }
 
 - (void)playMusic:(id)sender {
@@ -64,9 +64,9 @@
     UIButton* button = (UIButton*)sender;
     NSString* song = nil;
     
-    if (button == _DogDisplay) {
+    if (button == _SSBDisplay) {
         song = @"SSB";
-    } else if (button == _CatDisplay) {
+    } else if (button == _AGDisplay) {
         song = @"AG";
     } else {
         song = @"SIR";

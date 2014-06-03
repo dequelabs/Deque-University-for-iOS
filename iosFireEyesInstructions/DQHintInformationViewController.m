@@ -15,10 +15,11 @@
 @implementation DQHintInformationViewController {
     IBOutlet UILabel *_TitleLabel;
     IBOutlet UILabel *_ImportantLabel;
-    IBOutlet UILabel *_WhatIsHintLabel;
+    IBOutlet UILabel *_WhatHint;
     IBOutlet UITextView *_TextView1;
     IBOutlet UITextView *_TextView2;
     IBOutlet UIImageView *_ImageView;
+    IBOutlet UIScrollView *_ScrollView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

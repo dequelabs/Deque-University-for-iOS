@@ -19,6 +19,7 @@
     IBOutlet UILabel *_ImportantLabel;
     IBOutlet UILabel *_TitleLabel;
     IBOutlet UIImageView *_ImageView;
+    IBOutlet UIScrollView *_ScrollView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
