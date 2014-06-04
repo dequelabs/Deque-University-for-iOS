@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -2674,7 +2674,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="This is a music player"/>
                                 <constraints>
                                     <constraint firstItem="W5Q-D6-7RH" firstAttribute="leading" secondItem="zld-fm-Vk9" secondAttribute="trailing" constant="25" id="65F-lS-z7J"/>
@@ -2726,7 +2726,6 @@
                         <outlet property="_AGDisplay" destination="QOf-C0-SvV" id="S49-UJ-6oD"/>
                         <outlet property="_AGLabel" destination="HkB-Cf-dhV" id="qKD-rV-hfc"/>
                         <outlet property="_BrokenFixedLabel" destination="6dq-0O-8xH" id="2Nk-O6-EeM"/>
-                        <outlet property="_ExampleLabel" destination="6dq-0O-8xH" id="xzu-Hv-6Sx"/>
                         <outlet property="_MusicPlayer" destination="Iq3-oK-iEL" id="wRm-0K-HqY"/>
                         <outlet property="_SITRDisplay" destination="zJP-A0-thQ" id="FqJ-lB-LvF"/>
                         <outlet property="_SITRLabel" destination="ZsF-2d-4eM" id="ecP-tF-GfC"/>
@@ -2891,7 +2890,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="This is a music player">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
@@ -2934,7 +2933,6 @@
                         <outlet property="_AGDisplay" destination="FOZ-q3-aN0" id="nmM-zd-SH9"/>
                         <outlet property="_AGLabel" destination="95O-Bz-j5E" id="6Cm-7G-wPi"/>
                         <outlet property="_BrokenFixedLabel" destination="cVM-fm-cpD" id="pFg-Oa-nsQ"/>
-                        <outlet property="_ExampleLabel" destination="cVM-fm-cpD" id="coA-A9-Vqp"/>
                         <outlet property="_MusicPlayer" destination="QHj-XL-shT" id="3FY-gw-ohY"/>
                         <outlet property="_SITRDisplay" destination="fpy-ng-CJL" id="8Y9-AC-NK9"/>
                         <outlet property="_SITRLabel" destination="6Uh-rj-fZy" id="hIA-sf-ewa"/>
@@ -2970,75 +2968,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hap-kU-Yal">
-                                <rect key="frame" x="340" y="454" width="204" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeN-Gy-w1i">
-                                <rect key="frame" x="340" y="714" width="161" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTE-Ve-vnh">
-                                <rect key="frame" x="340" y="584" width="142" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5l-h8-mV2">
-                                <rect key="frame" x="225" y="422" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="5cg-We-JMf"/>
-                                    <constraint firstAttribute="width" constant="90" id="YLE-Uo-eez"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="play.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSG-yS-neB">
-                                <rect key="frame" x="226" y="682" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="HUu-Ot-A2y"/>
-                                    <constraint firstAttribute="height" constant="90" id="Nsw-Ex-N0k"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Display" image="play.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY4-0A-2RS">
-                                <rect key="frame" x="225" y="552" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="qG5-tz-0Zz"/>
-                                    <constraint firstAttribute="width" constant="90" id="qhl-Rp-IAr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" image="play.jpeg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wY8-oZ-PSQ">
                                 <rect key="frame" x="19" y="125" width="730" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3094,43 +3023,130 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwW-e7-kyo">
+                                <rect key="frame" x="184" y="402" width="400" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjc-vb-EYU">
+                                        <rect key="frame" x="42" y="20" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star Spangled Banner"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="BjV-EI-mCL"/>
+                                            <constraint firstAttribute="height" constant="90" id="FB6-9u-bEC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="play.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igx-p9-kKJ">
+                                        <rect key="frame" x="42" y="280" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the Rain"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Ljq-8Y-O8n"/>
+                                            <constraint firstAttribute="width" constant="90" id="T6j-SK-GlC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="play.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-rw-Fu7">
+                                        <rect key="frame" x="42" y="150" width="90" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing Grace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="CPl-D6-oXT"/>
+                                            <constraint firstAttribute="height" constant="90" id="u74-dY-aoC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" image="play.jpeg">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKo-2J-BZH">
+                                        <rect key="frame" x="157" y="312" width="161" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-gE-8bM">
+                                        <rect key="frame" x="157" y="182" width="142" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyA-a3-ggD">
+                                        <rect key="frame" x="157" y="52" width="204" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="This is a music player">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="05s-ua-DUm"/>
+                                    <constraint firstAttribute="bottom" secondItem="igx-p9-kKJ" secondAttribute="bottom" constant="20" id="4Nz-8d-WdC"/>
+                                    <constraint firstItem="Cyd-gE-8bM" firstAttribute="leading" secondItem="rtf-rw-Fu7" secondAttribute="trailing" constant="25" id="4hK-Gf-eEa"/>
+                                    <constraint firstItem="Pjc-vb-EYU" firstAttribute="top" secondItem="mwW-e7-kyo" secondAttribute="top" constant="20" id="AAv-ax-wTY"/>
+                                    <constraint firstAttribute="height" constant="390" id="Fxm-AX-aIu"/>
+                                    <constraint firstItem="Pjc-vb-EYU" firstAttribute="centerY" secondItem="JyA-a3-ggD" secondAttribute="centerY" id="Jkc-pW-bBY"/>
+                                    <constraint firstItem="igx-p9-kKJ" firstAttribute="top" secondItem="rtf-rw-Fu7" secondAttribute="bottom" constant="40" id="NM8-nw-7WP"/>
+                                    <constraint firstItem="vKo-2J-BZH" firstAttribute="centerY" secondItem="igx-p9-kKJ" secondAttribute="centerY" id="PCu-UG-Beo"/>
+                                    <constraint firstItem="Cyd-gE-8bM" firstAttribute="centerY" secondItem="rtf-rw-Fu7" secondAttribute="centerY" id="Rh4-r0-Uf2"/>
+                                    <constraint firstItem="rtf-rw-Fu7" firstAttribute="leading" secondItem="mwW-e7-kyo" secondAttribute="leading" constant="42" id="U61-lg-BRG"/>
+                                    <constraint firstItem="rtf-rw-Fu7" firstAttribute="top" secondItem="Pjc-vb-EYU" secondAttribute="bottom" constant="40" id="VWS-Ma-iVe"/>
+                                    <constraint firstItem="igx-p9-kKJ" firstAttribute="leading" secondItem="mwW-e7-kyo" secondAttribute="leading" constant="42" id="Ynt-i3-rz0"/>
+                                    <constraint firstItem="vKo-2J-BZH" firstAttribute="leading" secondItem="igx-p9-kKJ" secondAttribute="trailing" constant="25" id="cOh-a9-4jU"/>
+                                    <constraint firstItem="JyA-a3-ggD" firstAttribute="leading" secondItem="Pjc-vb-EYU" secondAttribute="trailing" constant="25" id="rQ3-zb-sxJ"/>
+                                    <constraint firstItem="Pjc-vb-EYU" firstAttribute="leading" secondItem="mwW-e7-kyo" secondAttribute="leading" constant="42" id="vLV-5b-UOE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="jkr-a6-v0x" secondAttribute="centerX" id="0i3-2K-QXz"/>
-                            <constraint firstItem="SSG-yS-neB" firstAttribute="top" secondItem="RY4-0A-2RS" secondAttribute="bottom" constant="40" id="27m-KG-AfM"/>
                             <constraint firstItem="l3r-bc-0Xu" firstAttribute="leading" secondItem="m1b-Ky-Zde" secondAttribute="leading" id="2PK-1a-lOG"/>
                             <constraint firstAttribute="centerX" secondItem="Kn4-Zh-TFx" secondAttribute="centerX" constant="-1" id="2Ru-s7-OFj"/>
-                            <constraint firstItem="hap-kU-Yal" firstAttribute="leading" secondItem="w5l-h8-mV2" secondAttribute="trailing" constant="25" id="Dxz-Op-1K8"/>
-                            <constraint firstItem="SSG-yS-neB" firstAttribute="centerX" secondItem="RY4-0A-2RS" secondAttribute="centerX" constant="1" id="GH5-75-uVl"/>
-                            <constraint firstItem="SSG-yS-neB" firstAttribute="top" secondItem="YF8-Pf-ziI" secondAttribute="bottom" constant="662" id="KM0-c6-be5"/>
                             <constraint firstItem="jkr-a6-v0x" firstAttribute="top" secondItem="YF8-Pf-ziI" secondAttribute="bottom" constant="25" id="Oes-JX-TX2"/>
+                            <constraint firstAttribute="centerX" secondItem="mwW-e7-kyo" secondAttribute="centerX" id="Qmx-9Z-95g"/>
+                            <constraint firstItem="Kn4-Zh-TFx" firstAttribute="top" secondItem="wY8-oZ-PSQ" secondAttribute="bottom" constant="60" id="ShX-xb-qyx"/>
                             <constraint firstItem="fLz-fv-48X" firstAttribute="top" secondItem="l3r-bc-0Xu" secondAttribute="bottom" id="V5d-MV-1gY"/>
-                            <constraint firstItem="SSG-yS-neB" firstAttribute="centerY" secondItem="zeN-Gy-w1i" secondAttribute="centerY" id="Y5k-gG-8WB"/>
-                            <constraint firstItem="RY4-0A-2RS" firstAttribute="top" secondItem="w5l-h8-mV2" secondAttribute="bottom" constant="40" id="aoY-1w-ucF"/>
-                            <constraint firstItem="RY4-0A-2RS" firstAttribute="centerY" secondItem="XTE-Ve-vnh" secondAttribute="centerY" id="b7z-q7-sI6"/>
                             <constraint firstAttribute="centerX" secondItem="wY8-oZ-PSQ" secondAttribute="centerX" id="cHA-Uc-PRc"/>
-                            <constraint firstItem="w5l-h8-mV2" firstAttribute="centerX" secondItem="RY4-0A-2RS" secondAttribute="centerX" id="cLN-yX-T8G"/>
-                            <constraint firstItem="XTE-Ve-vnh" firstAttribute="left" secondItem="zeN-Gy-w1i" secondAttribute="left" id="eyx-w3-v9h"/>
-                            <constraint firstItem="hap-kU-Yal" firstAttribute="leading" secondItem="XTE-Ve-vnh" secondAttribute="leading" id="goU-iD-PmE"/>
                             <constraint firstItem="wY8-oZ-PSQ" firstAttribute="top" secondItem="jkr-a6-v0x" secondAttribute="bottom" constant="40" id="hWj-jv-ggW"/>
-                            <constraint firstItem="SSG-yS-neB" firstAttribute="leading" secondItem="m1b-Ky-Zde" secondAttribute="leading" constant="226" id="jsJ-lX-vIx"/>
-                            <constraint firstItem="w5l-h8-mV2" firstAttribute="top" secondItem="Kn4-Zh-TFx" secondAttribute="bottom" constant="24" id="mNN-yl-ndT"/>
+                            <constraint firstItem="mwW-e7-kyo" firstAttribute="top" secondItem="Kn4-Zh-TFx" secondAttribute="bottom" constant="4" id="v5F-2d-YkM"/>
                             <constraint firstAttribute="trailing" secondItem="l3r-bc-0Xu" secondAttribute="trailing" id="ync-Q2-Ays"/>
-                            <constraint firstItem="w5l-h8-mV2" firstAttribute="centerY" secondItem="hap-kU-Yal" secondAttribute="centerY" id="zuv-eb-8Np"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Mav-UE-f9P"/>
                     <connections>
-                        <outlet property="_AGDisplay" destination="RY4-0A-2RS" id="C0D-d7-oNR"/>
-                        <outlet property="_AGLabel" destination="XTE-Ve-vnh" id="NGK-bJ-gbp"/>
-                        <outlet property="_ExampleLabel" destination="jkr-a6-v0x" id="rsg-Vo-xgg"/>
-                        <outlet property="_MusicPlayer" destination="Kn4-Zh-TFx" id="CD3-0X-yrm"/>
-                        <outlet property="_SITRDisplay" destination="SSG-yS-neB" id="8SZ-x0-MCe"/>
-                        <outlet property="_SITRLabel" destination="zeN-Gy-w1i" id="Ghk-5R-VzQ"/>
-                        <outlet property="_SSBDisplay" destination="w5l-h8-mV2" id="ncN-Ja-757"/>
-                        <outlet property="_SSBLabel" destination="hap-kU-Yal" id="uZj-QY-2k6"/>
-                        <outlet property="_TextView" destination="wY8-oZ-PSQ" id="I3e-to-k5c"/>
+                        <outlet property="_AGDisplay" destination="rtf-rw-Fu7" id="qGY-BL-Upe"/>
+                        <outlet property="_AGLabel" destination="Cyd-gE-8bM" id="wAB-Oy-rPc"/>
+                        <outlet property="_ExampleLabel" destination="jkr-a6-v0x" id="Bhq-jx-nmA"/>
+                        <outlet property="_MusicPlayer" destination="Kn4-Zh-TFx" id="tfP-nH-2vc"/>
+                        <outlet property="_SITRDisplay" destination="igx-p9-kKJ" id="Gkd-V9-jrn"/>
+                        <outlet property="_SITRLabel" destination="vKo-2J-BZH" id="pMM-Wc-V9K"/>
+                        <outlet property="_SSBDisplay" destination="Pjc-vb-EYU" id="cez-ZI-hvQ"/>
+                        <outlet property="_SSBLabel" destination="JyA-a3-ggD" id="LRI-Rh-LnA"/>
+                        <outlet property="_TextView" destination="wY8-oZ-PSQ" id="EwL-2P-Dcv"/>
+                        <outlet property="_View" destination="mwW-e7-kyo" id="Cy4-sk-HhV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qb-Mq-c9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3267,25 +3283,25 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cJm-yu-tyg"/>
-        <segue reference="ZBB-5p-b6i"/>
-        <segue reference="a32-rH-blQ"/>
-        <segue reference="8Do-nl-BYE"/>
-        <segue reference="UhZ-iU-51M"/>
-        <segue reference="FQY-ib-6CF"/>
         <segue reference="u58-Kd-TTR"/>
+        <segue reference="FQY-ib-6CF"/>
+        <segue reference="UhZ-iU-51M"/>
+        <segue reference="8Do-nl-BYE"/>
+        <segue reference="a32-rH-blQ"/>
+        <segue reference="cJm-yu-tyg"/>
+        <segue reference="h3v-ou-QF6"/>
+        <segue reference="dX3-nh-UAe"/>
+        <segue reference="iXB-5E-tzd"/>
+        <segue reference="wHQ-gz-Qtz"/>
+        <segue reference="R3j-Nu-A5c"/>
         <segue reference="HWr-hf-Ie8"/>
         <segue reference="U2M-0Q-6Gt"/>
         <segue reference="xMU-mh-vO6"/>
         <segue reference="z6N-cc-GpK"/>
-        <segue reference="94C-pU-u8Z"/>
-        <segue reference="uIc-ef-HfQ"/>
-        <segue reference="wca-Fg-bfg"/>
-        <segue reference="FKP-y2-Amb"/>
-        <segue reference="PZc-WP-kc6"/>
         <segue reference="bXJ-Xg-8Yg"/>
+        <segue reference="PZc-WP-kc6"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="uIc-ef-HfQ"/>
         <segue reference="zJ0-fc-nbA"/>
-        <segue reference="iXB-5E-tzd"/>
-        <segue reference="dX3-nh-UAe"/>
     </inferredMetricsTieBreakers>
 </document>
