@@ -22,6 +22,7 @@
     IBOutlet UIButton *_SITRDisplay;
     IBOutlet UITextView *_TextView;
     IBOutlet UILabel *_MusicPlayer;
+    IBOutlet UIView *_View;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
