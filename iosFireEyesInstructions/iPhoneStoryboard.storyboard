@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -440,7 +440,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ0-cL-Lln">
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ0-cL-Lln">
                                 <rect key="frame" x="0.0" y="19" width="320" height="506"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -455,20 +455,20 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWj-SB-ud1">
-                                        <rect key="frame" x="20" y="68" width="280" height="125"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWj-SB-ud1">
+                                        <rect key="frame" x="20" y="68" width="280" height="187"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="axg-mx-s7f"/>
-                                            <constraint firstAttribute="height" constant="125" id="uje-8Z-kDr"/>
+                                            <constraint firstAttribute="height" constant="187" id="uje-8Z-kDr"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <string key="text">Labels help identify 'What' an object is.  Labels should be short and concise.  If you are tempted to make a label longer than a word or two, it is likely that the information you're adding belongs in the hint.  Labels should start with a capital letter and end with no punctuation.  This helps voiceover get the correct inflection.  Labels should not contain information about the type of control.  This information is stored in the trait.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labelspic" translatesAutoresizingMaskIntoConstraints="NO" id="x0b-PY-q0F">
-                                        <rect key="frame" x="20" y="203" width="270" height="128"/>
+                                        <rect key="frame" x="20" y="265" width="270" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="270" id="5Kq-Cz-mHu"/>
@@ -476,19 +476,19 @@
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDE-WM-1hg">
-                                        <rect key="frame" x="20" y="353" width="280" height="125"/>
+                                        <rect key="frame" x="20" y="415" width="280" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="Zae-is-SJ2"/>
-                                            <constraint firstAttribute="height" constant="125" id="Zvh-PB-dRj"/>
+                                            <constraint firstAttribute="height" constant="205" id="Zvh-PB-dRj"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <string key="text">Labels provide information to voiceover quickly.  Unlike hints, whose readout is delayed.  When designing accessible applications you want to keep two particular users in mind.  The power user, and the new user.  Think of labels as something to help power users.  The person who knows that a row of buttons are links, or that they play music.  They don't need to be reminded that a button is going to visit a webpage, they just need to know which page they will be visiting.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are they important?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMF-Yz-a2H">
-                                        <rect key="frame" x="20" y="341" width="189" height="21"/>
+                                        <rect key="frame" x="20" y="403" width="189" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="CwC-gf-soW"/>
@@ -518,9 +518,9 @@
                                     <constraint firstAttribute="bottom" secondItem="DMF-Yz-a2H" secondAttribute="bottom" id="YdS-QT-nus"/>
                                     <constraint firstItem="QPL-KY-EXz" firstAttribute="top" secondItem="mZ0-cL-Lln" secondAttribute="top" constant="53" id="au0-BC-3CP"/>
                                     <constraint firstItem="DMF-Yz-a2H" firstAttribute="top" secondItem="x0b-PY-q0F" secondAttribute="bottom" constant="10" id="cvB-C2-fyd"/>
-                                    <constraint firstAttribute="centerY" secondItem="x0b-PY-q0F" secondAttribute="centerY" constant="-14" id="iCk-JO-tsX"/>
                                     <constraint firstItem="QPL-KY-EXz" firstAttribute="leading" secondItem="IWj-SB-ud1" secondAttribute="leading" id="iDf-y2-IVv"/>
                                     <constraint firstItem="x0b-PY-q0F" firstAttribute="top" secondItem="IWj-SB-ud1" secondAttribute="bottom" constant="10" id="ogM-u4-aqG"/>
+                                    <constraint firstAttribute="height" constant="506" id="sOx-WI-svB"/>
                                     <constraint firstItem="DMF-Yz-a2H" firstAttribute="leading" secondItem="vDE-WM-1hg" secondAttribute="leading" id="tEh-gt-cNb"/>
                                     <constraint firstAttribute="centerX" secondItem="Wct-8A-PZW" secondAttribute="centerX" id="tOr-Nn-Wum"/>
                                 </constraints>
@@ -565,7 +565,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="_ImageView" destination="x0b-PY-q0F" id="7xq-nD-DeL"/>
                         <outlet property="_ImportantLabel" destination="DMF-Yz-a2H" id="Xsd-Ik-Gel"/>
                         <outlet property="_ScrollView" destination="mZ0-cL-Lln" id="fT4-B1-TEz"/>
                         <outlet property="_TextView1" destination="IWj-SB-ud1" id="hNR-EF-Oxa"/>
@@ -3091,23 +3090,23 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TZF-O6-Y94"/>
-        <segue reference="FLZ-Vf-p7f"/>
-        <segue reference="Fj5-aQ-2sO"/>
-        <segue reference="jdG-gT-fhw"/>
-        <segue reference="gFE-R0-e7q"/>
+        <segue reference="R4k-dN-yQs"/>
+        <segue reference="KkH-3d-XTv"/>
+        <segue reference="vg9-tn-ITz"/>
+        <segue reference="ygi-Zc-Yh0"/>
+        <segue reference="3xU-Dn-uef"/>
         <segue reference="qlL-tW-iG0"/>
         <segue reference="v8n-8H-AN0"/>
-        <segue reference="XoQ-ya-oDP"/>
-        <segue reference="R4k-dN-yQs"/>
+        <segue reference="hqi-jv-wsD"/>
+        <segue reference="odM-ea-apB"/>
+        <segue reference="yKa-z1-Zy2"/>
         <segue reference="ZHt-r8-CNe"/>
-        <segue reference="KQe-BQ-Co9"/>
-        <segue reference="9gY-0Y-92E"/>
+        <segue reference="FLZ-Vf-p7f"/>
+        <segue reference="Fj5-aQ-2sO"/>
+        <segue reference="PFE-cz-Sge"/>
         <segue reference="Cs9-bg-IQg"/>
         <segue reference="CsT-Bc-g7i"/>
-        <segue reference="hqi-jv-wsD"/>
-        <segue reference="KKr-Vp-Ef2"/>
-        <segue reference="odM-ea-apB"/>
+        <segue reference="KQe-BQ-Co9"/>
         <segue reference="vso-JF-a4F"/>
     </inferredMetricsTieBreakers>
 </document>
