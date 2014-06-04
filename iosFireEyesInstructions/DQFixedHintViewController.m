@@ -31,9 +31,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
@@ -93,12 +90,6 @@
     [_AudioPlayer performSelector:@selector(stop) withObject:_AudioPlayer afterDelay:5];
     
     if ([_AudioPlayer play]) NSLog(@"Shoudl be playing");
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (BOOL)shouldAutorotate {

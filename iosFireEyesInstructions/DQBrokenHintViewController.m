@@ -75,12 +75,6 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (BOOL)shouldAutorotate {
     return NO;
 }
