@@ -43,6 +43,10 @@
     
     [_HowButton setAccessibilityLabel:[[_HowButton titleLabel] text]];
     [_HowButton setAccessibilityHint:@"Visit section content"];
+    
+    //_LogoImage is not an accessibility element on purpose, so we set these to silence warnings.
+	[_LogoImage setAccessibilityHint:@""];
+    [_LogoImage setAccessibilityLabel:@""];
 }
 
 - (void)didReceiveMemoryWarning
