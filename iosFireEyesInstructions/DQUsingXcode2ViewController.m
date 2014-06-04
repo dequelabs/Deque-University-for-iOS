@@ -31,7 +31,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //_step6image is not an accessibility element on purpose, so we set these to silence warnings.
+	[_step6image setAccessibilityHint:@""];
+    [_step6image setAccessibilityLabel:@""];
+    
+    //_step5image is not an accessibility element on purpose, so we set these to silence warnings.
+	[_step5image setAccessibilityHint:@""];
+    [_step5image setAccessibilityLabel:@""];
 }
 
 - (void)didReceiveMemoryWarning

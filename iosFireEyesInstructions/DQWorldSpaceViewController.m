@@ -32,7 +32,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    //ImageView is not an accessibility element on purpose, so we set these to silence warnings.
+	[_ImageView setAccessibilityHint:@""];
+    [_ImageView setAccessibilityLabel:@""];
+
     [_TextView setEditable:NO];
 }
 

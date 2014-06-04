@@ -31,6 +31,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    //ImageView is not an accessibility element on purpose, so we set these to silence warnings.
+	[_ImageView setAccessibilityHint:@""];
+    [_ImageView setAccessibilityLabel:@""];
 	
     [_TextView1 setText:@"Hints identify what an object does.  They provide additional context to users who are not use to using your application.  Hints should start with a capital letter and contain a verb.  Hints should not contain information about the trait, and should avoid duplicating information in the label.  Though, sometimes reiterating the most simple information from the label is helpful."];
     
