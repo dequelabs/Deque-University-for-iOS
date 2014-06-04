@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7Rq-8t-xZT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -628,94 +628,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akt-Nl-jKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2538" y="-1225"/>
-        </scene>
-        <!--World Space View Controller - WorldSpace-->
-        <scene sceneID="srY-Xk-eU7">
-            <objects>
-                <viewController title="WorldSpace" id="Skk-h2-Q2H" customClass="DQWorldSpaceViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7S5-KF-3fs"/>
-                        <viewControllerLayoutGuide type="bottom" id="BiV-uE-1Y9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eCn-QV-kjb">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WorldSpace" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jec-oi-jUW">
-                                <rect key="frame" x="296" y="45" width="177" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="dnR-ju-vlZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is WorldSpace?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-7O-PGw">
-                                <rect key="frame" x="101" y="144" width="359" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O15-ku-byq">
-                                <rect key="frame" x="101" y="173" width="567" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1l9-y6-adt">
-                                <rect key="frame" x="101" y="442" width="567" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fo-gl-IcY">
-                                <rect key="frame" x="101" y="740" width="359" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwk-66-uDs">
-                                <rect key="frame" x="0.0" y="979" width="768" height="45"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="wUY-m7-0cL"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="&lt; Previous" id="VHx-mA-gi9"/>
-                                    <barButtonItem width="106" style="plain" systemItem="fixedSpace" id="8rf-lK-bJg"/>
-                                    <barButtonItem title="Main Menu" id="c1Y-cD-VL7"/>
-                                    <barButtonItem width="112" style="plain" systemItem="fixedSpace" id="cqp-kW-TG5"/>
-                                    <barButtonItem title="Beginning of Section" id="Qvu-9n-Zep"/>
-                                    <barButtonItem width="114" style="plain" systemItem="fixedSpace" id="9RA-gi-ARd"/>
-                                    <barButtonItem enabled="NO" title="Next >" id="HE4-wK-u8R"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Xwk-66-uDs" secondAttribute="trailing" id="0Ne-9F-chC"/>
-                            <constraint firstItem="BiV-uE-1Y9" firstAttribute="top" secondItem="Xwk-66-uDs" secondAttribute="bottom" id="5Ft-qn-pdI"/>
-                            <constraint firstAttribute="trailing" secondItem="Xwk-66-uDs" secondAttribute="trailing" id="6EG-0D-zkC"/>
-                            <constraint firstItem="jec-oi-jUW" firstAttribute="top" secondItem="7S5-KF-3fs" secondAttribute="bottom" constant="25" id="Bgk-Xm-4nd"/>
-                            <constraint firstItem="Xwk-66-uDs" firstAttribute="leading" secondItem="eCn-QV-kjb" secondAttribute="leading" id="GPm-hm-hvN"/>
-                            <constraint firstAttribute="centerX" secondItem="jec-oi-jUW" secondAttribute="centerX" id="I37-sb-3wR"/>
-                            <constraint firstItem="BiV-uE-1Y9" firstAttribute="top" secondItem="Xwk-66-uDs" secondAttribute="bottom" id="hif-Qj-aZu"/>
-                            <constraint firstItem="Xwk-66-uDs" firstAttribute="leading" secondItem="eCn-QV-kjb" secondAttribute="leading" id="tXA-AO-RxV"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="0Gs-ak-osB"/>
-                    <connections>
-                        <outlet property="_ImageView" destination="1l9-y6-adt" id="pdg-zN-S3n"/>
-                        <outlet property="_LinkLabel" destination="5Fo-gl-IcY" id="PRl-Mj-GhC"/>
-                        <outlet property="_TextView" destination="O15-ku-byq" id="3U3-VY-QNG"/>
-                        <outlet property="_TitleLabel" destination="jec-oi-jUW" id="4YC-KS-qjS"/>
-                        <outlet property="_WhatIsLabel" destination="GmV-7O-PGw" id="6mZ-4G-YcI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qJo-th-I8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2639" y="1099"/>
         </scene>
         <!--Fix Issues View Controller - FixIssues-->
         <scene sceneID="Mwb-GA-RxT">
@@ -3356,25 +3268,25 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xMU-mh-vO6"/>
-        <segue reference="U2M-0Q-6Gt"/>
-        <segue reference="HWr-hf-Ie8"/>
-        <segue reference="u58-Kd-TTR"/>
-        <segue reference="FQY-ib-6CF"/>
         <segue reference="UhZ-iU-51M"/>
         <segue reference="8Do-nl-BYE"/>
         <segue reference="a32-rH-blQ"/>
         <segue reference="cJm-yu-tyg"/>
         <segue reference="ZBB-5p-b6i"/>
+        <segue reference="FQY-ib-6CF"/>
+        <segue reference="u58-Kd-TTR"/>
+        <segue reference="HWr-hf-Ie8"/>
+        <segue reference="U2M-0Q-6Gt"/>
+        <segue reference="xMU-mh-vO6"/>
         <segue reference="z6N-cc-GpK"/>
-        <segue reference="bXJ-Xg-8Yg"/>
-        <segue reference="PZc-WP-kc6"/>
-        <segue reference="iXB-5E-tzd"/>
         <segue reference="FMA-yf-5AZ"/>
-        <segue reference="N8w-NH-q4b"/>
+        <segue reference="iXB-5E-tzd"/>
         <segue reference="dX3-nh-UAe"/>
-        <segue reference="uIc-ef-HfQ"/>
-        <segue reference="wca-Fg-bfg"/>
+        <segue reference="PZc-WP-kc6"/>
+        <segue reference="bXJ-Xg-8Yg"/>
+        <segue reference="6tr-eV-uk2"/>
         <segue reference="zJ0-fc-nbA"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="uIc-ef-HfQ"/>
     </inferredMetricsTieBreakers>
 </document>
