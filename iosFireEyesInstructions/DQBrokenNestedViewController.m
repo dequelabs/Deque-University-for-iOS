@@ -1,19 +1,19 @@
 //
-//  DQNestedFixedViewController.m
+//  DQNestedBrokenViewController.m
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQNestedFixedViewController.h"
+#import "DQBrokenNestedViewController.h"
 
-@interface DQNestedFixedViewController ()
+@interface DQBrokenNestedViewController ()
 
 @end
 
-@implementation DQNestedFixedViewController {
-    IBOutlet UILabel *_ExampleLabel;
+@implementation DQBrokenNestedViewController {
+    IBOutlet UILabel *_BrokenFixedLabel;
     IBOutlet UILabel *_SSBLabel;
     IBOutlet UILabel *_AGLabel;
     IBOutlet UILabel *_SITRLabel;
@@ -37,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:@"By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but a very easy fix!"];
+    [_TextView setText:@"Notice how, when you turn VoiceOver on, a black box shows up around our music player.  You cannot interract with the button elements inside this box!"];
 }
 
 - (void)didReceiveMemoryWarning

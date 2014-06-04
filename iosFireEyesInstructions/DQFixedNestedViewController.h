@@ -1,5 +1,5 @@
 //
-//  DQTraitsBrokenViewController.h
+//  DQNestedFixedViewController.h
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 5/22/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DQTraitsBrokenViewController : UIViewController
+@interface DQFixedNestedViewController : UIViewController
 
 @end

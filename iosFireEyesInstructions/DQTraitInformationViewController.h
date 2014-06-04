@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DQTraitInfoViewController : UIViewController
+@interface DQTraitInformationViewController : UIViewController
 
 @end

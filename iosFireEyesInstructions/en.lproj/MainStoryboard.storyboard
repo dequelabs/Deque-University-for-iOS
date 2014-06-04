@@ -402,10 +402,10 @@
             </objects>
             <point key="canvasLocation" x="734" y="1091"/>
         </scene>
-        <!--Labal Information View Controller - LabelInfo-->
+        <!--Label Information View Controller - LabelInfo-->
         <scene sceneID="0E2-OQ-Fjz">
             <objects>
-                <viewController title="LabelInfo" id="zmn-vo-tIs" customClass="DQLabalInformationViewController" sceneMemberID="viewController">
+                <viewController title="LabelInfo" id="zmn-vo-tIs" customClass="DQLabelInformationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k0q-lt-Cxj"/>
                         <viewControllerLayoutGuide type="bottom" id="JvD-8u-Ub5"/>
@@ -502,12 +502,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="3a1-Wu-adP"/>
                     <connections>
-                        <outlet property="_ImageView" destination="FSQ-jf-scp" id="0cI-tw-HhS"/>
-                        <outlet property="_ImportantLabel" destination="Pyv-nu-e7y" id="Qra-Th-lc4"/>
-                        <outlet property="_TextView1" destination="jHo-E7-NAd" id="vhm-Q6-n5S"/>
-                        <outlet property="_TextView2" destination="z44-7s-ePf" id="cNQ-66-bXG"/>
-                        <outlet property="_TitleLabel" destination="l4b-Ap-Pz1" id="zFR-pM-z33"/>
-                        <outlet property="_WhatLabel" destination="Xzn-UA-gsT" id="oCW-uo-2n5"/>
+                        <outlet property="_ImageView" destination="FSQ-jf-scp" id="AgM-dV-2Sx"/>
+                        <outlet property="_ImportantLabel" destination="Pyv-nu-e7y" id="El6-oF-V3G"/>
+                        <outlet property="_TextView1" destination="jHo-E7-NAd" id="wOr-vg-6Kj"/>
+                        <outlet property="_TextView2" destination="z44-7s-ePf" id="tEu-gf-abQ"/>
+                        <outlet property="_TitleLabel" destination="l4b-Ap-Pz1" id="QIH-fP-xBA"/>
+                        <outlet property="_WhatLabel" destination="Xzn-UA-gsT" id="FlW-6h-XmT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8WT-Zv-9WX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2009,10 +2009,10 @@
             </objects>
             <point key="canvasLocation" x="2538" y="-69"/>
         </scene>
-        <!--Trait Info View Controller - HintInfo-->
+        <!--Trait Information View Controller - TraitInfo-->
         <scene sceneID="M3b-Uq-fA5">
             <objects>
-                <viewController title="HintInfo" id="NS6-Lm-nil" customClass="DQTraitInfoViewController" sceneMemberID="viewController">
+                <viewController title="TraitInfo" id="NS6-Lm-nil" customClass="DQTraitInformationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1sC-WE-OVM"/>
                         <viewControllerLayoutGuide type="bottom" id="S5a-pH-y8L"/>
@@ -2112,12 +2112,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="4zD-Wj-PfR"/>
                     <connections>
-                        <outlet property="_ImageView" destination="vDP-8U-E2I" id="go6-jy-Zt7"/>
-                        <outlet property="_ImportantLabel" destination="NhD-Ij-dyy" id="f40-4s-aja"/>
-                        <outlet property="_TextView1" destination="zjd-GJ-Cwl" id="Utt-jA-FUs"/>
-                        <outlet property="_TextView2" destination="zy7-If-zmM" id="VvF-Ud-3on"/>
-                        <outlet property="_TitleLabel" destination="xGj-ze-ZvC" id="DBN-t9-K2V"/>
-                        <outlet property="_WhatTrait" destination="K6H-Ms-xbA" id="AXm-C8-CBJ"/>
+                        <outlet property="_ImageView" destination="vDP-8U-E2I" id="Vz7-pe-aZI"/>
+                        <outlet property="_ImportantLabel" destination="NhD-Ij-dyy" id="G82-Vg-bG1"/>
+                        <outlet property="_TextView1" destination="zjd-GJ-Cwl" id="8bu-Gq-y2c"/>
+                        <outlet property="_TextView2" destination="zy7-If-zmM" id="j27-S8-eW1"/>
+                        <outlet property="_TitleLabel" destination="xGj-ze-ZvC" id="xkI-Kq-F72"/>
+                        <outlet property="_WhatTrait" destination="K6H-Ms-xbA" id="x52-ke-zPP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKG-PZ-vvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2318,10 +2318,10 @@
             </objects>
             <point key="canvasLocation" x="3440" y="-2372"/>
         </scene>
-        <!--Traits Broken View Controller - HintBroken-->
+        <!--Broken Traits View Controller - HintBroken-->
         <scene sceneID="hf6-rJ-zUx">
             <objects>
-                <viewController title="HintBroken" id="wF5-XE-QOp" customClass="DQTraitsBrokenViewController" sceneMemberID="viewController">
+                <viewController title="HintBroken" id="wF5-XE-QOp" customClass="DQBrokenTraitsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nGO-9U-SoT"/>
                         <viewControllerLayoutGuide type="bottom" id="cF6-0X-dfR"/>
@@ -2464,22 +2464,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="dkc-4y-kBV"/>
                     <connections>
-                        <outlet property="_BrokenFixedLabel" destination="WFG-eC-fCB" id="NsE-Kk-jpg"/>
-                        <outlet property="_CatDisplay" destination="nYd-ew-b0n" id="Pf4-fy-ADW"/>
-                        <outlet property="_DogDisplay" destination="QQJ-Ze-YyF" id="NuN-YL-9l1"/>
-                        <outlet property="_FishDisplay" destination="7iP-VJ-yMY" id="Uwc-qe-SSa"/>
-                        <outlet property="_ImageView" destination="3sc-cB-sBw" id="uby-9b-eTs"/>
-                        <outlet property="_TextView" destination="yw6-jG-Uoj" id="j7k-D1-bRn"/>
+                        <outlet property="_BrokenFixedLabel" destination="WFG-eC-fCB" id="NNU-rH-Wfg"/>
+                        <outlet property="_CatDisplay" destination="nYd-ew-b0n" id="RlA-WU-GQ3"/>
+                        <outlet property="_DogDisplay" destination="QQJ-Ze-YyF" id="86K-rz-bHj"/>
+                        <outlet property="_FishDisplay" destination="7iP-VJ-yMY" id="5cU-bU-xro"/>
+                        <outlet property="_ImageView" destination="3sc-cB-sBw" id="UNW-b1-0Gv"/>
+                        <outlet property="_TextView" destination="yw6-jG-Uoj" id="JGU-WI-zdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fw-Ml-Ic7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3440" y="-3520"/>
         </scene>
-        <!--Traits Fixed View Controller - HintFixed-->
+        <!--Fixed Traits View Controller - HintFixed-->
         <scene sceneID="sLl-r9-H4h">
             <objects>
-                <viewController title="HintFixed" id="o6k-lI-Dsi" customClass="DQTraitsFixedViewController" sceneMemberID="viewController">
+                <viewController title="HintFixed" id="o6k-lI-Dsi" customClass="DQFixedTraitsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WVf-u4-6f0"/>
                         <viewControllerLayoutGuide type="bottom" id="xsy-QA-Knt"/>
@@ -2615,22 +2615,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="bwe-dD-hzX"/>
                     <connections>
-                        <outlet property="_BrokenFixedLabel" destination="0Kd-Dn-WN9" id="LJ2-hj-lGw"/>
-                        <outlet property="_CatDisplay" destination="uLl-lM-f8L" id="OlP-bc-eNQ"/>
-                        <outlet property="_DogDisplay" destination="Kce-bV-RyB" id="bT3-Wz-5nj"/>
-                        <outlet property="_FishDisplay" destination="GZM-rk-frJ" id="cBl-2b-x16"/>
-                        <outlet property="_ImageView" destination="Xfj-1V-bi8" id="Zxu-QU-PRs"/>
-                        <outlet property="_TextView" destination="diL-hg-odj" id="tLX-ei-kcR"/>
+                        <outlet property="_BrokenFixedLabel" destination="0Kd-Dn-WN9" id="RaZ-uN-mf7"/>
+                        <outlet property="_CatDisplay" destination="uLl-lM-f8L" id="5tM-DA-NeJ"/>
+                        <outlet property="_DogDisplay" destination="Kce-bV-RyB" id="hce-o1-ZjW"/>
+                        <outlet property="_FishDisplay" destination="GZM-rk-frJ" id="n53-5K-B47"/>
+                        <outlet property="_ImageView" destination="Xfj-1V-bi8" id="9KR-hX-lux"/>
+                        <outlet property="_TextView" destination="diL-hg-odj" id="pQQ-EW-bc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agy-nC-3qY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3440" y="-4664"/>
         </scene>
-        <!--Nested Fixed View Controller - HintFixed-->
+        <!--Fixed Nested View Controller - HintFixed-->
         <scene sceneID="gmK-MX-Vtx">
             <objects>
-                <viewController title="HintFixed" id="5v3-Uj-fX3" customClass="DQNestedFixedViewController" sceneMemberID="viewController">
+                <viewController title="HintFixed" id="5v3-Uj-fX3" customClass="DQFixedNestedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U5u-Tr-fQe"/>
                         <viewControllerLayoutGuide type="bottom" id="NBf-cE-1ON"/>
@@ -2812,26 +2812,27 @@
                     </view>
                     <navigationItem key="navigationItem" id="8kj-TR-zpj"/>
                     <connections>
-                        <outlet property="_AGDisplay" destination="QOf-C0-SvV" id="wWT-cy-Nv2"/>
-                        <outlet property="_AGLabel" destination="HkB-Cf-dhV" id="AMm-MO-I17"/>
+                        <outlet property="_AGDisplay" destination="QOf-C0-SvV" id="S49-UJ-6oD"/>
+                        <outlet property="_AGLabel" destination="HkB-Cf-dhV" id="qKD-rV-hfc"/>
+                        <outlet property="_BrokenFixedLabel" destination="6dq-0O-8xH" id="2Nk-O6-EeM"/>
                         <outlet property="_ExampleLabel" destination="6dq-0O-8xH" id="xzu-Hv-6Sx"/>
-                        <outlet property="_MusicPlayer" destination="Iq3-oK-iEL" id="4la-am-Orh"/>
-                        <outlet property="_SITRDisplay" destination="zJP-A0-thQ" id="3Ig-qh-kzV"/>
-                        <outlet property="_SITRLabel" destination="ZsF-2d-4eM" id="2M9-Tt-c33"/>
-                        <outlet property="_SSBDisplay" destination="zld-fm-Vk9" id="U6p-SL-jYc"/>
-                        <outlet property="_SSBLabel" destination="W5Q-D6-7RH" id="AeE-fD-eUx"/>
-                        <outlet property="_TextView" destination="D0P-Xq-mvr" id="G0A-fy-c2F"/>
-                        <outlet property="_View" destination="qRq-WF-1UC" id="ueJ-LE-j8R"/>
+                        <outlet property="_MusicPlayer" destination="Iq3-oK-iEL" id="wRm-0K-HqY"/>
+                        <outlet property="_SITRDisplay" destination="zJP-A0-thQ" id="FqJ-lB-LvF"/>
+                        <outlet property="_SITRLabel" destination="ZsF-2d-4eM" id="ecP-tF-GfC"/>
+                        <outlet property="_SSBDisplay" destination="zld-fm-Vk9" id="diG-RR-qZx"/>
+                        <outlet property="_SSBLabel" destination="W5Q-D6-7RH" id="MVk-oC-5Dk"/>
+                        <outlet property="_TextView" destination="D0P-Xq-mvr" id="rxj-4i-JuY"/>
+                        <outlet property="_View" destination="qRq-WF-1UC" id="UU1-GJ-rXG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H47-ZC-hlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4396" y="-4664"/>
         </scene>
-        <!--Nested Broken View Controller - HintBroken-->
+        <!--Broken Nested View Controller - HintBroken-->
         <scene sceneID="wpv-eg-fUj">
             <objects>
-                <viewController title="HintBroken" id="MJj-8W-tZR" customClass="DQNestedBrokenViewController" sceneMemberID="viewController">
+                <viewController title="HintBroken" id="MJj-8W-tZR" customClass="DQBrokenNestedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QgL-nk-d3h"/>
                         <viewControllerLayoutGuide type="bottom" id="Zfb-cT-81F"/>
@@ -3019,16 +3020,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="QBw-Ux-Qdt"/>
                     <connections>
-                        <outlet property="_AGDisplay" destination="FOZ-q3-aN0" id="Qi7-XU-sx9"/>
-                        <outlet property="_AGLabel" destination="95O-Bz-j5E" id="PJg-8d-w6D"/>
+                        <outlet property="_AGDisplay" destination="FOZ-q3-aN0" id="nmM-zd-SH9"/>
+                        <outlet property="_AGLabel" destination="95O-Bz-j5E" id="6Cm-7G-wPi"/>
+                        <outlet property="_BrokenFixedLabel" destination="cVM-fm-cpD" id="pFg-Oa-nsQ"/>
                         <outlet property="_ExampleLabel" destination="cVM-fm-cpD" id="coA-A9-Vqp"/>
-                        <outlet property="_MusicPlayer" destination="QHj-XL-shT" id="AUQ-Tv-apF"/>
-                        <outlet property="_SITRDisplay" destination="fpy-ng-CJL" id="TWd-se-0Lx"/>
-                        <outlet property="_SITRLabel" destination="6Uh-rj-fZy" id="VzX-r7-4iJ"/>
-                        <outlet property="_SSBDisplay" destination="Lqb-cx-fhU" id="72a-cw-bjV"/>
-                        <outlet property="_SSBLabel" destination="lMr-Nt-SFW" id="Hrt-M0-f2z"/>
-                        <outlet property="_TextView" destination="xIY-en-sRf" id="682-qu-6sO"/>
-                        <outlet property="_View" destination="ZaP-27-r5C" id="cAS-Ee-ooZ"/>
+                        <outlet property="_MusicPlayer" destination="QHj-XL-shT" id="3FY-gw-ohY"/>
+                        <outlet property="_SITRDisplay" destination="fpy-ng-CJL" id="8Y9-AC-NK9"/>
+                        <outlet property="_SITRLabel" destination="6Uh-rj-fZy" id="hIA-sf-ewa"/>
+                        <outlet property="_SSBDisplay" destination="Lqb-cx-fhU" id="2ej-Lq-Avf"/>
+                        <outlet property="_SSBLabel" destination="lMr-Nt-SFW" id="ywO-6u-bkn"/>
+                        <outlet property="_TextView" destination="xIY-en-sRf" id="jHp-XV-J15"/>
+                        <outlet property="_View" destination="ZaP-27-r5C" id="13O-UL-ZNt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akw-7H-VtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3224,10 +3226,10 @@
             </objects>
             <point key="canvasLocation" x="4378" y="-2372"/>
         </scene>
-        <!--Nexted Info View Controller - HintInfo-->
+        <!--Nested Information View Controller - HintInfo-->
         <scene sceneID="IXE-3U-9VW">
             <objects>
-                <viewController title="HintInfo" id="scW-uq-54O" customClass="DQNextedInfoViewController" sceneMemberID="viewController">
+                <viewController title="HintInfo" id="scW-uq-54O" customClass="DQNestedInformationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Me-JB-wvU"/>
                         <viewControllerLayoutGuide type="bottom" id="elV-QE-6Wt"/>
@@ -3327,12 +3329,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="NQ5-7e-eET"/>
                     <connections>
-                        <outlet property="_ImageView" destination="GLc-3R-rFI" id="N0p-a7-kMb"/>
-                        <outlet property="_ImportantLabel" destination="QwN-JL-yT4" id="EfW-vL-Ymm"/>
-                        <outlet property="_TextView1" destination="tl7-d9-yZa" id="UKp-f3-3Gc"/>
+                        <outlet property="_ImageView" destination="GLc-3R-rFI" id="nW7-9x-NIn"/>
+                        <outlet property="_ImportantLabel" destination="QwN-JL-yT4" id="jMc-Xb-X3O"/>
+                        <outlet property="_TextView1" destination="tl7-d9-yZa" id="q6k-nO-X8Y"/>
                         <outlet property="_TextView2" destination="Bme-eQ-lUN" id="rGs-x5-nUQ"/>
-                        <outlet property="_TitleLabel" destination="Oj1-42-JDo" id="GJM-uG-9Mr"/>
-                        <outlet property="_WhatNested" destination="hUo-Yx-3Ty" id="Fcj-Wi-XEs"/>
+                        <outlet property="_TitleLabel" destination="Oj1-42-JDo" id="LHD-6k-C4x"/>
+                        <outlet property="_WhatNested" destination="hUo-Yx-3Ty" id="eE7-Gk-qW9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuV-Ob-dPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3354,8 +3356,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="edH-UC-6Uv"/>
-        <segue reference="z6N-cc-GpK"/>
         <segue reference="xMU-mh-vO6"/>
         <segue reference="U2M-0Q-6Gt"/>
         <segue reference="HWr-hf-Ie8"/>
@@ -3364,15 +3364,17 @@
         <segue reference="UhZ-iU-51M"/>
         <segue reference="8Do-nl-BYE"/>
         <segue reference="a32-rH-blQ"/>
-        <segue reference="jnI-LL-CIG"/>
-        <segue reference="q6B-yy-zg2"/>
-        <segue reference="zSF-kc-7lE"/>
-        <segue reference="uIc-ef-HfQ"/>
+        <segue reference="cJm-yu-tyg"/>
+        <segue reference="ZBB-5p-b6i"/>
+        <segue reference="z6N-cc-GpK"/>
         <segue reference="bXJ-Xg-8Yg"/>
         <segue reference="PZc-WP-kc6"/>
-        <segue reference="zJ0-fc-nbA"/>
         <segue reference="iXB-5E-tzd"/>
+        <segue reference="FMA-yf-5AZ"/>
+        <segue reference="N8w-NH-q4b"/>
         <segue reference="dX3-nh-UAe"/>
-        <segue reference="h3v-ou-QF6"/>
+        <segue reference="uIc-ef-HfQ"/>
+        <segue reference="wca-Fg-bfg"/>
+        <segue reference="zJ0-fc-nbA"/>
     </inferredMetricsTieBreakers>
 </document>

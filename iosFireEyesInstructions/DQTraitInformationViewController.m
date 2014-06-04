@@ -1,23 +1,23 @@
 //
-//  DQNextedInfoViewController.m
+//  DQTraitInfoViewController.m
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQNextedInfoViewController.h"
+#import "DQTraitInformationViewController.h"
 
-@interface DQNextedInfoViewController ()
+@interface DQTraitInformationViewController ()
 
 @end
 
-@implementation DQNextedInfoViewController {
+@implementation DQTraitInformationViewController {
     IBOutlet UILabel *_TitleLabel;
-    IBOutlet UILabel *_ImportantLabel;
-    IBOutlet UILabel *_WhatNested;
     IBOutlet UITextView *_TextView1;
     IBOutlet UITextView *_TextView2;
+    IBOutlet UILabel *_WhatTrait;
+    IBOutlet UILabel *_ImportantLabel;
     IBOutlet UIImageView *_ImageView;
     IBOutlet UIScrollView *_ScrollView;
 }
@@ -34,10 +34,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [_TextView1 setText:@"Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably."];
     
-    [_TextView1 setText:@"When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue."];
+    [_TextView2 setText:@"When a sighted user uses an application, they get hints about what UI Elements do based on their appearance.  Traits help communicate this same information to non-sighted users."];
     
-    [_TextView2 setText:@"For developers, grouping information in views allows you to conceptually group areas of functionality, and create sleak, easily scalable applications for multiple view types.  Just remember not to make your container views 'Accessibility Elements' and you're all set."];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

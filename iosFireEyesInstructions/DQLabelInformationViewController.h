@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DQLabalInformationViewController : UIViewController
+@interface DQLabelInformationViewController : UIViewController
 
 @end

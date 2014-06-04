@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQLabalInformationViewController.h"
+#import "DQLabelInformationViewController.h"
 
-@interface DQLabalInformationViewController ()
+@interface DQLabelInformationViewController ()
 
 @end
 
-@implementation DQLabalInformationViewController {
+@implementation DQLabelInformationViewController {
     IBOutlet UITextView *_TextView1;
     IBOutlet UITextView *_TextView2;
     IBOutlet UILabel *_WhatLabel;

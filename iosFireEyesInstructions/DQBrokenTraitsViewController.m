@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQTraitsBrokenViewController.h"
+#import "DQBrokenTraitsViewController.h"
 
-@interface DQTraitsBrokenViewController ()
+@interface DQBrokenTraitsViewController ()
 
 @end
 
-@implementation DQTraitsBrokenViewController {
+@implementation DQBrokenTraitsViewController {
     IBOutlet UILabel *_BrokenFixedLabel;
     IBOutlet UIButton *_DogDisplay;
     IBOutlet UIButton *_CatDisplay;
