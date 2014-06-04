@@ -87,12 +87,6 @@
     if ([_AudioPlayer play]) NSLog(@"Should be playing");
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (BOOL)shouldAutorotate {
     return NO;
 }

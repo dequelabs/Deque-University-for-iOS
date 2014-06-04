@@ -23,14 +23,12 @@
     IBOutlet UITextView *_TextView;
     IBOutlet UILabel *_MusicPlayer;
     IBOutlet UIView *_View;
+    IBOutlet UILabel *_ExampleLabel;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
@@ -39,23 +37,6 @@
     [super viewDidLoad];
     [_TextView setText:@"Notice how, when you turn VoiceOver on, a black box shows up around our music player.  You cannot interract with the button elements inside this box!"];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (BOOL)shouldAutorotate {
     return NO;
