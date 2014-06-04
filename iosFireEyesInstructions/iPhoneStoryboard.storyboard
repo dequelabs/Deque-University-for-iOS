@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -135,11 +135,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem enabled="NO" title="Subsection" width="110" style="plain" id="g0D-mD-iHF"/>
-                                    <barButtonItem title=">" width="32" style="done" id="5M1-Lc-qtK">
-                                        <connections>
-                                            <segue destination="51O-38-3ev" kind="modal" modalTransitionStyle="crossDissolve" id="izM-fR-RPk"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title=">" width="32" style="done" id="5M1-Lc-qtK"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -431,84 +427,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvb-rR-ISY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="917" y="653"/>
-        </scene>
-        <!--World Space View Controller-->
-        <scene sceneID="FfU-ft-YPP">
-            <objects>
-                <viewController id="51O-38-3ev" customClass="DQWorldSpaceViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ANy-X2-KWM"/>
-                        <viewControllerLayoutGuide type="bottom" id="XtM-sK-b12"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="P6W-ew-96y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="World Space" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhK-k8-IYd">
-                                <rect key="frame" x="81" y="40" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is WorldSpace?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0S-NT-YrV">
-                                <rect key="frame" x="25" y="84" width="165" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Link?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3h-sq-m7v">
-                                <rect key="frame" x="25" y="471" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ez-vU-ooI">
-                                <rect key="frame" x="25" y="102" width="270" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-Qk-unc">
-                                <rect key="frame" x="25" y="329" width="270" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGN-Jc-hzn">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="&lt;" width="29" style="done" id="KHQ-sP-sSy">
-                                        <connections>
-                                            <segue destination="EJj-lR-C7u" kind="modal" modalTransitionStyle="crossDissolve" id="IaK-ac-NcN"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Main Menu" width="100" style="plain" id="hL7-Ns-apr">
-                                        <connections>
-                                            <segue destination="O86-3M-sgx" kind="modal" modalTransitionStyle="crossDissolve" id="OzS-fY-eNo"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Subsection" width="110" style="plain" id="GtU-zs-azU">
-                                        <connections>
-                                            <segue destination="EJj-lR-C7u" kind="modal" modalTransitionStyle="flipHorizontal" id="1C3-VF-sDv"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem enabled="NO" title=">" width="32" style="done" id="cii-5E-YUv"/>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="_TextView" destination="7ez-vU-ooI" id="lOK-dY-gSG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bb8-0b-ZTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="917" y="-23"/>
         </scene>
         <!--Label Information View Controller-->
         <scene sceneID="cEd-gd-uRs">
@@ -3156,24 +3074,23 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Bqa-GI-q3i"/>
-        <segue reference="kqE-kO-wIS"/>
-        <segue reference="7lG-Ct-qKN"/>
-        <segue reference="FLZ-Vf-p7f"/>
-        <segue reference="jdG-gT-fhw"/>
-        <segue reference="qlL-tW-iG0"/>
-        <segue reference="v8n-8H-AN0"/>
-        <segue reference="6Ow-Am-KL9"/>
-        <segue reference="9gY-0Y-92E"/>
         <segue reference="Cs9-bg-IQg"/>
+        <segue reference="9gY-0Y-92E"/>
+        <segue reference="6Ow-Am-KL9"/>
+        <segue reference="v8n-8H-AN0"/>
+        <segue reference="qlL-tW-iG0"/>
+        <segue reference="jdG-gT-fhw"/>
+        <segue reference="FLZ-Vf-p7f"/>
+        <segue reference="7lG-Ct-qKN"/>
+        <segue reference="kqE-kO-wIS"/>
+        <segue reference="t5o-3t-EcI"/>
         <segue reference="CsT-Bc-g7i"/>
         <segue reference="iTD-XV-rBk"/>
         <segue reference="KKr-Vp-Ef2"/>
         <segue reference="hqi-jv-wsD"/>
-        <segue reference="t5o-3t-EcI"/>
+        <segue reference="vso-JF-a4F"/>
         <segue reference="R4k-dN-yQs"/>
         <segue reference="XoQ-ya-oDP"/>
         <segue reference="ZHt-r8-CNe"/>
-        <segue reference="vso-JF-a4F"/>
     </inferredMetricsTieBreakers>
 </document>

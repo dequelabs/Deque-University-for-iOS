@@ -12,13 +12,7 @@
 
 @end
 
-@implementation DQUsingXcode1ViewController {
-    IBOutlet UITextView *_step1;
-    IBOutlet UITextView *_step2;
-    IBOutlet UITextView *_step3;
-    IBOutlet UITextView *_step4;
-    IBOutlet UIImageView *_step4image;
-}
+@implementation DQUsingXcode1ViewController 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

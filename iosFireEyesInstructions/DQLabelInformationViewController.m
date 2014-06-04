@@ -18,7 +18,6 @@
     IBOutlet UILabel *_WhatLabel;
     IBOutlet UILabel *_ImportantLabel;
     IBOutlet UILabel *_TitleLabel;
-    IBOutlet UIImageView *_ImageView;
     IBOutlet UIScrollView *_ScrollView;
 }
 
