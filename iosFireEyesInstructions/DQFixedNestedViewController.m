@@ -17,6 +17,7 @@
     IBOutlet UILabel *_SSBLabel;
     IBOutlet UILabel *_AGLabel;
     IBOutlet UILabel *_SITRLabel;
+    IBOutlet UILabel *_ExampleLabel;
     IBOutlet UIButton *_SSBDisplay;
     IBOutlet UIButton *_AGDisplay;
     IBOutlet UIButton *_SITRDisplay;
