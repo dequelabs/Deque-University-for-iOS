@@ -33,21 +33,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[_TextView setText:@"Below is a screen similar to the one in the Labels example, however, notice that one of the buttons looks a little different.  It's appearance would suggest that it is a link."];
+	[_TextView setText:NSLocalizedString(@"TRAIT_EXAMPLE_TEXTVIEW", nil)];
     
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(visitWebPage) forControlEvents:UIControlEventTouchDown];
     
-    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:@"Fish"];
+    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"FISH", nil)];
     
     [commentString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [commentString length])];
     
     [_FishDisplay setAttributedTitle:commentString forState:UIControlStateNormal];
     
-    [_CatDisplay setAccessibilityLabel:@"Cat"];
-    [_DogDisplay setAccessibilityLabel:@"Dog"];
-    [_FishDisplay setAccessibilityLabel:@"Fish"];
+    [_CatDisplay setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
+    [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
+    [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
     
     [_DogLabel setIsAccessibilityElement:NO];
     [_CatLabel setIsAccessibilityElement:NO];
@@ -56,7 +56,7 @@
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
-    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
 
