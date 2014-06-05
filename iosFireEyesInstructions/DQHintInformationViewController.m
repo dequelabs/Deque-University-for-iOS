@@ -45,6 +45,10 @@
     [_TextView2 setEditable:NO];
 }
 
+- (void)viewDidLayoutSubviews {
+    [_ScrollView setContentSize:CGSizeMake(320, 550)];
+}
+
 - (BOOL)shouldAutorotate {
     return NO;
 }
