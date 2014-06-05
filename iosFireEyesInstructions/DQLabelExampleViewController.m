@@ -33,11 +33,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[_TextView setText:@"Below is an example where the context of the buttons is obvious.  Clearly each button is going to display a picture.  The labels for each button are the pictures that are to be displayed."];
     
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
+
+	[_TextView setText:NSLocalizedString(@"LABEL_EXAMPLE_TEXTVIEW", nil)];
     
     [_CatDisplay setAccessibilityLabel:@"Cat"];
     [_DogDisplay setAccessibilityLabel:@"Dog"];

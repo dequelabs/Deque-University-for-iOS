@@ -31,26 +31,27 @@
 {
     [super viewDidLoad];
     
-    [_TextView setText:@"Here we have removed the unnecessary traits to clarify the purpose of the last button.  There are many examples of traits that should not be paired together."];
+    [_TextView setText:NSLocalizedString(@"TRAIT_FIXED_TEXTVIEW", nil)];
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(visitWebPage) forControlEvents:UIControlEventTouchDown];
     
-    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:@"Fish"];
+    NSMutableAttributedString *commentString = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"FISH", nil)];
     
     [commentString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [commentString length])];
     
     [_FishDisplay setAttributedTitle:commentString forState:UIControlStateNormal];
     
-    [_CatDisplay setAccessibilityLabel:@"Cat"];
-    [_DogDisplay setAccessibilityLabel:@"Dog"];
-    [_FishDisplay setAccessibilityLabel:@"Fish"];
+    NSString* temp = NSLocalizedString(@"CAT", nil);
+    [_CatDisplay setAccessibilityLabel:temp];
+    [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
+    [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
     
     [_TextView setEditable:NO];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
-    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
 

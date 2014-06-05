@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  iosFireEyesInstructions
+
+  Created by Chris McMeeking on 6/5/14.
+  Copyright (c) 2014 Deque Systems. All rights reserved.
+*/
+
+"CAT" = "cat";
+"DOG" = "dog";
+"FISH" = "fish";
+
+//Traits story
+"TRAIT_INFO_TEXTVIEW1" = "Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably.";
+
+"TRAIT_INFO_TEXTVIEW2" = "When a sighted user uses an application, they get hints about what UI Elements do based on their appearance.  Traits help communicate this same information to non-sighted users.";
+
+"TRAIT_EXAMPLE_TEXTVIEW" = "Below is a screen similar to the one in the Labels example, however, notice that one of the buttons looks a little different.  It's appearance would suggest that it is a link.";
+
+"TRAIT_BROKEN_TEXTVIEW" = "Notice the last button appropriately has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interraction).  To enable both the button and link traits is redundant, unnecessary, and misleading.";
+
+"TRAIT_FIXED_TEXTVIEW" = "Here we have removed the unnecessary traits to clarify the purpose of the last button.  There are many examples of traits that should not be paired together.";
+
+//Labels Story
+"LABEL_INFO_TEXTVIEW1" = "Labels help identify 'What' an object is.  Labels should be short and concise.  If you are tempted to make a label longer than a word or two, it is likely that the information you're adding belongs in the hint.  Labels should start with a capital letter and end with no punctuation.  This helps voiceover get the correct inflection.  Labels should not contain information about the type of control.  This information is stored in the trait.";
+
+"LABEL_INFO_TEXTVIEW2" = "Labels provide information to voiceover quickly.  Unlike hints, whose readout is delayed.  When designing accessible applications you want to keep two particular users in mind.  The power user, and the new user.  Think of labels as something to help power users.  The person who knows that a row of buttons are links, or that they play music.  They don't need to be reminded that a button is going to visit a webpage, they just need to know which page they will be visiting.";
+
+"LABEL_EXAMPLE_TEXTVIEW" = "Below is an example where the context of the buttons is obvious.  Clearly each button is going to display a picture.  The labels for each button are the pictures that are to be displayed.";

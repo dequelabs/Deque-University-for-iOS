@@ -11,6 +11,7 @@
 		0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2218D21F5B00B34CC7 /* AG.mp3 */; };
 		0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2418D21FA200B34CC7 /* SIR.mp3 */; };
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
+		0F2188471940FC0C007E68CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2188461940FC0C007E68CD /* Localizable.strings */; };
 		0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */; };
 		A91D01E9192E54F300EA7137 /* DQNestedInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */; };
 		A945B83F18A95D5C006896D8 /* DQFixIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A945B83E18A95D5C006896D8 /* DQFixIssuesViewController.m */; };
@@ -65,6 +66,7 @@
 		0F158F2218D21F5B00B34CC7 /* AG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AG.mp3; sourceTree = "<group>"; };
 		0F158F2418D21FA200B34CC7 /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0F2188461940FC0C007E68CD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = iosFireEyesInstructions/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		A91D01E7192E54F300EA7137 /* DQNestedInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNestedInformationViewController.h; path = iosFireEyesInstructions/DQNestedInformationViewController.h; sourceTree = "<group>"; };
 		A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNestedInformationViewController.m; path = iosFireEyesInstructions/DQNestedInformationViewController.m; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
+				0F2188461940FC0C007E68CD /* Localizable.strings */,
 			);
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
 				A983BDE919361EF400070619 /* MainStoryboard.storyboard in Resources */,
+				0F2188471940FC0C007E68CD /* Localizable.strings in Resources */,
 				0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
 			);
@@ -538,7 +542,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Catherine Fisher (5G8579V5FP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris McMeeking (5X5ZBLHX28)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -556,8 +560,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "FD5F0B02-8BD3-429D-82CA-B0472D486BD5";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -580,7 +583,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Catherine Fisher (5G8579V5FP)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris McMeeking (5X5ZBLHX28)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -592,8 +595,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
-				PROVISIONING_PROFILE = "FD5F0B02-8BD3-429D-82CA-B0472D486BD5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
