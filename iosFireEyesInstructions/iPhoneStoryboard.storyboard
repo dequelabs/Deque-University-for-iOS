@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -455,7 +455,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWj-SB-ud1">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWj-SB-ud1">
                                         <rect key="frame" x="20" y="68" width="280" height="187"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -464,7 +464,7 @@
                                             <constraint firstAttribute="height" constant="187" id="uje-8Z-kDr"/>
                                         </constraints>
                                         <string key="text">Labels help identify 'What' an object is.  Labels should be short and concise.  If you are tempted to make a label longer than a word or two, it is likely that the information you're adding belongs in the hint.  Labels should start with a capital letter and end with no punctuation.  This helps voiceover get the correct inflection.  Labels should not contain information about the type of control.  This information is stored in the trait.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labelspic" translatesAutoresizingMaskIntoConstraints="NO" id="x0b-PY-q0F">
@@ -3090,23 +3090,23 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="R4k-dN-yQs"/>
-        <segue reference="KkH-3d-XTv"/>
         <segue reference="vg9-tn-ITz"/>
-        <segue reference="ygi-Zc-Yh0"/>
-        <segue reference="3xU-Dn-uef"/>
-        <segue reference="qlL-tW-iG0"/>
-        <segue reference="v8n-8H-AN0"/>
-        <segue reference="hqi-jv-wsD"/>
-        <segue reference="odM-ea-apB"/>
+        <segue reference="KkH-3d-XTv"/>
+        <segue reference="R4k-dN-yQs"/>
         <segue reference="yKa-z1-Zy2"/>
         <segue reference="ZHt-r8-CNe"/>
-        <segue reference="FLZ-Vf-p7f"/>
+        <segue reference="ygi-Zc-Yh0"/>
+        <segue reference="qlL-tW-iG0"/>
+        <segue reference="v8n-8H-AN0"/>
         <segue reference="Fj5-aQ-2sO"/>
+        <segue reference="FLZ-Vf-p7f"/>
+        <segue reference="vso-JF-a4F"/>
+        <segue reference="KQe-BQ-Co9"/>
         <segue reference="PFE-cz-Sge"/>
         <segue reference="Cs9-bg-IQg"/>
         <segue reference="CsT-Bc-g7i"/>
-        <segue reference="KQe-BQ-Co9"/>
-        <segue reference="vso-JF-a4F"/>
+        <segue reference="etF-PD-D4P"/>
+        <segue reference="hqi-jv-wsD"/>
+        <segue reference="odM-ea-apB"/>
     </inferredMetricsTieBreakers>
 </document>
