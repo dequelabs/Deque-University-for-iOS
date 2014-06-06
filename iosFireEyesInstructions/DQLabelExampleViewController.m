@@ -58,7 +58,7 @@
     [_TextView setEditable:NO];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
 
