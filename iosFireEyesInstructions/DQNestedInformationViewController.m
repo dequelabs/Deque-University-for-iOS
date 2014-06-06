@@ -33,12 +33,12 @@
     [super viewDidLoad];
     
     //ImageView is not an accessibility element on purpose, so we set these to silence warnings.
-	[_ImageView setAccessibilityHint:@""];
-    [_ImageView setAccessibilityLabel:@""];
+	[_ImageView setAccessibilityHint:NSLocalizedString(@"BLANK", nil)];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"BLANK", nil)];
     
-    [_TextView1 setText:@"When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue."];
+    [_TextView1 setText:NSLocalizedString(@"NESTED_INFORMATION_TEXTVIEW1", nil)];
     
-    [_TextView2 setText:@"For developers, grouping information in views allows you to conceptually group areas of functionality, and create sleak, easily scalable applications for multiple view types.  Just remember not to make your container views 'Accessibility Elements' and you're all set."];
+    [_TextView2 setText:NSLocalizedString(@"NESTED_INFORMATION_TEXTVIEW2", nil)];
 }
 
 - (BOOL)shouldAutorotate {

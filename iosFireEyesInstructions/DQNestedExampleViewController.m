@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:@"Remember our music player?  In this view we have added a parent view around our entire player.  This is a very reasonable separation of functionality"];
+    [_TextView setText:NSLocalizedString(@"NESTED_EXAMPLE_TEXTVIEW", nil)];
 }
 
 - (BOOL)shouldAutorotate {

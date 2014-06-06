@@ -6,9 +6,15 @@
   Copyright (c) 2014 Deque Systems. All rights reserved.
 */
 
+"BLANK" = "";
 "CAT" = "cat";
 "DOG" = "dog";
 "FISH" = "fish";
+
+"SITR" = "Singing in the Rain";
+"SSB" = "Star Spangled Banner";
+"AG" = "Amazing Grace";
+"PLAYS_MUSIC" = "Plays Music";
 
 //Traits story
 "TRAIT_INFO_TEXTVIEW1" = "Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably.";
@@ -27,3 +33,25 @@
 "LABEL_INFO_TEXTVIEW2" = "Labels provide information to voiceover quickly.  Unlike hints, whose readout is delayed.  When designing accessible applications you want to keep two particular users in mind.  The power user, and the new user.  Think of labels as something to help power users.  The person who knows that a row of buttons are links, or that they play music.  They don't need to be reminded that a button is going to visit a webpage, they just need to know which page they will be visiting.";
 
 "LABEL_EXAMPLE_TEXTVIEW" = "Below is an example where the context of the buttons is obvious.  Clearly each button is going to display a picture.  The labels for each button are the pictures that are to be displayed.";
+
+//Nested Story
+"NESTED_FIXED_TEXTVIEW" = "By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but a very easy fix!";
+
+"NESTED_BROKEN_TEXTVIEW" = "Notice how, when you turn VoiceOver on, a black box shows up around our music player.  You cannot interract with the button elements inside this box!";
+
+"NESTED_EXAMPLE_TEXTVIEW" = "Remember our music player?  In this view we have added a parent view around our entire player.  This is a very reasonable separation of functionality";
+
+"NESTED_INFORMATION_TEXTVIEW1" = "When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue.";
+
+"NESTED_INFORMATION_TEXTVIEW2" = "For developers, grouping information in views allows you to conceptually group areas of functionality, and create sleak, easily scalable applications for multiple view types.  Just remember not to make your container views 'Accessibility Elements' and you're all set.";
+
+//Hints story
+"HINT_INFO_TEXTVIEW1" = "Hints identify what an object does.  They provide additional context to users who are not use to using your application.  Hints should start with a capital letter and contain a verb.  Hints should not contain information about the trait, and should avoid duplicating information in the label.  Though, sometimes reiterating the most simple information from the label is helpful.";
+
+"HINT_INFO_TEXTVIEW2" = "Hints provide the information that new users to your application need to help them know what your application does.  Going back to our power users versus new users example, hints help new users.  Ideally as users become accustomed to your application, the information provided in the hint will not be needed.  However, until they've spent enough time using your app, the information contained in the hint is crucial.";
+
+"HINT_EXAMPLE_TEXTVIEW" = "Notice how the visual cues, like the title \"Music Player\" and the style of the \"Play Buttons\" provide context.  Because of these visual cues we already know what these buttons do.";
+
+"HINT_BROKEN_TEXTVIEW" = "Now, without those visual cues, what do these buttons do?  Sure, the accessibility labels of song titles suggest that songs will be played.  But, iOS provides the Hint attribute for us so we can tell users: \"This button plays a song\"";
+
+"HINT_FIXED_TEXTVIEW" = "Now we have added the hint information back onto the buttons.  With these hints, you know that 'Star Spangled Banner' is a song that is going to be played, and not a website that will be visited for further information.";

@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:@"Notice how, when you turn VoiceOver on, a black box shows up around our music player.  You cannot interract with the button elements inside this box!"];
+    [_TextView setText:NSLocalizedString(@"NESTED_BROKEN_TEXTVIEW", nil)];
 }
 
 - (BOOL)shouldAutorotate {

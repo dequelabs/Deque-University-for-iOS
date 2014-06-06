@@ -40,9 +40,9 @@
 
 	[_TextView setText:NSLocalizedString(@"LABEL_EXAMPLE_TEXTVIEW", nil)];
     
-    [_CatDisplay setAccessibilityLabel:@"Cat"];
-    [_DogDisplay setAccessibilityLabel:@"Dog"];
-    [_FishDisplay setAccessibilityLabel:@"Fish"];
+    [_CatDisplay setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
+    [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
+    [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
     
     [_CatDisplay setAccessibilityHint:@"Modify image display"];
     [_FishDisplay setAccessibilityHint:@"Modify image display"];

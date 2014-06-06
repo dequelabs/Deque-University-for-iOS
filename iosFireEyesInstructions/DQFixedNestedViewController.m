@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:@"By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but a very easy fix!"];
+    [_TextView setText:NSLocalizedString(@"NESTED_FIXED_TEXTVIEW", nil)];
 }
 
 - (BOOL)shouldAutorotate {

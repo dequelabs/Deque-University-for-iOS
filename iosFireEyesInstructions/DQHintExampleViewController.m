@@ -37,15 +37,15 @@
     [super viewDidLoad];
 
     [_TextView setEditable:NO];
-    [_TextView setText:@"Notice how the visual cues, like the title \"Music Player\" and the style of the \"Play Buttons\" provide context.  Because of these visual cues we already know what these buttons do."];
+    [_TextView setText:NSLocalizedString(@"HINT_EXAMPLE_TEXTVIEW", nil)];
     
-    [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_SSBDisplay setAccessibilityLabel:@"Star Spangled Banner"];
+    [_SITRDisplay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
+    [_AGDisplay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
+    [_SSBDisplay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
     
-    [_SITRDisplay setAccessibilityHint:@"Plays Music"];
-    [_SSBDisplay setAccessibilityHint:@"Plays Music"];
-    [_AGDisplay setAccessibilityHint:@"Plays Music"];
+    [_SITRDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_SSBDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_AGDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     
     [_SSBLabel setIsAccessibilityElement:NO];
     [_AGLabel setIsAccessibilityElement:NO];

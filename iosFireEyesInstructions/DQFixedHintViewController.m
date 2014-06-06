@@ -39,25 +39,23 @@
     [super viewDidLoad];
     
     [_TextView setEditable:NO];
-    [_TextView setText:@"Now we have added the hint information back onto the buttons.  With these hints, you know that 'Star Spangled Banner' is a song that is going to be played, and not a website that will be visited for further information."];
+    [_TextView setText:NSLocalizedString(@"HINT_FIXED_TEXTVIEW", nil)];
     
-    [_SSBDisplay setAccessibilityLabel:@"Star Spangled Banner"];
-    [_SSBDisplay setAccessibilityHint:@"Plays Song"];
+    [_SSBDisplay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
+    [_SSBDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     [_SSBDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
     
     [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_AGDisplay setAccessibilityHint:@"Plays Song"];
+    [_AGDisplay setAccessibilityHint:NSLocalizedString(@"AG", nil)];
     [_AGDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
     
     [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_SITRDisplay setAccessibilityHint:@"Plays Song"];
+    [_SITRDisplay setAccessibilityHint:NSLocalizedString(@"SITR", nil)];
     [_SITRDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
     [_SSBLabel setIsAccessibilityElement:false];
-    
     [_AGLabel setIsAccessibilityElement:false];
-    
     [_SITRLabel setIsAccessibilityElement:false];
     
 }
