@@ -45,13 +45,13 @@
     [_SSBDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     [_SSBDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
     
-    [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_AGDisplay setAccessibilityHint:NSLocalizedString(@"AG", nil)];
+    [_AGDisplay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
+    [_AGDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     [_AGDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
     
-    [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_SITRDisplay setAccessibilityHint:NSLocalizedString(@"SITR", nil)];
+    [_SITRDisplay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
+    [_SITRDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     [_SITRDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
     [_SSBLabel setIsAccessibilityElement:false];

@@ -36,18 +36,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_TextView setText:NSLocalizedString(@"HINT_BROKEN_TEXTVIEW", nil)];
+    [_TextView setText:@"Now, without those visual cues, what do these buttons do?  Sure, the accessibility labels of song titles suggest that songs will be played.  But, iOS provides the Hint attribute for us so we can tell users: \"This button plays a song\""];
     
     
-    [_SSBDisplay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
+    [_SSBDisplay setAccessibilityLabel:@"Star Spangled Banner"];
     [_SSBDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
     //[_SSBDisplay setAccessibilityHint:@"Visit wiki article"];
     
-    [_AGDisplay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
+    [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
     [_AGDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
     //[_AGDisplay setAccessibilityHint:@"Visit wiki article"];
     
-    [_SITRDisplay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
+    [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
     [_SITRDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
     //[_SITRDisplay setAccessibilityHint:@"Visit wiki article"];
     

@@ -16,6 +16,13 @@
 "AG" = "Amazing Grace";
 "PLAYS_MUSIC" = "Plays Music";
 
+"MODIFY_IMAGE" = "Modify image display";
+"DISPLAY_DOG" = "Display a picture of a dog:";
+"DISPLAY_CAT" = "Display a picture of a cat:";
+"DISPLAY_FISH" = "Display a picture of a fish:";
+
+"A11Y_ABOUT_TEXTVIEW" = "When a user interracts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  This application aims to provide scenarios and descriptions in a way that helps you to understand the difficulties users with dissabilities have with interracting with iOS applications,  as well as the techniques and conventions you can use to portray this information, using basic iOS APIs.";
+
 //Traits story
 "TRAIT_INFO_TEXTVIEW1" = "Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably.";
 
@@ -33,6 +40,8 @@
 "LABEL_INFO_TEXTVIEW2" = "Labels provide information to voiceover quickly.  Unlike hints, whose readout is delayed.  When designing accessible applications you want to keep two particular users in mind.  The power user, and the new user.  Think of labels as something to help power users.  The person who knows that a row of buttons are links, or that they play music.  They don't need to be reminded that a button is going to visit a webpage, they just need to know which page they will be visiting.";
 
 "LABEL_EXAMPLE_TEXTVIEW" = "Below is an example where the context of the buttons is obvious.  Clearly each button is going to display a picture.  The labels for each button are the pictures that are to be displayed.";
+
+"LABEL_FIXED_TEXTVIEW" = "Here we have added the relevant accessibility information.  Now, with voiceover turned on, you can easily tell which picture is going to be displayed.";
 
 //Nested Story
 "NESTED_FIXED_TEXTVIEW" = "By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but a very easy fix!";

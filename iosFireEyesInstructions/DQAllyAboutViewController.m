@@ -31,19 +31,7 @@
 {
     [super viewDidLoad];
     
-    [_LabelsButton setAccessibilityLabel:[[_LabelsButton titleLabel] text]];
-    [_LabelsButton setAccessibilityHint:@"Open help content"];
-    
-    [_HintsButton setAccessibilityLabel:[[_HintsButton titleLabel] text]];
-    [_HintsButton setAccessibilityHint:@"Open help content"];
-    
-    [_TraitsButton setAccessibilityLabel:[[_TraitsButton titleLabel] text]];
-    [_TraitsButton setAccessibilityHint:@"Open help content"];
-
-    [_NestedButton setAccessibilityLabel:[[_NestedButton titleLabel] text]];
-    [_NestedButton setAccessibilityHint:@"Open help content"];
-	
-    _TextView.text = @"When a user interracts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  This application aims to provide scenarios and descriptions in a way that helps you to understand the difficulties users with dissabilities have with interracting with iOS applications,  as well as the techniques and conventions you can use to portray this information, using basic iOS APIs.";
+    [_TextView setText:NSLocalizedString(@"A11Y_ABOUT_TEXTVIEW", nil)];
     
     [_TextView setEditable:NO];
 }

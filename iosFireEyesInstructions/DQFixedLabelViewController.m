@@ -31,15 +31,15 @@
 {
     [super viewDidLoad];
     
-    [_TextView setText:@"Here we have added the relevant accessibility information.  Now, with voiceover turned on, you can easily tell which picture is going to be displayed."];
+    [_TextView setText:NSLocalizedString(@"LABEL_FIXED_TEXTVIEW", nil)];
     
-    [_CatDisplay setAccessibilityLabel:@"Cat"];
-    [_DogDisplay setAccessibilityLabel:@"Dog"];
-    [_FishDisplay setAccessibilityLabel:@"Fish"];
+    [_CatDisplay setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
+    [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
+    [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
     
-    [_CatDisplay setAccessibilityHint:@"Modify image display"];
-    [_FishDisplay setAccessibilityHint:@"Modify image display"];
-    [_DogDisplay setAccessibilityHint:@"Modify image display"];
+    [_CatDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
+    [_FishDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
+    [_DogDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
     
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
@@ -49,7 +49,7 @@
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
-    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
 

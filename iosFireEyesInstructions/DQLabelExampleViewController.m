@@ -44,13 +44,13 @@
     [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
     
-    [_CatDisplay setAccessibilityHint:@"Modify image display"];
-    [_FishDisplay setAccessibilityHint:@"Modify image display"];
-    [_DogDisplay setAccessibilityHint:@"Modify image display"];
+    [_CatDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
+    [_FishDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
+    [_DogDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
     
-    [_DogLabel setText:@"Display a picture of a dog:"];
-    [_CatLabel setText:@"Display a picture of a cat:"];
-    [_FishLabel setText:@"Display a picture of a fish:"];
+    [_DogLabel setText:NSLocalizedString(@"DISPLAY_DOG", nil)];
+    [_CatLabel setText:NSLocalizedString(@"DISPLAY_CAT", nil)];
+    [_FishLabel setText:NSLocalizedString(@"DISPLAY_FISH", nil)];
     
     [_DogLabel setIsAccessibilityElement:NO];
     [_CatLabel setIsAccessibilityElement:NO];
@@ -58,8 +58,7 @@
     [_TextView setEditable:NO];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
-    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
 

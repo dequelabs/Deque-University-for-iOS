@@ -19,6 +19,7 @@
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRj-O2-thu">
                                 <rect key="frame" x="60" y="313" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Visit section content" label="What is the analyzer"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="495-tl-Y5V"/>
                                     <constraint firstAttribute="height" constant="30" id="RTR-VO-Tkk"/>
@@ -35,6 +36,7 @@
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8P9-3q-FKv">
                                 <rect key="frame" x="60" y="388" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Visit section content" label="How it works"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="QAl-jM-Hzx"/>
                                     <constraint firstAttribute="height" constant="30" id="Ujo-nI-XkF"/>
@@ -51,6 +53,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbo-8B-OUA">
                                 <rect key="frame" x="60" y="238" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Visit section content" label="What is accessibility"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Kyh-DS-xPx"/>
                                     <constraint firstAttribute="height" constant="30" id="NiI-N2-zgs"/>
@@ -66,6 +69,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GCO-3a-jNA">
                                 <rect key="frame" x="25" y="60" width="270" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="not empty" label="not empty"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="Vvz-Sp-bVb"/>
                                     <constraint firstAttribute="height" constant="128" id="uCM-FG-ETI"/>
@@ -255,6 +259,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBD-Aq-zUY">
                                 <rect key="frame" x="90" y="327" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Open help content" label="Labels"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="2eD-LU-NvX"/>
                                     <constraint firstAttribute="height" constant="30" id="VGm-8F-Me4"/>
@@ -269,6 +274,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uc-T9-Ym2">
                                 <rect key="frame" x="90" y="407" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Open help content" label="Traits"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hgz-6y-hmA"/>
                                     <constraint firstAttribute="width" constant="140" id="q2N-60-Rye"/>
@@ -283,6 +289,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-i1-iEe">
                                 <rect key="frame" x="90" y="367" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Open help content" label="Hints"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bRr-ko-M1j"/>
                                     <constraint firstAttribute="width" constant="140" id="g7q-eQ-C9h"/>
@@ -323,6 +330,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib4-iE-hNp">
                                 <rect key="frame" x="90" y="447" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="Open help content" label="Nested Accessibility"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="44j-Dc-tky"/>
                                     <constraint firstAttribute="height" constant="30" id="Jpn-wL-x8n"/>
@@ -455,14 +463,14 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWj-SB-ud1">
-                                        <rect key="frame" x="20" y="70" width="280" height="187"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWj-SB-ud1">
+                                        <rect key="frame" x="20" y="68" width="280" height="187"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="280" id="axg-mx-s7f"/>
                                             <constraint firstAttribute="height" constant="187" id="uje-8Z-kDr"/>
                                         </constraints>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -861,6 +869,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zed-BI-9f8">
                                 <rect key="frame" x="80" y="200" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" hint="not empty" label="not empty"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="OE6-Lb-b4a"/>
                                     <constraint firstAttribute="width" constant="160" id="b3H-4g-brK"/>
@@ -2320,7 +2329,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="This is a music player">
-                                    <bool key="isElement" value="YES"/>
+                                    <bool key="isElement" value="NO"/>
                                 </accessibility>
                                 <constraints>
                                     <constraint firstItem="sQx-Mc-Efe" firstAttribute="leading" secondItem="N0L-ZN-sHP" secondAttribute="trailing" constant="10" id="4WF-L2-xof"/>
@@ -3089,23 +3098,23 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="ZHt-r8-CNe"/>
         <segue reference="R4k-dN-yQs"/>
         <segue reference="KkH-3d-XTv"/>
-        <segue reference="m5e-0I-dMc"/>
-        <segue reference="ygi-Zc-Yh0"/>
-        <segue reference="qlL-tW-iG0"/>
-        <segue reference="RoG-g1-KrN"/>
-        <segue reference="bUn-tt-TKI"/>
-        <segue reference="v8n-8H-AN0"/>
-        <segue reference="Fj5-aQ-2sO"/>
+        <segue reference="L2W-6j-NrH"/>
+        <segue reference="aPf-Zd-7Rf"/>
         <segue reference="3xU-Dn-uef"/>
-        <segue reference="hqi-jv-wsD"/>
-        <segue reference="odM-ea-apB"/>
-        <segue reference="ZHt-r8-CNe"/>
-        <segue reference="PFE-cz-Sge"/>
+        <segue reference="ygi-Zc-Yh0"/>
+        <segue reference="p4j-Ld-duf"/>
+        <segue reference="KQe-BQ-Co9"/>
         <segue reference="Cs9-bg-IQg"/>
         <segue reference="CsT-Bc-g7i"/>
-        <segue reference="KQe-BQ-Co9"/>
-        <segue reference="vso-JF-a4F"/>
+        <segue reference="hqi-jv-wsD"/>
+        <segue reference="odM-ea-apB"/>
+        <segue reference="bUn-tt-TKI"/>
+        <segue reference="qlL-tW-iG0"/>
+        <segue reference="Fj5-aQ-2sO"/>
+        <segue reference="v8n-8H-AN0"/>
+        <segue reference="YBY-vN-lWL"/>
     </inferredMetricsTieBreakers>
 </document>

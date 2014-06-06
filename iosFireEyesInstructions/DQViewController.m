@@ -34,19 +34,6 @@
 {
     [super viewDidLoad];
 	[_LogoImage setImage:[UIImage imageNamed:@"DequeLogo"]];
-    
-    [_AllyButton setAccessibilityLabel:[[_AllyButton titleLabel] text]];
-    [_AllyButton setAccessibilityHint:@"Visit section content"];
-    
-    [_AnalyzerButton setAccessibilityLabel:[[_AnalyzerButton titleLabel] text]];
-    [_AnalyzerButton setAccessibilityHint:@"Visit section content"];
-    
-    [_HowButton setAccessibilityLabel:[[_HowButton titleLabel] text]];
-    [_HowButton setAccessibilityHint:@"Visit section content"];
-    
-    //_LogoImage is not an accessibility element on purpose, so we set these to silence warnings.
-	[_LogoImage setAccessibilityHint:@""];
-    [_LogoImage setAccessibilityLabel:@""];
 }
 
 - (BOOL)shouldAutorotate {
