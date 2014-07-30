@@ -16,8 +16,8 @@
 
 @implementation DQViewController {
     IBOutlet UIButton *_AllyButton;
-    IBOutlet UIButton *_AnalyzerButton;
-    IBOutlet UIButton *_HowButton;
+    IBOutlet UIButton *_TourButton;
+    IBOutlet UITextView *_InfoText;
     IBOutlet UIImageView *_LogoImage;
 }
 
@@ -34,6 +34,7 @@
 {
     [super viewDidLoad];
 	[_LogoImage setImage:[UIImage imageNamed:@"DequeLogo"]];
+    [_InfoText setText:NSLocalizedString(@"INTRO_ABOUT_APP", nil)];
 }
 
 - (BOOL)shouldAutorotate {
