@@ -41,7 +41,6 @@
 		A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
 		A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013E418A2DD4700DC6496 /* InfoPlist.strings */; };
-		A9D013E818A2DD4700DC6496 /* iosFireEyesInstructionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013E718A2DD4700DC6496 /* iosFireEyesInstructionsTests.m */; };
 		A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013F618A2DEFC00DC6496 /* DQViewController.m */; };
 		A9F1672A192E522500B37FFB /* DQFixedTraitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* DQFixedTraitsViewController.m */; };
 /* End PBXBuildFile section */
@@ -111,7 +110,6 @@
 		A9D013DB18A2DD4700DC6496 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A9D013E318A2DD4700DC6496 /* Accessibility 101Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Accessibility 101Tests-Info.plist"; sourceTree = "<group>"; };
 		A9D013E518A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A9D013E718A2DD4700DC6496 /* iosFireEyesInstructionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosFireEyesInstructionsTests.m; sourceTree = "<group>"; };
 		A9D013F518A2DEFC00DC6496 /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQViewController.h; path = iosFireEyesInstructions/DQViewController.h; sourceTree = "<group>"; };
 		A9D013F618A2DEFC00DC6496 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQViewController.m; path = iosFireEyesInstructions/DQViewController.m; sourceTree = "<group>"; };
 		A9F16728192E522500B37FFB /* DQFixedTraitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQFixedTraitsViewController.h; path = iosFireEyesInstructions/DQFixedTraitsViewController.h; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 		A9D013E118A2DD4700DC6496 /* iosFireEyesInstructionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				A9D013E718A2DD4700DC6496 /* iosFireEyesInstructionsTests.m */,
 				A9D013E218A2DD4700DC6496 /* Supporting Files */,
 			);
 			path = iosFireEyesInstructionsTests;
@@ -437,7 +434,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D013E818A2DD4700DC6496 /* iosFireEyesInstructionsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +561,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +579,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
