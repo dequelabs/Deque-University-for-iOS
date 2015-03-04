@@ -30,7 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
     [_TextView setText:@"This is the way a blind person percieves this particular view.  Notice the ambiguity of the display buttons.  What pictures do they display?"];
     
     //[_CatDisplay setAccessibilityLabel:@"Cat"];
