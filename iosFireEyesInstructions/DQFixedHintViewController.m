@@ -15,14 +15,14 @@
 @end
 
 @implementation DQFixedHintViewController {
-    IBOutlet UILabel *_BrokenFixedLabel;
-    IBOutlet UIButton *_SSBDisplay;
-    IBOutlet UIButton *_AGDisplay;
-    IBOutlet UIButton *_SITRDisplay;
+    IBOutlet UILabel *_FixedLabel;
+    IBOutlet UILabel *_StarSpangledBannerLabel;
+    IBOutlet UILabel *_AmazingGraceLabel;
+    IBOutlet UILabel *_SingingInTheRainLabel;
+    IBOutlet UIButton *_StarSpangledBannerPlay;
+    IBOutlet UIButton *_AmazingGracePlay;
+    IBOutlet UIButton *_SingingInTheRainPlay;
     IBOutlet UITextView *_TextView;
-    IBOutlet UILabel *_SSBLabel;
-    IBOutlet UILabel *_SITRLabel;
-    IBOutlet UILabel *_AGLabel;
     IBOutlet UILabel *_MusicPlayer;
     
     AVAudioPlayer* _AudioPlayer;
@@ -41,22 +41,22 @@
     [_TextView setEditable:NO];
     [_TextView setText:NSLocalizedString(@"HINT_FIXED_TEXTVIEW", nil)];
     
-    [_SSBDisplay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
-    [_SSBDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
-    [_SSBDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_StarSpangledBannerPlay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
+    [_StarSpangledBannerPlay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_StarSpangledBannerPlay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
     
-    [_AGDisplay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
-    [_AGDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
-    [_AGDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_AmazingGracePlay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
+    [_AmazingGracePlay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_AmazingGracePlay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
     
-    [_SITRDisplay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
-    [_SITRDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
-    [_SITRDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_SingingInTheRainPlay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
+    [_SingingInTheRainPlay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_SingingInTheRainPlay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 
-    [_SSBLabel setIsAccessibilityElement:false];
-    [_AGLabel setIsAccessibilityElement:false];
-    [_SITRLabel setIsAccessibilityElement:false];
+    [_StarSpangledBannerLabel setIsAccessibilityElement:false];
+    [_AmazingGraceLabel setIsAccessibilityElement:false];
+    [_SingingInTheRainLabel setIsAccessibilityElement:false];
     
 }
 
@@ -67,9 +67,9 @@
     UIButton* button = (UIButton*)sender;
     NSString* song = nil;
     
-    if (button == _SSBDisplay) {
+    if (button == _StarSpangledBannerPlay) {
         song = @"SSB";
-    } else if (button == _AGDisplay) {
+    } else if (button == _AmazingGracePlay) {
         song = @"AG";
     } else {
         song = @"SIR";

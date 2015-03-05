@@ -13,14 +13,14 @@
 @end
 
 @implementation DQBrokenHintViewController {
-    IBOutlet UILabel *_BrokenFixedLabel;
-    __weak IBOutlet UIButton *_SSBDisplay;
-    IBOutlet UIButton *_AGDisplay;
-    IBOutlet UIButton *_SITRDisplay;
+    IBOutlet UILabel *_BrokenLabel;
+    __weak IBOutlet UILabel *_StarSpangledBannerLabel;
+    IBOutlet UILabel *_AmazingGraceLabel;
+    IBOutlet UILabel *_SingingInTheRainLabel;
+    IBOutlet UIButton *_StarSpangledBannerPlay;
+    IBOutlet UIButton *_AmazingGracePlay;
+    IBOutlet UIButton *_SingingInTheRainPlay;
     IBOutlet UITextView *_TextView;
-    IBOutlet UILabel *_SSBLabel;
-    IBOutlet UILabel *_AGLabel;
-    IBOutlet UILabel *_SITRLabel;
     IBOutlet UILabel *_MusicPlayer;
 }
 
@@ -39,23 +39,23 @@
     [_TextView setText:@"Now, without those visual cues, what do these buttons do?  Sure, the accessibility labels of song titles suggest that songs will be played.  But, iOS provides the Hint attribute for us so we can tell users: \"This button plays a song\""];
     
     
-    [_SSBDisplay setAccessibilityLabel:@"Star Spangled Banner"];
-    [_SSBDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
+    [_StarSpangledBannerPlay setAccessibilityLabel:@"Star Spangled Banner"];
+    [_StarSpangledBannerPlay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
     //[_SSBDisplay setAccessibilityHint:@"Visit wiki article"];
     
-    [_AGDisplay setAccessibilityLabel:@"Amazing Grace"];
-    [_AGDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
+    [_AmazingGracePlay setAccessibilityLabel:@"Amazing Grace"];
+    [_AmazingGracePlay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
     //[_AGDisplay setAccessibilityHint:@"Visit wiki article"];
     
-    [_SITRDisplay setAccessibilityLabel:@"Singing in the Rain"];
-    [_SITRDisplay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
+    [_SingingInTheRainPlay setAccessibilityLabel:@"Singing in the Rain"];
+    [_SingingInTheRainPlay addTarget:self action:@selector(visitWebPage:) forControlEvents:UIControlEventTouchDown];
     //[_SITRDisplay setAccessibilityHint:@"Visit wiki article"];
     
-    [_SSBLabel setIsAccessibilityElement:false];
+    [_StarSpangledBannerLabel setIsAccessibilityElement:false];
     
-    [_AGLabel setIsAccessibilityElement:false];
+    [_AmazingGraceLabel setIsAccessibilityElement:false];
     
-    [_SITRLabel setIsAccessibilityElement:false];
+    [_SingingInTheRainLabel setIsAccessibilityElement:false];
     
     [_TextView setEditable:NO];
     
@@ -64,9 +64,9 @@
 - (void)visitWebPage:(id)sender {
     
     NSString* url = nil;
-    if (sender == _SSBDisplay) {
+    if (sender == _StarSpangledBannerPlay) {
         url = @"http://en.wikipedia.org/wiki/The_Star-Spangled_Banner";
-    } else if (sender == _AGDisplay) {
+    } else if (sender == _AmazingGracePlay) {
         url = @"http://en.wikipedia.org/wiki/Amazing_Grace";
     } else {
         url = @"http://en.wikipedia.org/wiki/Singin'_in_the_Rain";

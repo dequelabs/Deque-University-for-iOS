@@ -13,7 +13,7 @@
 @end
 
 @implementation DQBrokenLabelViewController {
-    IBOutlet UILabel *_BrokenFixedLabel;
+    IBOutlet UILabel *_BrokenLabel;
     IBOutlet UIButton *_DogDisplay;
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;

@@ -16,12 +16,12 @@
 
 @implementation DQHintExampleViewController {
     IBOutlet UILabel *_ExampleLabel;
-    IBOutlet UILabel *_SSBLabel;
-    IBOutlet UILabel *_AGLabel;
-    IBOutlet UILabel *_SITRLabel;
-    IBOutlet UIButton *_SSBDisplay;
-    IBOutlet UIButton *_AGDisplay;
-    IBOutlet UIButton *_SITRDisplay;
+    IBOutlet UILabel *_StarSpangledBannerLabel;
+    IBOutlet UILabel *_AmazingGraceLabel;
+    IBOutlet UILabel *_SingingInTheRainLabel;
+    IBOutlet UIButton *_StarSpangledBannerPlay;
+    IBOutlet UIButton *_AmazingGracePlay;
+    IBOutlet UIButton *_SingingInTheRainPlay;
     IBOutlet UITextView *_TextView;
     IBOutlet UILabel *_MusicPlayer;
     
@@ -39,22 +39,22 @@
     [_TextView setEditable:NO];
     [_TextView setText:NSLocalizedString(@"HINT_EXAMPLE_TEXTVIEW", nil)];
     
-    [_SITRDisplay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
-    [_AGDisplay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
-    [_SSBDisplay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
+    [_SingingInTheRainPlay setAccessibilityLabel:NSLocalizedString(@"SITR", nil)];
+    [_AmazingGracePlay setAccessibilityLabel:NSLocalizedString(@"AG", nil)];
+    [_StarSpangledBannerPlay setAccessibilityLabel:NSLocalizedString(@"SSB", nil)];
     
-    [_SITRDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
-    [_SSBDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
-    [_AGDisplay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_SingingInTheRainPlay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_StarSpangledBannerPlay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
+    [_AmazingGracePlay setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     
-    [_SSBLabel setIsAccessibilityElement:NO];
-    [_AGLabel setIsAccessibilityElement:NO];
-    [_SITRLabel setIsAccessibilityElement:NO];
+    [_StarSpangledBannerLabel setIsAccessibilityElement:NO];
+    [_AmazingGraceLabel setIsAccessibilityElement:NO];
+    [_SingingInTheRainLabel setIsAccessibilityElement:NO];
     
     
-    [_SITRDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
-    [_AGDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
-    [_SSBDisplay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_SingingInTheRainPlay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_AmazingGracePlay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
+    [_StarSpangledBannerPlay addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchDown];
 }
 
 - (void)playMusic:(id)sender {
@@ -64,9 +64,9 @@
     UIButton* button = (UIButton*)sender;
     NSString* song = nil;
     
-    if (button == _SSBDisplay) {
+    if (button == _StarSpangledBannerPlay) {
         song = @"SSB";
-    } else if (button == _AGDisplay) {
+    } else if (button == _AmazingGracePlay) {
         song = @"AG";
     } else {
         song = @"SIR";
