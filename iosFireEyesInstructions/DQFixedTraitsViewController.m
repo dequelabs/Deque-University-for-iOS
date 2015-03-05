@@ -13,7 +13,7 @@
 @end
 
 @implementation DQFixedTraitsViewController {
-    IBOutlet UILabel *_BrokenFixedLabel;
+    IBOutlet UILabel *_FixedLabel;
     IBOutlet UIButton *_DogDisplay;
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;

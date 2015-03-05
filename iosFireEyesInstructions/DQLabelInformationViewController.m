@@ -13,8 +13,8 @@
 @end
 
 @implementation DQLabelInformationViewController {
-    IBOutlet UITextView *_TextView1;
-    IBOutlet UITextView *_TextView2;
+    IBOutlet UITextView *_WhatTextView;
+    IBOutlet UITextView *_ImportantTextView;
     IBOutlet UILabel *_WhatLabel;
     IBOutlet UILabel *_ImportantLabel;
     IBOutlet UILabel *_TitleLabel;
@@ -30,12 +30,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[_TextView1 setText:NSLocalizedString(@"LABEL_INFO_TEXTVIEW1", nil)];
+	[_WhatTextView setText:NSLocalizedString(@"LABEL_INFO_TEXTVIEW1", nil)];
     
-    [_TextView2 setText:NSLocalizedString(@"LABEL_INFO_TEXTVIEW2", nil)];
+    [_ImportantTextView setText:NSLocalizedString(@"LABEL_INFO_TEXTVIEW2", nil)];
     
-    [_TextView1 setEditable:NO];
-    [_TextView2 setEditable:NO];
+    [_WhatTextView setEditable:NO];
+    [_ImportantTextView setEditable:NO];
 }
 
 - (void)viewDidLayoutSubviews {

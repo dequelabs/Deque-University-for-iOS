@@ -16,8 +16,8 @@
     IBOutlet UILabel *_TitleLabel;
     IBOutlet UILabel *_ImportantLabel;
     IBOutlet UILabel *_WhatHint;
-    IBOutlet UITextView *_TextView1;
-    IBOutlet UITextView *_TextView2;
+    IBOutlet UITextView *_WhatTextView;
+    IBOutlet UITextView *_ImportantTextView;
     IBOutlet UIImageView *_ImageView;
     IBOutlet UIScrollView *_ScrollView;
 }
@@ -36,13 +36,13 @@
 	[_ImageView setAccessibilityHint:NSLocalizedString(@"BLANK", nil)];
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"BLANK", nil)];
 	
-    [_TextView1 setText:NSLocalizedString(@"HINT_INFO_TEXTVIEW1", nil)];
+    [_WhatTextView setText:NSLocalizedString(@"HINT_INFO_TEXTVIEW1", nil)];
     
-    [_TextView1 setEditable:NO];
+    [_WhatTextView setEditable:NO];
     
-    [_TextView2 setText:NSLocalizedString(@"HINT_INFO_TEXTVIEW2", nil)];
+    [_ImportantTextView setText:NSLocalizedString(@"HINT_INFO_TEXTVIEW2", nil)];
     
-    [_TextView2 setEditable:NO];
+    [_ImportantTextView setEditable:NO];
 }
 
 - (void)viewDidLayoutSubviews {

@@ -383,11 +383,11 @@
                     </view>
                     <connections>
                         <outlet property="_ImportantLabel" destination="DMF-Yz-a2H" id="Xsd-Ik-Gel"/>
+                        <outlet property="_ImportantTextView" destination="vDE-WM-1hg" id="i3M-G9-ikj"/>
                         <outlet property="_ScrollView" destination="mZ0-cL-Lln" id="fT4-B1-TEz"/>
-                        <outlet property="_TextView1" destination="IWj-SB-ud1" id="hNR-EF-Oxa"/>
-                        <outlet property="_TextView2" destination="vDE-WM-1hg" id="DJN-TP-QRd"/>
                         <outlet property="_TitleLabel" destination="Wct-8A-PZW" id="P8A-9P-E3l"/>
                         <outlet property="_WhatLabel" destination="QPL-KY-EXz" id="1g8-Qs-tRa"/>
+                        <outlet property="_WhatTextView" destination="IWj-SB-ud1" id="hXu-aq-MAD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsx-Nq-vsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -527,11 +527,11 @@
                     <connections>
                         <outlet property="_ImageView" destination="0fD-rk-DB1" id="gKn-E0-Ay0"/>
                         <outlet property="_ImportantLabel" destination="ILh-dq-lV5" id="85Z-dE-5nK"/>
+                        <outlet property="_ImportantTextView" destination="TYm-vP-EwL" id="QjR-CI-FJg"/>
                         <outlet property="_ScrollView" destination="sre-Ee-IBO" id="T3P-n3-jZw"/>
-                        <outlet property="_TextView1" destination="zIL-8L-mbi" id="FQ4-xE-X7p"/>
-                        <outlet property="_TextView2" destination="TYm-vP-EwL" id="Obi-Ao-3o0"/>
                         <outlet property="_TitleLabel" destination="lLX-eC-3D0" id="Sop-b0-2Fp"/>
                         <outlet property="_WhatHint" destination="aPV-p9-dHb" id="S28-Vg-KH0"/>
+                        <outlet property="_WhatTextView" destination="zIL-8L-mbi" id="FjY-tg-WDz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UP-4N-AXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1654,10 +1654,10 @@
                     <connections>
                         <outlet property="_ImageView" destination="t3Y-el-auW" id="WVi-Yb-2io"/>
                         <outlet property="_ImportantLabel" destination="fhX-WM-pSY" id="IUE-Kn-CmK"/>
+                        <outlet property="_ImportantTextView" destination="4bb-11-t8j" id="IUn-sD-zfl"/>
                         <outlet property="_ScrollView" destination="kn7-9x-A6u" id="5AB-LM-lLi"/>
-                        <outlet property="_TextView1" destination="Wag-Mx-NaW" id="nu9-hc-Gkx"/>
-                        <outlet property="_TextView2" destination="4bb-11-t8j" id="v4t-Vk-O8n"/>
                         <outlet property="_TitleLabel" destination="W2Z-1y-HKj" id="DhM-q7-GvW"/>
+                        <outlet property="_WhatTextView" destination="Wag-Mx-NaW" id="99D-cD-SLZ"/>
                         <outlet property="_WhatTrait" destination="1ja-Qc-H3r" id="koV-5i-3QE"/>
                     </connections>
                 </viewController>
@@ -1753,11 +1753,11 @@
                     <connections>
                         <outlet property="_ImageView" destination="O9B-uu-15G" id="2Pv-3F-h84"/>
                         <outlet property="_ImportantLabel" destination="uxY-cs-1sE" id="Zvr-2b-Uyj"/>
+                        <outlet property="_ImportantTextView" destination="7QK-io-fgg" id="B5v-62-YXQ"/>
                         <outlet property="_ScrollView" destination="aWV-oC-yvu" id="d8b-Qv-jVi"/>
-                        <outlet property="_TextView1" destination="Hwv-Ee-A4Z" id="ZWN-Ze-Hn2"/>
-                        <outlet property="_TextView2" destination="7QK-io-fgg" id="5mw-yX-KSM"/>
                         <outlet property="_TitleLabel" destination="k4b-Ct-thd" id="7hf-aQ-ikm"/>
                         <outlet property="_WhatNested" destination="gYQ-h8-VNC" id="si5-C9-isr"/>
+                        <outlet property="_WhatTextView" destination="Hwv-Ee-A4Z" id="t1o-fe-Kuu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2F-HJ-ajv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2141,14 +2141,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="_AGDisplay" destination="4g8-Yk-8tY" id="baR-dz-wzg"/>
-                        <outlet property="_AGLabel" destination="aGg-HX-5GI" id="foE-Xj-cfO"/>
+                        <outlet property="_AmazingGraceLabel" destination="aGg-HX-5GI" id="f43-1n-s2J"/>
+                        <outlet property="_AmazingGracePlay" destination="4g8-Yk-8tY" id="rCE-fR-gHu"/>
                         <outlet property="_ExampleLabel" destination="UGL-ZA-vtS" id="eXg-Nj-kYG"/>
                         <outlet property="_MusicPlayer" destination="Iiw-wz-KGW" id="dnV-Wz-JhA"/>
-                        <outlet property="_SITRDisplay" destination="ajF-lz-RhM" id="uSr-bX-fxx"/>
-                        <outlet property="_SITRLabel" destination="LMO-mT-uLR" id="7RP-Vq-qJb"/>
-                        <outlet property="_SSBDisplay" destination="N0L-ZN-sHP" id="ZIp-Tm-RWp"/>
-                        <outlet property="_SSBLabel" destination="sQx-Mc-Efe" id="4GF-pk-Ue9"/>
+                        <outlet property="_SingingInTheRainLabel" destination="LMO-mT-uLR" id="RfT-Xi-mLg"/>
+                        <outlet property="_SingingInTheRainPlay" destination="ajF-lz-RhM" id="E7d-bT-tTs"/>
+                        <outlet property="_StarSpangledBannerLabel" destination="sQx-Mc-Efe" id="Kaf-xj-Nqh"/>
+                        <outlet property="_StarSpangledBannerPlay" destination="N0L-ZN-sHP" id="Cx9-dR-qKg"/>
                         <outlet property="_TextView" destination="E5w-v6-jVG" id="WkL-vX-GPt"/>
                         <outlet property="_View" destination="4hA-M0-eTf" id="9Pb-0M-QI7"/>
                     </connections>
@@ -2294,7 +2294,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="_BrokenFixedLabel" destination="nW7-Tc-tjn" id="PAM-NH-PE9"/>
+                        <outlet property="_BrokenLabel" destination="nW7-Tc-tjn" id="4w4-lY-CM5"/>
                         <outlet property="_CatDisplay" destination="H9f-rV-9hF" id="ipG-MZ-9ua"/>
                         <outlet property="_DogDisplay" destination="VZq-Um-SRM" id="IzZ-Ul-DSY"/>
                         <outlet property="_FishDisplay" destination="aHa-Hy-MgV" id="8ZQ-QA-diX"/>
@@ -2491,14 +2491,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="_AGDisplay" destination="ry1-my-vJU" id="CdM-C0-dAj"/>
-                        <outlet property="_AGLabel" destination="CYY-sc-H2o" id="amT-7l-dn0"/>
-                        <outlet property="_BrokenFixedLabel" destination="5jc-b5-KMA" id="7g7-Jb-ycR"/>
+                        <outlet property="_AmazingGraceLabel" destination="CYY-sc-H2o" id="BtD-Vx-ttE"/>
+                        <outlet property="_AmazingGracePlay" destination="ry1-my-vJU" id="MDl-59-hBL"/>
+                        <outlet property="_BrokenLabel" destination="5jc-b5-KMA" id="SbS-0R-HtN"/>
                         <outlet property="_MusicPlayer" destination="pyr-lE-mrF" id="Ygj-nH-nZs"/>
-                        <outlet property="_SITRDisplay" destination="QSn-d6-1Wo" id="uGx-81-cLK"/>
-                        <outlet property="_SITRLabel" destination="KZY-ab-kX0" id="CQa-aG-HdZ"/>
-                        <outlet property="_SSBDisplay" destination="DgJ-9W-eji" id="0d0-ZJ-JeK"/>
-                        <outlet property="_SSBLabel" destination="3uG-Pp-TQu" id="O1K-uN-yQh"/>
+                        <outlet property="_SingingInTheRainLabel" destination="KZY-ab-kX0" id="pdd-FV-lUZ"/>
+                        <outlet property="_SingingInTheRainPlay" destination="QSn-d6-1Wo" id="WdF-lI-Vcg"/>
+                        <outlet property="_StarSpangledBannerLabel" destination="3uG-Pp-TQu" id="Wxc-Sl-qgd"/>
+                        <outlet property="_StarSpangledBannerPlay" destination="DgJ-9W-eji" id="j7J-g8-jgI"/>
                         <outlet property="_TextView" destination="Nmd-na-HXz" id="zmN-ml-nD1"/>
                         <outlet property="_View" destination="5y4-WF-xZ4" id="tud-3m-CSr"/>
                     </connections>
@@ -2641,10 +2641,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="_BrokenFixedLabel" destination="NEN-1q-evW" id="oky-mH-gnE"/>
                         <outlet property="_CatDisplay" destination="API-fi-RJS" id="yfG-tB-E7m"/>
                         <outlet property="_DogDisplay" destination="7QU-Vr-2bo" id="scD-fQ-Sx9"/>
                         <outlet property="_FishDisplay" destination="qtj-FP-bpr" id="MLB-F9-4GX"/>
+                        <outlet property="_FixedLabel" destination="NEN-1q-evW" id="cdf-ke-xy4"/>
                         <outlet property="_ImageView" destination="2rR-Sz-9HN" id="vfM-Tc-zsA"/>
                         <outlet property="_TextView" destination="JXQ-hR-C9m" id="UMX-Ad-cbJ"/>
                     </connections>
@@ -2832,15 +2832,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="_AGDisplay" destination="QsH-6o-4dk" id="wfD-XV-WHm"/>
-                        <outlet property="_AGLabel" destination="8dz-5C-5pa" id="jg6-hk-vtZ"/>
-                        <outlet property="_BrokenFixedLabel" destination="1aB-To-6ev" id="9qz-OP-vuq"/>
+                        <outlet property="_AmazingGraceLabel" destination="8dz-5C-5pa" id="UyQ-Ks-lWg"/>
+                        <outlet property="_AmazingGracePlay" destination="QsH-6o-4dk" id="X1Z-gz-77h"/>
+                        <outlet property="_FixedLabel" destination="1aB-To-6ev" id="PIj-U9-DO1"/>
                         <outlet property="_MusicPlayer" destination="1AW-rr-Kv8" id="ZyY-hg-DBz"/>
-                        <outlet property="_SITRDisplay" destination="y8J-T9-qHr" id="RaO-1n-UrP"/>
-                        <outlet property="_SITRLabel" destination="EJG-q3-Obn" id="Phc-SH-o80"/>
-                        <outlet property="_SSBDisplay" destination="0fp-vH-j1M" id="7d6-hN-6C4"/>
-                        <outlet property="_SSBLabel" destination="rir-iu-gK0" id="22r-nq-MJ2"/>
-                        <outlet property="_TextView" destination="vRp-ku-uQl" id="co6-3w-4SR"/>
+                        <outlet property="_SingingInTheRainLabel" destination="EJG-q3-Obn" id="qdi-5g-8ft"/>
+                        <outlet property="_SingingInTheRainPlay" destination="y8J-T9-qHr" id="7TF-Ra-wF4"/>
+                        <outlet property="_StarSpangledBannerLabel" destination="rir-iu-gK0" id="1qW-Im-suj"/>
+                        <outlet property="_StarSpangledBannerPlay" destination="0fp-vH-j1M" id="Gxz-sW-n4f"/>
+                        <outlet property="_TextView" destination="vRp-ku-uQl" id="skZ-VB-L94"/>
                         <outlet property="_View" destination="kmn-ZT-d0B" id="Rpi-cA-PLo"/>
                     </connections>
                 </viewController>
@@ -2864,21 +2864,21 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="6Ow-Am-KL9"/>
+        <segue reference="v8n-8H-AN0"/>
+        <segue reference="70D-0D-TmX"/>
+        <segue reference="3n5-2O-ndp"/>
+        <segue reference="g0r-bX-vEO"/>
+        <segue reference="maK-uJ-l0U"/>
         <segue reference="R4k-dN-yQs"/>
         <segue reference="XoQ-ya-oDP"/>
         <segue reference="ZHt-r8-CNe"/>
-        <segue reference="2C5-ya-tc5"/>
         <segue reference="KKr-Vp-Ef2"/>
         <segue reference="odM-ea-apB"/>
         <segue reference="14Z-8M-zfC"/>
-        <segue reference="IuX-db-pJK"/>
-        <segue reference="PFE-cz-Sge"/>
         <segue reference="hqi-jv-wsD"/>
-        <segue reference="6cI-EV-LB9"/>
-        <segue reference="maK-uJ-l0U"/>
-        <segue reference="70D-0D-TmX"/>
-        <segue reference="v8n-8H-AN0"/>
-        <segue reference="6Ow-Am-KL9"/>
+        <segue reference="Cs9-bg-IQg"/>
+        <segue reference="PFE-cz-Sge"/>
         <segue reference="7lG-Ct-qKN"/>
         <segue reference="FLZ-Vf-p7f"/>
     </inferredMetricsTieBreakers>

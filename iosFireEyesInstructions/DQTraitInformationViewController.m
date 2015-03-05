@@ -14,8 +14,8 @@
 
 @implementation DQTraitInformationViewController {
     IBOutlet UILabel *_TitleLabel;
-    IBOutlet UITextView *_TextView1;
-    IBOutlet UITextView *_TextView2;
+    IBOutlet UITextView *_WhatTextView;
+    IBOutlet UITextView *_ImportantTextView;
     IBOutlet UILabel *_WhatTrait;
     IBOutlet UILabel *_ImportantLabel;
     IBOutlet UIImageView *_ImageView;
@@ -32,9 +32,9 @@
 {
     [super viewDidLoad];
     
-    [_TextView1 setText:NSLocalizedString(@"TRAIT_INFO_TEXTVIEW1", nil)];
+    [_WhatTextView setText:NSLocalizedString(@"TRAIT_INFO_TEXTVIEW1", nil)];
     
-    [_TextView2 setText:NSLocalizedString(@"TRAIT_INFO_TEXTVIEW2", nil)];
+    [_ImportantTextView setText:NSLocalizedString(@"TRAIT_INFO_TEXTVIEW2", nil)];
     
     
     //Our Image Views are presentation only
