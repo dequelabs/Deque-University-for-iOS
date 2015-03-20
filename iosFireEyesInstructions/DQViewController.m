@@ -8,12 +8,6 @@
 
 #import "DQViewController.h"
 
-@interface DQViewController () {
-    UIButton* blah;
-}
-
-@end
-
 @implementation DQViewController {
     IBOutlet UIButton *_AllyButton;
     IBOutlet UIButton *_TourButton;
