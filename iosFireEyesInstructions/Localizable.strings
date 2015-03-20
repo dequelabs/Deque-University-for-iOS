@@ -23,16 +23,16 @@
 
 "INTRO_ABOUT_APP" = "This app goes through example scenarios you may encounter when programming your own apps, and explains how they are inaccessible as well as what can be done to make them accessibile.  Before moving on, it is recommended that you enable VoiceOver, as well as the \"3-click\" VoiceOver on/off shortcut.  The \"Guided Tour\" will take you through a list of accessibility concepts one by one, and the \"Accessibility Contents\" will allow you to pick a specific topic you're struggling with.";
 
-"A11Y_ABOUT_TEXTVIEW" = "When a user interracts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  The following scenarios aim to help you to understand the difficulties users with dissabilities have when interracting with iOS applications,  as well as the techniques and conventions you can use to portray this information using basic iOS APIs.";
+"A11Y_ABOUT_TEXTVIEW" = "When a user interacts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  The following scenarios aim to help you to understand the difficulties users with dissabilities have when interacting with iOS applications,  as well as the techniques and conventions you can use to portray this information using basic iOS APIs.";
 
 //Traits story
 "TRAIT_INFO_TEXTVIEW1" = "Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably.";
 
 "TRAIT_INFO_TEXTVIEW2" = "When a sighted user uses an application, they get hints about what UI Elements do based on their appearance.  Traits help communicate this same information to non-sighted users.";
 
-"TRAIT_EXAMPLE_TEXTVIEW" = "Below is a screen similar to the one in the Labels example, however, notice that one of the buttons looks a little different.  It's appearance would suggest that it is a link.";
+"TRAIT_EXAMPLE_TEXTVIEW" = "Below is a screen similar to the one in the Labels example, however, notice that one of the buttons looks a little different.  Its appearance would suggest that it is a link.";
 
-"TRAIT_BROKEN_TEXTVIEW" = "Notice the last button appropriately has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interraction).  To enable both is redundant, unnecessary, and misleading.";
+"TRAIT_BROKEN_TEXTVIEW" = "Notice the last button appropriately has the trait of a link (because it opens a webpage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interaction).  To enable both is redundant, unnecessary, and misleading.";
 
 "TRAIT_FIXED_TEXTVIEW" = "Here we have removed the unnecessary traits to clarify the purpose of the last button.  There are many examples of traits that should not be paired together.";
 
@@ -48,11 +48,11 @@
 //Nested Story
 "NESTED_FIXED_TEXTVIEW" = "By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but a very easy fix!";
 
-"NESTED_BROKEN_TEXTVIEW" = "Notice how, when you turn VoiceOver on, a black box shows up around our music player.  You cannot interract with the button elements inside this box!";
+"NESTED_BROKEN_TEXTVIEW" = "Notice how, when you turn VoiceOver on, a black box shows up around our music player.  You cannot interact with the button elements inside this box!";
 
 "NESTED_EXAMPLE_TEXTVIEW" = "Remember our music player?  In this view we have added a parent view around our entire player.  This is a very reasonable separation of functionality";
 
-"NESTED_INFORMATION_TEXTVIEW1" = "When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue.";
+"NESTED_INFORMATION_TEXTVIEW1" = "When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interaction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue.";
 
 "NESTED_INFORMATION_TEXTVIEW2" = "For developers, grouping information in views allows you to conceptually group areas of functionality, and create sleak, easily scalable applications for multiple view types.  Just remember not to make your container views 'Accessibility Elements' and you're all set.";
 
