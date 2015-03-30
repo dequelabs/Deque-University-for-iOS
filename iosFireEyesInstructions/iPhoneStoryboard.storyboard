@@ -39,21 +39,6 @@
                                     <constraint firstAttribute="height" constant="25" id="vks-1n-u6w"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1O-Nk-5an">
-                                <rect key="frame" x="60" y="390" width="200" height="30"/>
-                                <accessibility key="accessibilityConfiguration" hint="" label="Guided Tour"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="HoG-Mn-IcM"/>
-                                    <constraint firstAttribute="height" constant="30" id="NDX-Ic-Jih"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Guided Tour">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="orf-JV-lJ2" kind="modal" modalTransitionStyle="flipHorizontal" id="VhL-AT-bMs"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility 101" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xew-bg-8Vs">
                                 <rect key="frame" x="51" y="32" width="219" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -71,14 +56,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-1V-r9l">
+                                <rect key="frame" x="101" y="440" width="120" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Visit a WebPage" label="About Deque">
+                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Wkd-gC-mmX"/>
+                                    <constraint firstAttribute="height" constant="30" id="oUe-zG-80I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="About Deque">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1O-Nk-5an">
+                                <rect key="frame" x="60" y="390" width="200" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label="Guided Tour"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HoG-Mn-IcM"/>
+                                    <constraint firstAttribute="height" constant="30" id="NDX-Ic-Jih"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Guided Tour">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="orf-JV-lJ2" kind="modal" modalTransitionStyle="flipHorizontal" id="VhL-AT-bMs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="htZ-7N-Kfa" secondAttribute="centerX" id="1q8-zh-tMS"/>
                             <constraint firstItem="Xew-bg-8Vs" firstAttribute="top" secondItem="Srv-iM-RJK" secondAttribute="bottom" constant="12" id="5ET-PS-oPw"/>
                             <constraint firstAttribute="centerX" secondItem="Xew-bg-8Vs" secondAttribute="centerX" id="F3E-cP-2w3"/>
+                            <constraint firstItem="gfg-1V-r9l" firstAttribute="top" secondItem="f1O-Nk-5an" secondAttribute="bottom" constant="20" id="FmJ-Ib-mkw"/>
                             <constraint firstAttribute="centerX" secondItem="Vbo-8B-OUA" secondAttribute="centerX" id="JPB-62-rS4"/>
                             <constraint firstItem="GCO-3a-jNA" firstAttribute="leading" secondItem="dD5-V1-cMI" secondAttribute="leading" constant="20" id="PmU-Xw-Loy"/>
+                            <constraint firstAttribute="centerX" secondItem="gfg-1V-r9l" secondAttribute="centerX" constant="-0.5" id="QcD-Vo-T7n"/>
                             <constraint firstAttribute="centerX" secondItem="f1O-Nk-5an" secondAttribute="centerX" id="aLR-3C-1g4"/>
                             <constraint firstItem="f1O-Nk-5an" firstAttribute="top" secondItem="Vbo-8B-OUA" secondAttribute="bottom" constant="20" id="fqO-io-UUn"/>
                             <constraint firstItem="L4a-aU-5sa" firstAttribute="top" secondItem="GCO-3a-jNA" secondAttribute="bottom" constant="20" id="fqg-bc-Sq3"/>
@@ -2868,19 +2885,19 @@
         <segue reference="IeC-Ka-UDm"/>
         <segue reference="ZZV-ky-it9"/>
         <segue reference="UGR-BD-bp9"/>
-        <segue reference="maK-uJ-l0U"/>
         <segue reference="70D-0D-TmX"/>
         <segue reference="v8n-8H-AN0"/>
         <segue reference="6Ow-Am-KL9"/>
         <segue reference="9gY-0Y-92E"/>
-        <segue reference="3n5-2O-ndp"/>
-        <segue reference="g0r-bX-vEO"/>
-        <segue reference="3xU-Dn-uef"/>
-        <segue reference="KkH-3d-XTv"/>
+        <segue reference="maK-uJ-l0U"/>
+        <segue reference="XSJ-RH-t7T"/>
+        <segue reference="kqE-kO-wIS"/>
         <segue reference="7lG-Ct-qKN"/>
         <segue reference="FLZ-Vf-p7f"/>
+        <segue reference="VhL-AT-bMs"/>
+        <segue reference="3xU-Dn-uef"/>
+        <segue reference="iTD-XV-rBk"/>
         <segue reference="CsT-Bc-g7i"/>
         <segue reference="IuX-db-pJK"/>
-        <segue reference="iTD-XV-rBk"/>
     </inferredMetricsTieBreakers>
 </document>

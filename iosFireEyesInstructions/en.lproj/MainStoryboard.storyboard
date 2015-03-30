@@ -75,11 +75,26 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGf-ay-dAm">
+                                <rect key="frame" x="285" y="778" width="200" height="104"/>
+                                <accessibility key="accessibilityConfiguration" hint="Visit a WebPage" label="About Deque">
+                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="8j9-Fe-Jtf"/>
+                                    <constraint firstAttribute="width" constant="200" id="dgd-cH-QrD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="About Deque">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="CPB-lA-beF" secondAttribute="centerX" id="4Mu-K8-4Nt"/>
                             <constraint firstItem="is7-WB-h7E" firstAttribute="leading" secondItem="8k2-FX-CwG" secondAttribute="leading" constant="20" id="JEY-xs-WX8"/>
+                            <constraint firstItem="QGf-ay-dAm" firstAttribute="top" secondItem="CSp-7F-o1e" secondAttribute="bottom" constant="10" id="K5p-3c-1lI"/>
                             <constraint firstItem="K7x-KN-ktV" firstAttribute="top" secondItem="tdh-AJ-D4W" secondAttribute="bottom" constant="10" id="Qe1-3v-2Pv"/>
                             <constraint firstItem="CPB-lA-beF" firstAttribute="top" secondItem="wIc-1D-Nrq" secondAttribute="bottom" constant="50" id="Qlo-Rl-K95"/>
                             <constraint firstItem="6oW-jo-h4j" firstAttribute="top" secondItem="is7-WB-h7E" secondAttribute="bottom" constant="20" id="YDM-Wp-M4z"/>
@@ -87,6 +102,7 @@
                             <constraint firstAttribute="centerX" secondItem="K7x-KN-ktV" secondAttribute="centerX" id="kYH-gQ-sf9"/>
                             <constraint firstItem="CSp-7F-o1e" firstAttribute="top" secondItem="K7x-KN-ktV" secondAttribute="bottom" constant="10" id="mKa-Vd-2aI"/>
                             <constraint firstAttribute="centerX" secondItem="CSp-7F-o1e" secondAttribute="centerX" id="u0W-PT-aVO"/>
+                            <constraint firstAttribute="centerX" secondItem="QGf-ay-dAm" secondAttribute="centerX" constant="-0.5" id="uDf-sD-hoH"/>
                             <constraint firstItem="tdh-AJ-D4W" firstAttribute="top" secondItem="CPB-lA-beF" secondAttribute="bottom" constant="50" id="v8B-d4-OJS"/>
                         </constraints>
                     </view>
@@ -2862,22 +2878,22 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HWr-hf-Ie8"/>
-        <segue reference="u58-Kd-TTR"/>
-        <segue reference="yc1-cB-60Q"/>
-        <segue reference="uIc-ef-HfQ"/>
-        <segue reference="edH-UC-6Uv"/>
+        <segue reference="iXB-5E-tzd"/>
+        <segue reference="dX3-nh-UAe"/>
         <segue reference="z6N-cc-GpK"/>
         <segue reference="jAl-dR-OpY"/>
         <segue reference="MXs-d8-MkT"/>
-        <segue reference="UhZ-iU-51M"/>
+        <segue reference="edH-UC-6Uv"/>
+        <segue reference="HWr-hf-Ie8"/>
+        <segue reference="u58-Kd-TTR"/>
+        <segue reference="yc1-cB-60Q"/>
+        <segue reference="cQd-Ub-j2k"/>
+        <segue reference="mwe-Jx-tAa"/>
         <segue reference="8Do-nl-BYE"/>
-        <segue reference="a32-rH-blQ"/>
+        <segue reference="Ne0-cQ-JD2"/>
         <segue reference="jnI-LL-CIG"/>
         <segue reference="ZBB-5p-b6i"/>
-        <segue reference="4hi-vP-e13"/>
-        <segue reference="wB1-wB-HXS"/>
-        <segue reference="iXB-5E-tzd"/>
-        <segue reference="dX3-nh-UAe"/>
+        <segue reference="UhZ-iU-51M"/>
+        <segue reference="gUf-Ix-g4E"/>
     </inferredMetricsTieBreakers>
 </document>
