@@ -30,6 +30,11 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Labels Example";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

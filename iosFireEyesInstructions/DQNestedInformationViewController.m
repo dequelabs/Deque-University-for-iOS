@@ -28,6 +28,11 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Nested Introduction";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

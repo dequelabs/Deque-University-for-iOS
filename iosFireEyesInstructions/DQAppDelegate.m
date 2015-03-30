@@ -10,12 +10,25 @@
 #import "DQViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "GAI.h"
+
+#define GAI_INST [GAI sharedInstance]
 
 @implementation DQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    //Set up Google Anylitics
+    GAI_INST.trackUncaughtExceptions = YES;
+    
+    GAI_INST.dispatchInterval = 20;
+    
+    [[GAI_INST logger] setLogLevel:kGAILogLevelVerbose];
+    
+    [GAI_INST trackerWithTrackingId:@"UA-61120003-2"];
+    
     return YES;
 }
 

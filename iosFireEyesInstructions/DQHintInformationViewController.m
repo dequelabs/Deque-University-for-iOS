@@ -28,6 +28,12 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Hints Introduction";
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

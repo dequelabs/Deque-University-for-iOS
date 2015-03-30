@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface DQTraitInformationViewController : UIViewController
+@interface DQTraitInformationViewController : GAITrackedViewController
 
 @end

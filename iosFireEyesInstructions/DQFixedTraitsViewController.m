@@ -27,6 +27,12 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Traits Fixed";
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

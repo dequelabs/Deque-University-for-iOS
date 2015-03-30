@@ -31,6 +31,11 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"Nested Broken";
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
