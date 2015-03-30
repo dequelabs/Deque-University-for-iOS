@@ -39,7 +39,6 @@
 		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */; };
 		A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
-		A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013CB18A2DD4700DC6496 /* InfoPlist.strings */; };
 		A9D013CF18A2DD4700DC6496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013CE18A2DD4700DC6496 /* main.m */; };
 		A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */; };
 		A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D013D418A2DD4700DC6496 /* Images.xcassets */; };
@@ -121,7 +120,6 @@
 		A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A9D013C618A2DD4700DC6496 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A9D013CA18A2DD4700DC6496 /* Accessibility 101-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Accessibility 101-Info.plist"; sourceTree = "<group>"; };
-		A9D013CC18A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9D013CE18A2DD4700DC6496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9D013D018A2DD4700DC6496 /* Accessibility 101-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Accessibility 101-Prefix.pch"; sourceTree = "<group>"; };
 		A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DQAppDelegate.h; path = iosFireEyesInstructions/DQAppDelegate.h; sourceTree = "<group>"; };
@@ -318,7 +316,6 @@
 				0F158F2618D21FB200B34CC7 /* Music */,
 				A9D013D418A2DD4700DC6496 /* Images.xcassets */,
 				A9D013CA18A2DD4700DC6496 /* Accessibility 101-Info.plist */,
-				A9D013CB18A2DD4700DC6496 /* InfoPlist.strings */,
 				A9D013CE18A2DD4700DC6496 /* main.m */,
 				A9D013D018A2DD4700DC6496 /* Accessibility 101-Prefix.pch */,
 				0F2188461940FC0C007E68CD /* Localizable.strings */,
@@ -426,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
-				A9D013CD18A2DD4700DC6496 /* InfoPlist.strings in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
 				A983BDE919361EF400070619 /* MainStoryboard.storyboard in Resources */,
@@ -499,14 +495,6 @@
 			);
 			name = MainStoryboard.storyboard;
 			path = iosFireEyesInstructions;
-			sourceTree = "<group>";
-		};
-		A9D013CB18A2DD4700DC6496 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9D013CC18A2DD4700DC6496 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		A9D013E418A2DD4700DC6496 /* InfoPlist.strings */ = {
