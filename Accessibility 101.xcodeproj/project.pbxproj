@@ -13,6 +13,12 @@
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
 		0F2188471940FC0C007E68CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2188461940FC0C007E68CD /* Localizable.strings */; };
 		0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */; };
+		0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */; };
+		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
+		0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B901AC9C74900F372F8 /* libz.dylib */; };
+		0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */; };
+		0FEB4BAC1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */; };
+		0FEB4BAD1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */; };
 		A91D01E9192E54F300EA7137 /* DQNestedInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */; };
 		A96470C0192E53570050646B /* DQFixedNestedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96470BF192E53570050646B /* DQFixedNestedViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
@@ -62,6 +68,21 @@
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0F2188461940FC0C007E68CD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = iosFireEyesInstructions/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
+		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0FEB4B901AC9C74900F372F8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0FEB4BA11AC9C7F000F372F8 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		0FEB4BA21AC9C7F000F372F8 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		0FEB4BA31AC9C7F000F372F8 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		0FEB4BA41AC9C7F000F372F8 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		0FEB4BA51AC9C7F000F372F8 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		0FEB4BA61AC9C7F000F372F8 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		0FEB4BA71AC9C7F000F372F8 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		0FEB4BA81AC9C7F000F372F8 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		0FEB4BA91AC9C7F000F372F8 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		A91D01E7192E54F300EA7137 /* DQNestedInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNestedInformationViewController.h; path = iosFireEyesInstructions/DQNestedInformationViewController.h; sourceTree = "<group>"; };
 		A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNestedInformationViewController.m; path = iosFireEyesInstructions/DQNestedInformationViewController.m; sourceTree = "<group>"; };
 		A96470BE192E53570050646B /* DQFixedNestedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQFixedNestedViewController.h; path = iosFireEyesInstructions/DQFixedNestedViewController.h; sourceTree = "<group>"; };
@@ -121,6 +142,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
+				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
+				0FEB4BAC1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */,
+				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
+				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
@@ -135,6 +161,7 @@
 				A9D013DC18A2DD4700DC6496 /* XCTest.framework in Frameworks */,
 				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
+				0FEB4BAD1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +176,23 @@
 				0F158F2218D21F5B00B34CC7 /* AG.mp3 */,
 			);
 			name = Music;
+			sourceTree = "<group>";
+		};
+		0FEB4B811AC9C64A00F372F8 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB4BA11AC9C7F000F372F8 /* GAI.h */,
+				0FEB4BA21AC9C7F000F372F8 /* GAIDictionaryBuilder.h */,
+				0FEB4BA31AC9C7F000F372F8 /* GAIEcommerceFields.h */,
+				0FEB4BA41AC9C7F000F372F8 /* GAIEcommerceProduct.h */,
+				0FEB4BA51AC9C7F000F372F8 /* GAIEcommerceProductAction.h */,
+				0FEB4BA61AC9C7F000F372F8 /* GAIEcommercePromotion.h */,
+				0FEB4BA71AC9C7F000F372F8 /* GAIFields.h */,
+				0FEB4BA81AC9C7F000F372F8 /* GAILogger.h */,
+				0FEB4BA91AC9C7F000F372F8 /* GAITrackedViewController.h */,
+				0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */,
+			);
+			name = Include;
 			sourceTree = "<group>";
 		};
 		A9C21AF5193E64C900F80821 /* Stories */ = {
@@ -236,8 +280,9 @@
 				A9C21AF5193E64C900F80821 /* Stories */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 				A9D013E118A2DD4700DC6496 /* Accessibility 101 Tests */,
-				A9D013C118A2DD4700DC6496 /* Frameworks */,
+				0FEB4B811AC9C64A00F372F8 /* Include */,
 				A9D013C018A2DD4700DC6496 /* Products */,
+				A9D013C118A2DD4700DC6496 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -253,6 +298,11 @@
 		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */,
+				0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */,
+				0FEB4B901AC9C74900F372F8 /* libz.dylib */,
+				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
+				0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */,
 				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
 				A9D013C218A2DD4700DC6496 /* Foundation.framework */,
 				A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */,
@@ -550,14 +600,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "Accessibility 101";
-				PROVISIONING_PROFILE = "905199d6-0619-4ce8-811c-a45974f04632";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -568,14 +623,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "Accessibility 101";
-				PROVISIONING_PROFILE = "c4b08d4c-f126-49ca-bc10-053a0b797158";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -597,6 +657,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "Accessibility 101Tests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -615,6 +680,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/iosFireEyesInstructions-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "Accessibility 101Tests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
