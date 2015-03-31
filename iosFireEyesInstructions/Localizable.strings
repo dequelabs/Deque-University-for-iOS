@@ -66,3 +66,37 @@
 "HINT_BROKEN_TEXTVIEW" = "Now, without those visual cues, what do these buttons do?  Sure, the accessibility labels of song titles suggest that songs will be played.  But, iOS provides the Hint attribute for us so we can tell users: \"This button plays a song\"";
 
 "HINT_FIXED_TEXTVIEW" = "Now we have added the hint information back onto the buttons.  With these hints, you know that 'Star Spangled Banner' is a song that is going to be played, and not a website that will be visited for further information.";
+
+//Font Size Story
+//Information View
+"FONT_SIZE_INFO_HEADING" = "Dynamic Type";
+
+"FONT_SIZE_INFO_SUBHEADING1" = "I can mess up font size?  Really?";
+
+"FONT_SIZE_INFO_PARAGRAPH1" = "Starting in iOS 7 users were given the ability to change their preferred reading font.  This allows users with sight impairments to increase the size of their text past what users might normally find usable.  It also allows any user the ability to shrink or expand text to a size they are comfortable with.";
+
+"FONT_SIZE_INFO_SUBHEADING2" = "Why is it important?";
+
+"FONT_SIZE_INFO_PARAGRAPH2" = "Responding properly to text size change requests is important, though not as critical as other accessibility considerations.  Users with sight impairments still have access to Zoom features.  However, from a usability point of view, the new Dynamic Type features are more convenient and user friendly than the zoom feature.";
+
+//Broken View
+"FONT_SIZE_BROKEN_HEADING" = "Dynamic Type Broken";
+
+"FONT_SIZE_BROKEN_SUBHEADING1" = "First way to break it!";
+
+"FONT_SIZE_BROKEN_PARAGRAPH1" = "One way for Dynamic Type sizing to be broken is simply not to enable it.  Notice how, if you change the text size setting, this view does not change!  Dynamic Type is not enabled on UITextViews and UILabels by default.  You must add support for it manually.";
+
+"FONT_SIZE_BROKEN_SUBHEADING2" = "Second way to break it!";
+
+"FONT_SIZE_BROKEN_PARAGRAPH2" = "Another way to break your applications is to set up your TextViews properly, but not allow the rest of your UI to adapt accordingly.  For example, look at the heading at the bottom of this view.  We have set it up with constraints to be some odd pixels lower than out TextView.  Now, enable the largest Dynamic Type size!  Our heading at the bottom of the page gets pushed beneath the navigation bar and disappears!  THIS IS BAD!  ";
+
+//Fixed View
+"FONT_SIZE_FIXED_HEADING" = "Dynamic Type Fixed";
+
+"FONT_SIZE_FIXED_SUBHEADING1" = "Fix One";
+
+"FONT_SIZE_FIXED_PARAGRAPH1" = "To fix the first issue, we simply have to set up Dynamic Type Sizing for the UITextView.  We do this by setting the font to the value returned by [UIFont preferredFontForTextStyle].  By listening for the UIContentSizeCategoryDidChangeNotification, and resetting the font to this value, we can keep it in sync with the Accessibility Setting.";
+
+"FONT_SIZE_FIXED_SUBHEADING2" = "Fix Two!";
+
+"FONT_SIZE_FIXED_PARAGRAPH2" = "Finally, in order to keep the heading belwo from disappearing we need to do one of two things.  Either make our UITextViews scollable, or place everything in a scroll view.  Placing everything in a scroll view is a little more difficult, so that is the solution we have used.";

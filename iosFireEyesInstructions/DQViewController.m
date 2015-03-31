@@ -9,10 +9,11 @@
 #import "DQViewController.h"
 
 @implementation DQViewController {
-    IBOutlet UIButton *_AllyButton;
-    IBOutlet UIButton *_TourButton;
-    IBOutlet UITextView *_InfoText;
-    IBOutlet UIImageView *_LogoImage;
+    __weak IBOutlet UIButton *_AllyButton;
+    __weak IBOutlet UIButton *_TourButton;
+    __weak IBOutlet UITextView *_InfoText;
+    __weak IBOutlet UIImageView *_LogoImage;
+    __weak IBOutlet UIButton *_AboutDequeButton;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,7 +31,21 @@
 {
     [super viewDidLoad];
 	[_LogoImage setImage:[UIImage imageNamed:@"DequeLogo"]];
+    
     [_InfoText setText:NSLocalizedString(@"INTRO_ABOUT_APP", nil)];
+    
+    [_AboutDequeButton addTarget:self action:@selector(openDequeWebsite) forControlEvents:UIControlEventTouchUpInside];
+    
+    NSMutableAttributedString *titleString = [[NSMutableAttributedString alloc] initWithString:_AboutDequeButton.titleLabel.text];
+    
+    [titleString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [titleString length])];
+    
+    [_AboutDequeButton setAttributedTitle:titleString forState:UIControlStateNormal];
+}
+
+- (void)openDequeWebsite {
+    NSLog(@"Attempt to load website");
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://accessibility.deque.com/contact-deque-today"]];
 }
 
 - (BOOL)shouldAutorotate {

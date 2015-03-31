@@ -25,7 +25,7 @@
     
     GAI_INST.dispatchInterval = 20;
     
-    [[GAI_INST logger] setLogLevel:kGAILogLevelVerbose];
+    [[GAI_INST logger] setLogLevel:kGAILogLevelNone];
     
     [GAI_INST trackerWithTrackingId:@"UA-61120003-2"];
     
