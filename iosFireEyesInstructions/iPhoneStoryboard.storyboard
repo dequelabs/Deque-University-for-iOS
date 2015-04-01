@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O86-3M-sgx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -127,13 +127,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Accessibility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI1-w3-klg">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About Accessibility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI1-w3-klg">
                                 <rect key="frame" x="71" y="40" width="184" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y26-NW-vQo">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y26-NW-vQo">
                                 <rect key="frame" x="20" y="71" width="280" height="280"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -147,7 +147,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBD-Aq-zUY">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBD-Aq-zUY">
                                 <rect key="frame" x="90" y="326" width="140" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Open help content" label="Labels"/>
                                 <constraints>
@@ -161,7 +161,7 @@
                                     <segue destination="orf-JV-lJ2" kind="modal" modalTransitionStyle="crossDissolve" id="KkH-3d-XTv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uc-T9-Ym2">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uc-T9-Ym2">
                                 <rect key="frame" x="90" y="406" width="140" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Open help content" label="Traits"/>
                                 <constraints>
@@ -175,7 +175,7 @@
                                     <segue destination="G3b-FE-agA" kind="modal" modalTransitionStyle="crossDissolve" id="aPf-Zd-7Rf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-i1-iEe">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj8-i1-iEe">
                                 <rect key="frame" x="90" y="366" width="140" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Open help content" label="Hints"/>
                                 <constraints>
@@ -220,7 +220,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib4-iE-hNp">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ib4-iE-hNp">
                                 <rect key="frame" x="90" y="446" width="140" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="Open help content" label="Nested Accessibility"/>
                                 <constraints>
@@ -234,6 +234,20 @@
                                     <segue destination="cA8-mZ-YRf" kind="modal" modalTransitionStyle="crossDissolve" id="ygi-Zc-Yh0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN2-9Z-B7P">
+                                <rect key="frame" x="90" y="484" width="140" height="30"/>
+                                <accessibility key="accessibilityConfiguration" hint="Open help content" label="Nested Accessibility"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Df-Yd-iRx"/>
+                                    <constraint firstAttribute="width" constant="140" id="7Xr-vd-MRR"/>
+                                </constraints>
+                                <state key="normal" title="Dynamic Font Size">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5ZX-Da-6SQ" kind="modal" modalTransitionStyle="crossDissolve" id="jFv-Jx-WP8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -241,10 +255,12 @@
                             <constraint firstAttribute="centerX" secondItem="4uc-T9-Ym2" secondAttribute="centerX" id="4m8-DY-H8M"/>
                             <constraint firstAttribute="centerX" secondItem="aj8-i1-iEe" secondAttribute="centerX" id="6ph-cw-oa3"/>
                             <constraint firstAttribute="centerX" secondItem="Y26-NW-vQo" secondAttribute="centerX" id="7La-G7-Zyk"/>
-                            <constraint firstItem="JBD-Aq-zUY" firstAttribute="top" secondItem="wI1-w3-klg" secondAttribute="bottom" constant="260" id="88S-gS-U3U"/>
+                            <constraint firstItem="JBD-Aq-zUY" firstAttribute="top" secondItem="wI1-w3-klg" secondAttribute="bottom" constant="250" id="88S-gS-U3U"/>
                             <constraint firstAttribute="centerX" secondItem="Ib4-iE-hNp" secondAttribute="centerX" id="8Xr-fn-QoP"/>
                             <constraint firstItem="wI1-w3-klg" firstAttribute="top" secondItem="PBk-wU-2hn" secondAttribute="bottom" constant="20" id="Evg-xo-phN"/>
+                            <constraint firstAttribute="centerX" secondItem="CN2-9Z-B7P" secondAttribute="centerX" id="Mu2-Ul-4tq"/>
                             <constraint firstItem="4uc-T9-Ym2" firstAttribute="top" secondItem="aj8-i1-iEe" secondAttribute="bottom" constant="10" id="Nuv-ba-CCe"/>
+                            <constraint firstItem="CN2-9Z-B7P" firstAttribute="top" secondItem="Ib4-iE-hNp" secondAttribute="bottom" constant="10" id="Oxe-UO-s6l"/>
                             <constraint firstAttribute="centerX" secondItem="JBD-Aq-zUY" secondAttribute="centerX" id="Tb6-WC-NTT"/>
                             <constraint firstAttribute="centerX" secondItem="wI1-w3-klg" secondAttribute="centerX" constant="-2" id="XJl-Jy-h58"/>
                             <constraint firstItem="aj8-i1-iEe" firstAttribute="top" secondItem="JBD-Aq-zUY" secondAttribute="bottom" constant="10" id="gc1-OG-A59"/>
@@ -2730,10 +2746,13 @@
                                             <segue destination="xPq-J6-fCE" kind="modal" modalTransitionStyle="flipHorizontal" id="t5o-3t-EcI"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem enabled="NO" title="&gt;" width="32" style="done" id="sAF-ue-Syh">
+                                    <barButtonItem title="&gt;" width="32" style="done" id="sAF-ue-Syh">
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Next"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="5ZX-Da-6SQ" kind="modal" modalTransitionStyle="crossDissolve" id="hyf-gh-B0T"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -2867,6 +2886,323 @@
             </objects>
             <point key="canvasLocation" x="2169" y="-2071"/>
         </scene>
+        <!--Font Size Info View Controller-->
+        <scene sceneID="Btf-nl-EFW">
+            <objects>
+                <viewController id="5ZX-Da-6SQ" customClass="IACFontSizeInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ujg-Px-wNu"/>
+                        <viewControllerLayoutGuide type="bottom" id="G2y-a3-O6N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NCi-im-gtB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXv-lf-KbY">
+                                <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Font Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jx-y0-B4O">
+                                        <rect key="frame" x="75" y="15" width="163" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRv-Q9-wLc">
+                                        <rect key="frame" x="20" y="69" width="280" height="141"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is nested accessibility?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-A1-DlB">
+                                        <rect key="frame" x="25" y="47" width="211" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48f-os-h1o">
+                                        <rect key="frame" x="20" y="242" width="270" height="129"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why are they important?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNN-Wo-b5D">
+                                        <rect key="frame" x="25" y="225" width="189" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00w-eu-LjE">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="&lt;" width="29" style="done" id="jTB-Ox-9Em">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Previous"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="OoM-va-7fR" kind="modal" modalTransitionStyle="crossDissolve" id="nCW-fe-dW1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Main Menu" width="100" style="plain" id="Lwr-Ck-FT3">
+                                        <connections>
+                                            <segue destination="O86-3M-sgx" kind="modal" modalTransitionStyle="crossDissolve" id="g10-qx-faZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Contents" width="110" style="plain" id="AO0-wZ-dyT">
+                                        <connections>
+                                            <segue destination="xPq-J6-fCE" kind="modal" modalTransitionStyle="flipHorizontal" id="Odc-xB-X1m"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&gt;" width="32" style="done" id="TFj-Rg-ffV">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Next"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="fRL-Ye-bV2" kind="modal" modalTransitionStyle="crossDissolve" id="7fB-la-8vq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="_ImportantLabel" destination="rNN-Wo-b5D" id="RAP-7M-eyK"/>
+                        <outlet property="_ImportantTextView" destination="48f-os-h1o" id="yTL-Gx-nf0"/>
+                        <outlet property="_ScrollView" destination="SXv-lf-KbY" id="bcq-wp-FP3"/>
+                        <outlet property="_TitleLabel" destination="3jx-y0-B4O" id="gda-Db-ouP"/>
+                        <outlet property="_WhatNested" destination="vgQ-A1-DlB" id="CKf-59-LaR"/>
+                        <outlet property="_WhatTextView" destination="LRv-Q9-wLc" id="jcz-fi-FVm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vl0-4N-mBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="-23"/>
+        </scene>
+        <!--Font Size Broken View Controller-->
+        <scene sceneID="c9Y-Na-J5u">
+            <objects>
+                <viewController id="fRL-Ye-bV2" customClass="IACFontSizeBrokenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eX1-Rd-6w4"/>
+                        <viewControllerLayoutGuide type="bottom" id="6n3-lW-yII"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3wf-4L-ni9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etY-cQ-GBx">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1wp-bm-C2P"/>
+                                    <constraint firstAttribute="width" constant="320" id="QjC-FX-rAg"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="&lt;" width="29" style="done" id="Xw0-vd-KwP">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Previous"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="5ZX-Da-6SQ" kind="modal" modalTransitionStyle="crossDissolve" id="r6f-4n-sy4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Main Menu" width="100" style="plain" id="si1-lY-e2G">
+                                        <connections>
+                                            <segue destination="O86-3M-sgx" kind="modal" modalTransitionStyle="crossDissolve" id="oGt-N6-Vlf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Contents" width="110" style="plain" id="Orp-FX-JiY">
+                                        <connections>
+                                            <segue destination="xPq-J6-fCE" kind="modal" modalTransitionStyle="flipHorizontal" id="7h1-Mg-4KJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&gt;" width="32" style="done" id="iAJ-J9-omI">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Next"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="8e3-hP-mHz" kind="modal" modalTransitionStyle="crossDissolve" id="XRx-7J-sxG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Font Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tin-e1-NeW">
+                                <rect key="frame" x="81" y="40" width="160" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="YfZ-BX-gUW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWV-Wh-SqG">
+                                <rect key="frame" x="24" y="99" width="280" height="140"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Vhx-xN-8x0"/>
+                                    <constraint firstAttribute="height" constant="140" id="u0f-JG-4IP"/>
+                                </constraints>
+                                <string key="text">When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is nested accessibility?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfK-Mm-yCm">
+                                <rect key="frame" x="25" y="77" width="211" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exc-dd-KrW">
+                                <rect key="frame" x="25" y="271" width="270" height="130"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="aWc-ex-Qdy"/>
+                                    <constraint firstAttribute="height" constant="130" id="igG-0Y-HoV"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are they important?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIV-QE-iIQ">
+                                <rect key="frame" x="25" y="249" width="179" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is about to disappear!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysY-2M-ZCt">
+                                <rect key="frame" x="30" y="476" width="204" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="6F1-ct-sNs"/>
+                                    <constraint firstAttribute="height" constant="21" id="O6H-pV-VbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="etY-cQ-GBx" secondAttribute="centerX" id="0Ya-KS-ofj"/>
+                            <constraint firstItem="etY-cQ-GBx" firstAttribute="top" secondItem="eX1-Rd-6w4" secondAttribute="bottom" constant="504" id="1xt-NQ-Gac"/>
+                            <constraint firstAttribute="centerX" secondItem="exc-dd-KrW" secondAttribute="centerX" id="4aC-Tb-hzP"/>
+                            <constraint firstAttribute="centerX" secondItem="tin-e1-NeW" secondAttribute="centerX" id="Azu-BI-Ys8"/>
+                            <constraint firstItem="ysY-2M-ZCt" firstAttribute="top" secondItem="exc-dd-KrW" secondAttribute="bottom" constant="75" id="KKP-8K-ydR"/>
+                            <constraint firstItem="exc-dd-KrW" firstAttribute="leading" secondItem="ysY-2M-ZCt" secondAttribute="leading" constant="-5" id="RFo-ng-uFY"/>
+                            <constraint firstItem="uWV-Wh-SqG" firstAttribute="top" secondItem="sfK-Mm-yCm" secondAttribute="bottom" constant="2" id="ZZq-N8-UXS"/>
+                            <constraint firstItem="exc-dd-KrW" firstAttribute="leading" secondItem="PIV-QE-iIQ" secondAttribute="leading" id="ZeR-Kj-QUm"/>
+                            <constraint firstItem="exc-dd-KrW" firstAttribute="leading" secondItem="sfK-Mm-yCm" secondAttribute="leading" id="Zqj-eZ-7Ke"/>
+                            <constraint firstItem="PIV-QE-iIQ" firstAttribute="top" secondItem="uWV-Wh-SqG" secondAttribute="bottom" constant="10" id="kKx-PZ-Tfs"/>
+                            <constraint firstAttribute="centerX" secondItem="uWV-Wh-SqG" secondAttribute="centerX" constant="-4" id="lHe-Uk-zfX"/>
+                            <constraint firstAttribute="centerX" secondItem="exc-dd-KrW" secondAttribute="centerX" id="lUj-ds-pOb"/>
+                            <constraint firstItem="exc-dd-KrW" firstAttribute="top" secondItem="PIV-QE-iIQ" secondAttribute="bottom" constant="2" id="nhT-uf-G2C"/>
+                            <constraint firstItem="tin-e1-NeW" firstAttribute="top" secondItem="eX1-Rd-6w4" secondAttribute="bottom" constant="20" id="tgt-IZ-bBR"/>
+                            <constraint firstItem="sfK-Mm-yCm" firstAttribute="top" secondItem="tin-e1-NeW" secondAttribute="bottom" constant="10" id="v4Y-ZM-giv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBf-DC-eMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="-709"/>
+        </scene>
+        <!--Font Size Fixed View Controller-->
+        <scene sceneID="37z-Ue-dUG">
+            <objects>
+                <viewController id="8e3-hP-mHz" customClass="IACFontSizeFixedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hrt-MN-7fe"/>
+                        <viewControllerLayoutGuide type="bottom" id="5r2-nA-FZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DyK-RY-NZS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EMO-Pl-rNh">
+                                <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Font Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8t-b7-kX9">
+                                        <rect key="frame" x="75" y="15" width="163" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8he-Zz-X56">
+                                        <rect key="frame" x="20" y="69" width="280" height="141"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interraction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver.  Below is a very simple code snippet that would create this issue.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZL-qz-QiW">
+                                        <rect key="frame" x="20" y="235" width="270" height="129"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why are they important?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="762-eu-Pbh">
+                                        <rect key="frame" x="25" y="218" width="189" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is nested accessibility?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvY-xb-zG2">
+                                        <rect key="frame" x="25" y="47" width="211" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now you can scroll down to this!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ0-9l-wlS">
+                                        <rect key="frame" x="25" y="483" width="250" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-Nu-E6V">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="&lt;" width="29" style="done" id="Mru-my-yf3">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Previous"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="fRL-Ye-bV2" kind="modal" modalTransitionStyle="crossDissolve" id="LmC-lX-MPP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Main Menu" width="100" style="plain" id="zAF-HO-rKp">
+                                        <connections>
+                                            <segue destination="O86-3M-sgx" kind="modal" modalTransitionStyle="crossDissolve" id="v38-23-0Kf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Contents" width="110" style="plain" id="WWp-tb-yNG">
+                                        <connections>
+                                            <segue destination="xPq-J6-fCE" kind="modal" modalTransitionStyle="flipHorizontal" id="9Zt-iN-78Q"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="&gt;" width="32" style="done" id="PLp-cR-fys">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="Next"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="_ImportantLabel" destination="762-eu-Pbh" id="eqR-c0-6WY"/>
+                        <outlet property="_ImportantTextView" destination="jZL-qz-QiW" id="N9Q-Ws-Kfc"/>
+                        <outlet property="_ScrollView" destination="EMO-Pl-rNh" id="aBA-iX-kqN"/>
+                        <outlet property="_TitleLabel" destination="A8t-b7-kX9" id="Y25-Dq-2EB"/>
+                        <outlet property="_WhatNested" destination="vvY-xb-zG2" id="wP2-58-CbE"/>
+                        <outlet property="_WhatTextView" destination="8he-Zz-X56" id="fng-Uj-2cP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCa-dC-DqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="-1397"/>
+        </scene>
     </scenes>
     <resources>
         <image name="DequeLogo" width="720" height="245"/>
@@ -2883,22 +3219,25 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="IeC-Ka-UDm"/>
+        <segue reference="oGt-N6-Vlf"/>
+        <segue reference="LmC-lX-MPP"/>
+        <segue reference="r6f-4n-sy4"/>
+        <segue reference="7h1-Mg-4KJ"/>
+        <segue reference="nCW-fe-dW1"/>
+        <segue reference="KkH-3d-XTv"/>
+        <segue reference="3xU-Dn-uef"/>
         <segue reference="ZZV-ky-it9"/>
         <segue reference="UGR-BD-bp9"/>
-        <segue reference="70D-0D-TmX"/>
-        <segue reference="v8n-8H-AN0"/>
+        <segue reference="IeC-Ka-UDm"/>
         <segue reference="6Ow-Am-KL9"/>
+        <segue reference="PM6-Cf-BhS"/>
         <segue reference="9gY-0Y-92E"/>
-        <segue reference="maK-uJ-l0U"/>
-        <segue reference="XSJ-RH-t7T"/>
-        <segue reference="kqE-kO-wIS"/>
-        <segue reference="7lG-Ct-qKN"/>
-        <segue reference="FLZ-Vf-p7f"/>
-        <segue reference="VhL-AT-bMs"/>
-        <segue reference="3xU-Dn-uef"/>
-        <segue reference="iTD-XV-rBk"/>
         <segue reference="CsT-Bc-g7i"/>
         <segue reference="IuX-db-pJK"/>
+        <segue reference="iTD-XV-rBk"/>
+        <segue reference="qlL-tW-iG0"/>
+        <segue reference="jdG-gT-fhw"/>
+        <segue reference="bUn-tt-TKI"/>
+        <segue reference="Fj5-aQ-2sO"/>
     </inferredMetricsTieBreakers>
 </document>
