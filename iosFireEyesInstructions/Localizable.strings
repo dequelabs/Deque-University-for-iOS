@@ -23,7 +23,7 @@
 
 "INTRO_ABOUT_APP" = "This app goes through example scenarios you may encounter when programming your own apps, and explains how they are inaccessible as well as what can be done to make them accessible.  Before moving on, it is recommended that you enable VoiceOver, as well as the \"3-click\" VoiceOver on/off shortcut.  The \"Guided Tour\" will take you through a list of accessibility concepts one by one, and the \"Accessibility Contents\" will allow you to pick a specific topic you're struggling with.";
 
-"A11Y_ABOUT_TEXTVIEW" = "When a user interacts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions and so forth all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  The following scenarios aim to help you to understand the difficulties users with dissabilities have when interacting with iOS applications,  as well as the techniques and conventions you can use to portray this information using basic iOS APIs.";
+"A11Y_ABOUT_TEXTVIEW" = "When a user interacts with an application, certain aspects of the application are immediately apparent.  Visual clues, other apps you've dealt with in the past, UI conventions all help a user understand what it is an application does.  Accessibility is about portraying this same information, but to users with different capabilities.  The following scenarios aim to help you to understand the difficulties users with dissabilities have when interacting with iOS applications, as well as the techniques and conventions you can use to portray this information using basic iOS APIs.";
 
 //Traits story
 "TRAIT_INFO_TEXTVIEW1" = "Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably.";
@@ -67,7 +67,7 @@
 
 "HINT_FIXED_TEXTVIEW" = "Now we have added the hint information back onto the buttons.  With these hints, you know that 'Star Spangled Banner' is a song that is going to be played, and not a website that will be visited for further information.";
 
-//Font Size Story
+//---------------------- Font Size Story ----------------------
 //Information View
 "FONT_SIZE_INFO_HEADING" = "Dynamic Type";
 
@@ -88,15 +88,15 @@
 
 "FONT_SIZE_BROKEN_SUBHEADING2" = "Second way to break it!";
 
-"FONT_SIZE_BROKEN_PARAGRAPH2" = "Another way to break your applications is to set up your TextViews properly, but not allow the rest of your UI to adapt accordingly.  For example, look at the heading at the bottom of this view.  We have set it up with constraints to be some odd pixels lower than out TextView.  Now, enable the largest Dynamic Type size!  Our heading at the bottom of the page gets pushed beneath the navigation bar and disappears!  THIS IS BAD!  ";
+"FONT_SIZE_BROKEN_PARAGRAPH2" = "Another way to break your applications is to set up your TextViews properly, but not allow the rest of your UI to adapt accordingly.  For example, look at the heading at the bottom of this view.  We have set it up with constraints to be some odd pixels lower than our TextView.  Now, enable the largest Dynamic Type size!  Our heading at the bottom of the page gets pushed beneath the navigation bar and disappears!  THIS IS BAD!  ";
 
 //Fixed View
 "FONT_SIZE_FIXED_HEADING" = "Dynamic Type Fixed";
 
 "FONT_SIZE_FIXED_SUBHEADING1" = "Fix One";
 
-"FONT_SIZE_FIXED_PARAGRAPH1" = "To fix the first issue, we simply have to set up Dynamic Type Sizing for the UITextView.  We do this by setting the font to the value returned by [UIFont preferredFontForTextStyle].  By listening for the UIContentSizeCategoryDidChangeNotification, and resetting the font to this value, we can keep it in sync with the Accessibility Setting.";
+"FONT_SIZE_FIXED_PARAGRAPH1" = "To fix the first issue, we simply have to set up Dynamic Type Sizing for the UITextView.  We do this by grabbing the correct font from the UIFont class.  Also, by listening for Content Size notifications, you can keep your view in sync with the user configurable content size setting within iOS.  Also, be careful to ensure that your views initialize properly.";
 
 "FONT_SIZE_FIXED_SUBHEADING2" = "Fix Two!";
 
-"FONT_SIZE_FIXED_PARAGRAPH2" = "Finally, in order to keep the heading belwo from disappearing we need to do one of two things.  Either make our UITextViews scollable, or place everything in a scroll view.  Placing everything in a scroll view is a little more difficult, so that is the solution we have used.";
+"FONT_SIZE_FIXED_PARAGRAPH2" = "Finally, in order to keep the heading belwo from disappearing we need to do one of two things.  Either make our UITextViews scollable, or place everything in a scroll view.  Placing everything in a scroll view is the solution we decided to use in this scene.";
