@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAITrackedViewController.H"
+#import "IACViewController.h"
 
-
-@interface DQFixedLabelViewController : GAITrackedViewController
+@interface IACLabelFixedViewController : IACViewController
 
 @end

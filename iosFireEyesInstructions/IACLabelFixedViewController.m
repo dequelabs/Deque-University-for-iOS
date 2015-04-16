@@ -6,18 +6,16 @@
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQFixedLabelViewController.h"
+#import "IACLabelFixedViewController.h"
 
-@interface DQFixedLabelViewController ()
+@interface IACLabelFixedViewController ()
 
 @end
 
-@implementation DQFixedLabelViewController {
-    IBOutlet UILabel *_FixedLabel;
+@implementation IACLabelFixedViewController {
     IBOutlet UIButton *_DogDisplay;
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
-    IBOutlet UITextView *_TextView;
     IBOutlet UIImageView *_ImageView;
 }
 
@@ -36,8 +34,6 @@
 {
     [super viewDidLoad];
     
-    [_TextView setText:NSLocalizedString(@"LABEL_FIXED_TEXTVIEW", nil)];
-    
     [_CatDisplay setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
     [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
@@ -49,8 +45,6 @@
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
-    
-    [_TextView setEditable:NO];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
