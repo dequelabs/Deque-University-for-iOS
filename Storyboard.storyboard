@@ -1595,7 +1595,7 @@
         <!--Dynamic Type - Broken-->
         <scene sceneID="F9t-VD-YCd">
             <objects>
-                <viewController title="Dynamic Type - Broken" id="v3R-Q7-q1W" customClass="IACFontSizeBrokenViewController" sceneMemberID="viewController">
+                <viewController title="Dynamic Type - Broken" id="v3R-Q7-q1W" customClass="IACViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="imu-u5-waK"/>
                         <viewControllerLayoutGuide type="bottom" id="ilv-0k-xoM"/>
@@ -1654,10 +1654,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Broken" image="Broken" id="3l3-6P-JdV"/>
-                    <connections>
-                        <outlet property="_ParagraphOneHeading" destination="fbv-WL-VNH" id="Sls-9U-IK2"/>
-                        <outlet property="_ParagraphTwoHeading" destination="vnK-Ze-dSm" id="l63-fY-BFm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhX-UG-e0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1666,7 +1662,7 @@
         <!--Dynamic Type - Fixed-->
         <scene sceneID="PRd-RC-k0P">
             <objects>
-                <viewController title="Dynamic Type - Fixed" id="QtN-tA-pdB" customClass="IACFontSizeFixedViewController" sceneMemberID="viewController">
+                <viewController title="Dynamic Type - Fixed" id="QtN-tA-pdB" customClass="IACViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cc0-Ve-f85"/>
                         <viewControllerLayoutGuide type="bottom" id="0ta-DU-z2m"/>
@@ -1749,10 +1745,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fixed" image="Fixed" id="nhd-vX-bxP"/>
-                    <connections>
-                        <outlet property="_ParagraphOneHeading" destination="Y70-30-oGY" id="vX9-nR-jRm"/>
-                        <outlet property="_ParagraphTwoHeading" destination="sLx-bI-Tk2" id="Bqk-ZO-989"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHh-et-YGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1908,7 +1900,7 @@
         <!--Dynamic Type - About-->
         <scene sceneID="Wqh-w3-f1S">
             <objects>
-                <viewController title="Dynamic Type - About" id="v7e-1y-qiz" customClass="IACFontSizeInfoViewController" sceneMemberID="viewController">
+                <viewController title="Dynamic Type - About" id="v7e-1y-qiz" customClass="IACViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mZs-F4-2wv"/>
                         <viewControllerLayoutGuide type="bottom" id="MWN-f3-lCo"/>
@@ -1972,10 +1964,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" image="About" id="PZ2-A0-SLw"/>
-                    <connections>
-                        <outlet property="_ParagraphOneHeading" destination="Jne-yN-sOS" id="8EV-AE-Ljo"/>
-                        <outlet property="_ParagraphTwoHeading" destination="P2h-v7-hCG" id="VrD-0P-45U"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2OJ-Ob-5As" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
