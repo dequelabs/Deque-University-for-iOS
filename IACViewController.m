@@ -10,7 +10,7 @@
 #import "UIView+DQView.h"
 #import "DQLog.h"
 
-#define LOG_FLAG NO
+#define LOG_FLAG YES
 
 @interface IACViewController ()
 
@@ -18,22 +18,13 @@
 
 @implementation IACViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     UIView* firstAccessibilityElement = [self.view findFirstAccessibilityElement];
     
     firstAccessibilityElement.accessibilityTraits |= UIAccessibilityTraitHeader;
-    
-    DQLog(@"First A11y Element: %@", firstAccessibilityElement);
+
 }
 
 - (void)viewWillLayoutSubviews {
