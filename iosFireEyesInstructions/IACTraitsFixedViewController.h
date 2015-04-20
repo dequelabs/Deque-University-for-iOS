@@ -1,5 +1,5 @@
 //
-//  DQTraitInfoViewController.h
+//  DQTraitsFixedViewController.h
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 5/22/14.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAITrackedViewController.h"
+#import "IACViewController.h"
 
-@interface DQTraitInformationViewController : GAITrackedViewController
+@interface IACTraitsFixedViewController : IACViewController
 
 @end

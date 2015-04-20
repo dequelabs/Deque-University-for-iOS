@@ -7,6 +7,10 @@
 //
 
 #import "IACViewController.h"
+#import "UIView+DQView.h"
+#import "DQLog.h"
+
+#define LOG_FLAG NO
 
 @interface IACViewController ()
 
@@ -18,6 +22,20 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    UIView* firstAccessibilityElement = [self.view findFirstAccessibilityElement];
+    
+    firstAccessibilityElement.accessibilityTraits |= UIAccessibilityTraitHeader;
+    
+    DQLog(@"First A11y Element: %@", firstAccessibilityElement);
+}
+
 - (void)viewWillLayoutSubviews {
     if (self.navigationController.navigationBar.items.count >= 2) {
         UINavigationItem* navigationItem = [self.navigationController.navigationBar.items objectAtIndex:1];
@@ -26,19 +44,10 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)shouldAutorotate {
+    return NO;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

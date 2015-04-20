@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
-    NSLog(@"%@", self.navigationController);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +25,6 @@
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    NSLog(@"%@", self.navigationController);
     
     UINavigationItem* navigationItem = [self.navigationController.navigationBar.items objectAtIndex:1];
     

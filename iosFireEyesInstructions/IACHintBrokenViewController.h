@@ -1,5 +1,5 @@
 //
-//  DQFixedHintViewController.h
+//  DQBrokenHintViewController.h
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 2/12/14.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAITrackedViewController.H"
+#import "IACViewController.h"
 
-
-@interface DQFixedHintViewController : GAITrackedViewController
+@interface IACHintBrokenViewController : IACViewController
 
 @end

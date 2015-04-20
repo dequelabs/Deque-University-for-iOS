@@ -1,5 +1,5 @@
 //
-//  DQLabelExampleViewController.h
+//  DQFixedHintViewController.h
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 2/12/14.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAITrackedViewController.H"
+#import "IACViewController.h"
 
 
-@interface DQLabelExampleViewController : GAITrackedViewController
+@interface IACHintFixedViewController : IACViewController
 
 @end

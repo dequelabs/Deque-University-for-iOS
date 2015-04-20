@@ -33,15 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [_CatDisplay setAccessibilityLabel:NSLocalizedString(@"CAT", nil)];
-    [_DogDisplay setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
-    [_FishDisplay setAccessibilityLabel:NSLocalizedString(@"FISH", nil)];
-    
-    [_CatDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
-    [_FishDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
-    [_DogDisplay setAccessibilityHint:NSLocalizedString(@"MODIFY_IMAGE", nil)];
-    
+   
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
@@ -67,6 +59,8 @@
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
     [_ImageView setAccessibilityLabel:name];
+    
+    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _ImageView);
 }
 
 - (BOOL)shouldAutorotate {
@@ -74,3 +68,5 @@
 }
 
 @end
+
+

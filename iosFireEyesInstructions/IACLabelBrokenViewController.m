@@ -6,18 +6,12 @@
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "DQBrokenLabelViewController.h"
+#import "IACLabelBrokenViewController.h"
 
-@interface DQBrokenLabelViewController ()
-
-@end
-
-@implementation DQBrokenLabelViewController {
-    IBOutlet UILabel *_BrokenLabel;
+@implementation IACLabelBrokenViewController {
     IBOutlet UIButton *_DogDisplay;
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
-    IBOutlet UITextView *_TextView;
     IBOutlet UIImageView *_ImageView;
 }
 
@@ -47,13 +41,10 @@
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
-    
-    [_TextView setEditable:NO];
-    
+        
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning, letting the analyzer know we are concsiously setting an empty hint.
     [_ImageView setAccessibilityLabel:@"dog"];
-    [_ImageView setIsAccessibilityElement:YES];
 }
 
 - (void)displayImage:(id)sender {
