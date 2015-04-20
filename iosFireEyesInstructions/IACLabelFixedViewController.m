@@ -8,14 +8,16 @@
 
 #import "IACLabelFixedViewController.h"
 
+#import "DQButton.h"
+
 @interface IACLabelFixedViewController ()
 
 @end
 
 @implementation IACLabelFixedViewController {
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
+    IBOutlet DQButton *_DogDisplay;
+    IBOutlet DQButton *_CatDisplay;
+    IBOutlet DQButton *_FishDisplay;
     IBOutlet UIImageView *_ImageView;
 }
 
@@ -33,6 +35,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [_FishDisplay setShadowed:YES];
+    [_CatDisplay setShadowed:YES];
+    [_DogDisplay setShadowed:YES];
    
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
