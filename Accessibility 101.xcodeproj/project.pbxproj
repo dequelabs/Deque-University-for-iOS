@@ -12,48 +12,33 @@
 		0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2418D21FA200B34CC7 /* SIR.mp3 */; };
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
 		0F2188471940FC0C007E68CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2188461940FC0C007E68CD /* Localizable.strings */; };
-		0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */; };
-		0F7633621ADD9A80002D7243 /* DQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633571ADD9A80002D7243 /* DQButton.m */; };
-		0F7633631ADD9A80002D7243 /* DQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633591ADD9A80002D7243 /* DQLabel.m */; };
-		0F7633641ADD9A80002D7243 /* DQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F76335B1ADD9A80002D7243 /* DQTextField.m */; };
-		0F7633651ADD9A80002D7243 /* DQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F76335D1ADD9A80002D7243 /* DQTextView.m */; };
-		0F7633671ADD9A80002D7243 /* UIFont+DQFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633611ADD9A80002D7243 /* UIFont+DQFont.m */; };
 		0F76336A1ADDA0C0002D7243 /* IACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633691ADDA0C0002D7243 /* IACTabBarController.m */; };
 		0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F76336C1ADDA428002D7243 /* IACViewController.m */; };
-		0F7633731ADDB69B002D7243 /* DQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633721ADDB69B002D7243 /* DQTabBarController.m */; };
+		0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633761AE00990002D7243 /* IACAboutDequeViewController.m */; };
+		0FE903C91AE7ED2400EC01F1 /* UIFont+DQFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903B31AE7ED2400EC01F1 /* UIFont+DQFont.m */; };
+		0FE903CA1AE7ED2400EC01F1 /* UIView+DQView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903B51AE7ED2400EC01F1 /* UIView+DQView.m */; };
+		0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903B81AE7ED2400EC01F1 /* DQTabBarController.m */; };
+		0FE903CC1AE7ED2400EC01F1 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903BA1AE7ED2400EC01F1 /* DQViewController.m */; };
+		0FE903CD1AE7ED2400EC01F1 /* DQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903BD1AE7ED2400EC01F1 /* DQLog.m */; };
+		0FE903CE1AE7ED2400EC01F1 /* DQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903C01AE7ED2400EC01F1 /* DQButton.m */; };
+		0FE903CF1AE7ED2400EC01F1 /* DQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903C21AE7ED2400EC01F1 /* DQLabel.m */; };
+		0FE903D01AE7ED2400EC01F1 /* DQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903C41AE7ED2400EC01F1 /* DQTextField.m */; };
+		0FE903D11AE7ED2400EC01F1 /* DQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903C61AE7ED2400EC01F1 /* DQTextView.m */; };
+		0FE903D21AE7ED2400EC01F1 /* DQWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE903C81AE7ED2400EC01F1 /* DQWrapperView.m */; };
 		0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */; };
 		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
 		0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B901AC9C74900F372F8 /* libz.dylib */; };
 		0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */; };
 		0FEB4BAC1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */; };
 		0FEB4BAD1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */; };
-		0FEB4C1B1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB4C1A1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m */; };
-		0FEB4C1C1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB4C1A1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m */; };
-		0FEB4C291ACB304400F372F8 /* IACFontSizeBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB4C281ACB304400F372F8 /* IACFontSizeBrokenViewController.m */; };
-		0FEB4C2A1ACB304400F372F8 /* IACFontSizeBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB4C281ACB304400F372F8 /* IACFontSizeBrokenViewController.m */; };
-		0FEB4C2D1ACB47D800F372F8 /* IACFontSizeFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB4C2C1ACB47D800F372F8 /* IACFontSizeFixedViewController.m */; };
-		0FEB4C2E1ACB47D800F372F8 /* IACFontSizeFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB4C2C1ACB47D800F372F8 /* IACFontSizeFixedViewController.m */; };
 		0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */; };
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
-		0FEFA7D01ADD65A700D87A45 /* IACStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CF1ADD65A700D87A45 /* IACStory.m */; };
-		A91D01E9192E54F300EA7137 /* DQNestedInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */; };
-		A96470C0192E53570050646B /* DQFixedNestedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96470BF192E53570050646B /* DQFixedNestedViewController.m */; };
-		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
-		A983BDE919361EF400070619 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983BDEB19361EF400070619 /* MainStoryboard.storyboard */; };
-		A9981DAA192E4A2900CB0191 /* DQTraitInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9981DA9192E4A2900CB0191 /* DQTraitInformationViewController.m */; };
-		A9981DAD192E4B1700CB0191 /* DQTraitsExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */; };
-		A9A7B0F5192E4C40001FB256 /* DQBrokenTraitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* DQBrokenTraitsViewController.m */; };
-		A9AB571B192E53A50048139F /* DQBrokenNestedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB571A192E53A50048139F /* DQBrokenNestedViewController.m */; };
-		A9AB571E192E54500048139F /* DQNestedExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AB571D192E54500048139F /* DQNestedExampleViewController.m */; };
-		A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */; };
-		A9AE2DFB18ABFE7800D33C6B /* DQHintExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFA18ABFE7800D33C6B /* DQHintExampleViewController.m */; };
-		A9AE2DFE18AC014500D33C6B /* DQBrokenLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFD18AC014500D33C6B /* DQBrokenLabelViewController.m */; };
-		A9AE2E0118AC017E00D33C6B /* DQBrokenHintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0018AC017E00D33C6B /* DQBrokenHintViewController.m */; };
+		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
+		A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */; };
+		A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */; };
 		A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0318AC01AE00D33C6B /* IACLabelFixedViewController.m */; };
-		A9AE2E0718AC022C00D33C6B /* DQFixedHintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0618AC022C00D33C6B /* DQFixedHintViewController.m */; };
-		A9C2BAB418A94B54001CB073 /* DQLabelInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C2BAB318A94B54001CB073 /* DQLabelInformationViewController.m */; };
-		A9C2BAB718A950A8001CB073 /* DQHintInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C2BAB618A950A8001CB073 /* DQHintInformationViewController.m */; };
+		A9AE2E0718AC022C00D33C6B /* IACHintFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0618AC022C00D33C6B /* IACHintFixedViewController.m */; };
 		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */; };
 		A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
@@ -64,8 +49,7 @@
 		A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
 		A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013E418A2DD4700DC6496 /* InfoPlist.strings */; };
-		A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013F618A2DEFC00DC6496 /* DQViewController.m */; };
-		A9F1672A192E522500B37FFB /* DQFixedTraitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* DQFixedTraitsViewController.m */; };
+		A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,23 +68,33 @@
 		0F158F2418D21FA200B34CC7 /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0F2188461940FC0C007E68CD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = iosFireEyesInstructions/iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
-		0F7633561ADD9A80002D7243 /* DQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQButton.h; sourceTree = "<group>"; };
-		0F7633571ADD9A80002D7243 /* DQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQButton.m; sourceTree = "<group>"; };
-		0F7633581ADD9A80002D7243 /* DQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLabel.h; sourceTree = "<group>"; };
-		0F7633591ADD9A80002D7243 /* DQLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabel.m; sourceTree = "<group>"; };
-		0F76335A1ADD9A80002D7243 /* DQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextField.h; sourceTree = "<group>"; };
-		0F76335B1ADD9A80002D7243 /* DQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextField.m; sourceTree = "<group>"; };
-		0F76335C1ADD9A80002D7243 /* DQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextView.h; sourceTree = "<group>"; };
-		0F76335D1ADD9A80002D7243 /* DQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextView.m; sourceTree = "<group>"; };
-		0F7633601ADD9A80002D7243 /* UIFont+DQFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DQFont.h"; sourceTree = "<group>"; };
-		0F7633611ADD9A80002D7243 /* UIFont+DQFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DQFont.m"; sourceTree = "<group>"; };
 		0F7633681ADDA0C0002D7243 /* IACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTabBarController.h; sourceTree = "<group>"; };
 		0F7633691ADDA0C0002D7243 /* IACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTabBarController.m; sourceTree = "<group>"; };
 		0F76336B1ADDA428002D7243 /* IACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACViewController.h; sourceTree = "<group>"; };
 		0F76336C1ADDA428002D7243 /* IACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACViewController.m; sourceTree = "<group>"; };
-		0F7633711ADDB69B002D7243 /* DQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTabBarController.h; sourceTree = "<group>"; };
-		0F7633721ADDB69B002D7243 /* DQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTabBarController.m; sourceTree = "<group>"; };
+		0F7633751AE00990002D7243 /* IACAboutDequeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACAboutDequeViewController.h; sourceTree = "<group>"; };
+		0F7633761AE00990002D7243 /* IACAboutDequeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACAboutDequeViewController.m; sourceTree = "<group>"; };
+		0FE903B21AE7ED2400EC01F1 /* UIFont+DQFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DQFont.h"; sourceTree = "<group>"; };
+		0FE903B31AE7ED2400EC01F1 /* UIFont+DQFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DQFont.m"; sourceTree = "<group>"; };
+		0FE903B41AE7ED2400EC01F1 /* UIView+DQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DQView.h"; sourceTree = "<group>"; };
+		0FE903B51AE7ED2400EC01F1 /* UIView+DQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DQView.m"; sourceTree = "<group>"; };
+		0FE903B71AE7ED2400EC01F1 /* DQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTabBarController.h; sourceTree = "<group>"; };
+		0FE903B81AE7ED2400EC01F1 /* DQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTabBarController.m; sourceTree = "<group>"; };
+		0FE903B91AE7ED2400EC01F1 /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQViewController.h; sourceTree = "<group>"; };
+		0FE903BA1AE7ED2400EC01F1 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
+		0FE903BB1AE7ED2400EC01F1 /* DQConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQConstants.h; sourceTree = "<group>"; };
+		0FE903BC1AE7ED2400EC01F1 /* DQLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLog.h; sourceTree = "<group>"; };
+		0FE903BD1AE7ED2400EC01F1 /* DQLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLog.m; sourceTree = "<group>"; };
+		0FE903BF1AE7ED2400EC01F1 /* DQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQButton.h; sourceTree = "<group>"; };
+		0FE903C01AE7ED2400EC01F1 /* DQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQButton.m; sourceTree = "<group>"; };
+		0FE903C11AE7ED2400EC01F1 /* DQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLabel.h; sourceTree = "<group>"; };
+		0FE903C21AE7ED2400EC01F1 /* DQLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabel.m; sourceTree = "<group>"; };
+		0FE903C31AE7ED2400EC01F1 /* DQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextField.h; sourceTree = "<group>"; };
+		0FE903C41AE7ED2400EC01F1 /* DQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextField.m; sourceTree = "<group>"; };
+		0FE903C51AE7ED2400EC01F1 /* DQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextView.h; sourceTree = "<group>"; };
+		0FE903C61AE7ED2400EC01F1 /* DQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextView.m; sourceTree = "<group>"; };
+		0FE903C71AE7ED2400EC01F1 /* DQWrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQWrapperView.h; sourceTree = "<group>"; };
+		0FE903C81AE7ED2400EC01F1 /* DQWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQWrapperView.m; sourceTree = "<group>"; };
 		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0FEB4B901AC9C74900F372F8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -116,52 +110,21 @@
 		0FEB4BA91AC9C7F000F372F8 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		0FEB4C191ACAF3BC00F372F8 /* IACFontSizeInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFontSizeInfoViewController.h; sourceTree = "<group>"; };
-		0FEB4C1A1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFontSizeInfoViewController.m; sourceTree = "<group>"; };
-		0FEB4C271ACB304400F372F8 /* IACFontSizeBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFontSizeBrokenViewController.h; sourceTree = "<group>"; };
-		0FEB4C281ACB304400F372F8 /* IACFontSizeBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFontSizeBrokenViewController.m; sourceTree = "<group>"; };
-		0FEB4C2B1ACB47D800F372F8 /* IACFontSizeFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFontSizeFixedViewController.h; sourceTree = "<group>"; };
-		0FEB4C2C1ACB47D800F372F8 /* IACFontSizeFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFontSizeFixedViewController.m; sourceTree = "<group>"; };
 		0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0FEFA7C81ADD49E000D87A45 /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACStoryTableViewController.h; sourceTree = "<group>"; };
 		0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStoryTableViewController.m; sourceTree = "<group>"; };
 		0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACSplitViewController.h; sourceTree = "<group>"; };
 		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
-		0FEFA7CE1ADD65A700D87A45 /* IACStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACStory.h; sourceTree = "<group>"; };
-		0FEFA7CF1ADD65A700D87A45 /* IACStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStory.m; sourceTree = "<group>"; };
-		A91D01E7192E54F300EA7137 /* DQNestedInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNestedInformationViewController.h; path = iosFireEyesInstructions/DQNestedInformationViewController.h; sourceTree = "<group>"; };
-		A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNestedInformationViewController.m; path = iosFireEyesInstructions/DQNestedInformationViewController.m; sourceTree = "<group>"; };
-		A96470BE192E53570050646B /* DQFixedNestedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQFixedNestedViewController.h; path = iosFireEyesInstructions/DQFixedNestedViewController.h; sourceTree = "<group>"; };
-		A96470BF192E53570050646B /* DQFixedNestedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQFixedNestedViewController.m; path = iosFireEyesInstructions/DQFixedNestedViewController.m; sourceTree = "<group>"; };
-		A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQAllyAboutViewController.h; path = iosFireEyesInstructions/DQAllyAboutViewController.h; sourceTree = "<group>"; };
-		A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQAllyAboutViewController.m; path = iosFireEyesInstructions/DQAllyAboutViewController.m; sourceTree = "<group>"; };
-		A983BDEA19361EF400070619 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		A9981DA8192E4A2900CB0191 /* DQTraitInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQTraitInformationViewController.h; path = iosFireEyesInstructions/DQTraitInformationViewController.h; sourceTree = "<group>"; };
-		A9981DA9192E4A2900CB0191 /* DQTraitInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQTraitInformationViewController.m; path = iosFireEyesInstructions/DQTraitInformationViewController.m; sourceTree = "<group>"; };
-		A9981DAB192E4B1700CB0191 /* DQTraitsExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQTraitsExampleViewController.h; path = iosFireEyesInstructions/DQTraitsExampleViewController.h; sourceTree = "<group>"; };
-		A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQTraitsExampleViewController.m; path = iosFireEyesInstructions/DQTraitsExampleViewController.m; sourceTree = "<group>"; };
-		A9A7B0F3192E4C40001FB256 /* DQBrokenTraitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQBrokenTraitsViewController.h; path = iosFireEyesInstructions/DQBrokenTraitsViewController.h; sourceTree = "<group>"; };
-		A9A7B0F4192E4C40001FB256 /* DQBrokenTraitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQBrokenTraitsViewController.m; path = iosFireEyesInstructions/DQBrokenTraitsViewController.m; sourceTree = "<group>"; };
-		A9AB5719192E53A50048139F /* DQBrokenNestedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQBrokenNestedViewController.h; path = iosFireEyesInstructions/DQBrokenNestedViewController.h; sourceTree = "<group>"; };
-		A9AB571A192E53A50048139F /* DQBrokenNestedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQBrokenNestedViewController.m; path = iosFireEyesInstructions/DQBrokenNestedViewController.m; sourceTree = "<group>"; };
-		A9AB571C192E54500048139F /* DQNestedExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNestedExampleViewController.h; path = iosFireEyesInstructions/DQNestedExampleViewController.h; sourceTree = "<group>"; };
-		A9AB571D192E54500048139F /* DQNestedExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNestedExampleViewController.m; path = iosFireEyesInstructions/DQNestedExampleViewController.m; sourceTree = "<group>"; };
-		A9AE2DF618ABFE3100D33C6B /* DQLabelExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQLabelExampleViewController.h; path = iosFireEyesInstructions/DQLabelExampleViewController.h; sourceTree = "<group>"; };
-		A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQLabelExampleViewController.m; path = iosFireEyesInstructions/DQLabelExampleViewController.m; sourceTree = "<group>"; };
-		A9AE2DF918ABFE7800D33C6B /* DQHintExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQHintExampleViewController.h; path = iosFireEyesInstructions/DQHintExampleViewController.h; sourceTree = "<group>"; };
-		A9AE2DFA18ABFE7800D33C6B /* DQHintExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQHintExampleViewController.m; path = iosFireEyesInstructions/DQHintExampleViewController.m; sourceTree = "<group>"; };
-		A9AE2DFC18AC014500D33C6B /* DQBrokenLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQBrokenLabelViewController.h; path = iosFireEyesInstructions/DQBrokenLabelViewController.h; sourceTree = "<group>"; };
-		A9AE2DFD18AC014500D33C6B /* DQBrokenLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQBrokenLabelViewController.m; path = iosFireEyesInstructions/DQBrokenLabelViewController.m; sourceTree = "<group>"; };
-		A9AE2DFF18AC017E00D33C6B /* DQBrokenHintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQBrokenHintViewController.h; path = iosFireEyesInstructions/DQBrokenHintViewController.h; sourceTree = "<group>"; };
-		A9AE2E0018AC017E00D33C6B /* DQBrokenHintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQBrokenHintViewController.m; path = iosFireEyesInstructions/DQBrokenHintViewController.m; sourceTree = "<group>"; };
+		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
+		A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsBrokenViewController.m; path = iosFireEyesInstructions/IACTraitsBrokenViewController.m; sourceTree = "<group>"; };
+		A9AE2DFC18AC014500D33C6B /* IACLabelBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACLabelBrokenViewController.h; path = iosFireEyesInstructions/IACLabelBrokenViewController.h; sourceTree = "<group>"; };
+		A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACLabelBrokenViewController.m; path = iosFireEyesInstructions/IACLabelBrokenViewController.m; sourceTree = "<group>"; };
+		A9AE2DFF18AC017E00D33C6B /* IACHintBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACHintBrokenViewController.h; path = iosFireEyesInstructions/IACHintBrokenViewController.h; sourceTree = "<group>"; };
+		A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACHintBrokenViewController.m; path = iosFireEyesInstructions/IACHintBrokenViewController.m; sourceTree = "<group>"; };
 		A9AE2E0218AC01AE00D33C6B /* IACLabelFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACLabelFixedViewController.h; path = iosFireEyesInstructions/IACLabelFixedViewController.h; sourceTree = "<group>"; };
 		A9AE2E0318AC01AE00D33C6B /* IACLabelFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACLabelFixedViewController.m; path = iosFireEyesInstructions/IACLabelFixedViewController.m; sourceTree = "<group>"; };
-		A9AE2E0518AC022C00D33C6B /* DQFixedHintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQFixedHintViewController.h; path = iosFireEyesInstructions/DQFixedHintViewController.h; sourceTree = "<group>"; };
-		A9AE2E0618AC022C00D33C6B /* DQFixedHintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQFixedHintViewController.m; path = iosFireEyesInstructions/DQFixedHintViewController.m; sourceTree = "<group>"; };
-		A9C2BAB218A94B54001CB073 /* DQLabelInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQLabelInformationViewController.h; path = iosFireEyesInstructions/DQLabelInformationViewController.h; sourceTree = "<group>"; };
-		A9C2BAB318A94B54001CB073 /* DQLabelInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQLabelInformationViewController.m; path = iosFireEyesInstructions/DQLabelInformationViewController.m; sourceTree = "<group>"; };
-		A9C2BAB518A950A8001CB073 /* DQHintInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQHintInformationViewController.h; path = iosFireEyesInstructions/DQHintInformationViewController.h; sourceTree = "<group>"; };
-		A9C2BAB618A950A8001CB073 /* DQHintInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQHintInformationViewController.m; path = iosFireEyesInstructions/DQHintInformationViewController.m; sourceTree = "<group>"; };
+		A9AE2E0518AC022C00D33C6B /* IACHintFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACHintFixedViewController.h; path = iosFireEyesInstructions/IACHintFixedViewController.h; sourceTree = "<group>"; };
+		A9AE2E0618AC022C00D33C6B /* IACHintFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACHintFixedViewController.m; path = iosFireEyesInstructions/IACHintFixedViewController.m; sourceTree = "<group>"; };
 		A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility 101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D013C218A2DD4700DC6496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,10 +139,8 @@
 		A9D013DB18A2DD4700DC6496 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A9D013E318A2DD4700DC6496 /* Accessibility 101Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Accessibility 101Tests-Info.plist"; sourceTree = "<group>"; };
 		A9D013E518A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A9D013F518A2DEFC00DC6496 /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQViewController.h; path = iosFireEyesInstructions/DQViewController.h; sourceTree = "<group>"; };
-		A9D013F618A2DEFC00DC6496 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQViewController.m; path = iosFireEyesInstructions/DQViewController.m; sourceTree = "<group>"; };
-		A9F16728192E522500B37FFB /* DQFixedTraitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQFixedTraitsViewController.h; path = iosFireEyesInstructions/DQFixedTraitsViewController.h; sourceTree = "<group>"; };
-		A9F16729192E522500B37FFB /* DQFixedTraitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQFixedTraitsViewController.m; path = iosFireEyesInstructions/DQFixedTraitsViewController.m; sourceTree = "<group>"; };
+		A9F16728192E522500B37FFB /* IACTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsFixedViewController.h; path = iosFireEyesInstructions/IACTraitsFixedViewController.h; sourceTree = "<group>"; };
+		A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsFixedViewController.m; path = iosFireEyesInstructions/IACTraitsFixedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,24 +184,65 @@
 			name = Music;
 			sourceTree = "<group>";
 		};
-		0F7633551ADD9A80002D7243 /* DQA11yFramework */ = {
+		0F7633741AE00966002D7243 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
-				0F7633561ADD9A80002D7243 /* DQButton.h */,
-				0F7633571ADD9A80002D7243 /* DQButton.m */,
-				0F7633581ADD9A80002D7243 /* DQLabel.h */,
-				0F7633591ADD9A80002D7243 /* DQLabel.m */,
-				0F76335A1ADD9A80002D7243 /* DQTextField.h */,
-				0F76335B1ADD9A80002D7243 /* DQTextField.m */,
-				0F76335C1ADD9A80002D7243 /* DQTextView.h */,
-				0F76335D1ADD9A80002D7243 /* DQTextView.m */,
-				0F7633601ADD9A80002D7243 /* UIFont+DQFont.h */,
-				0F7633611ADD9A80002D7243 /* UIFont+DQFont.m */,
-				0F7633711ADDB69B002D7243 /* DQTabBarController.h */,
-				0F7633721ADDB69B002D7243 /* DQTabBarController.m */,
+				0F7633751AE00990002D7243 /* IACAboutDequeViewController.h */,
+				0F7633761AE00990002D7243 /* IACAboutDequeViewController.m */,
 			);
-			name = DQA11yFramework;
-			path = ../../Desktop/Folder;
+			name = Introduction;
+			sourceTree = "<group>";
+		};
+		0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0FE903B11AE7ED2400EC01F1 /* Categories */,
+				0FE903B61AE7ED2400EC01F1 /* Controllers */,
+				0FE903BB1AE7ED2400EC01F1 /* DQConstants.h */,
+				0FE903BC1AE7ED2400EC01F1 /* DQLog.h */,
+				0FE903BD1AE7ED2400EC01F1 /* DQLog.m */,
+				0FE903BE1AE7ED2400EC01F1 /* Views */,
+			);
+			path = DQA11yFramework;
+			sourceTree = "<group>";
+		};
+		0FE903B11AE7ED2400EC01F1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0FE903B21AE7ED2400EC01F1 /* UIFont+DQFont.h */,
+				0FE903B31AE7ED2400EC01F1 /* UIFont+DQFont.m */,
+				0FE903B41AE7ED2400EC01F1 /* UIView+DQView.h */,
+				0FE903B51AE7ED2400EC01F1 /* UIView+DQView.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0FE903B61AE7ED2400EC01F1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0FE903B71AE7ED2400EC01F1 /* DQTabBarController.h */,
+				0FE903B81AE7ED2400EC01F1 /* DQTabBarController.m */,
+				0FE903B91AE7ED2400EC01F1 /* DQViewController.h */,
+				0FE903BA1AE7ED2400EC01F1 /* DQViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0FE903BE1AE7ED2400EC01F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FE903BF1AE7ED2400EC01F1 /* DQButton.h */,
+				0FE903C01AE7ED2400EC01F1 /* DQButton.m */,
+				0FE903C11AE7ED2400EC01F1 /* DQLabel.h */,
+				0FE903C21AE7ED2400EC01F1 /* DQLabel.m */,
+				0FE903C31AE7ED2400EC01F1 /* DQTextField.h */,
+				0FE903C41AE7ED2400EC01F1 /* DQTextField.m */,
+				0FE903C51AE7ED2400EC01F1 /* DQTextView.h */,
+				0FE903C61AE7ED2400EC01F1 /* DQTextView.m */,
+				0FE903C71AE7ED2400EC01F1 /* DQWrapperView.h */,
+				0FE903C81AE7ED2400EC01F1 /* DQWrapperView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0FEB4B811AC9C64A00F372F8 /* Include */ = {
@@ -258,72 +260,38 @@
 				0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */,
 			);
 			name = Include;
-			sourceTree = "<group>";
-		};
-		0FEB4C181ACAF35800F372F8 /* Font Size */ = {
-			isa = PBXGroup;
-			children = (
-				0FEB4C191ACAF3BC00F372F8 /* IACFontSizeInfoViewController.h */,
-				0FEB4C1A1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m */,
-				0FEB4C271ACB304400F372F8 /* IACFontSizeBrokenViewController.h */,
-				0FEB4C281ACB304400F372F8 /* IACFontSizeBrokenViewController.m */,
-				0FEB4C2B1ACB47D800F372F8 /* IACFontSizeFixedViewController.h */,
-				0FEB4C2C1ACB47D800F372F8 /* IACFontSizeFixedViewController.m */,
-			);
-			name = "Font Size";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
 			isa = PBXGroup;
 			children = (
-				0F28517118D3A38A00CE44BB /* iPhoneStoryboard.storyboard */,
-				A983BDEB19361EF400070619 /* MainStoryboard.storyboard */,
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
-				A9D013F518A2DEFC00DC6496 /* DQViewController.h */,
-				A9D013F618A2DEFC00DC6496 /* DQViewController.m */,
+				0F76336B1ADDA428002D7243 /* IACViewController.h */,
+				0F76336C1ADDA428002D7243 /* IACViewController.m */,
 				0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */,
 				0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */,
 				0FEFA7C81ADD49E000D87A45 /* IACStoryTableViewController.h */,
 				0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */,
-				0FEFA7CE1ADD65A700D87A45 /* IACStory.h */,
-				0FEFA7CF1ADD65A700D87A45 /* IACStory.m */,
 				0F7633681ADDA0C0002D7243 /* IACTabBarController.h */,
 				0F7633691ADDA0C0002D7243 /* IACTabBarController.m */,
-				0F76336B1ADDA428002D7243 /* IACViewController.h */,
-				0F76336C1ADDA428002D7243 /* IACViewController.m */,
-				0F7633551ADD9A80002D7243 /* DQA11yFramework */,
-				A9C21AF5193E64C900F80821 /* Stories */,
+				0F7633741AE00966002D7243 /* Introduction */,
+				A9C21AF6193E64DE00F80821 /* Labels */,
+				A9C21AF7193E64FB00F80821 /* Hints */,
+				A9C21AF8193E651B00F80821 /* Traits */,
+				0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 			);
 			name = "Accessibility 101";
 			sourceTree = "<group>";
 		};
-		A9C21AF5193E64C900F80821 /* Stories */ = {
-			isa = PBXGroup;
-			children = (
-				A970543F18A95B4200F3AAB4 /* DQAllyAboutViewController.h */,
-				A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */,
-				A9C21AF6193E64DE00F80821 /* Labels */,
-				A9C21AF7193E64FB00F80821 /* Hints */,
-				A9C21AF8193E651B00F80821 /* Traits */,
-				A9C21AF9193E654500F80821 /* Nested Accessibility */,
-				0FEB4C181ACAF35800F372F8 /* Font Size */,
-				0FEB4B811AC9C64A00F372F8 /* Include */,
-			);
-			name = Stories;
-			sourceTree = "<group>";
-		};
 		A9C21AF6193E64DE00F80821 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				A9C2BAB218A94B54001CB073 /* DQLabelInformationViewController.h */,
-				A9C2BAB318A94B54001CB073 /* DQLabelInformationViewController.m */,
-				A9AE2DF618ABFE3100D33C6B /* DQLabelExampleViewController.h */,
-				A9AE2DF718ABFE3100D33C6B /* DQLabelExampleViewController.m */,
-				A9AE2DFC18AC014500D33C6B /* DQBrokenLabelViewController.h */,
-				A9AE2DFD18AC014500D33C6B /* DQBrokenLabelViewController.m */,
+				A9AE2DFC18AC014500D33C6B /* IACLabelBrokenViewController.h */,
+				A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */,
 				A9AE2E0218AC01AE00D33C6B /* IACLabelFixedViewController.h */,
 				A9AE2E0318AC01AE00D33C6B /* IACLabelFixedViewController.m */,
 			);
@@ -333,14 +301,10 @@
 		A9C21AF7193E64FB00F80821 /* Hints */ = {
 			isa = PBXGroup;
 			children = (
-				A9C2BAB518A950A8001CB073 /* DQHintInformationViewController.h */,
-				A9C2BAB618A950A8001CB073 /* DQHintInformationViewController.m */,
-				A9AE2DF918ABFE7800D33C6B /* DQHintExampleViewController.h */,
-				A9AE2DFA18ABFE7800D33C6B /* DQHintExampleViewController.m */,
-				A9AE2DFF18AC017E00D33C6B /* DQBrokenHintViewController.h */,
-				A9AE2E0018AC017E00D33C6B /* DQBrokenHintViewController.m */,
-				A9AE2E0518AC022C00D33C6B /* DQFixedHintViewController.h */,
-				A9AE2E0618AC022C00D33C6B /* DQFixedHintViewController.m */,
+				A9AE2DFF18AC017E00D33C6B /* IACHintBrokenViewController.h */,
+				A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */,
+				A9AE2E0518AC022C00D33C6B /* IACHintFixedViewController.h */,
+				A9AE2E0618AC022C00D33C6B /* IACHintFixedViewController.m */,
 			);
 			name = Hints;
 			sourceTree = "<group>";
@@ -348,31 +312,12 @@
 		A9C21AF8193E651B00F80821 /* Traits */ = {
 			isa = PBXGroup;
 			children = (
-				A9981DA8192E4A2900CB0191 /* DQTraitInformationViewController.h */,
-				A9981DA9192E4A2900CB0191 /* DQTraitInformationViewController.m */,
-				A9981DAB192E4B1700CB0191 /* DQTraitsExampleViewController.h */,
-				A9981DAC192E4B1700CB0191 /* DQTraitsExampleViewController.m */,
-				A9A7B0F3192E4C40001FB256 /* DQBrokenTraitsViewController.h */,
-				A9A7B0F4192E4C40001FB256 /* DQBrokenTraitsViewController.m */,
-				A9F16728192E522500B37FFB /* DQFixedTraitsViewController.h */,
-				A9F16729192E522500B37FFB /* DQFixedTraitsViewController.m */,
+				A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */,
+				A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */,
+				A9F16728192E522500B37FFB /* IACTraitsFixedViewController.h */,
+				A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */,
 			);
 			name = Traits;
-			sourceTree = "<group>";
-		};
-		A9C21AF9193E654500F80821 /* Nested Accessibility */ = {
-			isa = PBXGroup;
-			children = (
-				A96470BE192E53570050646B /* DQFixedNestedViewController.h */,
-				A96470BF192E53570050646B /* DQFixedNestedViewController.m */,
-				A9AB5719192E53A50048139F /* DQBrokenNestedViewController.h */,
-				A9AB571A192E53A50048139F /* DQBrokenNestedViewController.m */,
-				A9AB571C192E54500048139F /* DQNestedExampleViewController.h */,
-				A9AB571D192E54500048139F /* DQNestedExampleViewController.m */,
-				A91D01E7192E54F300EA7137 /* DQNestedInformationViewController.h */,
-				A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */,
-			);
-			name = "Nested Accessibility";
 			sourceTree = "<group>";
 		};
 		A9D013B618A2DD4700DC6496 = {
@@ -414,6 +359,7 @@
 		A9D013C918A2DD4700DC6496 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FEB4B811AC9C64A00F372F8 /* Include */,
 				0F158F2618D21FB200B34CC7 /* Music */,
 				A9D013D418A2DD4700DC6496 /* Images.xcassets */,
 				A9D013CA18A2DD4700DC6496 /* Accessibility 101-Info.plist */,
@@ -526,10 +472,8 @@
 				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
-				A983BDE919361EF400070619 /* MainStoryboard.storyboard in Resources */,
 				0F2188471940FC0C007E68CD /* Localizable.strings in Resources */,
 				0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */,
-				0F28517318D3A38A00CE44BB /* iPhoneStoryboard.storyboard in Resources */,
 				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,40 +493,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */,
 				A9D013CF18A2DD4700DC6496 /* main.m in Sources */,
-				A9A7B0F5192E4C40001FB256 /* DQBrokenTraitsViewController.m in Sources */,
-				A9D013F718A2DEFC00DC6496 /* DQViewController.m in Sources */,
-				A9981DAA192E4A2900CB0191 /* DQTraitInformationViewController.m in Sources */,
-				A96470C0192E53570050646B /* DQFixedNestedViewController.m in Sources */,
-				A9AE2DFB18ABFE7800D33C6B /* DQHintExampleViewController.m in Sources */,
-				A9C2BAB718A950A8001CB073 /* DQHintInformationViewController.m in Sources */,
-				A91D01E9192E54F300EA7137 /* DQNestedInformationViewController.m in Sources */,
-				A9AE2E0118AC017E00D33C6B /* DQBrokenHintViewController.m in Sources */,
+				0FE903D21AE7ED2400EC01F1 /* DQWrapperView.m in Sources */,
+				A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */,
+				0FE903CE1AE7ED2400EC01F1 /* DQButton.m in Sources */,
+				0FE903CD1AE7ED2400EC01F1 /* DQLog.m in Sources */,
+				0FE903CF1AE7ED2400EC01F1 /* DQLabel.m in Sources */,
+				0FE903D11AE7ED2400EC01F1 /* DQTextView.m in Sources */,
+				A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */,
+				0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */,
 				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,
+				0FE903CC1AE7ED2400EC01F1 /* DQViewController.m in Sources */,
 				0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */,
 				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
-				A9F1672A192E522500B37FFB /* DQFixedTraitsViewController.m in Sources */,
+				A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */,
+				0FE903D01AE7ED2400EC01F1 /* DQTextField.m in Sources */,
 				0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */,
+				0FE903CA1AE7ED2400EC01F1 /* UIView+DQView.m in Sources */,
 				0F76336A1ADDA0C0002D7243 /* IACTabBarController.m in Sources */,
-				A9AE2DFE18AC014500D33C6B /* DQBrokenLabelViewController.m in Sources */,
-				0F7633631ADD9A80002D7243 /* DQLabel.m in Sources */,
-				0F7633671ADD9A80002D7243 /* UIFont+DQFont.m in Sources */,
-				A9AB571E192E54500048139F /* DQNestedExampleViewController.m in Sources */,
-				0FEB4C1B1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m in Sources */,
-				A9981DAD192E4B1700CB0191 /* DQTraitsExampleViewController.m in Sources */,
-				A9AB571B192E53A50048139F /* DQBrokenNestedViewController.m in Sources */,
-				0F7633731ADDB69B002D7243 /* DQTabBarController.m in Sources */,
-				0F7633641ADD9A80002D7243 /* DQTextField.m in Sources */,
-				0FEB4C291ACB304400F372F8 /* IACFontSizeBrokenViewController.m in Sources */,
-				A9C2BAB418A94B54001CB073 /* DQLabelInformationViewController.m in Sources */,
-				A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */,
+				0FE903C91AE7ED2400EC01F1 /* UIFont+DQFont.m in Sources */,
+				A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */,
 				A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */,
-				0FEFA7D01ADD65A700D87A45 /* IACStory.m in Sources */,
-				A9AE2E0718AC022C00D33C6B /* DQFixedHintViewController.m in Sources */,
-				0FEB4C2D1ACB47D800F372F8 /* IACFontSizeFixedViewController.m in Sources */,
-				0F7633651ADD9A80002D7243 /* DQTextView.m in Sources */,
-				A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */,
-				0F7633621ADD9A80002D7243 /* DQButton.m in Sources */,
+				A9AE2E0718AC022C00D33C6B /* IACHintFixedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,9 +523,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FEB4C2A1ACB304400F372F8 /* IACFontSizeBrokenViewController.m in Sources */,
-				0FEB4C2E1ACB47D800F372F8 /* IACFontSizeFixedViewController.m in Sources */,
-				0FEB4C1C1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,15 +537,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A983BDEB19361EF400070619 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A983BDEA19361EF400070619 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			path = iosFireEyesInstructions;
-			sourceTree = "<group>";
-		};
 		A9D013E418A2DD4700DC6496 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

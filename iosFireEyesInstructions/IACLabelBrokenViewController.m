@@ -1,23 +1,17 @@
 //
-//  DQFixedLabelViewController.m
+//  DQBrokenLabelViewController.m
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 2/12/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
 //
 
-#import "IACLabelFixedViewController.h"
+#import "IACLabelBrokenViewController.h"
 
-#import "DQButton.h"
-
-@interface IACLabelFixedViewController ()
-
-@end
-
-@implementation IACLabelFixedViewController {
-    IBOutlet DQButton *_DogDisplay;
-    IBOutlet DQButton *_CatDisplay;
-    IBOutlet DQButton *_FishDisplay;
+@implementation IACLabelBrokenViewController {
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
     IBOutlet UIImageView *_ImageView;
 }
 
@@ -29,25 +23,28 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.screenName = @"Labels Fixed";
+    self.screenName = @"Labels Broken";
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [_FishDisplay setShadowed:YES];
-    [_CatDisplay setShadowed:YES];
-    [_DogDisplay setShadowed:YES];
-   
+    //[_CatDisplay setAccessibilityLabel:@"Cat"];
+    //[_DogDisplay setAccessibilityLabel:@"Dog"];
+    //[_FishDisplay setAccessibilityLabel:@"Fish"];
+    
+    //[_CatDisplay setAccessibilityHint:@"Modify image display"];
+    //[_FishDisplay setAccessibilityHint:@"Modify image display"];
+    //[_DogDisplay setAccessibilityHint:@"Modify image display"];
+    
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_DogDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
-    
+        
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
-    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
-    [_ImageView setIsAccessibilityElement:YES];
+    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning, letting the analyzer know we are concsiously setting an empty hint.
+    [_ImageView setAccessibilityLabel:@"dog"];
 }
 
 - (void)displayImage:(id)sender {
@@ -65,8 +62,6 @@
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
     [_ImageView setAccessibilityLabel:name];
-    
-    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _ImageView);
 }
 
 - (BOOL)shouldAutorotate {
@@ -74,5 +69,3 @@
 }
 
 @end
-
-
