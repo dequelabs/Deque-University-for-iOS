@@ -1,5 +1,5 @@
 //
-//  DQFixedLabelViewController.m
+//  IACLabelFixedViewController.m
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 2/12/14.
@@ -12,12 +12,13 @@
 
 @end
 
-@implementation IACLabelFixedViewController {
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
-    IBOutlet UIImageView *_ImageView;
-}
+@implementation IACLabelFixedViewController
+
+@synthesize dogDisplay = _DogDisplay;
+@synthesize catDisplay = _CatDisplay;
+@synthesize fishDisplay = _FishDisplay;
+@synthesize imageView = _ImageView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

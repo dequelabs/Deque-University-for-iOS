@@ -37,6 +37,9 @@
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
 		0FEFA7D01ADD65A700D87A45 /* IACStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CF1ADD65A700D87A45 /* IACStory.m */; };
+		A3416A561AE94FBD00508C55 /* DQLabelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A3416A551AE94FBD00508C55 /* DQLabelTest.m */; };
+		A3416A591AE94FDC00508C55 /* DQLabel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A3416A581AE94FDC00508C55 /* DQLabel+Test.m */; };
+		A3416A5A1AE94FDC00508C55 /* DQLabel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A3416A581AE94FDC00508C55 /* DQLabel+Test.m */; };
 		A91D01E9192E54F300EA7137 /* DQNestedInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */; };
 		A96470C0192E53570050646B /* DQFixedNestedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A96470BF192E53570050646B /* DQFixedNestedViewController.m */; };
 		A970544118A95B4200F3AAB4 /* DQAllyAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A970544018A95B4200F3AAB4 /* DQAllyAboutViewController.m */; };
@@ -129,6 +132,9 @@
 		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
 		0FEFA7CE1ADD65A700D87A45 /* IACStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACStory.h; sourceTree = "<group>"; };
 		0FEFA7CF1ADD65A700D87A45 /* IACStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStory.m; sourceTree = "<group>"; };
+		A3416A551AE94FBD00508C55 /* DQLabelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabelTest.m; sourceTree = "<group>"; };
+		A3416A581AE94FDC00508C55 /* DQLabel+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DQLabel+Test.m"; sourceTree = "<group>"; };
+		A3416A5B1AE94FEF00508C55 /* DQLabel+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DQLabel+Test.h"; sourceTree = "<group>"; };
 		A91D01E7192E54F300EA7137 /* DQNestedInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNestedInformationViewController.h; path = iosFireEyesInstructions/DQNestedInformationViewController.h; sourceTree = "<group>"; };
 		A91D01E8192E54F300EA7137 /* DQNestedInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNestedInformationViewController.m; path = iosFireEyesInstructions/DQNestedInformationViewController.m; sourceTree = "<group>"; };
 		A96470BE192E53570050646B /* DQFixedNestedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQFixedNestedViewController.h; path = iosFireEyesInstructions/DQFixedNestedViewController.h; sourceTree = "<group>"; };
@@ -300,6 +306,15 @@
 			name = "Accessibility 101";
 			sourceTree = "<group>";
 		};
+		A3416A571AE94FC400508C55 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A3416A5B1AE94FEF00508C55 /* DQLabel+Test.h */,
+				A3416A581AE94FDC00508C55 /* DQLabel+Test.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		A9C21AF5193E64C900F80821 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,7 +443,9 @@
 		A9D013E118A2DD4700DC6496 /* Accessibility 101 Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A3416A571AE94FC400508C55 /* Categories */,
 				A9D013E218A2DD4700DC6496 /* Supporting Files */,
+				A3416A551AE94FBD00508C55 /* DQLabelTest.m */,
 			);
 			name = "Accessibility 101 Tests";
 			path = iosFireEyesInstructionsTests;
@@ -578,6 +595,7 @@
 				A9AE2DF818ABFE3100D33C6B /* DQLabelExampleViewController.m in Sources */,
 				A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */,
 				0FEFA7D01ADD65A700D87A45 /* IACStory.m in Sources */,
+				A3416A591AE94FDC00508C55 /* DQLabel+Test.m in Sources */,
 				A9AE2E0718AC022C00D33C6B /* DQFixedHintViewController.m in Sources */,
 				0FEB4C2D1ACB47D800F372F8 /* IACFontSizeFixedViewController.m in Sources */,
 				0F7633651ADD9A80002D7243 /* DQTextView.m in Sources */,
@@ -591,8 +609,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FEB4C2A1ACB304400F372F8 /* IACFontSizeBrokenViewController.m in Sources */,
+				A3416A561AE94FBD00508C55 /* DQLabelTest.m in Sources */,
 				0FEB4C2E1ACB47D800F372F8 /* IACFontSizeFixedViewController.m in Sources */,
 				0FEB4C1C1ACAF3BC00F372F8 /* IACFontSizeInfoViewController.m in Sources */,
+				A3416A5A1AE94FDC00508C55 /* DQLabel+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

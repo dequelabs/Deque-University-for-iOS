@@ -12,14 +12,15 @@
 
 @end
 
-@implementation DQBrokenLabelViewController {
-    IBOutlet UILabel *_BrokenLabel;
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
-    IBOutlet UITextView *_TextView;
-    IBOutlet UIImageView *_ImageView;
-}
+@implementation DQBrokenLabelViewController
+
+@synthesize brokenLabel = _BrokenLabel;
+@synthesize dogDisplay = _DogDisplay;
+@synthesize catDisplay = _CatDisplay;
+@synthesize fishDisplay = _FishDisplay;
+@synthesize textView = _TextView;
+@synthesize imageView = _ImageView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

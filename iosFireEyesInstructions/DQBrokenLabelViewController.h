@@ -10,6 +10,23 @@
 #import "GAITrackedViewController.H"
 
 
-@interface DQBrokenLabelViewController : GAITrackedViewController
+@interface DQBrokenLabelViewController : GAITrackedViewController {
+    IBOutlet UILabel *_BrokenLabel;
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UITextView *_TextView;
+    IBOutlet UIImageView *_ImageView;
+}
+
+@property (readonly) UILabel *brokenLabel;
+@property (readonly) UIButton *dogDisplay;
+@property (readonly) UIButton *catDisplay;
+@property (readonly) UIButton *fishDisplay;
+@property (readonly) UITextView *textView;
+@property (readonly) UIImageView *imageView;
+
+- (void)displayImage:(id)sender;
+
 
 @end

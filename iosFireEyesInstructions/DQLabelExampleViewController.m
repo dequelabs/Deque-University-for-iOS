@@ -8,21 +8,22 @@
 
 #import "DQLabelExampleViewController.h"
 
-@interface DQLabelExampleViewController () {
-    IBOutlet UILabel *_ExampleLabel;
-    IBOutlet UILabel *_DogLabel;
-    IBOutlet UILabel *_CatLabel;
-    IBOutlet UILabel *_FishLabel;
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
-    IBOutlet UITextView *_TextView;
-    IBOutlet UIImageView *_ImageView;
-}
+@interface DQLabelExampleViewController ()
 
 @end
 
 @implementation DQLabelExampleViewController
+
+@synthesize exampleLabel = _ExampleLabel;
+@synthesize dogLabel = _DogLabel;
+@synthesize catLabel = _CatLabel;
+@synthesize fishLabel = _FishLabel;
+@synthesize dogDisplay = _DogDisplay;
+@synthesize catDisplay = _CatDisplay;
+@synthesize fishDisplay = _FishDisplay;
+@synthesize textView = _TextView;
+@synthesize imageView = _ImageView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
