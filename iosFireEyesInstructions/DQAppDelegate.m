@@ -7,7 +7,6 @@
 //
 
 #import "DQAppDelegate.h"
-#import "DQViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import "GAI.h"

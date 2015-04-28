@@ -8,17 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
+#import "DQButton.h"
 
-@interface IACLabelFixedViewController : IACViewController {
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
-    IBOutlet UIImageView *_ImageView;
-}
+@interface IACLabelFixedViewController : IACViewController
 
-@property (readonly) UIButton *dogDisplay;
-@property (readonly) UIButton *catDisplay;
-@property (readonly) UIButton *fishDisplay;
+@property (readonly) DQButton *dogDisplay;
+@property (readonly) DQButton *catDisplay;
+@property (readonly) DQButton *fishDisplay;
 @property (readonly) UIImageView *imageView;
 
 - (void)displayImage:(id)sender;
