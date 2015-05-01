@@ -34,6 +34,9 @@
 		0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */; };
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
+		A300EEAD1AF3CDAD003507B6 /* DQLabelBrokenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* DQLabelBrokenTest.m */; };
+		A300EEAF1AF3CDC2003507B6 /* DQLabelFixedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* DQLabelFixedTest.m */; };
+		A300EEB31AF3CED9003507B6 /* DQLabel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEB21AF3CED9003507B6 /* DQLabel+Test.m */; };
 		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
 		A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */; };
 		A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */; };
@@ -115,6 +118,10 @@
 		0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStoryTableViewController.m; sourceTree = "<group>"; };
 		0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACSplitViewController.h; sourceTree = "<group>"; };
 		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
+		A300EEAC1AF3CDAD003507B6 /* DQLabelBrokenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabelBrokenTest.m; sourceTree = "<group>"; };
+		A300EEAE1AF3CDC2003507B6 /* DQLabelFixedTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabelFixedTest.m; sourceTree = "<group>"; };
+		A300EEB01AF3CDE5003507B6 /* DQLabel+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DQLabel+Test.h"; sourceTree = "<group>"; };
+		A300EEB21AF3CED9003507B6 /* DQLabel+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DQLabel+Test.m"; sourceTree = "<group>"; };
 		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
 		A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsBrokenViewController.m; path = iosFireEyesInstructions/IACTraitsBrokenViewController.m; sourceTree = "<group>"; };
 		A9AE2DFC18AC014500D33C6B /* IACLabelBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACLabelBrokenViewController.h; path = iosFireEyesInstructions/IACLabelBrokenViewController.h; sourceTree = "<group>"; };
@@ -287,6 +294,15 @@
 			name = "Accessibility 101";
 			sourceTree = "<group>";
 		};
+		A300EEAB1AF3CD82003507B6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A300EEB01AF3CDE5003507B6 /* DQLabel+Test.h */,
+				A300EEB21AF3CED9003507B6 /* DQLabel+Test.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		A9C21AF6193E64DE00F80821 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,7 +390,10 @@
 		A9D013E118A2DD4700DC6496 /* Accessibility 101 Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A300EEAB1AF3CD82003507B6 /* Categories */,
 				A9D013E218A2DD4700DC6496 /* Supporting Files */,
+				A300EEAC1AF3CDAD003507B6 /* DQLabelBrokenTest.m */,
+				A300EEAE1AF3CDC2003507B6 /* DQLabelFixedTest.m */,
 			);
 			name = "Accessibility 101 Tests";
 			path = iosFireEyesInstructionsTests;
@@ -523,6 +542,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A300EEAF1AF3CDC2003507B6 /* DQLabelFixedTest.m in Sources */,
+				A300EEB31AF3CED9003507B6 /* DQLabel+Test.m in Sources */,
+				A300EEAD1AF3CDAD003507B6 /* DQLabelBrokenTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,14 +704,14 @@
 		A9D013EF18A2DD4700DC6496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosFireEyesInstructions.app/iosFireEyesInstructions";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Accessibility 101.app/Accessibility 101";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosFireEyesInstructions/iosFireEyesInstructions-Prefix.pch";
+				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -709,14 +731,14 @@
 		A9D013F018A2DD4700DC6496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iosFireEyesInstructions.app/iosFireEyesInstructions";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Accessibility 101.app/Accessibility 101";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosFireEyesInstructions/iosFireEyesInstructions-Prefix.pch";
+				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

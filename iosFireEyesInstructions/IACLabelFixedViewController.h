@@ -10,7 +10,12 @@
 #import "IACViewController.h"
 #import "DQButton.h"
 
-@interface IACLabelFixedViewController : IACViewController
+@interface IACLabelFixedViewController : IACViewController{
+    IBOutlet DQButton *_DogDisplay;
+    IBOutlet DQButton *_CatDisplay;
+    IBOutlet DQButton *_FishDisplay;
+    IBOutlet UIImageView *_ImageView;
+}
 
 @property (readonly) DQButton *dogDisplay;
 @property (readonly) DQButton *catDisplay;

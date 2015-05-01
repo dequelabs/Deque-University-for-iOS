@@ -10,11 +10,9 @@
 
 @implementation IACLabelBrokenViewController
 
-@synthesize brokenLabel = _BrokenLabel;
 @synthesize dogDisplay = _DogDisplay;
 @synthesize catDisplay = _CatDisplay;
 @synthesize fishDisplay = _FishDisplay;
-@synthesize textView = _TextView;
 @synthesize imageView = _ImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
