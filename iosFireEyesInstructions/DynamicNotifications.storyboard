@@ -5,10 +5,10 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Dynamic Notifications-->
+        <!--Dynamic Notifications - About-->
         <scene sceneID="sTe-zz-Hm3">
             <objects>
-                <viewController title="Dynamic Notifications" id="O44-7Y-gZm" customClass="IACViewController" sceneMemberID="viewController">
+                <viewController title="Dynamic Notifications" id="O44-7Y-gZm" userLabel="Dynamic Notifications - About" customClass="IACViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V78-yr-4eW"/>
                         <viewControllerLayoutGuide type="bottom" id="mNn-7j-vDi"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="2834" y="-1233"/>
         </scene>
-        <!--Dynamic Notifications-->
+        <!--Dynamic Notifications - Broken-->
         <scene sceneID="Gyz-ez-JHJ">
             <objects>
-                <viewController title="Dynamic Notifications" id="6zs-rN-Anx" userLabel="Dynamic Notifications" customClass="IACDynamicNotificationsBrokenViewController" sceneMemberID="viewController">
+                <viewController title="Dynamic Notifications" id="6zs-rN-Anx" userLabel="Dynamic Notifications - Broken" customClass="IACDynamicNotificationsBrokenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H4y-h5-vwR"/>
                         <viewControllerLayoutGuide type="bottom" id="hOO-MQ-DCs"/>
@@ -188,7 +188,7 @@
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-RD-xd2" customClass="DQLabel">
                                         <rect key="frame" x="10" y="331" width="580" height="83"/>
-                                        <string key="text">This is a typical list user interface, in which elements can be added or deleted. Notice how, after clicking "save", it is not made clear that a name was added, and after "clear contacts", no notification was made that there are no longer any elements in the table.</string>
+                                        <string key="text">This is a typical list user interface, in which elements can be added or deleted. Notice how, after clicking "save", it is not made clear that a name was added, and after "clear contacts", no notification was made that there are no longer any elements in the table. </string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -200,7 +200,7 @@
                                     <constraint firstAttribute="centerX" secondItem="Mjo-TX-gbQ" secondAttribute="centerX" id="2xU-Nx-lGm"/>
                                     <constraint firstItem="Mjo-TX-gbQ" firstAttribute="width" secondItem="4oz-PE-t2a" secondAttribute="width" id="A8n-5r-cJ5"/>
                                     <constraint firstAttribute="trailing" secondItem="SoM-Wk-OJd" secondAttribute="trailing" constant="20" id="Eys-fY-mWT"/>
-                                    <constraint firstAttribute="bottom" secondItem="Aew-RD-xd2" secondAttribute="bottom" constant="-25" id="IUp-5l-Ys6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Aew-RD-xd2" secondAttribute="bottom" id="IUp-5l-Ys6"/>
                                     <constraint firstItem="Mjo-TX-gbQ" firstAttribute="top" secondItem="4oz-PE-t2a" secondAttribute="top" constant="8" id="Jw3-oh-8vz"/>
                                     <constraint firstItem="Aew-RD-xd2" firstAttribute="top" secondItem="SoM-Wk-OJd" secondAttribute="bottom" constant="8" id="Tft-aO-HJK"/>
                                     <constraint firstItem="SoM-Wk-OJd" firstAttribute="top" secondItem="Mjo-TX-gbQ" secondAttribute="bottom" constant="8" id="UZj-9J-XLu"/>
@@ -225,6 +225,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Mjo-TX-gbQ" firstAttribute="width" secondItem="qlh-yt-oHx" secondAttribute="width" id="3MS-7g-RuS"/>
+                            <constraint firstItem="hOO-MQ-DCs" firstAttribute="top" secondItem="4oz-PE-t2a" secondAttribute="bottom" id="7bJ-4b-05I"/>
                             <constraint firstAttribute="centerX" secondItem="4oz-PE-t2a" secondAttribute="centerX" id="7iz-rV-22P"/>
                             <constraint firstItem="4oz-PE-t2a" firstAttribute="top" secondItem="H4y-h5-vwR" secondAttribute="bottom" id="JaU-o3-8b7"/>
                             <constraint firstItem="hOO-MQ-DCs" firstAttribute="top" secondItem="4oz-PE-t2a" secondAttribute="bottom" id="NSJ-nk-8xo"/>
@@ -242,6 +243,7 @@
                                 <exclude reference="3MS-7g-RuS"/>
                                 <exclude reference="NSJ-nk-8xo"/>
                                 <exclude reference="ZWc-0n-HN8"/>
+                                <exclude reference="qWd-OC-mdv"/>
                             </mask>
                         </variation>
                     </view>
@@ -257,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="3480" y="-1233"/>
         </scene>
-        <!--Dynamic Notifications-->
+        <!--Dynamic Notifications - Fixed-->
         <scene sceneID="lrS-2S-OL9">
             <objects>
-                <viewController title="Dynamic Notifications" id="KFv-uv-hLt" userLabel="Dynamic Notifications" customClass="IACDynamicNotificationsFixedViewController" sceneMemberID="viewController">
+                <viewController title="Dynamic Notifications" id="KFv-uv-hLt" userLabel="Dynamic Notifications - Fixed" customClass="IACDynamicNotificationsFixedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AOg-Cl-piB"/>
                         <viewControllerLayoutGuide type="bottom" id="fZw-X8-8Mg"/>
@@ -359,7 +361,7 @@
                                     <constraint firstItem="GJX-Lb-sON" firstAttribute="leading" secondItem="YiN-aj-3Rb" secondAttribute="leading" id="Bu5-XB-IuT"/>
                                     <constraint firstItem="Ask-jA-8XG" firstAttribute="leading" secondItem="YiN-aj-3Rb" secondAttribute="leading" constant="20" id="DC0-bq-wMM"/>
                                     <constraint firstAttribute="trailing" secondItem="Ask-jA-8XG" secondAttribute="trailing" constant="20" id="Xgy-98-2YO"/>
-                                    <constraint firstAttribute="bottom" secondItem="LoC-J6-iRe" secondAttribute="bottom" constant="-25" id="ZaO-yL-qgB"/>
+                                    <constraint firstAttribute="bottom" secondItem="LoC-J6-iRe" secondAttribute="bottom" id="ZaO-yL-qgB"/>
                                     <constraint firstItem="GJX-Lb-sON" firstAttribute="width" secondItem="YiN-aj-3Rb" secondAttribute="width" id="alG-jK-ziH"/>
                                     <constraint firstAttribute="centerX" secondItem="LoC-J6-iRe" secondAttribute="centerX" id="hnr-0D-TPz"/>
                                     <constraint firstItem="GJX-Lb-sON" firstAttribute="top" secondItem="YiN-aj-3Rb" secondAttribute="top" constant="8" id="hrd-J7-O3h"/>
