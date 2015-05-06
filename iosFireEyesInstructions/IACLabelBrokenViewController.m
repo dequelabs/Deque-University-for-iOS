@@ -8,12 +8,12 @@
 
 #import "IACLabelBrokenViewController.h"
 
-@implementation IACLabelBrokenViewController {
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
-    IBOutlet UIImageView *_ImageView;
-}
+@implementation IACLabelBrokenViewController
+
+@synthesize dogDisplay = _DogDisplay;
+@synthesize catDisplay = _CatDisplay;
+@synthesize fishDisplay = _FishDisplay;
+@synthesize imageView = _ImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
