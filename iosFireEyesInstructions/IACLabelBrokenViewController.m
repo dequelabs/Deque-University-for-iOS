@@ -44,7 +44,8 @@
         
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning, letting the analyzer know we are concsiously setting an empty hint.
-    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
+    [_ImageView setIsAccessibilityElement:YES];
 }
 
 - (void)displayImage:(id)sender {
@@ -61,7 +62,7 @@
 
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
-    [_ImageView setAccessibilityLabel:name];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(name, nil)];
 }
 
 - (BOOL)shouldAutorotate {

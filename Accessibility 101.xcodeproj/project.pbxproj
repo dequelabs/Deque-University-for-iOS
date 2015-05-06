@@ -32,9 +32,8 @@
 		0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */; };
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
-		A300EEAD1AF3CDAD003507B6 /* DQLabelBrokenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* DQLabelBrokenTest.m */; };
-		A300EEAF1AF3CDC2003507B6 /* DQLabelFixedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* DQLabelFixedTest.m */; };
-		A300EEB31AF3CED9003507B6 /* DQLabel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEB21AF3CED9003507B6 /* DQLabel+Test.m */; };
+		A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */; };
+		A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */; };
 		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
 		A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */; };
 		A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */; };
@@ -51,9 +50,11 @@
 		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
 		A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013E418A2DD4700DC6496 /* InfoPlist.strings */; };
 		A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */; };
+		EE64E1E11AFA5CBD00D09B4D /* DQUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64E1E01AFA5CBD00D09B4D /* DQUtilities.m */; };
+		EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */; };
+		EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */; };
 		EED64DAE1AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED64DA41AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m */; };
 		EED64DB31AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED64DAB1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m */; };
-		EED64DBE1AF81025000AF3F1 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED64DBD1AF81025000AF3F1 /* libGoogleAnalyticsServices.a */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -119,10 +120,8 @@
 		0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStoryTableViewController.m; sourceTree = "<group>"; };
 		0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACSplitViewController.h; sourceTree = "<group>"; };
 		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
-		A300EEAC1AF3CDAD003507B6 /* DQLabelBrokenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabelBrokenTest.m; sourceTree = "<group>"; };
-		A300EEAE1AF3CDC2003507B6 /* DQLabelFixedTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabelFixedTest.m; sourceTree = "<group>"; };
-		A300EEB01AF3CDE5003507B6 /* DQLabel+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DQLabel+Test.h"; sourceTree = "<group>"; };
-		A300EEB21AF3CED9003507B6 /* DQLabel+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DQLabel+Test.m"; sourceTree = "<group>"; };
+		A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
+		A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
 		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
 		A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsBrokenViewController.m; path = iosFireEyesInstructions/IACTraitsBrokenViewController.m; sourceTree = "<group>"; };
 		A9AE2DFC18AC014500D33C6B /* IACLabelBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACLabelBrokenViewController.h; path = iosFireEyesInstructions/IACLabelBrokenViewController.h; sourceTree = "<group>"; };
@@ -149,11 +148,14 @@
 		A9D013E518A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9F16728192E522500B37FFB /* IACTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsFixedViewController.h; path = iosFireEyesInstructions/IACTraitsFixedViewController.h; sourceTree = "<group>"; };
 		A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsFixedViewController.m; path = iosFireEyesInstructions/IACTraitsFixedViewController.m; sourceTree = "<group>"; };
+		EE64E1DF1AFA5C8D00D09B4D /* DQUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DQUtilities.h; path = ../DQUtilities.h; sourceTree = "<group>"; };
+		EE64E1E01AFA5CBD00D09B4D /* DQUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUtilities.m; sourceTree = "<group>"; };
+		EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController_test.m; sourceTree = "<group>"; };
 		EED64DA31AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACDynamicNotificationsFixedViewController.h; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsFixedViewController.h; sourceTree = "<group>"; };
 		EED64DA41AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACDynamicNotificationsFixedViewController.m; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
 		EED64DAA1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACDynamicNotificationsBrokenViewController.h; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsBrokenViewController.h; sourceTree = "<group>"; };
 		EED64DAB1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACDynamicNotificationsBrokenViewController.m; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsBrokenViewController.m; sourceTree = "<group>"; };
-		EED64DBD1AF81025000AF3F1 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +166,7 @@
 			files = (
 				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
 				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
-				EED64DBE1AF81025000AF3F1 /* libGoogleAnalyticsServices.a in Frameworks */,
+				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
@@ -212,6 +214,8 @@
 				0FE903B11AE7ED2400EC01F1 /* Categories */,
 				0FE903B61AE7ED2400EC01F1 /* Controllers */,
 				0FE903BB1AE7ED2400EC01F1 /* DQConstants.h */,
+				EE64E1DF1AFA5C8D00D09B4D /* DQUtilities.h */,
+				EE64E1E01AFA5CBD00D09B4D /* DQUtilities.m */,
 				0FE903BC1AE7ED2400EC01F1 /* DQLog.h */,
 				0FE903BD1AE7ED2400EC01F1 /* DQLog.m */,
 				0FE903BE1AE7ED2400EC01F1 /* Views */,
@@ -279,7 +283,6 @@
 		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
 			isa = PBXGroup;
 			children = (
-				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
@@ -295,6 +298,7 @@
 				A9C21AF6193E64DE00F80821 /* Labels */,
 				A9C21AF7193E64FB00F80821 /* Hints */,
 				A9C21AF8193E651B00F80821 /* Traits */,
+				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
 				0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 			);
@@ -304,8 +308,6 @@
 		A300EEAB1AF3CD82003507B6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				A300EEB01AF3CDE5003507B6 /* DQLabel+Test.h */,
-				A300EEB21AF3CED9003507B6 /* DQLabel+Test.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -365,7 +367,7 @@
 		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EED64DBD1AF81025000AF3F1 /* libGoogleAnalyticsServices.a */,
+				EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */,
 				0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */,
 				0FEB4B901AC9C74900F372F8 /* libz.dylib */,
 				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
@@ -399,8 +401,9 @@
 			children = (
 				A300EEAB1AF3CD82003507B6 /* Categories */,
 				A9D013E218A2DD4700DC6496 /* Supporting Files */,
-				A300EEAC1AF3CDAD003507B6 /* DQLabelBrokenTest.m */,
-				A300EEAE1AF3CDC2003507B6 /* DQLabelFixedTest.m */,
+				A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */,
+				A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */,
+				EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */,
 			);
 			name = "Accessibility 101 Tests";
 			path = iosFireEyesInstructionsTests;
@@ -419,10 +422,10 @@
 			isa = PBXGroup;
 			children = (
 				EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */,
-				EED64DA31AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.h */,
-				EED64DA41AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m */,
 				EED64DAA1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.h */,
 				EED64DAB1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m */,
+				EED64DA31AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.h */,
+				EED64DA41AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m */,
 			);
 			name = "Dynamic Notifications";
 			path = iosFireEyesInstructions;
@@ -558,6 +561,7 @@
 				A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */,
 				A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */,
 				A9AE2E0718AC022C00D33C6B /* IACHintFixedViewController.m in Sources */,
+				EE64E1E11AFA5CBD00D09B4D /* DQUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,9 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A300EEAF1AF3CDC2003507B6 /* DQLabelFixedTest.m in Sources */,
-				A300EEB31AF3CED9003507B6 /* DQLabel+Test.m in Sources */,
-				A300EEAD1AF3CDAD003507B6 /* DQLabelBrokenTest.m in Sources */,
+				EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */,
+				A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */,
+				A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,7 +738,6 @@
 				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "Accessibility 101Tests";
@@ -757,7 +760,6 @@
 				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "Accessibility 101Tests";
