@@ -21,8 +21,8 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egN-fp-m2c">
-                                        <rect key="frame" x="10" y="35" width="585" height="62"/>
-                                        <string key="text">Dynamic notifications alert the user through VoiceOver when an element on the screen has changed.  They can be used in many scenarios, such as adding elements to a table, or changing an image.</string>
+                                        <rect key="frame" x="10" y="35" width="585" height="104"/>
+                                        <string key="text">Dynamic notifications alert the user through VoiceOver when an element on the screen has been added, deleted, or changed.  This includes elements that change as a result of an action by the user as well as elements that automatically change on screen.  Dynamic notifications are useful in many scenarios, such as the dynamic image example that was shown in "Traits."</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -34,14 +34,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOx-mg-bzB">
-                                        <rect key="frame" x="10" y="132" width="585" height="62"/>
-                                        <string key="text">Dynamic notifications let the user know when something has been added, deleted, or changed on their screen when it may not otherwise be obvious.  Adding dynamic notifications will make the app far easier to use for your user.</string>
+                                        <rect key="frame" x="10" y="174" width="585" height="62"/>
+                                        <string key="text">When a sighted user uses an application, they can visually obtain information about changing elements (such as an image or a table).  Dynamic notifications communicate this same information to non-sighted users.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are they important?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBv-8r-EGu" customClass="DQLabel">
-                                        <rect key="frame" x="5" y="107" width="590" height="20"/>
+                                        <rect key="frame" x="5" y="149" width="590" height="20"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -188,7 +188,7 @@
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-RD-xd2" customClass="DQLabel">
                                         <rect key="frame" x="10" y="331" width="580" height="83"/>
-                                        <string key="text">This is a typical list user interface, in which elements can be added or deleted. Notice how, after clicking "save", it is not made clear that a name was added, and after "clear contacts", no notification was made that there are no longer any elements in the table. </string>
+                                        <string key="text">This is a typical list user interface, in which elements can be added or deleted. Notice how, after clicking "save", it is not made clear that a name was added, and after "clear contacts", no notification was made that the table is now empty.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
