@@ -12,11 +12,7 @@
 
 @end
 
-@implementation IACHintBrokenViewController {
-    IBOutlet UIButton *_buttonStarSpangledBanner;
-    IBOutlet UIButton *_buttonAmazingGrace;
-    IBOutlet UIButton *_buttonSinginInTheRain;
-}
+@implementation IACHintBrokenViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,7 +43,7 @@
 
 }
 
-- (void)visitWebPage:(id)sender {
+- (NSString*)visitWebPage:(id)sender {
     
     NSString* url = nil;
     if (sender == _buttonStarSpangledBanner) {
@@ -59,6 +55,7 @@
     }
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    return url;
 }
 
 - (BOOL)shouldAutorotate {

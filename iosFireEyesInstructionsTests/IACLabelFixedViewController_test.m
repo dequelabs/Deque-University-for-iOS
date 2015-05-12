@@ -1,5 +1,5 @@
 //
-//  DQLabelFixedTest.m
+//  IACLabelFixedViewController_test.m
 //  Accessibility 101
 //
 //  Created by Jennifer Dailey on 5/6/15.
@@ -29,7 +29,7 @@
 }
 
 //Tests that each button has the correct label and hint
-- (void)testButtonsForAccessibilityFeatures {    
+- (void)testInitialSetUp {
     DEQAssertStringEqual(_viewController.dogDisplay.accessibilityLabel, @"Dog");
     DEQAssertStringEqual(_viewController.dogDisplay.accessibilityHint, @"Modify image.  Selection moves focus to image.");
     DEQAssertStringEqual(_viewController.catDisplay.accessibilityLabel, @"Cat");
@@ -42,7 +42,7 @@
 - (void)testImageViewForAccessibilityFeatures {
     XCTAssertTrue(_viewController.imageView.isAccessibilityElement);
     DEQAssertEmptyString(_viewController.imageView.accessibilityHint);
-    DEQAssertStringEqual(_viewController.imageView.accessibilityLabel, @"dog");
+    DEQAssertStringEqual(_viewController.imageView.accessibilityLabel, NSLocalizedString(@"DOG", nil));
 }
 
 //Tests that image displays correct image, label, and hint when "dogDisplay" is pressed

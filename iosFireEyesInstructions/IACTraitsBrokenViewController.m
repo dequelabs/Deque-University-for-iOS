@@ -7,18 +7,8 @@
 //
 
 #import "IACTraitsBrokenViewController.h"
-#import "DQButton.h"
 
-@interface IACTraitsBrokenViewController ()
-
-@end
-
-@implementation IACTraitsBrokenViewController {
-    IBOutlet DQButton *_buttonDisplayDog;
-    IBOutlet DQButton *_buttonDisplayCat;
-    IBOutlet DQButton *_buttonDisplayFish;
-    IBOutlet UIImageView *_ImageView;
-}
+@implementation IACTraitsBrokenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,8 +39,10 @@
     }
 }
 
-- (void)visitWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://lmgtfy.com/?q=fish"]];
+- (NSString*)visitWebPage {
+    NSString* url = @"http://lmgtfy.com/?q=fish";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    return url;
 }
 
 - (void)updateImage:(NSString*)name {

@@ -1,5 +1,5 @@
 //
-//  IACHintBrokenVCTest.m
+//  IACHintBrokenViewController_test.m
 //  Accessibility 101
 //
 //  Created by Jennifer Dailey on 5/6/15.
@@ -7,28 +7,20 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "DQlog.h"
 #import "IACHintBrokenViewController.h"
 
 #define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
 #define DEQAssertStringEndsWith(testString, endsWithString) XCTAssert([testString hasSuffix:endsWithString], @"\"%@\"", testString)
 #define DEQAssertEmptyString(testString) XCTAssert(testString == nil || [testString isEqualToString:@""], @"\"%@\"", testString)
 
-@interface IACHintBrokenViewController (test)
+#define LOG_FLAG YES
 
-@property (weak, nonatomic) IBOutlet UIButton *_buttonStarSpangledBanner;
-@property (weak, nonatomic) IBOutlet UIButton *_buttonAmazingGrace;
-@property (weak, nonatomic) IBOutlet UIButton *_buttonSinginInTheRain;
--(void)visitWebPage:(id)sender;
+@interface IACHintBrokenViewController_test : XCTestCase
 
-@end
-
-@interface IACHintBrokenViewController_test : XCTestCase {
-    @private
-    IACHintBrokenViewController* _viewController;
-}
+@property (strong, nonatomic) IACHintBrokenViewController* viewController;
 
 @end
-
 
 
 @implementation IACHintBrokenViewController_test
@@ -36,25 +28,39 @@
 - (void)setUp {
     [super setUp];
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    _viewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"brokenHint"];
-    [_viewController view];
+    self.viewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"brokenHint"];
+    XCTAssert([self.viewController view]);
 }
 
 //Tests that each button has correct label and no hint
-- (void)testButtonsForAccessibilityFeatures {
-    DEQAssertStringEqual(_viewController._buttonStarSpangledBanner.accessibilityLabel, @"Star Spangled Banner");
-    DEQAssertEmptyString(_viewController._buttonStarSpangledBanner.accessibilityHint);
-    DEQAssertStringEqual(_viewController._buttonAmazingGrace.accessibilityLabel, @"Amazing Grace");
-    DEQAssertEmptyString(_viewController._buttonAmazingGrace.accessibilityHint);
-    DEQAssertStringEqual(_viewController._buttonSinginInTheRain.accessibilityLabel, @"Singin In The Rain");
-    DEQAssertEmptyString(_viewController._buttonSinginInTheRain.accessibilityHint);
+- (void)testInitialSetUp {
+    DEQAssertStringEqual(self.viewController.buttonStarSpangledBanner.accessibilityLabel, @"Star Spangled Banner");
+    DEQAssertEmptyString(self.viewController.buttonStarSpangledBanner.accessibilityHint);
+    DEQAssertStringEqual(self.viewController.buttonAmazingGrace.accessibilityLabel, @"Amazing Grace");
+    DEQAssertEmptyString(self.viewController.buttonAmazingGrace.accessibilityHint);
+    DEQAssertStringEqual(self.viewController.buttonSinginInTheRain.accessibilityLabel, @"Singing in the Rain");
+    DEQAssertEmptyString(self.viewController.buttonSinginInTheRain.accessibilityHint);
 }
 
-//Tests that _buttonStarSpangledBanner has correct label and no hint after being pressed
+//Tests that _buttonStarSpangledBanner has correct label, no hint, and opens up the correct webpage on press
 - (void)testButtonStarSpangledBannerOnPress {
-    [_viewController visitWebPage:_viewController._buttonStarSpangledBanner];
-    DEQAssertStringEqual(_viewController._buttonStarSpangledBanner.accessibilityLabel, @"Star Spangled Banner");
-    DEQAssertEmptyString(_viewController._buttonStarSpangledBanner.accessibilityHint);
+    DEQAssertStringEqual([self.viewController visitWebPage:self.viewController.buttonStarSpangledBanner], @"http://en.wikipedia.org/wiki/The_Star-Spangled_Banner");
+    DEQAssertStringEqual(self.viewController.buttonStarSpangledBanner.accessibilityLabel, @"Star Spangled Banner");
+    DEQAssertEmptyString(self.viewController.buttonStarSpangledBanner.accessibilityHint);
+}
+
+//Tests that _buttonAmazingGrace has correct label, no hint, and opens up the correct webpage on press
+- (void)testButtonAmazingGraceOnPress {
+    DEQAssertStringEqual([self.viewController visitWebPage:self.viewController.buttonAmazingGrace], @"http://en.wikipedia.org/wiki/Amazing_Grace");
+    DEQAssertStringEqual(self.viewController.buttonAmazingGrace.accessibilityLabel, @"Amazing Grace");
+    DEQAssertEmptyString(self.viewController.buttonAmazingGrace.accessibilityHint);
+}
+
+//Tests that _buttonSinginInTheRain has correct label, no hint, and opens up the correct webpage on press
+- (void)testButtonSingingInTheRainOnPress {
+    DEQAssertStringEqual([self.viewController visitWebPage:self.viewController.buttonSinginInTheRain], @"http://en.wikipedia.org/wiki/Singin'_in_the_Rain");
+    DEQAssertStringEqual(self.viewController.buttonSinginInTheRain.accessibilityLabel, @"Singing in the Rain");
+    DEQAssertEmptyString(self.viewController.buttonSinginInTheRain.accessibilityHint);
 }
 
 @end

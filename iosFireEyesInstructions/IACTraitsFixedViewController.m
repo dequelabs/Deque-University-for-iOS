@@ -7,18 +7,8 @@
 //
 
 #import "IACTraitsFixedViewController.h"
-#import "DQButton.h"
 
-@interface IACTraitsFixedViewController ()
-
-@end
-
-@implementation IACTraitsFixedViewController {
-    IBOutlet DQButton *_buttonDisplayDog;
-    IBOutlet DQButton *_buttonDisplayCat;
-    IBOutlet DQButton *_buttonDisplayFish;
-    IBOutlet UIImageView *_ImageView;
-}
+@implementation IACTraitsFixedViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,8 +52,10 @@
     }
 }
 
-- (void)visitWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://lmgtfy.com/?q=fish"]];
+- (NSString*)visitWebPage {
+    NSString* url = @"http://lmgtfy.com/?q=fish";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    return url;
 }
 
 - (void)updateImage:(NSString*)name {

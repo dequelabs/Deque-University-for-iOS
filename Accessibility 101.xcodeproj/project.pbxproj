@@ -53,6 +53,11 @@
 		EE64E1E11AFA5CBD00D09B4D /* DQUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64E1E01AFA5CBD00D09B4D /* DQUtilities.m */; };
 		EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */; };
 		EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */; };
+		EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */; };
+		EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */; };
+		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
+		EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */; };
+		EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */; };
 		EED64DAE1AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED64DA41AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m */; };
 		EED64DB31AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED64DAB1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
@@ -152,6 +157,11 @@
 		EE64E1E01AFA5CBD00D09B4D /* DQUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUtilities.m; sourceTree = "<group>"; };
 		EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController_test.m; sourceTree = "<group>"; };
+		EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
+		EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
+		EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
+		EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController_test.m; sourceTree = "<group>"; };
+		EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController_test.m; sourceTree = "<group>"; };
 		EED64DA31AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACDynamicNotificationsFixedViewController.h; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsFixedViewController.h; sourceTree = "<group>"; };
 		EED64DA41AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACDynamicNotificationsFixedViewController.m; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
 		EED64DAA1AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACDynamicNotificationsBrokenViewController.h; path = ../../AccessibleToDoList/AccessibleToDoList/IACDynamicNotificationsBrokenViewController.h; sourceTree = "<group>"; };
@@ -308,6 +318,10 @@
 		A300EEAB1AF3CD82003507B6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				EE99B0B81B02A24900D5774F /* Labels */,
+				EE99B0B91B02A25A00D5774F /* Hints */,
+				EE99B0BA1B02A26200D5774F /* Traits */,
+				EE99B0BB1B02A26800D5774F /* Dynamic Notifications */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -401,9 +415,6 @@
 			children = (
 				A300EEAB1AF3CD82003507B6 /* Categories */,
 				A9D013E218A2DD4700DC6496 /* Supporting Files */,
-				A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */,
-				A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */,
-				EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */,
 			);
 			name = "Accessibility 101 Tests";
 			path = iosFireEyesInstructionsTests;
@@ -416,6 +427,42 @@
 				A9D013E418A2DD4700DC6496 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE99B0B81B02A24900D5774F /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */,
+				A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */,
+			);
+			name = Labels;
+			sourceTree = "<group>";
+		};
+		EE99B0B91B02A25A00D5774F /* Hints */ = {
+			isa = PBXGroup;
+			children = (
+				EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */,
+				EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */,
+			);
+			name = Hints;
+			sourceTree = "<group>";
+		};
+		EE99B0BA1B02A26200D5774F /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */,
+				EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */,
+			);
+			name = Traits;
+			sourceTree = "<group>";
+		};
+		EE99B0BB1B02A26800D5774F /* Dynamic Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */,
+				EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */,
+			);
+			name = "Dynamic Notifications";
 			sourceTree = "<group>";
 		};
 		EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */ = {
@@ -570,7 +617,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */,
+				EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */,
 				A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */,
+				EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */,
+				EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
+				EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */,
+				EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
 				A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

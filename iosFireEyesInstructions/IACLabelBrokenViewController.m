@@ -62,7 +62,7 @@
 
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
-    [_ImageView setAccessibilityLabel:NSLocalizedString(name, nil)];
+    [_ImageView setAccessibilityLabel:name];
 }
 
 - (BOOL)shouldAutorotate {

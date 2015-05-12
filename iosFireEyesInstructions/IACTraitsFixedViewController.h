@@ -8,7 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
+#import "DQButton.h"
 
-@interface IACTraitsFixedViewController : IACViewController
+@interface IACTraitsFixedViewController : IACViewController {
+    IBOutlet DQButton *_buttonDisplayDog;
+    IBOutlet DQButton *_buttonDisplayCat;
+    IBOutlet DQButton *_buttonDisplayFish;
+    IBOutlet UIImageView *_ImageView;
+}
+
+@property (readonly) DQButton* buttonDisplayDog;
+@property (readonly) DQButton* buttonDisplayCat;
+@property (readonly) DQButton* buttonDisplayFish;
+@property (readonly) UIImageView* ImageView;
+
+-(void)displayImage:(id)sender;
+-(NSString*)visitWebPage;
 
 @end

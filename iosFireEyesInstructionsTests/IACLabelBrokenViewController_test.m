@@ -1,5 +1,5 @@
 //
-//  DQLabelBrokenTest.m
+//  IACLabelBrokenViewController_test.m
 //  Accessibility 101
 //
 //  Created by Jennifer Dailey on 5/6/15.
@@ -31,7 +31,7 @@
 }
 
 //Tests that each button has no label and no hint
-- (void)testButtonsForAccessibilityFeatures {
+- (void)testInitialSetUp {
     DEQAssertEmptyString(_viewController.dogDisplay.accessibilityLabel);
     DEQAssertEmptyString(_viewController.dogDisplay.accessibilityHint);
     DEQAssertEmptyString(_viewController.catDisplay.accessibilityLabel);
