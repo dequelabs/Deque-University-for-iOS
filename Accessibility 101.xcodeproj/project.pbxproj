@@ -29,8 +29,6 @@
 		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
 		0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B901AC9C74900F372F8 /* libz.dylib */; };
 		0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */; };
-		0FEB4BAC1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */; };
-		0FEB4BAD1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */; };
 		0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */; };
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
@@ -50,6 +48,7 @@
 		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
 		A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013E418A2DD4700DC6496 /* InfoPlist.strings */; };
 		A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */; };
+		EE99B0C31B03B7F300D5774F /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE99B0C21B03B7F300D5774F /* libGoogleAnalyticsServices.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +108,6 @@
 		0FEB4BA81AC9C7F000F372F8 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
 		0FEB4BA91AC9C7F000F372F8 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		0FEFA7C81ADD49E000D87A45 /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACStoryTableViewController.h; sourceTree = "<group>"; };
 		0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStoryTableViewController.m; sourceTree = "<group>"; };
@@ -141,6 +139,7 @@
 		A9D013E518A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A9F16728192E522500B37FFB /* IACTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsFixedViewController.h; path = iosFireEyesInstructions/IACTraitsFixedViewController.h; sourceTree = "<group>"; };
 		A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsFixedViewController.m; path = iosFireEyesInstructions/IACTraitsFixedViewController.m; sourceTree = "<group>"; };
+		EE99B0C21B03B7F300D5774F /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +149,7 @@
 			files = (
 				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
 				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
-				0FEB4BAC1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */,
+				EE99B0C31B03B7F300D5774F /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
@@ -167,7 +166,6 @@
 				A9D013DC18A2DD4700DC6496 /* XCTest.framework in Frameworks */,
 				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
-				0FEB4BAD1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +340,7 @@
 		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0FEB4BAB1AC9C7FA00F372F8 /* libGoogleAnalyticsServices.a */,
+				EE99B0C21B03B7F300D5774F /* libGoogleAnalyticsServices.a */,
 				0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */,
 				0FEB4B901AC9C74900F372F8 /* libz.dylib */,
 				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
@@ -631,17 +629,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/chrismcmeeking/Repositories/DequeAccessibility/DerivedData/Build/Products/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
+					"$(inherited)$",
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "Accessibility 101";
@@ -659,17 +653,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/chrismcmeeking/Repositories/DequeAccessibility/DerivedData/Build/Products/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
 				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/chrismcmeeking/Downloads/GoogleAnalyticsServicesiOS_3.10,
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "Accessibility 101";
