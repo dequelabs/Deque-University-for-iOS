@@ -8,12 +8,12 @@
 
 #import "IACLabelBrokenViewController.h"
 
-@implementation IACLabelBrokenViewController {
-    IBOutlet UIButton *_DogDisplay;
-    IBOutlet UIButton *_CatDisplay;
-    IBOutlet UIButton *_FishDisplay;
-    IBOutlet UIImageView *_ImageView;
-}
+@implementation IACLabelBrokenViewController
+
+@synthesize dogDisplay = _DogDisplay;
+@synthesize catDisplay = _CatDisplay;
+@synthesize fishDisplay = _FishDisplay;
+@synthesize imageView = _ImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,7 +44,8 @@
         
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning, letting the analyzer know we are concsiously setting an empty hint.
-    [_ImageView setAccessibilityLabel:@"dog"];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
+    [_ImageView setIsAccessibilityElement:YES];
 }
 
 - (void)displayImage:(id)sender {

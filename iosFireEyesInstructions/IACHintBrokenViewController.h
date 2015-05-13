@@ -9,6 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
-@interface IACHintBrokenViewController : IACViewController
+@interface IACHintBrokenViewController : IACViewController {
+    IBOutlet UIButton* _buttonStarSpangledBanner;
+    IBOutlet UIButton* _buttonAmazingGrace;
+    IBOutlet UIButton* _buttonSinginInTheRain;
+}
+
+@property (readonly) UIButton* buttonStarSpangledBanner;
+@property (readonly) UIButton* buttonAmazingGrace;
+@property (readonly) UIButton* buttonSinginInTheRain;
+
+-(NSString*)visitWebPage:(id)sender;
 
 @end

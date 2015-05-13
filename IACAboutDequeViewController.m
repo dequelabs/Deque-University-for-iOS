@@ -26,7 +26,7 @@
 }
 
 - (void)loadDequeWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.apple.com/accessibility/ios/voiceover/"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]];
 }
 
 @end

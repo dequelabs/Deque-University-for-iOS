@@ -10,6 +10,15 @@
 #import "IACViewController.h"
 
 
-@interface IACHintFixedViewController : IACViewController
+@interface IACHintFixedViewController : IACViewController {
+    IBOutlet UIButton* _buttonStarSpangledBanner;
+    IBOutlet UIButton* _buttonAmazingGrace;
+    IBOutlet UIButton* _buttonSinginInTheRain;
+}
 
+@property (readonly) UIButton* buttonStarSpangledBanner;
+@property (readonly) UIButton* buttonAmazingGrace;
+@property (readonly) UIButton* buttonSinginInTheRain;
+
+-(NSString*)playMusic:(id)sender;
 @end
