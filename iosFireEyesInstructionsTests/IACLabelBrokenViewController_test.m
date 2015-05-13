@@ -8,10 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "IACLabelBrokenViewController.h"
-
-#define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
-#define DEQAssertStringEndsWith(testString, endsWithString) XCTAssert([testString hasSuffix:endsWithString], @"\"%@\"", testString)
-#define DEQAssertEmptyString(testString) XCTAssert(testString == nil || [testString isEqualToString:@""], @"\"%@\"", testString)
+#import "DEQAsserts.h"
 
 @interface IACLabelBrokenViewController_test : XCTestCase {
     @private

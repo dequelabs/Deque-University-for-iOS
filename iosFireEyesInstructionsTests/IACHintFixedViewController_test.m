@@ -8,13 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "IACHintFixedViewController.h"
-#import "DQLog.h"
-
-#define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
-#define DEQAssertStringEndsWith(testString, endsWithString) XCTAssert([testString hasSuffix:endsWithString], @"\"%@\"", testString)
-#define DEQAssertEmptyString(testString) XCTAssert(testString == nil || [testString isEqualToString:@""], @"\"%@\"", testString)
-
-#define LOG_FLAG YES
+#import "DEQAsserts.h"
 
 @interface IACHintFixedViewController_test : XCTestCase
 
