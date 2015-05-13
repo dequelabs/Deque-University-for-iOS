@@ -32,6 +32,9 @@
     [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"TraitStory"]];
     [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"NestedA11yStory"]];
     [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"DynamicTypeStory"]];
+    
+    UIStoryboard* dynamic = [UIStoryboard storyboardWithName:@"DynamicNotifications" bundle:nil];
+    [tempArray addObject:[dynamic instantiateViewControllerWithIdentifier:@"DynamicNotifications"]];
 
     _viewControllers = [NSArray arrayWithArray:tempArray];
 }

@@ -37,6 +37,7 @@
 @implementation IACViewController
 
 - (void)viewDidLoad {
+    [super viewDidLoad];
     UISwitch* overlaySwitch = (UISwitch*)[self.view viewWithTag:VIEW_TAG_SWITCH];
     
     if (overlaySwitch) {

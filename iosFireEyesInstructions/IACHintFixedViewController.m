@@ -10,17 +10,13 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface IACHintFixedViewController ()
+@interface IACHintFixedViewController () {
+    AVAudioPlayer* _AudioPlayer;
+}
 
 @end
 
-@implementation IACHintFixedViewController {
-    IBOutlet UIButton *_buttonStarSpangledBanner;
-    IBOutlet UIButton *_buttonAmazingGrace;
-    IBOutlet UIButton *_buttonSinginInTheRain;
-    
-    AVAudioPlayer* _AudioPlayer;
-}
+@implementation IACHintFixedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +32,7 @@
     [_buttonSinginInTheRain addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)playMusic:(id)sender {
+- (NSString*)playMusic:(id)sender {
     
     NSLog(@"Trying to play music");
     
@@ -66,6 +62,8 @@
     [_AudioPlayer performSelector:@selector(stop) withObject:_AudioPlayer afterDelay:3];
     
     [_AudioPlayer play];
+    
+    return song;
 }
 
 @end

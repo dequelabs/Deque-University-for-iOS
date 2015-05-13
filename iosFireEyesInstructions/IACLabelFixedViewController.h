@@ -1,5 +1,5 @@
 //
-//  DQFixedLabelViewController.h
+//  IACLabelFixedViewController.h
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 2/12/14.
@@ -8,7 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
+#import "DQButton.h"
 
-@interface IACLabelFixedViewController : IACViewController
+@interface IACLabelFixedViewController : IACViewController{
+    IBOutlet DQButton *_DogDisplay;
+    IBOutlet DQButton *_CatDisplay;
+    IBOutlet DQButton *_FishDisplay;
+    IBOutlet UIImageView *_ImageView;
+}
+
+@property (readonly) DQButton *dogDisplay;
+@property (readonly) DQButton *catDisplay;
+@property (readonly) DQButton *fishDisplay;
+@property (readonly) UIImageView *imageView;
+
+- (void)displayImage:(id)sender;
+
 
 @end

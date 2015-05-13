@@ -9,7 +9,19 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
+@interface IACLabelBrokenViewController : IACViewController {
+    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_CatDisplay;
+    IBOutlet UIButton *_FishDisplay;
+    IBOutlet UIImageView *_ImageView;
+}
 
-@interface IACLabelBrokenViewController : IACViewController
+@property (readonly) UILabel *brokenLabel;
+@property (readonly) UIButton *dogDisplay;
+@property (readonly) UIButton *catDisplay;
+@property (readonly) UIButton *fishDisplay;
+@property (readonly) UIImageView *imageView;
+
+- (void)displayImage:(id)sender;
 
 @end

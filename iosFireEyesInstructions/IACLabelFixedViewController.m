@@ -1,5 +1,5 @@
 //
-//  DQFixedLabelViewController.m
+//  IACLabelFixedViewController.m
 //  iosFireEyesInstructions
 //
 //  Created by Catherine Fisher on 2/12/14.
@@ -10,16 +10,12 @@
 
 #import "DQButton.h"
 
-@interface IACLabelFixedViewController ()
+@implementation IACLabelFixedViewController 
 
-@end
-
-@implementation IACLabelFixedViewController {
-    IBOutlet DQButton *_DogDisplay;
-    IBOutlet DQButton *_CatDisplay;
-    IBOutlet DQButton *_FishDisplay;
-    IBOutlet UIImageView *_ImageView;
-}
+@synthesize dogDisplay = _DogDisplay;
+@synthesize catDisplay = _CatDisplay;
+@synthesize fishDisplay = _FishDisplay;
+@synthesize imageView = _ImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -64,7 +60,7 @@
 
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
-    [_ImageView setAccessibilityLabel:name];
+    [_ImageView setAccessibilityLabel:NSLocalizedString(name, nil)];
     
     UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _ImageView);
 }
