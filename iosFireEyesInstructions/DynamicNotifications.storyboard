@@ -308,9 +308,6 @@
                                                 <state key="normal" title="Clear Contacts">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="clearList:" destination="KFv-uv-hLt" eventType="touchUpInside" id="0vw-no-DPw"/>
-                                                </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gPs-7i-dnQ">
                                                 <rect key="frame" x="20" y="29" width="520" height="30"/>
@@ -325,9 +322,6 @@
                                                 <state key="normal" title="Save">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="saveItem:" destination="KFv-uv-hLt" eventType="touchUpInside" id="IBR-ky-9Zb"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -385,9 +379,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fixed" image="Fixed" id="Ex0-ch-RoU"/>
                     <connections>
-                        <outlet property="saveButton" destination="7ic-tb-diN" id="xj8-KO-mJM"/>
-                        <outlet property="tableView" destination="V6P-4y-vA5" id="zYs-az-CMW"/>
-                        <outlet property="textField" destination="gPs-7i-dnQ" id="J5p-fb-Qh4"/>
+                        <outlet property="_clearContacts" destination="KJK-y6-B3G" id="9QM-Vw-B46"/>
+                        <outlet property="_saveButton" destination="7ic-tb-diN" id="YEi-cu-NKQ"/>
+                        <outlet property="_tableView" destination="V6P-4y-vA5" id="MjG-Tm-z6K"/>
+                        <outlet property="_textField" destination="gPs-7i-dnQ" id="GMS-ge-vHy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmI-O2-z2l" userLabel="First Responder" sceneMemberID="firstResponder"/>

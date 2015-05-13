@@ -11,6 +11,7 @@
 
 @implementation DQUtilities
 
+
 +(void)createDynamicNotification:(NSString*)announcement {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, announcement);
