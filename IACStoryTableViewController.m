@@ -9,6 +9,7 @@
 #import "IACStoryTableViewController.h"
 #import "UIView+DQView.h"
 #import "DQConstants.h"
+#import "IACUtilities.h"
 
 #define REUSE_IDENTIFIER @"StoryCell"
 #define STORY_LABEL_TAG 101
@@ -61,15 +62,15 @@
     
     //color scheme
     _colorCellBackgroundDimmed = [UIColor darkGrayColor];
-    _colorCellBackgroundSelected = [UIColor greenColor];
-    _colorCellBackgroundDimmedDarkened = [UIColor blackColor];
-    _colorCellBackgroundSelectedDarkened = [UIColor greenColor];
+    _colorCellBackgroundSelected = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    _colorCellBackgroundDimmedDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLACK];
+    _colorCellBackgroundSelectedDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
     _colorCellTextDimmed = [UIColor whiteColor];
-    _colorCellTextSelected = [UIColor blackColor];
+    _colorCellTextSelected = [UIColor darkGrayColor];
     _colorCellTextDimmedDarkened = [UIColor whiteColor];
-    _colorCellTextSelectedDarkened = [UIColor blackColor];
+    _colorCellTextSelectedDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLACK];
     _colorMenuBackground = [UIColor darkGrayColor];
-    _colorMenuBackgroundDarkened = [UIColor blackColor];
+    _colorMenuBackgroundDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLACK];
     
     self.tableView.backgroundView = nil;
     

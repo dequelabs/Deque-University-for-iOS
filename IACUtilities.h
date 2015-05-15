@@ -1,5 +1,5 @@
 //
-//  IACNavigationController.h
+//  IACUtilities.h
 //  Accessibility 101
 //
 //  Created by Jennifer Dailey on 5/14/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IACNavigationController : UINavigationController
+@interface IACUtilities : UINavigationController
+
++(UIColor*)colorWithHexString:(NSString*)hex;
 
 @end
