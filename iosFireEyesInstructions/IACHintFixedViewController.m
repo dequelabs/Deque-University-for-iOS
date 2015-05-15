@@ -7,12 +7,16 @@
 //
 
 #import "IACHintFixedViewController.h"
+#import "IACUtilities.h"
+#import "DQConstants.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface IACHintFixedViewController () {
     AVAudioPlayer* _AudioPlayer;
 }
+
+@property UIColor* backgroundColorView;
 
 @end
 
@@ -30,6 +34,9 @@
     
     [_buttonSinginInTheRain setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     [_buttonSinginInTheRain addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (NSString*)playMusic:(id)sender {

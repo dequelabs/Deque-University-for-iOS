@@ -10,6 +10,7 @@
 #import "UIView+DQView.h"
 #import "DQLog.h"
 #import "DQConstants.h"
+#import "IACUtilities.h"
 
 #define VIEW_TAG_SWITCH 987654321
 #define VIEW_TAG_BOTTOM 111111111
@@ -32,6 +33,8 @@
 
 @interface IACViewController ()
 
+@property UIColor* backgroundColorView;
+
 @end
 
 @implementation IACViewController
@@ -43,6 +46,9 @@
     if (overlaySwitch) {
         [overlaySwitch addTarget:self action:@selector(addObnoxiousOverlay) forControlEvents:UIControlEventValueChanged];
     }
+    
+    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLUE];
+    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -76,7 +82,7 @@
         
         UIView* overlayView = [[IACOverlayView alloc] init];
         
-        overlayView.backgroundColor = [self colorWithHexString:DQ_COLOR_WORLDSPACE_BLUE];
+        overlayView.backgroundColor = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLUE];
         overlayView.tag = VIEW_TAG_OVERLAY;
         overlayView.isAccessibilityElement = NO;
         overlayView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -120,42 +126,6 @@
         [[self.view viewWithTag:VIEW_TAG_OVERLAY] removeFromSuperview];
     }
     
-}
-
--(UIColor*)colorWithHexString:(NSString*)hex {
-    
-    NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
-    
-    // String should be 6 or 8 characters
-    if ([cString length] < 6) return [UIColor grayColor];
-    
-    // strip 0X if it appears
-    if ([cString hasPrefix:@"0X"]) cString = [cString substringFromIndex:2];
-    
-    if ([cString length] != 6) return  [UIColor grayColor];
-    
-    // Separate into r, g, b substrings
-    NSRange range;
-    range.location = 0;
-    range.length = 2;
-    NSString *rString = [cString substringWithRange:range];
-    
-    range.location = 2;
-    NSString *gString = [cString substringWithRange:range];
-    
-    range.location = 4;
-    NSString *bString = [cString substringWithRange:range];
-    
-    // Scan values
-    unsigned int r, g, b;
-    [[NSScanner scannerWithString:rString] scanHexInt:&r];
-    [[NSScanner scannerWithString:gString] scanHexInt:&g];
-    [[NSScanner scannerWithString:bString] scanHexInt:&b];
-    
-    return [UIColor colorWithRed:((float) r / 255.0f)  
-                           green:((float) g / 255.0f)  
-                            blue:((float) b / 255.0f)  
-                           alpha:1.0f];  
 }
 
 
