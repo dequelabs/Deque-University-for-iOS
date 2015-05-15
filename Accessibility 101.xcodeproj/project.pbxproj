@@ -54,6 +54,8 @@
 		EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */; };
 		EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */; };
 		EE8F89B31B0541DC00B8601C /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F89B21B0541DC00B8601C /* IACUtilities.m */; };
+		EE8F89B71B063FAD00B8601C /* IACNestedA11yFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F89B61B063FAD00B8601C /* IACNestedA11yFixedViewController.m */; };
+		EE8F89BA1B064FC500B8601C /* IACDynamicTypeFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F89B91B064FC500B8601C /* IACDynamicTypeFixedViewController.m */; };
 		EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */; };
 		EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */; };
 		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
@@ -160,6 +162,10 @@
 		EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE8F89B11B0541DC00B8601C /* IACUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACUtilities.h; sourceTree = "<group>"; };
 		EE8F89B21B0541DC00B8601C /* IACUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACUtilities.m; sourceTree = "<group>"; };
+		EE8F89B51B063FAD00B8601C /* IACNestedA11yFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACNestedA11yFixedViewController.h; sourceTree = "<group>"; };
+		EE8F89B61B063FAD00B8601C /* IACNestedA11yFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACNestedA11yFixedViewController.m; sourceTree = "<group>"; };
+		EE8F89B81B064FC500B8601C /* IACDynamicTypeFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicTypeFixedViewController.h; sourceTree = "<group>"; };
+		EE8F89B91B064FC500B8601C /* IACDynamicTypeFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicTypeFixedViewController.m; sourceTree = "<group>"; };
 		EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
@@ -314,6 +320,8 @@
 				A9C21AF6193E64DE00F80821 /* Labels */,
 				A9C21AF7193E64FB00F80821 /* Hints */,
 				A9C21AF8193E651B00F80821 /* Traits */,
+				EE8F89B41B063EF900B8601C /* Nested A11y */,
+				EE8F89BB1B064FDC00B8601C /* Dynamic Type */,
 				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
 				0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
@@ -434,6 +442,24 @@
 				A9D013E418A2DD4700DC6496 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE8F89B41B063EF900B8601C /* Nested A11y */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F89B51B063FAD00B8601C /* IACNestedA11yFixedViewController.h */,
+				EE8F89B61B063FAD00B8601C /* IACNestedA11yFixedViewController.m */,
+			);
+			name = "Nested A11y";
+			sourceTree = "<group>";
+		};
+		EE8F89BB1B064FDC00B8601C /* Dynamic Type */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F89B81B064FC500B8601C /* IACDynamicTypeFixedViewController.h */,
+				EE8F89B91B064FC500B8601C /* IACDynamicTypeFixedViewController.m */,
+			);
+			name = "Dynamic Type";
 			sourceTree = "<group>";
 		};
 		EE99B0B81B02A24900D5774F /* Labels */ = {
@@ -602,12 +628,14 @@
 				0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */,
 				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,
 				0FE903CC1AE7ED2400EC01F1 /* DQViewController.m in Sources */,
+				EE8F89B71B063FAD00B8601C /* IACNestedA11yFixedViewController.m in Sources */,
 				0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */,
 				EED64DAE1AF80947000AF3F1 /* IACDynamicNotificationsFixedViewController.m in Sources */,
 				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
 				A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */,
 				0FE903D01AE7ED2400EC01F1 /* DQTextField.m in Sources */,
 				EED64DB31AF80947000AF3F1 /* IACDynamicNotificationsBrokenViewController.m in Sources */,
+				EE8F89BA1B064FC500B8601C /* IACDynamicTypeFixedViewController.m in Sources */,
 				0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */,
 				0FE903CA1AE7ED2400EC01F1 /* UIView+DQView.m in Sources */,
 				0F76336A1ADDA0C0002D7243 /* IACTabBarController.m in Sources */,

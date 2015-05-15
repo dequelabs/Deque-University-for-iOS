@@ -7,6 +7,14 @@
 //
 
 #import "IACTraitsFixedViewController.h"
+#import "DQConstants.h"
+#import "IACUtilities.h"
+
+@interface IACTraitsFixedViewController ()
+
+@property UIColor* backgroundColorView;
+
+@end
 
 @implementation IACTraitsFixedViewController
 
@@ -38,6 +46,9 @@
     [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
+    
+    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (void)displayImage:(id)sender {
