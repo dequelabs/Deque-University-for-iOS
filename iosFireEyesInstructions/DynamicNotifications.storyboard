@@ -22,35 +22,43 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhE-km-h2x">
-                                        <rect key="frame" x="5" y="10" width="590" height="159"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="272"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are dynamic notifications?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgi-uE-Bft" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="20"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egN-fp-m2c" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="104"/>
+                                                <rect key="frame" x="10" y="148" width="570" height="104"/>
                                                 <string key="text">Dynamic notifications alert the user through VoiceOver when an element on the screen has been added, deleted, or changed.  This includes elements that change as a result of an action by the user as well as elements that automatically change on screen.  Dynamic notifications are useful in many scenarios, such as the dynamic image example that was shown in "Traits."</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zqv-B8-6FE">
+                                                <rect key="frame" x="145" y="20" width="300" height="118"/>
+                                                <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zqv-B8-6FE" secondAttribute="height" multiplier="718:283" id="qPW-Pr-p9j"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="dgi-uE-Bft" firstAttribute="leading" secondItem="ZhE-km-h2x" secondAttribute="leading" constant="10" id="8Jc-UH-ipA"/>
+                                            <constraint firstItem="egN-fp-m2c" firstAttribute="top" secondItem="zqv-B8-6FE" secondAttribute="bottom" constant="10" id="4Lo-b4-PVX"/>
                                             <constraint firstAttribute="bottom" secondItem="egN-fp-m2c" secondAttribute="bottom" constant="20" id="LcC-dm-aEh"/>
-                                            <constraint firstAttribute="trailing" secondItem="dgi-uE-Bft" secondAttribute="trailing" constant="10" id="P6L-Ht-WKY"/>
-                                            <constraint firstItem="dgi-uE-Bft" firstAttribute="top" secondItem="ZhE-km-h2x" secondAttribute="top" constant="10" id="YwB-4G-yCr"/>
-                                            <constraint firstItem="dgi-uE-Bft" firstAttribute="leading" secondItem="egN-fp-m2c" secondAttribute="leading" constant="-10" id="ejv-9b-Pdt"/>
-                                            <constraint firstItem="egN-fp-m2c" firstAttribute="top" secondItem="dgi-uE-Bft" secondAttribute="bottom" constant="5" id="fBa-un-Pgn"/>
-                                            <constraint firstItem="dgi-uE-Bft" firstAttribute="trailing" secondItem="egN-fp-m2c" secondAttribute="trailing" id="lbt-OS-Ksk"/>
+                                            <constraint firstAttribute="centerX" secondItem="zqv-B8-6FE" secondAttribute="centerX" id="Roh-SO-X01"/>
+                                            <constraint firstAttribute="trailing" secondItem="egN-fp-m2c" secondAttribute="trailing" constant="10" id="SQo-MA-v8X"/>
+                                            <constraint firstItem="zqv-B8-6FE" firstAttribute="width" secondItem="zqv-B8-6FE" secondAttribute="height" multiplier="718:283" id="iiK-j6-rf4"/>
+                                            <constraint firstItem="egN-fp-m2c" firstAttribute="leading" secondItem="ZhE-km-h2x" secondAttribute="leading" constant="10" id="y1t-qZ-3go"/>
+                                            <constraint firstItem="zqv-B8-6FE" firstAttribute="top" secondItem="ZhE-km-h2x" secondAttribute="top" constant="20" id="zLJ-Iu-zAJ"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="iiK-j6-rf4"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWs-VW-edD">
-                                        <rect key="frame" x="5" y="179" width="590" height="117"/>
+                                        <rect key="frame" x="5" y="292" width="590" height="117"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are they important?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBv-8r-EGu" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -76,17 +84,23 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="egN-fp-m2c" firstAttribute="leading" secondItem="vOx-mg-bzB" secondAttribute="leading" id="9Rm-ET-zXr"/>
+                                    <constraint firstItem="zBv-8r-EGu" firstAttribute="trailing" secondItem="egN-fp-m2c" secondAttribute="trailing" id="FlC-OG-8ct"/>
                                     <constraint firstItem="PWs-VW-edD" firstAttribute="top" secondItem="ZhE-km-h2x" secondAttribute="bottom" constant="10" id="Gnn-hz-tcI"/>
                                     <constraint firstItem="ZhE-km-h2x" firstAttribute="top" secondItem="q1T-ya-lDt" secondAttribute="top" constant="10" id="O81-S1-8GA"/>
                                     <constraint firstItem="PWs-VW-edD" firstAttribute="trailing" secondItem="ZhE-km-h2x" secondAttribute="trailing" id="SjH-vu-puJ"/>
                                     <constraint firstItem="PWs-VW-edD" firstAttribute="leading" secondItem="ZhE-km-h2x" secondAttribute="leading" id="T6R-ec-X9d"/>
+                                    <constraint firstItem="vOx-mg-bzB" firstAttribute="leading" secondItem="egN-fp-m2c" secondAttribute="leading" constant="10" id="TIk-eJ-iom"/>
                                     <constraint firstItem="ZhE-km-h2x" firstAttribute="leading" secondItem="q1T-ya-lDt" secondAttribute="leading" constant="5" id="VOG-F3-7p6"/>
                                     <constraint firstAttribute="bottom" secondItem="PWs-VW-edD" secondAttribute="bottom" constant="10" id="cjC-FJ-e3S"/>
-                                    <constraint firstItem="zBv-8r-EGu" firstAttribute="trailing" secondItem="dgi-uE-Bft" secondAttribute="trailing" id="eh5-YS-MCb"/>
-                                    <constraint firstItem="zBv-8r-EGu" firstAttribute="leading" secondItem="dgi-uE-Bft" secondAttribute="leading" id="gVV-L4-5yp"/>
-                                    <constraint firstItem="dgi-uE-Bft" firstAttribute="trailing" secondItem="vOx-mg-bzB" secondAttribute="trailing" id="pH8-ef-r3l"/>
+                                    <constraint firstItem="zBv-8r-EGu" firstAttribute="leading" secondItem="egN-fp-m2c" secondAttribute="leading" id="fe8-5i-Yic"/>
+                                    <constraint firstItem="vOx-mg-bzB" firstAttribute="trailing" secondItem="egN-fp-m2c" secondAttribute="trailing" id="mYw-CZ-hiL"/>
                                     <constraint firstAttribute="trailing" secondItem="ZhE-km-h2x" secondAttribute="trailing" constant="5" id="zUk-gE-r8X"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Rm-ET-zXr"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,6 +109,7 @@
                             <constraint firstAttribute="width" secondItem="q1T-ya-lDt" secondAttribute="width" id="9hC-Dc-vdZ"/>
                             <constraint firstAttribute="width" secondItem="ZhE-km-h2x" secondAttribute="width" constant="10" id="Va5-ic-EdQ"/>
                             <constraint firstItem="mNn-7j-vDi" firstAttribute="top" secondItem="q1T-ya-lDt" secondAttribute="bottom" id="lPl-jA-fq3"/>
+                            <constraint firstAttribute="width" secondItem="zqv-B8-6FE" secondAttribute="width" multiplier="2" id="msd-fz-MxP"/>
                             <constraint firstAttribute="centerX" secondItem="q1T-ya-lDt" secondAttribute="centerX" id="uyT-ne-Ebn"/>
                         </constraints>
                     </view>
@@ -476,6 +491,7 @@
     <resources>
         <image name="About" width="33" height="33"/>
         <image name="Broken" width="33" height="33"/>
+        <image name="DequeLogo" width="720" height="245"/>
         <image name="Fixed" width="33" height="33"/>
     </resources>
 </document>
