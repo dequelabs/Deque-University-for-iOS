@@ -57,7 +57,10 @@
     
     UIStoryboard* dynamic = [UIStoryboard storyboardWithName:@"DynamicNotifications" bundle:nil];
     [tempArray addObject:[dynamic instantiateViewControllerWithIdentifier:@"DynamicNotifications"]];
-
+    
+    UIStoryboard* form = [UIStoryboard storyboardWithName:@"FormsValidation" bundle:nil];
+    [tempArray addObject:[form instantiateViewControllerWithIdentifier:@"FormsValidation"]];
+    
     _viewControllers = [NSArray arrayWithArray:tempArray];
     
     //color scheme

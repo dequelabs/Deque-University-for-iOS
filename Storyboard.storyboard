@@ -370,22 +370,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-uG-HI1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-uG-HI1">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-GN-lJ4">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-GN-lJ4">
                                         <rect key="frame" x="5" y="10" width="590" height="222"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJf-rt-4zJ" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="167"/>
-                                                <string key="text">Labels help identify 'What' an object is.  Accessibility Labels on controls provide a text alternative, when the visual text doesn't contain all of the relevant context.  Labels for controls should be short and concise.  If you are tempted to make a label longer than a word or two, it is likely that the information you're adding belongs in the hint.  Labels should start with a capital letter and end with no punctuation.  This helps VoiceOver get the correct inflection.  Labels should not contain information about the type of control.  This information is stored in the trait.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJf-rt-4zJ" customClass="DQLabel">
+                                                <rect key="frame" x="20" y="35" width="4128" height="167"/>
+                                                <mutableString key="text">Accessiblity labels help identify 'What' an object is.  Accessibility Labels on controls provide a text alternative, when the visual text doesn't contain all of the relevant context.  Labels for controls should be short and concise.  If you are tempted to make a label longer than a word or two, it is likely that the information you're adding belongs in the hint.  Labels should start with a capital letter and end with no punctuation.  This helps VoiceOver get the correct inflection.  Labels should not contain information about the type of control.  This information is stored in the trait.</mutableString>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility Labels" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43B-p7-RyM" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="20"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -393,14 +387,8 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="WJf-rt-4zJ" secondAttribute="trailing" constant="10" id="6tm-WW-930"/>
-                                            <constraint firstAttribute="trailing" secondItem="43B-p7-RyM" secondAttribute="trailing" constant="10" id="IRd-jx-uZx"/>
-                                            <constraint firstItem="43B-p7-RyM" firstAttribute="trailing" secondItem="WJf-rt-4zJ" secondAttribute="trailing" id="N0O-Ul-Rjr"/>
-                                            <constraint firstItem="43B-p7-RyM" firstAttribute="leading" secondItem="hbl-GN-lJ4" secondAttribute="leading" constant="10" id="ZEb-Zs-L2i"/>
-                                            <constraint firstItem="43B-p7-RyM" firstAttribute="top" secondItem="hbl-GN-lJ4" secondAttribute="top" constant="10" id="g8S-2P-lLb"/>
-                                            <constraint firstItem="43B-p7-RyM" firstAttribute="leading" secondItem="WJf-rt-4zJ" secondAttribute="leading" constant="-10" id="oPf-OJ-caM"/>
                                             <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="hbl-GN-lJ4" secondAttribute="leading" constant="15" id="ovm-nj-anv"/>
                                             <constraint firstAttribute="bottom" secondItem="WJf-rt-4zJ" secondAttribute="bottom" constant="20" id="twj-fc-xvM"/>
-                                            <constraint firstItem="WJf-rt-4zJ" firstAttribute="top" secondItem="43B-p7-RyM" secondAttribute="bottom" constant="5" id="v22-PQ-P4f"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -409,17 +397,17 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUC-IO-ngj">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUC-IO-ngj">
                                         <rect key="frame" x="5" y="242" width="590" height="201"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUG-lc-qPy" customClass="DQLabel">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUG-lc-qPy" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="146"/>
                                                 <string key="text">Labels provide information to VoiceOver quickly.  Unlike hints, whose readout is delayed.  When designing accessible applications you want to keep two particular users in mind.  The power user, and the new user.  Think of labels as something to help power users.  The person who knows that a row of buttons are links, or that they play music.  They don't need to be reminded that a button is going to play a song, they just need to know which song they will be playing.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Practice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-kb-G62" customClass="DQLabel">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Best Practice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-kb-G62" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -443,23 +431,18 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="43B-p7-RyM" firstAttribute="leading" secondItem="5PM-kb-G62" secondAttribute="leading" id="1rL-ZU-2Hk"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="top" secondItem="hbl-GN-lJ4" secondAttribute="bottom" constant="10" id="5gG-Rt-af3"/>
                                     <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="iUG-lc-qPy" secondAttribute="leading" id="85T-9T-QRR"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="leading" secondItem="hbl-GN-lJ4" secondAttribute="leading" id="AMJ-Ck-7wY"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="trailing" secondItem="hbl-GN-lJ4" secondAttribute="trailing" id="D2w-cg-FGm"/>
                                     <constraint firstAttribute="trailing" secondItem="hbl-GN-lJ4" secondAttribute="trailing" constant="5" id="Si3-JD-KqL"/>
                                     <constraint firstAttribute="bottom" secondItem="gUC-IO-ngj" secondAttribute="bottom" constant="10" id="T4z-gB-RVW"/>
-                                    <constraint firstItem="43B-p7-RyM" firstAttribute="trailing" secondItem="5PM-kb-G62" secondAttribute="trailing" id="Udg-6m-2EL"/>
-                                    <constraint firstItem="43B-p7-RyM" firstAttribute="trailing" secondItem="iUG-lc-qPy" secondAttribute="trailing" id="VAk-1V-8WV"/>
                                     <constraint firstItem="WJf-rt-4zJ" firstAttribute="trailing" secondItem="iUG-lc-qPy" secondAttribute="trailing" id="d3w-1f-xch"/>
                                     <constraint firstItem="hbl-GN-lJ4" firstAttribute="leading" secondItem="Xdx-uG-HI1" secondAttribute="leading" constant="5" id="fq8-ZW-YKg"/>
-                                    <constraint firstItem="43B-p7-RyM" firstAttribute="leading" secondItem="iUG-lc-qPy" secondAttribute="leading" constant="-5" id="mUH-XP-NsV"/>
                                     <constraint firstItem="hbl-GN-lJ4" firstAttribute="top" secondItem="Xdx-uG-HI1" secondAttribute="top" constant="10" id="rKK-a2-O8m"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="mUH-XP-NsV"/>
                                         <exclude reference="d3w-1f-xch"/>
                                     </mask>
                                 </variation>

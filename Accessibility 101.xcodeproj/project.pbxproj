@@ -58,6 +58,13 @@
 		EE8F89BA1B064FC500B8601C /* IACDynamicTypeFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F89B91B064FC500B8601C /* IACDynamicTypeFixedViewController.m */; };
 		EE8F8A061B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A031B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m */; };
 		EE8F8A071B06796300B8601C /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */; };
+		EE8F8A681B06844300B8601C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A491B06844300B8601C /* AppDelegate.m */; };
+		EE8F8A6B1B06844300B8601C /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */; };
+		EE8F8A711B06844300B8601C /* IFVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5B1B06844300B8601C /* IFVAboutViewController.m */; };
+		EE8F8A721B06844300B8601C /* IFVBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */; };
+		EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */; };
+		EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */; };
+		EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */; };
 		EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */; };
 		EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */; };
 		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
@@ -170,6 +177,18 @@
 		EE8F8A031B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController.m; sourceTree = "<group>"; };
 		EE8F8A041B06796300B8601C /* IACDynamicNotificationsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsFixedViewController.h; sourceTree = "<group>"; };
 		EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
+		EE8F8A481B06844300B8601C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOSFormsDemo/AppDelegate.h; sourceTree = "<group>"; };
+		EE8F8A491B06844300B8601C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOSFormsDemo/AppDelegate.m; sourceTree = "<group>"; };
+		EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomIOS7AlertView.h; path = iOSFormsDemo/CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomIOS7AlertView.m; path = iOSFormsDemo/CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		EE8F8A5A1B06844300B8601C /* IFVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVAboutViewController.h; path = iOSFormsDemo/IFVAboutViewController.h; sourceTree = "<group>"; };
+		EE8F8A5B1B06844300B8601C /* IFVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFVAboutViewController.m; path = iOSFormsDemo/IFVAboutViewController.m; sourceTree = "<group>"; };
+		EE8F8A5C1B06844300B8601C /* IFVBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVBrokenViewController.h; path = iOSFormsDemo/IFVBrokenViewController.h; sourceTree = "<group>"; };
+		EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFVBrokenViewController.m; path = iOSFormsDemo/IFVBrokenViewController.m; sourceTree = "<group>"; };
+		EE8F8A5E1B06844300B8601C /* IFVFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVFixedViewController.h; path = iOSFormsDemo/IFVFixedViewController.h; sourceTree = "<group>"; };
+		EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFVFixedViewController.m; path = iOSFormsDemo/IFVFixedViewController.m; sourceTree = "<group>"; };
+		EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FormsValidation.storyboard; path = iOSFormsDemo/FormsValidation.storyboard; sourceTree = "<group>"; };
+		EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
 		EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
@@ -323,6 +342,7 @@
 				EE8F89B41B063EF900B8601C /* Nested A11y */,
 				EE8F89BB1B064FDC00B8601C /* Dynamic Type */,
 				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
+				EE8F8A461B06842A00B8601C /* Forms Validation */,
 				0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 			);
@@ -336,6 +356,7 @@
 				EE99B0B91B02A25A00D5774F /* Hints */,
 				EE99B0BA1B02A26200D5774F /* Traits */,
 				EE99B0BB1B02A26800D5774F /* Dynamic Notifications */,
+				EE8F8A801B0A1E1600B8601C /* Form Validation */,
 				EE99B0C11B03A63600D5774F /* DEQAsserts.h */,
 			);
 			name = Categories;
@@ -462,6 +483,32 @@
 			name = "Dynamic Type";
 			sourceTree = "<group>";
 		};
+		EE8F8A461B06842A00B8601C /* Forms Validation */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */,
+				EE8F8A481B06844300B8601C /* AppDelegate.h */,
+				EE8F8A491B06844300B8601C /* AppDelegate.m */,
+				EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */,
+				EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */,
+				EE8F8A5A1B06844300B8601C /* IFVAboutViewController.h */,
+				EE8F8A5B1B06844300B8601C /* IFVAboutViewController.m */,
+				EE8F8A5C1B06844300B8601C /* IFVBrokenViewController.h */,
+				EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */,
+				EE8F8A5E1B06844300B8601C /* IFVFixedViewController.h */,
+				EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */,
+			);
+			name = "Forms Validation";
+			sourceTree = "<group>";
+		};
+		EE8F8A801B0A1E1600B8601C /* Form Validation */ = {
+			isa = PBXGroup;
+			children = (
+				EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */,
+			);
+			name = "Form Validation";
+			sourceTree = "<group>";
+		};
 		EE99B0B81B02A24900D5774F /* Labels */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +621,7 @@
 			knownRegions = (
 				en,
 				ja,
+				Base,
 			);
 			mainGroup = A9D013B618A2DD4700DC6496;
 			productRefGroup = A9D013C018A2DD4700DC6496 /* Products */;
@@ -594,6 +642,7 @@
 				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
+				EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */,
 				0F2188471940FC0C007E68CD /* Localizable.strings in Resources */,
 				EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */,
 				0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */,
@@ -620,6 +669,8 @@
 				0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */,
 				A9D013CF18A2DD4700DC6496 /* main.m in Sources */,
 				0FE903D21AE7ED2400EC01F1 /* DQWrapperView.m in Sources */,
+				EE8F8A721B06844300B8601C /* IFVBrokenViewController.m in Sources */,
+				EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */,
 				A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */,
 				0FE903CE1AE7ED2400EC01F1 /* DQButton.m in Sources */,
 				0FE903CD1AE7ED2400EC01F1 /* DQLog.m in Sources */,
@@ -629,7 +680,10 @@
 				0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */,
 				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,
 				0FE903CC1AE7ED2400EC01F1 /* DQViewController.m in Sources */,
+				EE8F8A6B1B06844300B8601C /* CustomIOS7AlertView.m in Sources */,
+				EE8F8A711B06844300B8601C /* IFVAboutViewController.m in Sources */,
 				EE8F89B71B063FAD00B8601C /* IACNestedA11yFixedViewController.m in Sources */,
+				EE8F8A681B06844300B8601C /* AppDelegate.m in Sources */,
 				0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */,
 				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
 				A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */,
@@ -652,14 +706,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */,
-				EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */,
-				A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */,
-				EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */,
-				EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
-				EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */,
-				EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
 				A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */,
+				A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */,
+				EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */,
+				EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */,
+				EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */,
+				EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */,
+				EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
+				EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
+				EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
