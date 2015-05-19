@@ -10,6 +10,7 @@
 #import "UIView+DQView.h"
 #import "DQLog.h"
 #import "DQConstants.h"
+#import "IACConstants.h"
 #import "IACUtilities.h"
 
 #define VIEW_TAG_SWITCH 987654321
@@ -47,7 +48,7 @@
         [overlaySwitch addTarget:self action:@selector(addObnoxiousOverlay) forControlEvents:UIControlEventValueChanged];
     }
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLUE];
+    self.backgroundColorView = [IACUtilities colorWithHexString:DARK_BLUE];
     self.view.backgroundColor = self.backgroundColorView;
 }
 

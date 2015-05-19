@@ -7,7 +7,7 @@
 //
 
 #import "IACNestedA11yFixedViewController.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 #import "IACUtilities.h"
 
 @interface IACNestedA11yFixedViewController ()
@@ -20,7 +20,7 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
     self.view.backgroundColor = self.backgroundColorView;
 }
 

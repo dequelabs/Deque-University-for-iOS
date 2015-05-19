@@ -7,7 +7,7 @@
 //
 
 #import "DQTabBarController.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 
 @interface DQTabBarController ()
 
@@ -53,12 +53,12 @@
                                                  name:UIAccessibilityDarkerSystemColorsStatusDidChangeNotification
                                                object:nil];
     
-    _colorSelected = [self colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
-    _colorSelectedDarkened = [self colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
-    _colorDimmed = [UIColor whiteColor];
-    _colorDimmedDarkened = [UIColor whiteColor];
-    _colorTabBar = [UIColor darkGrayColor];
-    _colorTabBarDarkened = [self colorWithHexString:DQ_COLOR_WORLDSPACE_BLACK];
+    _colorSelected = [self colorWithHexString:ORANGE];
+    _colorSelectedDarkened = [self colorWithHexString:ORANGE];
+    _colorDimmed = [self colorWithHexString:BLUE];
+    _colorDimmedDarkened = [self colorWithHexString:ORANGE];
+    _colorTabBar = [self colorWithHexString:LIGHT_BLUE];
+    _colorTabBarDarkened = [self colorWithHexString:LIGHT_BLUE];
     _translucentDarkened = NO;
     _translucentUndarkened = NO;
     

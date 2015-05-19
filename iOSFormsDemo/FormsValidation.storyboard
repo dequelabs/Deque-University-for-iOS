@@ -23,10 +23,10 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nH-UN-kKn">
-                                        <rect key="frame" x="5" y="10" width="590" height="272"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="262"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lNg-Pd-lY8">
-                                                <rect key="frame" x="145" y="20" width="300" height="118"/>
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
                                                 <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
@@ -35,7 +35,7 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXl-k4-q76" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="148" width="570" height="104"/>
+                                                <rect key="frame" x="10" y="138" width="570" height="104"/>
                                                 <string key="text">In this app we will take you through some advanced native iOS Accessibility topics.  We demo these concepts by creating an accessible and inaccessible version of a basic form.  Forms are essential to many basic applications, and introduce a simple form of dynamic content that needs careful consideration to maintain accessibility.  </string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,7 +51,7 @@
                                             <constraint firstAttribute="bottom" secondItem="lXl-k4-q76" secondAttribute="bottom" constant="20" id="Mff-tf-CIp"/>
                                             <constraint firstItem="lXl-k4-q76" firstAttribute="leading" secondItem="8nH-UN-kKn" secondAttribute="leading" constant="20" id="Whv-Fg-cX6"/>
                                             <constraint firstAttribute="trailing" secondItem="lXl-k4-q76" secondAttribute="trailing" constant="20" id="h0g-ew-DO4"/>
-                                            <constraint firstItem="lNg-Pd-lY8" firstAttribute="top" secondItem="8nH-UN-kKn" secondAttribute="top" constant="20" id="l2a-Wm-zzq"/>
+                                            <constraint firstItem="lNg-Pd-lY8" firstAttribute="top" secondItem="8nH-UN-kKn" secondAttribute="top" constant="10" id="l2a-Wm-zzq"/>
                                             <constraint firstAttribute="centerX" secondItem="lNg-Pd-lY8" secondAttribute="centerX" id="sfH-U4-bI1"/>
                                         </constraints>
                                         <variation key="default">
@@ -91,7 +91,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="About" id="CBp-gR-SEj"/>
+                    <tabBarItem key="tabBarItem" title="About" image="DequeU_app_icon_about" id="CBp-gR-SEj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkR-VO-iha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,10 +113,10 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rde-Lp-M4F">
-                                        <rect key="frame" x="5" y="10" width="590" height="480"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="470"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mvi-v0-1g5">
-                                                <rect key="frame" x="145" y="20" width="300" height="118"/>
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
                                                 <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
@@ -125,7 +125,7 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzc-9F-7MV">
-                                                <rect key="frame" x="10" y="163" width="570" height="50"/>
+                                                <rect key="frame" x="10" y="153" width="570" height="50"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-1t-h3w" customClass="DQTextField">
                                                         <rect key="frame" x="53" y="0.0" width="517" height="30"/>
@@ -171,7 +171,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23O-Wi-P2o">
-                                                <rect key="frame" x="10" y="238" width="570" height="50"/>
+                                                <rect key="frame" x="10" y="228" width="570" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h1-CG-iGa" customClass="DQLabel">
                                                         <rect key="frame" x="0.0" y="5" width="40" height="20"/>
@@ -222,7 +222,7 @@
                                                 </variation>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ml9-Ca-gbY">
-                                                <rect key="frame" x="10" y="313" width="570" height="50"/>
+                                                <rect key="frame" x="10" y="303" width="570" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIX-Jr-rud" customClass="DQLabel">
                                                         <rect key="frame" x="0.0" y="5" width="34" height="20"/>
@@ -268,7 +268,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-86-yhb" customClass="DQButton">
-                                                <rect key="frame" x="265" y="388" width="61" height="32"/>
+                                                <rect key="frame" x="265" y="378" width="61" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
@@ -281,7 +281,7 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHm-Xg-F5v">
-                                                <rect key="frame" x="181" y="440" width="201" height="20"/>
+                                                <rect key="frame" x="181" y="430" width="201" height="20"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhf-ai-wzt">
                                                         <rect key="frame" x="0.0" y="-1" width="22" height="22"/>
@@ -340,7 +340,7 @@
                                             <constraint firstItem="23O-Wi-P2o" firstAttribute="top" secondItem="fzc-9F-7MV" secondAttribute="bottom" constant="25" id="c0y-yb-wVB"/>
                                             <constraint firstAttribute="centerX" secondItem="xVn-86-yhb" secondAttribute="centerX" id="dxY-DD-2df"/>
                                             <constraint firstAttribute="trailing" secondItem="fzc-9F-7MV" secondAttribute="trailing" constant="10" id="eQs-u8-ikZ"/>
-                                            <constraint firstItem="mvi-v0-1g5" firstAttribute="top" secondItem="Rde-Lp-M4F" secondAttribute="top" constant="20" id="gD9-XK-niB"/>
+                                            <constraint firstItem="mvi-v0-1g5" firstAttribute="top" secondItem="Rde-Lp-M4F" secondAttribute="top" constant="10" id="gD9-XK-niB"/>
                                             <constraint firstItem="BHm-Xg-F5v" firstAttribute="top" secondItem="xVn-86-yhb" secondAttribute="bottom" constant="20" id="hmQ-aQ-Mjl"/>
                                             <constraint firstItem="Ml9-Ca-gbY" firstAttribute="trailing" secondItem="fzc-9F-7MV" secondAttribute="trailing" id="i47-2e-9bA"/>
                                             <constraint firstItem="23O-Wi-P2o" firstAttribute="leading" secondItem="fzc-9F-7MV" secondAttribute="leading" id="m1R-s6-Wab"/>
@@ -379,7 +379,7 @@
                             <action selector="backgroundTap:" destination="BYZ-38-t0r" eventType="touchDown" id="MTf-A7-qvx"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fixed" image="Fixed" id="fWN-LL-fVl" userLabel="Fixed"/>
+                    <tabBarItem key="tabBarItem" title="Fixed" image="DequeU_app_icon_fixed" id="fWN-LL-fVl" userLabel="Fixed"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="dateField" destination="mmh-Eb-gW8" id="7Lo-tr-7jZ"/>
@@ -455,10 +455,10 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1F-xZ-pyR">
-                                        <rect key="frame" x="5" y="10" width="590" height="480"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="470"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yJL-4Z-40B">
-                                                <rect key="frame" x="145" y="20" width="300" height="118"/>
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
                                                 <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
@@ -467,37 +467,37 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Riv-UV-7IX" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="168" width="43" height="20"/>
+                                                <rect key="frame" x="10" y="158" width="43" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBO-Do-73L" customClass="DQTextField">
-                                                <rect key="frame" x="63" y="163" width="517" height="30"/>
+                                                <rect key="frame" x="63" y="153" width="517" height="30"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" label=""/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdg-km-HRR" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="243" width="40" height="20"/>
+                                                <rect key="frame" x="10" y="233" width="40" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKC-gX-rtM" customClass="DQTextField">
-                                                <rect key="frame" x="63" y="238" width="517" height="30"/>
+                                                <rect key="frame" x="63" y="228" width="517" height="30"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" label=""/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60B-6H-W4d" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="318" width="34" height="20"/>
+                                                <rect key="frame" x="10" y="308" width="34" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="mm/dd/yyyy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOd-ij-aX2" customClass="DQLabel">
-                                                <rect key="frame" x="73" y="343" width="91" height="20"/>
+                                                <rect key="frame" x="73" y="333" width="91" height="20"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
@@ -505,7 +505,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w75-Ok-QHb">
-                                                <rect key="frame" x="269" y="388" width="53" height="32"/>
+                                                <rect key="frame" x="269" y="378" width="53" height="32"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
                                                 </accessibility>
@@ -516,7 +516,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialogue." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ5-b1-lxF" customClass="DQLabel">
-                                                <rect key="frame" x="208" y="440" width="174" height="20"/>
+                                                <rect key="frame" x="208" y="430" width="174" height="20"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
@@ -535,7 +535,7 @@
                                                 </variation>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s6M-LI-guo" customClass="DQTextField">
-                                                <rect key="frame" x="63" y="313" width="517" height="30"/>
+                                                <rect key="frame" x="63" y="303" width="517" height="30"/>
                                                 <accessibility key="accessibilityConfiguration" hint="" label=""/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="vUL-Ev-XtI"/>
@@ -549,7 +549,7 @@
                                                 </variation>
                                             </textField>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-Y1-b3h" customClass="DQLabel">
-                                                <rect key="frame" x="73" y="268" width="11" height="20"/>
+                                                <rect key="frame" x="73" y="258" width="11" height="20"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
@@ -558,7 +558,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="A" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-va-kFr" customClass="DQLabel">
-                                                <rect key="frame" x="73" y="193" width="11" height="20"/>
+                                                <rect key="frame" x="73" y="183" width="11" height="20"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
@@ -567,7 +567,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNl-Ve-9N5">
-                                                <rect key="frame" x="181" y="439" width="22" height="22"/>
+                                                <rect key="frame" x="181" y="429" width="22" height="22"/>
                                                 <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
                                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
                                                 </accessibility>
@@ -599,7 +599,7 @@
                                             <constraint firstAttribute="centerX" secondItem="yJL-4Z-40B" secondAttribute="centerX" id="UiH-Qa-egh"/>
                                             <constraint firstAttribute="trailing" secondItem="sZ5-b1-lxF" secondAttribute="trailing" id="YQg-6E-iy7"/>
                                             <constraint firstItem="Riv-UV-7IX" firstAttribute="leading" secondItem="60B-6H-W4d" secondAttribute="leading" id="f6e-gC-X9u"/>
-                                            <constraint firstItem="yJL-4Z-40B" firstAttribute="top" secondItem="f1F-xZ-pyR" secondAttribute="top" constant="20" id="fYZ-j6-Zx1"/>
+                                            <constraint firstItem="yJL-4Z-40B" firstAttribute="top" secondItem="f1F-xZ-pyR" secondAttribute="top" constant="10" id="fYZ-j6-Zx1"/>
                                             <constraint firstItem="Wdg-km-HRR" firstAttribute="centerY" secondItem="CKC-gX-rtM" secondAttribute="centerY" id="g1d-Rk-Msx"/>
                                             <constraint firstItem="rBO-Do-73L" firstAttribute="top" secondItem="yJL-4Z-40B" secondAttribute="bottom" constant="25" id="kfT-ua-La3"/>
                                             <constraint firstItem="rBO-Do-73L" firstAttribute="leading" secondItem="s6M-LI-guo" secondAttribute="leading" id="kyg-Os-nGl"/>
@@ -643,7 +643,7 @@
                             <action selector="backgroundTap:" destination="ZLH-R6-JBm" eventType="touchDown" id="rPB-Lc-Q6Y"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Broken" image="Broken" id="N27-58-WgH" userLabel="Item"/>
+                    <tabBarItem key="tabBarItem" title="Broken" image="DequeU_app_icon_broken" id="N27-58-WgH" userLabel="Item"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
@@ -667,9 +667,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="About" width="33" height="33"/>
-        <image name="Broken" width="33" height="33"/>
         <image name="DequeLogo" width="720" height="245"/>
-        <image name="Fixed" width="33" height="33"/>
+        <image name="DequeU_app_icon_about" width="30" height="30"/>
+        <image name="DequeU_app_icon_broken" width="30" height="30"/>
+        <image name="DequeU_app_icon_fixed" width="30" height="30"/>
     </resources>
 </document>

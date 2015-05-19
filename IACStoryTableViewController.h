@@ -18,5 +18,7 @@
 @property (strong, atomic) UIColor* colorMenuDarkened;
 @property (atomic) BOOL translucentUndarkened;
 @property (atomic) BOOL translucentDarkened;
+@property (weak, nonatomic) IBOutlet UIView* logoView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

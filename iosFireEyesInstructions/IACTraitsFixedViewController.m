@@ -7,7 +7,7 @@
 //
 
 #import "IACTraitsFixedViewController.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 #import "IACUtilities.h"
 
 @interface IACTraitsFixedViewController ()
@@ -47,7 +47,7 @@
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
     self.view.backgroundColor = self.backgroundColorView;
 }
 

@@ -9,7 +9,7 @@
 #import "IACDynamicNotificationsFixedViewController.h"
 #import "DQLog.h"
 #import "DQUtilities.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 #import "IACUtilities.h"
 
 #define LOG_FLAG YES
@@ -44,7 +44,7 @@
                                              selector:@selector(textChanged)
                                                  name:UITextFieldTextDidChangeNotification object:nil];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
     self.view.backgroundColor = self.backgroundColorView;
 }
 

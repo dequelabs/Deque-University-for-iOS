@@ -9,7 +9,7 @@
 #import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
 #import "UIFont+DQFont.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 #import "IACUtilities.h"
 
 @interface IFVFixedViewController ()<CustomIOS7AlertViewDelegate>
@@ -39,7 +39,7 @@
     [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
     self.view.backgroundColor = self.backgroundColorView;
 }
 

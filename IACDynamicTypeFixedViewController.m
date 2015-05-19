@@ -8,7 +8,7 @@
 
 #import "IACDynamicTypeFixedViewController.h"
 #import "IACUtilities.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 
 @interface IACDynamicTypeFixedViewController ()
 
@@ -21,7 +21,7 @@
 -(void) viewDidLoad {
     [super viewDidLoad];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
     self.view.backgroundColor = self.backgroundColorView;
 }
 

@@ -8,7 +8,7 @@
 
 #import "IACLabelFixedViewController.h"
 #import "IACUtilities.h"
-#import "DQConstants.h"
+#import "IACConstants.h"
 #import "DQButton.h"
 
 @interface IACLabelFixedViewController ()
@@ -52,7 +52,7 @@
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
     self.view.backgroundColor = self.backgroundColorView;
 }
 
