@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACViewController.h"
+#import "IACFixedViewController.h"
 #import "DQButton.h"
 
-@interface IACLabelFixedViewController : IACViewController{
+@interface IACLabelFixedViewController : IACFixedViewController {
     IBOutlet DQButton *_DogDisplay;
     IBOutlet DQButton *_CatDisplay;
     IBOutlet DQButton *_FishDisplay;

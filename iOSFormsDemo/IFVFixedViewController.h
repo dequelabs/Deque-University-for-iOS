@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACViewController.h"
+#import "IACFixedViewController.h"
 
-@interface IFVFixedViewController : IACViewController <UITextFieldDelegate>
+@interface IFVFixedViewController : IACFixedViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

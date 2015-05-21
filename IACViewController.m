@@ -10,8 +10,9 @@
 #import "UIView+DQView.h"
 #import "DQLog.h"
 #import "DQConstants.h"
-#import "IACConstants.h"
 #import "IACUtilities.h"
+#import "IACConstants.h"
+#import "IACNavigationController.h"
 
 #define VIEW_TAG_SWITCH 987654321
 #define VIEW_TAG_BOTTOM 111111111
@@ -42,14 +43,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UISwitch* overlaySwitch = (UISwitch*)[self.view viewWithTag:VIEW_TAG_SWITCH];
-    
-    if (overlaySwitch) {
-        [overlaySwitch addTarget:self action:@selector(addObnoxiousOverlay) forControlEvents:UIControlEventValueChanged];
-    }
-    
+
     self.backgroundColorView = [IACUtilities colorWithHexString:DARK_BLUE];
     self.view.backgroundColor = self.backgroundColorView;
+    
+    _overlayButton =  [UIButton buttonWithType:UIButtonTypeCustom];
+    [_overlayButton setImage:[self addImage] forState:UIControlStateNormal];
+    [_overlayButton addTarget:self action:@selector(changeObnoxiousOverlay) forControlEvents:UIControlEventTouchUpInside];
+    [_overlayButton setFrame:CGRectMake(0, 0, 30, 21)];
+    self.navigationController.topViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_overlayButton];
+    
+    [self createOverlayView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -59,6 +63,12 @@
     
     firstAccessibilityElement.accessibilityTraits |= UIAccessibilityTraitHeader;
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self setObnoxiousOverlay];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -73,60 +83,72 @@
     return NO;
 }
 
-- (void)addObnoxiousOverlay {
-    UISwitch* overlaySwitch = (UISwitch*)[self.view viewWithTag:VIEW_TAG_SWITCH];
-    
-    if (overlaySwitch.on) {
-    
-        UIView* bottomView = [self.view viewWithTag:VIEW_TAG_BOTTOM];
-        UIView* topView = [self.view viewWithTag:VIEW_TAG_TOP];
-        
-        UIView* overlayView = [[IACOverlayView alloc] init];
-        
-        overlayView.backgroundColor = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_BLUE];
-        overlayView.tag = VIEW_TAG_OVERLAY;
-        overlayView.isAccessibilityElement = NO;
-        overlayView.translatesAutoresizingMaskIntoConstraints = NO;
+- (UIImage*)addImage {
+    return overlayOn ? [UIImage imageNamed:@"DequeU_app_icon_unsighted"] : [UIImage imageNamed:@"DequeU_app_icon_sighted"];
+}
 
-        
-        [self.view addSubview:overlayView];
-        
-        
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:topView
-                                                               attribute:NSLayoutAttributeTop
-                                                               relatedBy:NSLayoutRelationEqual
-                                                                  toItem:overlayView
-                                                               attribute:NSLayoutAttributeTop
-                                                              multiplier:1
-                                                                constant:0]];
-        
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bottomView
-                                                                attribute:NSLayoutAttributeBottom
-                                                                relatedBy:NSLayoutRelationEqual
-                                                                   toItem:overlayView
-                                                                attribute:NSLayoutAttributeBottom
-                                                               multiplier:1
-                                                                 constant:0]];
-        
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:overlayView
-                                                                attribute:NSLayoutAttributeWidth
-                                                                relatedBy:NSLayoutRelationEqual
-                                                                   toItem:self.view
-                                                                attribute:NSLayoutAttributeWidth
-                                                               multiplier:1
-                                                                 constant:0]];
-        
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view
-                                                                attribute:NSLayoutAttributeCenterX
-                                                                relatedBy:NSLayoutRelationEqual
-                                                                   toItem:overlayView
-                                                                attribute:NSLayoutAttributeCenterX
-                                                               multiplier:1
-                                                                 constant:0]];
-    } else {
-        [[self.view viewWithTag:VIEW_TAG_OVERLAY] removeFromSuperview];
-    }
+- (void)createOverlayView {
+    UIView* bottomView = [self.view viewWithTag:VIEW_TAG_BOTTOM];
+    UIView* topView = [self.view viewWithTag:VIEW_TAG_TOP];
     
+    _overlayView = [[IACOverlayView alloc] init];
+    
+    _overlayView.backgroundColor = [IACUtilities colorWithHexString:DARK_BLUE];
+    _overlayView.isAccessibilityElement = NO;
+    _overlayView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    
+    [self.view addSubview:_overlayView];
+    
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:topView
+                                                          attribute:NSLayoutAttributeTop
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:_overlayView
+                                                          attribute:NSLayoutAttributeTop
+                                                         multiplier:1
+                                                           constant:10]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bottomView
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:_overlayView
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1
+                                                           constant:-20]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_overlayView
+                                                          attribute:NSLayoutAttributeWidth
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeWidth
+                                                         multiplier:1
+                                                           constant:0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:_overlayView
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1
+                                                           constant:0]];
+}
+
+- (void)changeObnoxiousOverlay {
+    
+    overlayOn = !overlayOn;
+    [self setObnoxiousOverlay];
+}
+
+- (void)setObnoxiousOverlay {
+
+    [_overlayButton setImage:[self addImage] forState:UIControlStateNormal];
+    
+    if (overlayOn) {
+        _overlayView.hidden = false;
+    } else {
+        _overlayView.hidden = true;
+    }
 }
 
 

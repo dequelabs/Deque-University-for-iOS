@@ -15,9 +15,6 @@
 @interface IACHintFixedViewController () {
     AVAudioPlayer* _AudioPlayer;
 }
-
-@property UIColor* backgroundColorView;
-
 @end
 
 @implementation IACHintFixedViewController
@@ -35,8 +32,6 @@
     [_buttonSinginInTheRain setAccessibilityHint:NSLocalizedString(@"PLAYS_MUSIC", nil)];
     [_buttonSinginInTheRain addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchUpInside];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
-    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (NSString*)playMusic:(id)sender {

@@ -7,6 +7,7 @@
 //
 
 #import "IACStoryTableViewController.h"
+#import "IACNavigationController.h"
 #import "UIView+DQView.h"
 #import "IACConstants.h"
 #import "IACUtilities.h"
@@ -16,7 +17,8 @@
 #define INTRODUCTION_IDENTIFIER @"Introduction"
 #define DEMO_TITLE_IDENTIFIER @"Demos"
 #define STORY_IDENTIFIER @"StoryCell"
-#define OVERLAY_LABEL_TAG 91
+#define OVERLAY_IMAGE_TAG 93
+#define OVERLAY_SWITCH_TAG 92
 #define INTRO_LABEL_TAG 100
 #define INTRO_IMAGE_TAG 99
 #define DEMO_TITLE_TAG 90
@@ -26,6 +28,7 @@
 @implementation IACStoryTableViewController {
     NSArray* _viewControllers;
     UIViewController* _introduction;
+    UISwitch* overlaySwitch;
     
     //Color Scheme
     UIColor* _colorCellBackgroundDimmed;
@@ -68,6 +71,8 @@
     _viewControllers = [NSArray arrayWithArray:tempArray];
     
     //color scheme
+    [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [IACUtilities colorWithHexString:BLUE]}];
+    
     _colorCellBackgroundDimmed = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundSelected = [IACUtilities colorWithHexString:LIGHT_BLUE];
     _colorCellBackgroundDimmedDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
@@ -86,6 +91,11 @@
                                                  name:UIAccessibilityDarkerSystemColorsStatusDidChangeNotification
                                                object:nil];
     [self observeDarkenColorsSetting];
+}
+
+- (void)viewWillAppear:(BOOL) animated {
+    [super viewWillAppear:animated];
+    [self setState];
 }
 
 #pragma mark - Table view data source
@@ -111,9 +121,10 @@
     
     if(indexPath.section == 0) {
         cell = [tableView dequeueReusableCellWithIdentifier:OVERLAY_IDENTIFIER forIndexPath:indexPath];
-        label = (UILabel*)[cell viewWithTag:OVERLAY_LABEL_TAG];
+        self.sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
+        overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
-        label.text = @"Overlay";
+        [overlaySwitch addTarget:self action:@selector(changeState) forControlEvents:UIControlEventValueChanged];
         
     } else if(indexPath.section == 1) {
         cell = [tableView dequeueReusableCellWithIdentifier:INTRODUCTION_IDENTIFIER forIndexPath:indexPath];
@@ -166,12 +177,32 @@
     }
 }
 
+-(void)setState {
+    if(overlayOn) {
+        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_unsighted"]];
+        [overlaySwitch setOn:YES animated:YES];
+    } else {
+        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_sighted"]];
+        [overlaySwitch setOn:NO animated:YES];
+    }
+}
+
+-(void)changeState {
+    if(overlaySwitch.on) {
+        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_unsighted"]];
+        overlayOn = YES;
+    } else {
+        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_sighted"]];
+        overlayOn = NO;
+    }
+}
+
 -(void)observeDarkenColorsSetting  {
     
     DARKEN_COLORS = UIAccessibilityDarkerSystemColorsEnabled();
     self.tableView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
     self.logoView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened: _colorMenuBackground;
-    self.label.textColor = DARKEN_COLORS ? _colorDimmedDarkened : _colorDimmed;
+    self.label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
     
     NSArray* cells = [self.tableView visibleCells];
     

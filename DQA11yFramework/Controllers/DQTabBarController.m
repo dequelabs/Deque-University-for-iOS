@@ -56,11 +56,11 @@
     _colorSelected = [self colorWithHexString:ORANGE];
     _colorSelectedDarkened = [self colorWithHexString:ORANGE];
     _colorDimmed = [self colorWithHexString:BLUE];
-    _colorDimmedDarkened = [self colorWithHexString:ORANGE];
+    _colorDimmedDarkened = [self colorWithHexString:BLUE];
     _colorTabBar = [self colorWithHexString:LIGHT_BLUE];
     _colorTabBarDarkened = [self colorWithHexString:LIGHT_BLUE];
     _translucentDarkened = NO;
-    _translucentUndarkened = NO;
+    _translucentUndarkened = YES;
     
     [self observeDarkenColorsSetting];
 }

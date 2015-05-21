@@ -29,4 +29,7 @@
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]];
 }
 
+- (void)createOverlayView {
+}
+
 @end

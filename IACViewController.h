@@ -10,6 +10,16 @@
 #import "GAITrackedViewController.H"
 
 
-@interface IACViewController : GAITrackedViewController
+@interface IACViewController : GAITrackedViewController {
+    UIView* _overlayView;
+    UIButton* _overlayButton;
+}
+
+@property (readonly) UIView* overlayView;
+@property (readonly) UIButton* overlayButton;
+
+- (void) createOverlayView;
+- (void) changeObnoxiousOverlay;
+- (UIImage*) addImage;
 
 @end

@@ -10,6 +10,8 @@
 
 @implementation IACUtilities
 
+BOOL overlayOn = YES;
+
 +(UIColor*)colorWithHexString:(NSString*)hex {
     
     NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
