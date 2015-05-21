@@ -13,6 +13,6 @@
 #define DARK_BLUE @"021B3F"
 #define LIGHT_BLUE @"E0EDF9"
 #define BLUE @"093C8F"
-#define GREEN @"72BA32"
+#define GRAY @"E0E3E9"
 
 #endif

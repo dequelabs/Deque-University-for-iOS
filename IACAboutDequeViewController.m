@@ -13,6 +13,7 @@
 
 @interface IACAboutDequeViewController ()
 @property (weak, nonatomic) IBOutlet DQButton *buttonContactUs;
+@property UIColor* backgroundColorView;
 @end
 
 @implementation IACAboutDequeViewController
@@ -27,9 +28,6 @@
 
 - (void)loadDequeWebPage {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]];
-}
-
-- (void)createOverlayView {
 }
 
 @end

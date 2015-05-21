@@ -62,9 +62,8 @@
 		EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */; };
 		EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */; };
 		EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */; };
-		EE8F8ABC1B0CE2BC00B8601C /* IACNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8ABB1B0CE2BC00B8601C /* IACNavigationController.m */; };
 		EE8F8AC21B0CFFA300B8601C /* IACFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8AC11B0CFFA300B8601C /* IACFixedViewController.m */; };
-		EE8F8AC81B0D195500B8601C /* IACAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8AC71B0D195500B8601C /* IACAboutViewController.m */; };
+		EE8F8ACB1B0E472800B8601C /* IACAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8ACA1B0E472800B8601C /* IACAboutViewController.m */; };
 		EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */; };
 		EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */; };
 		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
@@ -184,12 +183,10 @@
 		EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FormsValidation.storyboard; path = iOSFormsDemo/FormsValidation.storyboard; sourceTree = "<group>"; };
 		EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
 		EE8F8AB61B0A813300B8601C /* IACConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACConstants.h; sourceTree = "<group>"; };
-		EE8F8ABA1B0CE2BC00B8601C /* IACNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACNavigationController.h; sourceTree = "<group>"; };
-		EE8F8ABB1B0CE2BC00B8601C /* IACNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACNavigationController.m; sourceTree = "<group>"; };
 		EE8F8AC01B0CFFA300B8601C /* IACFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFixedViewController.h; sourceTree = "<group>"; };
 		EE8F8AC11B0CFFA300B8601C /* IACFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFixedViewController.m; sourceTree = "<group>"; };
-		EE8F8AC61B0D195500B8601C /* IACAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACAboutViewController.h; sourceTree = "<group>"; };
-		EE8F8AC71B0D195500B8601C /* IACAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACAboutViewController.m; sourceTree = "<group>"; };
+		EE8F8AC91B0E472800B8601C /* IACAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACAboutViewController.h; sourceTree = "<group>"; };
+		EE8F8ACA1B0E472800B8601C /* IACAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACAboutViewController.m; sourceTree = "<group>"; };
 		EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
@@ -327,12 +324,10 @@
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
 				EE8F8AB61B0A813300B8601C /* IACConstants.h */,
-				EE8F8ABA1B0CE2BC00B8601C /* IACNavigationController.h */,
-				EE8F8ABB1B0CE2BC00B8601C /* IACNavigationController.m */,
-				EE8F8AC61B0D195500B8601C /* IACAboutViewController.h */,
-				EE8F8AC71B0D195500B8601C /* IACAboutViewController.m */,
 				0F76336B1ADDA428002D7243 /* IACViewController.h */,
 				0F76336C1ADDA428002D7243 /* IACViewController.m */,
+				EE8F8AC91B0E472800B8601C /* IACAboutViewController.h */,
+				EE8F8ACA1B0E472800B8601C /* IACAboutViewController.m */,
 				EE8F8AC01B0CFFA300B8601C /* IACFixedViewController.h */,
 				EE8F8AC11B0CFFA300B8601C /* IACFixedViewController.m */,
 				0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */,
@@ -657,13 +652,12 @@
 				0FE903D21AE7ED2400EC01F1 /* DQWrapperView.m in Sources */,
 				EE8F8A721B06844300B8601C /* IFVBrokenViewController.m in Sources */,
 				EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */,
-				EE8F8ABC1B0CE2BC00B8601C /* IACNavigationController.m in Sources */,
 				A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */,
 				0FE903CE1AE7ED2400EC01F1 /* DQButton.m in Sources */,
 				0FE903CD1AE7ED2400EC01F1 /* DQLog.m in Sources */,
 				0FE903CF1AE7ED2400EC01F1 /* DQLabel.m in Sources */,
 				0FE903D11AE7ED2400EC01F1 /* DQTextView.m in Sources */,
-				EE8F8AC81B0D195500B8601C /* IACAboutViewController.m in Sources */,
+				EE8F8ACB1B0E472800B8601C /* IACAboutViewController.m in Sources */,
 				A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */,
 				0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */,
 				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,

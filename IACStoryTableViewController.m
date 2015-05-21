@@ -7,7 +7,7 @@
 //
 
 #import "IACStoryTableViewController.h"
-#import "IACNavigationController.h"
+#import "IACViewController.h"
 #import "UIView+DQView.h"
 #import "IACConstants.h"
 #import "IACUtilities.h"
@@ -19,8 +19,6 @@
 #define STORY_IDENTIFIER @"StoryCell"
 #define OVERLAY_IMAGE_TAG 93
 #define OVERLAY_SWITCH_TAG 92
-#define INTRO_LABEL_TAG 100
-#define INTRO_IMAGE_TAG 99
 #define DEMO_TITLE_TAG 90
 #define STORY_LABEL_TAG 101
 #define STORY_IMAGE_TAG 110
@@ -29,6 +27,7 @@
     NSArray* _viewControllers;
     UIViewController* _introduction;
     UISwitch* overlaySwitch;
+    UIImageView* sightImage;
     
     //Color Scheme
     UIColor* _colorCellBackgroundDimmed;
@@ -48,7 +47,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   self.tableView.delegate = self;
+    //silencing constraint error
+    self.tableView.rowHeight = 44;
+    
+    self.tableView.delegate = self;
     self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
@@ -95,7 +97,16 @@
 
 - (void)viewWillAppear:(BOOL) animated {
     [super viewWillAppear:animated];
-    [self setState];
+    
+    //selecting introduction cell
+    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self setState:NO];
 }
 
 #pragma mark - Table view data source
@@ -121,18 +132,17 @@
     
     if(indexPath.section == 0) {
         cell = [tableView dequeueReusableCellWithIdentifier:OVERLAY_IDENTIFIER forIndexPath:indexPath];
-        self.sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
+        sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
         overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
-        [overlaySwitch addTarget:self action:@selector(changeState) forControlEvents:UIControlEventValueChanged];
+        [overlaySwitch addTarget:self action:@selector(observeSwitchState) forControlEvents:UIControlEventValueChanged];
         
     } else if(indexPath.section == 1) {
         cell = [tableView dequeueReusableCellWithIdentifier:INTRODUCTION_IDENTIFIER forIndexPath:indexPath];
-        label = (UILabel*)[cell viewWithTag:INTRO_LABEL_TAG];
-        image = (UIImageView*)[cell viewWithTag:INTRO_IMAGE_TAG];
+        label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
+        image = (UIImageView*)[cell viewWithTag:STORY_IMAGE_TAG];
         
         label.text = _introduction.title;
-        label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
         [image setImage:[UIImage imageNamed:label.text]];
         
     } else if(indexPath.section == 2) {
@@ -150,12 +160,11 @@
     
         UIViewController* viewController = [_viewControllers objectAtIndex:indexPath.row];
         label.text = viewController.title;
-        label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
         [image setImage:[UIImage imageNamed:label.text]];
     }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundDimmedDarkened : _colorCellBackgroundDimmed;
+    [self observeDarkenColorsSetting];
     
     return cell;
 }
@@ -177,24 +186,18 @@
     }
 }
 
--(void)setState {
-    if(overlayOn) {
-        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_unsighted"]];
-        [overlaySwitch setOn:YES animated:YES];
-    } else {
-        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_sighted"]];
-        [overlaySwitch setOn:NO animated:YES];
-    }
+-(void)observeSwitchState {
+    [self setState:overlaySwitch.on];
 }
 
--(void)changeState {
-    if(overlaySwitch.on) {
-        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_unsighted"]];
-        overlayOn = YES;
-    } else {
-        [self.sightImage setImage:[UIImage imageNamed:@"DequeU_app_icon_sighted"]];
-        overlayOn = NO;
-    }
+-(void)toggleState {
+    [self setState:!overlaySwitch.on];
+}
+
+-(void)setState:(BOOL)value {
+    overlaySwitch.on = value;
+    [sightImage setImage:[IACViewController getSightedIcon:value]];
+    [IACViewController setOverlayOn:value];
 }
 
 -(void)observeDarkenColorsSetting  {

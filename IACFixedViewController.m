@@ -8,7 +8,7 @@
 
 #import "IACFixedViewController.h"
 #import "IACUtilities.h"
-#import "IACConstants.h"
+#import "DQConstants.h"
 
 @interface IACFixedViewController ()
 
@@ -21,14 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
+    self.backgroundColorView = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_GREEN];
     self.view.backgroundColor = self.backgroundColorView;
-}
-
-- (void)createOverlayView {
-    [super createOverlayView];
-    
-    _overlayView.backgroundColor = [IACUtilities colorWithHexString:GREEN];
 }
 
 @end
