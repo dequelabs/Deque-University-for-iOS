@@ -17,11 +17,13 @@
 #define INTRODUCTION_IDENTIFIER @"Introduction"
 #define DEMO_TITLE_IDENTIFIER @"Demos"
 #define STORY_IDENTIFIER @"StoryCell"
+
 #define OVERLAY_IMAGE_TAG 93
 #define OVERLAY_SWITCH_TAG 92
 #define DEMO_TITLE_TAG 90
 #define STORY_LABEL_TAG 101
 #define STORY_IMAGE_TAG 110
+
 #define OVERLAY_SECTION_NUM 0
 #define INTRODUCTION_SECTION_NUM 1
 #define DEMONSTRATIONS_SECTION_NUM 2
@@ -224,8 +226,8 @@
     
     DARKEN_COLORS = UIAccessibilityDarkerSystemColorsEnabled();
     self.tableView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
-    self.logoView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened: _colorMenuBackground;
-    self.label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
+    self.wrapperView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
+    self.logoView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
     
     NSArray* cells = [self.tableView visibleCells];
     
