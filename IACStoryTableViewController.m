@@ -170,6 +170,10 @@
         label.text = _introduction.title;
         [image setImage:[UIImage imageNamed:label.text]];
         
+        //setting accessibility label
+        NSString* accessibilityLabel = [label.text stringByAppendingString: @"Tab, 1 of 1"];
+        [cell setAccessibilityLabel:accessibilityLabel];
+        
     } else if(indexPath.section == DEMONSTRATIONS_SECTION_NUM) {
         
         cell = [tableView dequeueReusableCellWithIdentifier:DEMO_TITLE_IDENTIFIER forIndexPath:indexPath];
@@ -188,11 +192,12 @@
         label.text = viewController.title;
         [image setImage:[UIImage imageNamed:label.text]];
         
-        //setting accessibility hint
-        NSMutableString* accessibilityHint = [NSMutableString stringWithFormat:@"Demonstrations, Tab %d of", indexPath.row + 1];
-        [accessibilityHint appendString:[NSString stringWithFormat:@"%d", [_viewControllers count]]];
+        //setting accessibility label
+        NSString* demoTab = [NSString stringWithFormat:@", Demonstrations Tab, %d of", indexPath.row + 1];
+        NSString* accessibilityLabel = [label.text stringByAppendingString:demoTab];
+        accessibilityLabel = [accessibilityLabel stringByAppendingString:[NSString stringWithFormat:@"%d", [_viewControllers count]]];
         
-        [cell setAccessibilityHint:accessibilityHint];
+        [cell setAccessibilityLabel:accessibilityLabel];
         
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
