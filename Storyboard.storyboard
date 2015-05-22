@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H12-em-6pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H12-em-6pk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -34,9 +34,9 @@
                                         </mask>
                                     </variation>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deque University for iOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57r-ij-soY">
-                                    <rect key="frame" x="203" y="70" width="194" height="26"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deque University for iOS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57r-ij-soY" customClass="DQLabel">
+                                    <rect key="frame" x="209" y="70" width="183" height="26"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -80,7 +80,7 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="91" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overlay" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-Av-H8w">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="91" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overlay" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-Av-H8w" customClass="DQLabel">
                                             <rect key="frame" x="45" y="12" width="56" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="7b1-a5-Fr1"/>
@@ -108,7 +108,7 @@
                                         <constraint firstAttribute="centerY" secondItem="yk2-V4-DhZ" secondAttribute="centerY" id="ASl-sl-nWY"/>
                                         <constraint firstAttribute="centerY" secondItem="idZ-fY-fNf" secondAttribute="centerY" id="Ano-yi-226"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="yk2-V4-DhZ" secondAttribute="trailing" id="MrT-n2-na9"/>
-                                        <constraint firstAttribute="centerY" secondItem="eLz-Av-H8w" secondAttribute="centerY" constant="-0.5" id="SbU-HM-UBQ"/>
+                                        <constraint firstAttribute="centerY" secondItem="eLz-Av-H8w" secondAttribute="centerY" id="SbU-HM-UBQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration">
@@ -128,7 +128,7 @@
                                                 <constraint firstAttribute="height" constant="27" id="jYI-3m-oX4"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9G-o4-IIN">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9G-o4-IIN" customClass="DQLabel">
                                             <rect key="frame" x="45" y="12" width="547" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="ZX5-fe-T71"/>
@@ -175,7 +175,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7OC-Ni-nnN" id="Glf-wD-tYS">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="90" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwM-lI-DfH">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="90" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwM-lI-DfH" customClass="DQLabel">
                                             <rect key="frame" x="8" y="11" width="584" height="21"/>
                                             <accessibility key="accessibilityConfiguration" hint="" label="Demonstrations, heading">
                                                 <bool key="isElement" value="YES"/>
@@ -207,7 +207,7 @@
                                                 <constraint firstAttribute="height" constant="27" id="v9V-mY-WmK"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcA-cV-69c">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcA-cV-69c" customClass="DQLabel">
                                             <rect key="frame" x="45" y="12" width="547" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="rOX-jb-luR"/>
@@ -2452,8 +2452,8 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-ds-ILu" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="1836" height="83"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-ds-ILu" customClass="DQLabel">
+                                                <rect key="frame" x="20" y="35" width="560" height="83"/>
                                                 <string key="text">Finally, in order to keep the heading below from disappearing we need to do one of two things.  Either make our UITextViews scrollable, or place everything in a scroll view.  Placing everything in a scroll view is the solution we decided to use in this scene.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
