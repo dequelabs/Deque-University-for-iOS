@@ -92,11 +92,6 @@
                                              selector:@selector(observeDarkenColorsSetting)
                                                  name:UIAccessibilityDarkerSystemColorsStatusDidChangeNotification
                                                object:nil];
-    [self observeDarkenColorsSetting];
-}
-
-- (void)viewWillAppear:(BOOL) animated {
-    [super viewWillAppear:animated];
     
     //selecting introduction cell
     NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
@@ -107,6 +102,7 @@
     [super viewDidAppear:animated];
     
     [self setState:NO];
+    [self observeDarkenColorsSetting];
 }
 
 #pragma mark - Table view data source
@@ -162,9 +158,7 @@
         label.text = viewController.title;
         [image setImage:[UIImage imageNamed:label.text]];
     }
-    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [self observeDarkenColorsSetting];
     
     return cell;
 }
