@@ -17,12 +17,15 @@
 #define INTRODUCTION_IDENTIFIER @"Introduction"
 #define DEMO_TITLE_IDENTIFIER @"Demos"
 #define STORY_IDENTIFIER @"StoryCell"
-#define OVERLAY_BACKGROUND 111
 #define OVERLAY_IMAGE_TAG 93
 #define OVERLAY_SWITCH_TAG 92
 #define DEMO_TITLE_TAG 90
 #define STORY_LABEL_TAG 101
 #define STORY_IMAGE_TAG 110
+#define OVERLAY_SECTION_NUM 0
+#define INTRODUCTION_SECTION_NUM 1
+#define DEMONSTRATIONS_SECTION_NUM 2
+#define LIST_OF_DEMOS_SECTION_NUM 3
 
 @implementation IACStoryTableViewController {
     NSArray* _viewControllers;
@@ -113,10 +116,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if(section == 3) {
+    
+    if(section == LIST_OF_DEMOS_SECTION_NUM) {
         return _viewControllers.count;
     } else {
         return 1;
+    }
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if(indexPath.section == OVERLAY_SECTION_NUM) {
+
+        [self toggleState];
+        
+        return nil;
+        
+    } else if (indexPath.section == DEMONSTRATIONS_SECTION_NUM) {
+        return nil;
+        
+    } else {
+        return indexPath;
     }
 }
 
@@ -127,14 +147,17 @@
     UIImageView* image;
     DARKEN_COLORS = UIAccessibilityDarkerSystemColorsEnabled();
     
-    if(indexPath.section == 0) {
+    if(indexPath.section == OVERLAY_SECTION_NUM) {
+        
         cell = [tableView dequeueReusableCellWithIdentifier:OVERLAY_IDENTIFIER forIndexPath:indexPath];
         sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
         overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
         [overlaySwitch addTarget:self action:@selector(observeSwitchState) forControlEvents:UIControlEventValueChanged];
+        [cell setAccessibilityHint:NSLocalizedString(@"TOGGLE_SETTING_HINT", nil)];
         
-    } else if(indexPath.section == 1) {
+    } else if(indexPath.section == INTRODUCTION_SECTION_NUM) {
+        
         cell = [tableView dequeueReusableCellWithIdentifier:INTRODUCTION_IDENTIFIER forIndexPath:indexPath];
         label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
         image = (UIImageView*)[cell viewWithTag:STORY_IMAGE_TAG];
@@ -142,7 +165,7 @@
         label.text = _introduction.title;
         [image setImage:[UIImage imageNamed:label.text]];
         
-    } else if(indexPath.section == 2) {
+    } else if(indexPath.section == DEMONSTRATIONS_SECTION_NUM) {
         
         cell = [tableView dequeueReusableCellWithIdentifier:DEMO_TITLE_IDENTIFIER forIndexPath:indexPath];
         label = (UILabel*)[cell viewWithTag:DEMO_TITLE_TAG];
@@ -150,6 +173,7 @@
         label.text = NSLocalizedString(@"DEMOS", nil);
 
     } else {
+        
         cell = [tableView dequeueReusableCellWithIdentifier:STORY_IDENTIFIER forIndexPath:indexPath];
     
         label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
@@ -166,13 +190,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if(indexPath.section == 1) {
-        
+    if(indexPath.section == INTRODUCTION_SECTION_NUM) {
+    
         UIViewController* viewController = _introduction;
         [self.splitViewController showDetailViewController:viewController sender:nil];
         [self observeDarkenColorsSetting];
-        
-    } else if(indexPath.section == 3) {
+
+    } else if(indexPath.section == LIST_OF_DEMOS_SECTION_NUM) {
         
         UIViewController* viewController = [_viewControllers objectAtIndex:indexPath.row];
         [self.splitViewController showDetailViewController:viewController sender:nil];
@@ -187,6 +211,7 @@
 
 -(void)toggleState {
     [self setState:!overlaySwitch.on];
+    
 }
 
 -(void)setState:(BOOL)value {
@@ -206,17 +231,14 @@
     
     for(UITableViewCell* cell in cells) {
         UILabel* label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
-        UIView* view = (UIView*)[cell viewWithTag:OVERLAY_BACKGROUND];
         
         if(cell.isSelected) {
             cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundSelectedDarkened : _colorCellBackgroundSelected;
             label.textColor = DARKEN_COLORS ? _colorCellTextSelectedDarkened : _colorCellTextSelected;
-            view.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundSelectedDarkened : _colorCellBackgroundSelected;
             
         } else {
             cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundDimmedDarkened : _colorCellBackgroundDimmed;
             label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
-            view.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundDimmedDarkened : _colorCellBackgroundDimmed;
         }
     }
 }

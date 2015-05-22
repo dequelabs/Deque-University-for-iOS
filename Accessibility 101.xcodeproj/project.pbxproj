@@ -69,6 +69,7 @@
 		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
 		EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */; };
 		EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */; };
+		EEB558F21B0F9456002FBE67 /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +194,8 @@
 		EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController_test.m; sourceTree = "<group>"; };
 		EE99B0C11B03A63600D5774F /* DEQAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEQAsserts.h; sourceTree = "<group>"; };
+		EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTableViewCell.h; sourceTree = "<group>"; };
+		EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTableViewCell.m; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +324,8 @@
 			isa = PBXGroup;
 			children = (
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
+				EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */,
+				EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
 				EE8F8AB61B0A813300B8601C /* IACConstants.h */,
@@ -647,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE8F8A061B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m in Sources */,
+				EEB558F21B0F9456002FBE67 /* IACTableViewCell.m in Sources */,
 				0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */,
 				A9D013CF18A2DD4700DC6496 /* main.m in Sources */,
 				0FE903D21AE7ED2400EC01F1 /* DQWrapperView.m in Sources */,
