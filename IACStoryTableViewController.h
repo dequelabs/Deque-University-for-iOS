@@ -11,6 +11,6 @@
 @interface IACStoryTableViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UIView* logoView;
-@property (weak, nonatomic) IBOutlet UILabel* label;
+@property (weak, nonatomic) IBOutlet UIView* wrapperView;
 
 @end
