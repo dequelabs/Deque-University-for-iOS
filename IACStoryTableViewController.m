@@ -17,6 +17,7 @@
 #define INTRODUCTION_IDENTIFIER @"Introduction"
 #define DEMO_TITLE_IDENTIFIER @"Demos"
 #define STORY_IDENTIFIER @"StoryCell"
+#define OVERLAY_BACKGROUND 111
 #define OVERLAY_IMAGE_TAG 93
 #define OVERLAY_SWITCH_TAG 92
 #define DEMO_TITLE_TAG 90
@@ -205,13 +206,17 @@
     
     for(UITableViewCell* cell in cells) {
         UILabel* label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
+        UIView* view = (UIView*)[cell viewWithTag:OVERLAY_BACKGROUND];
         
         if(cell.isSelected) {
             cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundSelectedDarkened : _colorCellBackgroundSelected;
             label.textColor = DARKEN_COLORS ? _colorCellTextSelectedDarkened : _colorCellTextSelected;
+            view.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundSelectedDarkened : _colorCellBackgroundSelected;
+            
         } else {
             cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundDimmedDarkened : _colorCellBackgroundDimmed;
             label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
+            view.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundDimmedDarkened : _colorCellBackgroundDimmed;
         }
     }
 }

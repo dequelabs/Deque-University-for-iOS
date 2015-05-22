@@ -36,7 +36,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXl-k4-q76" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="138" width="570" height="188"/>
-                                                <mutableString key="text">In this demo we will take you through some advanced native iOS Accessibility topics.  We demo these concepts by creating an accessible and inaccessible version of a basic form.  Forms are essential to many basic applications, and introduce a simple form of dynamic content that needs careful consideration to maintain accessibility.  The broken and fixed demonstration illustrates some common issues with native iOS applications.  It does not cover every type of accessibility barrier or accessibility requirement.  Below is a list of some of the accessibility barriers and repairs that you can find between the broken and fixed versions.  See if you can find others that are not listed here!</mutableString>
+                                                <string key="text">In this demo we will take you through some advanced native iOS Accessibility topics.  We demo these concepts by creating an accessible and inaccessible version of a basic form.  Forms are essential to many basic applications, and introduce a simple form of dynamic content that needs careful consideration to maintain accessibility.  The broken and fixed demonstration illustrates some common issues with native iOS applications.  It does not cover every type of accessibility barrier or accessibility requirement.  Below is a list of some of the accessibility barriers and repairs that you can find between the broken and fixed versions.  See if you can find others that are not listed here!</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -469,8 +469,8 @@
                                             <mask key="constraints">
                                                 <exclude reference="XKc-4y-yzj"/>
                                                 <exclude reference="F7k-IL-McN"/>
-                                                <exclude reference="NMZ-t7-uGF"/>
                                                 <exclude reference="Ite-fI-QfD"/>
+                                                <exclude reference="NMZ-t7-uGF"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -760,7 +760,7 @@
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
                                                 </accessibility>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
                                                     <action selector="submitButton:" destination="ZLH-R6-JBm" eventType="touchUpInside" id="9MX-ma-8If"/>
