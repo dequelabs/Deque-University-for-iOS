@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACViewController.h"
-@interface IACAboutDequeViewController : IACViewController
+#import "IACAboutViewController.h"
+@interface IACAboutDequeViewController : IACAboutViewController
 
 @end

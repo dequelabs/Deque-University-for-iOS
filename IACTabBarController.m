@@ -7,6 +7,8 @@
 //
 
 #import "IACTabBarController.h"
+#import "IACUtilities.h"
+#import "IACConstants.h"
 
 @interface IACTabBarController ()<UITabBarControllerDelegate>
 
@@ -20,7 +22,7 @@
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    
+ 
     UINavigationItem* navigationItem = [self.navigationController.navigationBar.items objectAtIndex:1];
     
     navigationItem.title = viewController.title;

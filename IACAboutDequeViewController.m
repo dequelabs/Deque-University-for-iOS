@@ -13,6 +13,7 @@
 
 @interface IACAboutDequeViewController ()
 @property (weak, nonatomic) IBOutlet DQButton *buttonContactUs;
+@property UIColor* backgroundColorView;
 @end
 
 @implementation IACAboutDequeViewController

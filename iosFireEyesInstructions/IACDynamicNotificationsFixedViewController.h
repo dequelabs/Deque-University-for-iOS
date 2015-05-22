@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACViewController.h"
+#import "IACFixedViewController.h"
 
-@interface IACDynamicNotificationsFixedViewController : IACViewController {
+@interface IACDynamicNotificationsFixedViewController : IACFixedViewController {
     IBOutlet UITextField* _textField;
     NSMutableArray* _contactList;
 }
