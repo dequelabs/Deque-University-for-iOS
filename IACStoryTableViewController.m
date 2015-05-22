@@ -155,7 +155,10 @@
         sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
         overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
+        //creating overlaySwitch
         [overlaySwitch addTarget:self action:@selector(observeSwitchState) forControlEvents:UIControlEventValueChanged];
+        
+        //setting accessibility hint
         [cell setAccessibilityHint:NSLocalizedString(@"TOGGLE_SETTING_HINT", nil)];
         
     } else if(indexPath.section == INTRODUCTION_SECTION_NUM) {
@@ -184,6 +187,13 @@
         UIViewController* viewController = [_viewControllers objectAtIndex:indexPath.row];
         label.text = viewController.title;
         [image setImage:[UIImage imageNamed:label.text]];
+        
+        //setting accessibility hint
+        NSMutableString* accessibilityHint = [NSMutableString stringWithFormat:@"Demonstrations, Tab %d of", indexPath.row + 1];
+        [accessibilityHint appendString:[NSString stringWithFormat:@"%d", [_viewControllers count]]];
+        
+        [cell setAccessibilityHint:accessibilityHint];
+        
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
