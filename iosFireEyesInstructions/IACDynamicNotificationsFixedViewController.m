@@ -43,9 +43,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(textChanged)
                                                  name:UITextFieldTextDidChangeNotification object:nil];
-    
-    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
-    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (NSString*)clearList {

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IACFixedViewController.h"
+#import "DQButton.h"
 
 @interface IFVFixedViewController : IACFixedViewController <UITextFieldDelegate>
 
@@ -28,7 +29,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
 
-@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (weak, nonatomic) IBOutlet DQButton *submitButton;
 
 - (IBAction)submitButton:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
