@@ -38,9 +38,6 @@
     [_emailField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapeEmailView)]];
     [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
-    
-    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
-    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (IBAction)submitButton:(id)sender {
