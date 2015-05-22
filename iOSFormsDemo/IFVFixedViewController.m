@@ -16,17 +16,17 @@
 
 @property UIColor* backgroundColorView;
 
+
 @end
 
 @implementation IFVFixedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [_submitButton setShadowed:YES];
     _dateField.delegate = self;
     _nameField.delegate = self;
     _emailField.delegate = self;
-    
     _dateField.accessibilityHint = [NSString stringWithFormat:@"%@ %@",
                                      NSLocalizedString(@"DATE_FORMAT_A11Y", nil),
                                      NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
