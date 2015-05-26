@@ -1,4 +1,4 @@
 language: objective-c
 script:
-  - xcodebuild -project Accessibility\ 101.xcodeproj -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | grep -e BUILD -e *error:*
-  - xctool test -project Accessibility\ 101.xcodeproj -scheme Accessibility\ 101 -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
+   - xcodebuild -project Accessibility\ 101.xcodeproj -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | grep -e BUILD -e *error:*
+   - xctool test -project Accessibility\ 101.xcodeproj -scheme Accessibility\ 101 -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
