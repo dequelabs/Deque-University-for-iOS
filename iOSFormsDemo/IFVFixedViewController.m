@@ -16,17 +16,17 @@
 
 @property UIColor* backgroundColorView;
 
+
 @end
 
 @implementation IFVFixedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [_submitButton setShadowed:YES];
     _dateField.delegate = self;
     _nameField.delegate = self;
     _emailField.delegate = self;
-    
     _dateField.accessibilityHint = [NSString stringWithFormat:@"%@ %@",
                                      NSLocalizedString(@"DATE_FORMAT_A11Y", nil),
                                      NSLocalizedString(@"VALIDATION_ERROR_MISSING", nil)];
@@ -38,9 +38,6 @@
     [_emailField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapeEmailView)]];
     [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
-    
-    self.backgroundColorView = [IACUtilities colorWithHexString:GREEN];
-    self.view.backgroundColor = self.backgroundColorView;
 }
 
 - (IBAction)submitButton:(id)sender {
