@@ -32,6 +32,8 @@
 		0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */; };
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
+		2BCEC1C71B14E2B200EA5605 /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C61B14E2B200EA5605 /* UIColor+DQColor.m */; };
+		2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */; };
 		A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */; };
 		A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */; };
 		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
@@ -135,6 +137,9 @@
 		0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStoryTableViewController.m; sourceTree = "<group>"; };
 		0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACSplitViewController.h; sourceTree = "<group>"; };
 		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
+		2BCEC1C51B14E2B200EA5605 /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
+		2BCEC1C61B14E2B200EA5605 /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
+		2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewControllerTests.m; sourceTree = "<group>"; };
 		A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
 		A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
 		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
@@ -268,6 +273,8 @@
 			children = (
 				0FE903B21AE7ED2400EC01F1 /* UIFont+DQFont.h */,
 				0FE903B31AE7ED2400EC01F1 /* UIFont+DQFont.m */,
+				2BCEC1C51B14E2B200EA5605 /* UIColor+DQColor.h */,
+				2BCEC1C61B14E2B200EA5605 /* UIColor+DQColor.m */,
 				0FE903B41AE7ED2400EC01F1 /* UIView+DQView.h */,
 				0FE903B51AE7ED2400EC01F1 /* UIView+DQView.m */,
 			);
@@ -491,6 +498,7 @@
 			isa = PBXGroup;
 			children = (
 				EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */,
+				2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */,
 			);
 			name = "Form Validation";
 			sourceTree = "<group>";
@@ -670,6 +678,7 @@
 				0FE903CC1AE7ED2400EC01F1 /* DQViewController.m in Sources */,
 				EE8F8A6B1B06844300B8601C /* CustomIOS7AlertView.m in Sources */,
 				EE8F8A681B06844300B8601C /* AppDelegate.m in Sources */,
+				2BCEC1C71B14E2B200EA5605 /* UIColor+DQColor.m in Sources */,
 				0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */,
 				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
 				A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */,
@@ -699,6 +708,7 @@
 				EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */,
 				EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */,
 				EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
+				2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */,
 				EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
 				EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */,
 			);
