@@ -1,1 +1,4 @@
 language: objective-c
+script:
+	-xctool -project Accessibility 101.xcodeproj -target 8.2 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+	-xctool test -project Accessibility 101.xcodeproj -target 8.2 -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
