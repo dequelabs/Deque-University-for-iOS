@@ -76,6 +76,9 @@
     UIStoryboard* form = [UIStoryboard storyboardWithName:@"FormsValidation" bundle:nil];
     [tempArray addObject:[form instantiateViewControllerWithIdentifier:@"FormsValidation"]];
     
+    UIStoryboard* modal = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
+    [tempArray addObject:[modal instantiateViewControllerWithIdentifier:@"ModalDialog"]];
+    
     _viewControllers = [NSArray arrayWithArray:tempArray];
     
     //color scheme

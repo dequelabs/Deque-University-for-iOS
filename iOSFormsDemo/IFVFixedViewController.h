@@ -27,13 +27,10 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *dequeLogo;
 
-@property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
-
 @property (weak, nonatomic) IBOutlet DQButton *submitButton;
 
 - (IBAction)submitButton:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
-- (IBAction)information:(id)sender;
 
 @end
 

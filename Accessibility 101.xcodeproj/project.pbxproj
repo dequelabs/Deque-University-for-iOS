@@ -70,6 +70,9 @@
 		EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */; };
 		EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */; };
 		EEB558F21B0F9456002FBE67 /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */; };
+		EEB558F51B150324002FBE67 /* ModalDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB558F41B150324002FBE67 /* ModalDialog.storyboard */; };
+		EECB13C71B150D4B00809C96 /* IACModalDialogBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */; };
+		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -175,8 +178,8 @@
 		EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
 		EE8F8A481B06844300B8601C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOSFormsDemo/AppDelegate.h; sourceTree = "<group>"; };
 		EE8F8A491B06844300B8601C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOSFormsDemo/AppDelegate.m; sourceTree = "<group>"; };
-		EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomIOS7AlertView.h; path = iOSFormsDemo/CustomIOS7AlertView.h; sourceTree = "<group>"; };
-		EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomIOS7AlertView.m; path = iOSFormsDemo/CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomIOS7AlertView.h; path = ../iOSFormsDemo/CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomIOS7AlertView.m; path = ../iOSFormsDemo/CustomIOS7AlertView.m; sourceTree = "<group>"; };
 		EE8F8A5C1B06844300B8601C /* IFVBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVBrokenViewController.h; path = iOSFormsDemo/IFVBrokenViewController.h; sourceTree = "<group>"; };
 		EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFVBrokenViewController.m; path = iOSFormsDemo/IFVBrokenViewController.m; sourceTree = "<group>"; };
 		EE8F8A5E1B06844300B8601C /* IFVFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVFixedViewController.h; path = iOSFormsDemo/IFVFixedViewController.h; sourceTree = "<group>"; };
@@ -196,6 +199,11 @@
 		EE99B0C11B03A63600D5774F /* DEQAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEQAsserts.h; sourceTree = "<group>"; };
 		EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTableViewCell.h; sourceTree = "<group>"; };
 		EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTableViewCell.m; sourceTree = "<group>"; };
+		EEB558F41B150324002FBE67 /* ModalDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalDialog.storyboard; sourceTree = "<group>"; };
+		EECB13C51B150D4B00809C96 /* IACModalDialogBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogBrokenViewController.h; sourceTree = "<group>"; };
+		EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController.m; sourceTree = "<group>"; };
+		EECB13C81B150E1100809C96 /* IACModalDialogFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogFixedViewController.h; sourceTree = "<group>"; };
+		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -349,6 +357,7 @@
 				A9C21AF8193E651B00F80821 /* Traits */,
 				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
 				EE8F8A461B06842A00B8601C /* Forms Validation */,
+				EEB558F31B1502F1002FBE67 /* Modal Dialog */,
 				0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 			);
@@ -477,8 +486,6 @@
 				EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */,
 				EE8F8A481B06844300B8601C /* AppDelegate.h */,
 				EE8F8A491B06844300B8601C /* AppDelegate.m */,
-				EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */,
-				EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */,
 				EE8F8A5C1B06844300B8601C /* IFVBrokenViewController.h */,
 				EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */,
 				EE8F8A5E1B06844300B8601C /* IFVFixedViewController.h */,
@@ -529,6 +536,21 @@
 				EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */,
 			);
 			name = "Dynamic Notifications";
+			sourceTree = "<group>";
+		};
+		EEB558F31B1502F1002FBE67 /* Modal Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				EEB558F41B150324002FBE67 /* ModalDialog.storyboard */,
+				EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */,
+				EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */,
+				EECB13C51B150D4B00809C96 /* IACModalDialogBrokenViewController.h */,
+				EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */,
+				EECB13C81B150E1100809C96 /* IACModalDialogFixedViewController.h */,
+				EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */,
+			);
+			name = "Modal Dialog";
+			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
 		};
 		EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */ = {
@@ -627,6 +649,7 @@
 			files = (
 				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
+				EEB558F51B150324002FBE67 /* ModalDialog.storyboard in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
 				EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */,
 				0F2188471940FC0C007E68CD /* Localizable.strings in Resources */,
@@ -656,6 +679,7 @@
 				0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */,
 				A9D013CF18A2DD4700DC6496 /* main.m in Sources */,
 				0FE903D21AE7ED2400EC01F1 /* DQWrapperView.m in Sources */,
+				EECB13C71B150D4B00809C96 /* IACModalDialogBrokenViewController.m in Sources */,
 				EE8F8A721B06844300B8601C /* IFVBrokenViewController.m in Sources */,
 				EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */,
 				A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */,
@@ -665,6 +689,7 @@
 				0FE903D11AE7ED2400EC01F1 /* DQTextView.m in Sources */,
 				EE8F8ACB1B0E472800B8601C /* IACAboutViewController.m in Sources */,
 				A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */,
+				EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */,
 				0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */,
 				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,
 				0FE903CC1AE7ED2400EC01F1 /* DQViewController.m in Sources */,
