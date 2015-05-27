@@ -181,7 +181,7 @@
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Demos" id="7OC-Ni-nnN">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BasicDemos" id="7OC-Ni-nnN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7OC-Ni-nnN" id="Glf-wD-tYS">
@@ -189,7 +189,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="90" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwM-lI-DfH" customClass="DQLabel">
                                             <rect key="frame" x="8" y="11" width="584" height="21"/>
-                                            <accessibility key="accessibilityConfiguration" hint="" label="Demonstrations, heading">
+                                            <accessibility key="accessibilityConfiguration" hint="" label="">
                                                 <bool key="isElement" value="YES"/>
                                             </accessibility>
                                             <constraints>
@@ -207,7 +207,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="StoryCell" id="NYb-7y-lIS">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="BasicStoryCell" id="NYb-7y-lIS">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NYb-7y-lIS" id="WGN-zG-IBv">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -269,6 +269,61 @@
                                 <accessibility key="accessibilityConfiguration" hint="">
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AdvDemos" id="A28-rZ-XaK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A28-rZ-XaK" id="2tz-MG-gvi">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="90" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opv-gy-PcM" customClass="DQLabel">
+                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <accessibility key="accessibilityConfiguration" label="">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="mh0-dU-iJ6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Opv-gy-PcM" secondAttribute="trailing" id="MVa-Lh-iOg"/>
+                                        <constraint firstItem="Opv-gy-PcM" firstAttribute="leading" secondItem="2tz-MG-gvi" secondAttribute="leadingMargin" id="OI4-9u-S8f"/>
+                                        <constraint firstAttribute="centerY" secondItem="Opv-gy-PcM" secondAttribute="centerY" id="kU8-WQ-C1v"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdvStoryCell" id="MvT-wi-S1U">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MvT-wi-S1U" id="K4v-2f-2Cy">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8A-Fi-Hem" customClass="DQLabel">
+                                            <rect key="frame" x="45" y="12" width="547" height="20"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-3z-cnJ">
+                                            <rect key="frame" x="8" y="8" width="27" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Sxh-3z-cnJ" secondAttribute="height" multiplier="1:1" id="Z0u-Bo-Urd"/>
+                                                <constraint firstAttribute="height" constant="27" id="f3V-Rh-k4D"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="f8A-Fi-Hem" firstAttribute="leading" secondItem="Sxh-3z-cnJ" secondAttribute="trailing" constant="10" id="2vR-L8-0iU"/>
+                                        <constraint firstItem="Sxh-3z-cnJ" firstAttribute="leading" secondItem="K4v-2f-2Cy" secondAttribute="leadingMargin" id="8fh-Kk-MH4"/>
+                                        <constraint firstAttribute="centerY" secondItem="f8A-Fi-Hem" secondAttribute="centerY" id="R8r-b6-xp3"/>
+                                        <constraint firstAttribute="centerY" secondItem="Sxh-3z-cnJ" secondAttribute="centerY" id="RCt-w3-tZ2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="f8A-Fi-Hem" secondAttribute="trailing" id="ZG9-qa-PMM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
