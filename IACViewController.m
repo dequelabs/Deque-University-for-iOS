@@ -10,6 +10,7 @@
 #import "UIView+DQView.h"
 #import "IACUtilities.h"
 #import "IACConstants.h"
+#import "DQLabel.h"
 
 #define OVERLAY_IMAGE_NAME @"DequeU_logo"
 
@@ -39,9 +40,6 @@ static UIButton* _IACOverlayButton = NULL;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
- //   self.backgroundColor = [UIColor whiteColor];
- //   self.view.backgroundColor = self.backgroundColor;
     
     if (_IACOverlayButton == NULL) {
         _IACOverlayButton =  [UIButton buttonWithType:UIButtonTypeCustom];
@@ -94,15 +92,17 @@ static UIButton* _IACOverlayButton = NULL;
     _overlayImage.contentMode = UIViewContentModeScaleAspectFit;
     _overlayImage.translatesAutoresizingMaskIntoConstraints = NO;
     
-    UILabel* _titleLabel = [[UILabel alloc] init];
+    DQLabel* _titleLabel = [[DQLabel alloc] init];
+    _titleLabel.numberOfLines = 0;
     _titleLabel.text = @"Deque University for iOS";
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    _titleLabel.font = [UIFont systemFontOfSize:20.0 weight:bold];
+    _titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     
-    UILabel* _overlayNameLabel = [[UILabel alloc] init];
+    DQLabel* _overlayNameLabel = [[DQLabel alloc] init];
+    _overlayNameLabel.numberOfLines = 0;
     _overlayNameLabel.text = @"VoiceOver Simulation";
     _overlayNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    _overlayNameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    _overlayNameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
     
     [self.view addSubview:_overlayView];
     [_overlayView addSubview:_overlayImage];
