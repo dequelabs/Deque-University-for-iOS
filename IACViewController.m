@@ -8,7 +8,6 @@
 
 #import "IACViewController.h"
 #import "UIView+DQView.h"
-#import "DQConstants.h"
 #import "IACUtilities.h"
 #import "IACConstants.h"
 
@@ -32,7 +31,7 @@ static UIButton* _IACOverlayButton = NULL;
 
 @interface IACViewController ()
 
-@property UIColor* backgroundColorView;
+@property UIColor* backgroundColor;
 
 @end
 
@@ -40,9 +39,9 @@ static UIButton* _IACOverlayButton = NULL;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.backgroundColorView = [IACUtilities colorWithHexString:ORANGE];
-    self.view.backgroundColor = self.backgroundColorView;
+    
+ //   self.backgroundColor = [UIColor whiteColor];
+ //   self.view.backgroundColor = self.backgroundColor;
     
     if (_IACOverlayButton == NULL) {
         _IACOverlayButton =  [UIButton buttonWithType:UIButtonTypeCustom];

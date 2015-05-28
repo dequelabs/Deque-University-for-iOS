@@ -78,6 +78,13 @@
     UIStoryboard* modal = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
     [basicDemos addObject:[modal instantiateViewControllerWithIdentifier:@"ModalDialog"]];
     
+    //only load this story into the menu if user uses an iPad
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        UIStoryboard* colors = [UIStoryboard storyboardWithName:@"TopBarContrast" bundle:nil];
+        [basicDemos addObject:[colors instantiateViewControllerWithIdentifier:@"TopBarContrast"]];
+    }
+    
     _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
     _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];
     

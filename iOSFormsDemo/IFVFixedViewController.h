@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACFixedViewController.h"
+#import "IACViewController.h"
 #import "DQButton.h"
 
-@interface IFVFixedViewController : IACFixedViewController <UITextFieldDelegate>
+@interface IFVFixedViewController : IACViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

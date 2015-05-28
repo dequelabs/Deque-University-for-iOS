@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACFixedViewController.h"
+#import "IACViewController.h"
 
-@interface IACModalDialogFixedViewController : IACFixedViewController
+@interface IACModalDialogFixedViewController : IACViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
 

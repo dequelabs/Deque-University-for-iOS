@@ -62,8 +62,6 @@
 		EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */; };
 		EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */; };
 		EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */; };
-		EE8F8AC21B0CFFA300B8601C /* IACFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8AC11B0CFFA300B8601C /* IACFixedViewController.m */; };
-		EE8F8ACB1B0E472800B8601C /* IACAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8ACA1B0E472800B8601C /* IACAboutViewController.m */; };
 		EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */; };
 		EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */; };
 		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
@@ -73,6 +71,7 @@
 		EEB558F51B150324002FBE67 /* ModalDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB558F41B150324002FBE67 /* ModalDialog.storyboard */; };
 		EECB13C71B150D4B00809C96 /* IACModalDialogBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */; };
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
+		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -187,10 +186,6 @@
 		EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FormsValidation.storyboard; path = iOSFormsDemo/FormsValidation.storyboard; sourceTree = "<group>"; };
 		EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
 		EE8F8AB61B0A813300B8601C /* IACConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACConstants.h; sourceTree = "<group>"; };
-		EE8F8AC01B0CFFA300B8601C /* IACFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFixedViewController.h; sourceTree = "<group>"; };
-		EE8F8AC11B0CFFA300B8601C /* IACFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFixedViewController.m; sourceTree = "<group>"; };
-		EE8F8AC91B0E472800B8601C /* IACAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACAboutViewController.h; sourceTree = "<group>"; };
-		EE8F8ACA1B0E472800B8601C /* IACAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACAboutViewController.m; sourceTree = "<group>"; };
 		EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
@@ -204,6 +199,7 @@
 		EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController.m; sourceTree = "<group>"; };
 		EECB13C81B150E1100809C96 /* IACModalDialogFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogFixedViewController.h; sourceTree = "<group>"; };
 		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
+		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -337,10 +333,6 @@
 				EE8F8AB61B0A813300B8601C /* IACConstants.h */,
 				0F76336B1ADDA428002D7243 /* IACViewController.h */,
 				0F76336C1ADDA428002D7243 /* IACViewController.m */,
-				EE8F8AC91B0E472800B8601C /* IACAboutViewController.h */,
-				EE8F8ACA1B0E472800B8601C /* IACAboutViewController.m */,
-				EE8F8AC01B0CFFA300B8601C /* IACFixedViewController.h */,
-				EE8F8AC11B0CFFA300B8601C /* IACFixedViewController.m */,
 				0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */,
 				0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */,
 				EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */,
@@ -358,6 +350,7 @@
 				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
 				EE8F8A461B06842A00B8601C /* Forms Validation */,
 				EEB558F31B1502F1002FBE67 /* Modal Dialog */,
+				EECB13D61B176F3B00809C96 /* Top Bar Contrast */,
 				0FE903B01AE7ED2400EC01F1 /* DQA11yFramework */,
 				A9D013C918A2DD4700DC6496 /* Supporting Files */,
 			);
@@ -553,6 +546,15 @@
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
 		};
+		EECB13D61B176F3B00809C96 /* Top Bar Contrast */ = {
+			isa = PBXGroup;
+			children = (
+				EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */,
+			);
+			name = "Top Bar Contrast";
+			path = iosFireEyesInstructions;
+			sourceTree = "<group>";
+		};
 		EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -649,6 +651,7 @@
 			files = (
 				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
 				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
+				EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */,
 				EEB558F51B150324002FBE67 /* ModalDialog.storyboard in Resources */,
 				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
 				EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */,
@@ -687,7 +690,6 @@
 				0FE903CD1AE7ED2400EC01F1 /* DQLog.m in Sources */,
 				0FE903CF1AE7ED2400EC01F1 /* DQLabel.m in Sources */,
 				0FE903D11AE7ED2400EC01F1 /* DQTextView.m in Sources */,
-				EE8F8ACB1B0E472800B8601C /* IACAboutViewController.m in Sources */,
 				A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */,
 				EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */,
 				0FE903CB1AE7ED2400EC01F1 /* DQTabBarController.m in Sources */,
@@ -709,7 +711,6 @@
 				A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */,
 				A9AE2E0718AC022C00D33C6B /* IACHintFixedViewController.m in Sources */,
 				EE64E1E11AFA5CBD00D09B4D /* DQUtilities.m in Sources */,
-				EE8F8AC21B0CFFA300B8601C /* IACFixedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
