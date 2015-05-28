@@ -7,6 +7,121 @@
     </dependencies>
     <scenes>
         <!--Modal Dialog-->
+        <scene sceneID="uHB-eh-MlO">
+            <objects>
+                <viewController storyboardIdentifier="Modal Dialog" title="Modal Dialog" automaticallyAdjustsScrollViewInsets="NO" id="UZk-ba-3X8" customClass="IACAboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="meq-Jm-n4D"/>
+                        <viewControllerLayoutGuide type="bottom" id="l7o-4A-dBP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1V8-Ab-Q4g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdf-cZ-w0Q">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZx-Yp-k1J">
+                                        <rect key="frame" x="5" y="10" width="590" height="220"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-3h-EJ3">
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cLK-3h-EJ3" secondAttribute="height" multiplier="718:283" id="cFo-Ap-lbC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJi-EY-gm1" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="138" width="570" height="62"/>
+                                                <string key="text">Modal dialogs are "pop up" notifications that visually alert the user.  Examples include error messages and warnings as well as operations that require input (open dialogs or multiple windows).</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="XJi-EY-gm1" firstAttribute="leading" secondItem="lZx-Yp-k1J" secondAttribute="leading" constant="10" id="AkI-X7-L7b"/>
+                                            <constraint firstAttribute="centerX" secondItem="cLK-3h-EJ3" secondAttribute="centerX" id="HbX-r1-Ulu"/>
+                                            <constraint firstItem="XJi-EY-gm1" firstAttribute="top" secondItem="cLK-3h-EJ3" secondAttribute="bottom" constant="10" id="Jnt-6l-sLV"/>
+                                            <constraint firstAttribute="trailing" secondItem="XJi-EY-gm1" secondAttribute="trailing" constant="10" id="Ssq-Ow-n22"/>
+                                            <constraint firstAttribute="bottom" secondItem="XJi-EY-gm1" secondAttribute="bottom" constant="20" id="XMv-qZ-sB0"/>
+                                            <constraint firstItem="cLK-3h-EJ3" firstAttribute="top" secondItem="lZx-Yp-k1J" secondAttribute="top" constant="10" id="Yab-sG-pl1"/>
+                                            <constraint firstAttribute="bottom" secondItem="XJi-EY-gm1" secondAttribute="bottom" constant="20" id="b5o-Cr-wyh"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XMv-qZ-sB0"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-5P-T3f">
+                                        <rect key="frame" x="5" y="240" width="590" height="159"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility Issues" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-My-DpZ" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="10" width="570" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-O5-vwS" customClass="DQLabel">
+                                                <rect key="frame" x="20" y="35" width="560" height="104"/>
+                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TWr-O5-vwS" secondAttribute="bottom" constant="20" id="0ng-a1-F9P"/>
+                                            <constraint firstItem="Bv8-My-DpZ" firstAttribute="top" secondItem="oqk-5P-T3f" secondAttribute="top" constant="10" id="4hS-rR-Rik"/>
+                                            <constraint firstItem="TWr-O5-vwS" firstAttribute="top" secondItem="Bv8-My-DpZ" secondAttribute="bottom" constant="5" id="e3M-6n-Si5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lZx-Yp-k1J" firstAttribute="top" secondItem="zdf-cZ-w0Q" secondAttribute="top" constant="10" id="4Ll-E4-nXC"/>
+                                    <constraint firstItem="oqk-5P-T3f" firstAttribute="top" secondItem="lZx-Yp-k1J" secondAttribute="bottom" constant="10" id="5zG-PQ-dAo"/>
+                                    <constraint firstAttribute="bottom" secondItem="oqk-5P-T3f" secondAttribute="bottom" constant="10" id="HLp-Oa-FDW"/>
+                                    <constraint firstItem="lZx-Yp-k1J" firstAttribute="top" secondItem="zdf-cZ-w0Q" secondAttribute="top" constant="10" id="MAg-9c-HK1"/>
+                                    <constraint firstItem="XJi-EY-gm1" firstAttribute="trailing" secondItem="TWr-O5-vwS" secondAttribute="trailing" id="bsh-CK-NgU"/>
+                                    <constraint firstItem="Bv8-My-DpZ" firstAttribute="leading" secondItem="XJi-EY-gm1" secondAttribute="leading" id="hIj-jk-qcN"/>
+                                    <constraint firstAttribute="trailing" secondItem="lZx-Yp-k1J" secondAttribute="trailing" constant="5" id="jmM-P9-mME"/>
+                                    <constraint firstItem="Bv8-My-DpZ" firstAttribute="trailing" secondItem="XJi-EY-gm1" secondAttribute="trailing" id="kwv-CR-LAh"/>
+                                    <constraint firstItem="lZx-Yp-k1J" firstAttribute="leading" secondItem="zdf-cZ-w0Q" secondAttribute="leading" constant="5" id="n3H-2Z-5e5"/>
+                                    <constraint firstAttribute="bottom" secondItem="lZx-Yp-k1J" secondAttribute="bottom" constant="10" id="ofP-ax-Wzm"/>
+                                    <constraint firstItem="oqk-5P-T3f" firstAttribute="leading" secondItem="XJi-EY-gm1" secondAttribute="leading" constant="-7" id="qHI-8N-hwn"/>
+                                    <constraint firstItem="XJi-EY-gm1" firstAttribute="leading" secondItem="TWr-O5-vwS" secondAttribute="leading" constant="-10" id="sEc-Gp-e86"/>
+                                    <constraint firstAttribute="bottom" secondItem="lZx-Yp-k1J" secondAttribute="bottom" constant="10" id="sRF-ej-Bqr"/>
+                                    <constraint firstItem="oqk-5P-T3f" firstAttribute="trailing" secondItem="lZx-Yp-k1J" secondAttribute="trailing" id="sf0-uc-2u8"/>
+                                    <constraint firstItem="oqk-5P-T3f" firstAttribute="leading" secondItem="lZx-Yp-k1J" secondAttribute="leading" id="wL9-4a-ZI4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Ll-E4-nXC"/>
+                                        <exclude reference="ofP-ax-Wzm"/>
+                                        <exclude reference="sRF-ej-Bqr"/>
+                                        <exclude reference="qHI-8N-hwn"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="l7o-4A-dBP" firstAttribute="top" secondItem="zdf-cZ-w0Q" secondAttribute="bottom" id="M0O-iP-g4N"/>
+                            <constraint firstItem="zdf-cZ-w0Q" firstAttribute="top" secondItem="meq-Jm-n4D" secondAttribute="bottom" id="Uh2-dr-es9"/>
+                            <constraint firstItem="lZx-Yp-k1J" firstAttribute="width" secondItem="1V8-Ab-Q4g" secondAttribute="width" constant="-10" id="bcb-Mb-vwL"/>
+                            <constraint firstAttribute="width" secondItem="zdf-cZ-w0Q" secondAttribute="width" id="bw4-fF-AMk"/>
+                            <constraint firstAttribute="centerX" secondItem="zdf-cZ-w0Q" secondAttribute="centerX" id="gN4-AM-puR"/>
+                            <constraint firstItem="cLK-3h-EJ3" firstAttribute="width" secondItem="1V8-Ab-Q4g" secondAttribute="width" multiplier="0.5" id="y7q-ri-ZtB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="DequeU_app_icon_about" id="j4x-t0-kta"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNw-X3-nz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-77" y="472"/>
+        </scene>
+        <!--Modal Dialog-->
         <scene sceneID="wvt-zx-ZRV">
             <objects>
                 <viewController title="Modal Dialog" id="gV3-jh-lAw" customClass="IACModalDialogBrokenViewController" sceneMemberID="viewController">
@@ -50,7 +165,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-PT-7EY">
-                                                <rect key="frame" x="227" y="50" width="22" height="22"/>
+                                                <rect key="frame" x="192" y="50" width="22" height="22"/>
                                                 <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
                                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
                                                 </accessibility>
@@ -61,8 +176,8 @@
                                                     <action selector="information:" destination="gV3-jh-lAw" eventType="touchUpInside" id="J5m-wo-gJf"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-le-mMW" customClass="DQLabel">
-                                                <rect key="frame" x="254" y="50" width="83" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-le-mMW" customClass="DQLabel">
+                                                <rect key="frame" x="219" y="50" width="152" height="22"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="NO"/>
                                                 </accessibility>
@@ -141,7 +256,7 @@
         <!--Modal Dialog-->
         <scene sceneID="Rvq-GA-Mes">
             <objects>
-                <tabBarController storyboardIdentifier="ModalDialog" title="Modal Dialog" id="nmS-Gg-Umt" customClass="IACTabBarController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ModalDialog" title="Modal Dialog" automaticallyAdjustsScrollViewInsets="NO" id="nmS-Gg-Umt" customClass="IACTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="nG3-e1-ya8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -149,115 +264,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gBg-Ny-SvP" kind="relationship" relationship="viewControllers" id="bo9-f4-izm"/>
+                        <segue destination="UZk-ba-3X8" kind="relationship" relationship="viewControllers" id="Ara-bF-uoI"/>
                         <segue destination="gV3-jh-lAw" kind="relationship" relationship="viewControllers" id="T7v-1v-L4f"/>
                         <segue destination="v91-kg-Ngk" kind="relationship" relationship="viewControllers" id="qi8-oa-Ib2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Us2-Jv-6ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-713" y="472"/>
-        </scene>
-        <!--Modal Dialog-->
-        <scene sceneID="bNM-sf-hga">
-            <objects>
-                <viewController title="Modal Dialog" id="gBg-Ny-SvP" customClass="IACAboutViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4IJ-hT-sn8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lqf-Un-DmL"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="24Z-9V-cFZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-xw-nsN">
-                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdy-Mw-CzS">
-                                        <rect key="frame" x="5" y="10" width="590" height="262"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9sZ-2l-2Gd">
-                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
-                                                <accessibility key="accessibilityConfiguration" label="Logo, Deque Systems">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9sZ-2l-2Gd" secondAttribute="height" multiplier="718:283" id="dka-iu-Q7A"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqV-xo-yZf" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="138" width="570" height="104"/>
-                                                <string key="text">Modal dialogs are "pop up" notifications that visually alert the user.  VoiceOver, by default, does not make it obvious that elements have been added to the screen; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="HqV-xo-yZf" firstAttribute="leading" secondItem="Bdy-Mw-CzS" secondAttribute="leading" constant="10" id="2Df-tO-jVP"/>
-                                            <constraint firstItem="HqV-xo-yZf" firstAttribute="top" secondItem="9sZ-2l-2Gd" secondAttribute="bottom" constant="10" id="NbK-FB-BYz"/>
-                                            <constraint firstItem="9sZ-2l-2Gd" firstAttribute="top" secondItem="Bdy-Mw-CzS" secondAttribute="top" constant="10" id="Qd9-C2-K0t"/>
-                                            <constraint firstAttribute="bottom" secondItem="HqV-xo-yZf" secondAttribute="bottom" constant="20" id="ccD-OA-8fa"/>
-                                            <constraint firstAttribute="centerX" secondItem="9sZ-2l-2Gd" secondAttribute="centerX" id="eEV-sZ-EeY"/>
-                                            <constraint firstAttribute="trailing" secondItem="HqV-xo-yZf" secondAttribute="trailing" constant="10" id="pLd-ld-eAq"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLo-Oj-Ndj">
-                                        <rect key="frame" x="5" y="282" width="590" height="117"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why is it important?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq3-Gd-Zri" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="20"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-bG-w39" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="62"/>
-                                                <string key="text">jlkajdfklajfdklajfkldajfkdlafjdkalfjaklfjdkalfjdaklfjdkalfjdkalfjdaklfjdklfj  jkalfj dakl fajklsdf jsdlf ajsdklf sdjfkl sdfjkladsf jksdf jksdlf jkslfj klsdfj sjkldsfjklsfj klj klsdj klsfdj kl</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="RZI-bG-w39" firstAttribute="top" secondItem="Lq3-Gd-Zri" secondAttribute="bottom" constant="5" id="A4G-OA-5p1"/>
-                                            <constraint firstAttribute="bottom" secondItem="RZI-bG-w39" secondAttribute="bottom" constant="20" id="I1B-mR-MZj"/>
-                                            <constraint firstItem="Lq3-Gd-Zri" firstAttribute="top" secondItem="BLo-Oj-Ndj" secondAttribute="top" constant="10" id="wwA-Qa-N6R"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Bdy-Mw-CzS" firstAttribute="leading" secondItem="Jlt-xw-nsN" secondAttribute="leading" constant="5" id="34J-jP-F5Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="BLo-Oj-Ndj" secondAttribute="bottom" constant="10" id="3LY-gj-eCC"/>
-                                    <constraint firstItem="HqV-xo-yZf" firstAttribute="leading" secondItem="Lq3-Gd-Zri" secondAttribute="leading" id="6y0-jc-6wg"/>
-                                    <constraint firstItem="BLo-Oj-Ndj" firstAttribute="top" secondItem="Bdy-Mw-CzS" secondAttribute="bottom" constant="10" id="GW3-CU-6pw"/>
-                                    <constraint firstItem="Bdy-Mw-CzS" firstAttribute="top" secondItem="Jlt-xw-nsN" secondAttribute="top" constant="10" id="LPa-hs-WM0"/>
-                                    <constraint firstItem="HqV-xo-yZf" firstAttribute="leading" secondItem="RZI-bG-w39" secondAttribute="leading" constant="-10" id="Uj8-Em-iqY"/>
-                                    <constraint firstItem="HqV-xo-yZf" firstAttribute="trailing" secondItem="Lq3-Gd-Zri" secondAttribute="trailing" id="cIr-gd-Avo"/>
-                                    <constraint firstItem="Bdy-Mw-CzS" firstAttribute="trailing" secondItem="BLo-Oj-Ndj" secondAttribute="trailing" id="fYc-J0-uBL"/>
-                                    <constraint firstItem="HqV-xo-yZf" firstAttribute="trailing" secondItem="RZI-bG-w39" secondAttribute="trailing" id="hSE-JR-hfS"/>
-                                    <constraint firstItem="Bdy-Mw-CzS" firstAttribute="leading" secondItem="BLo-Oj-Ndj" secondAttribute="leading" id="kM0-a8-DeL"/>
-                                    <constraint firstAttribute="trailing" secondItem="Bdy-Mw-CzS" secondAttribute="trailing" constant="5" id="sr7-Z5-mcd"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="Jlt-xw-nsN" secondAttribute="width" id="6XV-EX-nHp"/>
-                            <constraint firstItem="Bdy-Mw-CzS" firstAttribute="width" secondItem="24Z-9V-cFZ" secondAttribute="width" constant="-10" id="OFt-lW-Rou"/>
-                            <constraint firstItem="Lqf-Un-DmL" firstAttribute="top" secondItem="Jlt-xw-nsN" secondAttribute="bottom" id="UzT-W3-Jgp"/>
-                            <constraint firstItem="Jlt-xw-nsN" firstAttribute="top" secondItem="4IJ-hT-sn8" secondAttribute="bottom" id="XSx-U1-zaD"/>
-                            <constraint firstAttribute="centerX" secondItem="Jlt-xw-nsN" secondAttribute="centerX" id="sTi-bE-7Yi"/>
-                            <constraint firstItem="9sZ-2l-2Gd" firstAttribute="width" secondItem="24Z-9V-cFZ" secondAttribute="width" multiplier="0.5" id="wef-85-oEG"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="About" image="DequeU_app_icon_about" id="0Db-I0-EkD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y66-65-CJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-68" y="472"/>
+            <point key="canvasLocation" x="-703" y="472"/>
         </scene>
         <!--Modal Dialog-->
         <scene sceneID="gA3-Ue-aLb">
@@ -277,50 +291,61 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MaQ-WP-Rpa">
                                         <rect key="frame" x="5" y="10" width="590" height="92"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyC-TX-hUu">
-                                                <rect key="frame" x="227" y="50" width="22" height="22"/>
-                                                <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
-                                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
-                                                </accessibility>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="information:" destination="v91-kg-Ngk" eventType="touchUpInside" id="4nf-e4-1bn"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg">
-                                                <rect key="frame" x="254" y="50" width="83" height="22"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50g-If-MwR" customClass="DQLabel">
                                                 <rect key="frame" x="253" y="10" width="85" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-fM-gpO">
+                                                <rect key="frame" x="192" y="50" width="179" height="22"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyC-TX-hUu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                        <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
+                                                            <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="information:" destination="v91-kg-Ngk" eventType="touchUpInside" id="4nf-e4-1bn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg">
+                                                        <rect key="frame" x="27" y="0.0" width="152" height="22"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" label="Open a modal dialog">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ldV-VF-gWg" secondAttribute="bottom" id="8vm-50-2F4"/>
+                                                    <constraint firstItem="eyC-TX-hUu" firstAttribute="leading" secondItem="R2v-fM-gpO" secondAttribute="leading" id="CL1-fd-fVj"/>
+                                                    <constraint firstItem="ldV-VF-gWg" firstAttribute="centerY" secondItem="eyC-TX-hUu" secondAttribute="centerY" id="VPm-nE-lo6"/>
+                                                    <constraint firstItem="ldV-VF-gWg" firstAttribute="top" secondItem="eyC-TX-hUu" secondAttribute="top" id="atM-yp-Tpa"/>
+                                                    <constraint firstItem="ldV-VF-gWg" firstAttribute="bottom" secondItem="eyC-TX-hUu" secondAttribute="bottom" id="nUb-xB-YMU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ldV-VF-gWg" secondAttribute="trailing" id="vq6-Vt-MeG"/>
+                                                    <constraint firstItem="ldV-VF-gWg" firstAttribute="leading" secondItem="eyC-TX-hUu" secondAttribute="trailing" constant="5" id="w89-fm-w2e"/>
+                                                    <constraint firstItem="ldV-VF-gWg" firstAttribute="top" secondItem="R2v-fM-gpO" secondAttribute="top" id="wFU-gv-nbL"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" label="">
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
                                         <constraints>
-                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="centerY" secondItem="eyC-TX-hUu" secondAttribute="centerY" id="8j9-ln-kxM"/>
-                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="leading" secondItem="eyC-TX-hUu" secondAttribute="trailing" constant="5" id="BYx-nG-1as"/>
+                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="centerX" secondItem="MaQ-WP-Rpa" secondAttribute="centerX" id="6cR-ok-UJz"/>
                                             <constraint firstItem="50g-If-MwR" firstAttribute="top" secondItem="MaQ-WP-Rpa" secondAttribute="top" constant="10" id="MGG-hl-VnL"/>
-                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="top" secondItem="50g-If-MwR" secondAttribute="bottom" constant="20" id="Pp9-Zg-vup"/>
-                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="bottom" secondItem="eyC-TX-hUu" secondAttribute="bottom" id="Qkb-D7-bjR"/>
                                             <constraint firstAttribute="centerX" secondItem="50g-If-MwR" secondAttribute="centerX" id="TzC-vz-Jed"/>
-                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="centerY" secondItem="eyC-TX-hUu" secondAttribute="centerY" id="ZRf-NX-mlt"/>
-                                            <constraint firstAttribute="bottom" secondItem="ldV-VF-gWg" secondAttribute="bottom" constant="20" id="cXZ-QF-XJe"/>
-                                            <constraint firstItem="ldV-VF-gWg" firstAttribute="top" secondItem="eyC-TX-hUu" secondAttribute="top" id="oz3-vN-8ZT"/>
-                                            <constraint firstAttribute="centerX" secondItem="ldV-VF-gWg" secondAttribute="centerX" id="xeI-4y-ivQ"/>
+                                            <constraint firstItem="R2v-fM-gpO" firstAttribute="top" secondItem="50g-If-MwR" secondAttribute="bottom" constant="20" id="XBj-SP-dCa"/>
+                                            <constraint firstAttribute="bottom" secondItem="R2v-fM-gpO" secondAttribute="bottom" constant="20" id="y1h-FY-Pwp"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="8j9-ln-kxM"/>
-                                                <exclude reference="ZRf-NX-mlt"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iid-Gx-ZMk">
                                         <rect key="frame" x="5" y="112" width="590" height="71"/>
@@ -360,9 +385,9 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <accessibility key="accessibilityConfiguration" label="Open a modal dialogue.">
+                        <accessibility key="accessibilityConfiguration" label="">
                             <accessibilityTraits key="traits" none="YES" button="YES"/>
-                            <bool key="isElement" value="YES"/>
+                            <bool key="isElement" value="NO"/>
                         </accessibility>
                         <constraints>
                             <constraint firstItem="vrv-Ky-GG3" firstAttribute="top" secondItem="bfI-Lm-gj2" secondAttribute="bottom" id="0Fr-5J-JUy"/>
@@ -390,7 +415,7 @@
         <!--Empty Modal-->
         <scene sceneID="EqP-tc-dzS">
             <objects>
-                <viewController storyboardIdentifier="AccessibleModal" title="Empty Modal" modalPresentationStyle="currentContext" id="yzz-GV-CKs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccessibleModal" title="Empty Modal" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yzz-GV-CKs" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y9Z-35-hmp"/>
                         <viewControllerLayoutGuide type="bottom" id="7ys-6r-uO0"/>

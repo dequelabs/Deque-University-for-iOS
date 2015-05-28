@@ -42,7 +42,7 @@
                                                  blue:1.0f
                                                 alpha:1.0f],nil]];
     
-    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"FormsValidation" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
     modalViewControlelr.view.backgroundColor = [UIColor clearColor];
     [modalViewControlelr setView:alertView];
     self.modalPresentationStyle = UIModalPresentationCurrentContext;
