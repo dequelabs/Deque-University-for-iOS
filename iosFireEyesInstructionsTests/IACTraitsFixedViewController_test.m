@@ -65,7 +65,6 @@
 
 //Tests that buttonDisplayFish acts as intended
 - (void)testButtonDisplayFishOnPress {
-    DEQAssertEmptyString(_viewController.ImageView.accessibilityHint);
     DEQAssertStringEqual(_viewController.buttonDisplayFish.accessibilityHint, @"Google Search Fish");
     DEQAssertStringEqual(_viewController.buttonDisplayFish.accessibilityLabel, @"Fish");
 }
