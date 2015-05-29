@@ -586,6 +586,7 @@
 				A9D013BB18A2DD4700DC6496 /* Sources */,
 				A9D013BC18A2DD4700DC6496 /* Frameworks */,
 				A9D013BD18A2DD4700DC6496 /* Resources */,
+				2BCEC1D11B18B0D600EA5605 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -679,6 +680,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BCEC1D11B18B0D600EA5605 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/XcodeCoverage/exportenv.sh",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9D013BB18A2DD4700DC6496 /* Sources */ = {
