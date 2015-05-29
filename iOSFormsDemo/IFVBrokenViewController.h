@@ -21,11 +21,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *emailReq;
 @property (weak, nonatomic) IBOutlet UILabel *dateReq;
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
-@property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;
 
 - (IBAction)submitButton:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
-- (IBAction)information:(id)sender;
 
 @end
 

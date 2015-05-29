@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pA2-Kx-O1L">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Top Bar Contrast-->
+        <scene sceneID="OL8-zV-9wy">
+            <objects>
+                <tabBarController storyboardIdentifier="TopBarContrast" title="Top Bar Contrast" automaticallyAdjustsScrollViewInsets="NO" id="pA2-Kx-O1L" customClass="IACTabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Nge-14-PmG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AWC-dm-uX3" kind="relationship" relationship="viewControllers" id="9UC-mH-Rnd"/>
+                        <segue destination="Dn3-0y-Je4" kind="relationship" relationship="viewControllers" id="sD5-BV-M0A"/>
+                        <segue destination="Gf5-kf-qK4" kind="relationship" relationship="viewControllers" id="Xfd-gj-8ab"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qY-B4-zHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="432"/>
+        </scene>
+        <!--Top Bar Contrast-->
+        <scene sceneID="34A-c1-KnE">
+            <objects>
+                <viewController title="Top Bar Contrast" id="AWC-dm-uX3" customClass="IACViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ykg-CQ-kQI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bxl-xf-wtk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uk6-Vb-AIl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgs-5s-5Xc">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6az-tH-934">
+                                        <rect key="frame" x="5" y="10" width="590" height="304"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dva-7o-JzM">
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dva-7o-JzM" secondAttribute="height" multiplier="718:283" id="RXv-wU-Lc4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jX-G2-6yz" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="138" width="570" height="146"/>
+                                                <mutableString key="text">Color contrast between the background color and the Top Bar text is important so that you can effectively use the Top Bar.  On iPads, notice how there is no navigation bar connected to the Top Bar. If you set the view controller's background color to a color other than white, it may be very difficult to see the Top Bar.  If you do end up changing the background color, be careful; you always want to make sure that those who need to use a higher contrast of colors will still be able to see the Top Bar clearly.</mutableString>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="dva-7o-JzM" firstAttribute="top" secondItem="6az-tH-934" secondAttribute="top" constant="10" id="IDG-wp-t1k"/>
+                                            <constraint firstAttribute="centerX" secondItem="dva-7o-JzM" secondAttribute="centerX" id="Iuh-N7-ocU"/>
+                                            <constraint firstAttribute="trailing" secondItem="8jX-G2-6yz" secondAttribute="trailing" constant="10" id="O6a-mt-vcJ"/>
+                                            <constraint firstItem="8jX-G2-6yz" firstAttribute="leading" secondItem="6az-tH-934" secondAttribute="leading" constant="10" id="QZT-uN-Hr0"/>
+                                            <constraint firstItem="8jX-G2-6yz" firstAttribute="top" secondItem="dva-7o-JzM" secondAttribute="bottom" constant="10" id="QrL-Nv-EYE"/>
+                                            <constraint firstAttribute="bottom" secondItem="8jX-G2-6yz" secondAttribute="bottom" constant="20" id="dkG-vv-ZVl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6az-tH-934" secondAttribute="bottom" constant="10" id="70T-ee-9EO"/>
+                                    <constraint firstItem="6az-tH-934" firstAttribute="leading" secondItem="Jgs-5s-5Xc" secondAttribute="leading" constant="5" id="8s3-K7-B7e"/>
+                                    <constraint firstItem="6az-tH-934" firstAttribute="top" secondItem="Jgs-5s-5Xc" secondAttribute="top" constant="10" id="Kr5-JL-v6q"/>
+                                    <constraint firstAttribute="trailing" secondItem="6az-tH-934" secondAttribute="trailing" constant="5" id="rUk-zf-HO6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dva-7o-JzM" firstAttribute="width" secondItem="uk6-Vb-AIl" secondAttribute="width" multiplier="0.5" id="4Fl-1s-S4g"/>
+                            <constraint firstItem="Jgs-5s-5Xc" firstAttribute="top" secondItem="Ykg-CQ-kQI" secondAttribute="bottom" id="H4u-Xl-o9A"/>
+                            <constraint firstItem="6az-tH-934" firstAttribute="width" secondItem="uk6-Vb-AIl" secondAttribute="width" constant="-10" id="OhR-Po-tnk"/>
+                            <constraint firstAttribute="centerX" secondItem="Jgs-5s-5Xc" secondAttribute="centerX" id="ZGX-cQ-MTb"/>
+                            <constraint firstAttribute="width" secondItem="Jgs-5s-5Xc" secondAttribute="width" id="klo-4U-5rl"/>
+                            <constraint firstItem="Bxl-xf-wtk" firstAttribute="top" secondItem="Jgs-5s-5Xc" secondAttribute="bottom" id="q09-2y-raw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="DequeU_app_icon_about" id="LH5-xq-dlu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPg-nw-Rlg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="432"/>
+        </scene>
+        <!--Top Bar Contrast-->
+        <scene sceneID="6cT-dY-obj">
+            <objects>
+                <viewController title="Top Bar Contrast" id="Dn3-0y-Je4" customClass="IACViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JFp-BX-7pI"/>
+                        <viewControllerLayoutGuide type="bottom" id="HQd-4D-bN4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nAt-yE-CgS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-DY-CzN">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgf-zB-gM1">
+                                        <rect key="frame" x="5" y="10" width="590" height="199"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="dwL-q4-2ta">
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dwL-q4-2ta" secondAttribute="height" multiplier="718:283" id="OFc-md-nMW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bV-Ll-seZ" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="138" width="570" height="41"/>
+                                                <string key="text">Notice how, with a black background, it's impossible to see the Top Bar.  What is the time?  What is the status of the battery?  Is bluetooth on?</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="dwL-q4-2ta" secondAttribute="centerX" id="2ed-ex-KkY"/>
+                                            <constraint firstAttribute="trailing" secondItem="1bV-Ll-seZ" secondAttribute="trailing" constant="10" id="5EB-GI-1aQ"/>
+                                            <constraint firstItem="1bV-Ll-seZ" firstAttribute="leading" secondItem="lgf-zB-gM1" secondAttribute="leading" constant="10" id="NGD-ob-OzI"/>
+                                            <constraint firstItem="1bV-Ll-seZ" firstAttribute="top" secondItem="dwL-q4-2ta" secondAttribute="bottom" constant="10" id="X3Y-Aw-YaJ"/>
+                                            <constraint firstItem="dwL-q4-2ta" firstAttribute="top" secondItem="lgf-zB-gM1" secondAttribute="top" constant="10" id="Y2B-JJ-Ny0"/>
+                                            <constraint firstAttribute="bottom" secondItem="1bV-Ll-seZ" secondAttribute="bottom" constant="20" id="jgD-KS-dM4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lgf-zB-gM1" secondAttribute="bottom" constant="20" id="3DP-ID-xne"/>
+                                    <constraint firstItem="lgf-zB-gM1" firstAttribute="top" secondItem="GKH-DY-CzN" secondAttribute="top" constant="10" id="5xM-bZ-amN"/>
+                                    <constraint firstItem="lgf-zB-gM1" firstAttribute="leading" secondItem="GKH-DY-CzN" secondAttribute="leading" constant="5" id="9dg-SW-WuV"/>
+                                    <constraint firstAttribute="trailing" secondItem="lgf-zB-gM1" secondAttribute="trailing" constant="5" id="CX4-wm-pif"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="dwL-q4-2ta" secondAttribute="width" multiplier="2" id="9pF-HV-3dK"/>
+                            <constraint firstItem="lgf-zB-gM1" firstAttribute="width" secondItem="nAt-yE-CgS" secondAttribute="width" constant="-10" id="AeY-s5-E1V"/>
+                            <constraint firstItem="GKH-DY-CzN" firstAttribute="top" secondItem="JFp-BX-7pI" secondAttribute="bottom" id="DVb-pj-YQp"/>
+                            <constraint firstItem="HQd-4D-bN4" firstAttribute="top" secondItem="GKH-DY-CzN" secondAttribute="bottom" id="SWQ-Vs-tUC"/>
+                            <constraint firstAttribute="centerX" secondItem="GKH-DY-CzN" secondAttribute="centerX" id="fTe-UJ-X18"/>
+                            <constraint firstItem="GKH-DY-CzN" firstAttribute="width" secondItem="nAt-yE-CgS" secondAttribute="width" id="iX5-Ar-jZU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Broken" image="DequeU_app_icon_broken" id="vlU-UQ-ptk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWu-gj-snm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="432"/>
+        </scene>
+        <!--Top Bar Contrast-->
+        <scene sceneID="REi-1q-Po2">
+            <objects>
+                <viewController title="Top Bar Contrast" id="Gf5-kf-qK4" customClass="IACViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vgm-aE-aLt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sya-dh-HR9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iCv-cG-sec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXp-u8-Jz9">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sS-42-KJH">
+                                        <rect key="frame" x="5" y="10" width="590" height="220"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aTv-yc-teD">
+                                                <rect key="frame" x="145" y="10" width="300" height="118"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="aTv-yc-teD" secondAttribute="height" multiplier="718:283" id="jIK-W0-41g"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV8-mJ-Ocs" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="138" width="570" height="62"/>
+                                                <string key="text">To fix this, simply set the background color of the scroll view to be your designated color instead of setting the background color of the view controller.  Now you can very easily see the Top Bar!</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="QV8-mJ-Ocs" firstAttribute="leading" secondItem="7sS-42-KJH" secondAttribute="leading" constant="10" id="2I9-XL-cAw"/>
+                                            <constraint firstItem="aTv-yc-teD" firstAttribute="top" secondItem="7sS-42-KJH" secondAttribute="top" constant="10" id="AsW-jW-TTa"/>
+                                            <constraint firstAttribute="bottom" secondItem="QV8-mJ-Ocs" secondAttribute="bottom" constant="20" id="Hbp-gC-N1J"/>
+                                            <constraint firstItem="QV8-mJ-Ocs" firstAttribute="top" secondItem="aTv-yc-teD" secondAttribute="bottom" constant="10" id="Oau-ES-JZH"/>
+                                            <constraint firstAttribute="trailing" secondItem="QV8-mJ-Ocs" secondAttribute="trailing" constant="10" id="Qfg-TV-hUq"/>
+                                            <constraint firstAttribute="centerX" secondItem="aTv-yc-teD" secondAttribute="centerX" id="tEk-8W-WHT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.4431372549" green="0.73333333329999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7sS-42-KJH" firstAttribute="top" secondItem="oXp-u8-Jz9" secondAttribute="top" constant="10" id="LpU-JE-VEg"/>
+                                    <constraint firstAttribute="bottom" secondItem="7sS-42-KJH" secondAttribute="bottom" constant="20" id="QW2-OL-qN7"/>
+                                    <constraint firstAttribute="trailing" secondItem="7sS-42-KJH" secondAttribute="trailing" constant="5" id="R4k-hV-fBu"/>
+                                    <constraint firstItem="7sS-42-KJH" firstAttribute="leading" secondItem="oXp-u8-Jz9" secondAttribute="leading" constant="5" id="Ue1-K1-mRI"/>
+                                    <constraint firstItem="7sS-42-KJH" firstAttribute="width" secondItem="oXp-u8-Jz9" secondAttribute="width" id="WRP-kg-R0J"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WRP-kg-R0J"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oXp-u8-Jz9" firstAttribute="top" secondItem="Vgm-aE-aLt" secondAttribute="bottom" id="Ba7-oG-ovP"/>
+                            <constraint firstAttribute="width" secondItem="aTv-yc-teD" secondAttribute="width" multiplier="2" id="JCU-Zz-0nH"/>
+                            <constraint firstAttribute="centerX" secondItem="oXp-u8-Jz9" secondAttribute="centerX" id="SxT-bw-Nux"/>
+                            <constraint firstItem="oXp-u8-Jz9" firstAttribute="leading" secondItem="iCv-cG-sec" secondAttribute="leadingMargin" constant="-26" id="Y4u-2Y-csH"/>
+                            <constraint firstItem="Sya-dh-HR9" firstAttribute="top" secondItem="oXp-u8-Jz9" secondAttribute="bottom" id="h9j-dt-2qy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oXp-u8-Jz9" secondAttribute="trailing" constant="-36" id="mIg-bV-lYj"/>
+                            <constraint firstAttribute="width" secondItem="7sS-42-KJH" secondAttribute="width" constant="10" id="uM8-Si-LCq"/>
+                            <constraint firstAttribute="width" secondItem="oXp-u8-Jz9" secondAttribute="width" id="zu3-ET-UbA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Y4u-2Y-csH"/>
+                                <exclude reference="mIg-bV-lYj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fixed" image="DequeU_app_icon_fixed" id="CXJ-ZC-tQ6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0M-Wb-cXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="432"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DequeLogo" width="720" height="245"/>
+        <image name="DequeU_app_icon_about" width="30" height="30"/>
+        <image name="DequeU_app_icon_broken" width="30" height="30"/>
+        <image name="DequeU_app_icon_fixed" width="30" height="30"/>
+    </resources>
+</document>
