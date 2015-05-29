@@ -19,7 +19,7 @@
     [super viewDidLoad];
 }
 
-- (IBAction)information:(id)sender {
+- (BOOL)information:(id)sender {
     CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
                                                                  message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
     
@@ -40,6 +40,10 @@
     [alertView setDelegate:self];
     
     [alertView show];
+    if(![alertView isHidden]){
+        return YES;
+    }
+    return NO;
 }
 
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex

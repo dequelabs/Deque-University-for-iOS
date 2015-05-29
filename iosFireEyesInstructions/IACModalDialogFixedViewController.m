@@ -21,7 +21,7 @@
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
 }
 
-- (IBAction)information:(id)sender {
+- (BOOL)information:(id)sender {
     
     UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, @"Alert Opened");
     
@@ -54,7 +54,10 @@
     self.view.accessibilityElementsHidden = YES;
     self.tabBarController.view.accessibilityElementsHidden = YES;
     
-    
+    if([alertView isHidden]){
+        return FALSE;
+    }
+    return TRUE;
 }
 
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {

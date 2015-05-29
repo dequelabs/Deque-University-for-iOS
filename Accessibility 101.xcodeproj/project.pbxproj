@@ -34,6 +34,8 @@
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
 		2BCEC1C71B14E2B200EA5605 /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C61B14E2B200EA5605 /* UIColor+DQColor.m */; };
 		2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */; };
+		2BCEC1D31B18F31700EA5605 /* IACModalDialogueFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1D21B18F31700EA5605 /* IACModalDialogueFixedViewController_test.m */; };
+		2BCEC1D61B190ED600EA5605 /* IACModalDialogueBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1D51B190ED600EA5605 /* IACModalDialogueBrokenViewController_test.m */; };
 		A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */; };
 		A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */; };
 		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
@@ -142,6 +144,8 @@
 		2BCEC1C51B14E2B200EA5605 /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
 		2BCEC1C61B14E2B200EA5605 /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
 		2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewControllerTests.m; sourceTree = "<group>"; };
+		2BCEC1D21B18F31700EA5605 /* IACModalDialogueFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogueFixedViewController_test.m; sourceTree = "<group>"; };
+		2BCEC1D51B190ED600EA5605 /* IACModalDialogueBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogueBrokenViewController_test.m; sourceTree = "<group>"; };
 		A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
 		A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
 		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
@@ -364,6 +368,15 @@
 			name = "Accessibility 101";
 			sourceTree = "<group>";
 		};
+		2BCEC1D41B18F32300EA5605 /* Modal Dialouge */ = {
+			isa = PBXGroup;
+			children = (
+				2BCEC1D21B18F31700EA5605 /* IACModalDialogueFixedViewController_test.m */,
+				2BCEC1D51B190ED600EA5605 /* IACModalDialogueBrokenViewController_test.m */,
+			);
+			name = "Modal Dialouge";
+			sourceTree = "<group>";
+		};
 		A300EEAB1AF3CD82003507B6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +384,7 @@
 				EE99B0B91B02A25A00D5774F /* Hints */,
 				EE99B0BA1B02A26200D5774F /* Traits */,
 				EE99B0BB1B02A26800D5774F /* Dynamic Notifications */,
+				2BCEC1D41B18F32300EA5605 /* Modal Dialouge */,
 				EE8F8A801B0A1E1600B8601C /* Form Validation */,
 				EE99B0C11B03A63600D5774F /* DEQAsserts.h */,
 			);
@@ -746,6 +760,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */,
+				2BCEC1D61B190ED600EA5605 /* IACModalDialogueBrokenViewController_test.m in Sources */,
 				A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */,
 				EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */,
 				EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */,
@@ -753,6 +768,7 @@
 				EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */,
 				EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
 				2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */,
+				2BCEC1D31B18F31700EA5605 /* IACModalDialogueFixedViewController_test.m in Sources */,
 				EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
 				EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */,
 			);

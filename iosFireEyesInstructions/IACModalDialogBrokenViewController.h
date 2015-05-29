@@ -13,6 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;
 
-- (IBAction)information:(id)sender;
+- (BOOL)information:(id)sender;
 
 @end
