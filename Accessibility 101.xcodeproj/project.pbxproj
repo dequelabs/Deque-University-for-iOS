@@ -63,7 +63,7 @@
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
-		EEE0DE4A1B1C9E4900F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE481B1C9E3F00F8BBD1 /* DQA11y.framework */; };
+		EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,7 +170,7 @@
 		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
 		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
-		EEE0DE481B1C9E3F00F8BBD1 /* DQA11y.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DQA11y.framework; sourceTree = "<group>"; };
+		EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DQA11y.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,11 +183,11 @@
 				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
-				EEE0DE4A1B1C9E4900F8BBD1 /* DQA11y.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
+				EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,10 +341,10 @@
 		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EEE0DE481B1C9E3F00F8BBD1 /* DQA11y.framework */,
 				EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */,
 				0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */,
 				0FEB4B901AC9C74900F372F8 /* libz.dylib */,
+				EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */,
 				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
 				0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */,
 				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
@@ -745,7 +745,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DQA11y-acjqpoupjhdxfbeauedtccgxmguo/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -774,7 +773,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DQA11y-acjqpoupjhdxfbeauedtccgxmguo/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
