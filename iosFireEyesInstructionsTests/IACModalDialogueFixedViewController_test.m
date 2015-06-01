@@ -9,6 +9,7 @@
 
 #import <XCTest/XCTest.h>
 #import "IACModalDialogFixedViewController.h"
+#import "DEQAsserts.h"
 
 @interface IACModalDialogueFixedViewController_test : XCTestCase
 
@@ -32,6 +33,14 @@
 
 - (void)testSendLayoutChangedNotification {
     XCTAssertTrue([self.controller information:self]);
+}
+
+- (void)testInformationButtonAccessibility{
+    XCTAssertTrue([self.controller.OpenAModalDialog isAccessibilityElement]);
+    DEQAssertStringEqual(self.controller.OpenAModalDialog.accessibilityLabel, @"Open a modal dialog");
+    DEQAssertEmptyString(self.controller.OpenAModalDialog.accessibilityHint);
+    DEQAssertStringEqual(self.controller.learnMoreLink.accessibilityLabel, @"I would like to learn more about Deque");
+    
 }
 
 - (void)tearDown {

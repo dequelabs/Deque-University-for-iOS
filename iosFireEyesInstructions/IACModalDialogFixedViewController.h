@@ -10,8 +10,10 @@
 #import "IACViewController.h"
 
 @interface IACModalDialogFixedViewController : IACViewController
+@property (weak, nonatomic) IBOutlet UIView *OpenAModalDialog;
 
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
+
 
 - (BOOL)information:(id)sender;
 
