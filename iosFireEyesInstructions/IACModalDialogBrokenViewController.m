@@ -40,7 +40,7 @@
     [alertView setDelegate:self];
     
     [alertView show];
-    if(![alertView isHidden]){
+    if([alertView accessibilityElementIsFocused]){
         return YES;
     }
     return NO;
