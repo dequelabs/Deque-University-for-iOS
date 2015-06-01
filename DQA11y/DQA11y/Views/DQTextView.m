@@ -14,9 +14,12 @@
 @end
 
 @implementation DQTextView {
-    NSString* _contentSizeCategory;
+    NSString* _contentSizeCategory; ///< Font type.
 }
 
+/**
+ * Returns TRUE if the font type is a dynamic type. FALSE otherwise.
+ */
 +(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory {
     return (contentSizeCategory == UIFontTextStyleHeadline ||
             contentSizeCategory == UIFontTextStyleSubheadline ||

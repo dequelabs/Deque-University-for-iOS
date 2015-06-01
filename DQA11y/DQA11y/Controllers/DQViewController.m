@@ -8,6 +8,9 @@
 
 #import "DQViewController.h"
 
+/**
+ * ???
+ */
 @implementation DQViewController
 
 - (id)init {
@@ -52,6 +55,9 @@
     [self findFirstAccessibilityElement:self.view].accessibilityTraits |= UIAccessibilityTraitHeader;
 }
 
+/**
+ * Finds the first accessibility element in the view and returns it.
+ */
 - (UIView*)findFirstAccessibilityElement:(UIView*)view {
     for (UIView* subView in [view.subviews sortedArrayUsingComparator:comparatorBlock]) {
         

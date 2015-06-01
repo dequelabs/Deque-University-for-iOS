@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- * interface for each individual table cell of side bar
+ * Interface for the Table View Cell containing the Overlay image and Overlay switch.
  */
 
 @interface IACTableViewCell : UITableViewCell
