@@ -7,7 +7,7 @@
 //
 
 #import "IACAboutDequeViewController.h"
-#import "DQButton.h"
+#import <DQA11y/DQA11y.h>
 
 #define DEQUE_URL @"http://accessibility.deque.com/contact-deque-today"
 

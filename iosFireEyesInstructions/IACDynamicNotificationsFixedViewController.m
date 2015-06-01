@@ -7,8 +7,7 @@
 //
 
 #import "IACDynamicNotificationsFixedViewController.h"
-#import "DQLog.h"
-#import "DQUtilities.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
-#import "DQButton.h"
+#import <DQA11y/DQA11y.h>
 
 @interface IACTraitsFixedViewController : IACViewController {
     IBOutlet DQButton *_buttonDisplayDog;

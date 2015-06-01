@@ -8,7 +8,7 @@
 #import "regex.h"
 #import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
-#import "UIFont+DQFont.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
 

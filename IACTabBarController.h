@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DQTabBarController.h"
+#import <DQA11y/DQA11y.h>
 
 @interface IACTabBarController : DQTabBarController
 

@@ -8,10 +8,9 @@
 
 #import "IACStoryTableViewController.h"
 #import "IACViewController.h"
-#import "UIView+DQView.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
-#import "DQConstants.h"
 
 #define OVERLAY_IDENTIFIER @"Overlay"
 #define INTRODUCTION_IDENTIFIER @"Introduction"
