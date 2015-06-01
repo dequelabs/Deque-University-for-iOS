@@ -8,8 +8,18 @@
 
 
 #import <XCTest/XCTest.h>
+#import "IACModalDialogBrokenViewController.h"
+#import "DQUtilities.h"
+#import "DEQAsserts.h"
 
-@interface IACModalDialogueBrokenViewController_test : XCTestCase
+#define MAIL_TO_INDEX 0
+#define VISIT_WEBSITE_INDEX 1
+#define CLOSE_INDEX 2
+
+@interface IACModalDialogueBrokenViewController_test : XCTestCase {
+    @private
+    IACModalDialogBrokenViewController* _viewController;
+}
 
 @end
 
@@ -17,13 +27,23 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
+    _viewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"ModalBroken"];
+    [_viewController view];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+- (void)testInformationMethod {
+    XCTAssert([_viewController information:self]);
+    
 }
+
+- (void)testButtonClick {
+    DEQAssertStringEqual(@"mailto:chris.mcmeeking@deque.com", [_viewController getURLFromIndex:MAIL_TO_INDEX]);
+    DEQAssertStringEqual(@"http://www.deque.com", [_viewController getURLFromIndex:VISIT_WEBSITE_INDEX]);
+    DEQAssertEmptyString([_viewController getURLFromIndex:CLOSE_INDEX]);
+}
+
+
 
 
 

@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
+#import "CustomIOS7AlertView.h"
 
 @interface IACModalDialogBrokenViewController : IACViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;
 
 - (BOOL)information:(id)sender;
+- (NSString*)getURLFromIndex:(NSInteger)buttonIndex;
 
 @end

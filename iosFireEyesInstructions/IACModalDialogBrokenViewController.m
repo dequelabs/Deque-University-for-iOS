@@ -7,7 +7,9 @@
 //
 
 #import "IACModalDialogBrokenViewController.h"
-#import "CustomIOS7AlertView.h"
+
+#define MAIL_TO_INDEX 0
+#define VISIT_WEBSITE_INDEX 1
 
 @interface IACModalDialogBrokenViewController ()<CustomIOS7AlertViewDelegate>
 
@@ -40,19 +42,29 @@
     [alertView setDelegate:self];
     
     [alertView show];
-    if([alertView accessibilityElementIsFocused]){
+
+    if(![alertView accessibilityElementIsFocused]) {
         return YES;
     }
     return NO;
 }
 
+- (NSString*) getURLFromIndex: (NSInteger)buttonIndex {
+    NSString* URL;
+    if(buttonIndex == MAIL_TO_INDEX) {
+        URL = @"mailto:chris.mcmeeking@deque.com";
+        
+    } else if(buttonIndex == VISIT_WEBSITE_INDEX) {
+        URL = @"http://www.deque.com";
+        
+    }
+    return URL;
+}
+
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
-    if (buttonIndex == 0) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
-    } else if (buttonIndex == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
-    }
+    NSString* URL = [self getURLFromIndex: buttonIndex];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
     
     [alertView close];
 }
