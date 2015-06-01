@@ -78,6 +78,12 @@ static UIButton* _IACOverlayButton = NULL;
     return NO;
 }
 
+
+/**
+ * createOverlayView creates the unsighted overlay.
+ * The overlay can then be toggled on and off by the user.
+ */
+
 - (void)createOverlayView {
     
     _overlayView = [[IACOverlayView alloc] init];
@@ -108,7 +114,9 @@ static UIButton* _IACOverlayButton = NULL;
     [_overlayView addSubview:_titleLabel];
     [_overlayView addSubview:_overlayNameLabel];
     
-    //constraints for Overlay View
+    /**
+     * Constraints for Overlay View
+     */
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_overlayView
                                                           attribute:NSLayoutAttributeWidth
                                                           relatedBy:NSLayoutRelationEqual
@@ -141,7 +149,10 @@ static UIButton* _IACOverlayButton = NULL;
                                                          multiplier:1
                                                            constant:0]];
     
-    //constraints for Deque U Logo
+    /**
+     * Constraints for Deque U Logo
+     */
+    
     [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayImage
                                                              attribute:NSLayoutAttributeWidth
                                                              relatedBy:NSLayoutRelationEqual
@@ -174,7 +185,9 @@ static UIButton* _IACOverlayButton = NULL;
                                                              multiplier:8.0/5.0
                                                                constant:0]];
     
-    //constraints for Deque U Title
+    /**
+     * Constraints for Deque U Title
+     */
     [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_titleLabel
                                                              attribute:NSLayoutAttributeCenterX
                                                              relatedBy:NSLayoutRelationEqual
@@ -191,7 +204,9 @@ static UIButton* _IACOverlayButton = NULL;
                                                             multiplier:1
                                                               constant:-20]];
     
-    //constraints for VoiceOver Simulation
+    /**
+     * Constraints for VoiceOver Simulation
+     */
     [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayNameLabel
                                                              attribute:NSLayoutAttributeCenterX
                                                              relatedBy:NSLayoutRelationEqual

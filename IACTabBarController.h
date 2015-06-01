@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <DQA11y/DQA11y.h>
-
+/**
+ * Controls the bottom tab bar wit broken fixed and info
+ */
 @interface IACTabBarController : DQTabBarController
 
 @end

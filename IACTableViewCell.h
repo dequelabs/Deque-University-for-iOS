@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * interface for each individual table cell of side bar
+ */
+
 @interface IACTableViewCell : UITableViewCell
 
 @end
