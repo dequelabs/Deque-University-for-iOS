@@ -7,7 +7,7 @@
 //
 
 #import "IACDynamicNotificationsBrokenViewController.h"
-#import "DQLog.h"
+#import <DQA11y/DQA11y.h>
 
 #define LOG_FLAG YES
 

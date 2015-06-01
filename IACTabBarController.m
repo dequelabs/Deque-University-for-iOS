@@ -19,6 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.delegate = self;
+    
+    self.colorDimmed = [IACUtilities colorWithHexString:BLUE];
+    self.colorDimmedDarkened = [IACUtilities colorWithHexString:BLUE];
+    self.colorSelected = [IACUtilities colorWithHexString:ORANGE];
+    self.colorSelectedDarkened = [IACUtilities colorWithHexString:ORANGE];
+    self.colorTabBar = [IACUtilities colorWithHexString:LIGHT_BLUE];
+    self.colorTabBarDarkened = [IACUtilities colorWithHexString:LIGHT_BLUE];
+    self.translucentDarkened = NO;
+    self.translucentUndarkened = YES;
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {

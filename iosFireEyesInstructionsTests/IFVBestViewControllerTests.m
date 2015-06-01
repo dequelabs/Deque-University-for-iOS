@@ -10,7 +10,7 @@
 #import <XCTest/XCTest.h>
 #import "IFVFixedViewController.h"
 #import "AppDelegate.h"
-#import "UIColor+DQColor.h"
+#import <DQA11y/DQA11y.h>
 
 #define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
 #define DEQAssertStringEndsWith(testString, endsWithString) XCTAssert([testString hasSuffix:endsWithString], @"\"%@\"", testString)
