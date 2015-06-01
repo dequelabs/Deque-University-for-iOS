@@ -23,6 +23,7 @@
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
 		2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */; };
+		2BCEC1D71B1CC2BA00EA5605 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
 		A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */; };
 		A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */; };
 		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
@@ -213,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D013DC18A2DD4700DC6496 /* XCTest.framework in Frameworks */,
+				2BCEC1D71B1CC2BA00EA5605 /* DQA11y.framework in Frameworks */,
 				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
 			);
@@ -817,6 +819,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
@@ -843,6 +846,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
