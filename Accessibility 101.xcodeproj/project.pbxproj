@@ -23,7 +23,6 @@
 		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
 		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
 		2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */; };
-		2BCEC1D71B1CC2BA00EA5605 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
 		A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */; };
 		A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */; };
 		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
@@ -64,9 +63,7 @@
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
-		EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
-		EEE0DE831B1CC09C00F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
-		EEE0DE841B1CC09C00F8BBD1 /* DQA11y.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EEE0DED61B1CC7F200F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DED11B1CC7D300F8BBD1 /* DQA11y.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +74,27 @@
 			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
 			remoteInfo = iosFireEyesInstructions;
 		};
+		EEE0DED01B1CC7D300F8BBD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECB14751B18F02300809C96;
+			remoteInfo = DQA11y;
+		};
+		EEE0DED21B1CC7D300F8BBD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECB14801B18F02300809C96;
+			remoteInfo = DQA11yTests;
+		};
+		EEE0DED41B1CC7EC00F8BBD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB14741B18F02300809C96;
+			remoteInfo = DQA11y;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,7 +104,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EEE0DE841B1CC09C00F8BBD1 /* DQA11y.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,7 +204,7 @@
 		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
 		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
-		EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DQA11y.framework; sourceTree = "<group>"; };
+		EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = ../DQA11y/DQA11y.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,17 +212,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE0DED61B1CC7F200F8BBD1 /* DQA11y.framework in Frameworks */,
 				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
 				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
 				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
-				EEE0DE831B1CC09C00F8BBD1 /* DQA11y.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
-				EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D013DC18A2DD4700DC6496 /* XCTest.framework in Frameworks */,
-				2BCEC1D71B1CC2BA00EA5605 /* DQA11y.framework in Frameworks */,
 				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
 			);
@@ -263,6 +278,7 @@
 		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
 			isa = PBXGroup;
 			children = (
+				EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */,
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
@@ -363,7 +379,6 @@
 				EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */,
 				0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */,
 				0FEB4B901AC9C74900F372F8 /* libz.dylib */,
-				EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */,
 				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
 				0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */,
 				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
@@ -505,6 +520,15 @@
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
 		};
+		EEE0DECC1B1CC7D200F8BBD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE0DED11B1CC7D300F8BBD1 /* DQA11y.framework */,
+				EEE0DED31B1CC7D300F8BBD1 /* DQA11yTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -520,6 +544,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EEE0DED51B1CC7EC00F8BBD1 /* PBXTargetDependency */,
 			);
 			name = "Accessibility 101";
 			productName = iosFireEyesInstructions;
@@ -574,6 +599,12 @@
 			mainGroup = A9D013B618A2DD4700DC6496;
 			productRefGroup = A9D013C018A2DD4700DC6496 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EEE0DECC1B1CC7D200F8BBD1 /* Products */;
+					ProjectRef = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A9D013BE18A2DD4700DC6496 /* Accessibility 101 */,
@@ -581,6 +612,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EEE0DED11B1CC7D300F8BBD1 /* DQA11y.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DQA11y.framework;
+			remoteRef = EEE0DED01B1CC7D300F8BBD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EEE0DED31B1CC7D300F8BBD1 /* DQA11yTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DQA11yTests.xctest;
+			remoteRef = EEE0DED21B1CC7D300F8BBD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A9D013BD18A2DD4700DC6496 /* Resources */ = {
@@ -665,6 +713,11 @@
 			isa = PBXTargetDependency;
 			target = A9D013BE18A2DD4700DC6496 /* Accessibility 101 */;
 			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
+		};
+		EEE0DED51B1CC7EC00F8BBD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DQA11y;
+			targetProxy = EEE0DED41B1CC7EC00F8BBD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
