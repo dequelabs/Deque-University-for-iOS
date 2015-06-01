@@ -64,7 +64,9 @@
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
-		EEE0DEA31B1CC3D700F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE9E1B1CC2B400F8BBD1 /* DQA11y.framework */; };
+		EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
+		EEE0DE831B1CC09C00F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
+		EEE0DE841B1CC09C00F8BBD1 /* DQA11y.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,28 +77,21 @@
 			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
 			remoteInfo = iosFireEyesInstructions;
 		};
-		EEE0DE9D1B1CC2B400F8BBD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DE981B1CC2B400F8BBD1 /* DQA11y.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EECB14751B18F02300809C96;
-			remoteInfo = DQA11y;
-		};
-		EEE0DE9F1B1CC2B400F8BBD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DE981B1CC2B400F8BBD1 /* DQA11y.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EECB14801B18F02300809C96;
-			remoteInfo = DQA11yTests;
-		};
-		EEE0DEA11B1CC3CB00F8BBD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DE981B1CC2B400F8BBD1 /* DQA11y.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EECB14741B18F02300809C96;
-			remoteInfo = DQA11y;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEE0DE851B1CC09C00F8BBD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEE0DE841B1CC09C00F8BBD1 /* DQA11y.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F158F2018D21EFA00B34CC7 /* SSB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SSB.mp3; sourceTree = "<group>"; };
@@ -193,7 +188,6 @@
 		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
 		EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DQA11y.framework; sourceTree = "<group>"; };
-		EEE0DE981B1CC2B400F8BBD1 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = ../DQA11y/DQA11y.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,16 +195,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE0DEA31B1CC3D700F8BBD1 /* DQA11y.framework in Frameworks */,
 				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
 				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
 				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
+				EEE0DE831B1CC09C00F8BBD1 /* DQA11y.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
+				EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +263,6 @@
 		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
 			isa = PBXGroup;
 			children = (
-				EEE0DE981B1CC2B400F8BBD1 /* DQA11y.xcodeproj */,
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
@@ -511,15 +505,6 @@
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
 		};
-		EEE0DE991B1CC2B400F8BBD1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EEE0DE9E1B1CC2B400F8BBD1 /* DQA11y.framework */,
-				EEE0DEA01B1CC2B400F8BBD1 /* DQA11yTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -530,11 +515,11 @@
 				A9D013BB18A2DD4700DC6496 /* Sources */,
 				A9D013BC18A2DD4700DC6496 /* Frameworks */,
 				A9D013BD18A2DD4700DC6496 /* Resources */,
+				EEE0DE851B1CC09C00F8BBD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EEE0DEA21B1CC3CB00F8BBD1 /* PBXTargetDependency */,
 			);
 			name = "Accessibility 101";
 			productName = iosFireEyesInstructions;
@@ -589,12 +574,6 @@
 			mainGroup = A9D013B618A2DD4700DC6496;
 			productRefGroup = A9D013C018A2DD4700DC6496 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EEE0DE991B1CC2B400F8BBD1 /* Products */;
-					ProjectRef = EEE0DE981B1CC2B400F8BBD1 /* DQA11y.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A9D013BE18A2DD4700DC6496 /* Accessibility 101 */,
@@ -602,23 +581,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EEE0DE9E1B1CC2B400F8BBD1 /* DQA11y.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DQA11y.framework;
-			remoteRef = EEE0DE9D1B1CC2B400F8BBD1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EEE0DEA01B1CC2B400F8BBD1 /* DQA11yTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DQA11yTests.xctest;
-			remoteRef = EEE0DE9F1B1CC2B400F8BBD1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A9D013BD18A2DD4700DC6496 /* Resources */ = {
@@ -703,11 +665,6 @@
 			isa = PBXTargetDependency;
 			target = A9D013BE18A2DD4700DC6496 /* Accessibility 101 */;
 			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
-		};
-		EEE0DEA21B1CC3CB00F8BBD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DQA11y;
-			targetProxy = EEE0DEA11B1CC3CB00F8BBD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
