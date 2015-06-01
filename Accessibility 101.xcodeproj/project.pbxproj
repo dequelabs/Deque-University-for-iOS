@@ -64,6 +64,8 @@
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
 		EEE0DE821B1CBC6700F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
+		EEE0DE831B1CC09C00F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; };
+		EEE0DE841B1CC09C00F8BBD1 /* DQA11y.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DE811B1CBC6700F8BBD1 /* DQA11y.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,20 @@
 			remoteInfo = iosFireEyesInstructions;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEE0DE851B1CC09C00F8BBD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EEE0DE841B1CC09C00F8BBD1 /* DQA11y.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F158F2018D21EFA00B34CC7 /* SSB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SSB.mp3; sourceTree = "<group>"; };
@@ -183,6 +199,7 @@
 				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
+				EEE0DE831B1CC09C00F8BBD1 /* DQA11y.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
@@ -496,6 +513,7 @@
 				A9D013BB18A2DD4700DC6496 /* Sources */,
 				A9D013BC18A2DD4700DC6496 /* Frameworks */,
 				A9D013BD18A2DD4700DC6496 /* Resources */,
+				EEE0DE851B1CC09C00F8BBD1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

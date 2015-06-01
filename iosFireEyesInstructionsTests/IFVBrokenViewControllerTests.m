@@ -11,11 +11,9 @@
 #import "IFVBrokenViewController.h"
 #import "AppDelegate.h"
 #import <DQA11y/DQA11y.h>
+#import "DEQAsserts.h"
 @import CoreGraphics;
 
-#define DEQAssertStringEqual(testString, correctString) XCTAssert([testString isEqualToString:correctString], @"\"%@\"", testString)
-#define DEQAssertStringEndsWith(testString, endsWithString) XCTAssert([testString hasSuffix:endsWithString], @"\"%@\"", testString)
-#define DEQAssertEmptyString(testString) XCTAssert(testString == nil || [testString isEqualToString:@""], @"\"%@\"", testString)
 #define DEQAssertColorEqualsStoryBoardRed(color) XCTAssertTrue([color isEqualToColorWithRed:0.919586479 green: 0.055712726  blue: 0.0222684592 alpha:1.0])
 #define DEQAssertColorEqualsRedColor(color) XCTAssertTrue([color isEqual:[UIColor redColor]]);
 #define DEQAssertColorEqualsBlack(color) XCTAssertTrue([color isEqualToColorWithRed:0 green: 0  blue: 0 alpha:1.0])
