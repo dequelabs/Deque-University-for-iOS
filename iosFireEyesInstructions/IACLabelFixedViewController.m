@@ -26,6 +26,7 @@
     self.screenName = @"Labels Fixed";
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -39,10 +40,12 @@
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
+    [_ImageView setAccessibilityHint:@""]; ///< Sometimes hints aren't needed, this silences the warning.
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
+
+///< displays the correct image based on the button pressed.
 
 - (void)displayImage:(id)sender {
     UIButton* button = (UIButton*)sender;

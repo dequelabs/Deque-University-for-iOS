@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
+/** 
+ * Broken version of our Hints demo.
+ * this view controller is NOT for the fixed version
+ */
+
 @interface IACHintBrokenViewController : IACViewController {
     IBOutlet UIButton* _buttonStarSpangledBanner;
     IBOutlet UIButton* _buttonAmazingGrace;

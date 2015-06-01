@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
+/**
+ * Fixed version of our Hints demo.
+ */
 
 @interface IACHintFixedViewController : IACViewController {
     IBOutlet UIButton* _buttonStarSpangledBanner;

@@ -27,7 +27,7 @@
 }
 
 - (void)loadDequeWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]]; ///< load the deque web page
 }
 
 @end
