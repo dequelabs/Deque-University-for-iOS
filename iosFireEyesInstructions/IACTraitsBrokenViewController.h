@@ -10,6 +10,12 @@
 #import "IACViewController.h"
 #import <DQA11y/DQA11y.h>
 
+/**
+ * Broken Hints View Controller.
+ */
+
+///< Similar interface to the Labels Demo
+
 @interface IACTraitsBrokenViewController : IACViewController {
     IBOutlet DQButton *_buttonDisplayDog;
     IBOutlet DQButton *_buttonDisplayCat;

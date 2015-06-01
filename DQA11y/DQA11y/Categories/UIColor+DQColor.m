@@ -11,6 +11,10 @@
 
 @implementation UIColor (DQColor)
 
+/**
+ * If the rgba values for the color are known, use this function to compare colors
+ */
+
 - (BOOL)isEqualToColorWithRed:(CGFloat)testred green:(CGFloat)testgreen blue:(CGFloat)testblue alpha:(CGFloat)testalpha{
     
     CGFloat redVal;
@@ -24,6 +28,8 @@
     
 }
 
+/**
+ 
 - (BOOL)isEqualToColor:(UIColor *)color{
     
     CGFloat redVal;

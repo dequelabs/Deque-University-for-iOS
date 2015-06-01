@@ -15,6 +15,11 @@
 
 @end
 
+/**
+ * Localizable strings can be found in the Localizabe.strings file under supporting files.
+ * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
+ */
+
 @implementation IFVBrokenViewController
 
 - (void)viewDidLoad {
@@ -117,11 +122,11 @@
 }
 
 - (IBAction)backgroundTap:(id)sender {
-    //get rid of keyboard on background tap
+    ///< Get rid of keyboard on background tap
     [self.view endEditing:YES];
 }
 
-// get rid of keyboard when "done" is pressed
+///< Get rid of keyboard when "done" is pressed
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];

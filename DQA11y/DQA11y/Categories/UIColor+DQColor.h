@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/** 
+ * Some simple interfaces for dealing with accessibility related color equality
+ */
 @interface UIColor (DQColor)
 
 -(BOOL) isEqualToColorWithRed:(CGFloat)testred green:(CGFloat)testgreen blue:(CGFloat)testblue alpha:(CGFloat)testalpha;

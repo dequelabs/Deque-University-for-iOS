@@ -10,6 +10,9 @@
 #import "IACViewController.h"
 #import <DQA11y/DQA11y.h>
 
+/**
+ * Fixed Version of Traits Demo
+ */
 @interface IACTraitsFixedViewController : IACViewController {
     IBOutlet DQButton *_buttonDisplayDog;
     IBOutlet DQButton *_buttonDisplayCat;

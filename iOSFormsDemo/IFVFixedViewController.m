@@ -19,6 +19,11 @@
 
 @end
 
+/**
+ * Localizable strings can be found in the Localizabe.strings file under supporting files.
+ * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
+ */
+
 @implementation IFVFixedViewController
 
 - (void)viewDidLoad {
@@ -112,6 +117,10 @@
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
+
+
+///< validateTextField validates the text field based on the passed in string and predicate, then updates the
+///< error message accordingly.
 
 + (BOOL)validateTextField:(UITextField*)textField
                fieldLabel:(UILabel*)fieldLabel

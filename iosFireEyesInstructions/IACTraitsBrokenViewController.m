@@ -39,11 +39,15 @@
     }
 }
 
+///< Visits the webpage for the fish link.
+
 - (NSString*)visitWebPage {
     NSString* url = @"http://lmgtfy.com/?q=fish";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     return url;
 }
+
+///< Updates the image based on the name passed in.
 
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
