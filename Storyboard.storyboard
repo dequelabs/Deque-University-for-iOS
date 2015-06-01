@@ -940,16 +940,6 @@
                                                     <constraint firstAttribute="width" constant="160" id="KgK-7X-gaN"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOQ-KD-KDp" customClass="DQButton">
-                                                <rect key="frame" x="268" y="210" width="54" height="32"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Modify image.  Selection moves focus to image." label="Dog"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <inset key="contentEdgeInsets" minX="12" minY="6" maxX="12" maxY="6"/>
-                                                <state key="normal" title="Dog">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34I-hg-gaT" customClass="DQButton">
                                                 <rect key="frame" x="270" y="262" width="50" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -967,6 +957,16 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <inset key="contentEdgeInsets" minX="12" minY="6" maxX="12" maxY="6"/>
                                                 <state key="normal" title="Fish">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOQ-KD-KDp" customClass="DQButton">
+                                                <rect key="frame" x="268" y="210" width="54" height="32"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" hint="Modify image.  Selection moves focus to image." label="Dog"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <inset key="contentEdgeInsets" minX="12" minY="6" maxX="12" maxY="6"/>
+                                                <state key="normal" title="Dog">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
@@ -989,7 +989,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-MF-KCI">
                                         <rect key="frame" x="5" y="386" width="590" height="134"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-Ha-6o2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-Ha-6o2" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="104"/>
                                                 <string key="text">Here we have added the relevant accessibility information.  Now, with VoiceOver turned on, you can easily tell which picture is going to be displayed.  Also notice the subtle hint modification and that we now focus the image after selection.  This technique can be more (or less) accessible, depending on the situation.  </string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
