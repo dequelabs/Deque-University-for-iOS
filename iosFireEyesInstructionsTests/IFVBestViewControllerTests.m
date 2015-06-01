@@ -153,10 +153,14 @@
 
 -(void)testColorChangeOfTextForDateField{
     
+    DEQAssertColorEqualsBlack(self.controller.dateRequirement.textColor);
+    DEQAssertColorEqualsStoryBoardRed(self.controller.nameRequirement.textColor);
+    DEQAssertColorEqualsStoryBoardRed(self.controller.emailRequirement.textColor);
+    
     self.controller.emailField.text = @"";
     self.controller.nameField.text = @"";
     self.controller.dateField.text = @"";
-    
+
     DEQAssertColorEqualsBlack(self.controller.dateRequirement.textColor);
     DEQAssertColorEqualsStoryBoardRed(self.controller.nameRequirement.textColor);
     DEQAssertColorEqualsStoryBoardRed(self.controller.emailRequirement.textColor);
