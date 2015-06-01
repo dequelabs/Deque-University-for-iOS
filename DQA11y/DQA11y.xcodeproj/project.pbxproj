@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EECB147B1B18F02300809C96 /* DQA11y.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB147A1B18F02300809C96 /* DQA11y.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14811B18F02300809C96 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECB14751B18F02300809C96 /* DQA11y.framework */; };
+		EECB14AC1B18F0BB00809C96 /* UIColor+DQColor.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14921B18F0BB00809C96 /* UIColor+DQColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14AD1B18F0BB00809C96 /* UIColor+DQColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14931B18F0BB00809C96 /* UIColor+DQColor.m */; };
+		EECB14AE1B18F0BB00809C96 /* UIFont+DQFont.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14941B18F0BB00809C96 /* UIFont+DQFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14AF1B18F0BB00809C96 /* UIFont+DQFont.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14951B18F0BB00809C96 /* UIFont+DQFont.m */; };
+		EECB14B01B18F0BB00809C96 /* UIView+DQView.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14961B18F0BB00809C96 /* UIView+DQView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14B11B18F0BB00809C96 /* UIView+DQView.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14971B18F0BB00809C96 /* UIView+DQView.m */; };
+		EECB14B21B18F0BB00809C96 /* DQTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14991B18F0BB00809C96 /* DQTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14B31B18F0BB00809C96 /* DQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB149A1B18F0BB00809C96 /* DQTabBarController.m */; };
+		EECB14B41B18F0BB00809C96 /* DQViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB149B1B18F0BB00809C96 /* DQViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14B51B18F0BB00809C96 /* DQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB149C1B18F0BB00809C96 /* DQViewController.m */; };
+		EECB14B61B18F0BB00809C96 /* DQConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB149D1B18F0BB00809C96 /* DQConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14B71B18F0BB00809C96 /* DQLog.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB149E1B18F0BB00809C96 /* DQLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14B81B18F0BB00809C96 /* DQLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB149F1B18F0BB00809C96 /* DQLog.m */; };
+		EECB14B91B18F0BB00809C96 /* DQUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14A01B18F0BB00809C96 /* DQUtilities.m */; };
+		EECB14BA1B18F0BB00809C96 /* DQButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14A21B18F0BB00809C96 /* DQButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14BB1B18F0BB00809C96 /* DQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14A31B18F0BB00809C96 /* DQButton.m */; };
+		EECB14BC1B18F0BB00809C96 /* DQLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14A41B18F0BB00809C96 /* DQLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14BD1B18F0BB00809C96 /* DQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14A51B18F0BB00809C96 /* DQLabel.m */; };
+		EECB14BE1B18F0BB00809C96 /* DQTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14A61B18F0BB00809C96 /* DQTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14BF1B18F0BB00809C96 /* DQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14A71B18F0BB00809C96 /* DQTextField.m */; };
+		EECB14C01B18F0BB00809C96 /* DQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14A81B18F0BB00809C96 /* DQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14C11B18F0BB00809C96 /* DQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14A91B18F0BB00809C96 /* DQTextView.m */; };
+		EECB14C21B18F0BB00809C96 /* DQWrapperView.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14AA1B18F0BB00809C96 /* DQWrapperView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB14C31B18F0BB00809C96 /* DQWrapperView.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB14AB1B18F0BB00809C96 /* DQWrapperView.m */; };
+		EECB14C51B18F28300809C96 /* DQUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = EECB14C41B18F28300809C96 /* DQUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EECB15141B190C3300809C96 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EECB15131B190C3300809C96 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EECB14821B18F02300809C96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EECB146C1B18F02300809C96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB14741B18F02300809C96;
+			remoteInfo = DQA11y;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EECB14751B18F02300809C96 /* DQA11y.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DQA11y.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB14791B18F02300809C96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECB147A1B18F02300809C96 /* DQA11y.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DQA11y.h; sourceTree = "<group>"; };
+		EECB14801B18F02300809C96 /* DQA11yTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DQA11yTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECB14921B18F0BB00809C96 /* UIColor+DQColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DQColor.h"; sourceTree = "<group>"; };
+		EECB14931B18F0BB00809C96 /* UIColor+DQColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DQColor.m"; sourceTree = "<group>"; };
+		EECB14941B18F0BB00809C96 /* UIFont+DQFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DQFont.h"; sourceTree = "<group>"; };
+		EECB14951B18F0BB00809C96 /* UIFont+DQFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DQFont.m"; sourceTree = "<group>"; };
+		EECB14961B18F0BB00809C96 /* UIView+DQView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DQView.h"; sourceTree = "<group>"; };
+		EECB14971B18F0BB00809C96 /* UIView+DQView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DQView.m"; sourceTree = "<group>"; };
+		EECB14991B18F0BB00809C96 /* DQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTabBarController.h; sourceTree = "<group>"; };
+		EECB149A1B18F0BB00809C96 /* DQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTabBarController.m; sourceTree = "<group>"; };
+		EECB149B1B18F0BB00809C96 /* DQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQViewController.h; sourceTree = "<group>"; };
+		EECB149C1B18F0BB00809C96 /* DQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQViewController.m; sourceTree = "<group>"; };
+		EECB149D1B18F0BB00809C96 /* DQConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQConstants.h; sourceTree = "<group>"; };
+		EECB149E1B18F0BB00809C96 /* DQLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLog.h; sourceTree = "<group>"; };
+		EECB149F1B18F0BB00809C96 /* DQLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLog.m; sourceTree = "<group>"; };
+		EECB14A01B18F0BB00809C96 /* DQUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUtilities.m; sourceTree = "<group>"; };
+		EECB14A21B18F0BB00809C96 /* DQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQButton.h; sourceTree = "<group>"; };
+		EECB14A31B18F0BB00809C96 /* DQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQButton.m; sourceTree = "<group>"; };
+		EECB14A41B18F0BB00809C96 /* DQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQLabel.h; sourceTree = "<group>"; };
+		EECB14A51B18F0BB00809C96 /* DQLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQLabel.m; sourceTree = "<group>"; };
+		EECB14A61B18F0BB00809C96 /* DQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextField.h; sourceTree = "<group>"; };
+		EECB14A71B18F0BB00809C96 /* DQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextField.m; sourceTree = "<group>"; };
+		EECB14A81B18F0BB00809C96 /* DQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQTextView.h; sourceTree = "<group>"; };
+		EECB14A91B18F0BB00809C96 /* DQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQTextView.m; sourceTree = "<group>"; };
+		EECB14AA1B18F0BB00809C96 /* DQWrapperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQWrapperView.h; sourceTree = "<group>"; };
+		EECB14AB1B18F0BB00809C96 /* DQWrapperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQWrapperView.m; sourceTree = "<group>"; };
+		EECB14C41B18F28300809C96 /* DQUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUtilities.h; sourceTree = "<group>"; };
+		EECB15131B190C3300809C96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EECB14711B18F02300809C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB147D1B18F02300809C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB14811B18F02300809C96 /* DQA11y.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EECB146B1B18F02300809C96 = {
+			isa = PBXGroup;
+			children = (
+				EECB14771B18F02300809C96 /* DQA11y */,
+				EECB15121B190C3300809C96 /* DQA11yTests */,
+				EECB14761B18F02300809C96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EECB14761B18F02300809C96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EECB14751B18F02300809C96 /* DQA11y.framework */,
+				EECB14801B18F02300809C96 /* DQA11yTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EECB14771B18F02300809C96 /* DQA11y */ = {
+			isa = PBXGroup;
+			children = (
+				EECB147A1B18F02300809C96 /* DQA11y.h */,
+				EECB149D1B18F0BB00809C96 /* DQConstants.h */,
+				EECB149E1B18F0BB00809C96 /* DQLog.h */,
+				EECB149F1B18F0BB00809C96 /* DQLog.m */,
+				EECB14C41B18F28300809C96 /* DQUtilities.h */,
+				EECB14A01B18F0BB00809C96 /* DQUtilities.m */,
+				EECB14911B18F0BB00809C96 /* Categories */,
+				EECB14981B18F0BB00809C96 /* Controllers */,
+				EECB14A11B18F0BB00809C96 /* Views */,
+				EECB14781B18F02300809C96 /* Supporting Files */,
+			);
+			path = DQA11y;
+			sourceTree = "<group>";
+		};
+		EECB14781B18F02300809C96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EECB14791B18F02300809C96 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EECB14911B18F0BB00809C96 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EECB14921B18F0BB00809C96 /* UIColor+DQColor.h */,
+				EECB14931B18F0BB00809C96 /* UIColor+DQColor.m */,
+				EECB14941B18F0BB00809C96 /* UIFont+DQFont.h */,
+				EECB14951B18F0BB00809C96 /* UIFont+DQFont.m */,
+				EECB14961B18F0BB00809C96 /* UIView+DQView.h */,
+				EECB14971B18F0BB00809C96 /* UIView+DQView.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EECB14981B18F0BB00809C96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EECB14991B18F0BB00809C96 /* DQTabBarController.h */,
+				EECB149A1B18F0BB00809C96 /* DQTabBarController.m */,
+				EECB149B1B18F0BB00809C96 /* DQViewController.h */,
+				EECB149C1B18F0BB00809C96 /* DQViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EECB14A11B18F0BB00809C96 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EECB14A21B18F0BB00809C96 /* DQButton.h */,
+				EECB14A31B18F0BB00809C96 /* DQButton.m */,
+				EECB14A41B18F0BB00809C96 /* DQLabel.h */,
+				EECB14A51B18F0BB00809C96 /* DQLabel.m */,
+				EECB14A61B18F0BB00809C96 /* DQTextField.h */,
+				EECB14A71B18F0BB00809C96 /* DQTextField.m */,
+				EECB14A81B18F0BB00809C96 /* DQTextView.h */,
+				EECB14A91B18F0BB00809C96 /* DQTextView.m */,
+				EECB14AA1B18F0BB00809C96 /* DQWrapperView.h */,
+				EECB14AB1B18F0BB00809C96 /* DQWrapperView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EECB15121B190C3300809C96 /* DQA11yTests */ = {
+			isa = PBXGroup;
+			children = (
+				EECB15131B190C3300809C96 /* Info.plist */,
+			);
+			path = DQA11yTests;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EECB14721B18F02300809C96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB14BC1B18F0BB00809C96 /* DQLabel.h in Headers */,
+				EECB14BE1B18F0BB00809C96 /* DQTextField.h in Headers */,
+				EECB14B41B18F0BB00809C96 /* DQViewController.h in Headers */,
+				EECB147B1B18F02300809C96 /* DQA11y.h in Headers */,
+				EECB14B61B18F0BB00809C96 /* DQConstants.h in Headers */,
+				EECB14B21B18F0BB00809C96 /* DQTabBarController.h in Headers */,
+				EECB14C51B18F28300809C96 /* DQUtilities.h in Headers */,
+				EECB14B71B18F0BB00809C96 /* DQLog.h in Headers */,
+				EECB14C01B18F0BB00809C96 /* DQTextView.h in Headers */,
+				EECB14C21B18F0BB00809C96 /* DQWrapperView.h in Headers */,
+				EECB14BA1B18F0BB00809C96 /* DQButton.h in Headers */,
+				EECB14B01B18F0BB00809C96 /* UIView+DQView.h in Headers */,
+				EECB14AC1B18F0BB00809C96 /* UIColor+DQColor.h in Headers */,
+				EECB14AE1B18F0BB00809C96 /* UIFont+DQFont.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EECB14741B18F02300809C96 /* DQA11y */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB148B1B18F02300809C96 /* Build configuration list for PBXNativeTarget "DQA11y" */;
+			buildPhases = (
+				EECB14701B18F02300809C96 /* Sources */,
+				EECB14711B18F02300809C96 /* Frameworks */,
+				EECB14721B18F02300809C96 /* Headers */,
+				EECB14731B18F02300809C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DQA11y;
+			productName = DQA11y;
+			productReference = EECB14751B18F02300809C96 /* DQA11y.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EECB147F1B18F02300809C96 /* DQA11yTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECB148E1B18F02300809C96 /* Build configuration list for PBXNativeTarget "DQA11yTests" */;
+			buildPhases = (
+				EECB147C1B18F02300809C96 /* Sources */,
+				EECB147D1B18F02300809C96 /* Frameworks */,
+				EECB147E1B18F02300809C96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EECB14831B18F02300809C96 /* PBXTargetDependency */,
+			);
+			name = DQA11yTests;
+			productName = DQA11yTests;
+			productReference = EECB14801B18F02300809C96 /* DQA11yTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EECB146C1B18F02300809C96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Deque Systems Inc";
+				TargetAttributes = {
+					EECB14741B18F02300809C96 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					EECB147F1B18F02300809C96 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EECB146F1B18F02300809C96 /* Build configuration list for PBXProject "DQA11y" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EECB146B1B18F02300809C96;
+			productRefGroup = EECB14761B18F02300809C96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EECB14741B18F02300809C96 /* DQA11y */,
+				EECB147F1B18F02300809C96 /* DQA11yTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EECB14731B18F02300809C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB15141B190C3300809C96 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB147E1B18F02300809C96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EECB14701B18F02300809C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECB14B91B18F0BB00809C96 /* DQUtilities.m in Sources */,
+				EECB14B31B18F0BB00809C96 /* DQTabBarController.m in Sources */,
+				EECB14BF1B18F0BB00809C96 /* DQTextField.m in Sources */,
+				EECB14C31B18F0BB00809C96 /* DQWrapperView.m in Sources */,
+				EECB14B11B18F0BB00809C96 /* UIView+DQView.m in Sources */,
+				EECB14BD1B18F0BB00809C96 /* DQLabel.m in Sources */,
+				EECB14AF1B18F0BB00809C96 /* UIFont+DQFont.m in Sources */,
+				EECB14C11B18F0BB00809C96 /* DQTextView.m in Sources */,
+				EECB14B81B18F0BB00809C96 /* DQLog.m in Sources */,
+				EECB14B51B18F0BB00809C96 /* DQViewController.m in Sources */,
+				EECB14BB1B18F0BB00809C96 /* DQButton.m in Sources */,
+				EECB14AD1B18F0BB00809C96 /* UIColor+DQColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECB147C1B18F02300809C96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EECB14831B18F02300809C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EECB14741B18F02300809C96 /* DQA11y */;
+			targetProxy = EECB14821B18F02300809C96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EECB14891B18F02300809C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EECB148A1B18F02300809C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EECB148C1B18F02300809C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DQA11y/Info.plist;
+				INSTALL_PATH = "$(EXECUTABLE_PATH)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		EECB148D1B18F02300809C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DQA11y/Info.plist;
+				INSTALL_PATH = "$(EXECUTABLE_PATH)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = NO;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		EECB148F1B18F02300809C96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DQA11yTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EECB14901B18F02300809C96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DQA11yTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EECB146F1B18F02300809C96 /* Build configuration list for PBXProject "DQA11y" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB14891B18F02300809C96 /* Debug */,
+				EECB148A1B18F02300809C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECB148B1B18F02300809C96 /* Build configuration list for PBXNativeTarget "DQA11y" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB148C1B18F02300809C96 /* Debug */,
+				EECB148D1B18F02300809C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECB148E1B18F02300809C96 /* Build configuration list for PBXNativeTarget "DQA11yTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECB148F1B18F02300809C96 /* Debug */,
+				EECB14901B18F02300809C96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EECB146C1B18F02300809C96 /* Project object */;
+}

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DQUtilities.h"
+#import <UIKit/UIKit.h>
 
 @implementation DQUtilities
 

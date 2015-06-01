@@ -63,7 +63,7 @@
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
-		EEE0DED61B1CC7F200F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DED11B1CC7D300F8BBD1 /* DQA11y.framework */; };
+		EEE0DEE21B1CC8E300F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,23 +74,23 @@
 			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
 			remoteInfo = iosFireEyesInstructions;
 		};
-		EEE0DED01B1CC7D300F8BBD1 /* PBXContainerItemProxy */ = {
+		EEE0DEDC1B1CC8D500F8BBD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+			containerPortal = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECB14751B18F02300809C96;
 			remoteInfo = DQA11y;
 		};
-		EEE0DED21B1CC7D300F8BBD1 /* PBXContainerItemProxy */ = {
+		EEE0DEDE1B1CC8D500F8BBD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+			containerPortal = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECB14801B18F02300809C96;
 			remoteInfo = DQA11yTests;
 		};
-		EEE0DED41B1CC7EC00F8BBD1 /* PBXContainerItemProxy */ = {
+		EEE0DEE01B1CC8DD00F8BBD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+			containerPortal = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = EECB14741B18F02300809C96;
 			remoteInfo = DQA11y;
@@ -204,7 +204,7 @@
 		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
 		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
-		EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = ../DQA11y/DQA11y.xcodeproj; sourceTree = "<group>"; };
+		EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = DQA11y/DQA11y.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE0DED61B1CC7F200F8BBD1 /* DQA11y.framework in Frameworks */,
+				EEE0DEE21B1CC8E300F8BBD1 /* DQA11y.framework in Frameworks */,
 				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
 				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
 				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
@@ -278,7 +278,7 @@
 		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
 			isa = PBXGroup;
 			children = (
-				EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */,
+				EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */,
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
@@ -520,11 +520,11 @@
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
 		};
-		EEE0DECC1B1CC7D200F8BBD1 /* Products */ = {
+		EEE0DED81B1CC8D500F8BBD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEE0DED11B1CC7D300F8BBD1 /* DQA11y.framework */,
-				EEE0DED31B1CC7D300F8BBD1 /* DQA11yTests.xctest */,
+				EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */,
+				EEE0DEDF1B1CC8D500F8BBD1 /* DQA11yTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -544,7 +544,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EEE0DED51B1CC7EC00F8BBD1 /* PBXTargetDependency */,
+				EEE0DEE11B1CC8DD00F8BBD1 /* PBXTargetDependency */,
 			);
 			name = "Accessibility 101";
 			productName = iosFireEyesInstructions;
@@ -601,8 +601,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EEE0DECC1B1CC7D200F8BBD1 /* Products */;
-					ProjectRef = EEE0DECB1B1CC7D200F8BBD1 /* DQA11y.xcodeproj */;
+					ProductGroup = EEE0DED81B1CC8D500F8BBD1 /* Products */;
+					ProjectRef = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -614,18 +614,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		EEE0DED11B1CC7D300F8BBD1 /* DQA11y.framework */ = {
+		EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DQA11y.framework;
-			remoteRef = EEE0DED01B1CC7D300F8BBD1 /* PBXContainerItemProxy */;
+			remoteRef = EEE0DEDC1B1CC8D500F8BBD1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		EEE0DED31B1CC7D300F8BBD1 /* DQA11yTests.xctest */ = {
+		EEE0DEDF1B1CC8D500F8BBD1 /* DQA11yTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = DQA11yTests.xctest;
-			remoteRef = EEE0DED21B1CC7D300F8BBD1 /* PBXContainerItemProxy */;
+			remoteRef = EEE0DEDE1B1CC8D500F8BBD1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -714,10 +714,10 @@
 			target = A9D013BE18A2DD4700DC6496 /* Accessibility 101 */;
 			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
 		};
-		EEE0DED51B1CC7EC00F8BBD1 /* PBXTargetDependency */ = {
+		EEE0DEE11B1CC8DD00F8BBD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DQA11y;
-			targetProxy = EEE0DED41B1CC7EC00F8BBD1 /* PBXContainerItemProxy */;
+			targetProxy = EEE0DEE01B1CC8DD00F8BBD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
