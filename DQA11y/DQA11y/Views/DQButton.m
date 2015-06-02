@@ -12,7 +12,7 @@
 
 
 @implementation DQButton {
-    NSString* _contentSizeCategory;
+    NSString* _contentSizeCategory; ///< Type of font being used.
 }
 
 @dynamic shadowed;

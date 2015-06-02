@@ -13,7 +13,7 @@
  */
 @interface DQButton : UIButton
 
-@property (getter=isUnderlined) BOOL underlined; ///< Whether or not the text in the button should be underlined
-@property (getter=isShadowed) BOOL shadowed; ///< Whether or not the button should be shadowed
+@property (getter=isUnderlined) BOOL underlined; ///< Set to TRUE if text in DQButton should be underlined. FALSE otherwise.
+@property (getter=isShadowed) BOOL shadowed; ///< Set to TRUE if DQButton should have a shadow. FALSE otherwise.
 
 @end

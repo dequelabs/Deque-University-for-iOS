@@ -13,7 +13,7 @@
  */
 @interface UIFont (DQFont)
 
-- (NSString*const)contentSizeCategory;
+- (NSString*const)contentSizeCategory; ///< Checks to see if current UIFont is a dynamic type.  Logs warning if font is not dynamic.
 
 
 @end
