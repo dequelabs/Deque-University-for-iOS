@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACFixedViewController.h"
+#import "IACViewController.h"
 
+/**
+ * Fixed version of our Hints demo.
+ */
 
-@interface IACHintFixedViewController : IACFixedViewController {
+@interface IACHintFixedViewController : IACViewController {
     IBOutlet UIButton* _buttonStarSpangledBanner;
     IBOutlet UIButton* _buttonAmazingGrace;
     IBOutlet UIButton* _buttonSinginInTheRain;

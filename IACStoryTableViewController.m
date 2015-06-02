@@ -8,15 +8,16 @@
 
 #import "IACStoryTableViewController.h"
 #import "IACViewController.h"
-#import "UIView+DQView.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
-#import "DQConstants.h"
 
 #define OVERLAY_IDENTIFIER @"Overlay"
 #define INTRODUCTION_IDENTIFIER @"Introduction"
-#define DEMO_TITLE_IDENTIFIER @"Demos"
-#define STORY_IDENTIFIER @"StoryCell"
+#define BASIC_DEMO_TITLE_IDENTIFIER @"BasicDemos"
+#define BASIC_STORY_IDENTIFIER @"BasicStoryCell"
+#define ADV_DEMO_TITLE_IDENTIFIER @"AdvDemos"
+#define ADV_STORY_IDENTIFIER @"AdvStoryCell"
 
 #define OVERLAY_IMAGE_TAG 93
 #define OVERLAY_SWITCH_TAG 92
@@ -26,34 +27,30 @@
 
 #define OVERLAY_SECTION_NUM 0
 #define INTRODUCTION_SECTION_NUM 1
-#define DEMONSTRATIONS_SECTION_NUM 2
-#define LIST_OF_DEMOS_SECTION_NUM 3
+#define BASIC_DEMOS_SECTION_NUM 2
+#define BASIC_DEMO_STORIES_SECTION_NUM 3
+#define ADV_DEMOS_SECTION_NUM 4
+#define ADV_DEMO_STORIES_SECTION_NUM 5
 
 @implementation IACStoryTableViewController {
-    NSArray* _viewControllers;
+    NSArray* _viewControllersBasic;
+    NSArray* _viewControllersAdvanced;
     UIViewController* _introduction;
     UISwitch* overlaySwitch;
     UIImageView* sightImage;
     
-    //Color Scheme
+    ///< color scheme
+    UIColor* _colorCellText;
+    UIColor* _colorMenuBackground;
     UIColor* _colorCellBackgroundDimmed;
     UIColor* _colorCellBackgroundSelected;
-    UIColor* _colorCellBackgroundDimmedDarkened;
-    UIColor* _colorCellBackgroundSelectedDarkened;
-    UIColor* _colorCellTextDimmed;
-    UIColor* _colorCellTextSelected;
-    UIColor* _colorCellTextDimmedDarkened;
-    UIColor* _colorCellTextSelectedDarkened;
-    UIColor* _colorMenuBackground;
-    UIColor* _colorMenuBackgroundDarkened;
     
-    BOOL DARKEN_COLORS;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //silencing constraint error
+    ///< silencing constraint error
     self.tableView.rowHeight = 44;
     
     self.tableView.delegate = self;
@@ -61,45 +58,50 @@
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    NSMutableArray* tempArray = [NSMutableArray array];
+    NSMutableArray* basicDemos = [NSMutableArray array];
+    NSMutableArray* advancedDemos = [NSMutableArray array];
     
     _introduction = [storyBoard instantiateViewControllerWithIdentifier:@"Introduction"];
-    [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"LabelStory"]];
-    [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"HintStory"]];
-    [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"TraitStory"]];
-    [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"NestedA11yStory"]];
-    [tempArray addObject:[storyBoard instantiateViewControllerWithIdentifier:@"DynamicTypeStory"]];
+    [basicDemos addObject:[storyBoard instantiateViewControllerWithIdentifier:@"LabelStory"]];
+    [basicDemos addObject:[storyBoard instantiateViewControllerWithIdentifier:@"HintStory"]];
+    [basicDemos addObject:[storyBoard instantiateViewControllerWithIdentifier:@"TraitStory"]];
+    [basicDemos addObject:[storyBoard instantiateViewControllerWithIdentifier:@"NestedA11yStory"]];
+    [basicDemos addObject:[storyBoard instantiateViewControllerWithIdentifier:@"DynamicTypeStory"]];
     
     UIStoryboard* dynamic = [UIStoryboard storyboardWithName:@"DynamicNotifications" bundle:nil];
-    [tempArray addObject:[dynamic instantiateViewControllerWithIdentifier:@"DynamicNotifications"]];
+    [basicDemos addObject:[dynamic instantiateViewControllerWithIdentifier:@"DynamicNotifications"]];
     
     UIStoryboard* form = [UIStoryboard storyboardWithName:@"FormsValidation" bundle:nil];
-    [tempArray addObject:[form instantiateViewControllerWithIdentifier:@"FormsValidation"]];
+    [advancedDemos addObject:[form instantiateViewControllerWithIdentifier:@"FormsValidation"]];
     
-    _viewControllers = [NSArray arrayWithArray:tempArray];
+    UIStoryboard* modal = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
+    [basicDemos addObject:[modal instantiateViewControllerWithIdentifier:@"ModalDialog"]];
     
-    //color scheme
-    [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [IACUtilities colorWithHexString:BLUE]}];
+    ///< only load this story into the menu if user uses an iPad
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        UIStoryboard* colors = [UIStoryboard storyboardWithName:@"TopBarContrast" bundle:nil];
+        [basicDemos addObject:[colors instantiateViewControllerWithIdentifier:@"TopBarContrast"]];
+    }
     
+    _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
+    _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];
+    
+    ///< colors
+    _colorCellText = [IACUtilities colorWithHexString:DARK_BLUE];
+    _colorMenuBackground = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundDimmed = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundSelected = [IACUtilities colorWithHexString:LIGHT_BLUE];
-    _colorCellBackgroundDimmedDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
-    _colorCellBackgroundSelectedDarkened = [IACUtilities colorWithHexString:LIGHT_BLUE];
-    _colorCellTextDimmed = [IACUtilities colorWithHexString:DARK_BLUE];
-    _colorCellTextSelected = [IACUtilities colorWithHexString:DARK_BLUE];
-    _colorCellTextDimmedDarkened = [IACUtilities colorWithHexString:DARK_BLUE];
-    _colorCellTextSelectedDarkened = [IACUtilities colorWithHexString:DARK_BLUE];
-    _colorMenuBackground = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
-    _colorMenuBackgroundDarkened = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
+    
+    ///< set color scheme
+    [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [IACUtilities colorWithHexString:BLUE]}];
+    self.tableView.backgroundColor = _colorMenuBackground;
+    self.wrapperView.backgroundColor = _colorMenuBackground;
+    self.logoView.backgroundColor = _colorMenuBackground;
     
     self.tableView.backgroundView = nil;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(observeDarkenColorsSetting)
-                                                 name:UIAccessibilityDarkerSystemColorsStatusDidChangeNotification
-                                               object:nil];
-    
-    //selecting introduction cell
+    ///< selecting introduction cell
     NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
     [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
 }
@@ -108,37 +110,41 @@
     [super viewDidAppear:animated];
     
     [self setState:NO];
-    [self observeDarkenColorsSetting];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+    return 6;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    if(section == LIST_OF_DEMOS_SECTION_NUM) {
-        return _viewControllers.count;
+    if(section == BASIC_DEMO_STORIES_SECTION_NUM) {
+        return _viewControllersBasic.count;
+        
+    } else if(section == ADV_DEMO_STORIES_SECTION_NUM) {
+        return _viewControllersAdvanced.count;
+        
     } else {
         return 1;
+        
     }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if(indexPath.section == OVERLAY_SECTION_NUM) {
-
         [self toggleState];
         
         return nil;
         
-    } else if (indexPath.section == DEMONSTRATIONS_SECTION_NUM) {
+    } else if(indexPath.section == BASIC_DEMOS_SECTION_NUM || indexPath.section == ADV_DEMOS_SECTION_NUM) {
         return nil;
-        
+
     } else {
         return indexPath;
+        
     }
 }
 
@@ -146,8 +152,6 @@
 
     UITableViewCell* cell;
     UILabel* label;
-    UIImageView* image;
-    DARKEN_COLORS = UIAccessibilityDarkerSystemColorsEnabled();
     
     if(indexPath.section == OVERLAY_SECTION_NUM) {
         
@@ -155,52 +159,48 @@
         sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
         overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
-        //creating overlaySwitch
+        ///< creating overlaySwitch
         [overlaySwitch addTarget:self action:@selector(observeSwitchState) forControlEvents:UIControlEventValueChanged];
         
-        //setting accessibility hint
+        ///< setting accessibility hint
         [cell setAccessibilityHint:NSLocalizedString(@"TOGGLE_SETTING_HINT", nil)];
         
     } else if(indexPath.section == INTRODUCTION_SECTION_NUM) {
         
-        cell = [tableView dequeueReusableCellWithIdentifier:INTRODUCTION_IDENTIFIER forIndexPath:indexPath];
-        label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
-        image = (UIImageView*)[cell viewWithTag:STORY_IMAGE_TAG];
+        NSArray* array = [[NSArray alloc] initWithObjects:_introduction, nil];
+        cell = [self createTableViewCellFromArray:array withIdentifier:INTRODUCTION_IDENTIFIER forIndexPath:indexPath];
         
-        label.text = _introduction.title;
-        [image setImage:[UIImage imageNamed:label.text]];
+    } else if(indexPath.section == BASIC_DEMOS_SECTION_NUM) {
         
-        //setting accessibility label
-        NSString* accessibilityLabel = [label.text stringByAppendingString: @"Tab, 1 of 1"];
-        [cell setAccessibilityLabel:accessibilityLabel];
-        
-    } else if(indexPath.section == DEMONSTRATIONS_SECTION_NUM) {
-        
-        cell = [tableView dequeueReusableCellWithIdentifier:DEMO_TITLE_IDENTIFIER forIndexPath:indexPath];
+        cell = [tableView dequeueReusableCellWithIdentifier:BASIC_DEMO_TITLE_IDENTIFIER forIndexPath:indexPath];
         label = (UILabel*)[cell viewWithTag:DEMO_TITLE_TAG];
         
-        label.text = NSLocalizedString(@"DEMOS", nil);
+        label.text = NSLocalizedString(@"BASIC_DEMOS", nil);
+        label.accessibilityLabel = NSLocalizedString(@"BASIC_DEMOS", nil);
+        
+    } else if(indexPath.section == ADV_DEMOS_SECTION_NUM) {
+        
+        cell = [tableView dequeueReusableCellWithIdentifier:ADV_DEMO_TITLE_IDENTIFIER forIndexPath:indexPath];
+        label = (UILabel*)[cell viewWithTag:DEMO_TITLE_TAG];
+        
+        label.text = NSLocalizedString(@"ADV_DEMOS", nil);
+        label.accessibilityLabel = NSLocalizedString(@"ADV_DEMOS", nil);
+        
+    } else if(indexPath.section == BASIC_DEMO_STORIES_SECTION_NUM) {
+        
+        cell = [self createTableViewCellFromArray:_viewControllersBasic withIdentifier:BASIC_STORY_IDENTIFIER forIndexPath:indexPath];
 
     } else {
         
-        cell = [tableView dequeueReusableCellWithIdentifier:STORY_IDENTIFIER forIndexPath:indexPath];
-    
-        label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
-        image = (UIImageView*)[cell viewWithTag:STORY_IMAGE_TAG];
-    
-        UIViewController* viewController = [_viewControllers objectAtIndex:indexPath.row];
-        label.text = viewController.title;
-        [image setImage:[UIImage imageNamed:label.text]];
-        
-        //setting accessibility label
-        NSString* demoTab = [NSString stringWithFormat:@", Demonstrations Tab, %d of", indexPath.row + 1];
-        NSString* accessibilityLabel = [label.text stringByAppendingString:demoTab];
-        accessibilityLabel = [accessibilityLabel stringByAppendingString:[NSString stringWithFormat:@"%d", [_viewControllers count]]];
-        
-        [cell setAccessibilityLabel:accessibilityLabel];
-        
+        cell = [self createTableViewCellFromArray:_viewControllersAdvanced withIdentifier:ADV_STORY_IDENTIFIER forIndexPath:indexPath];
+
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    UIView* selectedView = [[UIView alloc] init];
+    selectedView.backgroundColor = _colorCellBackgroundSelected;
+    cell.selectedBackgroundView = selectedView;
+    cell.backgroundColor = _colorCellBackgroundDimmed;
+    label.textColor = _colorCellText;
     
     return cell;
 }
@@ -208,16 +208,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if(indexPath.section == INTRODUCTION_SECTION_NUM) {
-    
         UIViewController* viewController = _introduction;
         [self.splitViewController showDetailViewController:viewController sender:nil];
-        [self observeDarkenColorsSetting];
 
-    } else if(indexPath.section == LIST_OF_DEMOS_SECTION_NUM) {
+    } else if(indexPath.section == BASIC_DEMO_STORIES_SECTION_NUM) {
         
-        UIViewController* viewController = [_viewControllers objectAtIndex:indexPath.row];
+        UIViewController* viewController = [_viewControllersBasic objectAtIndex:indexPath.row];
         [self.splitViewController showDetailViewController:viewController sender:nil];
-        [self observeDarkenColorsSetting];
+ 
+    } else if(indexPath.section == ADV_DEMO_STORIES_SECTION_NUM) {
+        
+        UIViewController* viewController = [_viewControllersAdvanced objectAtIndex:indexPath.row];
+        [self.splitViewController showDetailViewController:viewController sender:nil];
         
     }
 }
@@ -237,27 +239,32 @@
     [IACViewController setOverlayOn:value];
 }
 
--(void)observeDarkenColorsSetting  {
+-(UITableViewCell*)createTableViewCellFromArray:(NSArray*)viewControllers withIdentifier:(NSString*)identifier forIndexPath:(NSIndexPath*)indexPath {
+    UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    UILabel* label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
+    UIImageView* image = (UIImageView*)[cell viewWithTag:STORY_IMAGE_TAG];
     
-    DARKEN_COLORS = UIAccessibilityDarkerSystemColorsEnabled();
-    self.tableView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
-    self.wrapperView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
-    self.logoView.backgroundColor = DARKEN_COLORS ? _colorMenuBackgroundDarkened : _colorMenuBackground;
+    UIViewController* viewController = [viewControllers objectAtIndex:indexPath.row];
+    label.text = viewController.title;
+    [image setImage:[UIImage imageNamed:label.text]];
     
-    NSArray* cells = [self.tableView visibleCells];
+    ///< setting accessibility label
+    NSString* demoTab;
     
-    for(UITableViewCell* cell in cells) {
-        UILabel* label = (UILabel*)[cell viewWithTag:STORY_LABEL_TAG];
-        
-        if(cell.isSelected) {
-            cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundSelectedDarkened : _colorCellBackgroundSelected;
-            label.textColor = DARKEN_COLORS ? _colorCellTextSelectedDarkened : _colorCellTextSelected;
-            
-        } else {
-            cell.backgroundColor = DARKEN_COLORS ? _colorCellBackgroundDimmedDarkened : _colorCellBackgroundDimmed;
-            label.textColor = DARKEN_COLORS ? _colorCellTextDimmedDarkened : _colorCellTextDimmed;
-        }
+    if([identifier isEqual: INTRODUCTION_IDENTIFIER]) {
+        demoTab = @"Tab,";
+    } else if([identifier isEqual: BASIC_STORY_IDENTIFIER]) {
+        demoTab = @", Basic Demonstrations Tab,";
+    } else {
+        demoTab = @", Advanced Demonstrations Tab,";
     }
+    demoTab = [demoTab stringByAppendingString: [NSString stringWithFormat: @"%d of", indexPath.row + 1]];
+    
+    NSString* accessibilityLabel = [label.text stringByAppendingString:demoTab];
+    accessibilityLabel = [accessibilityLabel stringByAppendingString:[NSString stringWithFormat:@"%d", [viewControllers count]]];
+    cell.accessibilityLabel = accessibilityLabel;
+    
+    return cell;
 }
 
 @end

@@ -13,6 +13,7 @@
 @interface IACAboutViewController ()
 
 @property UIColor* backgroundColorView;
+@property UIScrollView* scrollView;
 
 @end
 
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     
     self.backgroundColorView = [IACUtilities colorWithHexString:BLUE];
-    self.view.backgroundColor = self.backgroundColorView;
+    self.scrollView.backgroundColor = self.backgroundColorView;
 }
 
 @end

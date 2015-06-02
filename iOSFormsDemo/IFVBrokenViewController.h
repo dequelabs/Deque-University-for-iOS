@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
+/**
+ * This is the broken version of the Forms demo.
+ */
+
 @interface IFVBrokenViewController : IACViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -17,15 +21,13 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *dateField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
-@property (weak, nonatomic) IBOutlet UILabel *nameReq;
-@property (weak, nonatomic) IBOutlet UILabel *emailReq;
+@property (weak, nonatomic) IBOutlet UILabel *nameReq;  ///< nameReq, dateReq and emailReq are visual hints for letting a user
+@property (weak, nonatomic) IBOutlet UILabel *emailReq; ///< know a field is required
 @property (weak, nonatomic) IBOutlet UILabel *dateReq;
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
-@property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;
 
 - (IBAction)submitButton:(id)sender;
 - (IBAction)backgroundTap:(id)sender;
-- (IBAction)information:(id)sender;
 
 @end
 

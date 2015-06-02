@@ -8,16 +8,21 @@
 #import "regex.h"
 #import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
-#import "UIFont+DQFont.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
 
-@interface IFVFixedViewController ()<CustomIOS7AlertViewDelegate>
+@interface IFVFixedViewController ()
 
 @property UIColor* backgroundColorView;
 
 
 @end
+
+/**
+ * Localizable strings can be found in the Localizabe.strings file under supporting files.
+ * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
+ */
 
 @implementation IFVFixedViewController
 
@@ -37,7 +42,7 @@
     [_dateField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapDateView)]];
     [_emailField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapeEmailView)]];
     [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
-    [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
+    
 }
 
 - (IBAction)submitButton:(id)sender {
@@ -113,55 +118,11 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
-- (IBAction)information:(id)sender {
-    
-    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, @"Alert Opened");
-    
-    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
-                                                                 message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
-    
-    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_VISIT", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
-                                nil]];
-    
-    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
-                                                                                green:77.0f/255.0f
-                                                                                 blue:94.0f/255.0f
-                                                                                alpha:1.0f],
-                                                                [UIColor colorWithRed:0.0f
-                                                                                green:0.5f
-                                                                                 blue:1.0f
-                                                                                alpha:1.0f],nil]];
-    
-    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"FormsValidation" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
-    modalViewControlelr.view.backgroundColor = [UIColor clearColor];
-    [modalViewControlelr setView:alertView];
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    [self.navigationController presentViewController:modalViewControlelr animated:YES completion:nil];
-    
-    [alertView setDelegate:self];
-    [alertView show];
-    
-    self.view.accessibilityElementsHidden = YES;
-    self.tabBarController.view.accessibilityElementsHidden = YES;
-    
-    
-}
 
-- (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {
-    if (buttonIndex == 0) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
-    } else if (buttonIndex == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
-    }
-    
-    [alertView close];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    self.view.accessibilityElementsHidden = NO;
-    self.tabBarController.view.accessibilityElementsHidden = NO;
-    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, [[self learnMoreLink] superview]);
-}
+/**
+ * validateTextField validates the text field based on the passed in string and predicate, then updates the
+ * error messages and accessibility information accordingly.
+ */
 
 + (BOOL)validateTextField:(UITextField*)textField
                fieldLabel:(UILabel*)fieldLabel

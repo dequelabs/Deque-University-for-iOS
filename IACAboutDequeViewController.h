@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACAboutViewController.h"
-@interface IACAboutDequeViewController : IACAboutViewController
+#import "IACViewController.h"
+
+/**
+ * View Controller for the intro to Deque and Deque University for iOS page
+ */
+
+@interface IACAboutDequeViewController : IACViewController
 
 @end

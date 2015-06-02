@@ -34,6 +34,12 @@
     
 }
 
+
+/**
+ * Music Player functionality.
+ * The phone/tablet will play the correct music based on which button is pressed
+ */
+
 - (NSString*)playMusic:(id)sender {
     
     NSLog(@"Trying to play music");

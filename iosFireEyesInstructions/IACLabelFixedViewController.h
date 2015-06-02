@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACFixedViewController.h"
-#import "DQButton.h"
+#import "IACViewController.h"
+#import <DQA11y/DQA11y.h>
 
-@interface IACLabelFixedViewController : IACFixedViewController {
+/**
+ * The accessible (fixed) verison of the Labels Demo.
+ */
+
+@interface IACLabelFixedViewController : IACViewController {
     IBOutlet DQButton *_DogDisplay;
     IBOutlet DQButton *_CatDisplay;
     IBOutlet DQButton *_FishDisplay;

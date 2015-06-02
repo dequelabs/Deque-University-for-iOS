@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Controller for the side bar table of contents
+ */
+
 @interface IACStoryTableViewController : UITableViewController
 
 @property (weak, nonatomic) IBOutlet UIView* logoView;

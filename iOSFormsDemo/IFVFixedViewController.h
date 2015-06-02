@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACFixedViewController.h"
-#import "DQButton.h"
+#import "IACViewController.h"
+#import <DQA11y/DQA11y.h>
 
-@interface IFVFixedViewController : IACFixedViewController <UITextFieldDelegate>
+/**
+ * Fixed version of the Forms Demo.
+ */
+
+@interface IFVFixedViewController : IACViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -25,15 +29,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *dateField;
 @property (weak, nonatomic) IBOutlet UILabel *dateRequirement;
 
-@property (weak, nonatomic) IBOutlet UIImageView *dequeLogo;
-
-@property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
+@property (weak, nonatomic) IBOutlet UIImageView *dequeLogo; ///< Title Image
 
 @property (weak, nonatomic) IBOutlet DQButton *submitButton;
 
-- (IBAction)submitButton:(id)sender;
-- (IBAction)backgroundTap:(id)sender;
-- (IBAction)information:(id)sender;
+- (IBAction)submitButton:(id)sender; ///< when the submit button from above is pressed
+- (IBAction)backgroundTap:(id)sender; ///< so that the keyboard disappears on background tap
 
 @end
 

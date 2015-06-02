@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Interface for the Table View Cell containing the Overlay image and Overlay switch.
+ */
+
 @interface IACTableViewCell : UITableViewCell
 
 @end

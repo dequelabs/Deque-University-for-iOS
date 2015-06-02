@@ -11,9 +11,14 @@
 #import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
 
-@interface IFVBrokenViewController()<CustomIOS7AlertViewDelegate>
+@interface IFVBrokenViewController()
 
 @end
+
+/**
+ * Localizable strings can be found in the Localizabe.strings file under supporting files.
+ * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
+ */
 
 @implementation IFVBrokenViewController
 
@@ -56,6 +61,10 @@
     }
 }
 
+/**
+ * When we hit the submit button, all three text fields get validated by "validateTextField"
+ * the definition for which can be found in IFVFixedViewController.m
+ */
 - (IBAction)submitButton:(id)sender {
     
     [self.class validateTextField:_emailField
@@ -116,13 +125,12 @@
     }
 }
 
-- (IBAction)backgroundTap:(id)sender {
-    //get rid of keyboard on background tap
+- (IBAction)backgroundTap:(id)sender { ///< Get rid of keyboard on background tap
     [self.view endEditing:YES];
 }
 
-// get rid of keyboard when "done" is pressed
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField { ///< Get rid of keyboard when "done" is pressed
     
     [textField resignFirstResponder];
     return YES;
@@ -130,40 +138,6 @@
 
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
-}
-
-- (IBAction)information:(id)sender {
-    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
-                                                                 message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
-    
-    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_VISIT", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
-                                nil]];
-    
-    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
-                                                                                green:77.0f/255.0f
-                                                                                 blue:94.0f/255.0f
-                                                                                alpha:1.0f],
-                                [UIColor colorWithRed:0.0f
-                                                green:0.5f
-                                                 blue:1.0f
-                                                alpha:1.0f],nil]];
-    
-    [alertView setDelegate:self];
-    
-    [alertView show];
-}
-
-- (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
-{
-    if (buttonIndex == 0) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
-    } else if (buttonIndex == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
-    }
-    
-    [alertView close];
 }
 
 @end

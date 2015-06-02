@@ -7,18 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACFixedViewController.h"
+#import "IACViewController.h"
 
-@interface IACDynamicNotificationsFixedViewController : IACFixedViewController {
-    IBOutlet UITextField* _textField;
-    NSMutableArray* _contactList;
+/**
+ * This is the fixed version of the Dynamic Notifications Demo.
+ */
+@interface IACDynamicNotificationsFixedViewController : IACViewController {
+    IBOutlet UITextField* _textField; ///< The textField in which the user can add contacts.
+    NSMutableArray* _contactList; ///< The list of contacts that the user has saved.
 }
 
 @property (readonly) UITextField* textField;
 @property (readonly) NSMutableArray* contactList;
 
--(NSString*)saveItem;
--(NSString*)clearList;
--(void)textChanged;
+-(NSString*)saveItem; ///< If the textField is not empty, save the text into the contactList.
+-(NSString*)clearList; ///< Empties the contactList (all elements in table are deleted).
+-(void)textChanged; ///< Changes the textField's accessibilityLabel depending on if it is empty or not.
 
 @end
