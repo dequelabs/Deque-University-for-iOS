@@ -13,8 +13,10 @@
  */
 @interface UIColor (DQColor)
 
+///< use with the exact RGBA values
 -(BOOL) isEqualToColorWithRed:(CGFloat)testred green:(CGFloat)testgreen blue:(CGFloat)testblue alpha:(CGFloat)testalpha;
 
+///< use with another UIColor
 -(BOOL) isEqualToColor:(UIColor *)color;
 
 @end

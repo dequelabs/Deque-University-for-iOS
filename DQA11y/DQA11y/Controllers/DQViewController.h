@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Deque's more accessible view controller
+ */
+
 @interface DQViewController : UIViewController
 
 @end

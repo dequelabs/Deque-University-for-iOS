@@ -10,6 +10,11 @@
 #import "IACViewController.h"
 #import "CustomIOS7AlertView.h"
 
+/**
+ * Controller for the Broken Modal Dialog where the 
+ * modal dialog doesn't get focused when it pops up
+ */
+
 @interface IACModalDialogBrokenViewController : IACViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink;

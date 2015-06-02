@@ -21,13 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    ///< load the contact us button
     [self.buttonContactUs addTarget:self action:@selector(loadDequeWebPage) forControlEvents:UIControlEventTouchUpInside];
     
     self.buttonContactUs.underlined = YES;
 }
 
 - (void)loadDequeWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]]; ///< load the deque web page
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]]; ///< load the deque web page in Safari
 }
 
 @end

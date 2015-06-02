@@ -43,7 +43,17 @@
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
         
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; ///< Sometimes hints aren't needed, this silences the warning, letting the analyzer know we are concsiously setting an empty hint.
+    [_ImageView setAccessibilityHint:@""]; ///< Sometimes hints aren't needed, this silences the warning, letting the analyzer
+                                           ///< know we are concsiously setting an empty hint.
+    
+    /**
+     * You may notice that on the next line "DOG" is an NSLocalized string.
+     * even though "dog" is a very short string, making it localizable allows some-
+     * one to easily translate this app into another language, like french, without
+     * going in and changing "dog" to "chien" in every instance. They only have to change it 
+     * in one place.
+     */
+    
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }

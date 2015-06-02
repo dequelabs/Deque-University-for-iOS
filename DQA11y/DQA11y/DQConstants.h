@@ -10,7 +10,7 @@
 #define Accessibility_101_DQConstants_h
 
 /**
- * DQ WorldSpace Constants.
+ * DQ WorldSpace Branding Constants.
  * This file defines the hex codes for every DQ WorldSpace color.
  */
 #define DQ_COLOR_WORLDSPACE_GREEN @"72BA32"

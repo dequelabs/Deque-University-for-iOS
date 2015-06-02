@@ -9,8 +9,9 @@
 #import "DQViewController.h"
 
 /**
- * ???
+ * A more accessible view controller.
  */
+
 @implementation DQViewController
 
 - (id)init {

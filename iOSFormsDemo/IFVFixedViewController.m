@@ -119,8 +119,10 @@
 }
 
 
-///< validateTextField validates the text field based on the passed in string and predicate, then updates the
-///< error message accordingly.
+/**
+ * validateTextField validates the text field based on the passed in string and predicate, then updates the
+ * error messages and accessibility information accordingly.
+ */
 
 + (BOOL)validateTextField:(UITextField*)textField
                fieldLabel:(UILabel*)fieldLabel

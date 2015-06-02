@@ -33,7 +33,7 @@
 
 @property (weak, nonatomic) IBOutlet DQButton *submitButton;
 
-- (IBAction)submitButton:(id)sender;
+- (IBAction)submitButton:(id)sender; ///< when the submit button from above is pressed
 - (IBAction)backgroundTap:(id)sender; ///< so that the keyboard disappears on background tap
 
 @end

@@ -33,7 +33,7 @@
 @dynamic translucentUndarkened;
 
 /**
- * ????
+ * Controller for the tab bar at the bottom of the page.
  */
 + (UIImage*)tintImage:(UIImage*)image withColor:(UIColor*)tintColor {
     UIGraphicsBeginImageContextWithOptions(image.size, NO, [[UIScreen mainScreen] scale]);

@@ -14,7 +14,12 @@
 
 @interface UIView (DQView)
 
-+ (NSComparator)comparatorPositionYThenX; ///< I think this returns how two elements compare in positions
++ (NSComparator)comparatorPositionYThenX;
+
+/**
+ * This returns how two elements compare in positions with Y being compared before
+ * X.
+ */
 
 - (UIView*)findFirstAccessibilityElement; ///< Finds and returns the first accessibility element in the view
 
