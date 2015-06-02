@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "IACDynamicNotificationsFixedViewController.h"
-#import "DQUtilities.h"
+#import "DQA11y/DQUtilities.h"
 #import "DEQAsserts.h"
 
 @interface IACDynamicNotificationsFixedViewController_test : XCTestCase {

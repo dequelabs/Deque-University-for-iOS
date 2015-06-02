@@ -22,7 +22,7 @@
     [_buttonDisplayFish addTarget:self action:@selector(visitWebPage) forControlEvents:UIControlEventTouchDown];
 
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; //Sometimes hints aren't needed, this silences the warning.
+    [_ImageView setAccessibilityHint:@""]; ///< Sometimes hints aren't needed, this silences the warning.
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
@@ -39,11 +39,15 @@
     }
 }
 
+///< Visits the webpage for the fish link.
+
 - (NSString*)visitWebPage {
     NSString* url = @"http://lmgtfy.com/?q=fish";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     return url;
 }
+
+///< Updates the image based on the name passed in.
 
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];

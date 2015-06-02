@@ -43,6 +43,10 @@
 
 }
 
+/**
+ * visitWebPage opens the corresponding Wikipedia web page in safari when a button is clicked.
+ */
+
 - (NSString*)visitWebPage:(id)sender {
     
     NSString* url = nil;

@@ -126,7 +126,7 @@
         <!--Modal Dialog-->
         <scene sceneID="wvt-zx-ZRV">
             <objects>
-                <viewController title="Modal Dialog" id="gV3-jh-lAw" customClass="IACModalDialogBrokenViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalBroken" title="Modal Dialog" id="gV3-jh-lAw" customClass="IACModalDialogBrokenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mfn-r6-1a0"/>
                         <viewControllerLayoutGuide type="bottom" id="aZM-kr-PNP"/>
@@ -279,7 +279,7 @@
         <!--Modal Dialog-->
         <scene sceneID="gA3-Ue-aLb">
             <objects>
-                <viewController title="Modal Dialog" id="v91-kg-Ngk" customClass="IACModalDialogFixedViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalFixed" title="Modal Dialog" id="v91-kg-Ngk" customClass="IACModalDialogFixedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfI-Lm-gj2"/>
                         <viewControllerLayoutGuide type="bottom" id="D42-FZ-A6y"/>
@@ -303,6 +303,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-fM-gpO">
                                                 <rect key="frame" x="192" y="50" width="179" height="22"/>
                                                 <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg">
+                                                        <rect key="frame" x="27" y="0.0" width="152" height="22"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyC-TX-hUu">
                                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
                                                         <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
@@ -315,12 +321,6 @@
                                                             <action selector="information:" destination="v91-kg-Ngk" eventType="touchUpInside" id="4nf-e4-1bn"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg">
-                                                        <rect key="frame" x="27" y="0.0" width="152" height="22"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <accessibility key="accessibilityConfiguration" label="Open a modal dialog">
@@ -409,6 +409,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fixed" image="DequeU_app_icon_fixed" id="ExY-cE-bsj"/>
                     <connections>
+                        <outlet property="OpenAModalDialog" destination="R2v-fM-gpO" id="JEO-t7-PSB"/>
                         <outlet property="learnMoreLink" destination="eyC-TX-hUu" id="4hH-Iq-UJC"/>
                     </connections>
                 </viewController>

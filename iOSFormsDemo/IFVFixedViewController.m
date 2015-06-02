@@ -8,7 +8,7 @@
 #import "regex.h"
 #import "IFVFixedViewController.h"
 #import "CustomIOS7AlertView.h"
-#import "UIFont+DQFont.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
 
@@ -18,6 +18,11 @@
 
 
 @end
+
+/**
+ * Localizable strings can be found in the Localizabe.strings file under supporting files.
+ * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
+ */
 
 @implementation IFVFixedViewController
 
@@ -37,6 +42,7 @@
     [_dateField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapDateView)]];
     [_emailField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapeEmailView)]];
     [_nameField.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapNameView)]];
+    
 }
 
 - (IBAction)submitButton:(id)sender {
@@ -111,6 +117,12 @@
 - (NSUInteger)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskPortrait;
 }
+
+
+/**
+ * validateTextField validates the text field based on the passed in string and predicate, then updates the
+ * error messages and accessibility information accordingly.
+ */
 
 + (BOOL)validateTextField:(UITextField*)textField
                fieldLabel:(UILabel*)fieldLabel

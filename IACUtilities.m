@@ -16,15 +16,15 @@ BOOL overlayOn = YES;
     
     NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
-    // String should be 6 or 8 characters
+    ///< String should be 6 or 8 characters
     if ([cString length] < 6) return [UIColor grayColor];
     
-    // strip 0X if it appears
+    ///< strip 0X if it appears
     if ([cString hasPrefix:@"0X"]) cString = [cString substringFromIndex:2];
     
     if ([cString length] != 6) return  [UIColor grayColor];
     
-    // Separate into r, g, b substrings
+    ///< Separate into r, g, b substrings
     NSRange range;
     range.location = 0;
     range.length = 2;
@@ -36,7 +36,7 @@ BOOL overlayOn = YES;
     range.location = 4;
     NSString *bString = [cString substringWithRange:range];
     
-    // Scan values
+    ///< Scan values
     unsigned int r, g, b;
     [[NSScanner scannerWithString:rString] scanHexInt:&r];
     [[NSScanner scannerWithString:gString] scanHexInt:&g];

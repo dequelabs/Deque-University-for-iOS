@@ -7,7 +7,7 @@
 //
 
 #import "IACAboutDequeViewController.h"
-#import "DQButton.h"
+#import <DQA11y/DQA11y.h>
 
 #define DEQUE_URL @"http://accessibility.deque.com/contact-deque-today"
 
@@ -21,13 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    ///< load the contact us button
     [self.buttonContactUs addTarget:self action:@selector(loadDequeWebPage) forControlEvents:UIControlEventTouchUpInside];
     
     self.buttonContactUs.underlined = YES;
 }
 
 - (void)loadDequeWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]]; ///< load the deque web page in Safari
 }
 
 @end

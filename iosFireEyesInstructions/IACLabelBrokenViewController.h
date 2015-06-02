@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
+/**
+ * View Controller for the Broken Labels Demo.
+ */
+
 @interface IACLabelBrokenViewController : IACViewController {
-    IBOutlet UIButton *_DogDisplay;
+    IBOutlet UIButton *_DogDisplay; ///< Dog, Cat, and Fish buttons
     IBOutlet UIButton *_CatDisplay;
     IBOutlet UIButton *_FishDisplay;
-    IBOutlet UIImageView *_ImageView;
+    IBOutlet UIImageView *_ImageView; ///< Image view for the pictures to be displayed in
 }
 
 @property (readonly) UILabel *brokenLabel;

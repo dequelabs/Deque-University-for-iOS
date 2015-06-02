@@ -8,10 +8,9 @@
 
 #import "IACStoryTableViewController.h"
 #import "IACViewController.h"
-#import "UIView+DQView.h"
+#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
-#import "DQConstants.h"
 
 #define OVERLAY_IDENTIFIER @"Overlay"
 #define INTRODUCTION_IDENTIFIER @"Introduction"
@@ -40,7 +39,7 @@
     UISwitch* overlaySwitch;
     UIImageView* sightImage;
     
-    //color scheme
+    ///< color scheme
     UIColor* _colorCellText;
     UIColor* _colorMenuBackground;
     UIColor* _colorCellBackgroundDimmed;
@@ -51,7 +50,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //silencing constraint error
+    ///< silencing constraint error
     self.tableView.rowHeight = 44;
     
     self.tableView.delegate = self;
@@ -78,7 +77,7 @@
     UIStoryboard* modal = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
     [basicDemos addObject:[modal instantiateViewControllerWithIdentifier:@"ModalDialog"]];
     
-    //only load this story into the menu if user uses an iPad
+    ///< only load this story into the menu if user uses an iPad
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
     {
         UIStoryboard* colors = [UIStoryboard storyboardWithName:@"TopBarContrast" bundle:nil];
@@ -88,13 +87,13 @@
     _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
     _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];
     
-    //colors
+    ///< colors
     _colorCellText = [IACUtilities colorWithHexString:DARK_BLUE];
     _colorMenuBackground = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundDimmed = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundSelected = [IACUtilities colorWithHexString:LIGHT_BLUE];
     
-    //color scheme
+    ///< set color scheme
     [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [IACUtilities colorWithHexString:BLUE]}];
     self.tableView.backgroundColor = _colorMenuBackground;
     self.wrapperView.backgroundColor = _colorMenuBackground;
@@ -102,7 +101,7 @@
     
     self.tableView.backgroundView = nil;
     
-    //selecting introduction cell
+    ///< selecting introduction cell
     NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
     [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
 }
@@ -160,10 +159,10 @@
         sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
         overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
-        //creating overlaySwitch
+        ///< creating overlaySwitch
         [overlaySwitch addTarget:self action:@selector(observeSwitchState) forControlEvents:UIControlEventValueChanged];
         
-        //setting accessibility hint
+        ///< setting accessibility hint
         [cell setAccessibilityHint:NSLocalizedString(@"TOGGLE_SETTING_HINT", nil)];
         
     } else if(indexPath.section == INTRODUCTION_SECTION_NUM) {
@@ -249,7 +248,7 @@
     label.text = viewController.title;
     [image setImage:[UIImage imageNamed:label.text]];
     
-    //setting accessibility label
+    ///< setting accessibility label
     NSString* demoTab;
     
     if([identifier isEqual: INTRODUCTION_IDENTIFIER]) {

@@ -9,10 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
+/**
+ * Fixed Modal Dialog
+ */
+
 @interface IACModalDialogFixedViewController : IACViewController
+@property (weak, nonatomic) IBOutlet UIView *OpenAModalDialog;
 
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
 
-- (IBAction)information:(id)sender;
+
+- (BOOL)information:(id)sender;
 
 @end

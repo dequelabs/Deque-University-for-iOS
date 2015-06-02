@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
-#import "DQButton.h"
+#import <DQA11y/DQA11y.h>
+
+/**
+ * The accessible (fixed) verison of the Labels Demo.
+ */
 
 @interface IACLabelFixedViewController : IACViewController {
     IBOutlet DQButton *_DogDisplay;

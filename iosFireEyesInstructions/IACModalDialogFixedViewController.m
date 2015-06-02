@@ -21,7 +21,12 @@
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
 }
 
-- (IBAction)information:(id)sender {
+/**
+ * creates the modal dialog, and posts an accessibility notification that the screen has changed
+ * Also returns whether the modal dialog is focused or not for testing purposes
+ */
+
+- (BOOL)information:(id)sender {
     
     UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, @"Alert Opened");
     
@@ -54,8 +59,16 @@
     self.view.accessibilityElementsHidden = YES;
     self.tabBarController.view.accessibilityElementsHidden = YES;
     
-    
+    if([alertView isHidden]){
+        return FALSE;
+    }
+    return TRUE;
 }
+
+/**
+ * This function either opens safari or a mailto dialog depending on which button on the
+ * modal dialog is pressed
+ */
 
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {
     if (buttonIndex == 0) {
