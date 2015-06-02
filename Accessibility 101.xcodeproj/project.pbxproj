@@ -63,10 +63,24 @@
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
-		EEE0DEE21B1CC8E300F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */; };
+		EEE0DEE21B1CC8E300F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2BE1E8251B1E126600BA4BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECB14751B18F02300809C96;
+			remoteInfo = DQA11y;
+		};
+		2BE1E8271B1E126600BA4BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECB14801B18F02300809C96;
+			remoteInfo = DQA11yTests;
+		};
 		A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A9D013B718A2DD4700DC6496 /* Project object */;
@@ -142,6 +156,7 @@
 		0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACSplitViewController.h; sourceTree = "<group>"; };
 		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
 		2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewControllerTests.m; sourceTree = "<group>"; };
+		2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = iOSA11yFramework/DQA11y.xcodeproj; sourceTree = "<group>"; };
 		A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
 		A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
 		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
@@ -308,6 +323,15 @@
 			name = "Accessibility 101";
 			sourceTree = "<group>";
 		};
+		2BE1E8211B1E126500BA4BF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */,
+				2BE1E8281B1E126600BA4BF6 /* DQA11yTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A300EEAB1AF3CD82003507B6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +400,7 @@
 		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */,
 				EE64E1E41AFA633B00D09B4D /* libGoogleAnalyticsServices.a */,
 				0FEB4B921AC9C75300F372F8 /* libsqlite3.dylib */,
 				0FEB4B901AC9C74900F372F8 /* libz.dylib */,
@@ -604,6 +629,10 @@
 					ProductGroup = EEE0DED81B1CC8D500F8BBD1 /* Products */;
 					ProjectRef = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
 				},
+				{
+					ProductGroup = 2BE1E8211B1E126500BA4BF6 /* Products */;
+					ProjectRef = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -614,6 +643,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DQA11y.framework;
+			remoteRef = 2BE1E8251B1E126600BA4BF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BE1E8281B1E126600BA4BF6 /* DQA11yTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DQA11yTests.xctest;
+			remoteRef = 2BE1E8271B1E126600BA4BF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
