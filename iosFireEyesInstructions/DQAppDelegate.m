@@ -19,7 +19,7 @@
 {
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     
-    //Set up Google Anylitics
+    //! Set up Google Anylitics
     GAI_INST.trackUncaughtExceptions = YES;
     
     GAI_INST.dispatchInterval = 20;
