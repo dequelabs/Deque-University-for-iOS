@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Overwrites UIFont to check for dynamic type
+ */
 @interface UIFont (DQFont)
 
 - (NSString*const)contentSizeCategory;

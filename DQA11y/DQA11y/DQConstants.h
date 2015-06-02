@@ -9,6 +9,10 @@
 #ifndef Accessibility_101_DQConstants_h
 #define Accessibility_101_DQConstants_h
 
+/**
+ * DQ WorldSpace Constants.
+ * This file defines the hex codes for every DQ WorldSpace color.
+ */
 #define DQ_COLOR_WORLDSPACE_GREEN @"72BA32"
 #define DQ_COLOR_WORLDSPACE_ORANGE @"EF611A"
 #define DQ_COLOR_WORLDSPACE_BLUE @"083378"

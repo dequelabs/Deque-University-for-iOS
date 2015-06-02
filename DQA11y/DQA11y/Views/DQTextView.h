@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * 
+ */
 @interface DQTextView : UITextView
 
 +(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory;

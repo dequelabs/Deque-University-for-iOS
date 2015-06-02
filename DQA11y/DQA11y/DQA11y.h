@@ -27,6 +27,4 @@ FOUNDATION_EXPORT double DQA11yVersionNumber;
 //! Project version string for DQA11y.
 FOUNDATION_EXPORT const unsigned char DQA11yVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <DQA11y/PublicHeader.h>
-
 

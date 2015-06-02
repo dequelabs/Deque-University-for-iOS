@@ -8,16 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Overwriting UIView for additional helpful accessibility features.
+ */
+
 @interface UIView (DQView)
 
-+ (NSComparator)comparatorPositionYThenX;
++ (NSComparator)comparatorPositionYThenX; ///< I think this returns how two elements compare in positions
 
-- (UIView*)findFirstAccessibilityElement;
+- (UIView*)findFirstAccessibilityElement; ///< Finds and returns the first accessibility element in the view
 
-- (UIView*)findFirstAccessibilityElementUsingComparator:(NSComparator)comparator;
+- (UIView*)findFirstAccessibilityElementUsingComparator:(NSComparator)comparator; ///< Finds and returns the first accessibility element in the view
+                                                                                  ///< given a comparator
 
-- (UIView*)findFirstActiveElement;
+- (UIView*)findFirstActiveElement; ///< Finds and returns the first active element in the view
 
-- (void)printViewHeirarchy;
+- (void)printViewHeirarchy; ///< Prints the view heirarchy
 
 @end

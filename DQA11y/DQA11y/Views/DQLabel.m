@@ -14,7 +14,7 @@
 #define LOG_FLAG YES
 
 @implementation DQLabel {
-    NSString* _contentSizeCategory;
+    NSString* _contentSizeCategory; ///< The type of the font being used.
 }
 
 -(id)initWithCoder:(NSCoder *)aDecoder {
@@ -41,18 +41,32 @@
     
     [self didChangePreferredContentSize];
     
+    /**
+     * Listens for a change in the type size.
+     */
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(didChangePreferredContentSize)
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
     
+    /**
+     * Warns programmer if the number of lines is not set to 0.
+     */
     if (self.numberOfLines != 0) DQLog(@"Warning: number of lines not set to 0.  Content will not be allowed to wrap on larger text sizes!");
 }
 
+/**
+ * Sets the font of the label to be the same type as specified in settings.
+ * Reacts to change in settings immediately.
+ */
 -(void)didChangePreferredContentSize {
     self.font = [UIFont preferredFontForTextStyle:_contentSizeCategory];
 }
 
+/**
+ * Sets the content size to be as specified.
+ * If font type is not dynamic, programmer is warned.
+ */
 -(void)setContentSizeCategory:(NSString *)contentSizeCategory {
     
     if ([DQTextView isValidContentSizeCategory:contentSizeCategory]) {

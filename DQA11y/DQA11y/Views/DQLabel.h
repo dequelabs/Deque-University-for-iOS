@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * DQLabel implements UILabel to react to accessibility settings instantly.
+ */
 @interface DQLabel : UILabel
 
 @end

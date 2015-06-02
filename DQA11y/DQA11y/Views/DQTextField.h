@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ * Implements UITextField with additional accessibility features.
+ */
 @interface DQTextField : UITextField
 
 @end

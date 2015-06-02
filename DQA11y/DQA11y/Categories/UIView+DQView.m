@@ -76,6 +76,10 @@
     [self printViewHeirarchyAtDepth:0];
 }
 
+/**
+ * This function loops through, printing the depth of each element in the view
+ */
+
 - (void)printViewHeirarchyAtDepth:(int)depth {
     for (UIView* view in self.subviews) {
         NSLog(@"%*s%@", depth*2, " ", view);
