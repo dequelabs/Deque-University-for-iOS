@@ -10,7 +10,7 @@
 #import "UIFont+DQFont.h"
 
 @interface DQTextView ()
-@property (nonatomic, weak) NSLayoutConstraint* heightConstraint;
+@property (nonatomic, weak) NSLayoutConstraint* heightConstraint; ///< The current height constraint of the textView.
 @end
 
 @implementation DQTextView {

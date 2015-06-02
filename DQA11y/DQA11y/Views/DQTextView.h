@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 /**
- *
+ * DQTextView adds additional accessibility features to UITextView.
  */
 @interface DQTextView : UITextView
 
-+(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory;
++(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory; ///< Returns TRUE if the font type is a dynamic type. FALSE otherwise.
 
 @end
