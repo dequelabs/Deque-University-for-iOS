@@ -28,8 +28,6 @@
 
 - (BOOL)information:(id)sender {
     
-    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, @"Alert Opened");
-    
     CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
                                                                  message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
     
@@ -58,6 +56,8 @@
     
     self.view.accessibilityElementsHidden = YES;
     self.tabBarController.view.accessibilityElementsHidden = YES;
+    
+    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, alertView);
     
     if([alertView isHidden]){
         return FALSE;
