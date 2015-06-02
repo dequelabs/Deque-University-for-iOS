@@ -32,6 +32,7 @@
 /**
  * Compares two UIColors
  */
+
 - (BOOL)isEqualToColor:(UIColor *)color{
     
     CGFloat redVal;
