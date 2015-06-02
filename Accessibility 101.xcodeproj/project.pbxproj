@@ -63,7 +63,8 @@
 		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
 		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
 		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
-		EEE0DEE21B1CC8E300F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EEE0DEF81B1E153E00F8BBD1 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
+		EEE0DEF91B1E157F00F8BBD1 /* DQA11y.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EEE0DEF91B1E157F00F8BBD1 /* DQA11y.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE0DEE21B1CC8E300F8BBD1 /* DQA11y.framework in Frameworks */,
+				EEE0DEF81B1E153E00F8BBD1 /* DQA11y.framework in Frameworks */,
 				0FEB4B931AC9C75300F372F8 /* libsqlite3.dylib in Frameworks */,
 				0FEB4B911AC9C74900F372F8 /* libz.dylib in Frameworks */,
 				EE64E1E51AFA633B00D09B4D /* libGoogleAnalyticsServices.a in Frameworks */,
