@@ -17,9 +17,6 @@
     NSString* _contentSizeCategory; ///< Font type.
 }
 
-/**
- * Returns TRUE if the font type is a dynamic type. FALSE otherwise.
- */
 +(BOOL)isValidContentSizeCategory:(NSString*const)contentSizeCategory {
     return (contentSizeCategory == UIFontTextStyleHeadline ||
             contentSizeCategory == UIFontTextStyleSubheadline ||
@@ -71,7 +68,10 @@
             }
         }
     }
-
+    
+    /**
+     * Listens for a change in the text size.
+     */
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(didChangePreferredContentSize)
                                                  name:UIContentSizeCategoryDidChangeNotification
@@ -80,26 +80,43 @@
     
 }
 
+/**
+ * Changes type of text to new type.
+ */
 -(void)didChangePreferredContentSize {
     self.font = [UIFont preferredFontForTextStyle:_contentSizeCategory];
 }
 
+/**
+ * Calls textViewDidChange to ensure all text still fits properly in the textView.
+ */
 -(void)setFont:(UIFont *)font {
     [super setFont:font];
     [self textViewDidChange];
 }
 
+/**
+ * Calls textViewDidChange to ensure all text still fits properly in the textView.
+ */
 -(void)setText:(NSString *)text {
     [super setText:text];
     [self textViewDidChange];
 }
 
+/**
+ * Changes the height of the textView to display all text in the textView.
+ */
+//TODO: Add safety checking to ensure we can add this constraint
 -(void)textViewDidChange {
     CGFloat fixedWidth = self.frame.size.width;
     CGSize newSize = [self sizeThatFits:CGSizeMake(fixedWidth, MAXFLOAT)];
     self.heightConstraint.constant = newSize.height;
 }
 
+/**
+ * Checks if the new text type is valid dynamic type and sets the text to that type.
+ * If not valid dynamic type, it logs a warning and sets the type to UIFontTextStyleBody by default.
+ */
 -(void)setContentSizeCategory:(NSString *)contentSizeCategory {
     
     if ([DQTextView isValidContentSizeCategory:contentSizeCategory]) {
