@@ -102,12 +102,14 @@ static UIButton* _IACOverlayButton = NULL;
     _titleLabel.text = @"Deque University for iOS";
     _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+    _titleLabel.isAccessibilityElement = NO;
     
     DQLabel* _overlayNameLabel = [[DQLabel alloc] init];
     _overlayNameLabel.numberOfLines = 0;
     _overlayNameLabel.text = @"VoiceOver Simulation";
     _overlayNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     _overlayNameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
+    _overlayNameLabel.isAccessibilityElement = NO;
     
     [self.view addSubview:_overlayView];
     [_overlayView addSubview:_overlayImage];

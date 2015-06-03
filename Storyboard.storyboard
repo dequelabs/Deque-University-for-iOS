@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H12-em-6pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H12-em-6pk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -285,7 +285,7 @@
                                                 <constraint firstAttribute="height" constant="21" id="mh0-dU-iJ6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -305,7 +305,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8A-Fi-Hem" customClass="DQLabel">
                                             <rect key="frame" x="45" y="12" width="547" height="20"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-3z-cnJ">
@@ -558,7 +558,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SG9-8S-PAc">
-                                        <rect key="frame" x="5" y="10" width="590" height="393"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="372"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="l2h-4E-6gS">
                                                 <rect key="frame" x="145" y="20" width="300" height="104"/>
@@ -579,14 +579,14 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLi-UW-wJU" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="144" width="570" height="167"/>
-                                                <string key="text">Accessibility is both our mission and our passion and something we have been doing for over ten years with major corporations, government agencies, and other organizations. Every Deque team member – some of whom have been with the company since it was founded in 1999 – is passionate about the importance of accessibility in the digital world and in helping customers achieve the outcomes that accessibility provides. Our culture focuses heavily on these key pillars, in hiring, evaluation, and career paths and we have fostered a team of website accessibility experts.</string>
+                                                <rect key="frame" x="10" y="144" width="570" height="146"/>
+                                                <string key="text">Accessibility is our mission, our passion, and something we have been doing for over ten years with major corporations, government agencies, and other organizations. Every Deque team member – some of whom have been with the company since it was founded in 1999 – is passionate about the importance of accessibility in the digital world. Our culture focuses heavily on these key pillars, in hiring, evaluation, and career paths. As a result, we have fostered a team of accessibility experts.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3l-Kl-Y4a" customClass="DQButton">
-                                                <rect key="frame" x="254" y="341" width="83" height="32"/>
+                                                <rect key="frame" x="254" y="320" width="83" height="32"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES" link="YES"/>
                                                 </accessibility>
@@ -1848,94 +1848,129 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOn-r7-8aM">
-                                                <rect key="frame" x="180" y="40" width="230" height="205"/>
+                                                <rect key="frame" x="183" y="40" width="225" height="205"/>
                                                 <subviews>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgZ-ED-cKa" customClass="DQLabel">
-                                                        <rect key="frame" x="60" y="18" width="160" height="20"/>
-                                                        <accessibility key="accessibilityConfiguration">
-                                                            <bool key="isElement" value="NO"/>
-                                                        </accessibility>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-Qy-vXw" customClass="DQLabel">
-                                                        <rect key="frame" x="60" y="168" width="127" height="20"/>
-                                                        <accessibility key="accessibilityConfiguration">
-                                                            <bool key="isElement" value="NO"/>
-                                                        </accessibility>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK3-De-8wx" customClass="DQLabel">
-                                                        <rect key="frame" x="60" y="93" width="112" height="20"/>
-                                                        <accessibility key="accessibilityConfiguration">
-                                                            <bool key="isElement" value="NO"/>
-                                                        </accessibility>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raC-pl-LQ8">
-                                                        <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-Bx-01Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="225" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raC-pl-LQ8">
+                                                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="Wwr-9j-CRF"/>
+                                                                    <constraint firstAttribute="width" constant="45" id="dlG-km-9Wy"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" image="play">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgZ-ED-cKa" customClass="DQLabel">
+                                                                <rect key="frame" x="60" y="18" width="160" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="Wwr-9j-CRF"/>
-                                                            <constraint firstAttribute="width" constant="45" id="dlG-km-9Wy"/>
+                                                            <constraint firstAttribute="bottom" secondItem="raC-pl-LQ8" secondAttribute="bottom" constant="5" id="1yy-dL-Ae8"/>
+                                                            <constraint firstItem="raC-pl-LQ8" firstAttribute="centerY" secondItem="rgZ-ED-cKa" secondAttribute="centerY" id="3d6-Fw-1mF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="rgZ-ED-cKa" secondAttribute="trailing" constant="5" id="GZb-Ob-N5G"/>
+                                                            <constraint firstItem="rgZ-ED-cKa" firstAttribute="leading" secondItem="raC-pl-LQ8" secondAttribute="trailing" constant="10" id="KTY-e5-bgS"/>
+                                                            <constraint firstItem="raC-pl-LQ8" firstAttribute="leading" secondItem="vS8-Bx-01Q" secondAttribute="leading" constant="5" id="ix9-Ch-t5e"/>
+                                                            <constraint firstItem="raC-pl-LQ8" firstAttribute="top" secondItem="vS8-Bx-01Q" secondAttribute="top" constant="5" id="lK8-hQ-C4f"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" image="play">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdT-CG-XDk">
-                                                        <rect key="frame" x="5" y="155" width="45" height="45"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYt-8m-QdU">
+                                                        <rect key="frame" x="0.0" y="75" width="225" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDD-tp-Mds">
+                                                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="1d0-aS-J82"/>
+                                                                    <constraint firstAttribute="width" constant="45" id="36V-Lz-m7u"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" image="play">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK3-De-8wx" customClass="DQLabel">
+                                                                <rect key="frame" x="60" y="18" width="160" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="MEB-mU-xGy"/>
-                                                            <constraint firstAttribute="width" constant="45" id="c8g-IL-wQA"/>
+                                                            <constraint firstItem="HDD-tp-Mds" firstAttribute="top" secondItem="yYt-8m-QdU" secondAttribute="top" constant="5" id="Ghy-0m-N2v"/>
+                                                            <constraint firstItem="HDD-tp-Mds" firstAttribute="leading" secondItem="yYt-8m-QdU" secondAttribute="leading" constant="5" id="Lak-B9-SRq"/>
+                                                            <constraint firstAttribute="trailing" secondItem="AK3-De-8wx" secondAttribute="trailing" constant="5" id="XgN-CL-Xua"/>
+                                                            <constraint firstItem="AK3-De-8wx" firstAttribute="leading" secondItem="HDD-tp-Mds" secondAttribute="trailing" constant="10" id="fSh-1d-wLR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="HDD-tp-Mds" secondAttribute="bottom" constant="5" id="jBV-IC-rAZ"/>
+                                                            <constraint firstItem="AK3-De-8wx" firstAttribute="centerY" secondItem="HDD-tp-Mds" secondAttribute="centerY" id="xMD-nW-K3a"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" title="Display" image="play">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDD-tp-Mds">
-                                                        <rect key="frame" x="5" y="80" width="45" height="45"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FH-1K-wge">
+                                                        <rect key="frame" x="0.0" y="150" width="225" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdT-CG-XDk">
+                                                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="MEB-mU-xGy"/>
+                                                                    <constraint firstAttribute="width" constant="45" id="c8g-IL-wQA"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" title="Display" image="play">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbX-Qy-vXw" customClass="DQLabel">
+                                                                <rect key="frame" x="60" y="18" width="145" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="1d0-aS-J82"/>
-                                                            <constraint firstAttribute="width" constant="45" id="36V-Lz-m7u"/>
+                                                            <constraint firstItem="tdT-CG-XDk" firstAttribute="top" secondItem="2FH-1K-wge" secondAttribute="top" constant="5" id="1Kf-lq-jUl"/>
+                                                            <constraint firstAttribute="trailing" secondItem="KbX-Qy-vXw" secondAttribute="trailing" constant="20" id="5Hk-Pi-Tf5"/>
+                                                            <constraint firstItem="tdT-CG-XDk" firstAttribute="centerY" secondItem="KbX-Qy-vXw" secondAttribute="centerY" id="NLa-cd-N1C"/>
+                                                            <constraint firstItem="KbX-Qy-vXw" firstAttribute="leading" secondItem="tdT-CG-XDk" secondAttribute="trailing" constant="10" id="Z2b-zl-9qT"/>
+                                                            <constraint firstItem="tdT-CG-XDk" firstAttribute="leading" secondItem="2FH-1K-wge" secondAttribute="leading" constant="5" id="vKI-q6-8uD"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tdT-CG-XDk" secondAttribute="bottom" constant="5" id="wFG-cY-m9s"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" image="play">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="This is a music player">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                                 <constraints>
-                                                    <constraint firstItem="KbX-Qy-vXw" firstAttribute="leading" secondItem="tdT-CG-XDk" secondAttribute="trailing" constant="10" id="0SG-aF-Xla"/>
-                                                    <constraint firstItem="KbX-Qy-vXw" firstAttribute="centerY" secondItem="tdT-CG-XDk" secondAttribute="centerY" id="0XI-Yi-6IR"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KbX-Qy-vXw" secondAttribute="trailing" constant="5" id="5wc-Yr-Nf8"/>
-                                                    <constraint firstItem="raC-pl-LQ8" firstAttribute="top" secondItem="LOn-r7-8aM" secondAttribute="top" constant="5" id="E1v-De-VPN"/>
-                                                    <constraint firstAttribute="bottom" secondItem="tdT-CG-XDk" secondAttribute="bottom" constant="5" id="Ed4-0L-We7"/>
-                                                    <constraint firstItem="HDD-tp-Mds" firstAttribute="centerX" secondItem="tdT-CG-XDk" secondAttribute="centerX" id="IkF-au-y80"/>
-                                                    <constraint firstItem="HDD-tp-Mds" firstAttribute="top" secondItem="raC-pl-LQ8" secondAttribute="bottom" constant="30" id="Lkp-PF-wNp"/>
-                                                    <constraint firstItem="AK3-De-8wx" firstAttribute="leading" secondItem="HDD-tp-Mds" secondAttribute="trailing" constant="10" id="OFS-dx-qhR"/>
-                                                    <constraint firstItem="rgZ-ED-cKa" firstAttribute="centerY" secondItem="raC-pl-LQ8" secondAttribute="centerY" id="TK0-qo-nYY"/>
-                                                    <constraint firstItem="tdT-CG-XDk" firstAttribute="top" secondItem="HDD-tp-Mds" secondAttribute="bottom" constant="30" id="Vj6-NE-9t8"/>
-                                                    <constraint firstItem="raC-pl-LQ8" firstAttribute="leading" secondItem="LOn-r7-8aM" secondAttribute="leading" constant="5" id="Z0Y-WP-oNT"/>
-                                                    <constraint firstItem="rgZ-ED-cKa" firstAttribute="leading" secondItem="raC-pl-LQ8" secondAttribute="trailing" constant="10" id="bxp-hF-RsJ"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rgZ-ED-cKa" secondAttribute="trailing" constant="5" id="cC8-dz-ueM"/>
-                                                    <constraint firstItem="AK3-De-8wx" firstAttribute="centerY" secondItem="HDD-tp-Mds" secondAttribute="centerY" id="eI1-wD-bOb"/>
-                                                    <constraint firstItem="raC-pl-LQ8" firstAttribute="centerX" secondItem="HDD-tp-Mds" secondAttribute="centerX" id="jP3-am-LLW"/>
-                                                    <constraint firstAttribute="trailing" secondItem="tdT-CG-XDk" secondAttribute="trailing" constant="180" id="jUx-j4-Jd2"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AK3-De-8wx" secondAttribute="trailing" constant="5" id="lYn-BP-hxw"/>
+                                                    <constraint firstItem="vS8-Bx-01Q" firstAttribute="leading" secondItem="LOn-r7-8aM" secondAttribute="leading" id="GBC-mT-a9N"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2FH-1K-wge" secondAttribute="bottom" id="Ikn-dJ-EXS"/>
+                                                    <constraint firstItem="vS8-Bx-01Q" firstAttribute="trailing" secondItem="2FH-1K-wge" secondAttribute="trailing" id="Ncm-9V-hZ7"/>
+                                                    <constraint firstItem="vS8-Bx-01Q" firstAttribute="leading" secondItem="2FH-1K-wge" secondAttribute="leading" id="R2a-tR-PYl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vS8-Bx-01Q" secondAttribute="trailing" id="Rxp-l3-5J0"/>
+                                                    <constraint firstItem="2FH-1K-wge" firstAttribute="top" secondItem="yYt-8m-QdU" secondAttribute="bottom" constant="20" id="StQ-se-Ca9"/>
+                                                    <constraint firstItem="yYt-8m-QdU" firstAttribute="leading" secondItem="vS8-Bx-01Q" secondAttribute="leading" id="c9N-7g-rvb"/>
+                                                    <constraint firstItem="yYt-8m-QdU" firstAttribute="trailing" secondItem="vS8-Bx-01Q" secondAttribute="trailing" id="hL5-Sm-ikh"/>
+                                                    <constraint firstItem="vS8-Bx-01Q" firstAttribute="top" secondItem="LOn-r7-8aM" secondAttribute="top" id="pr5-0j-CcV"/>
+                                                    <constraint firstItem="yYt-8m-QdU" firstAttribute="top" secondItem="vS8-Bx-01Q" secondAttribute="bottom" constant="20" id="zGn-dH-ece"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -2174,83 +2209,162 @@
                                                 </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Kh-zn-FcU">
-                                                <rect key="frame" x="180" y="40" width="230" height="205"/>
+                                                <rect key="frame" x="183" y="40" width="225" height="205"/>
                                                 <subviews>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUn-uw-abV" customClass="DQLabel">
-                                                        <rect key="frame" x="60" y="18" width="160" height="20"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-UD-Ize" customClass="DQLabel">
-                                                        <rect key="frame" x="60" y="168" width="127" height="20"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-UH-5E9">
-                                                        <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D7Y-YE-iDU" customClass="DQWrapperView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="225" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-UH-5E9">
+                                                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="Zif-hP-SyJ"/>
+                                                                    <constraint firstAttribute="width" constant="45" id="bDi-0U-8zJ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" image="play">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Spangled Banner" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUn-uw-abV" customClass="DQLabel">
+                                                                <rect key="frame" x="60" y="18" width="160" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="45" id="Zif-hP-SyJ"/>
-                                                            <constraint firstAttribute="width" constant="45" id="bDi-0U-8zJ"/>
+                                                            <constraint firstItem="nUn-uw-abV" firstAttribute="leading" secondItem="caB-UH-5E9" secondAttribute="trailing" constant="10" id="2FC-W9-Zmz"/>
+                                                            <constraint firstItem="caB-UH-5E9" firstAttribute="leading" secondItem="D7Y-YE-iDU" secondAttribute="leading" constant="5" id="Lfq-JV-a4P"/>
+                                                            <constraint firstItem="nUn-uw-abV" firstAttribute="centerY" secondItem="caB-UH-5E9" secondAttribute="centerY" id="RZR-qA-hQt"/>
+                                                            <constraint firstAttribute="bottom" secondItem="caB-UH-5E9" secondAttribute="bottom" constant="5" id="a4N-ON-sgC"/>
+                                                            <constraint firstItem="caB-UH-5E9" firstAttribute="top" secondItem="D7Y-YE-iDU" secondAttribute="top" constant="5" id="fxO-9U-nLH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="nUn-uw-abV" secondAttribute="trailing" constant="5" id="jMz-WD-qMx"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" image="play">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-iP-2K5">
-                                                        <rect key="frame" x="5" y="155" width="45" height="45"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUt-NR-NKg" customClass="DQWrapperView">
+                                                        <rect key="frame" x="0.0" y="75" width="225" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-zo-tfs">
+                                                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="A1Y-nz-5q3"/>
+                                                                    <constraint firstAttribute="height" constant="45" id="F2T-1m-jHO"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" image="play">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-y3-yt2" customClass="DQLabel">
+                                                                <rect key="frame" x="60" y="18" width="160" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="45" id="qQV-6v-ws1"/>
-                                                            <constraint firstAttribute="height" constant="45" id="zMY-QZ-sCP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MAg-zo-tfs" secondAttribute="bottom" constant="5" id="0SF-TS-6cL"/>
+                                                            <constraint firstItem="MAg-zo-tfs" firstAttribute="leading" secondItem="NUt-NR-NKg" secondAttribute="leading" constant="5" id="NLt-WV-ybb"/>
+                                                            <constraint firstItem="MAg-zo-tfs" firstAttribute="top" secondItem="NUt-NR-NKg" secondAttribute="top" constant="5" id="T7Q-gZ-0AM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="TmN-y3-yt2" secondAttribute="trailing" constant="5" id="fR7-Zg-SgF"/>
+                                                            <constraint firstItem="TmN-y3-yt2" firstAttribute="leading" secondItem="MAg-zo-tfs" secondAttribute="trailing" constant="10" id="lJe-VU-q9Y"/>
+                                                            <constraint firstItem="MAg-zo-tfs" firstAttribute="centerY" secondItem="TmN-y3-yt2" secondAttribute="centerY" id="p8u-Zw-UhQ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" title="Display" image="play">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-zo-tfs">
-                                                        <rect key="frame" x="5" y="80" width="45" height="45"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTS-KH-lUM" customClass="DQWrapperView">
+                                                        <rect key="frame" x="0.0" y="150" width="225" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-iP-2K5">
+                                                                <rect key="frame" x="5" y="5" width="45" height="45"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="qQV-6v-ws1"/>
+                                                                    <constraint firstAttribute="height" constant="45" id="zMY-QZ-sCP"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <state key="normal" title="Display" image="play">
+                                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singin in the Rain" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-UD-Ize" customClass="DQLabel">
+                                                                <rect key="frame" x="60" y="18" width="160" height="20"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="45" id="A1Y-nz-5q3"/>
-                                                            <constraint firstAttribute="height" constant="45" id="F2T-1m-jHO"/>
+                                                            <constraint firstItem="Y2b-iP-2K5" firstAttribute="leading" secondItem="CTS-KH-lUM" secondAttribute="leading" constant="5" id="5VZ-Gw-ogI"/>
+                                                            <constraint firstItem="aWD-UD-Ize" firstAttribute="leading" secondItem="Y2b-iP-2K5" secondAttribute="trailing" constant="10" id="MIX-Ou-ZjG"/>
+                                                            <constraint firstItem="aWD-UD-Ize" firstAttribute="leading" secondItem="Y2b-iP-2K5" secondAttribute="trailing" constant="10" id="YzT-B3-rzJ"/>
+                                                            <constraint firstItem="Y2b-iP-2K5" firstAttribute="top" secondItem="CTS-KH-lUM" secondAttribute="top" constant="5" id="bym-C6-mkQ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Y2b-iP-2K5" secondAttribute="bottom" constant="5" id="jWf-5z-3a8"/>
+                                                            <constraint firstItem="aWD-UD-Ize" firstAttribute="centerY" secondItem="Y2b-iP-2K5" secondAttribute="centerY" id="xVx-5E-L4C"/>
+                                                            <constraint firstAttribute="trailing" secondItem="aWD-UD-Ize" secondAttribute="trailing" constant="5" id="yxU-lJ-PTs"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <state key="normal" image="play">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                    </button>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Grace" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-y3-yt2" customClass="DQLabel">
-                                                        <rect key="frame" x="60" y="93" width="112" height="20"/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="YzT-B3-rzJ"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="nUn-uw-abV" firstAttribute="leading" secondItem="caB-UH-5E9" secondAttribute="trailing" constant="10" id="1Fm-NN-d0n"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aWD-UD-Ize" secondAttribute="trailing" constant="5" id="5Oz-Af-H59"/>
-                                                    <constraint firstItem="caB-UH-5E9" firstAttribute="leading" secondItem="4Kh-zn-FcU" secondAttribute="leading" constant="5" id="7xG-8a-Kph"/>
-                                                    <constraint firstItem="aWD-UD-Ize" firstAttribute="leading" secondItem="Y2b-iP-2K5" secondAttribute="trailing" constant="10" id="Edg-2k-9ne"/>
-                                                    <constraint firstItem="TmN-y3-yt2" firstAttribute="leading" secondItem="MAg-zo-tfs" secondAttribute="trailing" constant="10" id="GhO-zu-Slu"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TmN-y3-yt2" secondAttribute="trailing" constant="5" id="HZS-u1-GcN"/>
-                                                    <constraint firstItem="MAg-zo-tfs" firstAttribute="centerX" secondItem="Y2b-iP-2K5" secondAttribute="centerX" id="Rdm-Ya-oXW"/>
-                                                    <constraint firstItem="TmN-y3-yt2" firstAttribute="centerY" secondItem="MAg-zo-tfs" secondAttribute="centerY" id="XlV-Ba-AQa"/>
-                                                    <constraint firstItem="caB-UH-5E9" firstAttribute="centerX" secondItem="MAg-zo-tfs" secondAttribute="centerX" id="a35-ge-xd1"/>
-                                                    <constraint firstItem="aWD-UD-Ize" firstAttribute="centerY" secondItem="Y2b-iP-2K5" secondAttribute="centerY" id="bXC-ZS-Z05"/>
-                                                    <constraint firstAttribute="trailing" secondItem="caB-UH-5E9" secondAttribute="trailing" constant="180" id="c71-Su-a45"/>
-                                                    <constraint firstItem="caB-UH-5E9" firstAttribute="top" secondItem="4Kh-zn-FcU" secondAttribute="top" constant="5" id="gtu-Sl-LMU"/>
-                                                    <constraint firstAttribute="trailing" secondItem="nUn-uw-abV" secondAttribute="trailing" constant="10" id="kz0-ws-O3F"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Y2b-iP-2K5" secondAttribute="bottom" constant="5" id="qnD-5Y-mte"/>
-                                                    <constraint firstItem="MAg-zo-tfs" firstAttribute="top" secondItem="caB-UH-5E9" secondAttribute="bottom" constant="30" id="ssa-au-05c"/>
-                                                    <constraint firstItem="Y2b-iP-2K5" firstAttribute="top" secondItem="MAg-zo-tfs" secondAttribute="bottom" constant="30" id="wme-Cc-862"/>
-                                                    <constraint firstItem="nUn-uw-abV" firstAttribute="centerY" secondItem="caB-UH-5E9" secondAttribute="centerY" id="z2o-D2-yT4"/>
+                                                    <constraint firstItem="CTS-KH-lUM" firstAttribute="top" secondItem="NUt-NR-NKg" secondAttribute="bottom" constant="20" id="7mT-Q9-zWp"/>
+                                                    <constraint firstItem="MAg-zo-tfs" firstAttribute="leading" secondItem="caB-UH-5E9" secondAttribute="leading" id="Ckh-Hk-7tK"/>
+                                                    <constraint firstItem="Y2b-iP-2K5" firstAttribute="leading" secondItem="caB-UH-5E9" secondAttribute="leading" id="FF6-xs-rkQ"/>
+                                                    <constraint firstItem="CTS-KH-lUM" firstAttribute="leading" secondItem="D7Y-YE-iDU" secondAttribute="leading" id="G24-gI-c91"/>
+                                                    <constraint firstItem="NUt-NR-NKg" firstAttribute="trailing" secondItem="D7Y-YE-iDU" secondAttribute="trailing" id="GnA-Pi-AjG"/>
+                                                    <constraint firstItem="NUt-NR-NKg" firstAttribute="top" secondItem="D7Y-YE-iDU" secondAttribute="bottom" constant="20" id="IpP-fv-32y"/>
+                                                    <constraint firstItem="D7Y-YE-iDU" firstAttribute="leading" secondItem="4Kh-zn-FcU" secondAttribute="leading" id="TKh-PC-ttv"/>
+                                                    <constraint firstItem="nUn-uw-abV" firstAttribute="leading" secondItem="TmN-y3-yt2" secondAttribute="leading" id="ZJu-sO-lb5"/>
+                                                    <constraint firstItem="aWD-UD-Ize" firstAttribute="leading" secondItem="nUn-uw-abV" secondAttribute="leading" id="aea-g1-oPx"/>
+                                                    <constraint firstItem="D7Y-YE-iDU" firstAttribute="top" secondItem="4Kh-zn-FcU" secondAttribute="top" id="d5Z-Up-2US"/>
+                                                    <constraint firstAttribute="trailing" secondItem="D7Y-YE-iDU" secondAttribute="trailing" id="dFf-sn-Nul"/>
+                                                    <constraint firstItem="NUt-NR-NKg" firstAttribute="leading" secondItem="D7Y-YE-iDU" secondAttribute="leading" id="ez6-w2-dPy"/>
+                                                    <constraint firstItem="Y2b-iP-2K5" firstAttribute="leading" secondItem="caB-UH-5E9" secondAttribute="leading" id="k6Z-ZA-vvZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CTS-KH-lUM" secondAttribute="bottom" id="wJ0-H8-10v"/>
+                                                    <constraint firstItem="CTS-KH-lUM" firstAttribute="trailing" secondItem="D7Y-YE-iDU" secondAttribute="trailing" id="yvz-lv-90g"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="ZJu-sO-lb5"/>
+                                                        <exclude reference="Ckh-Hk-7tK"/>
+                                                        <exclude reference="FF6-xs-rkQ"/>
+                                                        <exclude reference="k6Z-ZA-vvZ"/>
+                                                        <exclude reference="aea-g1-oPx"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2960,7 +3074,7 @@
         <image name="DequeU_app_icon_fixed" width="30" height="30"/>
         <image name="DequeU_app_icon_sighted" width="249" height="178"/>
         <image name="DequeU_app_icon_unsighted" width="249" height="167"/>
-        <image name="DequeU_logo" width="512" height="372"/>
+        <image name="DequeU_logo" width="78" height="78"/>
         <image name="Introduction" width="30" height="30"/>
         <image name="play" width="225" height="225"/>
     </resources>

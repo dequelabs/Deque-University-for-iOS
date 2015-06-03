@@ -89,27 +89,6 @@
 			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
 			remoteInfo = iosFireEyesInstructions;
 		};
-		EEE0DEDC1B1CC8D500F8BBD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EECB14751B18F02300809C96;
-			remoteInfo = DQA11y;
-		};
-		EEE0DEDE1B1CC8D500F8BBD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EECB14801B18F02300809C96;
-			remoteInfo = DQA11yTests;
-		};
-		EEE0DEE01B1CC8DD00F8BBD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EECB14741B18F02300809C96;
-			remoteInfo = DQA11y;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -221,7 +200,6 @@
 		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
 		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
 		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
-		EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = DQA11y/DQA11y.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,7 +273,6 @@
 		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
 			isa = PBXGroup;
 			children = (
-				EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */,
 				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
 				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
 				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
@@ -547,15 +524,6 @@
 			path = iosFireEyesInstructions;
 			sourceTree = "<group>";
 		};
-		EEE0DED81B1CC8D500F8BBD1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */,
-				EEE0DEDF1B1CC8D500F8BBD1 /* DQA11yTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -571,7 +539,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EEE0DEE11B1CC8DD00F8BBD1 /* PBXTargetDependency */,
 			);
 			name = "Accessibility 101";
 			productName = iosFireEyesInstructions;
@@ -628,10 +595,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = EEE0DED81B1CC8D500F8BBD1 /* Products */;
-					ProjectRef = EEE0DED71B1CC8D500F8BBD1 /* DQA11y.xcodeproj */;
-				},
-				{
 					ProductGroup = 2BE1E8211B1E126500BA4BF6 /* Products */;
 					ProjectRef = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
 				},
@@ -657,20 +620,6 @@
 			fileType = wrapper.cfbundle;
 			path = DQA11yTests.xctest;
 			remoteRef = 2BE1E8271B1E126600BA4BF6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EEE0DEDD1B1CC8D500F8BBD1 /* DQA11y.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DQA11y.framework;
-			remoteRef = EEE0DEDC1B1CC8D500F8BBD1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EEE0DEDF1B1CC8D500F8BBD1 /* DQA11yTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DQA11yTests.xctest;
-			remoteRef = EEE0DEDE1B1CC8D500F8BBD1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -758,11 +707,6 @@
 			isa = PBXTargetDependency;
 			target = A9D013BE18A2DD4700DC6496 /* Accessibility 101 */;
 			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
-		};
-		EEE0DEE11B1CC8DD00F8BBD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DQA11y;
-			targetProxy = EEE0DEE01B1CC8DD00F8BBD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
