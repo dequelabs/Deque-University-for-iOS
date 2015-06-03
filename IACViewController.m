@@ -11,7 +11,7 @@
 #import "IACUtilities.h"
 #import "IACConstants.h"
 
-#define OVERLAY_IMAGE_NAME @"DequeU_logo"
+#define OVERLAY_IMAGE_NAME @"DequeU_logo_1024px"
 
 static BOOL _IACViewControllerOverlayIsOn = NO;
 static IACViewController* _IACViewControllerActiveInstance = NULL;
