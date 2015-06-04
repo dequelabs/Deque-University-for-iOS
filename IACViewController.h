@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAITrackedViewController.H"
+#import "GAITrackedViewController.h"
 
 /**
  * Deque University for iOS View Controller.
