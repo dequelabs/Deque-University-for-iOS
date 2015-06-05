@@ -8,7 +8,6 @@
 
 #import "IACStoryTableViewController.h"
 #import "IACViewController.h"
-#import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
 

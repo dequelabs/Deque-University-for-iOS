@@ -14,9 +14,9 @@
 #import "DEQAsserts.h"
 @import CoreGraphics;
 
-#define DEQAssertColorEqualsStoryBoardRed(color) XCTAssertTrue([color isEqualToColorWithRed:0.919586479 green: 0.055712726  blue: 0.0222684592 alpha:1.0])
-#define DEQAssertColorEqualsRedColor(color) XCTAssertTrue([color isEqual:[UIColor redColor]]);
-#define DEQAssertColorEqualsBlack(color) XCTAssertTrue([color isEqualToColorWithRed:0 green: 0  blue: 0 alpha:1.0])
+#define DEQAssertColorEqualsStoryBoardRed(color) XCTAssertTrue([DQColorUtilities isEqualToColorWithRed:0.919586479 green: 0.055712726  blue: 0.0222684592 alpha:1.0 withColor:color])
+#define DEQAssertColorEqualsRedColor(color) XCTAssertTrue([DQColorUtilities isEqual:[UIColor redColor] To:color]);
+#define DEQAssertColorEqualsBlack(color) XCTAssertTrue([DQColorUtilities isEqualToColorWithRed:0 green: 0  blue: 0 alpha:1.0 withColor:color])
 
 @interface IFVBrokenViewControllerTests : XCTestCase
 
