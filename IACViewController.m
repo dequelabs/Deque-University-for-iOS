@@ -7,6 +7,7 @@
 //
 
 #import "IACViewController.h"
+#import "IACOverlayViewController.h"
 #import <DQA11y/DQA11y.h>
 #import "IACUtilities.h"
 #import "IACConstants.h"
@@ -17,21 +18,9 @@ static BOOL _IACViewControllerOverlayIsOn = NO;
 static IACViewController* _IACViewControllerActiveInstance = NULL;
 static UIButton* _IACOverlayButton = NULL;
 
-@interface IACOverlayView : UIImageView
-
-@end
-
-@implementation IACOverlayView
-
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    return NO;
-}
-
-@end
-
 @interface IACViewController ()
 
-@property UIColor* backgroundColor;
+@property IACOverlayViewController* overlayViewController;
 
 @end
 
@@ -76,139 +65,14 @@ static UIButton* _IACOverlayButton = NULL;
     return NO;
 }
 
-
 //createOverlayView creates the unsighted overlay. The overlay can then be toggled on and off by the user.
 - (void)createOverlayView {
+    _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
+    _overlayViewController.overlayView = _overlayViewController.view;
     
-    _overlayView = [[IACOverlayView alloc] init];
-    _overlayView.backgroundColor = [IACUtilities colorWithHexString:GRAY];
-    _overlayView.isAccessibilityElement = NO;
-    _overlayView.translatesAutoresizingMaskIntoConstraints = NO;
     
-    UIImageView* _overlayImage = [[UIImageView alloc] init];
-    _overlayImage.image = [UIImage imageNamed:OVERLAY_IMAGE_NAME];
-    _overlayImage.isAccessibilityElement = NO;
-    _overlayImage.contentMode = UIViewContentModeScaleAspectFit;
-    _overlayImage.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    DQLabel* _titleLabel = [[DQLabel alloc] init];
-    _titleLabel.numberOfLines = 0;
-    _titleLabel.text = @"Deque University for iOS";
-    _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    _titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-    _titleLabel.isAccessibilityElement = NO;
-    
-    DQLabel* _overlayNameLabel = [[DQLabel alloc] init];
-    _overlayNameLabel.numberOfLines = 0;
-    _overlayNameLabel.text = @"VoiceOver Simulation";
-    _overlayNameLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    _overlayNameLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    _overlayNameLabel.isAccessibilityElement = NO;
-
-    [self.view addSubview:_overlayView];
-    [_overlayView addSubview:_overlayImage];
-    [_overlayView addSubview:_titleLabel];
-    [_overlayView addSubview:_overlayNameLabel];
-    
-    //Constraints for Overlay View
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_overlayView
-                                                          attribute:NSLayoutAttributeWidth
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeWidth
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_overlayView
-                                                          attribute:NSLayoutAttributeHeight
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeHeight
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_overlayView
-                                                          attribute:NSLayoutAttributeCenterX
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeCenterX
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_overlayView
-                                                          attribute:NSLayoutAttributeCenterY
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeCenterY
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    //Constraints for Deque U Logo
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayImage
-                                                             attribute:NSLayoutAttributeWidth
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:_overlayView
-                                                             attribute:NSLayoutAttributeWidth
-                                                            multiplier:0.6666
-                                                              constant:0]];
-    
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayImage
-                                                          attribute:NSLayoutAttributeCenterY
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:_overlayView
-                                                          attribute:NSLayoutAttributeCenterY
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayImage
-                                                          attribute:NSLayoutAttributeCenterX
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:_overlayView
-                                                          attribute:NSLayoutAttributeCenterX
-                                                         multiplier:1
-                                                           constant:0]];
-    
-    [_overlayImage addConstraint:[NSLayoutConstraint constraintWithItem:_overlayImage
-                                                              attribute:NSLayoutAttributeHeight
-                                                              relatedBy:NSLayoutRelationEqual
-                                                                 toItem:_overlayImage
-                                                              attribute:NSLayoutAttributeWidth
-                                                             multiplier:8.0/5.0
-                                                               constant:0]];
-    
-    //Constraints for Deque U Title
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_titleLabel
-                                                             attribute:NSLayoutAttributeCenterX
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:_overlayView
-                                                             attribute:NSLayoutAttributeCenterX
-                                                            multiplier:1
-                                                              constant:0]];
-    
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_titleLabel
-                                                             attribute:NSLayoutAttributeBottom
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:_overlayImage
-                                                             attribute:NSLayoutAttributeBottom
-                                                            multiplier:1
-                                                              constant:-20]];
-    
-    //Constraints for VoiceOver Simulation
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayNameLabel
-                                                             attribute:NSLayoutAttributeCenterX
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:_overlayView
-                                                             attribute:NSLayoutAttributeCenterX
-                                                            multiplier:1
-                                                              constant:0]];
-    
-    [_overlayView addConstraint:[NSLayoutConstraint constraintWithItem:_overlayNameLabel
-                                                             attribute:NSLayoutAttributeTop
-                                                             relatedBy:NSLayoutRelationEqual
-                                                                toItem:_titleLabel
-                                                             attribute:NSLayoutAttributeBottom
-                                                            multiplier:1
-                                                              constant:30]];
+    [self.view addSubview: _overlayViewController.overlayView];
+    _overlayViewController.overlayView.hidden = true;
 }
 
 + (void)setOverlayOn:(BOOL)value {
@@ -232,9 +96,9 @@ static UIButton* _IACOverlayButton = NULL;
     [_IACOverlayButton setImage:[self.class getSightedIcon:_IACViewControllerOverlayIsOn] forState:UIControlStateNormal];
     
     if (_IACViewControllerOverlayIsOn) {
-        _overlayView.hidden = false;
+        _overlayViewController.overlayView.hidden = false;
     } else {
-        _overlayView.hidden = true;
+        _overlayViewController.overlayView.hidden = true;
     }
 }
 

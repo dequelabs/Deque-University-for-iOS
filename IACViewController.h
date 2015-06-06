@@ -13,11 +13,8 @@
  * Deque University for iOS View Controller.
  * This view controller manages the different sections and tabs on iPhone and iPod touch.
  */
-@interface IACViewController : GAITrackedViewController {
-    UIView* _overlayView;
-}
+@interface IACViewController : GAITrackedViewController
 
-@property (readonly) UIView* overlayView; ///< The unsighted overlay
 @property (readonly) UIButton* overlayButton; ///< The button that toggles the unsighted overlay
 
 + (UIImage*)getSightedIcon:(BOOL)isOn; ///< image for when the overlay is on

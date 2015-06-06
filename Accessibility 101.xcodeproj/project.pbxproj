@@ -45,6 +45,7 @@
 		EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36941B22140E00EA2514 /* libsqlite3.dylib */; };
 		EE6B36971B22143F00EA2514 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36961B22143F00EA2514 /* libGoogleAnalyticsServices.a */; };
 		EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
+		EE6B37371B229E9200EA2514 /* IACOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6B37361B229E9200EA2514 /* IACOverlayViewController.m */; };
 		EE8F89B31B0541DC00B8601C /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F89B21B0541DC00B8601C /* IACUtilities.m */; };
 		EE8F8A061B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A031B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m */; };
 		EE8F8A071B06796300B8601C /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */; };
@@ -88,6 +89,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
 			remoteInfo = iosFireEyesInstructions;
+		};
+		EE6B36AD1B2247D700EA2514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB14741B18F02300809C96;
+			remoteInfo = DQA11y;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -154,6 +162,8 @@
 		EE6B36921B22140600EA2514 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		EE6B36941B22140E00EA2514 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EE6B36961B22143F00EA2514 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		EE6B37351B229E9200EA2514 /* IACOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACOverlayViewController.h; sourceTree = "<group>"; };
+		EE6B37361B229E9200EA2514 /* IACOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACOverlayViewController.m; sourceTree = "<group>"; };
 		EE8F89B11B0541DC00B8601C /* IACUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACUtilities.h; sourceTree = "<group>"; };
 		EE8F89B21B0541DC00B8601C /* IACUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACUtilities.m; sourceTree = "<group>"; };
 		EE8F8A021B06796300B8601C /* IACDynamicNotificationsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsBrokenViewController.h; sourceTree = "<group>"; };
@@ -266,6 +276,8 @@
 				EE8F8AB61B0A813300B8601C /* IACConstants.h */,
 				0F76336B1ADDA428002D7243 /* IACViewController.h */,
 				0F76336C1ADDA428002D7243 /* IACViewController.m */,
+				EE6B37351B229E9200EA2514 /* IACOverlayViewController.h */,
+				EE6B37361B229E9200EA2514 /* IACOverlayViewController.m */,
 				0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */,
 				0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */,
 				EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */,
@@ -525,6 +537,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */,
 			);
 			name = "Accessibility 101";
 			productName = iosFireEyesInstructions;
@@ -656,6 +669,7 @@
 				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,
 				EE8F8A6B1B06844300B8601C /* CustomIOS7AlertView.m in Sources */,
 				EE8F8A681B06844300B8601C /* AppDelegate.m in Sources */,
+				EE6B37371B229E9200EA2514 /* IACOverlayViewController.m in Sources */,
 				0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */,
 				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
 				A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */,
@@ -693,6 +707,11 @@
 			isa = PBXTargetDependency;
 			target = A9D013BE18A2DD4700DC6496 /* Accessibility 101 */;
 			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
+		};
+		EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DQA11y;
+			targetProxy = EE6B36AD1B2247D700EA2514 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -804,7 +823,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -833,7 +852,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
