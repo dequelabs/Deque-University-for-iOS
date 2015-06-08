@@ -428,8 +428,8 @@
                                     <constraint firstAttribute="width" secondItem="b71-KU-4U5" secondAttribute="height" multiplier="1:1" id="umm-f1-I1K"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deque University for iOS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8q-O7-9Td" customClass="DQLabel">
-                                <rect key="frame" x="209" y="525" width="183" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VoiceOver Simulation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8q-O7-9Td" customClass="DQLabel">
+                                <rect key="frame" x="221" y="55" width="159" height="20"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
@@ -437,12 +437,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VoiceOver Simulation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikn-v9-6cQ" customClass="DQLabel">
-                                <rect key="frame" x="231" y="575" width="138" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deque University for iOS" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikn-v9-6cQ" customClass="DQLabel">
+                                <rect key="frame" x="211" y="525" width="179" height="20"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -451,10 +451,12 @@
                         <constraints>
                             <constraint firstItem="ikn-v9-6cQ" firstAttribute="width" secondItem="Qsw-vS-C3Z" secondAttribute="height" multiplier="0.9" id="10n-OX-1tK"/>
                             <constraint firstAttribute="width" secondItem="b71-KU-4U5" secondAttribute="width" multiplier="4/3" id="1kH-cN-qgq"/>
+                            <constraint firstItem="ikn-v9-6cQ" firstAttribute="top" secondItem="b71-KU-4U5" secondAttribute="bottom" id="68J-cL-Ipv"/>
                             <constraint firstItem="ikn-v9-6cQ" firstAttribute="top" secondItem="p8q-O7-9Td" secondAttribute="bottom" id="AsE-mr-fd1"/>
                             <constraint firstItem="b71-KU-4U5" firstAttribute="top" secondItem="p8q-O7-9Td" secondAttribute="bottom" constant="-41" id="Ehs-rf-6jb"/>
                             <constraint firstItem="p8q-O7-9Td" firstAttribute="height" secondItem="Qsw-vS-C3Z" secondAttribute="height" multiplier="0.8" id="GYN-XK-ZQX"/>
                             <constraint firstItem="p8q-O7-9Td" firstAttribute="top" secondItem="ikn-v9-6cQ" secondAttribute="bottom" constant="15" id="INY-7C-ZpJ"/>
+                            <constraint firstItem="b71-KU-4U5" firstAttribute="top" secondItem="p8q-O7-9Td" secondAttribute="bottom" id="T0Z-Oa-5mz"/>
                             <constraint firstAttribute="centerX" secondItem="p8q-O7-9Td" secondAttribute="centerX" id="VR2-ND-4Km"/>
                             <constraint firstItem="p8q-O7-9Td" firstAttribute="top" secondItem="b71-KU-4U5" secondAttribute="bottom" id="Y3o-3E-L9S"/>
                             <constraint firstAttribute="centerX" secondItem="b71-KU-4U5" secondAttribute="centerX" id="baa-cm-7fn"/>
@@ -473,11 +475,13 @@
                                 <exclude reference="GYN-XK-ZQX"/>
                                 <exclude reference="INY-7C-ZpJ"/>
                                 <exclude reference="Y3o-3E-L9S"/>
+                                <exclude reference="ofE-HR-0qf"/>
                                 <exclude reference="rBc-dE-hcQ"/>
                                 <exclude reference="10n-OX-1tK"/>
                                 <exclude reference="AsE-mr-fd1"/>
                                 <exclude reference="dLv-nk-qNo"/>
                                 <exclude reference="h7l-mk-psw"/>
+                                <exclude reference="hha-Ih-fia"/>
                                 <exclude reference="wtV-px-VZL"/>
                             </mask>
                         </variation>
