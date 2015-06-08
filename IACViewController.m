@@ -68,7 +68,7 @@ static UIButton* _IACOverlayButton = NULL;
 //createOverlayView creates the unsighted overlay. The overlay can then be toggled on and off by the user.
 - (void)createOverlayView {
     _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
-    _overlayViewController.overlayView = _overlayViewController.view;
+    _overlayViewController.overlayView = (IACOverlayView*) _overlayViewController.view;
     
     
     [self.view addSubview: _overlayViewController.overlayView];

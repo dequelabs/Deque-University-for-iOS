@@ -257,10 +257,10 @@
     } else {
         demoTab = @", Advanced Demonstrations Tab,";
     }
-    demoTab = [demoTab stringByAppendingString: [NSString stringWithFormat: @"%d of", indexPath.row + 1]];
+    demoTab = [demoTab stringByAppendingString: [NSString stringWithFormat: @"%ld of", indexPath.row + 1]];
     
     NSString* accessibilityLabel = [label.text stringByAppendingString:demoTab];
-    accessibilityLabel = [accessibilityLabel stringByAppendingString:[NSString stringWithFormat:@"%d", [viewControllers count]]];
+    accessibilityLabel = [accessibilityLabel stringByAppendingString:[NSString stringWithFormat:@"%lu", (unsigned long)[viewControllers count]]];
     cell.accessibilityLabel = accessibilityLabel;
     
     return cell;
