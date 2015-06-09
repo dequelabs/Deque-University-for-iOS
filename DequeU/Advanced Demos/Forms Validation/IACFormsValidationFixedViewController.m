@@ -1,6 +1,6 @@
 //
-//  ViewController.m
-//  DequeApp
+//  IACFormsValidationFixedViewController.m
+//  Deque University for iOS
 //
 //  Created by Alistair Barrell on 2/27/15.
 //  Copyright (c) Deque Systems 2015. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  IACDynamicNotificationsBrokenViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 5/4/15.
 //  Copyright (c) 2015 Jennifer Dailey. All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  IFVBadViewController.m
-//  iOSFormsDemo
+//  IACFormsValidationBrokenViewController.m
+//  Deque University for iOS
 //
 //  Created by Chris McMeeking on 4/2/15.
 //  Copyright (c) 2015 Deque Developer. All rights reserved.

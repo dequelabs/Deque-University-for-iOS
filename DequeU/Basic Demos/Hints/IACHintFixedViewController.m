@@ -1,6 +1,6 @@
 //
 //  DQFixedHintViewController.m
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 2/12/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.

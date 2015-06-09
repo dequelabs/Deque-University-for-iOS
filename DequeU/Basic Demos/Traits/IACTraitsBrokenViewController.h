@@ -1,6 +1,6 @@
 //
 //  DQTraitsBrokenViewController.h
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
