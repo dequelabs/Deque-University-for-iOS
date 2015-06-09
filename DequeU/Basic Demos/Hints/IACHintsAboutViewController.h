@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the About tab in the Hints demonstration. Created for tracking in Google Analytics.
 @interface IACHintsAboutViewController : IACViewController
 
 @end

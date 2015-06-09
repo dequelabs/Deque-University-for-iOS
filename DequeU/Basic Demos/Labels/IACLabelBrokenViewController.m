@@ -38,8 +38,8 @@
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
         
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; ///< Sometimes hints aren't needed, this silences the warning, letting the analyzer
-                                           ///< know we are concsiously setting an empty hint.
+    [_ImageView setAccessibilityHint:@""]; // Sometimes hints aren't needed, this silences the warning, letting the analyzer
+                                           // know we are concsiously setting an empty hint.
     
     /**
      * You may notice that on the next line "DOG" is an NSLocalized string.
@@ -65,6 +65,7 @@
     }
 }
 
+// Update the imageView's image and accessibility label given the name of the animal.
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
     [_ImageView setAccessibilityLabel:name];

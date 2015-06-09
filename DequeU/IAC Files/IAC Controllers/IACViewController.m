@@ -29,6 +29,7 @@ static UIButton* _IACOverlayButton = NULL;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //set up VoiceOver simulation button
     if (_IACOverlayButton == NULL) {
         _IACOverlayButton =  [UIButton buttonWithType:UIButtonTypeCustom];
         [_IACOverlayButton addTarget:[self class] action:@selector(toggleOverlayOn) forControlEvents:UIControlEventTouchUpInside];
@@ -67,7 +68,7 @@ static UIButton* _IACOverlayButton = NULL;
     return NO;
 }
 
-//createOverlayView creates the unsighted overlay. The overlay can then be toggled on and off by the user.
+//Creates the physical overlay. The overlay can then be toggled on and off by the user.
 - (void)createOverlayView {
     _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
     
@@ -91,6 +92,7 @@ static UIButton* _IACOverlayButton = NULL;
     return isOn ? [UIImage imageNamed:@"DequeU_app_icon_unsighted"] : [UIImage imageNamed:@"DequeU_app_icon_sighted"];
 }
 
+//Sets the overlay when the viewController loads if VoiceOver Simulation is on.
 - (void)observeOverlaySetting {
     
     _IACViewControllerActiveInstance = self;

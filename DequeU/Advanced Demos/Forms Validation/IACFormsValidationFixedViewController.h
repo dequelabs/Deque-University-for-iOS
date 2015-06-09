@@ -13,7 +13,7 @@
 /**
  * Fixed version of the Forms Demo.
  */
-
+//! The accessible (fixed) version of the Forms Validation demonstration.
 @interface IACFormsValidationFixedViewController : IACViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+//! View Controller used to show both the menu and the demo when using an iPad
 @interface IACSplitViewController : UISplitViewController
 
 @end

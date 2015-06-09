@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the About tab in the Labels demonstration. Created for tracking in Google Analytics.
 @interface IACLabelAboutViewController : IACViewController
 
 @end

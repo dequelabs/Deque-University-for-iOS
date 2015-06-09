@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+//! Overlay used for the VoiceOver Simulation
 @interface IACOverlayView : UIView
 
 @end
 
+//! ViewController that contains an IACOverlayView
 @interface IACOverlayViewController : UIViewController
 
 @property IACOverlayView *overlayView;

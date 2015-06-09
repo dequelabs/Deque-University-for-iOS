@@ -8,9 +8,8 @@
 
 #ifndef Accessibility_101_IACConstants_h
 #define Accessibility_101_IACConstants_h
-/**
- * Constants for colors in this project.
- */
+
+//! Constants for colors in this project.
 #define ORANGE @"EA3700"
 #define DARK_BLUE @"021B3F"
 #define LIGHT_BLUE @"E0EDF9"

@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DQA11y/DQA11y.h>
 
-/**
- * Controller for the side bar table of contents
- */
-
+//! Controller for the side bar table of contents
 @interface IACStoryTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UIView* logoView;
-@property (weak, nonatomic) IBOutlet UIView* wrapperView;
+@property (weak, nonatomic) IBOutlet UIView* logoView; ///< The view containing the app logo and app name.
 
 @end

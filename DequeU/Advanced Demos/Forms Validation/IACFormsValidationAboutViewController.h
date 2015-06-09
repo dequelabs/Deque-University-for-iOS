@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the About tab in the Forms Validation demonstration. Created for tracking with Google Analytics.
 @interface IACFormsValidationAboutViewController : IACViewController
 
 @end

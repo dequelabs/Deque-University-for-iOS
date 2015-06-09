@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the About tab in the Modal Dialog demonstration. Created for tracking with Google Analytics.
 @interface IACModalDialogAboutViewController : IACViewController
 
 @end

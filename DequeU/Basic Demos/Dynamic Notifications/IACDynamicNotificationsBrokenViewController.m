@@ -10,7 +10,7 @@
 
 @interface IACDynamicNotificationsBrokenViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
-@property IBOutlet UITableView *_tableView; ///< The tableView that displays all elements in _contactList.
+@property IBOutlet UITableView *_tableView; // The tableView that displays all elements in _contactList.
 
 @end
 
@@ -24,9 +24,7 @@
     self._tableView.delegate = self;
     _textField.delegate = self;
     
-    /**
-     * Listener for when the textField's content changes.
-     */
+    // Listener for when the textField's content changes.
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(textChanged)
                                                  name:UITextFieldTextDidChangeNotification object:nil];
@@ -59,23 +57,17 @@
     }
 }
 
-/**
- * Delegate method in UITableView.
- */
+// Delegate method in UITableView.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-/**
- * Delegate method in UITableView.
- */
+// Delegate method in UITableView.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_contactList count];
 }
 
-/**
- * Delegate method in UITableView.
- */
+// Delegate method in UITableView.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
     
@@ -86,16 +78,12 @@
     return cell;
 }
 
-/**
- * Delegate method in UITableView.
- */
+// Delegate method in UITableView.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
-/**
- * Delegate method in UITextField.
- */
+// Delegate method in UITextField.
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     

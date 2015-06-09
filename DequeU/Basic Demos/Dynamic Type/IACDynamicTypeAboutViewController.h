@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the About tab in the Dynamic Type demonstration. Created for tracking with Google Analytics.
 @interface IACDynamicTypeAboutViewController : IACViewController
 
 @end

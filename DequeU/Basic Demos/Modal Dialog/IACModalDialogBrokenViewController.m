@@ -21,11 +21,6 @@
     [super viewDidLoad];
 }
 
-/**
- * Creates and does not focus the modal dialog
- * Returns whether or not the dialog is NOT focused for testing purposes
- */
-
 - (BOOL)information:(id)sender {
     CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
                                                                  message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
@@ -66,6 +61,7 @@
     return URL;
 }
 
+//Function in CustomIOS7AlertView
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
     NSString* URL = [self getURLFromIndex: buttonIndex];

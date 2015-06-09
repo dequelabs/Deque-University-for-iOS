@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the Intro tab in the Introduction. Created for easier tracking with Google Analytics.
 @interface IACIntroductionViewController : IACViewController
 
 @end

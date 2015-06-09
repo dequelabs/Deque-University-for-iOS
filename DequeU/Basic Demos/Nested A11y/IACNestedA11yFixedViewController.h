@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the Fixed tab in the Nested A11y demonstration. Created for tracking with Google Analytics.
 @interface IACNestedA11yFixedViewController : IACViewController
 
 @end

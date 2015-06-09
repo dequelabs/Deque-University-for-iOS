@@ -9,13 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
-/**
- * This is the broken version of the Forms demo.
- */
-
+//! The broken version of the Forms Validation demonstration.
 @interface IACFormsValidationBrokenViewController : IACViewController <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel; ///< The
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;

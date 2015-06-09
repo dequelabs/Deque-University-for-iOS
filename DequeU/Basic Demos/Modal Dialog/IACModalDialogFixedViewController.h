@@ -12,13 +12,17 @@
 /**
  * Fixed Modal Dialog
  */
-
+//! The accessible (fixed) version of the Modal Dialog demonstration.
 @interface IACModalDialogFixedViewController : IACViewController
-@property (weak, nonatomic) IBOutlet UIView *OpenAModalDialog;
 
-@property (weak, nonatomic) IBOutlet UIButton *learnMoreLink;
+@property (weak, nonatomic) IBOutlet UIButton *learnMoreLink; ///< The button that opens the modal dialog.
 
-
+//! Creates and shows the modal dialog when the button is pressed, and has accessibility features.
+/*!
+ * The accessibility features include posting a notification that the modal dialog appeared and focusing on the dialog when it appears.
+ * \param sender is the id of the button pressed.
+ * \returns TRUE if the dialog is focused, and FALSE if the dialog is not focused. Used for testing purposes.
+ */
 - (BOOL)information:(id)sender;
 
 @end

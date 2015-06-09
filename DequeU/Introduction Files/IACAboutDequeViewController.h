@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
-/**
- * View Controller for the intro to Deque and Deque University for iOS page
- */
-
+//! The View Controller for the Deque tab in the Introduction.
 @interface IACAboutDequeViewController : IACViewController
 
 @end

@@ -12,9 +12,7 @@
 
 @implementation IACTableViewCell
 
-/** 
- * Makes the accessibility label for the Table View Cell dynamic - it alerts the user if the overlay switch is on or not.
- */
+//Makes the accessibility label for the Table View Cell dynamic - it alerts the user if the VoiceOver switch is on or not.
 - (NSString*) accessibilityLabel {
     
     NSString* accessibilityLabelAlert;

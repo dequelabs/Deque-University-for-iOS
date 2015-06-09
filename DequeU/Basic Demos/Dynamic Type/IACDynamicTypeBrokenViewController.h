@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the Broken tab in the Dynamic Type demonstration. Created for tracking with Google Analytics.
 @interface IACDynamicTypeBrokenViewController : IACViewController
 
 @end

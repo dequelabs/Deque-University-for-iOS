@@ -8,6 +8,7 @@
 
 #import "IACViewController.h"
 
+//! The View Controller for the Fixed tab in the Top Bar Contrast demonstration. Created for tracking with Google Analytics.
 @interface IACTopBarContrastFixedViewController : IACViewController
 
 @end

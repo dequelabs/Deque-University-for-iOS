@@ -20,6 +20,7 @@
     [super viewDidLoad];
     self.delegate = self;
     
+    //these are defined in DQTabBarController
     self.colorDimmed = [IACUtilities colorWithHexString:BLUE];
     self.colorDimmedDarkened = [IACUtilities colorWithHexString:BLUE];
     self.colorSelected = [IACUtilities colorWithHexString:GREEN];
@@ -33,6 +34,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    //Changes font size and color of each element in the tab bar
     for(UITabBarItem* item in self.tabBar.items) {
         [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                       [IACUtilities colorWithHexString:BLUE], NSForegroundColorAttributeName,
@@ -54,7 +56,7 @@
  
     UINavigationItem* navigationItem = [self.navigationController.navigationBar.items objectAtIndex:1];
     
-    navigationItem.title = viewController.title;
+    navigationItem.title = viewController.title; //Updates the view controller's title
 }
 
 /**

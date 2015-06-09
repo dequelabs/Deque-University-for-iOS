@@ -38,7 +38,7 @@
     UISwitch* overlaySwitch;
     UIImageView* sightImage;
     
-    ///< color scheme
+    // color scheme
     UIColor* _colorCellText;
     UIColor* _colorMenuBackground;
     UIColor* _colorCellBackgroundDimmed;
@@ -97,7 +97,6 @@
     // set color scheme
     [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [IACUtilities colorWithHexString:BLUE]}];
     self.tableView.backgroundColor = _colorMenuBackground;
-    self.wrapperView.backgroundColor = _colorMenuBackground;
     self.logoView.backgroundColor = _colorMenuBackground;
     
     self.tableView.backgroundView = nil;

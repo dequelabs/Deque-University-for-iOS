@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
-/**
- * This is the broken version of the Dynamic Notifications demo.
- */
+//! The broken version of the Dynamic Notifications demonstration.
 @interface IACDynamicNotificationsBrokenViewController : IACViewController {
     IBOutlet UITextField* _textField; ///< The textField in which the user can add contacts.
     NSMutableArray* _contactList; ///< The list of contacts that the user has saved.
@@ -20,9 +18,8 @@
 @property (readonly) UITextField* textField;
 @property (readonly) NSMutableArray* contactList;
 
--(IBAction)saveItem; ///< If the textField is not empty, save the text into the contactList.
+-(IBAction)saveItem; ///< If the textField is not empty, it saves the text in the textField into the contactList array.
 -(IBAction)clearList; ///< Empties the contactList (all elements in table are deleted).
 -(void)textChanged; ///< Changes the textField's accessibilityLabel depending on if it is empty or not.
-//// Ask Chris if textChanged should be added to DQTextField.
 
 @end
