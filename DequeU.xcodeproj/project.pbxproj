@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
+		0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */; };
+		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
+		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
+		A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */; };
+		A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
+		A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
+		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
+		EE6123F91B208F5000E94A7E /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
+		EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36921B22140600EA2514 /* libz.dylib */; };
+		EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36941B22140E00EA2514 /* libsqlite3.dylib */; };
+		EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
+		EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */; };
+		EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */; };
+		EEAFD2A91B272A2700E23EAB /* IACFormsValidationFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */; };
+		EEAFD2CA1B272A3A00E23EAB /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2AB1B272A3A00E23EAB /* DynamicNotifications.storyboard */; };
+		EEAFD2CB1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2AD1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m */; };
+		EEAFD2CC1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2AF1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m */; };
+		EEAFD2CD1B272A3A00E23EAB /* IACHintBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */; };
+		EEAFD2CE1B272A3A00E23EAB /* IACHintFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B41B272A3A00E23EAB /* IACHintFixedViewController.m */; };
+		EEAFD2CF1B272A3A00E23EAB /* IACLabelBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B71B272A3A00E23EAB /* IACLabelBrokenViewController.m */; };
+		EEAFD2D01B272A3A00E23EAB /* IACLabelFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B91B272A3A00E23EAB /* IACLabelFixedViewController.m */; };
+		EEAFD2D11B272A3A00E23EAB /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2BC1B272A3A00E23EAB /* CustomIOS7AlertView.m */; };
+		EEAFD2D21B272A3A00E23EAB /* IACModalDialogBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2BE1B272A3A00E23EAB /* IACModalDialogBrokenViewController.m */; };
+		EEAFD2D31B272A3A00E23EAB /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C01B272A3A00E23EAB /* IACModalDialogFixedViewController.m */; };
+		EEAFD2D41B272A3A00E23EAB /* ModalDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */; };
+		EEAFD2D51B272A3A00E23EAB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C21B272A3A00E23EAB /* Storyboard.storyboard */; };
+		EEAFD2D61B272A3A00E23EAB /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */; };
+		EEAFD2D71B272A3A00E23EAB /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */; };
+		EEAFD2D81B272A3A00E23EAB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */; };
+		EEAFD2F01B272A6500E23EAB /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */; };
+		EEAFD2F11B272A6500E23EAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2E81B272A6500E23EAB /* Images.xcassets */; };
+		EEAFD2F21B272A6500E23EAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2E91B272A6500E23EAB /* Localizable.strings */; };
+		EEAFD2F31B272A6500E23EAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2EA1B272A6500E23EAB /* main.m */; };
+		EEAFD2F41B272A6500E23EAB /* AG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2EC1B272A6500E23EAB /* AG.mp3 */; };
+		EEAFD2F51B272A6500E23EAB /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2ED1B272A6500E23EAB /* SIR.mp3 */; };
+		EEAFD2F61B272A6500E23EAB /* SSB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2EE1B272A6500E23EAB /* SSB.mp3 */; };
+		EEAFD2F91B272B0800E23EAB /* DQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2F81B272B0800E23EAB /* DQAppDelegate.m */; };
+		EEAFD3051B272B8900E23EAB /* IACOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */; };
+		EEAFD3061B272B8900E23EAB /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */; };
+		EEAFD3071B272B8900E23EAB /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */; };
+		EEAFD3081B272B8900E23EAB /* IACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3021B272B8900E23EAB /* IACTabBarController.m */; };
+		EEAFD3091B272B8900E23EAB /* IACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3041B272B8900E23EAB /* IACViewController.m */; };
+		EEAFD30C1B272B9400E23EAB /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */; };
+		EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */; };
+		EEAFD3151B272BF200E23EAB /* IACAboutDequeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */; };
+		EEAFD34D1B2733F100E23EAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD3341B272E6400E23EAB /* InfoPlist.strings */; };
+		EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */; };
+		EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */; };
+		EEAFD3651B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */; };
+		EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */; };
+		EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */; };
+		EEAFD3681B27348A00E23EAB /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */; };
+		EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */; };
+		EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */; };
+		EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */; };
+		EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */; };
+		EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */; };
+		EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */; };
+		EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3721B27391E00E23EAB /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BE1E8251B1E126600BA4BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECB14751B18F02300809C96;
+			remoteInfo = DQA11y;
+		};
+		2BE1E8271B1E126600BA4BF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECB14801B18F02300809C96;
+			remoteInfo = DQA11yTests;
+		};
+		A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D013B718A2DD4700DC6496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
+			remoteInfo = iosFireEyesInstructions;
+		};
+		EE6B36AD1B2247D700EA2514 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EECB14741B18F02300809C96;
+			remoteInfo = DQA11y;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = iOSA11yFramework/DQA11y.xcodeproj; sourceTree = "<group>"; };
+		A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deque University for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D013C218A2DD4700DC6496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9D013C618A2DD4700DC6496 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accessibility 101Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6B36921B22140600EA2514 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EE6B36941B22140E00EA2514 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FormsValidation.storyboard; sourceTree = "<group>"; };
+		EEAFD2A31B272A2700E23EAB /* IACFormsValidationBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFormsValidationBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormsValidationBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2A51B272A2700E23EAB /* IACFormsValidationFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFormsValidationFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormsValidationFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2AB1B272A3A00E23EAB /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
+		EEAFD2AC1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2AD1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2AE1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2AF1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2B11B272A3A00E23EAB /* IACHintBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACHintBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2B31B272A3A00E23EAB /* IACHintFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACHintFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2B41B272A3A00E23EAB /* IACHintFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2B61B272A3A00E23EAB /* IACLabelBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACLabelBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2B71B272A3A00E23EAB /* IACLabelBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2B81B272A3A00E23EAB /* IACLabelFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACLabelFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2B91B272A3A00E23EAB /* IACLabelFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2BB1B272A3A00E23EAB /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		EEAFD2BC1B272A3A00E23EAB /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		EEAFD2BD1B272A3A00E23EAB /* IACModalDialogBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2BE1B272A3A00E23EAB /* IACModalDialogBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2BF1B272A3A00E23EAB /* IACModalDialogFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2C01B272A3A00E23EAB /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalDialog.storyboard; sourceTree = "<group>"; };
+		EEAFD2C21B272A3A00E23EAB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = "DequeU/Basic Demos/Storyboard.storyboard"; sourceTree = "<group>"; };
+		EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
+		EEAFD2C61B272A3A00E23EAB /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2C81B272A3A00E23EAB /* IACTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTraitsFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2DB1B272A6500E23EAB /* DequeU-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DequeU-Prefix.pch"; sourceTree = "<group>"; };
+		EEAFD2DD1B272A6500E23EAB /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		EEAFD2DE1B272A6500E23EAB /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		EEAFD2DF1B272A6500E23EAB /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		EEAFD2E01B272A6500E23EAB /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		EEAFD2E11B272A6500E23EAB /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		EEAFD2E21B272A6500E23EAB /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		EEAFD2E31B272A6500E23EAB /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		EEAFD2E41B272A6500E23EAB /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		EEAFD2E51B272A6500E23EAB /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		EEAFD2E61B272A6500E23EAB /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "DequeU/Supporting Files/Google Analytics Header Files/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
+		EEAFD2E81B272A6500E23EAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EEAFD2E91B272A6500E23EAB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EEAFD2EA1B272A6500E23EAB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEAFD2EC1B272A6500E23EAB /* AG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AG.mp3; sourceTree = "<group>"; };
+		EEAFD2ED1B272A6500E23EAB /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
+		EEAFD2EE1B272A6500E23EAB /* SSB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SSB.mp3; sourceTree = "<group>"; };
+		EEAFD2F71B272B0800E23EAB /* DQAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQAppDelegate.h; path = DequeU/DQAppDelegate.h; sourceTree = "<group>"; };
+		EEAFD2F81B272B0800E23EAB /* DQAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQAppDelegate.m; path = DequeU/DQAppDelegate.m; sourceTree = "<group>"; };
+		EEAFD2FA1B272B7F00E23EAB /* IACConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACConstants.h; path = "DequeU/IAC Files/IAC Constants/IACConstants.h"; sourceTree = "<group>"; };
+		EEAFD2FB1B272B8900E23EAB /* IACOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACOverlayViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACOverlayViewController.h"; sourceTree = "<group>"; };
+		EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACOverlayViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACOverlayViewController.m"; sourceTree = "<group>"; };
+		EEAFD2FD1B272B8900E23EAB /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACSplitViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACSplitViewController.h"; sourceTree = "<group>"; };
+		EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACSplitViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACSplitViewController.m"; sourceTree = "<group>"; };
+		EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACStoryTableViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.h"; sourceTree = "<group>"; };
+		EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACStoryTableViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.m"; sourceTree = "<group>"; };
+		EEAFD3011B272B8900E23EAB /* IACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTabBarController.h; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.h"; sourceTree = "<group>"; };
+		EEAFD3021B272B8900E23EAB /* IACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTabBarController.m; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.m"; sourceTree = "<group>"; };
+		EEAFD3031B272B8900E23EAB /* IACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACViewController.h"; sourceTree = "<group>"; };
+		EEAFD3041B272B8900E23EAB /* IACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACViewController.m"; sourceTree = "<group>"; };
+		EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTableViewCell.h; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.h"; sourceTree = "<group>"; };
+		EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTableViewCell.m; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.m"; sourceTree = "<group>"; };
+		EEAFD30D1B272B9D00E23EAB /* IACUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACUtilities.h; path = "DequeU/IAC Files/IAC Utilities/IACUtilities.h"; sourceTree = "<group>"; };
+		EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACUtilities.m; path = "DequeU/IAC Files/IAC Utilities/IACUtilities.m"; sourceTree = "<group>"; };
+		EEAFD3131B272BF200E23EAB /* IACAboutDequeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACAboutDequeViewController.h; path = "DequeU/Introduction Files/IACAboutDequeViewController.h"; sourceTree = "<group>"; };
+		EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACAboutDequeViewController.m; path = "DequeU/Introduction Files/IACAboutDequeViewController.m"; sourceTree = "<group>"; };
+		EEAFD3301B272E2A00E23EAB /* DequeUTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DequeUTests-Info.plist"; path = "DequeUTests/Supporting Files/DequeUTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EEAFD3351B272E6400E23EAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = DequeUTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		EEAFD33B1B2731E400E23EAB /* DequeU-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DequeU-Info.plist"; sourceTree = "<group>"; };
+		EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormValidationBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormValidationFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3701B2738D000E23EAB /* DEQAsserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DEQAsserts.h; path = DequeUTests/DEQAsserts.h; sourceTree = SOURCE_ROOT; };
+		EEAFD3711B27391E00E23EAB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEAFD3721B27391E00E23EAB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9D013BC18A2DD4700DC6496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */,
+				EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */,
+				EE6123F91B208F5000E94A7E /* DQA11y.framework in Frameworks */,
+				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
+				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
+				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
+				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
+				EEAFD2F01B272A6500E23EAB /* libGoogleAnalyticsServices.a in Frameworks */,
+				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
+				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D013D718A2DD4700DC6496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */,
+				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
+				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7633741AE00966002D7243 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3131B272BF200E23EAB /* IACAboutDequeViewController.h */,
+				EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */,
+			);
+			name = Introduction;
+			sourceTree = "<group>";
+		};
+		0FEB4C211ACB0F5000F372F8 /* Deque University for iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2C21B272A3A00E23EAB /* Storyboard.storyboard */,
+				EEAFD2F71B272B0800E23EAB /* DQAppDelegate.h */,
+				EEAFD2F81B272B0800E23EAB /* DQAppDelegate.m */,
+				EEAFD2FA1B272B7F00E23EAB /* IACConstants.h */,
+				EEAFD2FB1B272B8900E23EAB /* IACOverlayViewController.h */,
+				EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */,
+				EEAFD2FD1B272B8900E23EAB /* IACSplitViewController.h */,
+				EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */,
+				EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */,
+				EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */,
+				EEAFD3011B272B8900E23EAB /* IACTabBarController.h */,
+				EEAFD3021B272B8900E23EAB /* IACTabBarController.m */,
+				EEAFD3031B272B8900E23EAB /* IACViewController.h */,
+				EEAFD3041B272B8900E23EAB /* IACViewController.m */,
+				EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */,
+				EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */,
+				EEAFD30D1B272B9D00E23EAB /* IACUtilities.h */,
+				EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */,
+				0F7633741AE00966002D7243 /* Introduction */,
+				EEAFD2B51B272A3A00E23EAB /* Labels */,
+				EEAFD2B01B272A3A00E23EAB /* Hints */,
+				EEAFD2C51B272A3A00E23EAB /* Traits */,
+				EEAFD2AA1B272A3A00E23EAB /* Dynamic Notifications */,
+				EEAFD2BA1B272A3A00E23EAB /* Modal Dialog */,
+				EEAFD2C31B272A3A00E23EAB /* Top Bar Contrast */,
+				EEAFD2A11B272A2700E23EAB /* Forms Validation */,
+				EEAFD2D91B272A6500E23EAB /* Supporting Files */,
+			);
+			name = "Deque University for iOS";
+			sourceTree = "<group>";
+		};
+		2BE1E8211B1E126500BA4BF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */,
+				2BE1E8281B1E126600BA4BF6 /* DQA11yTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9D013B618A2DD4700DC6496 = {
+			isa = PBXGroup;
+			children = (
+				0FEB4C211ACB0F5000F372F8 /* Deque University for iOS */,
+				A9D013E118A2DD4700DC6496 /* Deque University for iOS Tests */,
+				A9D013C018A2DD4700DC6496 /* Products */,
+				A9D013C118A2DD4700DC6496 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D013C018A2DD4700DC6496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */,
+				A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9D013C118A2DD4700DC6496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */,
+				EE6B36941B22140E00EA2514 /* libsqlite3.dylib */,
+				EE6B36921B22140600EA2514 /* libz.dylib */,
+				EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */,
+				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
+				0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */,
+				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
+				A9D013C218A2DD4700DC6496 /* Foundation.framework */,
+				A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */,
+				A9D013C618A2DD4700DC6496 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9D013E118A2DD4700DC6496 /* Deque University for iOS Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3701B2738D000E23EAB /* DEQAsserts.h */,
+				EEAFD3501B27348A00E23EAB /* Categories */,
+				A9D013E218A2DD4700DC6496 /* Supporting Files */,
+			);
+			name = "Deque University for iOS Tests";
+			path = iosFireEyesInstructionsTests;
+			sourceTree = "<group>";
+		};
+		A9D013E218A2DD4700DC6496 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3301B272E2A00E23EAB /* DequeUTests-Info.plist */,
+				EEAFD3341B272E6400E23EAB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEAFD2A11B272A2700E23EAB /* Forms Validation */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3711B27391E00E23EAB /* AppDelegate.h */,
+				EEAFD3721B27391E00E23EAB /* AppDelegate.m */,
+				EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */,
+				EEAFD2A31B272A2700E23EAB /* IACFormsValidationBrokenViewController.h */,
+				EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */,
+				EEAFD2A51B272A2700E23EAB /* IACFormsValidationFixedViewController.h */,
+				EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */,
+			);
+			name = "Forms Validation";
+			path = "DequeU/Advanced Demos/Forms Validation";
+			sourceTree = "<group>";
+		};
+		EEAFD2AA1B272A3A00E23EAB /* Dynamic Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2AB1B272A3A00E23EAB /* DynamicNotifications.storyboard */,
+				EEAFD2AC1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.h */,
+				EEAFD2AD1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m */,
+				EEAFD2AE1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.h */,
+				EEAFD2AF1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m */,
+			);
+			name = "Dynamic Notifications";
+			path = "DequeU/Basic Demos/Dynamic Notifications";
+			sourceTree = "<group>";
+		};
+		EEAFD2B01B272A3A00E23EAB /* Hints */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2B11B272A3A00E23EAB /* IACHintBrokenViewController.h */,
+				EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */,
+				EEAFD2B31B272A3A00E23EAB /* IACHintFixedViewController.h */,
+				EEAFD2B41B272A3A00E23EAB /* IACHintFixedViewController.m */,
+			);
+			name = Hints;
+			path = "DequeU/Basic Demos/Hints";
+			sourceTree = "<group>";
+		};
+		EEAFD2B51B272A3A00E23EAB /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2B61B272A3A00E23EAB /* IACLabelBrokenViewController.h */,
+				EEAFD2B71B272A3A00E23EAB /* IACLabelBrokenViewController.m */,
+				EEAFD2B81B272A3A00E23EAB /* IACLabelFixedViewController.h */,
+				EEAFD2B91B272A3A00E23EAB /* IACLabelFixedViewController.m */,
+			);
+			name = Labels;
+			path = "DequeU/Basic Demos/Labels";
+			sourceTree = "<group>";
+		};
+		EEAFD2BA1B272A3A00E23EAB /* Modal Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2BB1B272A3A00E23EAB /* CustomIOS7AlertView.h */,
+				EEAFD2BC1B272A3A00E23EAB /* CustomIOS7AlertView.m */,
+				EEAFD2BD1B272A3A00E23EAB /* IACModalDialogBrokenViewController.h */,
+				EEAFD2BE1B272A3A00E23EAB /* IACModalDialogBrokenViewController.m */,
+				EEAFD2BF1B272A3A00E23EAB /* IACModalDialogFixedViewController.h */,
+				EEAFD2C01B272A3A00E23EAB /* IACModalDialogFixedViewController.m */,
+				EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */,
+			);
+			name = "Modal Dialog";
+			path = "DequeU/Basic Demos/Modal Dialog";
+			sourceTree = "<group>";
+		};
+		EEAFD2C31B272A3A00E23EAB /* Top Bar Contrast */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */,
+			);
+			name = "Top Bar Contrast";
+			path = "DequeU/Basic Demos/Top Bar Contrast";
+			sourceTree = "<group>";
+		};
+		EEAFD2C51B272A3A00E23EAB /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2C61B272A3A00E23EAB /* IACTraitsBrokenViewController.h */,
+				EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */,
+				EEAFD2C81B272A3A00E23EAB /* IACTraitsFixedViewController.h */,
+				EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */,
+			);
+			name = Traits;
+			path = "DequeU/Basic Demos/Traits";
+			sourceTree = "<group>";
+		};
+		EEAFD2D91B272A6500E23EAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2DC1B272A6500E23EAB /* Include */,
+				EEAFD2EB1B272A6500E23EAB /* Music */,
+				EEAFD2E81B272A6500E23EAB /* Images.xcassets */,
+				EEAFD2DB1B272A6500E23EAB /* DequeU-Prefix.pch */,
+				EEAFD33B1B2731E400E23EAB /* DequeU-Info.plist */,
+				EEAFD2E91B272A6500E23EAB /* Localizable.strings */,
+				EEAFD2EA1B272A6500E23EAB /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "DequeU/Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEAFD2DC1B272A6500E23EAB /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2DD1B272A6500E23EAB /* GAI.h */,
+				EEAFD2DE1B272A6500E23EAB /* GAIDictionaryBuilder.h */,
+				EEAFD2DF1B272A6500E23EAB /* GAIEcommerceFields.h */,
+				EEAFD2E01B272A6500E23EAB /* GAIEcommerceProduct.h */,
+				EEAFD2E11B272A6500E23EAB /* GAIEcommerceProductAction.h */,
+				EEAFD2E21B272A6500E23EAB /* GAIEcommercePromotion.h */,
+				EEAFD2E31B272A6500E23EAB /* GAIFields.h */,
+				EEAFD2E41B272A6500E23EAB /* GAILogger.h */,
+				EEAFD2E51B272A6500E23EAB /* GAITrackedViewController.h */,
+				EEAFD2E61B272A6500E23EAB /* GAITracker.h */,
+			);
+			name = Include;
+			path = "Google Analytics Header Files";
+			sourceTree = "<group>";
+		};
+		EEAFD2EB1B272A6500E23EAB /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2EC1B272A6500E23EAB /* AG.mp3 */,
+				EEAFD2ED1B272A6500E23EAB /* SIR.mp3 */,
+				EEAFD2EE1B272A6500E23EAB /* SSB.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		EEAFD3501B27348A00E23EAB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD35A1B27348A00E23EAB /* Labels */,
+				EEAFD3571B27348A00E23EAB /* Hints */,
+				EEAFD3601B27348A00E23EAB /* Traits */,
+				EEAFD3511B27348A00E23EAB /* Dynamic Notifications */,
+				EEAFD35D1B27348A00E23EAB /* Modal Dialog */,
+				EEAFD3541B27348A00E23EAB /* Form Validation */,
+			);
+			name = Categories;
+			path = DequeUTests/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		EEAFD3511B27348A00E23EAB /* Dynamic Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */,
+				EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */,
+			);
+			path = "Dynamic Notifications";
+			sourceTree = "<group>";
+		};
+		EEAFD3541B27348A00E23EAB /* Form Validation */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */,
+				EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */,
+			);
+			path = "Form Validation";
+			sourceTree = "<group>";
+		};
+		EEAFD3571B27348A00E23EAB /* Hints */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */,
+				EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */,
+			);
+			path = Hints;
+			sourceTree = "<group>";
+		};
+		EEAFD35A1B27348A00E23EAB /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */,
+				EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		EEAFD35D1B27348A00E23EAB /* Modal Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */,
+				EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */,
+			);
+			path = "Modal Dialog";
+			sourceTree = "<group>";
+		};
+		EEAFD3601B27348A00E23EAB /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */,
+				EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9D013BE18A2DD4700DC6496 /* DequeU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeU" */;
+			buildPhases = (
+				A9D013BB18A2DD4700DC6496 /* Sources */,
+				A9D013BC18A2DD4700DC6496 /* Frameworks */,
+				A9D013BD18A2DD4700DC6496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */,
+			);
+			name = DequeU;
+			productName = iosFireEyesInstructions;
+			productReference = A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9D013D918A2DD4700DC6496 /* DequeUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeUTests" */;
+			buildPhases = (
+				A9D013D618A2DD4700DC6496 /* Sources */,
+				A9D013D718A2DD4700DC6496 /* Frameworks */,
+				A9D013D818A2DD4700DC6496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9D013E018A2DD4700DC6496 /* PBXTargetDependency */,
+			);
+			name = DequeUTests;
+			productName = iosFireEyesInstructionsTests;
+			productReference = A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9D013B718A2DD4700DC6496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DQ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Deque Systems";
+				TargetAttributes = {
+					A9D013BE18A2DD4700DC6496 = {
+						DevelopmentTeam = 2ZZQGXN669;
+					};
+					A9D013D918A2DD4700DC6496 = {
+						TestTargetID = A9D013BE18A2DD4700DC6496;
+					};
+				};
+			};
+			buildConfigurationList = A9D013BA18A2DD4700DC6496 /* Build configuration list for PBXProject "DequeU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+				Base,
+			);
+			mainGroup = A9D013B618A2DD4700DC6496;
+			productRefGroup = A9D013C018A2DD4700DC6496 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2BE1E8211B1E126500BA4BF6 /* Products */;
+					ProjectRef = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A9D013BE18A2DD4700DC6496 /* DequeU */,
+				A9D013D918A2DD4700DC6496 /* DequeUTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DQA11y.framework;
+			remoteRef = 2BE1E8251B1E126600BA4BF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2BE1E8281B1E126600BA4BF6 /* DQA11yTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DQA11yTests.xctest;
+			remoteRef = 2BE1E8271B1E126600BA4BF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9D013BD18A2DD4700DC6496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAFD2D41B272A3A00E23EAB /* ModalDialog.storyboard in Resources */,
+				EEAFD2F61B272A6500E23EAB /* SSB.mp3 in Resources */,
+				EEAFD2F51B272A6500E23EAB /* SIR.mp3 in Resources */,
+				EEAFD2F21B272A6500E23EAB /* Localizable.strings in Resources */,
+				EEAFD2F11B272A6500E23EAB /* Images.xcassets in Resources */,
+				EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */,
+				EEAFD2D51B272A3A00E23EAB /* Storyboard.storyboard in Resources */,
+				EEAFD2F41B272A6500E23EAB /* AG.mp3 in Resources */,
+				EEAFD2CA1B272A3A00E23EAB /* DynamicNotifications.storyboard in Resources */,
+				EEAFD2D61B272A3A00E23EAB /* TopBarContrast.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D013D818A2DD4700DC6496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAFD34D1B2733F100E23EAB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9D013BB18A2DD4700DC6496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */,
+				EEAFD3081B272B8900E23EAB /* IACTabBarController.m in Sources */,
+				EEAFD3151B272BF200E23EAB /* IACAboutDequeViewController.m in Sources */,
+				EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */,
+				EEAFD2CC1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m in Sources */,
+				EEAFD2CF1B272A3A00E23EAB /* IACLabelBrokenViewController.m in Sources */,
+				EEAFD2CD1B272A3A00E23EAB /* IACHintBrokenViewController.m in Sources */,
+				EEAFD2D31B272A3A00E23EAB /* IACModalDialogFixedViewController.m in Sources */,
+				EEAFD3061B272B8900E23EAB /* IACSplitViewController.m in Sources */,
+				EEAFD2A91B272A2700E23EAB /* IACFormsValidationFixedViewController.m in Sources */,
+				EEAFD3091B272B8900E23EAB /* IACViewController.m in Sources */,
+				EEAFD2D11B272A3A00E23EAB /* CustomIOS7AlertView.m in Sources */,
+				EEAFD2D21B272A3A00E23EAB /* IACModalDialogBrokenViewController.m in Sources */,
+				EEAFD2F91B272B0800E23EAB /* DQAppDelegate.m in Sources */,
+				EEAFD2D81B272A3A00E23EAB /* IACTraitsFixedViewController.m in Sources */,
+				EEAFD2CB1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m in Sources */,
+				EEAFD30C1B272B9400E23EAB /* IACTableViewCell.m in Sources */,
+				EEAFD3051B272B8900E23EAB /* IACOverlayViewController.m in Sources */,
+				EEAFD2D01B272A3A00E23EAB /* IACLabelFixedViewController.m in Sources */,
+				EEAFD2CE1B272A3A00E23EAB /* IACHintFixedViewController.m in Sources */,
+				EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */,
+				EEAFD2F31B272A6500E23EAB /* main.m in Sources */,
+				EEAFD2D71B272A3A00E23EAB /* IACTraitsBrokenViewController.m in Sources */,
+				EEAFD3071B272B8900E23EAB /* IACStoryTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D013D618A2DD4700DC6496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */,
+				EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */,
+				EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */,
+				EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
+				EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */,
+				EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
+				EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */,
+				EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */,
+				EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */,
+				EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */,
+				EEAFD3681B27348A00E23EAB /* IACHintFixedViewController_test.m in Sources */,
+				EEAFD3651B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9D013E018A2DD4700DC6496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D013BE18A2DD4700DC6496 /* DequeU */;
+			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
+		};
+		EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DQA11y;
+			targetProxy = EE6B36AD1B2247D700EA2514 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEAFD3341B272E6400E23EAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEAFD3351B272E6400E23EAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9D013E918A2DD4700DC6496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		A9D013EA18A2DD4700DC6496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Deque Systems Inc";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Deque Systems Inc";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9D013EC18A2DD4700DC6496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeU/Supporting Files/DequeU-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DequeU/Supporting\\ Files/Google\\ Analytics\\ Header\\ Files",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Deque University for iOS";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9D013ED18A2DD4700DC6496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeU/Supporting Files/DequeU-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DequeU/Supporting\\ Files/Google\\ Analytics\\ Header\\ Files",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Deque University for iOS";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9D013EF18A2DD4700DC6496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Deque University for iOS.app/Deque University for iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/DequeUTests/Supporting Files/DequeUTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "Accessibility 101Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9D013F018A2DD4700DC6496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Deque University for iOS.app/Deque University for iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeUTests/Supporting Files/DequeUTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "Accessibility 101Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9D013BA18A2DD4700DC6496 /* Build configuration list for PBXProject "DequeU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D013E918A2DD4700DC6496 /* Debug */,
+				A9D013EA18A2DD4700DC6496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D013EC18A2DD4700DC6496 /* Debug */,
+				A9D013ED18A2DD4700DC6496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D013EF18A2DD4700DC6496 /* Debug */,
+				A9D013F018A2DD4700DC6496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9D013B718A2DD4700DC6496 /* Project object */;
+}
