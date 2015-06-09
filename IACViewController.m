@@ -35,6 +35,8 @@ static UIButton* _IACOverlayButton = NULL;
         [_IACOverlayButton setFrame:CGRectMake(0, 0, 30, 21)];
     }
     
+    self.screenName = NSStringFromClass([self class]);
+    
     [self createOverlayView];
 }
 
