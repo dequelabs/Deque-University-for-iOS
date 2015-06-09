@@ -7,65 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2018D21EFA00B34CC7 /* SSB.mp3 */; };
-		0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2218D21F5B00B34CC7 /* AG.mp3 */; };
-		0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F158F2418D21FA200B34CC7 /* SIR.mp3 */; };
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
-		0F2188471940FC0C007E68CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F2188461940FC0C007E68CD /* Localizable.strings */; };
-		0F76336A1ADDA0C0002D7243 /* IACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633691ADDA0C0002D7243 /* IACTabBarController.m */; };
-		0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F76336C1ADDA428002D7243 /* IACViewController.m */; };
-		0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7633761AE00990002D7243 /* IACAboutDequeViewController.m */; };
 		0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */; };
 		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
-		0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */; };
-		0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */; };
-		0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */; };
-		2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */; };
-		A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */; };
-		A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */; };
-		A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */; };
-		A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */; };
-		A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */; };
-		A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0318AC01AE00D33C6B /* IACLabelFixedViewController.m */; };
-		A9AE2E0718AC022C00D33C6B /* IACHintFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AE2E0618AC022C00D33C6B /* IACHintFixedViewController.m */; };
 		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */; };
 		A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
-		A9D013CF18A2DD4700DC6496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013CE18A2DD4700DC6496 /* main.m */; };
-		A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */; };
-		A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9D013D418A2DD4700DC6496 /* Images.xcassets */; };
-		A9D013DC18A2DD4700DC6496 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013DB18A2DD4700DC6496 /* XCTest.framework */; };
 		A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
-		A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9D013E418A2DD4700DC6496 /* InfoPlist.strings */; };
-		A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */; };
 		EE6123F91B208F5000E94A7E /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
-		EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */; };
 		EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36921B22140600EA2514 /* libz.dylib */; };
 		EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36941B22140E00EA2514 /* libsqlite3.dylib */; };
-		EE6B36971B22143F00EA2514 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36961B22143F00EA2514 /* libGoogleAnalyticsServices.a */; };
 		EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
-		EE6B37371B229E9200EA2514 /* IACOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6B37361B229E9200EA2514 /* IACOverlayViewController.m */; };
-		EE8F89B31B0541DC00B8601C /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F89B21B0541DC00B8601C /* IACUtilities.m */; };
-		EE8F8A061B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A031B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m */; };
-		EE8F8A071B06796300B8601C /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */; };
-		EE8F8A681B06844300B8601C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A491B06844300B8601C /* AppDelegate.m */; };
-		EE8F8A6B1B06844300B8601C /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */; };
-		EE8F8A721B06844300B8601C /* IFVBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */; };
-		EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */; };
-		EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */; };
-		EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */; };
-		EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */; };
-		EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */; };
-		EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */; };
-		EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */; };
-		EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */; };
-		EEB558F21B0F9456002FBE67 /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */; };
-		EEB558F51B150324002FBE67 /* ModalDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB558F41B150324002FBE67 /* ModalDialog.storyboard */; };
-		EECB13C71B150D4B00809C96 /* IACModalDialogBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */; };
-		EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */; };
-		EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */; };
-		EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */; };
+		EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */; };
+		EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */; };
+		EEAFD2A91B272A2700E23EAB /* IACFormsValidationFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */; };
+		EEAFD2CA1B272A3A00E23EAB /* DynamicNotifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2AB1B272A3A00E23EAB /* DynamicNotifications.storyboard */; };
+		EEAFD2CB1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2AD1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m */; };
+		EEAFD2CC1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2AF1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m */; };
+		EEAFD2CD1B272A3A00E23EAB /* IACHintBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */; };
+		EEAFD2CE1B272A3A00E23EAB /* IACHintFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B41B272A3A00E23EAB /* IACHintFixedViewController.m */; };
+		EEAFD2CF1B272A3A00E23EAB /* IACLabelBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B71B272A3A00E23EAB /* IACLabelBrokenViewController.m */; };
+		EEAFD2D01B272A3A00E23EAB /* IACLabelFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2B91B272A3A00E23EAB /* IACLabelFixedViewController.m */; };
+		EEAFD2D11B272A3A00E23EAB /* CustomIOS7AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2BC1B272A3A00E23EAB /* CustomIOS7AlertView.m */; };
+		EEAFD2D21B272A3A00E23EAB /* IACModalDialogBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2BE1B272A3A00E23EAB /* IACModalDialogBrokenViewController.m */; };
+		EEAFD2D31B272A3A00E23EAB /* IACModalDialogFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C01B272A3A00E23EAB /* IACModalDialogFixedViewController.m */; };
+		EEAFD2D41B272A3A00E23EAB /* ModalDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */; };
+		EEAFD2D51B272A3A00E23EAB /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C21B272A3A00E23EAB /* Storyboard.storyboard */; };
+		EEAFD2D61B272A3A00E23EAB /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */; };
+		EEAFD2D71B272A3A00E23EAB /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */; };
+		EEAFD2D81B272A3A00E23EAB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */; };
+		EEAFD2F01B272A6500E23EAB /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */; };
+		EEAFD2F11B272A6500E23EAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2E81B272A6500E23EAB /* Images.xcassets */; };
+		EEAFD2F21B272A6500E23EAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2E91B272A6500E23EAB /* Localizable.strings */; };
+		EEAFD2F31B272A6500E23EAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2EA1B272A6500E23EAB /* main.m */; };
+		EEAFD2F41B272A6500E23EAB /* AG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2EC1B272A6500E23EAB /* AG.mp3 */; };
+		EEAFD2F51B272A6500E23EAB /* SIR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2ED1B272A6500E23EAB /* SIR.mp3 */; };
+		EEAFD2F61B272A6500E23EAB /* SSB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2EE1B272A6500E23EAB /* SSB.mp3 */; };
+		EEAFD2F91B272B0800E23EAB /* DQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2F81B272B0800E23EAB /* DQAppDelegate.m */; };
+		EEAFD3051B272B8900E23EAB /* IACOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */; };
+		EEAFD3061B272B8900E23EAB /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */; };
+		EEAFD3071B272B8900E23EAB /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */; };
+		EEAFD3081B272B8900E23EAB /* IACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3021B272B8900E23EAB /* IACTabBarController.m */; };
+		EEAFD3091B272B8900E23EAB /* IACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3041B272B8900E23EAB /* IACViewController.m */; };
+		EEAFD30C1B272B9400E23EAB /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */; };
+		EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */; };
+		EEAFD3151B272BF200E23EAB /* IACAboutDequeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */; };
+		EEAFD34D1B2733F100E23EAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD3341B272E6400E23EAB /* InfoPlist.strings */; };
+		EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */; };
+		EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */; };
+		EEAFD3651B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */; };
+		EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */; };
+		EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */; };
+		EEAFD3681B27348A00E23EAB /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */; };
+		EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */; };
+		EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */; };
+		EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */; };
+		EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */; };
+		EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */; };
+		EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */; };
+		EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3721B27391E00E23EAB /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,102 +101,103 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F158F2018D21EFA00B34CC7 /* SSB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SSB.mp3; sourceTree = "<group>"; };
-		0F158F2218D21F5B00B34CC7 /* AG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AG.mp3; sourceTree = "<group>"; };
-		0F158F2418D21FA200B34CC7 /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		0F2188461940FC0C007E68CD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0F7633681ADDA0C0002D7243 /* IACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTabBarController.h; sourceTree = "<group>"; };
-		0F7633691ADDA0C0002D7243 /* IACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTabBarController.m; sourceTree = "<group>"; };
-		0F76336B1ADDA428002D7243 /* IACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACViewController.h; sourceTree = "<group>"; };
-		0F76336C1ADDA428002D7243 /* IACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACViewController.m; sourceTree = "<group>"; };
-		0F7633751AE00990002D7243 /* IACAboutDequeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACAboutDequeViewController.h; sourceTree = "<group>"; };
-		0F7633761AE00990002D7243 /* IACAboutDequeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACAboutDequeViewController.m; sourceTree = "<group>"; };
 		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0FEB4BA11AC9C7F000F372F8 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		0FEB4BA21AC9C7F000F372F8 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		0FEB4BA31AC9C7F000F372F8 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
-		0FEB4BA41AC9C7F000F372F8 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
-		0FEB4BA51AC9C7F000F372F8 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
-		0FEB4BA61AC9C7F000F372F8 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		0FEB4BA71AC9C7F000F372F8 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		0FEB4BA81AC9C7F000F372F8 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		0FEB4BA91AC9C7F000F372F8 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		0FEFA7C81ADD49E000D87A45 /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACStoryTableViewController.h; sourceTree = "<group>"; };
-		0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACStoryTableViewController.m; sourceTree = "<group>"; };
-		0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACSplitViewController.h; sourceTree = "<group>"; };
-		0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACSplitViewController.m; sourceTree = "<group>"; };
-		2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBrokenViewControllerTests.m; sourceTree = "<group>"; };
 		2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = iOSA11yFramework/DQA11y.xcodeproj; sourceTree = "<group>"; };
-		A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
-		A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
-		A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsBrokenViewController.h; path = iosFireEyesInstructions/IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
-		A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsBrokenViewController.m; path = iosFireEyesInstructions/IACTraitsBrokenViewController.m; sourceTree = "<group>"; };
-		A9AE2DFC18AC014500D33C6B /* IACLabelBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACLabelBrokenViewController.h; path = iosFireEyesInstructions/IACLabelBrokenViewController.h; sourceTree = "<group>"; };
-		A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACLabelBrokenViewController.m; path = iosFireEyesInstructions/IACLabelBrokenViewController.m; sourceTree = "<group>"; };
-		A9AE2DFF18AC017E00D33C6B /* IACHintBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACHintBrokenViewController.h; path = iosFireEyesInstructions/IACHintBrokenViewController.h; sourceTree = "<group>"; };
-		A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACHintBrokenViewController.m; path = iosFireEyesInstructions/IACHintBrokenViewController.m; sourceTree = "<group>"; };
-		A9AE2E0218AC01AE00D33C6B /* IACLabelFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACLabelFixedViewController.h; path = iosFireEyesInstructions/IACLabelFixedViewController.h; sourceTree = "<group>"; };
-		A9AE2E0318AC01AE00D33C6B /* IACLabelFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACLabelFixedViewController.m; path = iosFireEyesInstructions/IACLabelFixedViewController.m; sourceTree = "<group>"; };
-		A9AE2E0518AC022C00D33C6B /* IACHintFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACHintFixedViewController.h; path = iosFireEyesInstructions/IACHintFixedViewController.h; sourceTree = "<group>"; };
-		A9AE2E0618AC022C00D33C6B /* IACHintFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACHintFixedViewController.m; path = iosFireEyesInstructions/IACHintFixedViewController.m; sourceTree = "<group>"; };
-		A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility 101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deque University for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D013C218A2DD4700DC6496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A9D013C618A2DD4700DC6496 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A9D013CA18A2DD4700DC6496 /* Accessibility 101-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Accessibility 101-Info.plist"; sourceTree = "<group>"; };
-		A9D013CE18A2DD4700DC6496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A9D013D018A2DD4700DC6496 /* Accessibility 101-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Accessibility 101-Prefix.pch"; sourceTree = "<group>"; };
-		A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DQAppDelegate.h; path = iosFireEyesInstructions/DQAppDelegate.h; sourceTree = "<group>"; };
-		A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DQAppDelegate.m; path = iosFireEyesInstructions/DQAppDelegate.m; sourceTree = "<group>"; };
-		A9D013D418A2DD4700DC6496 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accessibility 101Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9D013DB18A2DD4700DC6496 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A9D013E318A2DD4700DC6496 /* Accessibility 101Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Accessibility 101Tests-Info.plist"; sourceTree = "<group>"; };
-		A9D013E518A2DD4700DC6496 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A9F16728192E522500B37FFB /* IACTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTraitsFixedViewController.h; path = iosFireEyesInstructions/IACTraitsFixedViewController.h; sourceTree = "<group>"; };
-		A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTraitsFixedViewController.m; path = iosFireEyesInstructions/IACTraitsFixedViewController.m; sourceTree = "<group>"; };
-		EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController_test.m; sourceTree = "<group>"; };
 		EE6B36921B22140600EA2514 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		EE6B36941B22140E00EA2514 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		EE6B36961B22143F00EA2514 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		EE6B37351B229E9200EA2514 /* IACOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACOverlayViewController.h; sourceTree = "<group>"; };
-		EE6B37361B229E9200EA2514 /* IACOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACOverlayViewController.m; sourceTree = "<group>"; };
-		EE8F89B11B0541DC00B8601C /* IACUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACUtilities.h; sourceTree = "<group>"; };
-		EE8F89B21B0541DC00B8601C /* IACUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACUtilities.m; sourceTree = "<group>"; };
-		EE8F8A021B06796300B8601C /* IACDynamicNotificationsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsBrokenViewController.h; sourceTree = "<group>"; };
-		EE8F8A031B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController.m; sourceTree = "<group>"; };
-		EE8F8A041B06796300B8601C /* IACDynamicNotificationsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsFixedViewController.h; sourceTree = "<group>"; };
-		EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
-		EE8F8A481B06844300B8601C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOSFormsDemo/AppDelegate.h; sourceTree = "<group>"; };
-		EE8F8A491B06844300B8601C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOSFormsDemo/AppDelegate.m; sourceTree = "<group>"; };
-		EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomIOS7AlertView.h; path = ../iOSFormsDemo/CustomIOS7AlertView.h; sourceTree = "<group>"; };
-		EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomIOS7AlertView.m; path = ../iOSFormsDemo/CustomIOS7AlertView.m; sourceTree = "<group>"; };
-		EE8F8A5C1B06844300B8601C /* IFVBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVBrokenViewController.h; path = iOSFormsDemo/IFVBrokenViewController.h; sourceTree = "<group>"; };
-		EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFVBrokenViewController.m; path = iOSFormsDemo/IFVBrokenViewController.m; sourceTree = "<group>"; };
-		EE8F8A5E1B06844300B8601C /* IFVFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IFVFixedViewController.h; path = iOSFormsDemo/IFVFixedViewController.h; sourceTree = "<group>"; };
-		EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IFVFixedViewController.m; path = iOSFormsDemo/IFVFixedViewController.m; sourceTree = "<group>"; };
-		EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FormsValidation.storyboard; path = iOSFormsDemo/FormsValidation.storyboard; sourceTree = "<group>"; };
-		EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFVBestViewControllerTests.m; sourceTree = "<group>"; };
-		EE8F8AB61B0A813300B8601C /* IACConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACConstants.h; sourceTree = "<group>"; };
-		EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
-		EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
-		EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
-		EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController_test.m; sourceTree = "<group>"; };
-		EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController_test.m; sourceTree = "<group>"; };
-		EE99B0C11B03A63600D5774F /* DEQAsserts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DEQAsserts.h; sourceTree = "<group>"; };
-		EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTableViewCell.h; sourceTree = "<group>"; };
-		EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTableViewCell.m; sourceTree = "<group>"; };
-		EEB558F41B150324002FBE67 /* ModalDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalDialog.storyboard; sourceTree = "<group>"; };
-		EECB13C51B150D4B00809C96 /* IACModalDialogBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogBrokenViewController.h; sourceTree = "<group>"; };
-		EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController.m; sourceTree = "<group>"; };
-		EECB13C81B150E1100809C96 /* IACModalDialogFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogFixedViewController.h; sourceTree = "<group>"; };
-		EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
-		EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
-		EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
+		EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FormsValidation.storyboard; sourceTree = "<group>"; };
+		EEAFD2A31B272A2700E23EAB /* IACFormsValidationBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFormsValidationBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormsValidationBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2A51B272A2700E23EAB /* IACFormsValidationFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFormsValidationFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormsValidationFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2AB1B272A3A00E23EAB /* DynamicNotifications.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicNotifications.storyboard; sourceTree = "<group>"; };
+		EEAFD2AC1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2AD1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2AE1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2AF1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2B11B272A3A00E23EAB /* IACHintBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACHintBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2B31B272A3A00E23EAB /* IACHintFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACHintFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2B41B272A3A00E23EAB /* IACHintFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2B61B272A3A00E23EAB /* IACLabelBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACLabelBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2B71B272A3A00E23EAB /* IACLabelBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2B81B272A3A00E23EAB /* IACLabelFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACLabelFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2B91B272A3A00E23EAB /* IACLabelFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2BB1B272A3A00E23EAB /* CustomIOS7AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOS7AlertView.h; sourceTree = "<group>"; };
+		EEAFD2BC1B272A3A00E23EAB /* CustomIOS7AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOS7AlertView.m; sourceTree = "<group>"; };
+		EEAFD2BD1B272A3A00E23EAB /* IACModalDialogBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2BE1B272A3A00E23EAB /* IACModalDialogBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2BF1B272A3A00E23EAB /* IACModalDialogFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2C01B272A3A00E23EAB /* IACModalDialogFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ModalDialog.storyboard; sourceTree = "<group>"; };
+		EEAFD2C21B272A3A00E23EAB /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = "DequeU/Basic Demos/Storyboard.storyboard"; sourceTree = "<group>"; };
+		EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TopBarContrast.storyboard; sourceTree = "<group>"; };
+		EEAFD2C61B272A3A00E23EAB /* IACTraitsBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTraitsBrokenViewController.h; sourceTree = "<group>"; };
+		EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController.m; sourceTree = "<group>"; };
+		EEAFD2C81B272A3A00E23EAB /* IACTraitsFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTraitsFixedViewController.h; sourceTree = "<group>"; };
+		EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController.m; sourceTree = "<group>"; };
+		EEAFD2DB1B272A6500E23EAB /* DequeU-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DequeU-Prefix.pch"; sourceTree = "<group>"; };
+		EEAFD2DD1B272A6500E23EAB /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		EEAFD2DE1B272A6500E23EAB /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		EEAFD2DF1B272A6500E23EAB /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		EEAFD2E01B272A6500E23EAB /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		EEAFD2E11B272A6500E23EAB /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		EEAFD2E21B272A6500E23EAB /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		EEAFD2E31B272A6500E23EAB /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		EEAFD2E41B272A6500E23EAB /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		EEAFD2E51B272A6500E23EAB /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		EEAFD2E61B272A6500E23EAB /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "DequeU/Supporting Files/Google Analytics Header Files/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
+		EEAFD2E81B272A6500E23EAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EEAFD2E91B272A6500E23EAB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		EEAFD2EA1B272A6500E23EAB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEAFD2EC1B272A6500E23EAB /* AG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AG.mp3; sourceTree = "<group>"; };
+		EEAFD2ED1B272A6500E23EAB /* SIR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SIR.mp3; sourceTree = "<group>"; };
+		EEAFD2EE1B272A6500E23EAB /* SSB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SSB.mp3; sourceTree = "<group>"; };
+		EEAFD2F71B272B0800E23EAB /* DQAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQAppDelegate.h; path = DequeU/DQAppDelegate.h; sourceTree = "<group>"; };
+		EEAFD2F81B272B0800E23EAB /* DQAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQAppDelegate.m; path = DequeU/DQAppDelegate.m; sourceTree = "<group>"; };
+		EEAFD2FA1B272B7F00E23EAB /* IACConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACConstants.h; path = "DequeU/IAC Files/IAC Constants/IACConstants.h"; sourceTree = "<group>"; };
+		EEAFD2FB1B272B8900E23EAB /* IACOverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACOverlayViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACOverlayViewController.h"; sourceTree = "<group>"; };
+		EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACOverlayViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACOverlayViewController.m"; sourceTree = "<group>"; };
+		EEAFD2FD1B272B8900E23EAB /* IACSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACSplitViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACSplitViewController.h"; sourceTree = "<group>"; };
+		EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACSplitViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACSplitViewController.m"; sourceTree = "<group>"; };
+		EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACStoryTableViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.h"; sourceTree = "<group>"; };
+		EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACStoryTableViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.m"; sourceTree = "<group>"; };
+		EEAFD3011B272B8900E23EAB /* IACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTabBarController.h; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.h"; sourceTree = "<group>"; };
+		EEAFD3021B272B8900E23EAB /* IACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTabBarController.m; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.m"; sourceTree = "<group>"; };
+		EEAFD3031B272B8900E23EAB /* IACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACViewController.h"; sourceTree = "<group>"; };
+		EEAFD3041B272B8900E23EAB /* IACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACViewController.m"; sourceTree = "<group>"; };
+		EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTableViewCell.h; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.h"; sourceTree = "<group>"; };
+		EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTableViewCell.m; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.m"; sourceTree = "<group>"; };
+		EEAFD30D1B272B9D00E23EAB /* IACUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACUtilities.h; path = "DequeU/IAC Files/IAC Utilities/IACUtilities.h"; sourceTree = "<group>"; };
+		EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACUtilities.m; path = "DequeU/IAC Files/IAC Utilities/IACUtilities.m"; sourceTree = "<group>"; };
+		EEAFD3131B272BF200E23EAB /* IACAboutDequeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACAboutDequeViewController.h; path = "DequeU/Introduction Files/IACAboutDequeViewController.h"; sourceTree = "<group>"; };
+		EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACAboutDequeViewController.m; path = "DequeU/Introduction Files/IACAboutDequeViewController.m"; sourceTree = "<group>"; };
+		EEAFD3301B272E2A00E23EAB /* DequeUTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DequeUTests-Info.plist"; path = "DequeUTests/Supporting Files/DequeUTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EEAFD3351B272E6400E23EAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = DequeUTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		EEAFD33B1B2731E400E23EAB /* DequeU-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DequeU-Info.plist"; sourceTree = "<group>"; };
+		EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACDynamicNotificationsFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormValidationBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormValidationFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsBrokenViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsFixedViewController_test.m; sourceTree = "<group>"; };
+		EEAFD3701B2738D000E23EAB /* DEQAsserts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DEQAsserts.h; path = DequeUTests/DEQAsserts.h; sourceTree = SOURCE_ROOT; };
+		EEAFD3711B27391E00E23EAB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEAFD3721B27391E00E23EAB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,11 +208,11 @@
 				EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */,
 				EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */,
 				EE6123F91B208F5000E94A7E /* DQA11y.framework in Frameworks */,
-				EE6B36971B22143F00EA2514 /* libGoogleAnalyticsServices.a in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
+				EEAFD2F01B272A6500E23EAB /* libGoogleAnalyticsServices.a in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
 			);
@@ -221,7 +223,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */,
-				A9D013DC18A2DD4700DC6496 /* XCTest.framework in Frameworks */,
 				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
 			);
@@ -230,75 +231,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F158F2618D21FB200B34CC7 /* Music */ = {
-			isa = PBXGroup;
-			children = (
-				0F158F2418D21FA200B34CC7 /* SIR.mp3 */,
-				0F158F2018D21EFA00B34CC7 /* SSB.mp3 */,
-				0F158F2218D21F5B00B34CC7 /* AG.mp3 */,
-			);
-			name = Music;
-			sourceTree = "<group>";
-		};
 		0F7633741AE00966002D7243 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
-				0F7633751AE00990002D7243 /* IACAboutDequeViewController.h */,
-				0F7633761AE00990002D7243 /* IACAboutDequeViewController.m */,
+				EEAFD3131B272BF200E23EAB /* IACAboutDequeViewController.h */,
+				EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */,
 			);
 			name = Introduction;
 			sourceTree = "<group>";
 		};
-		0FEB4B811AC9C64A00F372F8 /* Include */ = {
+		0FEB4C211ACB0F5000F372F8 /* Deque University for iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0FEB4BA11AC9C7F000F372F8 /* GAI.h */,
-				0FEB4BA21AC9C7F000F372F8 /* GAIDictionaryBuilder.h */,
-				0FEB4BA31AC9C7F000F372F8 /* GAIEcommerceFields.h */,
-				0FEB4BA41AC9C7F000F372F8 /* GAIEcommerceProduct.h */,
-				0FEB4BA51AC9C7F000F372F8 /* GAIEcommerceProductAction.h */,
-				0FEB4BA61AC9C7F000F372F8 /* GAIEcommercePromotion.h */,
-				0FEB4BA71AC9C7F000F372F8 /* GAIFields.h */,
-				0FEB4BA81AC9C7F000F372F8 /* GAILogger.h */,
-				0FEB4BA91AC9C7F000F372F8 /* GAITrackedViewController.h */,
-				0FEB4BAA1AC9C7F000F372F8 /* GAITracker.h */,
-			);
-			name = Include;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */ = {
-			isa = PBXGroup;
-			children = (
-				0FEFA4E31ADC58A100D87A45 /* Storyboard.storyboard */,
-				A9D013D118A2DD4700DC6496 /* DQAppDelegate.h */,
-				A9D013D218A2DD4700DC6496 /* DQAppDelegate.m */,
-				EE8F8AB61B0A813300B8601C /* IACConstants.h */,
-				0F76336B1ADDA428002D7243 /* IACViewController.h */,
-				0F76336C1ADDA428002D7243 /* IACViewController.m */,
-				EE6B37351B229E9200EA2514 /* IACOverlayViewController.h */,
-				EE6B37361B229E9200EA2514 /* IACOverlayViewController.m */,
-				0FEFA7CB1ADD4EE500D87A45 /* IACSplitViewController.h */,
-				0FEFA7CC1ADD4EE500D87A45 /* IACSplitViewController.m */,
-				EEB558F01B0F9456002FBE67 /* IACTableViewCell.h */,
-				EEB558F11B0F9456002FBE67 /* IACTableViewCell.m */,
-				0FEFA7C81ADD49E000D87A45 /* IACStoryTableViewController.h */,
-				0FEFA7C91ADD49E000D87A45 /* IACStoryTableViewController.m */,
-				EE8F89B11B0541DC00B8601C /* IACUtilities.h */,
-				EE8F89B21B0541DC00B8601C /* IACUtilities.m */,
-				0F7633681ADDA0C0002D7243 /* IACTabBarController.h */,
-				0F7633691ADDA0C0002D7243 /* IACTabBarController.m */,
+				EEAFD2C21B272A3A00E23EAB /* Storyboard.storyboard */,
+				EEAFD2F71B272B0800E23EAB /* DQAppDelegate.h */,
+				EEAFD2F81B272B0800E23EAB /* DQAppDelegate.m */,
+				EEAFD2FA1B272B7F00E23EAB /* IACConstants.h */,
+				EEAFD2FB1B272B8900E23EAB /* IACOverlayViewController.h */,
+				EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */,
+				EEAFD2FD1B272B8900E23EAB /* IACSplitViewController.h */,
+				EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */,
+				EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */,
+				EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */,
+				EEAFD3011B272B8900E23EAB /* IACTabBarController.h */,
+				EEAFD3021B272B8900E23EAB /* IACTabBarController.m */,
+				EEAFD3031B272B8900E23EAB /* IACViewController.h */,
+				EEAFD3041B272B8900E23EAB /* IACViewController.m */,
+				EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */,
+				EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */,
+				EEAFD30D1B272B9D00E23EAB /* IACUtilities.h */,
+				EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */,
 				0F7633741AE00966002D7243 /* Introduction */,
-				A9C21AF6193E64DE00F80821 /* Labels */,
-				A9C21AF7193E64FB00F80821 /* Hints */,
-				A9C21AF8193E651B00F80821 /* Traits */,
-				EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */,
-				EE8F8A461B06842A00B8601C /* Forms Validation */,
-				EEB558F31B1502F1002FBE67 /* Modal Dialog */,
-				EECB13D61B176F3B00809C96 /* Top Bar Contrast */,
-				A9D013C918A2DD4700DC6496 /* Supporting Files */,
+				EEAFD2B51B272A3A00E23EAB /* Labels */,
+				EEAFD2B01B272A3A00E23EAB /* Hints */,
+				EEAFD2C51B272A3A00E23EAB /* Traits */,
+				EEAFD2AA1B272A3A00E23EAB /* Dynamic Notifications */,
+				EEAFD2BA1B272A3A00E23EAB /* Modal Dialog */,
+				EEAFD2C31B272A3A00E23EAB /* Top Bar Contrast */,
+				EEAFD2A11B272A2700E23EAB /* Forms Validation */,
+				EEAFD2D91B272A6500E23EAB /* Supporting Files */,
 			);
-			name = "Accessibility 101";
+			name = "Deque University for iOS";
 			sourceTree = "<group>";
 		};
 		2BE1E8211B1E126500BA4BF6 /* Products */ = {
@@ -310,57 +283,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A300EEAB1AF3CD82003507B6 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				EE99B0B81B02A24900D5774F /* Labels */,
-				EE99B0B91B02A25A00D5774F /* Hints */,
-				EE99B0BA1B02A26200D5774F /* Traits */,
-				EE99B0BB1B02A26800D5774F /* Dynamic Notifications */,
-				EE8F8A801B0A1E1600B8601C /* Form Validation */,
-				EE99B0C11B03A63600D5774F /* DEQAsserts.h */,
-			);
-			name = Categories;
-			sourceTree = "<group>";
-		};
-		A9C21AF6193E64DE00F80821 /* Labels */ = {
-			isa = PBXGroup;
-			children = (
-				A9AE2DFC18AC014500D33C6B /* IACLabelBrokenViewController.h */,
-				A9AE2DFD18AC014500D33C6B /* IACLabelBrokenViewController.m */,
-				A9AE2E0218AC01AE00D33C6B /* IACLabelFixedViewController.h */,
-				A9AE2E0318AC01AE00D33C6B /* IACLabelFixedViewController.m */,
-			);
-			name = Labels;
-			sourceTree = "<group>";
-		};
-		A9C21AF7193E64FB00F80821 /* Hints */ = {
-			isa = PBXGroup;
-			children = (
-				A9AE2DFF18AC017E00D33C6B /* IACHintBrokenViewController.h */,
-				A9AE2E0018AC017E00D33C6B /* IACHintBrokenViewController.m */,
-				A9AE2E0518AC022C00D33C6B /* IACHintFixedViewController.h */,
-				A9AE2E0618AC022C00D33C6B /* IACHintFixedViewController.m */,
-			);
-			name = Hints;
-			sourceTree = "<group>";
-		};
-		A9C21AF8193E651B00F80821 /* Traits */ = {
-			isa = PBXGroup;
-			children = (
-				A9A7B0F3192E4C40001FB256 /* IACTraitsBrokenViewController.h */,
-				A9A7B0F4192E4C40001FB256 /* IACTraitsBrokenViewController.m */,
-				A9F16728192E522500B37FFB /* IACTraitsFixedViewController.h */,
-				A9F16729192E522500B37FFB /* IACTraitsFixedViewController.m */,
-			);
-			name = Traits;
-			sourceTree = "<group>";
-		};
 		A9D013B618A2DD4700DC6496 = {
 			isa = PBXGroup;
 			children = (
-				0FEB4C211ACB0F5000F372F8 /* Accessibility 101 */,
-				A9D013E118A2DD4700DC6496 /* Accessibility 101 Tests */,
+				0FEB4C211ACB0F5000F372F8 /* Deque University for iOS */,
+				A9D013E118A2DD4700DC6496 /* Deque University for iOS Tests */,
 				A9D013C018A2DD4700DC6496 /* Products */,
 				A9D013C118A2DD4700DC6496 /* Frameworks */,
 			);
@@ -369,7 +296,7 @@
 		A9D013C018A2DD4700DC6496 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */,
+				A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */,
 				A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */,
 			);
 			name = Products;
@@ -379,156 +306,244 @@
 			isa = PBXGroup;
 			children = (
 				2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */,
-				EE6B36961B22143F00EA2514 /* libGoogleAnalyticsServices.a */,
 				EE6B36941B22140E00EA2514 /* libsqlite3.dylib */,
 				EE6B36921B22140600EA2514 /* libz.dylib */,
+				EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */,
 				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
 				0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */,
 				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
 				A9D013C218A2DD4700DC6496 /* Foundation.framework */,
 				A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */,
 				A9D013C618A2DD4700DC6496 /* UIKit.framework */,
-				A9D013DB18A2DD4700DC6496 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A9D013C918A2DD4700DC6496 /* Supporting Files */ = {
+		A9D013E118A2DD4700DC6496 /* Deque University for iOS Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0FEB4B811AC9C64A00F372F8 /* Include */,
-				0F158F2618D21FB200B34CC7 /* Music */,
-				A9D013D418A2DD4700DC6496 /* Images.xcassets */,
-				A9D013CA18A2DD4700DC6496 /* Accessibility 101-Info.plist */,
-				A9D013CE18A2DD4700DC6496 /* main.m */,
-				A9D013D018A2DD4700DC6496 /* Accessibility 101-Prefix.pch */,
-				0F2188461940FC0C007E68CD /* Localizable.strings */,
-			);
-			name = "Supporting Files";
-			path = iosFireEyesInstructions;
-			sourceTree = "<group>";
-		};
-		A9D013E118A2DD4700DC6496 /* Accessibility 101 Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A300EEAB1AF3CD82003507B6 /* Categories */,
+				EEAFD3701B2738D000E23EAB /* DEQAsserts.h */,
+				EEAFD3501B27348A00E23EAB /* Categories */,
 				A9D013E218A2DD4700DC6496 /* Supporting Files */,
 			);
-			name = "Accessibility 101 Tests";
+			name = "Deque University for iOS Tests";
 			path = iosFireEyesInstructionsTests;
 			sourceTree = "<group>";
 		};
 		A9D013E218A2DD4700DC6496 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9D013E318A2DD4700DC6496 /* Accessibility 101Tests-Info.plist */,
-				A9D013E418A2DD4700DC6496 /* InfoPlist.strings */,
+				EEAFD3301B272E2A00E23EAB /* DequeUTests-Info.plist */,
+				EEAFD3341B272E6400E23EAB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EE8F8A461B06842A00B8601C /* Forms Validation */ = {
+		EEAFD2A11B272A2700E23EAB /* Forms Validation */ = {
 			isa = PBXGroup;
 			children = (
-				EE8F8A7A1B0686E600B8601C /* FormsValidation.storyboard */,
-				EE8F8A481B06844300B8601C /* AppDelegate.h */,
-				EE8F8A491B06844300B8601C /* AppDelegate.m */,
-				EE8F8A5C1B06844300B8601C /* IFVBrokenViewController.h */,
-				EE8F8A5D1B06844300B8601C /* IFVBrokenViewController.m */,
-				EE8F8A5E1B06844300B8601C /* IFVFixedViewController.h */,
-				EE8F8A5F1B06844300B8601C /* IFVFixedViewController.m */,
+				EEAFD3711B27391E00E23EAB /* AppDelegate.h */,
+				EEAFD3721B27391E00E23EAB /* AppDelegate.m */,
+				EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */,
+				EEAFD2A31B272A2700E23EAB /* IACFormsValidationBrokenViewController.h */,
+				EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */,
+				EEAFD2A51B272A2700E23EAB /* IACFormsValidationFixedViewController.h */,
+				EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */,
 			);
 			name = "Forms Validation";
+			path = "DequeU/Advanced Demos/Forms Validation";
 			sourceTree = "<group>";
 		};
-		EE8F8A801B0A1E1600B8601C /* Form Validation */ = {
+		EEAFD2AA1B272A3A00E23EAB /* Dynamic Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				EE8F8A7C1B068DC600B8601C /* IFVBestViewControllerTests.m */,
-				2BCEC1C81B14E4D400EA5605 /* IFVBrokenViewControllerTests.m */,
+				EEAFD2AB1B272A3A00E23EAB /* DynamicNotifications.storyboard */,
+				EEAFD2AC1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.h */,
+				EEAFD2AD1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m */,
+				EEAFD2AE1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.h */,
+				EEAFD2AF1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m */,
 			);
-			name = "Form Validation";
+			name = "Dynamic Notifications";
+			path = "DequeU/Basic Demos/Dynamic Notifications";
 			sourceTree = "<group>";
 		};
-		EE99B0B81B02A24900D5774F /* Labels */ = {
+		EEAFD2B01B272A3A00E23EAB /* Hints */ = {
 			isa = PBXGroup;
 			children = (
-				A300EEAC1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m */,
-				A300EEAE1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m */,
-			);
-			name = Labels;
-			sourceTree = "<group>";
-		};
-		EE99B0B91B02A25A00D5774F /* Hints */ = {
-			isa = PBXGroup;
-			children = (
-				EE64E1E61AFAADED00D09B4D /* IACHintBrokenViewController_test.m */,
-				EE99B0B21B0264A000D5774F /* IACHintFixedViewController_test.m */,
+				EEAFD2B11B272A3A00E23EAB /* IACHintBrokenViewController.h */,
+				EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */,
+				EEAFD2B31B272A3A00E23EAB /* IACHintFixedViewController.h */,
+				EEAFD2B41B272A3A00E23EAB /* IACHintFixedViewController.m */,
 			);
 			name = Hints;
+			path = "DequeU/Basic Demos/Hints";
 			sourceTree = "<group>";
 		};
-		EE99B0BA1B02A26200D5774F /* Traits */ = {
+		EEAFD2B51B272A3A00E23EAB /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				EE99B0B41B02855B00D5774F /* IACTraitsBrokenViewController_test.m */,
-				EE99B0B61B02A09F00D5774F /* IACTraitsFixedViewController_test.m */,
+				EEAFD2B61B272A3A00E23EAB /* IACLabelBrokenViewController.h */,
+				EEAFD2B71B272A3A00E23EAB /* IACLabelBrokenViewController.m */,
+				EEAFD2B81B272A3A00E23EAB /* IACLabelFixedViewController.h */,
+				EEAFD2B91B272A3A00E23EAB /* IACLabelFixedViewController.m */,
 			);
-			name = Traits;
+			name = Labels;
+			path = "DequeU/Basic Demos/Labels";
 			sourceTree = "<group>";
 		};
-		EE99B0BB1B02A26800D5774F /* Dynamic Notifications */ = {
+		EEAFD2BA1B272A3A00E23EAB /* Modal Dialog */ = {
 			isa = PBXGroup;
 			children = (
-				EE99B0BC1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m */,
-				EE99B0BE1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m */,
-			);
-			name = "Dynamic Notifications";
-			sourceTree = "<group>";
-		};
-		EEB558F31B1502F1002FBE67 /* Modal Dialog */ = {
-			isa = PBXGroup;
-			children = (
-				EEB558F41B150324002FBE67 /* ModalDialog.storyboard */,
-				EE8F8A4E1B06844300B8601C /* CustomIOS7AlertView.h */,
-				EE8F8A4F1B06844300B8601C /* CustomIOS7AlertView.m */,
-				EECB13C51B150D4B00809C96 /* IACModalDialogBrokenViewController.h */,
-				EECB13C61B150D4B00809C96 /* IACModalDialogBrokenViewController.m */,
-				EECB13C81B150E1100809C96 /* IACModalDialogFixedViewController.h */,
-				EECB13C91B150E1100809C96 /* IACModalDialogFixedViewController.m */,
+				EEAFD2BB1B272A3A00E23EAB /* CustomIOS7AlertView.h */,
+				EEAFD2BC1B272A3A00E23EAB /* CustomIOS7AlertView.m */,
+				EEAFD2BD1B272A3A00E23EAB /* IACModalDialogBrokenViewController.h */,
+				EEAFD2BE1B272A3A00E23EAB /* IACModalDialogBrokenViewController.m */,
+				EEAFD2BF1B272A3A00E23EAB /* IACModalDialogFixedViewController.h */,
+				EEAFD2C01B272A3A00E23EAB /* IACModalDialogFixedViewController.m */,
+				EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */,
 			);
 			name = "Modal Dialog";
-			path = iosFireEyesInstructions;
+			path = "DequeU/Basic Demos/Modal Dialog";
 			sourceTree = "<group>";
 		};
-		EECB13D61B176F3B00809C96 /* Top Bar Contrast */ = {
+		EEAFD2C31B272A3A00E23EAB /* Top Bar Contrast */ = {
 			isa = PBXGroup;
 			children = (
-				EECB13D41B176F3700809C96 /* TopBarContrast.storyboard */,
+				EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */,
 			);
 			name = "Top Bar Contrast";
-			path = iosFireEyesInstructions;
+			path = "DequeU/Basic Demos/Top Bar Contrast";
 			sourceTree = "<group>";
 		};
-		EED64D9D1AF80910000AF3F1 /* Dynamic Notifications */ = {
+		EEAFD2C51B272A3A00E23EAB /* Traits */ = {
 			isa = PBXGroup;
 			children = (
-				EED64DBF1AF8149E000AF3F1 /* DynamicNotifications.storyboard */,
-				EE8F8A021B06796300B8601C /* IACDynamicNotificationsBrokenViewController.h */,
-				EE8F8A031B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m */,
-				EE8F8A041B06796300B8601C /* IACDynamicNotificationsFixedViewController.h */,
-				EE8F8A051B06796300B8601C /* IACDynamicNotificationsFixedViewController.m */,
+				EEAFD2C61B272A3A00E23EAB /* IACTraitsBrokenViewController.h */,
+				EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */,
+				EEAFD2C81B272A3A00E23EAB /* IACTraitsFixedViewController.h */,
+				EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */,
 			);
-			name = "Dynamic Notifications";
-			path = iosFireEyesInstructions;
+			name = Traits;
+			path = "DequeU/Basic Demos/Traits";
+			sourceTree = "<group>";
+		};
+		EEAFD2D91B272A6500E23EAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2DC1B272A6500E23EAB /* Include */,
+				EEAFD2EB1B272A6500E23EAB /* Music */,
+				EEAFD2E81B272A6500E23EAB /* Images.xcassets */,
+				EEAFD2DB1B272A6500E23EAB /* DequeU-Prefix.pch */,
+				EEAFD33B1B2731E400E23EAB /* DequeU-Info.plist */,
+				EEAFD2E91B272A6500E23EAB /* Localizable.strings */,
+				EEAFD2EA1B272A6500E23EAB /* main.m */,
+			);
+			name = "Supporting Files";
+			path = "DequeU/Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEAFD2DC1B272A6500E23EAB /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2DD1B272A6500E23EAB /* GAI.h */,
+				EEAFD2DE1B272A6500E23EAB /* GAIDictionaryBuilder.h */,
+				EEAFD2DF1B272A6500E23EAB /* GAIEcommerceFields.h */,
+				EEAFD2E01B272A6500E23EAB /* GAIEcommerceProduct.h */,
+				EEAFD2E11B272A6500E23EAB /* GAIEcommerceProductAction.h */,
+				EEAFD2E21B272A6500E23EAB /* GAIEcommercePromotion.h */,
+				EEAFD2E31B272A6500E23EAB /* GAIFields.h */,
+				EEAFD2E41B272A6500E23EAB /* GAILogger.h */,
+				EEAFD2E51B272A6500E23EAB /* GAITrackedViewController.h */,
+				EEAFD2E61B272A6500E23EAB /* GAITracker.h */,
+			);
+			name = Include;
+			path = "Google Analytics Header Files";
+			sourceTree = "<group>";
+		};
+		EEAFD2EB1B272A6500E23EAB /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD2EC1B272A6500E23EAB /* AG.mp3 */,
+				EEAFD2ED1B272A6500E23EAB /* SIR.mp3 */,
+				EEAFD2EE1B272A6500E23EAB /* SSB.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		EEAFD3501B27348A00E23EAB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD35A1B27348A00E23EAB /* Labels */,
+				EEAFD3571B27348A00E23EAB /* Hints */,
+				EEAFD3601B27348A00E23EAB /* Traits */,
+				EEAFD3511B27348A00E23EAB /* Dynamic Notifications */,
+				EEAFD35D1B27348A00E23EAB /* Modal Dialog */,
+				EEAFD3541B27348A00E23EAB /* Form Validation */,
+			);
+			name = Categories;
+			path = DequeUTests/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		EEAFD3511B27348A00E23EAB /* Dynamic Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */,
+				EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */,
+			);
+			path = "Dynamic Notifications";
+			sourceTree = "<group>";
+		};
+		EEAFD3541B27348A00E23EAB /* Form Validation */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */,
+				EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */,
+			);
+			path = "Form Validation";
+			sourceTree = "<group>";
+		};
+		EEAFD3571B27348A00E23EAB /* Hints */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */,
+				EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */,
+			);
+			path = Hints;
+			sourceTree = "<group>";
+		};
+		EEAFD35A1B27348A00E23EAB /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */,
+				EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		EEAFD35D1B27348A00E23EAB /* Modal Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */,
+				EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */,
+			);
+			path = "Modal Dialog";
+			sourceTree = "<group>";
+		};
+		EEAFD3601B27348A00E23EAB /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */,
+				EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */,
+			);
+			path = Traits;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9D013BE18A2DD4700DC6496 /* Accessibility 101 */ = {
+		A9D013BE18A2DD4700DC6496 /* DequeU */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "Accessibility 101" */;
+			buildConfigurationList = A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeU" */;
 			buildPhases = (
 				A9D013BB18A2DD4700DC6496 /* Sources */,
 				A9D013BC18A2DD4700DC6496 /* Frameworks */,
@@ -539,14 +554,14 @@
 			dependencies = (
 				EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */,
 			);
-			name = "Accessibility 101";
+			name = DequeU;
 			productName = iosFireEyesInstructions;
-			productReference = A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */;
+			productReference = A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9D013D918A2DD4700DC6496 /* Accessibility 101Tests */ = {
+		A9D013D918A2DD4700DC6496 /* DequeUTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "Accessibility 101Tests" */;
+			buildConfigurationList = A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeUTests" */;
 			buildPhases = (
 				A9D013D618A2DD4700DC6496 /* Sources */,
 				A9D013D718A2DD4700DC6496 /* Frameworks */,
@@ -557,7 +572,7 @@
 			dependencies = (
 				A9D013E018A2DD4700DC6496 /* PBXTargetDependency */,
 			);
-			name = "Accessibility 101Tests";
+			name = DequeUTests;
 			productName = iosFireEyesInstructionsTests;
 			productReference = A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -600,8 +615,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				A9D013BE18A2DD4700DC6496 /* Accessibility 101 */,
-				A9D013D918A2DD4700DC6496 /* Accessibility 101Tests */,
+				A9D013BE18A2DD4700DC6496 /* DequeU */,
+				A9D013D918A2DD4700DC6496 /* DequeUTests */,
 			);
 		};
 /* End PBXProject section */
@@ -628,16 +643,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F158F2118D21EFA00B34CC7 /* SSB.mp3 in Resources */,
-				0F158F2318D21F5B00B34CC7 /* AG.mp3 in Resources */,
-				EECB13D51B176F3700809C96 /* TopBarContrast.storyboard in Resources */,
-				EEB558F51B150324002FBE67 /* ModalDialog.storyboard in Resources */,
-				0F158F2518D21FA200B34CC7 /* SIR.mp3 in Resources */,
-				EE8F8A7B1B0686E600B8601C /* FormsValidation.storyboard in Resources */,
-				0F2188471940FC0C007E68CD /* Localizable.strings in Resources */,
-				EED64DC01AF8149E000AF3F1 /* DynamicNotifications.storyboard in Resources */,
-				0FEFA4E41ADC58A100D87A45 /* Storyboard.storyboard in Resources */,
-				A9D013D518A2DD4700DC6496 /* Images.xcassets in Resources */,
+				EEAFD2D41B272A3A00E23EAB /* ModalDialog.storyboard in Resources */,
+				EEAFD2F61B272A6500E23EAB /* SSB.mp3 in Resources */,
+				EEAFD2F51B272A6500E23EAB /* SIR.mp3 in Resources */,
+				EEAFD2F21B272A6500E23EAB /* Localizable.strings in Resources */,
+				EEAFD2F11B272A6500E23EAB /* Images.xcassets in Resources */,
+				EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */,
+				EEAFD2D51B272A3A00E23EAB /* Storyboard.storyboard in Resources */,
+				EEAFD2F41B272A6500E23EAB /* AG.mp3 in Resources */,
+				EEAFD2CA1B272A3A00E23EAB /* DynamicNotifications.storyboard in Resources */,
+				EEAFD2D61B272A3A00E23EAB /* TopBarContrast.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +660,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D013E618A2DD4700DC6496 /* InfoPlist.strings in Resources */,
+				EEAFD34D1B2733F100E23EAB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,30 +671,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE8F8A061B06796300B8601C /* IACDynamicNotificationsBrokenViewController.m in Sources */,
-				EEB558F21B0F9456002FBE67 /* IACTableViewCell.m in Sources */,
-				0F7633771AE00990002D7243 /* IACAboutDequeViewController.m in Sources */,
-				A9D013CF18A2DD4700DC6496 /* main.m in Sources */,
-				EECB13C71B150D4B00809C96 /* IACModalDialogBrokenViewController.m in Sources */,
-				EE8F8A721B06844300B8601C /* IFVBrokenViewController.m in Sources */,
-				EE8F8A7F1B068F6100B8601C /* IFVFixedViewController.m in Sources */,
-				A9A7B0F5192E4C40001FB256 /* IACTraitsBrokenViewController.m in Sources */,
-				A9AE2E0118AC017E00D33C6B /* IACHintBrokenViewController.m in Sources */,
-				EECB13CA1B150E1100809C96 /* IACModalDialogFixedViewController.m in Sources */,
-				0F76336D1ADDA428002D7243 /* IACViewController.m in Sources */,
-				EE8F8A6B1B06844300B8601C /* CustomIOS7AlertView.m in Sources */,
-				EE8F8A681B06844300B8601C /* AppDelegate.m in Sources */,
-				EE6B37371B229E9200EA2514 /* IACOverlayViewController.m in Sources */,
-				0FEFA7CA1ADD49E000D87A45 /* IACStoryTableViewController.m in Sources */,
-				A9D013D318A2DD4700DC6496 /* DQAppDelegate.m in Sources */,
-				A9F1672A192E522500B37FFB /* IACTraitsFixedViewController.m in Sources */,
-				0FEFA7CD1ADD4EE500D87A45 /* IACSplitViewController.m in Sources */,
-				EE8F8A071B06796300B8601C /* IACDynamicNotificationsFixedViewController.m in Sources */,
-				0F76336A1ADDA0C0002D7243 /* IACTabBarController.m in Sources */,
-				EE8F89B31B0541DC00B8601C /* IACUtilities.m in Sources */,
-				A9AE2DFE18AC014500D33C6B /* IACLabelBrokenViewController.m in Sources */,
-				A9AE2E0418AC01AE00D33C6B /* IACLabelFixedViewController.m in Sources */,
-				A9AE2E0718AC022C00D33C6B /* IACHintFixedViewController.m in Sources */,
+				EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */,
+				EEAFD3081B272B8900E23EAB /* IACTabBarController.m in Sources */,
+				EEAFD3151B272BF200E23EAB /* IACAboutDequeViewController.m in Sources */,
+				EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */,
+				EEAFD2CC1B272A3A00E23EAB /* IACDynamicNotificationsFixedViewController.m in Sources */,
+				EEAFD2CF1B272A3A00E23EAB /* IACLabelBrokenViewController.m in Sources */,
+				EEAFD2CD1B272A3A00E23EAB /* IACHintBrokenViewController.m in Sources */,
+				EEAFD2D31B272A3A00E23EAB /* IACModalDialogFixedViewController.m in Sources */,
+				EEAFD3061B272B8900E23EAB /* IACSplitViewController.m in Sources */,
+				EEAFD2A91B272A2700E23EAB /* IACFormsValidationFixedViewController.m in Sources */,
+				EEAFD3091B272B8900E23EAB /* IACViewController.m in Sources */,
+				EEAFD2D11B272A3A00E23EAB /* CustomIOS7AlertView.m in Sources */,
+				EEAFD2D21B272A3A00E23EAB /* IACModalDialogBrokenViewController.m in Sources */,
+				EEAFD2F91B272B0800E23EAB /* DQAppDelegate.m in Sources */,
+				EEAFD2D81B272A3A00E23EAB /* IACTraitsFixedViewController.m in Sources */,
+				EEAFD2CB1B272A3A00E23EAB /* IACDynamicNotificationsBrokenViewController.m in Sources */,
+				EEAFD30C1B272B9400E23EAB /* IACTableViewCell.m in Sources */,
+				EEAFD3051B272B8900E23EAB /* IACOverlayViewController.m in Sources */,
+				EEAFD2D01B272A3A00E23EAB /* IACLabelFixedViewController.m in Sources */,
+				EEAFD2CE1B272A3A00E23EAB /* IACHintFixedViewController.m in Sources */,
+				EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */,
+				EEAFD2F31B272A6500E23EAB /* main.m in Sources */,
+				EEAFD2D71B272A3A00E23EAB /* IACTraitsBrokenViewController.m in Sources */,
+				EEAFD3071B272B8900E23EAB /* IACStoryTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,16 +702,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A300EEAD1AF3CDAD003507B6 /* IACLabelBrokenViewController_test.m in Sources */,
-				A300EEAF1AF3CDC2003507B6 /* IACLabelFixedViewController_test.m in Sources */,
-				EE64E1E71AFAADED00D09B4D /* IACHintBrokenViewController_test.m in Sources */,
-				EE99B0B31B0264A000D5774F /* IACHintFixedViewController_test.m in Sources */,
-				EE99B0B51B02855B00D5774F /* IACTraitsBrokenViewController_test.m in Sources */,
-				EE99B0B71B02A09F00D5774F /* IACTraitsFixedViewController_test.m in Sources */,
-				EE99B0BD1B02A2BF00D5774F /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
-				2BCEC1C91B14E4D400EA5605 /* IFVBrokenViewControllerTests.m in Sources */,
-				EE99B0BF1B02A2D300D5774F /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
-				EE8F8A7E1B068EBF00B8601C /* IFVBestViewControllerTests.m in Sources */,
+				EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */,
+				EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */,
+				EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */,
+				EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
+				EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */,
+				EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
+				EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */,
+				EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */,
+				EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */,
+				EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */,
+				EEAFD3681B27348A00E23EAB /* IACHintFixedViewController_test.m in Sources */,
+				EEAFD3651B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +722,7 @@
 /* Begin PBXTargetDependency section */
 		A9D013E018A2DD4700DC6496 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9D013BE18A2DD4700DC6496 /* Accessibility 101 */;
+			target = A9D013BE18A2DD4700DC6496 /* DequeU */;
 			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
 		};
 		EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */ = {
@@ -716,10 +733,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A9D013E418A2DD4700DC6496 /* InfoPlist.strings */ = {
+		EEAFD3341B272E6400E23EAB /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A9D013E518A2DD4700DC6496 /* en */,
+				EEAFD3351B272E6400E23EAB /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -815,16 +832,17 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
-				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeU/Supporting Files/DequeU-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DequeU/Supporting\\ Files/Google\\ Analytics\\ Header\\ Files",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Accessibility 101";
+				PRODUCT_NAME = "Deque University for iOS";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -844,16 +862,17 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
-				INFOPLIST_FILE = "iosFireEyesInstructions/Accessibility 101-Info.plist";
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeU/Supporting Files/DequeU-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/DequeU/Supporting\\ Files/Google\\ Analytics\\ Header\\ Files",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Accessibility 101";
+				PRODUCT_NAME = "Deque University for iOS";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -863,7 +882,7 @@
 		A9D013EF18A2DD4700DC6496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Accessibility 101.app/Accessibility 101";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Deque University for iOS.app/Deque University for iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -871,12 +890,12 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeUTests/Supporting Files/DequeUTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -890,7 +909,7 @@
 		A9D013F018A2DD4700DC6496 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Accessibility 101.app/Accessibility 101";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Deque University for iOS.app/Deque University for iOS";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -898,8 +917,8 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iosFireEyesInstructions/Accessibility 101-Prefix.pch";
-				INFOPLIST_FILE = "iosFireEyesInstructionsTests/Accessibility 101Tests-Info.plist";
+				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DequeUTests/Supporting Files/DequeUTests-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -922,7 +941,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "Accessibility 101" */ = {
+		A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9D013EC18A2DD4700DC6496 /* Debug */,
@@ -931,7 +950,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "Accessibility 101Tests" */ = {
+		A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeUTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9D013EF18A2DD4700DC6496 /* Debug */,
