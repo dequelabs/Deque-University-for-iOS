@@ -21,11 +21,6 @@
     return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.screenName = @"Labels Broken";
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

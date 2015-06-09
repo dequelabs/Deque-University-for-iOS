@@ -21,12 +21,6 @@
     return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.screenName = @"Labels Fixed";
-}
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

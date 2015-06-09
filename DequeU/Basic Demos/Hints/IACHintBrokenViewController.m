@@ -20,11 +20,6 @@
     return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    self.screenName = @"Hints Broken";
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
