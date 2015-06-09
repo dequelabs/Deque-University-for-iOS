@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pA2-Kx-O1L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pA2-Kx-O1L">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -30,7 +30,7 @@
         <!--Top Bar Contrast-->
         <scene sceneID="34A-c1-KnE">
             <objects>
-                <viewController title="Top Bar Contrast" id="AWC-dm-uX3" customClass="IACViewController" sceneMemberID="viewController">
+                <viewController title="Top Bar Contrast" id="AWC-dm-uX3" customClass="IACTopBarContrastAboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ykg-CQ-kQI"/>
                         <viewControllerLayoutGuide type="bottom" id="Bxl-xf-wtk"/>
@@ -53,7 +53,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jX-G2-6yz" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="138" width="570" height="146"/>
-                                                <mutableString key="text">Color contrast between the background color and the Top Bar text is important so that you can effectively use the Top Bar.  On iPads, notice how there is no navigation bar connected to the Top Bar. If you set the view controller's background color to a color other than white, it may be very difficult to see the Top Bar.  If you do end up changing the background color, be careful; you always want to make sure that those who need to use a higher contrast of colors will still be able to see the Top Bar clearly.</mutableString>
+                                                <string key="text">Color contrast between the background color and the Top Bar text is important so that you can effectively use the Top Bar.  On iPads, notice how there is no navigation bar connected to the Top Bar. If you set the view controller's background color to a color other than white, it may be very difficult to see the Top Bar.  If you do end up changing the background color, be careful; you always want to make sure that those who need to use a higher contrast of colors will still be able to see the Top Bar clearly.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
         <!--Top Bar Contrast-->
         <scene sceneID="6cT-dY-obj">
             <objects>
-                <viewController title="Top Bar Contrast" id="Dn3-0y-Je4" customClass="IACViewController" sceneMemberID="viewController">
+                <viewController title="Top Bar Contrast" id="Dn3-0y-Je4" customClass="IACTopBarContrastBrokenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JFp-BX-7pI"/>
                         <viewControllerLayoutGuide type="bottom" id="HQd-4D-bN4"/>
@@ -165,7 +165,7 @@
         <!--Top Bar Contrast-->
         <scene sceneID="REi-1q-Po2">
             <objects>
-                <viewController title="Top Bar Contrast" id="Gf5-kf-qK4" customClass="IACViewController" sceneMemberID="viewController">
+                <viewController title="Top Bar Contrast" id="Gf5-kf-qK4" customClass="IACTopBarContrastFixedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vgm-aE-aLt"/>
                         <viewControllerLayoutGuide type="bottom" id="Sya-dh-HR9"/>
