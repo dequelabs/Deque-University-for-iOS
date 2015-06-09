@@ -15,6 +15,7 @@
 #define DARK_BLUE @"021B3F"
 #define LIGHT_BLUE @"E0EDF9"
 #define BLUE @"093C8F"
+#define GREEN @"2D6B20"
 #define GRAY @"E0E3E9"
 #define DQ_COLOR_WORLDSPACE_WHITE @"F2F2F4"
 

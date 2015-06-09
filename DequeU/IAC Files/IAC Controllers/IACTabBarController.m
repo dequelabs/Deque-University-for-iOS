@@ -22,12 +22,32 @@
     
     self.colorDimmed = [IACUtilities colorWithHexString:BLUE];
     self.colorDimmedDarkened = [IACUtilities colorWithHexString:BLUE];
-    self.colorSelected = [IACUtilities colorWithHexString:ORANGE];
-    self.colorSelectedDarkened = [IACUtilities colorWithHexString:ORANGE];
+    self.colorSelected = [IACUtilities colorWithHexString:GREEN];
+    self.colorSelectedDarkened = [IACUtilities colorWithHexString:GREEN];
     self.colorTabBar = [IACUtilities colorWithHexString:LIGHT_BLUE];
     self.colorTabBarDarkened = [IACUtilities colorWithHexString:LIGHT_BLUE];
     self.translucentDarkened = NO;
     self.translucentUndarkened = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    for(UITabBarItem* item in self.tabBar.items) {
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                      [IACUtilities colorWithHexString:BLUE], NSForegroundColorAttributeName,
+                                      [UIFont fontWithName:@"Helvetica" size:15],NSFontAttributeName, nil]
+                            forState:UIControlStateNormal];
+    }
+}
+
+- (void)viewWillLayoutSubviews {
+    
+    //changing height of tab bar
+    CGRect tabFrame = self.tabBar.frame;
+    tabFrame.size.height = 55;
+    tabFrame.origin.y = self.view.frame.size.height - 55;
+    self.tabBar.frame = tabFrame;
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {

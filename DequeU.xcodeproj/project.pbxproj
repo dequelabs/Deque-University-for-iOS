@@ -48,7 +48,6 @@
 		EEAFD3051B272B8900E23EAB /* IACOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2FC1B272B8900E23EAB /* IACOverlayViewController.m */; };
 		EEAFD3061B272B8900E23EAB /* IACSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2FE1B272B8900E23EAB /* IACSplitViewController.m */; };
 		EEAFD3071B272B8900E23EAB /* IACStoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */; };
-		EEAFD3081B272B8900E23EAB /* IACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3021B272B8900E23EAB /* IACTabBarController.m */; };
 		EEAFD3091B272B8900E23EAB /* IACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3041B272B8900E23EAB /* IACViewController.m */; };
 		EEAFD30C1B272B9400E23EAB /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */; };
 		EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */; };
@@ -83,6 +82,7 @@
 		EEAFD3B51B274E1B00E23EAB /* IACNestedA11yAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3B01B274E1B00E23EAB /* IACNestedA11yAboutViewController.m */; };
 		EEAFD3B61B274E1B00E23EAB /* IACNestedA11yBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3B21B274E1B00E23EAB /* IACNestedA11yBrokenViewController.m */; };
 		EEAFD3B71B274E1B00E23EAB /* IACNestedA11yFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3B41B274E1B00E23EAB /* IACNestedA11yFixedViewController.m */; };
+		EEAFD3BB1B27674C00E23EAB /* IACTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3BA1B27674C00E23EAB /* IACTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,7 +187,6 @@
 		EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACStoryTableViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.h"; sourceTree = "<group>"; };
 		EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACStoryTableViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.m"; sourceTree = "<group>"; };
 		EEAFD3011B272B8900E23EAB /* IACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTabBarController.h; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.h"; sourceTree = "<group>"; };
-		EEAFD3021B272B8900E23EAB /* IACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTabBarController.m; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.m"; sourceTree = "<group>"; };
 		EEAFD3031B272B8900E23EAB /* IACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACViewController.h"; sourceTree = "<group>"; };
 		EEAFD3041B272B8900E23EAB /* IACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACViewController.m"; sourceTree = "<group>"; };
 		EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTableViewCell.h; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.h"; sourceTree = "<group>"; };
@@ -246,6 +245,7 @@
 		EEAFD3B21B274E1B00E23EAB /* IACNestedA11yBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACNestedA11yBrokenViewController.m; path = "DequeU/Basic Demos/Nested A11y/IACNestedA11yBrokenViewController.m"; sourceTree = "<group>"; };
 		EEAFD3B31B274E1B00E23EAB /* IACNestedA11yFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACNestedA11yFixedViewController.h; path = "DequeU/Basic Demos/Nested A11y/IACNestedA11yFixedViewController.h"; sourceTree = "<group>"; };
 		EEAFD3B41B274E1B00E23EAB /* IACNestedA11yFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACNestedA11yFixedViewController.m; path = "DequeU/Basic Demos/Nested A11y/IACNestedA11yFixedViewController.m"; sourceTree = "<group>"; };
+		EEAFD3BA1B27674C00E23EAB /* IACTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTabBarController.m; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,7 +304,7 @@
 				EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */,
 				EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */,
 				EEAFD3011B272B8900E23EAB /* IACTabBarController.h */,
-				EEAFD3021B272B8900E23EAB /* IACTabBarController.m */,
+				EEAFD3BA1B27674C00E23EAB /* IACTabBarController.m */,
 				EEAFD3031B272B8900E23EAB /* IACViewController.h */,
 				EEAFD3041B272B8900E23EAB /* IACViewController.m */,
 				EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */,
@@ -770,7 +770,6 @@
 				EEAFD3B71B274E1B00E23EAB /* IACNestedA11yFixedViewController.m in Sources */,
 				EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */,
 				EEAFD3AB1B274D7F00E23EAB /* IACDynamicTypeFixedViewController.m in Sources */,
-				EEAFD3081B272B8900E23EAB /* IACTabBarController.m in Sources */,
 				EEAFD3151B272BF200E23EAB /* IACAboutDequeViewController.m in Sources */,
 				EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */,
 				EEAFD38B1B274C7500E23EAB /* IACModalDialogAboutViewController.m in Sources */,
@@ -781,6 +780,7 @@
 				EEAFD3A81B274D6D00E23EAB /* IACDynamicTypeBrokenViewController.m in Sources */,
 				EEAFD2CF1B272A3A00E23EAB /* IACLabelBrokenViewController.m in Sources */,
 				EEAFD3881B274C6500E23EAB /* IACDynamicNotificationsAboutViewController.m in Sources */,
+				EEAFD3BB1B27674C00E23EAB /* IACTabBarController.m in Sources */,
 				EEAFD3B51B274E1B00E23EAB /* IACNestedA11yAboutViewController.m in Sources */,
 				EEAFD3851B274C5200E23EAB /* IACTraitsAboutViewController.m in Sources */,
 				EEAFD2CD1B272A3A00E23EAB /* IACHintBrokenViewController.m in Sources */,
