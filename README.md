@@ -14,8 +14,10 @@ If you would like documentation about this app, please follow the instructions b
 
 <h2> Requirements </h2>
 iOS 8.1 or later
-XCode 6.3.1 or later
-iOS SDK 8.3
+
+XCode 6.3.1 or later (I think?)
+
+iOS SDK 8.3 (I think?)
 
 <h2> Demo List </h2>
 - Accessibility Labels
@@ -31,4 +33,4 @@ iOS SDK 8.3
 The app also has a global VoiceOver Simulation, so that sighted users can see for themselves what an accessibility issue does from the perspective of an unsighted user. 
 
 <h2> Contributor Information </h2>
-to get started, sign the CLA here. For more information, see our blog posts here.
+To get started, sign the CLA here. For more information, see our blog posts here.
