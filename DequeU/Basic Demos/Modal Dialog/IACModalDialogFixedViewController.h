@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
 
-/**
- * Fixed Modal Dialog
- */
 //! The accessible (fixed) version of the Modal Dialog demonstration.
 @interface IACModalDialogFixedViewController : IACViewController
 
+
+@property (weak, nonatomic) IBOutlet UIView *OpenAModalDialog; ///< The view that holds the "Open a modal dialog" label and learnMoreLink.
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink; ///< The button that opens the modal dialog.
 
 //! Creates and shows the modal dialog when the button is pressed, and has accessibility features.
