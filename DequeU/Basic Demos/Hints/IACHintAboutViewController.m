@@ -1,18 +1,18 @@
 //
-//  IACHintsAboutViewController.m
+//  IACHintAboutViewController.m
 //  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 6/9/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
-#import "IACHintsAboutViewController.h"
+#import "IACHintAboutViewController.h"
 
-@interface IACHintsAboutViewController ()
+@interface IACHintAboutViewController ()
 
 @end
 
-@implementation IACHintsAboutViewController
+@implementation IACHintAboutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

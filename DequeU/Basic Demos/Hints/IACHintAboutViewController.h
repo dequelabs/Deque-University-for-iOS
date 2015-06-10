@@ -1,5 +1,5 @@
 //
-//  IACHintsAboutViewController.h
+//  IACHintAboutViewController.h
 //  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 6/9/15.
@@ -9,6 +9,6 @@
 #import "IACViewController.h"
 
 //! The View Controller for the About tab in the Hints demonstration. Created for tracking in Google Analytics.
-@interface IACHintsAboutViewController : IACViewController
+@interface IACHintAboutViewController : IACViewController
 
 @end

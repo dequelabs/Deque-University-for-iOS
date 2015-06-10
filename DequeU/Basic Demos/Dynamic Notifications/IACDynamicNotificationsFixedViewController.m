@@ -51,7 +51,7 @@
     
     [_contactList removeAllObjects];
     [self._tableView reloadData];
-    [DQUtilities createDynamicNotification:announcement]; ///< Prompts VoiceOver to announce the change in the list.
+    [DQUtilities createDynamicNotification:announcement]; // Prompts VoiceOver to announce the change in the list.
     
     return announcement;
 }
@@ -63,16 +63,16 @@
     if(_textField.text.length > 0) {
         item = _textField.text;
         _textField.text = @"";
-        announcement = [item stringByAppendingString:NSLocalizedString(@"ADDED_CONTACT", nil)]; ///< Creates announcement that item was added to list.
+        announcement = [item stringByAppendingString:NSLocalizedString(@"ADDED_CONTACT", nil)]; // Creates announcement that item was added to list.
         
         [_contactList addObject:item];
         [self._tableView reloadData];
     } else {
-        announcement = NSLocalizedString(@"EMPTY_TEXTFIELD", nil); ///< Creates announcement that no item was added to list (textField is empty).
+        announcement = NSLocalizedString(@"EMPTY_TEXTFIELD", nil); // Creates announcement that no item was added to list (textField is empty).
     }
     
     [_textField resignFirstResponder];
-    [DQUtilities createDynamicNotification:announcement]; ///< Prompts VoiceOver to announce the change in the list.
+    [DQUtilities createDynamicNotification:announcement]; // Prompts VoiceOver to announce the change in the list.
     _textField.accessibilityLabel = @"";
     
     return announcement;

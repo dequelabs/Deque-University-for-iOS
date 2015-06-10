@@ -18,7 +18,7 @@
 @property (readonly) UITextField* textField;
 @property (readonly) NSMutableArray* contactList;
 
--(IBAction)saveItem; ///< If the textField is not empty, it saves the text in the textField into the contactList array.
+-(IBAction)saveItem; ///< If the textField is not empty, it saves the text from the textField into the contactList array.
 -(IBAction)clearList; ///< Empties the contactList (all elements in table are deleted).
 -(void)textChanged; ///< Changes the textField's accessibilityLabel depending on if it is empty or not.
 

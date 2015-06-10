@@ -18,17 +18,17 @@
 @property (readonly) UITextField* textField;
 @property (readonly) NSMutableArray* contactList;
 
-//! If the textField is not empty, it saves the text in the textField into the contactList array.
+//! If the textField is not empty, it saves the text from the textField into the contactList array.
 /*!
  * This function calls UIAccessibilityPostNotification to let the user know if the contact was successfully saved.
- * \returns the announcement stated by VoiceOver. This is used for testing purposes.
+ * \returns an NSString - the announcement stated by VoiceOver. This is used for testing purposes.
  */
 -(NSString*)saveItem;
 
 //! Empties the contactList (all elements in the table are deleted).
 /*!
  * This function calls UIAccessibilityPostNotification to let the user know if the contactList was successfully deleted.
- * \returns the announcement stated by VoiceOver. This is used for testing purposes.
+ * \returns an NSString - the announcement stated by VoiceOver. This is used for testing purposes.
  */
 -(NSString*)clearList;
 -(void)textChanged; ///< Changes the textField's accessibilityLabel depending on if it is empty or not.

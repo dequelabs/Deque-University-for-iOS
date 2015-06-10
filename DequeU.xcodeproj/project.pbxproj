@@ -68,7 +68,7 @@
 		EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3721B27391E00E23EAB /* AppDelegate.m */; };
 		EEAFD37A1B274C0B00E23EAB /* IACIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3791B274C0B00E23EAB /* IACIntroductionViewController.m */; };
 		EEAFD37F1B274C2100E23EAB /* IACLabelAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD37E1B274C2100E23EAB /* IACLabelAboutViewController.m */; };
-		EEAFD3821B274C3100E23EAB /* IACHintsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3811B274C3100E23EAB /* IACHintsAboutViewController.m */; };
+		EEAFD3821B274C3100E23EAB /* IACHintAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3811B274C3100E23EAB /* IACHintAboutViewController.m */; };
 		EEAFD3851B274C5200E23EAB /* IACTraitsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3841B274C5200E23EAB /* IACTraitsAboutViewController.m */; };
 		EEAFD3881B274C6500E23EAB /* IACDynamicNotificationsAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3871B274C6500E23EAB /* IACDynamicNotificationsAboutViewController.m */; };
 		EEAFD38B1B274C7500E23EAB /* IACModalDialogAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD38A1B274C7500E23EAB /* IACModalDialogAboutViewController.m */; };
@@ -217,8 +217,8 @@
 		EEAFD3791B274C0B00E23EAB /* IACIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACIntroductionViewController.m; path = "DequeU/Introduction Files/IACIntroductionViewController.m"; sourceTree = "<group>"; };
 		EEAFD37D1B274C2100E23EAB /* IACLabelAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACLabelAboutViewController.h; sourceTree = "<group>"; };
 		EEAFD37E1B274C2100E23EAB /* IACLabelAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACLabelAboutViewController.m; sourceTree = "<group>"; };
-		EEAFD3801B274C3100E23EAB /* IACHintsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACHintsAboutViewController.h; sourceTree = "<group>"; };
-		EEAFD3811B274C3100E23EAB /* IACHintsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintsAboutViewController.m; sourceTree = "<group>"; };
+		EEAFD3801B274C3100E23EAB /* IACHintAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACHintAboutViewController.h; sourceTree = "<group>"; };
+		EEAFD3811B274C3100E23EAB /* IACHintAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACHintAboutViewController.m; sourceTree = "<group>"; };
 		EEAFD3831B274C5200E23EAB /* IACTraitsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACTraitsAboutViewController.h; sourceTree = "<group>"; };
 		EEAFD3841B274C5200E23EAB /* IACTraitsAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACTraitsAboutViewController.m; sourceTree = "<group>"; };
 		EEAFD3861B274C6500E23EAB /* IACDynamicNotificationsAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACDynamicNotificationsAboutViewController.h; sourceTree = "<group>"; };
@@ -426,8 +426,8 @@
 		EEAFD2B01B272A3A00E23EAB /* Hints */ = {
 			isa = PBXGroup;
 			children = (
-				EEAFD3801B274C3100E23EAB /* IACHintsAboutViewController.h */,
-				EEAFD3811B274C3100E23EAB /* IACHintsAboutViewController.m */,
+				EEAFD3801B274C3100E23EAB /* IACHintAboutViewController.h */,
+				EEAFD3811B274C3100E23EAB /* IACHintAboutViewController.m */,
 				EEAFD2B11B272A3A00E23EAB /* IACHintBrokenViewController.h */,
 				EEAFD2B21B272A3A00E23EAB /* IACHintBrokenViewController.m */,
 				EEAFD2B31B272A3A00E23EAB /* IACHintFixedViewController.h */,
@@ -785,7 +785,7 @@
 				EEAFD3851B274C5200E23EAB /* IACTraitsAboutViewController.m in Sources */,
 				EEAFD2CD1B272A3A00E23EAB /* IACHintBrokenViewController.m in Sources */,
 				EEAFD3AE1B274E0200E23EAB /* IACDynamicTypeAboutViewController.m in Sources */,
-				EEAFD3821B274C3100E23EAB /* IACHintsAboutViewController.m in Sources */,
+				EEAFD3821B274C3100E23EAB /* IACHintAboutViewController.m in Sources */,
 				EEAFD2D31B272A3A00E23EAB /* IACModalDialogFixedViewController.m in Sources */,
 				EEAFD3061B272B8900E23EAB /* IACSplitViewController.m in Sources */,
 				EEAFD2A91B272A2700E23EAB /* IACFormsValidationFixedViewController.m in Sources */,
