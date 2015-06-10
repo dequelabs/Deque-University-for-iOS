@@ -7,7 +7,7 @@ This app is a set of demos and informational stories that demonstrate best pract
 <h2> Getting Started </h2>
 If you would like documentation about this app, please follow the instructions below:
 
-1. Install and open Doxygen, which was used to create this app’s documentation. You can find Doxygen [here](https://github.com/doxygen/doxygen). Open Doxygen once it is installed.
+1. Install and open Doxygen, which was used to create this app’s documentation. You can find Doxygen [here](https://github.com/doxygen/doxygen).
 2. If you haven’t already, download or clone this repository.  Unzip it, and open up the config file in Doxygen, which should be in the root folder of this repository.
 3. All settings should already be configured for you. If they are not, make sure that the config file was downloaded correctly.
 4. Click “Run” at the top of the Doxygen program (next to “Expert”) and click “Run doxygen.”  Once Doxygen is finished running, click “Show HTML output.” A browser will open with the documentation.
