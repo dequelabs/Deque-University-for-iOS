@@ -19,11 +19,8 @@
 
 @end
 
-/**
- * Localizable strings can be found in the Localizabe.strings file under supporting files.
- * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
- */
-
+// Localizable strings can be found in the Localizabe.strings file under supporting files.
+// We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
 @implementation IACFormsValidationFixedViewController
 
 - (void)viewDidLoad {
@@ -103,11 +100,10 @@
 }
 
 - (IBAction)backgroundTap:(id)sender {
-    //get rid of keyboard on background tap
     [self.view endEditing:YES];
 }
 
-// get rid of keyboard when "done" is pressed
+// Get rid of keyboard when "done" is pressed
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 
     [textField resignFirstResponder];
@@ -119,11 +115,8 @@
 }
 
 
-/**
- * validateTextField validates the text field based on the passed in string and predicate, then updates the
- * error messages and accessibility information accordingly.
- */
-
+// Validates the textField based on the string and predicate passed in, then updates error messages and accessibility information accordingly.
+// BOOL is returned for testing purposes.
 + (BOOL)validateTextField:(UITextField*)textField
                fieldLabel:(UILabel*)fieldLabel
              warningLabel:(UILabel*)warningLabel
