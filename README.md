@@ -15,9 +15,9 @@ If you would like documentation about this app, please follow the instructions b
 <h2> Requirements </h2>
 iOS 8.1 or later
 
-XCode 6.3.1 or later (I think?)
+XCode 6.3.1 or later
 
-iOS SDK 8.3 (I think?)
+iOS SDK 8.3
 
 <h2> Demo List </h2>
 - Accessibility Labels
