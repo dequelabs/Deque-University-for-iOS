@@ -36,7 +36,7 @@
 - (void)testAccessibilityWhenTextFieldHasText {
     _viewController.textField.text = @"1";
     DEQAssertStringEqual(_viewController.textField.text, @"1");
-    [_viewController textChanged];
+//    [_viewController textChanged];
     DEQAssertStringEqual(_viewController.textField.accessibilityLabel, NSLocalizedString(@"FIRST_NAME", nil));
     DEQAssertEmptyString(_viewController.textField.accessibilityHint);
 }
@@ -44,7 +44,7 @@
 - (void)testAccessibilityWhenTextFieldIsEmpty {
     _viewController.textField.text = @"";
     DEQAssertEmptyString(_viewController.textField.text);
-    [_viewController textChanged];
+//    [_viewController textChanged];
     DEQAssertEmptyString(_viewController.textField.accessibilityLabel);
     DEQAssertEmptyString(_viewController.textField.accessibilityHint);
     DEQAssertStringEqual(_viewController.textField.placeholder, @"First Name");
@@ -91,7 +91,7 @@
     _viewController.contactList[1] = @"item 2";
     DEQAssertStringEqual(_viewController.textField.text, @"item 3");
     XCTAssert([_viewController.contactList count] == 2);
-    [_viewController textChanged];
+  //  [_viewController textChanged];
     [_viewController clearList];
     XCTAssert([_viewController.contactList count] == 0);
     DEQAssertStringEqual(_viewController.textField.text, @"item 3");
@@ -103,7 +103,7 @@
     _viewController.textField.text = @"item 3";
     DEQAssertStringEqual(_viewController.textField.text, @"item 3");
     XCTAssert([_viewController.contactList count] == 0);
-    [_viewController textChanged];
+  //  [_viewController textChanged];
     [_viewController clearList];
     XCTAssert([_viewController.contactList count] == 0);
     DEQAssertStringEqual(_viewController.textField.text, @"item 3");

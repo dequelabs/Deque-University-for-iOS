@@ -13,6 +13,7 @@
 //! The accessible (fixed) version of the Forms Validation demonstration.
 @interface IACFormsValidationFixedViewController : IACViewController <UITextFieldDelegate>
 
+
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel; ///< Label named "Name."
 @property (weak, nonatomic) IBOutlet UITextField *nameField; ///< TextField asking for the user's name.
 @property (weak, nonatomic) IBOutlet UILabel *nameRequirement; ///< Visual hint letting the user know that "Name" is required.

@@ -23,11 +23,6 @@
     self._tableView.dataSource = self;
     self._tableView.delegate = self;
     _textField.delegate = self;
-    
-    // Listener for when the textField's content changes.
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textChanged)
-                                                 name:UITextFieldTextDidChangeNotification object:nil];
 }
 
 - (IBAction)clearList {
@@ -46,15 +41,7 @@
         _textField.text = @"";
     }
     [_textField resignFirstResponder];
-    _textField.accessibilityLabel = @"";
-}
-
-- (void)textChanged {
-    if(_textField.text.length > 0) {
-        _textField.accessibilityLabel = NSLocalizedString(@"FIRST_NAME", nil);
-    } else {
-        _textField.accessibilityLabel = @"";
-    }
+   // _textField.accessibilityLabel = @"";
 }
 
 // Delegate method in UITableView.
