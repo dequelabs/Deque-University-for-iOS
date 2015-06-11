@@ -9,7 +9,7 @@
         <!--Modal Dialog-->
         <scene sceneID="uHB-eh-MlO">
             <objects>
-                <viewController storyboardIdentifier="Modal Dialog" title="Modal Dialog" automaticallyAdjustsScrollViewInsets="NO" id="UZk-ba-3X8" customClass="IACViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Modal Dialog" title="Modal Dialog" automaticallyAdjustsScrollViewInsets="NO" id="UZk-ba-3X8" customClass="IACModalDialogAboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="meq-Jm-n4D"/>
                         <viewControllerLayoutGuide type="bottom" id="l7o-4A-dBP"/>
@@ -409,7 +409,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fixed" image="DequeU_app_icon_fixed" id="ExY-cE-bsj"/>
                     <connections>
-                        <outlet property="OpenAModalDialog" destination="R2v-fM-gpO" id="JEO-t7-PSB"/>
+                        <outlet property="OpenAModalDialog" destination="R2v-fM-gpO" id="Xej-yM-zvp"/>
                         <outlet property="learnMoreLink" destination="eyC-TX-hUu" id="4hH-Iq-UJC"/>
                     </connections>
                 </viewController>

@@ -1,6 +1,6 @@
 //
-//  IFVBadViewController.m
-//  iOSFormsDemo
+//  IACFormsValidationBrokenViewController.m
+//  Deque University for iOS
 //
 //  Created by Chris McMeeking on 4/2/15.
 //  Copyright (c) 2015 Deque Developer. All rights reserved.
@@ -15,11 +15,9 @@
 
 @end
 
-/**
- * Localizable strings can be found in the Localizabe.strings file under supporting files.
- * We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
- */
 
+// Localizable strings can be found in the Localizabe.strings file under supporting files.
+// We make the strings NSLocalizedStrings so that the app can easily be translated into other languages
 @implementation IACFormsValidationBrokenViewController
 
 - (void)viewDidLoad {
@@ -61,10 +59,6 @@
     }
 }
 
-/**
- * When we hit the submit button, all three text fields get validated by "validateTextField"
- * the definition for which can be found in IFVFixedViewController.m
- */
 - (IBAction)submitButton:(id)sender {
     
     [self.class validateTextField:_emailField
@@ -125,12 +119,12 @@
     }
 }
 
-- (IBAction)backgroundTap:(id)sender { ///< Get rid of keyboard on background tap
+- (IBAction)backgroundTap:(id)sender {
     [self.view endEditing:YES];
 }
 
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField { ///< Get rid of keyboard when "done" is pressed
+// Get rid of keyboard when "done" is pressed.
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
     [textField resignFirstResponder];
     return YES;

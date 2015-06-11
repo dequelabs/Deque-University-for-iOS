@@ -1,6 +1,6 @@
 //
 //  DQTraitsBrokenViewController.m
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
@@ -13,9 +13,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //This sets the "shadow" property of the DQButtons to "ON", to help users more easily see that they are buttons.
     [_buttonDisplayCat setShadowed:YES];
     [_buttonDisplayDog setShadowed:YES];
-    [_buttonDisplayFish setUnderlined:YES];
+    [_buttonDisplayFish setUnderlined:YES]; //This sets the "underlined" property of the DQButton to "ON" to help users understand that
+                                            //  this button acts as a link.
     
     [_buttonDisplayCat addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_buttonDisplayDog addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
@@ -39,16 +41,13 @@
     }
 }
 
-///< Visits the webpage for the fish link.
-
 - (NSString*)visitWebPage {
     NSString* url = @"http://lmgtfy.com/?q=fish";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     return url;
 }
 
-///< Updates the image based on the name passed in.
-
+// Update the imageView's image and accessibility label given the name of the animal.
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
     [_ImageView setAccessibilityLabel:name];

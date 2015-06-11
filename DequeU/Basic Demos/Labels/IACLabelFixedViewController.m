@@ -1,6 +1,6 @@
 //
 //  IACLabelFixedViewController.m
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 2/12/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
@@ -25,6 +25,7 @@
 {
     [super viewDidLoad];
     
+    //This sets the "shadow" property of the DQButtons to "ON", to help users more easily see that they are buttons.
     [_FishDisplay setShadowed:YES];
     [_CatDisplay setShadowed:YES];
     [_DogDisplay setShadowed:YES];
@@ -34,12 +35,10 @@
     [_FishDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     
     [_ImageView setImage:[UIImage imageNamed:@"dog"]];
-    [_ImageView setAccessibilityHint:@""]; ///< Sometimes hints aren't needed, this silences the warning.
+    [_ImageView setAccessibilityHint:@""]; // Sometimes hints aren't needed, this silences the warning.
     [_ImageView setAccessibilityLabel:NSLocalizedString(@"DOG", nil)];
     [_ImageView setIsAccessibilityElement:YES];
 }
-
-///< displays the correct image based on the button pressed.
 
 - (void)displayImage:(id)sender {
     UIButton* button = (UIButton*)sender;
@@ -53,6 +52,7 @@
     }
 }
 
+// Update the imageView's image and accessibility label given the name of the animal. It also has VoiceOver alert the user that the image has changed.
 - (void)updateImage:(NSString*)name {
     [_ImageView setImage:[UIImage imageNamed:name]];
     [_ImageView setAccessibilityLabel:NSLocalizedString(name, nil)];

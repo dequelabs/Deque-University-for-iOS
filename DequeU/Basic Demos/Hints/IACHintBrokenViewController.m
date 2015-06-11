@@ -1,6 +1,6 @@
 //
 //  DQBrokenHintViewController.m
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 2/12/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
@@ -37,10 +37,6 @@
     //[_SITRDisplay setAccessibilityHint:@"Visit wiki article"];
 
 }
-
-/**
- * visitWebPage opens the corresponding Wikipedia web page in safari when a button is clicked.
- */
 
 - (NSString*)visitWebPage:(id)sender {
     

@@ -1,6 +1,6 @@
 //
 //  IACModalDialogBrokenViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 5/26/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -20,11 +20,6 @@
 - (void) viewDidLoad {
     [super viewDidLoad];
 }
-
-/**
- * Creates and does not focus the modal dialog
- * Returns whether or not the dialog is NOT focused for testing purposes
- */
 
 - (BOOL)information:(id)sender {
     CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
@@ -66,6 +61,7 @@
     return URL;
 }
 
+//Function in CustomIOS7AlertView
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
     NSString* URL = [self getURLFromIndex: buttonIndex];

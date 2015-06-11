@@ -1,6 +1,6 @@
 //
 //  DQTraitsFixedViewController.m
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 5/22/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
@@ -8,6 +8,7 @@
 
 #import "IACTraitsFixedViewController.h"
 
+//Notice that this has the same functionalities as the IACTraitsBrokenViewController, but has no misleading traits for the "Fish" button.
 @implementation IACTraitsFixedViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -20,9 +21,11 @@
 {
     [super viewDidLoad];
     
+    //This sets the "shadow" property of the DQButtons to "ON", to help users more easily see that they are buttons.
     [_buttonDisplayDog setShadowed:YES];
     [_buttonDisplayCat setShadowed:YES];
-    [_buttonDisplayFish setUnderlined:YES];
+    [_buttonDisplayFish setUnderlined:YES]; //This sets the "underlined" property of the DQButton to "ON" to help users understand that
+                                            //  this button acts like a link.
     
     [_buttonDisplayCat addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
     [_buttonDisplayDog addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];
@@ -46,9 +49,6 @@
         [self updateImage:@"fish"];
     }
 }
-
-///< Same functionalities as in the broken version, just with the fixed
-///< mislabeling of the fish link.
 
 - (NSString*)visitWebPage {
     NSString* url = @"http://lmgtfy.com/?q=fish";

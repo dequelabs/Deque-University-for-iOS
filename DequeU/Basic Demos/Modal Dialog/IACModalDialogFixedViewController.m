@@ -1,6 +1,6 @@
 //
 //  IACModalDialogFixedViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 5/26/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -8,6 +8,9 @@
 
 #import "IACModalDialogFixedViewController.h"
 #import "CustomIOS7AlertView.h"
+
+#define MAIL_TO_INDEX 0
+#define VISIT_WEBSITE_INDEX 1
 
 @interface IACModalDialogFixedViewController ()<CustomIOS7AlertViewDelegate>
 
@@ -20,11 +23,6 @@
     
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
 }
-
-/**
- * creates the modal dialog, and posts an accessibility notification that the screen has changed
- * Also returns whether the modal dialog is focused or not for testing purposes
- */
 
 - (BOOL)information:(id)sender {
     
@@ -65,15 +63,11 @@
     return TRUE;
 }
 
-/**
- * This function either opens safari or a mailto dialog depending on which button on the
- * modal dialog is pressed
- */
-
+// Opens a mailto link if the "Contact us" button is pressed or deque.com if the "Visit Website" button is pressed.
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {
-    if (buttonIndex == 0) {
+    if (buttonIndex == MAIL_TO_INDEX) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
-    } else if (buttonIndex == 1) {
+    } else if (buttonIndex == VISIT_WEBSITE_INDEX) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
     }
     
