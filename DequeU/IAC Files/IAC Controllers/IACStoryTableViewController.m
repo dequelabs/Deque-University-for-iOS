@@ -49,14 +49,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // silencing constraint error
-    self.tableView.rowHeight = 44;
-    
     self.tableView.delegate = self;
     self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didChangePreferredContentSize)
+                                                 name:UIContentSizeCategoryDidChangeNotification
+                                               object:nil];
     
+    [self didChangePreferredContentSize];
     
     UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     NSMutableArray* basicDemos = [NSMutableArray array];
@@ -132,22 +134,6 @@
     }
 }
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if(indexPath.section == OVERLAY_SECTION_NUM) {
-        [self toggleState];
-        
-        return nil;
-        
-    } else if(indexPath.section == BASIC_DEMOS_SECTION_NUM || indexPath.section == ADV_DEMOS_SECTION_NUM) {
-        return nil;
-
-    } else {
-        return indexPath;
-        
-    }
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell* cell;
@@ -204,6 +190,23 @@
     return cell;
 }
 
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if(indexPath.section == OVERLAY_SECTION_NUM) {
+        [self toggleState];
+        
+        return nil;
+        
+    } else if(indexPath.section == BASIC_DEMOS_SECTION_NUM || indexPath.section == ADV_DEMOS_SECTION_NUM) {
+        return nil;
+        
+    } else {
+        return indexPath;
+        
+    }
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if(indexPath.section == INTRODUCTION_SECTION_NUM) {
@@ -211,16 +214,41 @@
         [self.splitViewController showDetailViewController:viewController sender:nil];
 
     } else if(indexPath.section == BASIC_DEMO_STORIES_SECTION_NUM) {
-        
         UIViewController* viewController = [_viewControllersBasic objectAtIndex:indexPath.row];
         [self.splitViewController showDetailViewController:viewController sender:nil];
  
     } else if(indexPath.section == ADV_DEMO_STORIES_SECTION_NUM) {
-        
         UIViewController* viewController = [_viewControllersAdvanced objectAtIndex:indexPath.row];
         [self.splitViewController showDetailViewController:viewController sender:nil];
         
     }
+}
+
+-(void)didChangePreferredContentSize {
+    NSString *contentSize = [UIApplication sharedApplication].preferredContentSizeCategory;
+    
+    if ([contentSize isEqualToString:UIContentSizeCategoryExtraSmall]) {
+        self.tableView.rowHeight = 36;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategorySmall]) {
+        self.tableView.rowHeight = 40;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryMedium]) {
+        self.tableView.rowHeight = 44;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryLarge]) {
+        self.tableView.rowHeight = 48;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryExtraLarge]) {
+        self.tableView.rowHeight = 52;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryExtraExtraLarge]) {
+        self.tableView.rowHeight = 56;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]) {
+        self.tableView.rowHeight = 60;
+    }
+    
 }
 
 -(void)observeSwitchState {
@@ -248,7 +276,7 @@
     [image setImage:[UIImage imageNamed:label.text]];
     label.textColor = _colorCellText;
     
-    ///< setting accessibility label
+    // setting accessibility label
     NSString* demoTab;
     
     if([identifier isEqual: INTRODUCTION_IDENTIFIER]) {

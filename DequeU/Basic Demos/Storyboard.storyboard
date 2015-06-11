@@ -91,8 +91,8 @@
                                                 </mask>
                                             </variation>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="91" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VoiceOver Simulation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-Av-H8w" customClass="DQLabel">
-                                            <rect key="frame" x="45" y="12" width="155" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="91" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="VoiceOver Simulation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-Av-H8w" customClass="DQLabel">
+                                            <rect key="frame" x="45" y="12" width="488" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="7b1-a5-Fr1"/>
                                             </constraints>
@@ -120,6 +120,7 @@
                                         <constraint firstAttribute="centerY" secondItem="idZ-fY-fNf" secondAttribute="centerY" id="Ano-yi-226"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="yk2-V4-DhZ" secondAttribute="trailing" id="MrT-n2-na9"/>
                                         <constraint firstAttribute="centerY" secondItem="eLz-Av-H8w" secondAttribute="centerY" id="SbU-HM-UBQ"/>
+                                        <constraint firstItem="yk2-V4-DhZ" firstAttribute="leading" secondItem="eLz-Av-H8w" secondAttribute="trailing" constant="10" id="TIH-HJ-jYF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration">
@@ -186,7 +187,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="90" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwM-lI-DfH" customClass="DQLabel">
-                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <rect key="frame" x="8" y="12" width="584" height="20"/>
                                             <accessibility key="accessibilityConfiguration" hint="" label="">
                                                 <bool key="isElement" value="YES"/>
                                             </accessibility>
@@ -196,6 +197,11 @@
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="XPc-Bc-pRa"/>
+                                                </mask>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -274,7 +280,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="90" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opv-gy-PcM" customClass="DQLabel">
-                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <rect key="frame" x="8" y="12" width="584" height="20"/>
                                             <accessibility key="accessibilityConfiguration" label="">
                                                 <bool key="isElement" value="YES"/>
                                             </accessibility>
@@ -284,6 +290,11 @@
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="mh0-dU-iJ6"/>
+                                                </mask>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
