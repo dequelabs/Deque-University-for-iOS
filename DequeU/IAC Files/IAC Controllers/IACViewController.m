@@ -7,10 +7,10 @@
 //
 
 #import "IACViewController.h"
-#import "IACOverlayViewController.h"
 #import <DQA11y/DQA11y.h>
 #import "IACUtilities.h"
 #import "IACConstants.h"
+#import "IACOverlayViewController.h"
 
 #define OVERLAY_IMAGE_NAME @"DequeU_logo_1024px"
 

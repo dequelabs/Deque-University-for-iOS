@@ -8,26 +8,29 @@
 
 #import <UIKit/UIKit.h>
 #import "IACViewController.h"
-#import "CustomIOS7AlertView.h"
+#import "IACModalDialogViewController.h"
 
 //! The broken version of the Modal Dialog demonstration.
 /*! VoiceOver does not focus on the modal dialog when it appears. */
-@interface IACModalDialogBrokenViewController : IACViewController
+@interface IACModalDialogBrokenViewController : IACViewController {
+    IACModalDialogViewController* _modalViewController; ///< The viewController containing the modal dialog.
+}
 
+//@property (weak, nonatomic) IACModalDialogViewController* modalViewController;
 @property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink; ///< The button that opens the modal dialog.
 
-//! Creates and shows the modal dialog when the button is pressed. The dialog will not be focused.
+//! Opens a modal dialog, but will not be focused.
 /*!
  * \param sender is the id of the button pressed.
  * \returns TRUE if the dialog is NOT focused, and FALSE if the dialog is focused. Used for testing purposes.
  */
 - (BOOL)information:(id)sender;
 
-//! Retrieves the corresponding URL from the button that was pressed.
+//! Will visit a webpage or go to a mailto link, depending on the button pressed. Will close the modal dialog.
 /*!
- * \param buttonIndex is an NSInteger that is the index of the button that was pressed.
- * \returns an NSString of the URL that will be visited.
+ * \param sender is the id of the button pressed.
+ * \returns an NSString of the URL the user visited (or nil if user pressed "Close"). Used for testing purposes.
  */
-- (NSString*)getURLFromIndex:(NSInteger)buttonIndex;
+- (NSString*)clickedButton:(id)sender;
 
 @end
