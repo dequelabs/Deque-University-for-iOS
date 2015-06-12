@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <DQA11y/DQA11y.h>
 
+//! The view controller that contains the modal dialog's content.
 @interface IACModalDialogViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet DQButton *email_deque;
-@property (weak, nonatomic) IBOutlet DQButton *visit_website;
-@property (weak, nonatomic) IBOutlet DQButton *close;
+@property (weak, nonatomic) IBOutlet DQButton *email_deque; ///< The "Email Us!" button.
+@property (weak, nonatomic) IBOutlet DQButton *visit_website; ///< The "Visit Website!" button.
+@property (weak, nonatomic) IBOutlet DQButton *close; ///< The "Close" button.
 
 
 @end
