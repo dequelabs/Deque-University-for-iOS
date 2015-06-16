@@ -43,10 +43,7 @@
     
     [alertView show];
 
-    if(![alertView accessibilityElementIsFocused]) {
-        return YES;
-    }
-    return NO;
+    return ![alertView accessibilityElementIsFocused];
 }
 
 - (NSString*) getURLFromIndex: (NSInteger)buttonIndex {
@@ -61,7 +58,7 @@
     return URL;
 }
 
-//Function in CustomIOS7AlertView
+//Function defined in CustomIOS7AlertView
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
     NSString* URL = [self getURLFromIndex: buttonIndex];

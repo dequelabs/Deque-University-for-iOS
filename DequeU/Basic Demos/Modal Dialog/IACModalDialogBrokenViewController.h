@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DQA11y/DQA11y.h>
 #import "IACViewController.h"
 #import "CustomIOS7AlertView.h"
 
@@ -15,6 +16,7 @@
 @interface IACModalDialogBrokenViewController : IACViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink; ///< The button that opens the modal dialog.
+@property (weak, nonatomic) IBOutlet DQWrapperView *wrapperView; ///< The view containing iWouldLikeToLearnMore and the "Open a modal dialog" label.
 
 //! Creates and shows the modal dialog when the button is pressed. The dialog will not be focused.
 /*!

@@ -7,75 +7,59 @@
 //
 
 #import "IACModalDialogFixedViewController.h"
-#import "IACModalDialogViewController.h"
-
-@interface IACModalDialogFixedViewController () {
-    IACModalDialogViewController* _modalViewController;
-}
-
-@end
 
 @implementation IACModalDialogFixedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _modalViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
-       _modalViewController.view.backgroundColor = [UIColor clearColor];
+    _modalDialogViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+    _modalDialogViewController.view.backgroundColor = [UIColor clearColor];
     
+    //set up learnMoreLink button
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
     
-    [_modalViewController.email_us_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
-    [_modalViewController.visit_our_website_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
-    [_modalViewController.close_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    //set up buttons on modal dialog
+    [_modalDialogViewController.email_us_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    [_modalDialogViewController.visit_our_website_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    [_modalDialogViewController.close_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
     
-    _modalViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+    //set up presentation style
+    _modalDialogViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
 }
 
 -(NSString*)visitWebpage:(id)sender {
     UIButton* button = (UIButton*)sender;
     NSString* URL;
     
-    [_modalViewController dismissViewControllerAnimated:YES completion:nil];
+    //close modal dialog
+    [_modalDialogViewController dismissViewControllerAnimated:YES completion:nil];
     
-    if(button == _modalViewController.email_us_button) {
+    if(button == _modalDialogViewController.email_us_button) {
         URL = @"mailto:chris.mcmeeking@deque.com";
-    } else if(button == _modalViewController.visit_our_website_button) {
+    } else if(button == _modalDialogViewController.visit_our_website_button) {
         URL = @"http://www.deque.com";
     }
+
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
     
-    if(![URL isEqualToString:nil]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
-    }
+    //focus on OpenAModalDialog - needs delay to be sure it is focused.
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.OpenAModalDialog);
-    self.accessibilityElementsHidden = NO;
-    self.navigationController.accessibilityElementsHidden = NO;
     });
 
     return URL;
 }
 
-- (BOOL)information:(id)sender {
-    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
-    {
-        [self presentViewController:_modalViewController animated:YES completion:nil];
-        self.accessibilityElementsHidden = YES;
-        self.navigationController.accessibilityElementsHidden = YES;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-            UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalViewController.view);
-        });
-    } else {
-        [self.navigationController presentViewController:_modalViewController animated:YES completion:nil];
-        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalViewController.view);
-    }
+- (void)information:(id)sender {
+    //open modal dialog
+    [self.splitViewController presentViewController:_modalDialogViewController animated:YES completion:nil];
     
-    if(![_modalViewController.view accessibilityElementIsFocused]){
-        return FALSE;
-    }
-    return TRUE;
+    
+    //focus on "Thank You" label - needs delay to be sure it is focused.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalDialogViewController.view);
+    });
 }
 
 @end
