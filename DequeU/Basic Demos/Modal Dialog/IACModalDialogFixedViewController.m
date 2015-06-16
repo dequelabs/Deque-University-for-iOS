@@ -8,6 +8,13 @@
 
 #import "IACModalDialogFixedViewController.h"
 
+@interface IACModalDialogFixedViewController() {
+    
+    IACModalDialogViewController* _modalDialogViewController; ///< The view controller containing the modal dialog.
+}
+
+@end
+
 @implementation IACModalDialogFixedViewController
 
 - (void)viewDidLoad {
@@ -26,40 +33,41 @@
     
     //set up presentation style
     _modalDialogViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-}
 
--(NSString*)visitWebpage:(id)sender {
-    UIButton* button = (UIButton*)sender;
-    NSString* URL;
-    
-    //close modal dialog
-    [_modalDialogViewController dismissViewControllerAnimated:YES completion:nil];
-    
-    if(button == _modalDialogViewController.email_us_button) {
-        URL = @"mailto:chris.mcmeeking@deque.com";
-    } else if(button == _modalDialogViewController.visit_our_website_button) {
-        URL = @"http://www.deque.com";
-    }
-
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
-    
-    //focus on OpenAModalDialog - needs delay to be sure it is focused.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.OpenAModalDialog);
-    });
-
-    return URL;
 }
 
 - (void)information:(id)sender {
+    
     //open modal dialog
     [self.splitViewController presentViewController:_modalDialogViewController animated:YES completion:nil];
-    
     
     //focus on "Thank You" label - needs delay to be sure it is focused.
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalDialogViewController.view);
     });
 }
+
+-(NSString*)visitWebpage:(id)sender {
+    UIButton* button = (UIButton*)sender;
+    NSString* URL;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    //focus on OpenAModalDialog - needs delay to be sure it is focused.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.OpenAModalDialog);
+    });
+    
+    if(button == _modalDialogViewController.email_us_button) {
+        URL = @"mailto:chris.mcmeeking@deque.com";
+    } else if(button == _modalDialogViewController.visit_our_website_button) {
+        URL = @"http://www.deque.com";
+    }
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
+    
+    return URL;
+}
+
 
 @end

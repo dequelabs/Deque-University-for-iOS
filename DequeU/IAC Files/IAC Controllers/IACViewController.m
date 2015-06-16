@@ -6,11 +6,12 @@
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
+#import <DQA11y/DQA11y.h>
 #import "IACViewController.h"
 #import "IACOverlayViewController.h"
-#import <DQA11y/DQA11y.h>
 #import "IACUtilities.h"
 #import "IACConstants.h"
+#import "CustomIOS7AlertView.h"
 
 #define OVERLAY_IMAGE_NAME @"DequeU_logo_1024px"
 
@@ -21,6 +22,7 @@ static UIButton* _IACOverlayButton = NULL;
 @interface IACViewController ()
 
 @property IACOverlayViewController* overlayViewController;
+@property CustomIOS7AlertView* overlayViewForModal;
 
 @end
 
@@ -74,8 +76,12 @@ static UIButton* _IACOverlayButton = NULL;
     
     _overlayViewController.view.accessibilityElementsHidden = YES;
 
-    [self.view addSubview: _overlayViewController.view];
+    [self.splitViewController.view addSubview: _overlayViewController.view];
     _overlayViewController.view.hidden = true;
+}
+
++ (BOOL)overlayIsOn {
+    return _IACViewControllerOverlayIsOn;
 }
 
 + (void)setOverlayOn:(BOOL)value {
@@ -101,6 +107,7 @@ static UIButton* _IACOverlayButton = NULL;
     
     if (_IACViewControllerOverlayIsOn) {
         _overlayViewController.view.hidden = false;
+        
     } else {
         _overlayViewController.view.hidden = true;
     }

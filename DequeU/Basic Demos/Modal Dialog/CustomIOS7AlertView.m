@@ -12,6 +12,7 @@
 #import "CustomIOS7AlertView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <DQA11y/DQA11y.h>
+#import "IACViewController.h"
 
 
 #define kCustomIOS7DefaultButtonColor [UIColor colorWithRed:67.0f/255.0f green:67.0f/255.0f blue:67.0f/255.0f alpha:1.0f]
@@ -119,8 +120,17 @@ CGFloat buttonSpacerHeight = 0;
 					 }
 					 completion:NULL
      ];
+    
+    UIViewController* _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
+    
+    _overlayViewForModal = _overlayViewController.view;
+    _overlayViewForModal.accessibilityElementsHidden = YES;
+    
+    if([IACViewController overlayIsOn]) {
+        [self addSubview:_overlayViewForModal];
+    }
+    
 }
-
 + (CustomIOS7AlertView *) alertWithTitle:(NSString *)title message:(NSString *)message
 {
   CustomIOS7AlertView* alertView = [[CustomIOS7AlertView alloc] init];
@@ -203,6 +213,8 @@ CGFloat buttonSpacerHeight = 0;
                          [self removeFromSuperview];
 					 }
 	 ];
+    
+    [_overlayViewForModal removeFromSuperview];
 }
 
 - (void)setSubView: (UIView *)subView

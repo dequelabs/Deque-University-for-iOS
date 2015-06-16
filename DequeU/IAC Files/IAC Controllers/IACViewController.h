@@ -22,10 +22,12 @@
  */
 + (UIImage*)getSightedIcon:(BOOL)isOn;
 
+//! States whether the overlay is on or not.
+/*! \returns a BOOL, stating if the overlay is on. */
++ (BOOL)overlayIsOn;
+
 //! Helper function for turning the VoiceOver simulation on/off.
-/*!
- * \param value is a BOOL, indicating if the simulation should be on or off.
- */
+/*! \param value is a BOOL, indicating if the simulation should be on or off. */
 + (void)setOverlayOn:(BOOL)value;
 
 //! Calls setOverlayOn to turn the VoiceOver simulation on or off.
