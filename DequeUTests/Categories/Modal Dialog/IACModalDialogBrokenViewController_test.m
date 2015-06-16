@@ -9,9 +9,12 @@
 
 #import <XCTest/XCTest.h>
 #import "IACModalDialogBrokenViewController.h"
-#import "IACModalDialogViewController.h"
 #import <DQA11y/DQA11y.h>
 #import "DEQAsserts.h"
+
+#define MAIL_TO_INDEX 0
+#define VISIT_WEBSITE_INDEX 1
+#define CLOSE_INDEX 2
 
 @interface IACModalDialogueBrokenViewController_test : XCTestCase {
     @private
@@ -33,12 +36,12 @@
     XCTAssert([_viewController information:self]);
     
 }
-/*
+
 - (void)testButtonClick {
-    DEQAssertStringEqual(@"mailto:chris.mcmeeking@deque.com", [_viewController clickedButton:_viewController.modalViewController.email_deque]);
-    DEQAssertStringEqual(@"http://www.deque.com", [_viewController clickedButton:_viewController.modalViewController.visit_website]);
-    DEQAssertEmptyString([_viewController clickedButton:_viewController.modalViewController.close]);
-}*/
+    DEQAssertStringEqual(@"mailto:chris.mcmeeking@deque.com", [_viewController getURLFromIndex:MAIL_TO_INDEX]);
+    DEQAssertStringEqual(@"http://www.deque.com", [_viewController getURLFromIndex:VISIT_WEBSITE_INDEX]);
+    DEQAssertEmptyString([_viewController getURLFromIndex:CLOSE_INDEX]);
+}
 
 
 

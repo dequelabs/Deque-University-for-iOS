@@ -7,6 +7,7 @@
 //
 #import "regex.h"
 #import "IACFormsValidationFixedViewController.h"
+#import "CustomIOS7AlertView.h"
 #import <DQA11y/DQA11y.h>
 #import "IACConstants.h"
 #import "IACUtilities.h"
@@ -14,6 +15,7 @@
 @interface IACFormsValidationFixedViewController ()
 
 @property UIColor* backgroundColorView;
+
 
 @end
 

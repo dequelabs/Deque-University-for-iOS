@@ -8,52 +8,66 @@
 
 #import "IACModalDialogBrokenViewController.h"
 
+#define MAIL_TO_INDEX 0
+#define VISIT_WEBSITE_INDEX 1
+
+@interface IACModalDialogBrokenViewController ()<CustomIOS7AlertViewDelegate>
+
+@end
+
 @implementation IACModalDialogBrokenViewController
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     [super viewDidLoad];
-    
-    //set up _iWouldLikeToLearnMoreLink
-    [_iWouldLikeToLearnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
-    
-    //set up modal dialog
-    _modalViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]]
-                           instantiateViewControllerWithIdentifier:@"modal"];
-    
-    [self.view insertSubview:_modalViewController.view atIndex:1];
-    _modalViewController.view.hidden = YES; //modal dialog closed by default
-    
-    //set up buttons on modal dialog
-    [_modalViewController.email_deque addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchDown];
-    [_modalViewController.visit_website addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchDown];
-    [_modalViewController.close addTarget:self action:@selector(clickedButton:) forControlEvents:UIControlEventTouchDown];
 }
 
 - (BOOL)information:(id)sender {
-    _modalViewController.view.hidden = NO; //open modal dialog
+    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
+                                                                 message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
+    
+    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
+                                NSLocalizedString(@"ALERT_BUTTON_VISIT", nil),
+                                NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
+                                nil]];
+    
+    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
+                                                                                green:77.0f/255.0f
+                                                                                 blue:94.0f/255.0f
+                                                                                alpha:1.0f],
+                                [UIColor colorWithRed:0.0f
+                                                green:0.5f
+                                                 blue:1.0f
+                                                alpha:1.0f],nil]];
+    
+    [alertView setDelegate:self];
+    
+    [alertView show];
 
-    if(![_modalViewController.view accessibilityElementIsFocused]){
-        return TRUE;
+    if(![alertView accessibilityElementIsFocused]) {
+        return YES;
     }
-    return FALSE;
+    return NO;
 }
 
--(NSString*)clickedButton:(id)sender {
-    UIButton* button = (UIButton*)sender;
+- (NSString*) getURLFromIndex: (NSInteger)buttonIndex {
     NSString* URL;
-    
-    _modalViewController.view.hidden = YES; //close modal dialog
-    
-    if(button == _modalViewController.email_deque) {
+    if(buttonIndex == MAIL_TO_INDEX) {
         URL = @"mailto:chris.mcmeeking@deque.com";
-    } else if(button == _modalViewController.visit_website) {
+        
+    } else if(buttonIndex == VISIT_WEBSITE_INDEX) {
         URL = @"http://www.deque.com";
-    }
-    if(![URL isEqual:NULL]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
+        
     }
     return URL;
 }
 
-@end
+//Function in CustomIOS7AlertView
+- (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
+{
+    NSString* URL = [self getURLFromIndex: buttonIndex];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
+    
+    [alertView close];
+}
 
+@end

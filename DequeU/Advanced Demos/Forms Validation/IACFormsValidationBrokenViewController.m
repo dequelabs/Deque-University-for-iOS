@@ -9,6 +9,7 @@
 #import "regex.h"
 #import "IACFormsValidationBrokenViewController.h"
 #import "IACFormsValidationFixedViewController.h"
+#import "CustomIOS7AlertView.h"
 
 @interface IACFormsValidationBrokenViewController()
 

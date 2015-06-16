@@ -26,9 +26,6 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cLK-3h-EJ3">
                                                 <rect key="frame" x="145" y="10" width="300" height="118"/>
-                                                <accessibility key="accessibilityConfiguration" label="logo, Deque Systems">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cLK-3h-EJ3" secondAttribute="height" multiplier="718:283" id="cFo-Ap-lbC"/>
                                                 </constraints>
@@ -169,66 +166,51 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtc-Ww-Plb" customClass="DQWrapperView">
-                                                <rect key="frame" x="177" y="50" width="210" height="22"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-PT-7EY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
-                                                        <accessibility key="accessibilityConfiguration" label="">
-                                                            <accessibilityTraits key="traits" none="YES" link="YES"/>
-                                                        </accessibility>
-                                                        <state key="normal">
-                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="information:" destination="gV3-jh-lAw" eventType="touchUpInside" id="J5m-wo-gJf"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to learn more" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-le-mMW" customClass="DQLabel">
-                                                        <rect key="frame" x="27" y="0.0" width="183" height="22"/>
-                                                        <accessibility key="accessibilityConfiguration">
-                                                            <bool key="isElement" value="NO"/>
-                                                        </accessibility>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" priority="750" constant="311" id="OOQ-b3-eTD"/>
-                                                            <constraint firstAttribute="height" constant="66" id="j4t-Ak-zVL"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="default">
-                                                            <mask key="constraints">
-                                                                <exclude reference="OOQ-b3-eTD"/>
-                                                                <exclude reference="j4t-Ak-zVL"/>
-                                                            </mask>
-                                                        </variation>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-PT-7EY">
+                                                <rect key="frame" x="192" y="50" width="22" height="22"/>
+                                                <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
+                                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                                </accessibility>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="information:" destination="gV3-jh-lAw" eventType="touchUpInside" id="J5m-wo-gJf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-le-mMW" customClass="DQLabel">
+                                                <rect key="frame" x="219" y="50" width="152" height="22"/>
                                                 <accessibility key="accessibilityConfiguration">
-                                                    <bool key="isElement" value="YES"/>
+                                                    <bool key="isElement" value="NO"/>
                                                 </accessibility>
                                                 <constraints>
-                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="top" secondItem="xtc-Ww-Plb" secondAttribute="top" id="0Gc-tS-fuB"/>
-                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="bottom" secondItem="JDt-PT-7EY" secondAttribute="bottom" id="7rH-mK-TsZ"/>
-                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="top" secondItem="JDt-PT-7EY" secondAttribute="top" id="LDO-PS-70Y"/>
-                                                    <constraint firstAttribute="trailing" secondItem="7dz-le-mMW" secondAttribute="trailing" id="U5c-mR-bwu"/>
-                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="centerY" secondItem="JDt-PT-7EY" secondAttribute="centerY" id="aD8-mJ-Vlw"/>
-                                                    <constraint firstItem="JDt-PT-7EY" firstAttribute="leading" secondItem="xtc-Ww-Plb" secondAttribute="leading" id="bNw-gc-9aP"/>
-                                                    <constraint firstAttribute="bottom" secondItem="7dz-le-mMW" secondAttribute="bottom" id="kRG-Mr-eKM"/>
-                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="leading" secondItem="JDt-PT-7EY" secondAttribute="trailing" constant="5" id="xdt-MM-rJo"/>
+                                                    <constraint firstAttribute="width" priority="750" constant="311" id="OOQ-b3-eTD"/>
+                                                    <constraint firstAttribute="height" constant="66" id="j4t-Ak-zVL"/>
                                                 </constraints>
-                                            </view>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="OOQ-b3-eTD"/>
+                                                        <exclude reference="j4t-Ak-zVL"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="7dz-le-mMW" firstAttribute="centerX" secondItem="7cK-cv-U2Z" secondAttribute="centerX" id="1o1-Is-i9y"/>
+                                            <constraint firstItem="JDt-PT-7EY" firstAttribute="centerY" secondItem="7dz-le-mMW" secondAttribute="centerY" id="1HE-O2-BYq"/>
+                                            <constraint firstAttribute="centerX" secondItem="7dz-le-mMW" secondAttribute="centerX" id="28x-D9-eRs"/>
                                             <constraint firstItem="lFH-lC-byi" firstAttribute="leading" secondItem="7cK-cv-U2Z" secondAttribute="leading" constant="10" id="2wT-zg-8Hq"/>
-                                            <constraint firstAttribute="bottom" secondItem="xtc-Ww-Plb" secondAttribute="bottom" constant="20" id="GJ5-ZA-6xa"/>
                                             <constraint firstAttribute="centerX" secondItem="lFH-lC-byi" secondAttribute="centerX" id="Jhe-QG-enc"/>
                                             <constraint firstItem="lFH-lC-byi" firstAttribute="leading" secondItem="7cK-cv-U2Z" secondAttribute="leading" constant="10" id="Ltg-og-RIY"/>
+                                            <constraint firstItem="7dz-le-mMW" firstAttribute="top" secondItem="lFH-lC-byi" secondAttribute="bottom" constant="20" id="W1l-ag-d2v"/>
+                                            <constraint firstItem="JDt-PT-7EY" firstAttribute="top" secondItem="7dz-le-mMW" secondAttribute="top" id="auK-6E-bDp"/>
                                             <constraint firstItem="lFH-lC-byi" firstAttribute="top" secondItem="7cK-cv-U2Z" secondAttribute="top" constant="10" id="bF9-Nx-p46"/>
-                                            <constraint firstItem="xtc-Ww-Plb" firstAttribute="top" secondItem="lFH-lC-byi" secondAttribute="bottom" constant="20" id="vJt-m0-JEg"/>
+                                            <constraint firstItem="JDt-PT-7EY" firstAttribute="bottom" secondItem="7dz-le-mMW" secondAttribute="bottom" id="lY8-Fj-BIQ"/>
+                                            <constraint firstItem="7dz-le-mMW" firstAttribute="leading" secondItem="JDt-PT-7EY" secondAttribute="trailing" constant="5" id="ngx-tb-yPg"/>
+                                            <constraint firstAttribute="bottom" secondItem="7dz-le-mMW" secondAttribute="bottom" constant="20" id="zc3-HM-VC0"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -318,21 +300,18 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-fM-gpO" customClass="DQWrapperView">
-                                                <rect key="frame" x="177" y="50" width="210" height="22"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-fM-gpO">
+                                                <rect key="frame" x="192" y="50" width="179" height="22"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I would like to learn more" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg" customClass="DQLabel">
-                                                        <rect key="frame" x="27" y="0.0" width="183" height="22"/>
-                                                        <accessibility key="accessibilityConfiguration">
-                                                            <bool key="isElement" value="NO"/>
-                                                        </accessibility>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg">
+                                                        <rect key="frame" x="27" y="0.0" width="152" height="22"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyC-TX-hUu">
                                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
-                                                        <accessibility key="accessibilityConfiguration" hint="Opens a modal dialog" label="">
+                                                        <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
                                                             <accessibilityTraits key="traits" none="YES" link="YES"/>
                                                         </accessibility>
                                                         <state key="normal">
@@ -344,7 +323,7 @@
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" hint="" label="">
+                                                <accessibility key="accessibilityConfiguration" label="Open a modal dialog">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                                 <constraints>
@@ -441,7 +420,7 @@
         <!--Empty Modal-->
         <scene sceneID="EqP-tc-dzS">
             <objects>
-                <viewController storyboardIdentifier="modal" title="Empty Modal" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yzz-GV-CKs" customClass="IACModalDialogViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccessibleModal" title="Empty Modal" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yzz-GV-CKs" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y9Z-35-hmp"/>
                         <viewControllerLayoutGuide type="bottom" id="7ys-6r-uO0"/>
@@ -449,147 +428,8 @@
                     <view key="view" contentMode="scaleToFill" id="tW4-gc-8nF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-CK-ipQ">
-                                <rect key="frame" x="30" y="182" width="540" height="236"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibO-33-TiI" customClass="DQWrapperView">
-                                        <rect key="frame" x="1" y="107" width="538" height="42"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxg-jB-oJN" customClass="DQButton">
-                                                <rect key="frame" x="233" y="5" width="72" height="32"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <state key="normal" title="E-mail us!">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.1764705882" green="0.41960784309999999" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <bool key="isElement" value="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" secondItem="fxg-jB-oJN" secondAttribute="height" constant="10" id="3od-dL-hEe"/>
-                                            <constraint firstAttribute="bottom" secondItem="fxg-jB-oJN" secondAttribute="bottom" id="93T-PF-Ri0"/>
-                                            <constraint firstItem="fxg-jB-oJN" firstAttribute="top" secondItem="ibO-33-TiI" secondAttribute="top" constant="5" id="9kg-j7-dsc"/>
-                                            <constraint firstItem="fxg-jB-oJN" firstAttribute="top" secondItem="ibO-33-TiI" secondAttribute="top" id="V6s-Mg-dNL"/>
-                                            <constraint firstAttribute="centerY" secondItem="fxg-jB-oJN" secondAttribute="centerY" id="XSi-fA-Zze"/>
-                                            <constraint firstAttribute="bottom" secondItem="fxg-jB-oJN" secondAttribute="bottom" constant="5" id="gfx-cz-l8S"/>
-                                            <constraint firstAttribute="centerX" secondItem="fxg-jB-oJN" secondAttribute="centerX" id="vm1-HJ-LxD"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="V6s-Mg-dNL"/>
-                                                <exclude reference="93T-PF-Ri0"/>
-                                                <exclude reference="3od-dL-hEe"/>
-                                                <exclude reference="XSi-fA-Zze"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9M-s9-J1X" customClass="DQWrapperView">
-                                        <rect key="frame" x="1" y="150" width="538" height="42"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-WS-wiD" customClass="DQButton">
-                                                <rect key="frame" x="206" y="5" width="126" height="32"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <state key="normal" title="Visit our Website!">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.1058823529" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <bool key="isElement" value="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="n4n-WS-wiD" secondAttribute="bottom" constant="5" id="2i2-0q-SmR"/>
-                                            <constraint firstItem="n4n-WS-wiD" firstAttribute="top" secondItem="a9M-s9-J1X" secondAttribute="top" constant="5" id="4gF-up-DDV"/>
-                                            <constraint firstAttribute="centerX" secondItem="n4n-WS-wiD" secondAttribute="centerX" id="gWQ-cM-jYz"/>
-                                            <constraint firstItem="n4n-WS-wiD" firstAttribute="height" secondItem="a9M-s9-J1X" secondAttribute="height" constant="10" id="qbF-kI-7PJ"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="qbF-kI-7PJ"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFw-eu-IiH" customClass="DQWrapperView">
-                                        <rect key="frame" x="1" y="193" width="538" height="42"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkb-jg-WL1" customClass="DQButton">
-                                                <rect key="frame" x="248" y="5" width="42" height="32"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <state key="normal" title="Close">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <bool key="isElement" value="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstItem="lkb-jg-WL1" firstAttribute="height" secondItem="PFw-eu-IiH" secondAttribute="height" constant="10" id="1CA-0U-bJx"/>
-                                            <constraint firstAttribute="centerX" secondItem="lkb-jg-WL1" secondAttribute="centerX" id="C9H-Ef-K2a"/>
-                                            <constraint firstItem="lkb-jg-WL1" firstAttribute="top" secondItem="PFw-eu-IiH" secondAttribute="top" constant="5" id="OOy-IN-xjm"/>
-                                            <constraint firstAttribute="bottom" secondItem="lkb-jg-WL1" secondAttribute="bottom" constant="5" id="XnI-kW-sOt"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="1CA-0U-bJx"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-Kg-n0Q" customClass="DQLabel">
-                                        <rect key="frame" x="11" y="40" width="518" height="62"/>
-                                        <string key="text">If you would like to learn more about accessibility and how Deque's Native iOS Accessibility Analysis tools can help you, visit our webpage or send us an e-mail.</string>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6A-ZR-zyp" customClass="DQLabel">
-                                        <rect key="frame" x="1" y="10" width="538" height="20"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="PFw-eu-IiH" firstAttribute="top" secondItem="a9M-s9-J1X" secondAttribute="bottom" constant="1" id="3cd-ga-PaZ"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="leading" secondItem="a9M-s9-J1X" secondAttribute="leading" id="6er-lV-JAP"/>
-                                    <constraint firstItem="rX3-Kg-n0Q" firstAttribute="top" secondItem="x6A-ZR-zyp" secondAttribute="bottom" constant="10" id="9TZ-ot-qc9"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="trailing" secondItem="a9M-s9-J1X" secondAttribute="trailing" id="D3h-Ug-Acq"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="leading" secondItem="ibO-33-TiI" secondAttribute="leading" id="I9c-7C-Rhv"/>
-                                    <constraint firstItem="a9M-s9-J1X" firstAttribute="top" secondItem="ibO-33-TiI" secondAttribute="bottom" constant="1" id="IgG-sU-cQC"/>
-                                    <constraint firstAttribute="bottom" secondItem="PFw-eu-IiH" secondAttribute="bottom" constant="1" id="L6l-Br-Or5"/>
-                                    <constraint firstItem="rX3-Kg-n0Q" firstAttribute="trailing" secondItem="x6A-ZR-zyp" secondAttribute="trailing" constant="-10" id="Mel-G2-Noa"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="trailing" secondItem="PFw-eu-IiH" secondAttribute="trailing" id="PNd-TF-iG6"/>
-                                    <constraint firstItem="ibO-33-TiI" firstAttribute="top" secondItem="rX3-Kg-n0Q" secondAttribute="bottom" constant="5" id="eJ1-7G-7Id"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="trailing" secondItem="ibO-33-TiI" secondAttribute="trailing" id="hMx-43-DY2"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="top" secondItem="7zc-CK-ipQ" secondAttribute="top" constant="10" id="l9f-ip-5Zy"/>
-                                    <constraint firstItem="rX3-Kg-n0Q" firstAttribute="leading" secondItem="x6A-ZR-zyp" secondAttribute="leading" constant="10" id="maP-EB-zY7"/>
-                                    <constraint firstAttribute="trailing" secondItem="x6A-ZR-zyp" secondAttribute="trailing" constant="1" id="q0N-Cj-cMl"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="leading" secondItem="7zc-CK-ipQ" secondAttribute="leading" constant="1" id="s7K-Zi-byp"/>
-                                    <constraint firstItem="x6A-ZR-zyp" firstAttribute="leading" secondItem="PFw-eu-IiH" secondAttribute="leading" id="wca-Lx-dE4"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="7zc-CK-ipQ" secondAttribute="width" constant="60" id="eAW-og-dUr"/>
-                            <constraint firstAttribute="centerX" secondItem="7zc-CK-ipQ" secondAttribute="centerX" id="mLi-BN-BgC"/>
-                            <constraint firstAttribute="centerY" secondItem="7zc-CK-ipQ" secondAttribute="centerY" id="zI3-fK-RDg"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="close" destination="lkb-jg-WL1" id="vvW-81-QvY"/>
-                        <outlet property="email_deque" destination="fxg-jB-oJN" id="vV0-R3-yMq"/>
-                        <outlet property="visit_website" destination="n4n-WS-wiD" id="KSg-Ny-OUM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eri-5b-hBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
