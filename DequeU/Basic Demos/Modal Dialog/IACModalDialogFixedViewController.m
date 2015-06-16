@@ -51,14 +51,26 @@
     }
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.OpenAModalDialog);
+    self.accessibilityElementsHidden = NO;
+    self.navigationController.accessibilityElementsHidden = NO;
     });
 
     return URL;
 }
 
 - (BOOL)information:(id)sender {
-    [self.navigationController presentViewController:_modalViewController animated:YES completion:nil];
-    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalViewController.view);
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        [self presentViewController:_modalViewController animated:YES completion:nil];
+        self.accessibilityElementsHidden = YES;
+        self.navigationController.accessibilityElementsHidden = YES;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalViewController.view);
+        });
+    } else {
+        [self.navigationController presentViewController:_modalViewController animated:YES completion:nil];
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalViewController.view);
+    }
     
     if(![_modalViewController.view accessibilityElementIsFocused]){
         return FALSE;

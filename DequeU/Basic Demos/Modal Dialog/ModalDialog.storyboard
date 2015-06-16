@@ -55,7 +55,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-5P-T3f">
-                                        <rect key="frame" x="5" y="240" width="590" height="159"/>
+                                        <rect key="frame" x="5" y="240" width="590" height="201"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility Issues" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-My-DpZ" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -64,8 +64,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-O5-vwS" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.</string>
+                                                <rect key="frame" x="20" y="35" width="560" height="146"/>
+                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.  "UIAccessibilityScreenChangedNotification" or "UIAccessibilityLayoutChangedNotification" both work well in changing focus when a modal dialog appears/disappears.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -143,7 +143,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-IL-vWx" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">When the dialog appears, VoiceOver does not focus on it, which then allows the user to tab the content behind it.  The VoiceOver user may never realize that the dialog box exists and will not receive any information from it.</string>
+                                                <string key="text">When the dialog appears, VoiceOver does not focus on it, which then allows the user to tab the content behind it.  The VoiceOver user may never realize that the dialog box exists.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -367,7 +367,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-7r-oKg" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="41"/>
-                                                <string key="text">VoiceOver now focuses on the dialog when it appears on the page and returns to the information button when the dialog is closed.</string>
+                                                <string key="text">Once the dialog is open, VoiceOver only focuses on the dialog until an action is taken.  Once closed, focus returns to the "Open a modal dialog" button.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -569,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eri-5b-hBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="1129"/>
+            <point key="canvasLocation" x="-77" y="1129"/>
         </scene>
     </scenes>
     <resources>
