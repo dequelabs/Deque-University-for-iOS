@@ -13,10 +13,10 @@
 //! The accessible (fixed) version of the Modal Dialog demonstration.
 @interface IACModalDialogFixedViewController : IACViewController {
 
-    IACModalDialogViewController* _modalViewController; ///< The viewController containing the modal dialog.
+    IACModalDialogViewController* modalViewController; ///< The viewController containing the modal dialog.
 }
 
-@property (readonly, weak, nonatomic) IACModalDialogViewController* modalViewController;
+
 @property (weak, nonatomic) IBOutlet UIView *OpenAModalDialog; ///< The view that holds the "Open a modal dialog" label and learnMoreLink.
 @property (weak, nonatomic) IBOutlet UIButton *learnMoreLink; ///< The button that opens the modal dialog.
 
@@ -28,7 +28,7 @@
  */
 - (BOOL)information:(id)sender;
 
-//! Will visit deque.com or open a mailto link, depending on the button pressed. Will close the Modal Dialog.
+//! Will visit a webpage or go to a mailto link, depending on the button pressed. Will close the Modal Dialog.
 /*!
  * \param sender is the id of the button pressed.
  * \returns an NSString of the URL the user visited (or nil if user pressed "Close"). Used for testing purposes.

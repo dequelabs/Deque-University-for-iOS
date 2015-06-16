@@ -31,7 +31,7 @@ static UIButton* _IACOverlayButton = NULL;
     
     //set up VoiceOver simulation button
     if (_IACOverlayButton == NULL) {
-        _IACOverlayButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _IACOverlayButton =  [UIButton buttonWithType:UIButtonTypeCustom];
         [_IACOverlayButton addTarget:[self class] action:@selector(toggleOverlayOn) forControlEvents:UIControlEventTouchUpInside];
         [_IACOverlayButton setFrame:CGRectMake(0, 0, 30, 21)];
     }

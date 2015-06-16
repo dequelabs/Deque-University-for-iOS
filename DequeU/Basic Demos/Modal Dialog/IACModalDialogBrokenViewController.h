@@ -16,9 +16,8 @@
     IACModalDialogViewController* _modalViewController; ///< The viewController containing the modal dialog.
 }
 
-@property (readonly, weak, nonatomic) IACModalDialogViewController* modalViewController;
+//@property (weak, nonatomic) IACModalDialogViewController* modalViewController;
 @property (weak, nonatomic) IBOutlet UIButton *iWouldLikeToLearnMoreLink; ///< The button that opens the modal dialog.
-@property (weak, nonatomic) IBOutlet DQWrapperView *wrapperView; ///< The view containing IWouldLikeToLearnMoreLink and descriptor label.
 
 //! Opens a modal dialog, but will not be focused.
 /*!
@@ -27,7 +26,7 @@
  */
 - (BOOL)information:(id)sender;
 
-//! Will visit deque.com or open a mailto link, depending on the button pressed. Will close the modal dialog.
+//! Will visit a webpage or go to a mailto link, depending on the button pressed. Will close the modal dialog.
 /*!
  * \param sender is the id of the button pressed.
  * \returns an NSString of the URL the user visited (or nil if user pressed "Close"). Used for testing purposes.

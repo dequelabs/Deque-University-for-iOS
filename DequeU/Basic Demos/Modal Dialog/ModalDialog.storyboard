@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -206,7 +205,7 @@
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Opens a modal dialog.">
+                                                <accessibility key="accessibilityConfiguration">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                                 <constraints>
@@ -269,7 +268,6 @@
                     <tabBarItem key="tabBarItem" title="Broken" image="DequeU_app_icon_broken" id="PgZ-sc-a2W"/>
                     <connections>
                         <outlet property="iWouldLikeToLearnMoreLink" destination="JDt-PT-7EY" id="kIk-7d-vBg"/>
-                        <outlet property="wrapperView" destination="xtc-Ww-Plb" id="AQH-Tl-RyX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LC-sh-WO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -346,7 +344,7 @@
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" hint="Opens a modal dialog." label="">
+                                                <accessibility key="accessibilityConfiguration" hint="" label="">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                                 <constraints>
@@ -452,18 +450,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.49999999999999961" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uI3-V7-occ">
-                                <rect key="frame" x="-4" y="20" width="608" height="580"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zc-CK-ipQ">
-                                <rect key="frame" x="25" y="182" width="550" height="236"/>
+                                <rect key="frame" x="30" y="182" width="540" height="236"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibO-33-TiI" customClass="DQWrapperView">
-                                        <rect key="frame" x="1" y="107" width="548" height="42"/>
+                                        <rect key="frame" x="1" y="107" width="538" height="42"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxg-jB-oJN" customClass="DQButton">
-                                                <rect key="frame" x="238" y="5" width="72" height="32"/>
+                                                <rect key="frame" x="233" y="5" width="72" height="32"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="E-mail us!">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -486,18 +480,18 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="3od-dL-hEe"/>
-                                                <exclude reference="93T-PF-Ri0"/>
                                                 <exclude reference="V6s-Mg-dNL"/>
+                                                <exclude reference="93T-PF-Ri0"/>
+                                                <exclude reference="3od-dL-hEe"/>
                                                 <exclude reference="XSi-fA-Zze"/>
                                             </mask>
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9M-s9-J1X" customClass="DQWrapperView">
-                                        <rect key="frame" x="1" y="150" width="548" height="42"/>
+                                        <rect key="frame" x="1" y="150" width="538" height="42"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-WS-wiD" customClass="DQButton">
-                                                <rect key="frame" x="211" y="5" width="126" height="32"/>
+                                                <rect key="frame" x="206" y="5" width="126" height="32"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="Visit our Website!">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -522,10 +516,10 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFw-eu-IiH" customClass="DQWrapperView">
-                                        <rect key="frame" x="1" y="193" width="548" height="42"/>
+                                        <rect key="frame" x="1" y="193" width="538" height="42"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkb-jg-WL1" customClass="DQButton">
-                                                <rect key="frame" x="253" y="5" width="42" height="32"/>
+                                                <rect key="frame" x="248" y="5" width="42" height="32"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="Close">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -550,14 +544,14 @@
                                         </variation>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rX3-Kg-n0Q" customClass="DQLabel">
-                                        <rect key="frame" x="11" y="40" width="528" height="62"/>
+                                        <rect key="frame" x="11" y="40" width="518" height="62"/>
                                         <string key="text">If you would like to learn more about accessibility and how Deque's Native iOS Accessibility Analysis tools can help you, visit our webpage or send us an e-mail.</string>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6A-ZR-zyp" customClass="DQLabel">
-                                        <rect key="frame" x="1" y="10" width="548" height="20"/>
+                                        <rect key="frame" x="1" y="10" width="538" height="20"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -584,21 +578,17 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="7zc-CK-ipQ" secondAttribute="centerX" id="3pr-Jy-78d"/>
-                            <constraint firstItem="uI3-V7-occ" firstAttribute="leading" secondItem="tW4-gc-8nF" secondAttribute="leadingMargin" constant="-20" id="F4c-En-7A4"/>
-                            <constraint firstItem="7zc-CK-ipQ" firstAttribute="width" secondItem="tW4-gc-8nF" secondAttribute="width" constant="-50" id="Fd3-fq-g4A"/>
-                            <constraint firstItem="uI3-V7-occ" firstAttribute="top" secondItem="Y9Z-35-hmp" secondAttribute="bottom" id="OMC-La-cGI"/>
-                            <constraint firstItem="7ys-6r-uO0" firstAttribute="top" secondItem="uI3-V7-occ" secondAttribute="bottom" id="OjJ-BF-eGG"/>
-                            <constraint firstAttribute="centerY" secondItem="7zc-CK-ipQ" secondAttribute="centerY" id="qcx-Dv-oq0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uI3-V7-occ" secondAttribute="trailing" constant="-20" id="wuI-l3-ABu"/>
+                            <constraint firstAttribute="width" secondItem="7zc-CK-ipQ" secondAttribute="width" constant="60" id="eAW-og-dUr"/>
+                            <constraint firstAttribute="centerX" secondItem="7zc-CK-ipQ" secondAttribute="centerX" id="mLi-BN-BgC"/>
+                            <constraint firstAttribute="centerY" secondItem="7zc-CK-ipQ" secondAttribute="centerY" id="zI3-fK-RDg"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="close" destination="lkb-jg-WL1" id="sva-3I-jna"/>
-                        <outlet property="email_deque" destination="fxg-jB-oJN" id="W0M-VN-SLa"/>
-                        <outlet property="visit_website" destination="n4n-WS-wiD" id="arS-me-yV0"/>
+                        <outlet property="close" destination="lkb-jg-WL1" id="vvW-81-QvY"/>
+                        <outlet property="email_deque" destination="fxg-jB-oJN" id="vV0-R3-yMq"/>
+                        <outlet property="visit_website" destination="n4n-WS-wiD" id="KSg-Ny-OUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eri-5b-hBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
