@@ -30,13 +30,13 @@
                                 NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
                                 nil]];
     
-    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
-                                                                                green:77.0f/255.0f
-                                                                                 blue:94.0f/255.0f
+    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:45.0f/255.0f
+                                                                                green:107.0f/255.0f
+                                                                                 blue:32.0f/255.0f
                                                                                 alpha:1.0f],
-                                [UIColor colorWithRed:0.0f
-                                                green:0.5f
-                                                 blue:1.0f
+                                [UIColor colorWithRed:2.0f/255.0f
+                                                green:27.0f/255.0f
+                                                 blue:63.0f/255.0f
                                                 alpha:1.0f],nil]];
     
     [alertView setDelegate:self];

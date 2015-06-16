@@ -11,9 +11,10 @@
 
 #import "CustomIOS7AlertView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <DQA11y/DQA11y.h>
 
 
-#define kCustomIOS7DefaultButtonColor [UIColor colorWithRed:0.670f green:0.670f blue:0.670f alpha:1.0f]
+#define kCustomIOS7DefaultButtonColor [UIColor colorWithRed:67.0f/255.0f green:67.0f/255.0f blue:67.0f/255.0f alpha:1.0f]
 
 const static CGFloat kCustomIOS7AlertViewDefaultButtonHeight       = 50;
 const static CGFloat kCustomIOS7AlertViewDefaultButtonSpacerHeight = 1;
@@ -128,9 +129,8 @@ CGFloat buttonSpacerHeight = 0;
   
   // Add some custom content to the alert view
   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, view.bounds.size.width - 40, 100)];
-  titleLabel.numberOfLines = 0;
   titleLabel.text = title;
-  titleLabel.font = [UIFont boldSystemFontOfSize:25.0f];
+  titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
   titleLabel.textAlignment = NSTextAlignmentCenter;
   [titleLabel sizeToFit];
   
@@ -145,7 +145,7 @@ CGFloat buttonSpacerHeight = 0;
 
   messageLabel.numberOfLines = 0;
   messageLabel.text = message;
-  messageLabel.font = [UIFont systemFontOfSize:18.0f];
+  messageLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
   messageLabel.textAlignment = NSTextAlignmentCenter;
   [messageLabel sizeToFit];
   

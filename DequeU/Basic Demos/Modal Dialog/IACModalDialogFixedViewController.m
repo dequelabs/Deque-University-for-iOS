@@ -7,12 +7,11 @@
 //
 
 #import "IACModalDialogFixedViewController.h"
-#import "CustomIOS7AlertView.h"
+#import "IACModalDialogViewController.h"
 
-#define MAIL_TO_INDEX 0
-#define VISIT_WEBSITE_INDEX 1
-
-@interface IACModalDialogFixedViewController ()<CustomIOS7AlertViewDelegate>
+@interface IACModalDialogFixedViewController () {
+    IACModalDialogViewController* _modalViewController;
+}
 
 @end
 
@@ -21,61 +20,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _modalViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+       _modalViewController.view.backgroundColor = [UIColor clearColor];
+    
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
+    
+    [_modalViewController.email_us_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    [_modalViewController.visit_our_website_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    [_modalViewController.close_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    
+    _modalViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+}
+
+-(NSString*)visitWebpage:(id)sender {
+    UIButton* button = (UIButton*)sender;
+    NSString* URL;
+    
+    [_modalViewController dismissViewControllerAnimated:YES completion:nil];
+    
+    if(button == _modalViewController.email_us_button) {
+        URL = @"mailto:chris.mcmeeking@deque.com";
+    } else if(button == _modalViewController.visit_our_website_button) {
+        URL = @"http://www.deque.com";
+    }
+    
+    if(![URL isEqualToString:nil]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
+    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.OpenAModalDialog);
+    });
+
+    return URL;
 }
 
 - (BOOL)information:(id)sender {
+    [self.navigationController presentViewController:_modalViewController animated:YES completion:nil];
+    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalViewController.view);
     
-    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
-                                                                 message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
-    
-    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_VISIT", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
-                                nil]];
-    
-    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
-                                                                                green:77.0f/255.0f
-                                                                                 blue:94.0f/255.0f
-                                                                                alpha:1.0f],
-                                [UIColor colorWithRed:0.0f
-                                                green:0.5f
-                                                 blue:1.0f
-                                                alpha:1.0f],nil]];
-    
-    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
-    modalViewControlelr.view.backgroundColor = [UIColor clearColor];
-    [modalViewControlelr setView:alertView];
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    [self.navigationController presentViewController:modalViewControlelr animated:YES completion:nil];
-    
-    [alertView setDelegate:self];
-    [alertView show];
-    
-    self.view.accessibilityElementsHidden = YES;
-    self.tabBarController.view.accessibilityElementsHidden = YES;
-    
-    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, alertView);
-    
-    if([alertView isHidden]){
+    if(![_modalViewController.view accessibilityElementIsFocused]){
         return FALSE;
     }
     return TRUE;
-}
-
-// Opens a mailto link if the "Contact us" button is pressed or deque.com if the "Visit Website" button is pressed.
-- (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {
-    if (buttonIndex == MAIL_TO_INDEX) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
-    } else if (buttonIndex == VISIT_WEBSITE_INDEX) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
-    }
-    
-    [alertView close];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    self.view.accessibilityElementsHidden = NO;
-    self.tabBarController.view.accessibilityElementsHidden = NO;
-    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, [[self learnMoreLink] superview]);
 }
 
 @end
