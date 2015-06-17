@@ -1,16 +1,17 @@
 //
 //  IACViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Chris McMeeking on 4/14/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
+#import <DQA11y/DQA11y.h>
 #import "IACViewController.h"
 #import "IACOverlayViewController.h"
-#import <DQA11y/DQA11y.h>
 #import "IACUtilities.h"
 #import "IACConstants.h"
+#import "CustomIOS7AlertView.h"
 
 #define OVERLAY_IMAGE_NAME @"DequeU_logo_1024px"
 
@@ -21,6 +22,7 @@ static UIButton* _IACOverlayButton = NULL;
 @interface IACViewController ()
 
 @property IACOverlayViewController* overlayViewController;
+@property CustomIOS7AlertView* overlayViewForModal;
 
 @end
 
@@ -29,6 +31,7 @@ static UIButton* _IACOverlayButton = NULL;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //set up VoiceOver simulation button
     if (_IACOverlayButton == NULL) {
         _IACOverlayButton =  [UIButton buttonWithType:UIButtonTypeCustom];
         [_IACOverlayButton addTarget:[self class] action:@selector(toggleOverlayOn) forControlEvents:UIControlEventTouchUpInside];
@@ -67,14 +70,18 @@ static UIButton* _IACOverlayButton = NULL;
     return NO;
 }
 
-//createOverlayView creates the unsighted overlay. The overlay can then be toggled on and off by the user.
+//Creates the physical overlay. The overlay can then be toggled on and off by the user.
 - (void)createOverlayView {
     _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
     
     _overlayViewController.view.accessibilityElementsHidden = YES;
 
-    [self.view addSubview: _overlayViewController.view];
+    [self.splitViewController.view addSubview: _overlayViewController.view];
     _overlayViewController.view.hidden = true;
+}
+
++ (BOOL)overlayIsOn {
+    return _IACViewControllerOverlayIsOn;
 }
 
 + (void)setOverlayOn:(BOOL)value {
@@ -91,6 +98,7 @@ static UIButton* _IACOverlayButton = NULL;
     return isOn ? [UIImage imageNamed:@"DequeU_app_icon_unsighted"] : [UIImage imageNamed:@"DequeU_app_icon_sighted"];
 }
 
+//Sets the overlay when the viewController loads if VoiceOver Simulation is on.
 - (void)observeOverlaySetting {
     
     _IACViewControllerActiveInstance = self;
@@ -99,6 +107,7 @@ static UIButton* _IACOverlayButton = NULL;
     
     if (_IACViewControllerOverlayIsOn) {
         _overlayViewController.view.hidden = false;
+        
     } else {
         _overlayViewController.view.hidden = true;
     }

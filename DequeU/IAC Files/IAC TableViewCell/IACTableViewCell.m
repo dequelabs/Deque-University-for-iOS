@@ -1,6 +1,6 @@
 //
 //  IACTableViewCell.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 5/22/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -12,9 +12,7 @@
 
 @implementation IACTableViewCell
 
-/** 
- * Makes the accessibility label for the Table View Cell dynamic - it alerts the user if the overlay switch is on or not.
- */
+//Makes the accessibility label for the Table View Cell dynamic - it alerts the user if the VoiceOver switch is on or not.
 - (NSString*) accessibilityLabel {
     
     NSString* accessibilityLabelAlert;

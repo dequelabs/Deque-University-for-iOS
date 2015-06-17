@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  DequeApp
+//  Deque University for iOS
 //
 //  Created by Alistair Barrell on 2/27/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.

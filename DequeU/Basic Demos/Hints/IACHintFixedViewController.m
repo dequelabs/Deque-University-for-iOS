@@ -1,6 +1,6 @@
 //
 //  DQFixedHintViewController.m
-//  iosFireEyesInstructions
+//  Deque University for iOS
 //
 //  Created by Catherine Fisher on 2/12/14.
 //  Copyright (c) 2014 Deque Systems. All rights reserved.
@@ -33,12 +33,6 @@
     [_buttonSinginInTheRain addTarget:self action:@selector(playMusic:) forControlEvents:UIControlEventTouchUpInside];
     
 }
-
-
-/**
- * Music Player functionality.
- * The phone/tablet will play the correct music based on which button is pressed
- */
 
 - (NSString*)playMusic:(id)sender {
     

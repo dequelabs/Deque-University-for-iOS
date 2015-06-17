@@ -1,6 +1,6 @@
 //
 //  IACAboutDequeViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Chris McMeeking on 4/16/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -21,14 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ///< load the contact us button
+    // Load the "Contact Us" button
     [self.buttonContactUs addTarget:self action:@selector(loadDequeWebPage) forControlEvents:UIControlEventTouchUpInside];
     
-    self.buttonContactUs.underlined = YES;
+    self.buttonContactUs.underlined = YES; // Underline the button - this is a DQButton setting.
 }
 
 - (void)loadDequeWebPage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]]; ///< load the deque web page in Safari
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:DEQUE_URL]]; // Load the Deque web page in Safari.
 }
 
 @end

@@ -1,15 +1,17 @@
 //
 //  IACModalDialogFixedViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 5/26/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
 //
 
 #import "IACModalDialogFixedViewController.h"
-#import "CustomIOS7AlertView.h"
 
-@interface IACModalDialogFixedViewController ()<CustomIOS7AlertViewDelegate>
+@interface IACModalDialogFixedViewController() {
+    
+    IACModalDialogViewController* _modalDialogViewController; ///< The view controller containing the modal dialog.
+}
 
 @end
 
@@ -18,70 +20,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _modalDialogViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+    _modalDialogViewController.view.backgroundColor = [UIColor clearColor];
+    
+    //set up learnMoreLink button
     [_learnMoreLink.superview addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(information:)]];
+    
+    //set up buttons on modal dialog
+    [_modalDialogViewController.email_us_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    [_modalDialogViewController.visit_our_website_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    [_modalDialogViewController.close_button addTarget:self action:@selector(visitWebpage:) forControlEvents:UIControlEventTouchDown];
+    
+    //set up presentation style
+    _modalDialogViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+
 }
 
-/**
- * creates the modal dialog, and posts an accessibility notification that the screen has changed
- * Also returns whether the modal dialog is focused or not for testing purposes
- */
-
-- (BOOL)information:(id)sender {
+- (void)information:(id)sender {
     
-    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
-                                                                 message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
+    //open modal dialog
+    [self.splitViewController presentViewController:_modalDialogViewController animated:YES completion:nil];
     
-    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_VISIT", nil),
-                                NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
-                                nil]];
-    
-    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
-                                                                                green:77.0f/255.0f
-                                                                                 blue:94.0f/255.0f
-                                                                                alpha:1.0f],
-                                [UIColor colorWithRed:0.0f
-                                                green:0.5f
-                                                 blue:1.0f
-                                                alpha:1.0f],nil]];
-    
-    UIViewController* modalViewControlelr = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
-    modalViewControlelr.view.backgroundColor = [UIColor clearColor];
-    [modalViewControlelr setView:alertView];
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    [self.navigationController presentViewController:modalViewControlelr animated:YES completion:nil];
-    
-    [alertView setDelegate:self];
-    [alertView show];
-    
-    self.view.accessibilityElementsHidden = YES;
-    self.tabBarController.view.accessibilityElementsHidden = YES;
-    
-    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, alertView);
-    
-    if([alertView isHidden]){
-        return FALSE;
-    }
-    return TRUE;
+    //focus on "Thank You" label - needs delay to be sure it is focused.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalDialogViewController.view);
+    });
 }
 
-/**
- * This function either opens safari or a mailto dialog depending on which button on the
- * modal dialog is pressed
- */
-
-- (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex {
-    if (buttonIndex == 0) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:chris.mcmeeking@deque.com"]];
-    } else if (buttonIndex == 1) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.deque.com"]];
-    }
+-(NSString*)visitWebpage:(id)sender {
+    UIButton* button = (UIButton*)sender;
+    NSString* URL;
     
-    [alertView close];
     [self dismissViewControllerAnimated:YES completion:nil];
-    self.view.accessibilityElementsHidden = NO;
-    self.tabBarController.view.accessibilityElementsHidden = NO;
-    UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, [[self learnMoreLink] superview]);
+    
+    //focus on OpenAModalDialog - needs delay to be sure it is focused.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, self.OpenAModalDialog);
+    });
+    
+    if(button == _modalDialogViewController.email_us_button) {
+        URL = @"mailto:chris.mcmeeking@deque.com";
+    } else if(button == _modalDialogViewController.visit_our_website_button) {
+        URL = @"http://www.deque.com";
+    }
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL]];
+    
+    return URL;
 }
+
 
 @end

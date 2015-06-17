@@ -1,6 +1,6 @@
 //
 //  IACTabBarController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Chris McMeeking on 4/14/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -20,21 +20,43 @@
     [super viewDidLoad];
     self.delegate = self;
     
+    //these are defined in DQTabBarController
     self.colorDimmed = [IACUtilities colorWithHexString:BLUE];
     self.colorDimmedDarkened = [IACUtilities colorWithHexString:BLUE];
-    self.colorSelected = [IACUtilities colorWithHexString:ORANGE];
-    self.colorSelectedDarkened = [IACUtilities colorWithHexString:ORANGE];
+    self.colorSelected = [IACUtilities colorWithHexString:GREEN];
+    self.colorSelectedDarkened = [IACUtilities colorWithHexString:GREEN];
     self.colorTabBar = [IACUtilities colorWithHexString:LIGHT_BLUE];
     self.colorTabBarDarkened = [IACUtilities colorWithHexString:LIGHT_BLUE];
     self.translucentDarkened = NO;
     self.translucentUndarkened = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    //Changes font size and color of each element in the tab bar
+    for(UITabBarItem* item in self.tabBar.items) {
+        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                      [IACUtilities colorWithHexString:BLUE], NSForegroundColorAttributeName,
+                                      [UIFont fontWithName:@"Helvetica" size:15],NSFontAttributeName, nil]
+                            forState:UIControlStateNormal];
+    }
+}
+
+- (void)viewWillLayoutSubviews {
+    
+    //changing height of tab bar
+    CGRect tabFrame = self.tabBar.frame;
+    tabFrame.size.height = 55;
+    tabFrame.origin.y = self.view.frame.size.height - 55;
+    self.tabBar.frame = tabFrame;
+}
+
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
  
     UINavigationItem* navigationItem = [self.navigationController.navigationBar.items objectAtIndex:1];
     
-    navigationItem.title = viewController.title;
+    navigationItem.title = viewController.title; //Updates the view controller's title
 }
 
 /**

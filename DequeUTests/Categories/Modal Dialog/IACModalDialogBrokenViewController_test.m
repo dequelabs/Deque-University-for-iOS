@@ -1,6 +1,6 @@
 //
 //  IACModalDialogueBrokenViewController_test.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Alistair Barrell on 5/29/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -33,11 +33,13 @@
 }
 
 - (void)testInformationMethod {
+    DEQAssertEmptyString(_viewController.wrapperView.accessibilityHint);
+    XCTAssert(_viewController.wrapperView.isAccessibilityElement);
     XCTAssert([_viewController information:self]);
     
 }
 
-- (void)testButtonClick {
+- (void)testClickedButton {
     DEQAssertStringEqual(@"mailto:chris.mcmeeking@deque.com", [_viewController getURLFromIndex:MAIL_TO_INDEX]);
     DEQAssertStringEqual(@"http://www.deque.com", [_viewController getURLFromIndex:VISIT_WEBSITE_INDEX]);
     DEQAssertEmptyString([_viewController getURLFromIndex:CLOSE_INDEX]);

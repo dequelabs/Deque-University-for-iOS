@@ -9,7 +9,7 @@
         <!--Modal Dialog-->
         <scene sceneID="uHB-eh-MlO">
             <objects>
-                <viewController storyboardIdentifier="Modal Dialog" title="Modal Dialog" automaticallyAdjustsScrollViewInsets="NO" id="UZk-ba-3X8" customClass="IACViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Modal Dialog" title="Modal Dialog" automaticallyAdjustsScrollViewInsets="NO" id="UZk-ba-3X8" customClass="IACModalDialogAboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="meq-Jm-n4D"/>
                         <viewControllerLayoutGuide type="bottom" id="l7o-4A-dBP"/>
@@ -55,7 +55,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-5P-T3f">
-                                        <rect key="frame" x="5" y="240" width="590" height="159"/>
+                                        <rect key="frame" x="5" y="240" width="590" height="201"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility Issues" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-My-DpZ" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -64,8 +64,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-O5-vwS" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.</string>
+                                                <rect key="frame" x="20" y="35" width="560" height="146"/>
+                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.  "UIAccessibilityScreenChangedNotification" or "UIAccessibilityLayoutChangedNotification" both work well in changing focus when a modal dialog appears/disappears.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -143,7 +143,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-IL-vWx" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">When the dialog appears, VoiceOver does not focus on it, which then allows the user to tab the content behind it.  The VoiceOver user may never realize that the dialog box exists and will not receive any information from it.</string>
+                                                <string key="text">When the dialog appears, VoiceOver does not focus on it, which then allows the user to tab the content behind it.  The VoiceOver user may never realize that the dialog box exists.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -166,51 +166,63 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-PT-7EY">
-                                                <rect key="frame" x="192" y="50" width="22" height="22"/>
-                                                <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
-                                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
-                                                </accessibility>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="information:" destination="gV3-jh-lAw" eventType="touchUpInside" id="J5m-wo-gJf"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-le-mMW" customClass="DQLabel">
-                                                <rect key="frame" x="219" y="50" width="152" height="22"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bA6-Rl-XME" customClass="DQWrapperView">
+                                                <rect key="frame" x="192" y="50" width="179" height="22"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-le-mMW" customClass="DQLabel">
+                                                        <rect key="frame" x="27" y="0.0" width="152" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" priority="750" constant="311" id="OOQ-b3-eTD"/>
+                                                            <constraint firstAttribute="height" constant="66" id="j4t-Ak-zVL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="OOQ-b3-eTD"/>
+                                                                <exclude reference="j4t-Ak-zVL"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-PT-7EY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                        <accessibility key="accessibilityConfiguration" label="">
+                                                            <accessibilityTraits key="traits" none="YES" link="YES"/>
+                                                        </accessibility>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="information:" destination="gV3-jh-lAw" eventType="touchUpInside" id="J5m-wo-gJf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <accessibility key="accessibilityConfiguration">
-                                                    <bool key="isElement" value="NO"/>
+                                                    <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" priority="750" constant="311" id="OOQ-b3-eTD"/>
-                                                    <constraint firstAttribute="height" constant="66" id="j4t-Ak-zVL"/>
+                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="top" secondItem="bA6-Rl-XME" secondAttribute="top" id="2ua-fR-l3k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7dz-le-mMW" secondAttribute="bottom" id="7zJ-z5-adt"/>
+                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="bottom" secondItem="JDt-PT-7EY" secondAttribute="bottom" id="8sn-gs-5XI"/>
+                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="leading" secondItem="JDt-PT-7EY" secondAttribute="trailing" constant="5" id="C3R-HL-tMd"/>
+                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="centerY" secondItem="JDt-PT-7EY" secondAttribute="centerY" id="K0F-GA-Tn7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7dz-le-mMW" secondAttribute="trailing" id="QBw-XJ-ozY"/>
+                                                    <constraint firstItem="7dz-le-mMW" firstAttribute="top" secondItem="JDt-PT-7EY" secondAttribute="top" id="dMp-bq-uP6"/>
+                                                    <constraint firstItem="JDt-PT-7EY" firstAttribute="leading" secondItem="bA6-Rl-XME" secondAttribute="leading" id="q4X-g3-iii"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="OOQ-b3-eTD"/>
-                                                        <exclude reference="j4t-Ak-zVL"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="JDt-PT-7EY" firstAttribute="centerY" secondItem="7dz-le-mMW" secondAttribute="centerY" id="1HE-O2-BYq"/>
-                                            <constraint firstAttribute="centerX" secondItem="7dz-le-mMW" secondAttribute="centerX" id="28x-D9-eRs"/>
                                             <constraint firstItem="lFH-lC-byi" firstAttribute="leading" secondItem="7cK-cv-U2Z" secondAttribute="leading" constant="10" id="2wT-zg-8Hq"/>
+                                            <constraint firstAttribute="bottom" secondItem="bA6-Rl-XME" secondAttribute="bottom" constant="20" id="6Sx-Xi-ke0"/>
+                                            <constraint firstItem="7dz-le-mMW" firstAttribute="centerX" secondItem="7cK-cv-U2Z" secondAttribute="centerX" id="C4W-wq-Ipz"/>
                                             <constraint firstAttribute="centerX" secondItem="lFH-lC-byi" secondAttribute="centerX" id="Jhe-QG-enc"/>
                                             <constraint firstItem="lFH-lC-byi" firstAttribute="leading" secondItem="7cK-cv-U2Z" secondAttribute="leading" constant="10" id="Ltg-og-RIY"/>
-                                            <constraint firstItem="7dz-le-mMW" firstAttribute="top" secondItem="lFH-lC-byi" secondAttribute="bottom" constant="20" id="W1l-ag-d2v"/>
-                                            <constraint firstItem="JDt-PT-7EY" firstAttribute="top" secondItem="7dz-le-mMW" secondAttribute="top" id="auK-6E-bDp"/>
+                                            <constraint firstItem="bA6-Rl-XME" firstAttribute="top" secondItem="lFH-lC-byi" secondAttribute="bottom" constant="20" id="SH7-U2-7Zw"/>
                                             <constraint firstItem="lFH-lC-byi" firstAttribute="top" secondItem="7cK-cv-U2Z" secondAttribute="top" constant="10" id="bF9-Nx-p46"/>
-                                            <constraint firstItem="JDt-PT-7EY" firstAttribute="bottom" secondItem="7dz-le-mMW" secondAttribute="bottom" id="lY8-Fj-BIQ"/>
-                                            <constraint firstItem="7dz-le-mMW" firstAttribute="leading" secondItem="JDt-PT-7EY" secondAttribute="trailing" constant="5" id="ngx-tb-yPg"/>
-                                            <constraint firstAttribute="bottom" secondItem="7dz-le-mMW" secondAttribute="bottom" constant="20" id="zc3-HM-VC0"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -250,6 +262,7 @@
                     <tabBarItem key="tabBarItem" title="Broken" image="DequeU_app_icon_broken" id="PgZ-sc-a2W"/>
                     <connections>
                         <outlet property="iWouldLikeToLearnMoreLink" destination="JDt-PT-7EY" id="kIk-7d-vBg"/>
+                        <outlet property="wrapperView" destination="bA6-Rl-XME" id="ylp-RB-D14"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LC-sh-WO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -300,10 +313,10 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-fM-gpO">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-fM-gpO" customClass="DQWrapperView">
                                                 <rect key="frame" x="192" y="50" width="179" height="22"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open a modal dialog" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-VF-gWg" customClass="DQLabel">
                                                         <rect key="frame" x="27" y="0.0" width="152" height="22"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -311,7 +324,7 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="501" verticalHuggingPriority="501" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyC-TX-hUu">
                                                         <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
-                                                        <accessibility key="accessibilityConfiguration" label="I would like to learn more about Deque">
+                                                        <accessibility key="accessibilityConfiguration" label="">
                                                             <accessibilityTraits key="traits" none="YES" link="YES"/>
                                                         </accessibility>
                                                         <state key="normal">
@@ -323,7 +336,7 @@
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Open a modal dialog">
+                                                <accessibility key="accessibilityConfiguration" label="">
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                                 <constraints>
@@ -355,7 +368,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-7r-oKg" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="41"/>
-                                                <string key="text">VoiceOver now focuses on the dialog when it appears on the page and returns to the information button when the dialog is closed.</string>
+                                                <string key="text">Once the dialog is open, VoiceOver only focuses on the dialog until an action is taken.  Once closed, focus returns to the "Open a modal dialog" button.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -409,7 +422,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fixed" image="DequeU_app_icon_fixed" id="ExY-cE-bsj"/>
                     <connections>
-                        <outlet property="OpenAModalDialog" destination="R2v-fM-gpO" id="JEO-t7-PSB"/>
+                        <outlet property="OpenAModalDialog" destination="R2v-fM-gpO" id="Xej-yM-zvp"/>
                         <outlet property="learnMoreLink" destination="eyC-TX-hUu" id="4hH-Iq-UJC"/>
                     </connections>
                 </viewController>
@@ -420,7 +433,7 @@
         <!--Empty Modal-->
         <scene sceneID="EqP-tc-dzS">
             <objects>
-                <viewController storyboardIdentifier="AccessibleModal" title="Empty Modal" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yzz-GV-CKs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccessibleModal" title="Empty Modal" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yzz-GV-CKs" customClass="IACModalDialogViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y9Z-35-hmp"/>
                         <viewControllerLayoutGuide type="bottom" id="7ys-6r-uO0"/>
@@ -428,12 +441,138 @@
                     <view key="view" contentMode="scaleToFill" id="tW4-gc-8nF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.49999999999999961" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loe-db-p8s">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyw-1a-7EY">
+                                <rect key="frame" x="25" y="167" width="550" height="267"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTw-Sg-LpX" customClass="DQLabel">
+                                        <rect key="frame" x="1" y="10" width="548" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RN-8Y-oUw" customClass="DQLabel">
+                                        <rect key="frame" x="10" y="40" width="530" height="62"/>
+                                        <string key="text">If you would like to learn more about accessibility and how Deque's Native iOS Accessibility Analysis tools can help you, visit our webpage or send us an e-mail.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHU-AI-nOw" customClass="DQWrapperView">
+                                        <rect key="frame" x="1" y="108" width="548" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXz-uA-mch" customClass="DQButton">
+                                                <rect key="frame" x="237" y="10" width="74" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="E-mail us!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.17647058823529413" green="0.41960784313725491" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="BXz-uA-mch" secondAttribute="bottom" constant="10" id="LzE-kY-KoE"/>
+                                            <constraint firstItem="BXz-uA-mch" firstAttribute="top" secondItem="dHU-AI-nOw" secondAttribute="top" constant="10" id="Mcw-mS-JVj"/>
+                                            <constraint firstAttribute="centerX" secondItem="BXz-uA-mch" secondAttribute="centerX" id="pyX-AY-Rcg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tt-13-WKe" customClass="DQWrapperView">
+                                        <rect key="frame" x="1" y="161" width="548" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U71-Md-EzL" customClass="DQButton">
+                                                <rect key="frame" x="209" y="10" width="130" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Visit our Website!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.1058823529" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="U71-Md-EzL" secondAttribute="centerX" id="SVM-Cl-mgP"/>
+                                            <constraint firstItem="U71-Md-EzL" firstAttribute="top" secondItem="4tt-13-WKe" secondAttribute="top" constant="10" id="hTS-q2-2Gw"/>
+                                            <constraint firstAttribute="bottom" secondItem="U71-Md-EzL" secondAttribute="bottom" constant="10" id="urg-Af-t5r"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcw-04-doJ" customClass="DQWrapperView">
+                                        <rect key="frame" x="1" y="214" width="548" height="52"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMa-Ga-xH4" customClass="DQButton">
+                                                <rect key="frame" x="253" y="10" width="43" height="32"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Close">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="xMa-Ga-xH4" firstAttribute="top" secondItem="Lcw-04-doJ" secondAttribute="top" constant="10" id="ONx-B6-bMY"/>
+                                            <constraint firstAttribute="bottom" secondItem="xMa-Ga-xH4" secondAttribute="bottom" constant="10" id="VX2-WX-4R1"/>
+                                            <constraint firstAttribute="centerX" secondItem="xMa-Ga-xH4" secondAttribute="centerX" id="boo-wn-RNC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4tt-13-WKe" firstAttribute="top" secondItem="dHU-AI-nOw" secondAttribute="bottom" constant="1" id="4IU-eV-JDo"/>
+                                    <constraint firstItem="Lcw-04-doJ" firstAttribute="top" secondItem="4tt-13-WKe" secondAttribute="bottom" constant="1" id="911-qm-VB0"/>
+                                    <constraint firstItem="JTw-Sg-LpX" firstAttribute="trailing" secondItem="Lcw-04-doJ" secondAttribute="trailing" id="C6j-I4-coC"/>
+                                    <constraint firstItem="3RN-8Y-oUw" firstAttribute="width" secondItem="hyw-1a-7EY" secondAttribute="width" constant="-20" id="Eed-Rv-J2N"/>
+                                    <constraint firstAttribute="centerX" secondItem="Lcw-04-doJ" secondAttribute="centerX" id="F3k-ev-qYf"/>
+                                    <constraint firstItem="JTw-Sg-LpX" firstAttribute="top" secondItem="hyw-1a-7EY" secondAttribute="top" constant="10" id="GPE-qe-f04"/>
+                                    <constraint firstItem="JTw-Sg-LpX" firstAttribute="leading" secondItem="Lcw-04-doJ" secondAttribute="leading" id="IlP-SB-6o6"/>
+                                    <constraint firstItem="dHU-AI-nOw" firstAttribute="trailing" secondItem="JTw-Sg-LpX" secondAttribute="trailing" id="MbV-ev-JSK"/>
+                                    <constraint firstItem="JTw-Sg-LpX" firstAttribute="leading" secondItem="4tt-13-WKe" secondAttribute="leading" id="SAD-RV-3QT"/>
+                                    <constraint firstItem="dHU-AI-nOw" firstAttribute="leading" secondItem="JTw-Sg-LpX" secondAttribute="leading" id="Thl-Ee-5xx"/>
+                                    <constraint firstAttribute="centerX" secondItem="4tt-13-WKe" secondAttribute="centerX" id="Y6v-3H-5b4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lcw-04-doJ" secondAttribute="bottom" constant="1" id="cfc-pI-uBE"/>
+                                    <constraint firstItem="3RN-8Y-oUw" firstAttribute="top" secondItem="JTw-Sg-LpX" secondAttribute="bottom" constant="10" id="jsi-X5-9LH"/>
+                                    <constraint firstItem="JTw-Sg-LpX" firstAttribute="trailing" secondItem="4tt-13-WKe" secondAttribute="trailing" id="kDB-x9-JLe"/>
+                                    <constraint firstAttribute="centerX" secondItem="dHU-AI-nOw" secondAttribute="centerX" id="ksw-7j-UF1"/>
+                                    <constraint firstItem="dHU-AI-nOw" firstAttribute="top" secondItem="3RN-8Y-oUw" secondAttribute="bottom" constant="6" id="mWF-pW-gNP"/>
+                                    <constraint firstItem="JTw-Sg-LpX" firstAttribute="width" secondItem="hyw-1a-7EY" secondAttribute="width" constant="-2" id="naY-VZ-YwO"/>
+                                    <constraint firstAttribute="centerX" secondItem="JTw-Sg-LpX" secondAttribute="centerX" id="qI1-Or-Mbu"/>
+                                    <constraint firstAttribute="centerX" secondItem="3RN-8Y-oUw" secondAttribute="centerX" id="zaY-qZ-xuK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="hyw-1a-7EY" secondAttribute="centerY" id="3tI-3l-O5f"/>
+                            <constraint firstItem="Loe-db-p8s" firstAttribute="top" secondItem="Y9Z-35-hmp" secondAttribute="bottom" id="453-xz-Oc8"/>
+                            <constraint firstItem="7ys-6r-uO0" firstAttribute="top" secondItem="Loe-db-p8s" secondAttribute="bottom" id="80W-v6-NlB"/>
+                            <constraint firstAttribute="width" secondItem="Loe-db-p8s" secondAttribute="width" id="Qyr-4E-Oiv"/>
+                            <constraint firstAttribute="centerX" secondItem="Loe-db-p8s" secondAttribute="centerX" id="VLN-hJ-Vas"/>
+                            <constraint firstAttribute="width" secondItem="hyw-1a-7EY" secondAttribute="width" constant="50" id="uFY-cu-jRh"/>
+                            <constraint firstAttribute="centerX" secondItem="hyw-1a-7EY" secondAttribute="centerX" id="vNE-Mz-dLc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="close_button" destination="xMa-Ga-xH4" id="3CC-9m-hTG"/>
+                        <outlet property="email_us_button" destination="BXz-uA-mch" id="sCZ-iX-rzD"/>
+                        <outlet property="modalDialogDescription" destination="3RN-8Y-oUw" id="3o7-fC-dqE"/>
+                        <outlet property="modalDialogTitle" destination="JTw-Sg-LpX" id="D2f-VA-9jP"/>
+                        <outlet property="visit_our_website_button" destination="U71-Md-EzL" id="y3c-rr-Hxn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eri-5b-hBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="1129"/>
+            <point key="canvasLocation" x="-77" y="1129"/>
         </scene>
     </scenes>
     <resources>

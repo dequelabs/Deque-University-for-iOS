@@ -1,6 +1,6 @@
 //
 //  IACStoryTableTableViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Chris McMeeking on 4/14/15.
 //  Copyright (c) 2015 Deque Systems. All rights reserved.
@@ -38,7 +38,7 @@
     UISwitch* overlaySwitch;
     UIImageView* sightImage;
     
-    ///< color scheme
+    // color scheme
     UIColor* _colorCellText;
     UIColor* _colorMenuBackground;
     UIColor* _colorCellBackgroundDimmed;
@@ -49,12 +49,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ///< silencing constraint error
-    self.tableView.rowHeight = 44;
-    
     self.tableView.delegate = self;
     self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didChangePreferredContentSize)
+                                                 name:UIContentSizeCategoryDidChangeNotification
+                                               object:nil];
+    
+    [self didChangePreferredContentSize];
     
     UIStoryboard* storyBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
     NSMutableArray* basicDemos = [NSMutableArray array];
@@ -76,7 +80,7 @@
     UIStoryboard* modal = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
     [basicDemos addObject:[modal instantiateViewControllerWithIdentifier:@"ModalDialog"]];
     
-    ///< only load this story into the menu if user uses an iPad
+    // only load this story into the menu if user uses an iPad
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
     {
         UIStoryboard* colors = [UIStoryboard storyboardWithName:@"TopBarContrast" bundle:nil];
@@ -86,21 +90,20 @@
     _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
     _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];
     
-    ///< colors
+    // colors
     _colorCellText = [IACUtilities colorWithHexString:DARK_BLUE];
     _colorMenuBackground = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundDimmed = [IACUtilities colorWithHexString:DQ_COLOR_WORLDSPACE_WHITE];
     _colorCellBackgroundSelected = [IACUtilities colorWithHexString:LIGHT_BLUE];
     
-    ///< set color scheme
+    // set color scheme
     [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [IACUtilities colorWithHexString:BLUE]}];
     self.tableView.backgroundColor = _colorMenuBackground;
-    self.wrapperView.backgroundColor = _colorMenuBackground;
     self.logoView.backgroundColor = _colorMenuBackground;
     
     self.tableView.backgroundView = nil;
     
-    ///< selecting introduction cell
+    // selecting introduction cell
     NSIndexPath* indexPath = [NSIndexPath indexPathForRow:0 inSection:1];
     [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
 }
@@ -131,22 +134,6 @@
     }
 }
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if(indexPath.section == OVERLAY_SECTION_NUM) {
-        [self toggleState];
-        
-        return nil;
-        
-    } else if(indexPath.section == BASIC_DEMOS_SECTION_NUM || indexPath.section == ADV_DEMOS_SECTION_NUM) {
-        return nil;
-
-    } else {
-        return indexPath;
-        
-    }
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     UITableViewCell* cell;
@@ -158,10 +145,10 @@
         sightImage = (UIImageView*)[cell viewWithTag:OVERLAY_IMAGE_TAG];
         overlaySwitch = (UISwitch*)[cell viewWithTag:OVERLAY_SWITCH_TAG];
         
-        ///< creating overlaySwitch
+        // creating overlaySwitch
         [overlaySwitch addTarget:self action:@selector(observeSwitchState) forControlEvents:UIControlEventValueChanged];
         
-        ///< setting accessibility hint
+        // setting accessibility hint
         [cell setAccessibilityHint:NSLocalizedString(@"TOGGLE_SETTING_HINT", nil)];
         
     } else if(indexPath.section == INTRODUCTION_SECTION_NUM) {
@@ -199,9 +186,25 @@
     selectedView.backgroundColor = _colorCellBackgroundSelected;
     cell.selectedBackgroundView = selectedView;
     cell.backgroundColor = _colorCellBackgroundDimmed;
-    label.textColor = _colorCellText;
     
     return cell;
+}
+
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if(indexPath.section == OVERLAY_SECTION_NUM) {
+        [self toggleState];
+        
+        return nil;
+        
+    } else if(indexPath.section == BASIC_DEMOS_SECTION_NUM || indexPath.section == ADV_DEMOS_SECTION_NUM) {
+        return nil;
+        
+    } else {
+        return indexPath;
+        
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -211,16 +214,41 @@
         [self.splitViewController showDetailViewController:viewController sender:nil];
 
     } else if(indexPath.section == BASIC_DEMO_STORIES_SECTION_NUM) {
-        
         UIViewController* viewController = [_viewControllersBasic objectAtIndex:indexPath.row];
         [self.splitViewController showDetailViewController:viewController sender:nil];
  
     } else if(indexPath.section == ADV_DEMO_STORIES_SECTION_NUM) {
-        
         UIViewController* viewController = [_viewControllersAdvanced objectAtIndex:indexPath.row];
         [self.splitViewController showDetailViewController:viewController sender:nil];
         
     }
+}
+
+-(void)didChangePreferredContentSize {
+    NSString *contentSize = [UIApplication sharedApplication].preferredContentSizeCategory;
+    
+    if ([contentSize isEqualToString:UIContentSizeCategoryExtraSmall]) {
+        self.tableView.rowHeight = 36;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategorySmall]) {
+        self.tableView.rowHeight = 40;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryMedium]) {
+        self.tableView.rowHeight = 44;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryLarge]) {
+        self.tableView.rowHeight = 48;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryExtraLarge]) {
+        self.tableView.rowHeight = 52;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryExtraExtraLarge]) {
+        self.tableView.rowHeight = 56;
+        
+    } else if ([contentSize isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]) {
+        self.tableView.rowHeight = 60;
+    }
+    
 }
 
 -(void)observeSwitchState {
@@ -246,8 +274,9 @@
     UIViewController* viewController = [viewControllers objectAtIndex:indexPath.row];
     label.text = viewController.title;
     [image setImage:[UIImage imageNamed:label.text]];
+    label.textColor = _colorCellText;
     
-    ///< setting accessibility label
+    // setting accessibility label
     NSString* demoTab;
     
     if([identifier isEqual: INTRODUCTION_IDENTIFIER]) {

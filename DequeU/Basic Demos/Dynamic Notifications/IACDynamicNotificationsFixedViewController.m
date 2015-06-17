@@ -1,6 +1,6 @@
 //
 //  IACDynamicNotificationsFixedViewController.m
-//  Accessibility 101
+//  Deque University for iOS
 //
 //  Created by Jennifer Dailey on 5/4/15.
 //  Copyright (c) 2015 Jennifer Dailey. All rights reserved.
@@ -33,9 +33,7 @@
     [self._saveButton addTarget:self action:@selector(saveItem) forControlEvents:UIControlEventTouchDown];
     [self._clearContacts addTarget:self action:@selector(clearList) forControlEvents:UIControlEventTouchDown];
     
-    /**
-     * Listener for when the textField's content changes.
-     */
+    // Listener for when the textField's content changes.
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(textChanged)
                                                  name:UITextFieldTextDidChangeNotification object:nil];
@@ -44,9 +42,7 @@
 - (NSString*)clearList {
     NSString *announcement;
     
-    /**
-     * Creates announcement for if list was cleared when clearContacts button was pressed.
-     */
+    //Creates announcement for if the list was cleared when clearContacts button was pressed.
     if([_contactList count] == 0) {
         announcement = NSLocalizedString(@"NO_CONTACTS", nil);
     } else {
@@ -55,7 +51,7 @@
     
     [_contactList removeAllObjects];
     [self._tableView reloadData];
-    [DQUtilities createDynamicNotification:announcement]; ///< Prompts VoiceOver to announce the change in the list.
+    [DQUtilities createDynamicNotification:announcement]; // Prompts VoiceOver to announce the change in the list.
     
     return announcement;
 }
@@ -67,16 +63,16 @@
     if(_textField.text.length > 0) {
         item = _textField.text;
         _textField.text = @"";
-        announcement = [item stringByAppendingString:NSLocalizedString(@"ADDED_CONTACT", nil)]; ///< Creates announcement that item was added to list.
+        announcement = [item stringByAppendingString:NSLocalizedString(@"ADDED_CONTACT", nil)]; // Creates announcement that item was added to list.
         
         [_contactList addObject:item];
         [self._tableView reloadData];
     } else {
-        announcement = NSLocalizedString(@"EMPTY_TEXTFIELD", nil); ///< Creates announcement that no item was added to list (textField is empty).
+        announcement = NSLocalizedString(@"EMPTY_TEXTFIELD", nil); // Creates announcement that no item was added to list (textField is empty).
     }
     
     [_textField resignFirstResponder];
-    [DQUtilities createDynamicNotification:announcement]; ///< Prompts VoiceOver to announce the change in the list.
+    [DQUtilities createDynamicNotification:announcement]; // Prompts VoiceOver to announce the change in the list.
     _textField.accessibilityLabel = @"";
     
     return announcement;
@@ -90,25 +86,17 @@
     }
 }
 
-
-/**
- * Delegate method for UITableView.
- */
+//Delegate method for UITableView.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-/**
- * Delegate method for UITableView.
- */
+//Delegate method for UITableView.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_contactList count];
 }
 
-/** 
- * Delegate method for UITableView.
- * Displays every element in _contactList.
- */
+//Delegate method for UITableView. Displays every element in _contactList.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *item = [_contactList objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
@@ -119,16 +107,12 @@
     return cell;
 }
 
-/**
- * Delegate method for UITableView.
- */
+//Delegate method for UITableView.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
-/**
- * Delegate method for UITextField.
- */
+//Delegate method for UITextField.
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     
