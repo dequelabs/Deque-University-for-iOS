@@ -19,6 +19,7 @@
 		EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36921B22140600EA2514 /* libz.dylib */; };
 		EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36941B22140E00EA2514 /* libsqlite3.dylib */; };
 		EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
+		EEAC95FC1B2F45D200EAD565 /* IACModalDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAC95FB1B2F45D200EAD565 /* IACModalDialogViewController.m */; };
 		EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */; };
 		EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */; };
 		EEAFD2A91B272A2700E23EAB /* IACFormsValidationFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A61B272A2700E23EAB /* IACFormsValidationFixedViewController.m */; };
@@ -128,6 +129,9 @@
 		A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accessibility 101Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6B36921B22140600EA2514 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		EE6B36941B22140E00EA2514 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EEAC95FA1B2F45D200EAD565 /* IACModalDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogViewController.h; sourceTree = "<group>"; };
+		EEAC95FB1B2F45D200EAD565 /* IACModalDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogViewController.m; sourceTree = "<group>"; };
+		EEAC96181B30879200EAD565 /* IACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACViewController.h"; sourceTree = "<group>"; };
 		EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FormsValidation.storyboard; sourceTree = "<group>"; };
 		EEAFD2A31B272A2700E23EAB /* IACFormsValidationBrokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACFormsValidationBrokenViewController.h; sourceTree = "<group>"; };
 		EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACFormsValidationBrokenViewController.m; sourceTree = "<group>"; };
@@ -187,7 +191,6 @@
 		EEAFD2FF1B272B8900E23EAB /* IACStoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACStoryTableViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.h"; sourceTree = "<group>"; };
 		EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACStoryTableViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACStoryTableViewController.m"; sourceTree = "<group>"; };
 		EEAFD3011B272B8900E23EAB /* IACTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTabBarController.h; path = "DequeU/IAC Files/IAC Controllers/IACTabBarController.h"; sourceTree = "<group>"; };
-		EEAFD3031B272B8900E23EAB /* IACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACViewController.h"; sourceTree = "<group>"; };
 		EEAFD3041B272B8900E23EAB /* IACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACViewController.m; path = "DequeU/IAC Files/IAC Controllers/IACViewController.m"; sourceTree = "<group>"; };
 		EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACTableViewCell.h; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.h"; sourceTree = "<group>"; };
 		EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACTableViewCell.m; path = "DequeU/IAC Files/IAC TableViewCell/IACTableViewCell.m"; sourceTree = "<group>"; };
@@ -305,7 +308,7 @@
 				EEAFD3001B272B8900E23EAB /* IACStoryTableViewController.m */,
 				EEAFD3011B272B8900E23EAB /* IACTabBarController.h */,
 				EEAFD3BA1B27674C00E23EAB /* IACTabBarController.m */,
-				EEAFD3031B272B8900E23EAB /* IACViewController.h */,
+				EEAC96181B30879200EAD565 /* IACViewController.h */,
 				EEAFD3041B272B8900E23EAB /* IACViewController.m */,
 				EEAFD30A1B272B9400E23EAB /* IACTableViewCell.h */,
 				EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */,
@@ -455,6 +458,8 @@
 			isa = PBXGroup;
 			children = (
 				EEAFD2C11B272A3A00E23EAB /* ModalDialog.storyboard */,
+				EEAC95FA1B2F45D200EAD565 /* IACModalDialogViewController.h */,
+				EEAC95FB1B2F45D200EAD565 /* IACModalDialogViewController.m */,
 				EEAFD3891B274C7500E23EAB /* IACModalDialogAboutViewController.h */,
 				EEAFD38A1B274C7500E23EAB /* IACModalDialogAboutViewController.m */,
 				EEAFD2BD1B272A3A00E23EAB /* IACModalDialogBrokenViewController.h */,
@@ -803,6 +808,7 @@
 				EEAFD37F1B274C2100E23EAB /* IACLabelAboutViewController.m in Sources */,
 				EEAFD3B61B274E1B00E23EAB /* IACNestedA11yBrokenViewController.m in Sources */,
 				EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */,
+				EEAC95FC1B2F45D200EAD565 /* IACModalDialogViewController.m in Sources */,
 				EEAFD2F31B272A6500E23EAB /* main.m in Sources */,
 				EEAFD2D71B272A3A00E23EAB /* IACTraitsBrokenViewController.m in Sources */,
 				EEAFD3071B272B8900E23EAB /* IACStoryTableViewController.m in Sources */,

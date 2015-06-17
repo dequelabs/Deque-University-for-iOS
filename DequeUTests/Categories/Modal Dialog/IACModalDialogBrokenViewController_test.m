@@ -33,11 +33,13 @@
 }
 
 - (void)testInformationMethod {
+    DEQAssertEmptyString(_viewController.wrapperView.accessibilityHint);
+    XCTAssert(_viewController.wrapperView.isAccessibilityElement);
     XCTAssert([_viewController information:self]);
     
 }
 
-- (void)testButtonClick {
+- (void)testClickedButton {
     DEQAssertStringEqual(@"mailto:chris.mcmeeking@deque.com", [_viewController getURLFromIndex:MAIL_TO_INDEX]);
     DEQAssertStringEqual(@"http://www.deque.com", [_viewController getURLFromIndex:VISIT_WEBSITE_INDEX]);
     DEQAssertEmptyString([_viewController getURLFromIndex:CLOSE_INDEX]);
