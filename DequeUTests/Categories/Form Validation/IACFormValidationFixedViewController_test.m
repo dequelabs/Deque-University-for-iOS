@@ -103,7 +103,7 @@
 -(void)testUserSubmitsNothing {
 
     // Input empty strings and submit
-    self.controller.emailField.text = @"";
+    self.controller.emailField.text = @"valid@example.com";
     self.controller.nameField.text = @"";
     self.controller.dateField.text = @"";
     [self.controller submitButton:self];
@@ -131,7 +131,7 @@
     //Test regex error checking when valid strings are input:
     
     // Input valid strings and submit
-    self.controller.emailField.text = @"validexamplecom";
+    self.controller.emailField.text = @"valid@example.com";
     self.controller.nameField.text = @"valid";
     self.controller.dateField.text = @"11/11/2014";
     [self.controller submitButton:self];
