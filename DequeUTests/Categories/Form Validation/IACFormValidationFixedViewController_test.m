@@ -103,7 +103,7 @@
 -(void)testUserSubmitsNothing {
 
     // Input empty strings and submit
-    self.controller.emailField.text = @"valid@example.com";
+    self.controller.emailField.text = @"";
     self.controller.nameField.text = @"";
     self.controller.dateField.text = @"";
     [self.controller submitButton:self];
