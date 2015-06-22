@@ -7,7 +7,7 @@
 //
 
 #import "IACStoryTableViewController.h"
-#import "IACViewController.h"
+#import "IACSplitViewController.h"
 #import "IACConstants.h"
 #import "IACUtilities.h"
 
@@ -262,8 +262,8 @@
 
 -(void)setState:(BOOL)value {
     overlaySwitch.on = value;
-    [sightImage setImage:[IACViewController getSightedIcon:value]];
-    [IACViewController setOverlayOn:value];
+    [sightImage setImage:[IACSplitViewController getSightedIcon:value]];
+    [IACSplitViewController setOverlayOn:value];
 }
 
 -(UITableViewCell*)createTableViewCellFromArray:(NSArray*)viewControllers withIdentifier:(NSString*)identifier forIndexPath:(NSIndexPath*)indexPath {

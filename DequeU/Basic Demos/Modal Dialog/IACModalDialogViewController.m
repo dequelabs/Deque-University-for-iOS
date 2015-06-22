@@ -8,7 +8,7 @@
 
 #import "IACModalDialogViewController.h"
 #import "IACModalDialogFixedViewController.h"
-#import "IACViewController.h"
+#import "IACSplitViewController.h"
 #import "IACUtilities.h"
 #import "IACConstants.h"
 
@@ -34,7 +34,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    if([IACViewController overlayIsOn]) {
+    if([IACSplitViewController overlayIsOn]) {
         _overlayViewForModal.hidden = NO;
     } else {
         _overlayViewForModal.hidden = YES;
