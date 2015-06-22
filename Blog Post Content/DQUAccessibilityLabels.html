@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Accessibility Hints and Labels </title>
+	</head>
+	<body>
+		<h1 id="mainTitle">Accessibility Labels</h1>
+		<p id="introduction">Accessibility Labels are fundemental to iOS Accessibility, they are the bridge connecting the visual aspects of your application to voiceover. Accessibility Hints are similar to Labels, and can be implemented in the same way, however, hints contain more nuanced information than labels. From an accessibility standpoint, it is very important that these hints and labels are implemented properly. There are two ways we can accomplish this: Using the storyboard editor, and programatically</p>
+		<div>
+			<h3 id="storyboardEditorTitle">Implementing Accessibility Labels and Hints In The Storyboard Editor</h3>
+			<p>The first and simplest way to add accessibility labels/hints to your application is to simply use the story board editor to add them to your elements. The steps for doing this are fairly simple.</p>
+			<ol>
+				<li>Go to your storyboard editor in XCode</li>
+				<li>Click on the element you would like to add a label for</li>
+				<li>Open the Identity Inspector in the right bar</li>
+				<li>Scroll down to Accessibility and check the box that says "Enabled"</li>
+				<li>Under the fields "Label" and "Hint", enter concise and useful information about your element</li>	
+			</ol>
+			<p>Below is what this looks like for the Dog button in the Labels Section of the Deque U app.</p>
+			<img src="Images/LabelsStoryboardEditor.png" alt="The Identity Inspector">
+		</div>
+		<div>
+			<h3>Implementing Accessibility Labels and Hints Programatically</h3>
+			<p>Sometimes setting the accessibility label/hint in the Storyboard Editor doesn't quite cut it. For instance, the properties of the element might change when the app is running or when the user performs an action. In this case, you will want to set the accessibility descriptions programatically. This can be done easily with just a few lines of code.</p>
+			<ol>
+				<li>In the Storyboard Editor, turn on accessibility for the item that you want to set a label or hint for, just like in the first part of this demo</li>
+				<li>Pull up the header file for your View Controller in the Assistant Editor</li>
+				<li>Ctrl click and drag from your element to the header file to create an IBOutlet for your element</li>
+				<li>Now open your implementation file for your ViewController</li>
+				<li>Use the <code>accessibilityLabel/accessibilityHint</code> member OR the <code>setAccessibilityLabel/setAccessibilityHint</code> function to add the appropriate string values.</li>
+			</ol>
+			<p>Below are the two ways to set an accessibility Label.</p>
+			<img src="Images/LabelsAccessibilityLabelCode.png" alt="Code Showing How To Set Accessibility Label">
+			<p>We hope you found this tutorial useful! Make sure to check out our app, Deque U for iOS on the App Store, and take a peek at the rest of our blog posts.</p>
+		</div>
+		<div>
+			<h3>Tips</h3>
+			<ul>
+				<li>Make sure your labels are concise! if the label is more than one or two words, the additional information should probably go in a hint.</li>
+				<li>If the content on the page is dynamic, make sure that your labels change when elements on the page are altered</li>
+			</ul>
+		</div>
+	</body>
+</html>
