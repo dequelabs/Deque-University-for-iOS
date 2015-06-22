@@ -7,11 +7,14 @@
 //
 
 #import "IACModalDialogBrokenViewController.h"
+#import "IACViewController.h"
 
 #define MAIL_TO_INDEX 0
 #define VISIT_WEBSITE_INDEX 1
 
-@interface IACModalDialogBrokenViewController ()<CustomIOS7AlertViewDelegate>
+@interface IACModalDialogBrokenViewController ()<CustomIOS7AlertViewDelegate> {
+    UIView* overlayViewForModal; ///< The overlay view for VoiceOver Simulation.
+}
 
 @end
 
@@ -22,7 +25,7 @@
 }
 
 - (BOOL)information:(id)sender {
-    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
+    CustomIOS7AlertView* alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
                                                                  message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
     
     [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
@@ -38,7 +41,6 @@
                                                 green:27.0f/255.0f
                                                  blue:63.0f/255.0f
                                                 alpha:1.0f],nil]];
-    
     [alertView setDelegate:self];
     
     [alertView show];

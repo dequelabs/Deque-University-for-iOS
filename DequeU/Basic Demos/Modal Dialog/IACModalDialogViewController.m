@@ -7,7 +7,38 @@
 //
 
 #import "IACModalDialogViewController.h"
+#import "IACModalDialogFixedViewController.h"
+#import "IACSplitViewController.h"
+#import "IACUtilities.h"
+#import "IACConstants.h"
+
+@interface IACModalDialogViewController() {
+    UIView* _overlayViewForModal;
+}
+
+@end
 
 @implementation IACModalDialogViewController
+
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    
+    UIViewController* _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
+    
+    _overlayViewForModal = _overlayViewController.view;
+    _overlayViewForModal.accessibilityElementsHidden = YES;
+    [self.view addSubview:_overlayViewForModal];
+    _overlayViewForModal.hidden = YES;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if([IACSplitViewController overlayIsOn]) {
+        _overlayViewForModal.hidden = NO;
+    } else {
+        _overlayViewForModal.hidden = YES;
+    }
+}
 
 @end

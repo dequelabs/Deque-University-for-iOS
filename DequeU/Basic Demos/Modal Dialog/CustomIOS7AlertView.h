@@ -37,6 +37,8 @@
 - (void)show;
 - (void)close;
 
++ (void)setOverlay:(BOOL)overlayIsOn;
+
 
 - (IBAction)customIOS7dialogButtonTouchUpInside:(id)sender;
 
