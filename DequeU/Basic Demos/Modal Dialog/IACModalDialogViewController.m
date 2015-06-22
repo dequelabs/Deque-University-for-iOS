@@ -7,14 +7,14 @@
 //
 
 #import "IACModalDialogViewController.h"
-#import "IACModalDialogFixedViewController.h"
+#import "IACOverlayViewController.h"
 #import "IACSplitViewController.h"
 #import "IACUtilities.h"
 #import "IACConstants.h"
 
-@interface IACModalDialogViewController() {
-    UIView* _overlayViewForModal;
-}
+@interface IACModalDialogViewController()
+
+@property IACOverlayViewController* overlayViewController;
 
 @end
 
@@ -23,21 +23,21 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    UIViewController* _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
+    _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]]
+                              instantiateViewControllerWithIdentifier:@"Overlay"];
     
-    _overlayViewForModal = _overlayViewController.view;
-    _overlayViewForModal.accessibilityElementsHidden = YES;
-    [self.view addSubview:_overlayViewForModal];
-    _overlayViewForModal.hidden = YES;
+    [_overlayViewController.view setAccessibilityElementsHidden:YES];
+    [_overlayViewController.view setHidden:YES];
+    [self.view addSubview:_overlayViewController.view];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     if([IACSplitViewController overlayIsOn]) {
-        _overlayViewForModal.hidden = NO;
+        _overlayViewController.view.hidden = NO;
     } else {
-        _overlayViewForModal.hidden = YES;
+        _overlayViewController.view.hidden = YES;
     }
 }
 
