@@ -87,6 +87,9 @@
         [basicDemos addObject:[colors instantiateViewControllerWithIdentifier:@"TopBarContrast"]];
     }
     
+    UIStoryboard* updatingContent = [UIStoryboard storyboardWithName:@"UpdatingContent" bundle:nil];
+    [advancedDemos addObject:[updatingContent instantiateViewControllerWithIdentifier:@"UpdatingContent"]];
+    
     _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
     _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];
     
