@@ -17,7 +17,10 @@
 				<li>Under the fields "Label" and "Hint", enter concise and useful information about your element</li>	
 			</ol>
 			<p>Below is what this looks like for the Dog button in the Labels Section of the Deque U app.</p>
-			<img src="Images/LabelsStoryboardEditor.png" alt="The Identity Inspector">
+			<img src="Images/DQUIdentityInspector.png" alt="Image Showing the identity inspector as the third element in XCode's top right bar.">
+			<br>
+			<br>
+			<img src="Images/DQUAccessibilitySection.png" alt="The Accessibility Section Of the identity inspector">
 		</div>
 		<div>
 			<h3>Implementing Accessibility Labels and Hints Programatically</h3>
@@ -30,7 +33,8 @@
 				<li>Use the <code>accessibilityLabel/accessibilityHint</code> member OR the <code>setAccessibilityLabel/setAccessibilityHint</code> function to add the appropriate string values.</li>
 			</ol>
 			<p>Below are the two ways to set an accessibility Label.</p>
-			<img src="Images/LabelsAccessibilityLabelCode.png" alt="Code Showing How To Set Accessibility Label">
+			<code>_DogDisplay.accessibilityLabel = @"Displays a Dog"; <br>
+				  [_DogDisplay setAccessibilityLabel:@"Displays a Dog"];</code>
 			<p>We hope you found this tutorial useful! Make sure to check out our app, Deque U for iOS on the App Store, and take a peek at the rest of our blog posts.</p>
 		</div>
 		<div>
