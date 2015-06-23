@@ -7,18 +7,35 @@
 //
 
 #import "IACUpdatingContentBrokenViewController.h"
+#import <DQA11y/DQA11y.h>
 
 @interface IACUpdatingContentBrokenViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *clock;
+
+@property (nonatomic, strong) NSTimer *myTimer;
+@property (nonatomic, strong) IBOutlet DQLabel *progressLabel;
+@property (strong, nonatomic) UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UIView *demoView;
 
 @end
 
 @implementation IACUpdatingContentBrokenViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+    
+    self.progressView.center = self.demoView.center;
+    
+    [self.demoView addSubview:self.progressView];
+    
+    self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateUI:) userInfo:nil repeats:YES];
+}
 
-    [self updateClockLabel];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.myTimer invalidate];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,13 +43,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)updateClockLabel {
-    NSDateFormatter* clockFormat = [[NSDateFormatter alloc] init];
-    [clockFormat setDateFormat:@"hh:mm:ss a"];
+- (void)updateUI:(NSTimer *)timer {
+    static int count = 0; count++;
     
-    self.clock.text = [clockFormat stringFromDate:[NSDate date]];
-    
-    [self performSelector:@selector(updateClockLabel) withObject:self afterDelay:1.0];
+    if (count <= 10) {
+        self.progressLabel.text = [NSString stringWithFormat:@"%d seconds",count];
+        self.progressView.progress = (float)count/10.0f;
+    } else {
+        count = 0;
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.progressView);
+        UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, @"Ten Second Alert!");
+    } 
 }
 
 @end

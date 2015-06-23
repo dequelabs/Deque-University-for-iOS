@@ -7,18 +7,37 @@
 //
 
 #import "IACUpdatingContentFixedViewController.h"
+#import <DQA11y/DQA11y.h>
 
 @interface IACUpdatingContentFixedViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *clockLabel;
+
+@property (nonatomic, strong) NSTimer *myTimer;
+@property (nonatomic, strong) IBOutlet DQLabel *progressLabel;
+@property (strong, nonatomic) UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UIView *wrapperView;
+@property (weak, nonatomic) IBOutlet DQButton *buttonToChangeProgress;
 
 @end
 
 @implementation IACUpdatingContentFixedViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    [self updateClockLabel];
+    self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+    
+    [self.wrapperView addSubview:self.progressView];
+    
+    self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateUI:) userInfo:nil repeats:YES];
+    [self.buttonToChangeProgress addTarget:self action:@selector(changeProgress) forControlEvents:UIControlEventTouchDown];
+    [self.buttonToChangeProgress setAccessibilityHint:@"Pauses the Ten Second Alerts."];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [self.myTimer invalidate];
+    [self.buttonToChangeProgress setTitle:@"Stop" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,21 +45,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)updateClockLabel {
+- (void)changeProgress {
+    if([self.buttonToChangeProgress.titleLabel.text isEqualToString:@"Stop"]) {
+        [self.myTimer invalidate];
+        [self.buttonToChangeProgress setTitle:@"Start" forState:UIControlStateNormal];
+        [self.buttonToChangeProgress setAccessibilityHint:@"Starts the Ten Second Alerts."];
+    } else {
+        self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateUI:) userInfo:nil repeats:YES];
+        [self.buttonToChangeProgress setTitle:@"Stop" forState:UIControlStateNormal];
+        [self.buttonToChangeProgress setAccessibilityHint:@"Pauses the Ten Second Alerts."];
+    }
+}
+
+- (void)updateUI:(NSTimer *)timer {
+    static int count = 0; count++;
     
-    //format for clock
-    NSDateFormatter* clockFormat = [[NSDateFormatter alloc] init];
-    [clockFormat setDateFormat:@"hh:mm:ss a"];
-    
-    self.clockLabel.text = [clockFormat stringFromDate:[NSDate date]];
-    
-    //format for accessibility label
-    NSDateFormatter* accessibilityLabelFormat = [[NSDateFormatter alloc] init];
-    [accessibilityLabelFormat setDateFormat:@"hh:mm a"];
-    
-    self.clockLabel.accessibilityLabel = [accessibilityLabelFormat stringFromDate:[NSDate date]];
-    
-    [self performSelector:@selector(updateClockLabel) withObject:self afterDelay:1.0];
+    if (count <= 10) {
+        self.progressLabel.text = [NSString stringWithFormat:@"%d seconds",count];
+        self.progressView.progress = (float)count/10.0f;
+    } else {
+        count = 0;
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.progressView);
+        UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, @"Ten Second Alert!");
+    }
 }
 
 @end
