@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Accessibility Traits </title>
+	</head>
+	<body>
+		<h1 id="mainTitle">Accessibility Traits</h1>
+		<p id="introduction">Accessibility Traits are yet another useful and important feature in the realm of iOS Accessibility. An accessibility Trait allows you to choose the best description for what an element in your application does.</p>
+		<p>A trait is like an extra accessibility Label, that lets a user know how your button, link, text field, etc. will react upon interaction. It is important to set up these traits properly so that a user does not get confused when clicking on a "Text Field" opens the web browser.</p>
+		<div>
+			<h3 id="storyboardEditorTitle">Implementing Accessibility Traits Using The Storyboard Editor</h3>
+			<p>Accessibility Traits don't often change while the app is running, so for most people, this method will suffice.</p>
+			<ol>
+				<li>Go to your storyboard editor in XCode</li>
+				<li>Click on the element you would like to add a Trait for</li>
+				<li>Open the Identity Inspector in the right bar</li>
+				<li>Enable Accessibility by checking the box that says "Enabled"</li>
+				<li>Scroll down to Accessibility and check the box for the trait(s) that you would like to apply</li>
+			</ol>
+			<p>Below is what this looks like for the Dog button in the Traits Section of the Deque U app.</p>
+			<img src="Images/DQUIdentityInspector.png" alt="Image Showing the identity inspector as the third element in XCode's top right bar.">
+			<br>
+			<br>
+			<img src="Images/DQUAccessibilitySection.png" alt="The Accessibility Section Of the identity inspector">
+			<p>You will want to add only the trait that best describes the behavior of your element. For instance, as in the Traits Demo of our <a href="https://github.com/dequelabs/Deque-University-for-iOS">Deque U app</a>, if your element opens a web page, you should label it as a link, even if it is a UIButton. Doubling up on traits is confusing and unnecessary in <i>most</i> situations.</p>
+		</div>
+		<div>
+			<h3>Implementing Accessibility Labels and Hints Programatically</h3>
+			<p>Sometimes setting the accessibility label/hint in the Storyboard Editor doesn't quite cut it. For instance, the properties of the element might change when the app is running or when the user performs an action. In this case, you will want to set the accessibility descriptions programatically. This can be done easily with just a few lines of code.</p>
+			<ol>
+				<li>In the Storyboard Editor, turn on accessibility for the item that you want to set a label or hint for, just like in the first part of this demo</li>
+				<li>Pull up the header file for your View Controller in the Assistant Editor</li>
+				<li>Ctrl click and drag from your element to the header file to create an IBOutlet for your element</li>
+				<li>Now open your implementation file for your ViewController</li>
+				<li>Use the <code>accessibilityLabel/accessibilityHint</code> member OR the <code>setAccessibilityLabel/setAccessibilityHint</code> function to add the appropriate string values.</li>
+			</ol>
+			<p>Below are the two ways to set an accessibility Label.</p>
+			<code>_DogDisplay.accessibilityLabel = @"Displays a Dog"; <br>
+				  [_DogDisplay setAccessibilityLabel:@"Displays a Dog"];</code>
+			<p>We hope you found this tutorial useful! Make sure to check out our app, Deque U for iOS on the App Store, and take a peek at the rest of our blog posts.</p>
+		</div>
+		<div>
+			<h3>Tips</h3>
+			<ul>
+				<li>Make sure your labels are concise! if the label is more than one or two words, the additional information should probably go in a hint.</li>
+				<li>If the content on the page is dynamic, make sure that your labels change when elements on the page are altered</li>
+			</ul>
+		</div>
+	</body>
+</html>

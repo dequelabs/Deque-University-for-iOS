@@ -7,7 +7,8 @@
 		<h1 id="mainTitle">Accessibility Hints and Labels</h1>
 		<p id="introduction">Accessibility Labels are fundemental to iOS Accessibility, they are the bridge connecting the visual aspects of your application to voiceover. Accessibility Hints are similar to Labels, and can be implemented in the same way, however, hints contain more nuanced information than labels. From an accessibility standpoint, it is very important that these hints and labels are implemented properly. There are two ways we can accomplish this: Using the storyboard editor, and programatically</p>
 		<div>
-			<h3 id="storyboardEditorTitle">Implementing Accessibility Labels and Hints In The Storyboard Editor</h3>
+			<h3 id="implementationTitle">Implementing Accessibility Labels and Hints</h3>
+			<h4>Storyboard Editor</h4>
 			<p>The first and simplest way to add accessibility labels/hints to your application is to simply use the story board editor to add them to your elements. The steps for doing this are fairly simple.</p>
 			<ol>
 				<li>Go to your storyboard editor in XCode</li>
@@ -23,7 +24,7 @@
 			<img src="Images/DQUAccessibilitySection.png" alt="The Accessibility Section Of the identity inspector">
 		</div>
 		<div>
-			<h3>Programmatic approach</h3>
+			<h4>Programmatic approach</h4>
 			<p>Sometimes setting the accessibility label/hint in the Storyboard Editor doesn't quite cut it. For instance, the properties of the element might change when the app is running or when the user performs an action. In this case, you will want to set the accessibility descriptions programatically. This can be done easily with just a few lines of code.</p>
 			<ol>
 				<li>In the Storyboard Editor, turn on accessibility for the item that you want to set a label or hint for, just like in the first part of this demo</li>
@@ -35,7 +36,18 @@
 			<p>Below are the two ways to set an accessibility Label.</p>
 			<code>_DogDisplay.accessibilityLabel = @"Displays a Dog"; <br>
 				  [_DogDisplay setAccessibilityLabel:@"Displays a Dog"];</code>
-			<p>We hope you found this tutorial useful! Make sure to check out our app, Deque U for iOS on the App Store, and take a peek at the rest of our blog posts.</p>
+			<p>An Accessibility Hint can be set the same way, just replace "Label" with "Hint".</p>
+		</div>
+		<div>
+			<h3>Discussion</h3>
+			<h4>Why is this important?</h4>
+			<p>Without Accessibility Labels and Hints, unsighted users would be left in the dark about what things on your page actually are. For example, in our broken version of the Labels example in the Deque University for iOS app, there is a button with the visual label "Dog". However, when the button is highlighted in voiceover, it is simply read out as "button". This is the equivalent of replacing the visual labels on every button with "button", and expecting sighted users to be able to tell what the button does. As you can probably guess, that would be very difficult.</p>
+
+			<p>In the broken version of our Hints example in the iOS app, we run into a similar problems. Here, the play buttons for our music player don't have accessibility Hints, thus, when they are read out by VoiceOver, the button for visiting a webpage about the Star Spangled Banner is just "Star Spangled Banner". To an unsighted user, this could be anything, they may think that this button will play the song. In any case, it is unclear what this button does when it has no hint.</p>
+
+			<p>To fix these issues, we just have to add labels and hints for these elements. The button that displays the dog now reads out as "Dog, button (pause) Modify image.  Selection moves focus to image". The button that plays music in the fixed version of Hints now becomes "Star Spangled Banner (pause) Plays music", to indicate that this button will play the star spangled banner when pressed.</p>
+
+
 		</div>
 		<div>
 			<h3>Tips</h3>
@@ -44,5 +56,6 @@
 				<li>If the content on the page is dynamic, make sure that your labels change when elements on the page are altered</li>
 			</ul>
 		</div>
+		<p>These two fixes are possibly the easiest and quickest ways to improve accessibility in iOS Applications, but they are only a part of a bigger story. Check out our other blog posts and our Deque University for iOS app for more Accessibility tutorials!</p>
 	</body>
 </html>
