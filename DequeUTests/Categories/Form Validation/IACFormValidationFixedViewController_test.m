@@ -37,11 +37,6 @@
     XCTAssert([self.controller view]);
 }
 
-- (void)tearDown {
-    [super tearDown];
-}
-
-
 - (void)testInitialState {
     
     XCTAssertFalse(self.controller.emailField.isAccessibilityElement);

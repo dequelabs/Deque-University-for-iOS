@@ -9,7 +9,7 @@
         <!--Updating Content-->
         <scene sceneID="15Y-hE-7Po">
             <objects>
-                <viewController title="Updating Content" id="9rv-FL-3I5" customClass="IACUpdatingContentBrokenViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="brokenUpdatingContent" title="Updating Content" id="9rv-FL-3I5" customClass="IACUpdatingContentBrokenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="caM-Ii-bRd"/>
                         <viewControllerLayoutGuide type="bottom" id="o8v-W4-T7a"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcw-3H-DsD">
-                                        <rect key="frame" x="5" y="10" width="590" height="110"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="103"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Bar Demo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru6-Q1-NoV" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -30,23 +30,37 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-o6-3JG" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="40" width="570" height="20"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OK0-9g-sxI">
+                                                <rect key="frame" x="237" y="40" width="116" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-o6-3JG" customClass="DQLabel">
+                                                        <rect key="frame" x="20" y="10" width="76" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="LT0-o6-3JG" secondAttribute="trailing" constant="20" id="I1I-XA-rSf"/>
+                                                    <constraint firstItem="LT0-o6-3JG" firstAttribute="leading" secondItem="OK0-9g-sxI" secondAttribute="leading" constant="20" id="JEJ-V6-ojV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LT0-o6-3JG" secondAttribute="bottom" id="Ysg-xV-43C"/>
+                                                    <constraint firstItem="LT0-o6-3JG" firstAttribute="top" secondItem="OK0-9g-sxI" secondAttribute="top" constant="10" id="hNc-dI-dTt"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="ru6-Q1-NoV" firstAttribute="top" secondItem="Vcw-3H-DsD" secondAttribute="top" constant="10" id="9sD-ev-waz"/>
-                                            <constraint firstAttribute="bottom" secondItem="LT0-o6-3JG" secondAttribute="bottom" constant="50" id="EZW-fE-sAa"/>
                                             <constraint firstItem="ru6-Q1-NoV" firstAttribute="leading" secondItem="Vcw-3H-DsD" secondAttribute="leading" constant="10" id="WPZ-wm-wkC"/>
                                             <constraint firstAttribute="centerX" secondItem="ru6-Q1-NoV" secondAttribute="centerX" id="WTY-kn-VUW"/>
+                                            <constraint firstAttribute="bottom" secondItem="OK0-9g-sxI" secondAttribute="bottom" constant="33" id="XTv-1D-AnC"/>
+                                            <constraint firstAttribute="centerX" secondItem="OK0-9g-sxI" secondAttribute="centerX" id="c8b-nf-Imx"/>
+                                            <constraint firstItem="OK0-9g-sxI" firstAttribute="top" secondItem="ru6-Q1-NoV" secondAttribute="bottom" constant="10" id="j12-NZ-DSf"/>
                                             <constraint firstAttribute="trailing" secondItem="ru6-Q1-NoV" secondAttribute="trailing" constant="10" id="nev-vc-ql1"/>
-                                            <constraint firstItem="LT0-o6-3JG" firstAttribute="trailing" secondItem="ru6-Q1-NoV" secondAttribute="trailing" id="p8k-mK-CwZ"/>
-                                            <constraint firstItem="LT0-o6-3JG" firstAttribute="leading" secondItem="ru6-Q1-NoV" secondAttribute="leading" id="s4s-4v-TLq"/>
-                                            <constraint firstItem="LT0-o6-3JG" firstAttribute="top" secondItem="ru6-Q1-NoV" secondAttribute="bottom" constant="10" id="waa-Ub-Pwc"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -55,11 +69,11 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NYq-EA-hrC">
-                                        <rect key="frame" x="5" y="130" width="590" height="155"/>
+                                        <rect key="frame" x="5" y="123" width="590" height="155"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zp-Ab-gPM" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="125"/>
-                                                <string key="text">This is a simple demo of a repeating progress bar.  Every ten seconds, the progress bar will complete. To notify VoiceOver users, VoiceOver automatically moves its focus to the progress bar every time it completes.  Notice how, in the middle of reading this paragraph, VoiceOver will always interrupt itself to notify the user.  This means that VoiceOver will never be able to finish reading this paragraph to the user.</string>
+                                                <string key="text">Demonstrated here is a simple example of passing too much information to VoiceOver. Displayed is a progress bar that restarts every ten seconds.  To notify its users, VoiceOver focuses on the progress bar everytime it completes.  Notice how, in the middle of reading this paragraph, VoiceOver will interrupt itself.  This means that it will never be able to finish reading this paragraph to the user, making this page inaccessible.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -105,8 +119,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Broken" image="DequeU_app_icon_broken" id="gMc-5o-NNn"/>
                     <connections>
-                        <outlet property="demoView" destination="Vcw-3H-DsD" id="rWu-u8-Pik"/>
                         <outlet property="progressLabel" destination="LT0-o6-3JG" id="R1U-uL-zYW"/>
+                        <outlet property="wrapperView" destination="OK0-9g-sxI" id="Zor-tn-h5Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqa-60-g8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,7 +130,7 @@
         <!--Updating Content-->
         <scene sceneID="e3N-0I-1kP">
             <objects>
-                <viewController title="Updating Content" id="8cd-hN-tfb" customClass="IACUpdatingContentFixedViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="fixedUpdatingContent" title="Updating Content" id="8cd-hN-tfb" customClass="IACUpdatingContentFixedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ETN-4C-Asl"/>
                         <viewControllerLayoutGuide type="bottom" id="lJD-jc-JpC"/>
@@ -129,7 +143,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JM-kS-PP0">
-                                        <rect key="frame" x="5" y="10" width="590" height="112"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="102"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Bar Demo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5y-GU-wpJ" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -138,31 +152,39 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPJ-8H-ZDf" customClass="DQButton">
-                                                <rect key="frame" x="278" y="80" width="35" height="32"/>
+                                                <rect key="frame" x="280" y="70" width="30" height="32"/>
                                                 <accessibility key="accessibilityConfiguration" hint=""/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <state key="normal" title="Stop">
+                                                <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-5s-Mvn">
-                                                <rect key="frame" x="237" y="40" width="116" height="40"/>
+                                                <rect key="frame" x="237" y="40" width="116" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 seconds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idE-fB-k2v" customClass="DQLabel">
-                                                        <rect key="frame" x="20" y="0.0" width="76" height="20"/>
+                                                        <rect key="frame" x="20" y="10" width="76" height="20"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="idE-fB-k2v" secondAttribute="trailing" constant="20" id="8JB-dy-xQt"/>
-                                                    <constraint firstItem="idE-fB-k2v" firstAttribute="top" secondItem="c1b-5s-Mvn" secondAttribute="top" id="bay-Q7-hSN"/>
-                                                    <constraint firstAttribute="bottom" secondItem="idE-fB-k2v" secondAttribute="bottom" constant="20" id="egc-2Z-yHd"/>
+                                                    <constraint firstItem="idE-fB-k2v" firstAttribute="top" secondItem="c1b-5s-Mvn" secondAttribute="top" constant="10" id="bay-Q7-hSN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="idE-fB-k2v" secondAttribute="bottom" id="egc-2Z-yHd"/>
                                                     <constraint firstAttribute="centerX" secondItem="idE-fB-k2v" secondAttribute="centerX" id="nNt-Us-Db6"/>
                                                     <constraint firstItem="idE-fB-k2v" firstAttribute="leading" secondItem="c1b-5s-Mvn" secondAttribute="leading" constant="20" id="uGN-Dc-KEx"/>
                                                 </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="nNt-Us-Db6"/>
+                                                    </mask>
+                                                </variation>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,11 +200,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ovs-dG-xqT">
-                                        <rect key="frame" x="5" y="132" width="590" height="92"/>
+                                        <rect key="frame" x="5" y="122" width="590" height="92"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPY-Av-cTW" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">Now, a VoiceOver user can pause these ten second notifications using the "Stop" button.  This scenario could be a solution for scrolling advertisements and other constantly updating content.</string>
+                                                <string key="text">To fix this, we have added a "Stop" button.  Now, a VoiceOver user can pause these ten second notifications.  This could be a solution for scrolling advertisements and other constantly updating content.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -293,7 +315,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRF-UI-JNh" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">Every situation will be slightly different with updating content, so it is important to find the right balance. Updating content should have enough accessibility that the user knows what is focused and have a general sense of its content. It should not, however, have so much information that it disrupts usability and functionality.</string>
+                                                <string key="text">Every situation will be slightly different with updating content, so it is important to find the right balance. Updating content should have enough accessibility that the user knows what is focused and have a general sense of its content. It should not, however, have so much information being passed to VoiceOver that it disrupts usability and functionality.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>

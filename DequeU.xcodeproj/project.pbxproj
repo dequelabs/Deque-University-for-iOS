@@ -88,6 +88,8 @@
 		EEDE4E121B38AEBF003B6362 /* IACUpdatingContentBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E0D1B38AEBF003B6362 /* IACUpdatingContentBrokenViewController.m */; };
 		EEDE4E131B38AEBF003B6362 /* IACUpdatingContentFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E0F1B38AEBF003B6362 /* IACUpdatingContentFixedViewController.m */; };
 		EEDE4E141B38AEBF003B6362 /* UpdatingContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDE4E101B38AEBF003B6362 /* UpdatingContent.storyboard */; };
+		EEDE4E251B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E241B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m */; };
+		EEDE4E271B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E261B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +262,8 @@
 		EEDE4E0E1B38AEBF003B6362 /* IACUpdatingContentFixedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IACUpdatingContentFixedViewController.h; path = "DequeU/Advanced Demos/Updating Content/IACUpdatingContentFixedViewController.h"; sourceTree = SOURCE_ROOT; };
 		EEDE4E0F1B38AEBF003B6362 /* IACUpdatingContentFixedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACUpdatingContentFixedViewController.m; path = "DequeU/Advanced Demos/Updating Content/IACUpdatingContentFixedViewController.m"; sourceTree = SOURCE_ROOT; };
 		EEDE4E101B38AEBF003B6362 /* UpdatingContent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UpdatingContent.storyboard; path = "DequeU/Advanced Demos/Updating Content/UpdatingContent.storyboard"; sourceTree = SOURCE_ROOT; };
+		EEDE4E241B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACUpdatingContentBrokenViewController_test.m; path = "DequeUTests/Categories/Updating Content/IACUpdatingContentBrokenViewController_test.m"; sourceTree = SOURCE_ROOT; };
+		EEDE4E261B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IACUpdatingContentFixedViewController_test.m; path = "DequeUTests/Categories/Updating Content/IACUpdatingContentFixedViewController_test.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -566,6 +570,7 @@
 				EEAFD3511B27348A00E23EAB /* Dynamic Notifications */,
 				EEAFD35D1B27348A00E23EAB /* Modal Dialog */,
 				EEAFD3541B27348A00E23EAB /* Form Validation */,
+				EEDE4E231B3AF36C003B6362 /* Updating Content */,
 			);
 			name = Categories;
 			path = DequeUTests/Categories;
@@ -664,6 +669,16 @@
 			);
 			name = "Updating Content Demo";
 			path = "DequeU/Basic Demos/Top Bar Contrast";
+			sourceTree = "<group>";
+		};
+		EEDE4E231B3AF36C003B6362 /* Updating Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEDE4E241B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m */,
+				EEDE4E261B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m */,
+			);
+			name = "Updating Content";
+			path = ../../iosFireEyesInstructionsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -852,12 +867,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */,
+				EEDE4E271B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m in Sources */,
 				EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */,
 				EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */,
 				EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
 				EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */,
 				EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
 				EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */,
+				EEDE4E251B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m in Sources */,
 				EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */,
 				EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */,
 				EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */,

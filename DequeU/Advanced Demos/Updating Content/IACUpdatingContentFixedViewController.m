@@ -7,67 +7,108 @@
 //
 
 #import "IACUpdatingContentFixedViewController.h"
-#import <DQA11y/DQA11y.h>
 
-@interface IACUpdatingContentFixedViewController ()
-
-@property (nonatomic, strong) NSTimer *myTimer;
-@property (nonatomic, strong) IBOutlet DQLabel *progressLabel;
-@property (strong, nonatomic) UIProgressView *progressView;
-@property (weak, nonatomic) IBOutlet UIView *wrapperView;
-@property (weak, nonatomic) IBOutlet DQButton *buttonToChangeProgress;
-
-@end
+#define BEGINNING_NUMBER_OF_SECONDS 0
+#define ONE_SECOND 1
+#define TEN_SECONDS 10
 
 @implementation IACUpdatingContentFixedViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault]; //create Progress Bar
+    [self.wrapperView addSubview:self.progressView]; //Add Progress Bar to wrapperView
+    
+    //Constraints for the Progress Bar
+    [self.view addConstraint:[NSLayoutConstraint
+                              constraintWithItem:self.progressView
+                              attribute:NSLayoutAttributeCenterX
+                              relatedBy:NSLayoutRelationEqual
+                              toItem:self.wrapperView
+                              attribute:NSLayoutAttributeCenterX
+                              multiplier:1.0
+                              constant:0.0]];
+    
+    [self.view addConstraint:[NSLayoutConstraint
+                              constraintWithItem:self.progressView
+                              attribute:NSLayoutAttributeTop
+                              relatedBy:NSLayoutRelationEqual
+                              toItem:self.wrapperView
+                              attribute:NSLayoutAttributeTop
+                              multiplier:1.0
+                              constant:0.0]];
+    
+    //Set up Start/Stop button
+    [self.buttonToChangeProgress addTarget:self action:@selector(stopOrRestartProgressBar) forControlEvents:UIControlEventTouchDown];
+    [self.buttonToChangeProgress setTitle:NSLocalizedString(@"STOP_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+    [self.buttonToChangeProgress setAccessibilityHint:NSLocalizedString(@"STOP_BUTTON_HINT", nil)];
+
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.progressView = [[UIProgressView alloc] initWithProgressViewStyle:UIProgressViewStyleDefault];
+    //start Progress Bar
+    self.myTimer = [NSTimer scheduledTimerWithTimeInterval:ONE_SECOND target:self selector:@selector(updateProgressBar:) userInfo:nil repeats:YES];
     
-    [self.wrapperView addSubview:self.progressView];
-    
-    self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateUI:) userInfo:nil repeats:YES];
-    [self.buttonToChangeProgress addTarget:self action:@selector(changeProgress) forControlEvents:UIControlEventTouchDown];
-    [self.buttonToChangeProgress setAccessibilityHint:@"Pauses the Ten Second Alerts."];
+    //Button should display "Stop"
+    [self.buttonToChangeProgress setTitle:NSLocalizedString(@"STOP_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+    [self.buttonToChangeProgress setAccessibilityHint:NSLocalizedString(@"STOP_BUTTON_HINT", nil)];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    [self.myTimer invalidate];
-    [self.buttonToChangeProgress setTitle:@"Stop" forState:UIControlStateNormal];
+    [self.myTimer invalidate]; //Stop Progress Bar when user leaves page
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)changeProgress {
-    if([self.buttonToChangeProgress.titleLabel.text isEqualToString:@"Stop"]) {
-        [self.myTimer invalidate];
-        [self.buttonToChangeProgress setTitle:@"Start" forState:UIControlStateNormal];
-        [self.buttonToChangeProgress setAccessibilityHint:@"Starts the Ten Second Alerts."];
-    } else {
-        self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateUI:) userInfo:nil repeats:YES];
-        [self.buttonToChangeProgress setTitle:@"Stop" forState:UIControlStateNormal];
-        [self.buttonToChangeProgress setAccessibilityHint:@"Pauses the Ten Second Alerts."];
-    }
-}
-
-- (void)updateUI:(NSTimer *)timer {
-    static int count = 0; count++;
+- (void)stopOrRestartProgressBar {
     
-    if (count <= 10) {
-        self.progressLabel.text = [NSString stringWithFormat:@"%d seconds",count];
-        self.progressView.progress = (float)count/10.0f;
+    //If button currently displays "Stop"
+    if([[self.buttonToChangeProgress titleForState:UIControlStateNormal] isEqualToString:NSLocalizedString(@"STOP_BUTTON_TITLE", nil)]) {
+        
+        [self.myTimer invalidate]; //Stop Progress Bar
+        
+        //Button should display "Start"
+        [self.buttonToChangeProgress setTitle:NSLocalizedString(@"START_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+        [self.buttonToChangeProgress setAccessibilityHint:NSLocalizedString(@"START_BUTTON_HINT", nil)];
+        
     } else {
-        count = 0;
-        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.progressView);
-        UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, @"Ten Second Alert!");
+        
+        //Restart Progress Bar
+        self.myTimer = [NSTimer scheduledTimerWithTimeInterval:ONE_SECOND target:self selector:@selector(updateProgressBar:) userInfo:nil repeats:YES];
+        
+        //Button should display "Stop"
+        [self.buttonToChangeProgress setTitle:NSLocalizedString(@"STOP_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+        [self.buttonToChangeProgress setAccessibilityHint:NSLocalizedString(@"STOP_BUTTON_HINT", nil)];
     }
+}
+
+- (NSString*)updateProgressBar:(NSTimer *)timer {
+    static int count = BEGINNING_NUMBER_OF_SECONDS; count++;
+    
+    //If less than or equal to 100% completion
+    if (count <= TEN_SECONDS) {
+        
+        //Remove the "s" in "seconds" if there is only 1 second
+        if(count == ONE_SECOND) {
+            self.progressLabel.text = [NSString stringWithFormat:NSLocalizedString(@"SECOND", nil), count];
+        } else {
+            self.progressLabel.text = [NSString stringWithFormat:NSLocalizedString(@"SECONDS", nil), count];
+        }
+        self.progressView.progress = (float)count/10.0f; //update Progress Bar
+        self.wrapperView.accessibilityLabel = self.progressLabel.text; //update label
+        
+    } else {
+        //Restart Progress Bar and alert user
+        count = BEGINNING_NUMBER_OF_SECONDS;
+        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, self.wrapperView);
+        UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, NSLocalizedString(@"TEN_SECOND_ALERT", nil));
+        
+        return NSLocalizedString(@"TEN_SECOND_ALERT", nil);
+    }
+    return nil;
 }
 
 @end
