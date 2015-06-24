@@ -7,14 +7,11 @@
 //
 
 #import "IACModalDialogBrokenViewController.h"
-#import "IACViewController.h"
 
 #define MAIL_TO_INDEX 0
 #define VISIT_WEBSITE_INDEX 1
 
-@interface IACModalDialogBrokenViewController ()<CustomIOS7AlertViewDelegate> {
-    UIView* overlayViewForModal; ///< The overlay view for VoiceOver Simulation.
-}
+@interface IACModalDialogBrokenViewController ()<CustomIOS7AlertViewDelegate>
 
 @end
 
