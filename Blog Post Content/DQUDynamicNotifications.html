@@ -3,5 +3,22 @@
 <title>Dynamic Notifications</title>
 </head>
 <body>
-</body>
+	<h1>Dynamic Notifications</h1>
+	<p>Dynamic Notifications are useful to alert the user when an element on-screen has been added, deleted, or somehow changed due to a user's action.</p>
+	<h3>Accessible Dynamic Notifications</h3>
+	<p>When sighted users use an application, they can visually obtain information about changes on-screen. Non-sighted users, however, need an aural clue so that they can better understand what is on-screen and navigate the app more easily.</p>
+	<h3>When To Use Dynamic Notifications</h3>
+	<p>There are many scenarios in which Dynamic Notifications are essential to creating an accessible application.  One common example is when a user presses a button.  If the button changes an element (such as a dynamic image), it may be important to have VoiceOver focus on the element and announce what it changed to.  If the button adds or deletes an element (such as the example below), VoiceOver could announce what was added or deleted to the screen.</p>
+	<p>However, be careful not to add too many notifications! It is important to have a good balance. Make sure that the user is notified and up-to-date, but do not overload the user with notifications.  Instead of being informative, these notifications can become disruptive and make the app even more inaccessible.  More about this can be seen under "Finding the Balance" in <a href = "DQUUpdatingContent.html">Updating Content</a>.
+	<h3>Implementation of Dynamic Notifications</h3>
+	<p>To add a VoiceOver notification after a function is called in your code, simply use <code>UIAccessibilityPostNotification</code>.  There are a few different types of notifications.  The most commonly used ones are listed below; however, all of the accessibility notifications can be found <a href = "https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIAccessibility_Protocol/#//apple_ref/c/data/UIAccessibilityResumeAssistiveTechnologyNotification">here</a>.
+	<h4>UIAccessibilityAnnouncementNotification</h4>
+	<p>UIAccessibilityAnnouncementNotifications are useful if a verbal announcement needs to be made.  To add one into a function, simply type <code>UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, <i>NSString</i>)</code>, where <code><i>NSString</i></code> is an <code>NSString</code> of the announcement that should be read by VoiceOver.
+	<h4>UIAccessibilityLayoutChangedNotification</h4>
+	<p>UIAccessibilityLayoutChangedNotifications are useful for changing VoiceOver's focus and for making verbal announcements.  The code for this is <code>UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, <i>NSString</i>)</code> or <code>UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, <i>UIView</i>)</code>.  If the second argument is an <code>NSString</code> or <code>NSMutableString</code>, VoiceOver will announce it.  If the second argument is a <code>UIView</code> (such as a <code>UIButton</code> or <code>UILabel</code>), VoiceOver will focus on that element.  
+	<h4>UIAccessibilityScreenChangedNotification</h4>
+	<p><code>UIAccessibilityScreenChangedNotification</code> is similar to <code>UIAccessibilityLayoutNotification</code> in that it will make an announcement or it will focus on an element. To use this, simply type in a function <code>UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, <i>NSString</i>)</code> or <code>UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, <i>UIView</i>)</code>, where <code>UIView</code> could be a <code>UIView</code>, a <code>UIButton</code>, <code>UILabel</code>, etc. 
+	<h3>Example</h3>
+
+	</body>
 </html>
