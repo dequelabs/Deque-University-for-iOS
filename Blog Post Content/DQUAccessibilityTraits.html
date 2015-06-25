@@ -45,12 +45,16 @@
 			<h3>Discussion</h3>
 			<h4>Why you should care about traits</h4>
 			<p>While the impact of traits may seem somewhat subtle and insignificant, it is vastly important in the realm of iOS Accessibility. Traits let the Accessibility API know specific information about your elements that can help VoiceOver and other aspects of the API handle your elements in a clearer and more uniform way.</p>
+			<p>For example, on our Deque U app, we demonstrate the traits button and link do not work together. For an unsighted user, selecting an element with both of those traits will result in it being announced as both a button and a link, which is incredibly confusing, since the function of a button is to change something within the app, and a link will open a web browser. This just makes the app more difficult to use, and can easily be avoided by choosing the trait that best describes the function of your element. In our case, it was a link, since it opened an external page.</p>
+			<p>Another particularly egregious example is the use of the static text trait with a trait like button, link, or image. Static text is, uh, static -- you can't interact with it. And it's text, not an image, so any of those pairings would be a direct contradiction and would confuse both voiceover as well as the person using your application.</p>
+			<p>There are many more pairings of traits that can cause problems that were not outlined here. The best way to avoid these contradictions and confusing situations is just to think carefully about pairing two accessibility traits with each other. Does your pairing really make sense? Is there a way you could simplify it by omitting one of your traits while still staying true to the function of your element?</p>
 		</div>
 		<div>
 			<h3>Tips</h3>
 			<ul>
 				<li>Make sure that the traits you assign to elements accurately reflect what that element is/does, assigning multiple traits is almost always unnecessary!</li>
 				<li>If the content on the page is dynamic, make sure that your traits change when the function of an element changes</li>
+				<li>If a button is disabled because of some condition in your application, make sure that the you add the user interaction enabled trait when it does become clickable. (e.g. a submit button on a license agreement not being clickable until the user has checked the box to signify that they have read and understood the agreement)</li>
 			</ul>
 		</div>
 		<p>We hope you found this tutorial useful! Make sure to check out our app, Deque U for iOS on the App Store, and take a peek at the rest of our blog posts.</p>
