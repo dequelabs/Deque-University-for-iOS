@@ -17,12 +17,7 @@
 
 @end
 
-@interface CustomIOS7AlertView : UIView<CustomIOS7AlertViewDelegate> {
-    UIView* _overlayViewForModal; // The overlay view for the modal dialog.
-    
-}
-
-@property UIView* overlayViewForModal;
+@interface CustomIOS7AlertView : UIView<CustomIOS7AlertViewDelegate>
 
 @property (nonatomic, retain) UIView *parentView;    // The parent view this 'dialog' is attached to
 @property (nonatomic, retain) UIView *dialogView;    // Dialog's container view
@@ -41,6 +36,8 @@
 
 - (void)show;
 - (void)close;
+
++ (void)setOverlay:(BOOL)overlayIsOn;
 
 
 - (IBAction)customIOS7dialogButtonTouchUpInside:(id)sender;
