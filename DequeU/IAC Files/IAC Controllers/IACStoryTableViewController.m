@@ -7,7 +7,7 @@
 //
 
 #import "IACStoryTableViewController.h"
-#import "IACViewController.h"
+#import "IACSplitViewController.h"
 #import "IACConstants.h"
 #import "IACUtilities.h"
 
@@ -86,6 +86,9 @@
         UIStoryboard* colors = [UIStoryboard storyboardWithName:@"TopBarContrast" bundle:nil];
         [basicDemos addObject:[colors instantiateViewControllerWithIdentifier:@"TopBarContrast"]];
     }
+    
+    UIStoryboard* updatingContent = [UIStoryboard storyboardWithName:@"UpdatingContent" bundle:nil];
+    [advancedDemos addObject:[updatingContent instantiateViewControllerWithIdentifier:@"UpdatingContent"]];
     
     _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
     _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];
@@ -262,8 +265,8 @@
 
 -(void)setState:(BOOL)value {
     overlaySwitch.on = value;
-    [sightImage setImage:[IACViewController getSightedIcon:value]];
-    [IACViewController setOverlayOn:value];
+    [sightImage setImage:[IACSplitViewController getSightedIcon:value]];
+    [IACSplitViewController setOverlayOn:value];
 }
 
 -(UITableViewCell*)createTableViewCellFromArray:(NSArray*)viewControllers withIdentifier:(NSString*)identifier forIndexPath:(NSIndexPath*)indexPath {
