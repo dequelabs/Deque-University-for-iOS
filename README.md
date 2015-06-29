@@ -29,6 +29,7 @@ iOS SDK 8.3
 - Modal Dialogs
 - Top Bar Contrast (for iPads only)
 - Forms Validation
+- Updating Content
 
 The app also has a global VoiceOver Simulation, so that sighted users can see for themselves what an accessibility issue does from the perspective of an unsighted user. 
 

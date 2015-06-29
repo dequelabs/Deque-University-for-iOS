@@ -8,10 +8,7 @@
 
 #import "IACModalDialogFixedViewController.h"
 
-@interface IACModalDialogFixedViewController() {
-    
-    IACModalDialogViewController* _modalDialogViewController; ///< The view controller containing the modal dialog.
-}
+@interface IACModalDialogFixedViewController()
 
 @end
 
@@ -20,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _modalDialogViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"AccessibleModal"];
+    _modalDialogViewController = [[UIStoryboard storyboardWithName:@"ModalDialog" bundle:[NSBundle mainBundle]]
+                                  instantiateViewControllerWithIdentifier:@"AccessibleModal"];
     _modalDialogViewController.view.backgroundColor = [UIColor clearColor];
     
     //set up learnMoreLink button
