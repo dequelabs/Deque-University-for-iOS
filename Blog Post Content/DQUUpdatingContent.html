@@ -10,7 +10,7 @@
 		<p>Updating Content can be tricky to make completely accessible.  Unlike dynamic elements that only change through user action, items that constantly change should not have every update recognized by VoiceOver.  Implementing updating content in this way will make the app more difficult to navigate and use for VoiceOver users.  However, this should not be counteracted by not making the element an accessibility element, for unsighted users should receive the same information through VoiceOver that sighted users obtain through visuals.  Below, we address how to mark elements as accessibility elements, so that VoiceOver can relay information about them to the user.</p>
 		<h3>Marking an Element as Accessible</h3>
 		<p>To make sure the updating element is marked as an accessibility element, follow the instructions below.
-		<h4>Using Storyboard Editor</h4>
+		<h4><i>Using Storyboard Editor</i></h4>
 		<p>Storyboard Editor is the easiest way to make an element accessible if it was created in the Storyboard.</p>
 		<ol>
 			<li>Go to your Storyboard Editor in XCode.</li>
@@ -20,7 +20,7 @@
 			<li>Scroll down to "Accessibility" and make sure that the checkbox labeled "Accessibility Enabled" is checked. (See image below)</li><br>
 			<img src = "Images/UpdatingContentA11yEnabled.png" alt = "Image of the Accessibility section in the Identity Inspector with 'Enabled' checked off">
 		</ol>
-		<h4>Programmatic Approach</h4>
+		<h4><i>Programmatic Approach</i></h4>
 		<p>These steps are useful if the updating content was created programmatically instead of through Storyboard.</p>
 		<ol>
 			<li>Pull up the implementation (.m) file that contains the element.</li>
@@ -38,14 +38,14 @@
 		There are a few different ways to fix these issues.  We address some solutions below.</p>
 		<h3>Potential Solutions</h3>
 		<p>Please note that these solutions may not be optimal for every scenario.  As stated before, every situation with updating content is different, so the solutions as to how to make updating content accessible will rely on the situation. Listed below are some potential ideas as to how to make these elements more accessible.</p>
-		<h4>"Updates Frequently" Trait</h4>
+		<h4><i>"Updates Frequently" Trait</i></h4>
 		<p>There is an Accessibility Trait called "Updates Frequently," located in the Identity Inspector in XCode (pictured below).  If an element updates constantly and VoiceOver is unable to keep up with the updates when focused, the "Updates Frequently" trait might help.  Instead of prompting VoiceOver to notify the user everytime the element updates, VoiceOver only announces an update once every four or five seconds.  More information about Accessibility Traits can be found in our <a href = "DQUAccessibilityTraits.html">blog post</a>.</p>
 		<img src = "Images/UpdatesFrequently.png" alt = "Image of the Identity Inspector in XCode.">
-		<h4>Remove Non-Essential Information</h4>
+		<h4><i>Remove Non-Essential Information</i></h4>
 		<p>While not optimal, if needed, it is possible to programmatically update the Accessibility Label of the updating element, so that VoiceOver only notifies the user with the most important information.  This was briefly mentioned in the earlier example of the clock - instead of announcing the hour, minute, and second every second, the Accessibility Label could be programmed to only contain the hour and the minute.  More information about setting up Accessibility Labels programmatically can be found <a href = "DQUAccessibilityLabels.html">here</a>.</p>
-		<h4>UIAccessibilityPostNotification</h4>
+		<h4><i>UIAccessibilityPostNotification</i></h4>
 		<p>There is a function in XCode called <code>UIAccessibilityPostNotification</code>.   Depending on how it is used, this function can prompt VoiceOver to read out custom notifications or focus on a certain element.  This can be useful if an item requires attention from a VoiceOver user.  More information about this function can be found in <a href = "DQUDynamicNotifications.html">this blog post</a> under "Implementing Dynamic Notifications."</p>
-		<h4>Start/Stop Button</h4>
+		<h4><i>Start/Stop Button</i></h4>
 		<p>If <code>UIAccessibilityPostNotification</code> is used too frequently with updating content (such as a progress bar that repeats as soon as it completes), other content may become inaccessible.  For example, let's say I made a progress bar that completes every 10 seconds, and when it completes, VoiceOver focuses on the progress bar and states "Progress Bar Complete."  If the VoiceOver user wanted to read a long paragraph, VoiceOver may, in the middle of the paragraph, switch focus to the progress bar because it completed another cycle.  This would make the paragraph inaccessible to VoiceOver users.  To fix this, implementing a start/stop button, in which the user can stop the progress of the bar so as to access other elements on the page, may solve the problem.</p>
 		<p>Thank you for reading!  If you found this helpful and want to learn more about accessibility, check out our other accessibility tutorials on our other <a href = "index.html">blog posts</a> and our Deque University for iOS app, available on the App Store!
 	</body>

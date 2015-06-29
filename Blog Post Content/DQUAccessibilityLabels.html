@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 		<title> Accessibility Hints and Labels </title>
 	</head>
 	<body>
@@ -8,7 +9,7 @@
 		<h1>Accessibility Hints and Labels</h1>
 		<p>Accessibility Labels are fundemental to iOS Accessibility; they are the bridge connecting the visual aspects of your application to VoiceOver. Accessibility Hints are similar to Accessibility Labels and can be implemented in the same way; however, Accessibility Hints contain more nuanced information than Accessibility Labels. From an accessibility standpoint, it is very important that these are implemented properly. There are two ways we can accomplish this: Using the storyboard editor, and programatically.</p>
 		<h3>Implementing Accessibility Labels and Hints</h3>
-		<h4>Storyboard Editor</h4>
+		<h4><i>Storyboard Editor</i></h4>
 		<p>The first and simplest way to add Accessibility Labels/Hints to your application is to simply use the story board editor to add them to your elements. The steps for doing this are fairly simple.</p>
 		<ol>
 			<li>Go to your storyboard editor in XCode</li>
@@ -17,26 +18,26 @@
 			<li>Scroll down to Accessibility and check the box that says "Enabled"</li>
 			<li>Under the fields "Label" and "Hint", enter concise and useful information about your element</li>	
 		</ol>
-		<p>Below is what this looks like for the Dog button in the Labels Section of the Deque U app.</p>
+		<p>Below is what this looks like for the Dog button in the Labels Section of the Deque University app.</p>
 		<img src="Images/DQUIdentityInspector.png" alt="Image Showing the identity inspector as the third element in XCode's top right bar.">
 		<br>
 		<br>
 		<img src="Images/DQUAccessibilitySection.png" alt="The Accessibility Section Of the identity inspector">
-		<h4>Programmatic approach</h4>
+		<h4><i>Programmatic approach</i></h4>
 		<p>Sometimes setting the Accessibility Label/Hint in the Storyboard Editor doesn't quite cut it. For instance, if the properties of the element change when the app is running or when the user performs an action, you will want to set the accessibility descriptions programatically. This can be done easily with just a few lines of code.</p>
 		<ol>
-			<li>In the Storyboard Editor, turn on accessibility for the item that you want to set a label or hint for by following steps 1-4 in the "Storyboard Editor" section</li>
+			<li>In the Storyboard Editor, turn on accessibility for the item that you want to set a label or hint for (see steps 1-4 in the "Storyboard Editor" section)</li>
 			<li>Pull up the header file for your View Controller in the Assistant Editor</li>
 			<li>Ctrl click and drag from your element to the header file to create an IBOutlet for your element</li>
 			<li>Open your implementation file for your ViewController</li>
 			<li>Use the <code>accessibilityLabel/accessibilityHint</code> member OR the <code>setAccessibilityLabel/setAccessibilityHint</code> function to add the appropriate string values.</li>
 		</ol>
 		<p>Below are the two ways to set an Accessibility Label.</p>
-		<code>_DogDisplay.accessibilityLabel = @"Displays a Dog"; <br>
-			  [_DogDisplay setAccessibilityLabel:@"Displays a Dog"];</code>
+<blockquote><pre class = "prettyprint"><code>_DogDisplay.accessibilityLabel = @"Displays a Dog";
+[_DogDisplay setAccessibilityLabel:@"Displays a Dog"];</code></pre></blockquote>
 		<p>An Accessibility Hint can be set the same way, just replace "Label" with "Hint."</p>
 		<h3>Discussion</h3>
-		<h4>Why is this important?</h4>
+		<h4><i>Why is this important?</i></h4>
 		<p>Without Accessibility Labels and Hints, unsighted users would be left in the dark about what elements on your page actually are. For example, in our broken version of the Labels example in the Deque University for iOS app, there is a button with the visual label "Dog." However, when the button is highlighted in VoiceOver, it is simply read out as "button". This is the equivalent of replacing the visual labels on every button with "button", and expecting sighted users to be able to tell what the button does. As you can probably guess, that would be very difficult.</p>
 			<img src="Images/DQUAccessibilityLabelsLabelsBroken.PNG" alt="Image showing the broken version of the labels demo in Deque University for iOS with a speech bubble coming out of the dog button showing it is only being announced as 'Button'">
 			<p>In the broken version of our Hints example in the iOS app, we run into a similar problems. Here, the play buttons for our music player don't have Accessibility Hints, thus, when they are read out by VoiceOver, the button for visiting a webpage about the Star Spangled Banner is just "Star Spangled Banner". To an unsighted user, this could be anything, they may think that this button will play the song. In any case, it is unclear what this button does when it has no hint.</p>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 		<title> Accessibility Traits </title>
 	</head>
 	<body>
@@ -9,7 +10,7 @@
 		<p>Accessibility Traits are yet another useful and important feature in the realm of iOS Accessibility. An Accessibility Trait allows you to choose the best description for what an element in your application does.</p>
 		<p>A trait is like an extra Accessibility Label, that lets a user know how your button, link, text field, etc. will react upon interaction. It is important to set up these traits properly so that a user does not get confused when clicking on a "Text Field" opens the web browser.</p>
 		<h3 id="storyboardEditorTitle">Implementing Accessibility Traits</h3>
-		<h4>Storyboard Editor</h4>
+		<h4><i>Storyboard Editor</i></h4>
 		<p>Accessibility Traits don't often change while the app is running, so for most people, this method will suffice.</p>
 		<ol>
 			<li>Go to your storyboard editor in XCode</li>
@@ -18,13 +19,13 @@
 			<li>Enable Accessibility by checking the box that says "Enabled"</li>
 			<li>Scroll down to Accessibility and check the box for the trait(s) that you would like to apply</li>
 		</ol>
-		<p>Below is what this looks like for the Dog button in the Traits Section of the Deque U app.</p>
+		<p>Below is what this looks like for the Dog button in the Traits Section of the Deque University app.</p>
 		<img src="Images/DQUIdentityInspector.png" alt="Image Showing the identity inspector as the third element in XCode's top right bar.">
 		<br>
 		<br>
 		<img src="Images/DQUAccessibilityTraits.png" alt="The Accessibility Section Of the identity inspector with the 'Button' and 'User interaction enabled' traits selected">
-		<p>You will want to add only the trait that best describes the behavior of your element. For instance, as in the Traits Demo of our <a href="https://github.com/dequelabs/Deque-University-for-iOS">Deque U app</a>, if your element opens a web page, you should label it as a link, even if it is a UIButton. Doubling up on traits can be confusing and unnecessary in some situations.</p>
-		<h4>Programmatic Approach</h4>
+		<p>You will want to add only the trait that best describes the behavior of your element. For instance, as in the Traits Demo of our <a href="https://github.com/dequelabs/Deque-University-for-iOS">Deque University app</a>, if your element opens a web page, you should label it as a link, even if it is a UIButton. Doubling up on traits can be confusing and unnecessary in some situations.</p>
+		<h4><i>Programmatic Approach</i></h4>
 		<p>In most apps, Accessibility Traits will remain constant at runtime. However, for more advanced applications with a large amount of dynamic content, it may be necessary to change or add Accessibility Traits at runtime. To add or change traits in your code, follow the directions below.</p>
 		<ol>
 			<li>In the Storyboard Editor, turn on accessibility for the item that you want to set a trait for (see steps 1-4 in "Storyboard Editor")</li>
@@ -34,18 +35,18 @@
 			<li>Use the <code>accessibilityTrait</code> member OR the <code>setAccessibilityTrait</code> function to add the appropriate <code>UIAccessibilityTraits</code> value.</li>
 		</ol>
 		<p>Below are the two ways to set an Accessibility Trait.</p>
-		<code>_DogDisplay.accessibilityLabel = UIAccessibilityTraitButton; <br>
-			  [_DogDisplay setAccessibilityTrait:UIAccessibilityTraitButton];</code>
+<blockquote><pre class = "prettyprint"><code>_DogDisplay.accessibilityLabel = UIAccessibilityTraitButton;
+[_DogDisplay setAccessibilityTrait:UIAccessibilityTraitButton];</code></pre></blockquote>
 		<p>There are many possible values for the UIAccessibilityTrait. A full list can be found <a href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIAccessibility_Protocol/#//apple_ref/doc/constant_group/Accessibility_Traits">here</a>.</p>
 		<h3>Discussion</h3>
-		<h4>Why is this important?</h4>
+		<h4><i>Why is this important?</i></h4>
 		<p>While the impact of traits may seem somewhat subtle and insignificant, it is vastly important in the realm of iOS Accessibility. Traits let the Accessibility API know specific information about your elements that can help VoiceOver and other aspects of the API handle your elements in a clearer and more uniform way.</p>
-		<p>For example, in our Deque U app, we demonstrate that the traits UIAccessibilityTraitButton and UIAccessibilityTraitLink do not work together. For an unsighted user, selecting an element with both of those traits will result in it being announced as a button and a link, which is incredibly confusing. A button is used to change something within the app, and a link is used to open a web browser. This just makes the app more difficult to use, and can easily be avoided by choosing the trait that best describes the function of your element.</p>
+		<p>For example, in our Deque University app, we demonstrate that the traits UIAccessibilityTraitButton and UIAccessibilityTraitLink do not work together. For an unsighted user, selecting an element with both of those traits will result in it being announced as a button and a link, which is incredibly confusing. A button is used to change something within the app, and a link is used to open a web browser. This just makes the app more difficult to use, and can easily be avoided by choosing the trait that best describes the function of your element.</p>
 		<p>Another particularly egregious example is the use of the "Static Text" trait with a "Button," "Link", or "Image" trait. Static text is static -- you can't interact with it.  In addition, static text is nothing else other than text, so any of the pairings listed above would be a direct contradiction and would confuse both VoiceOver as well as the person using your application.</p>
 		<p>There are many more pairings of traits that can cause problems that were not outlined here. The best way to avoid these contradictions and confusing situations is just to think carefully about pairing two Accessibility Traits with each other. Does your pairing really make sense? Is there a way you could simplify it by omitting one of your traits while still staying true to the function of your element?</p>
 		<h3>Tips</h3>
 		<ul>
-			<li>Make sure that the traits you assign to elements accurately reflect what that element is/does -- assigning multiple traits is almost always unnecessary!</li>
+			<li>Make sure that the traits you assign to elements accurately reflect what that element is/does!</li>
 			<li>If the content on the page is dynamic, make sure that your traits change when the function of an element changes.</li>
 			<li>If a button is disabled because of some condition in your application, make sure that the you add the "User Interaction Enabled" trait when it does become clickable. (For example, a submit button on a license agreement that is not clickable until the user has checked the box to signify that he has read and understood the agreement.)</li>
 		</ul>
