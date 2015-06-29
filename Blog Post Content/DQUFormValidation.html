@@ -1,0 +1,94 @@
+<html>
+	<head><title>Form Validation</title></head>
+<body>
+	<a href = "index.html">COUNTRY ROADS TAKE ME HOME</a>
+	<h1>Form Validation</h1>
+	<p>A demo of a native iOS form marked up for accessiblity.</p>
+	<h3>Accessible Form Validation</h3>
+	<p>Forms, such as login screens, are typically on the first page that a user sees. Most apps that involve a form don't want the requirement errors, frequently highlighted in red, to be messing up the visual appearance of their apps. Instead, specific requirements are denoted by asterisks, hint text, or nothing at all (and are just assumed). Only when users fail to make this assumption are they assaulted with error messages and bright red text. From a sighted user's point of view, this user experience is fine; however, from an accessibility point of view, two critical requirements have been broken. First, the addition of dynamic content (the error labels) means that the errors may not be announced by VoiceOver.  Second, the red color of the error labels conveys information that is not otherwise shown; thus, it is not obvious for non-sighted users that they are error messages.  The goal of this post is to cover how to make these form interfaces accessible, while still keeping the overall original design.</p>
+	<h3>Pre Submission</h3>
+	<p>Before we submit this form, we have the following setup:</p>
+	<img src="Images/DQUFormValidationPreSubmit.PNG" alt="A screenshot of an iOS Application with a basic form prior to submission.  Deque Logo at the top, with 3 text fields for name, email address and date.  A submit button at the bottom.">
+	<p>There are several things to notice about this basic form that may be different than the typical iOS form.</p>
+	<h4>Color Contrast</h4>
+	<p>One of the first things you may notice is the light blue background of the textfields.  The traditional thin rounded border is difficult for users with mild sight impairments to see.  By providing UITextFields with a light blue background, we ensure the bounds are easy to spot.</p>
+	<h4>Accessibility Labels</h4>
+	<p>Below is a screenshot of the acccessibility section of the Identity Inspector with a UIView selected.  This UIView contains the "Name" label and the textfield next to it.   With VoiceOver turned on and this view focused, VoiceOver should announce, "Name, textField (pause). This field is required. Double tap to edit." </p>
+	<img src = "Images/DQUFormsValidationLabels.png" alt = "Image of the Accessibility section of the Identity Inspector in XCode. The 'Label' field says 'Name, TextField' and 'Hint' says 'This field is required.'">
+
+
+    <p>Notice the pause before reading "This field is required." This is beneficial. When setting up accessibility for applications, always keep two users in mind: power users and new users. Labels provide instant, important information that even the users most familiar with your application need to orient themselves. No matter how familiar a VoiceOver user is with your application, they may not know where focus originated, and so they need labels like "Name" and "Email" to keep them oriented within your application. However, that a particular field is required, or even that it is a text entry field, is something that they will become accustomed to over time. So having the pause before sharing that it is required is good! It also allows us to differentiate between this version, and the "Post Submission" version of the view, to make this information more apparent to users who fail to submit the form properly.</p>
+    <p>Notice our Date field is marked up very different from our Email field. We have a more complex requirement for it, namely the mm/dd/yyyy date formatting. A popular approach is to replicate the Android "Hint" text, where we place the formatting requirements directly into the UITextField as placeholder text. However, this placeholder text will ultimately be replaced. So a UITextField that was first read out:</p>
+
+    <p>"Date, mm/dd/yyyy" ... (btw, the read out of yyyy without spaces is harsh!)</p>
+
+    <p>Gets read out like this after text entry</p>
+
+    <p>"Date, '(entered text)'" ...</p>
+
+    <p>And the proper date formatting is now lost. For sighted users, it is commonly available elsewhere on the app, but for non-sighted users it is frequently lost for good. We remedy this situation by separating the two labels for sighted and non-sighted users. We place the labeling for sighted users in with the "Date" UILabel. We then set the hint on the UITextField to "m m / d d / y y y y, this field is required." for non sighted users. Notice the extra spaces. This causes VO to readout the letters more concisely. Otherwise individual letters aren't pronounced well.</p>
+
+    <p>Finally, we go through and turn off isAccessibiltyElement for all UI elements that are not either our UITextFields or the submit button. All of the information VoiceOver users need is in the label or hint of the given elements. Focusing the UILabels would be distracting and confusing.</p>
+
+    <h2>
+      <a id="post-submission" class="anchor" href="#post-submission" aria-hidden="true"><span class="octicon octicon-link"></span></a>Post Submission</h2>
+
+    <p>Here is what the view likes after we attempt to submit the form, without anything filled out:</p>
+
+    <p><img src="Images/PostSubmit.PNG" alt="An image of an iOS View, the same view as in the other image, but after unsuccessful form submission.  Deque logo at the top, with three text entry fields, denoting space for name, email address, and date.  There are error messages in red text below each field, because the text fields were left empty."></p>
+
+    <p>From a visual standpoint, obviously things have changed. We now see error messages below the UITextFields. However, what is more important is what happens with VoiceOver turned on.</p>
+
+    <p>First, let's talk about the easy stuff. That is, removing the hints, and placing the text that was in the hint, directly into the label. So, if VoiceOver's original read out for the Name field was this:</p>
+
+    <p>"Name, text field (pause) This field is required. Double tap to edit."</p>
+
+    <p>Now it is:</p>
+
+    <p>"Name, This field is required. text field (pause) Double tap to edit."</p>
+
+
+    <p>This subtle change helps VoiceOver users be aware of the fact that there are requirements on those fields. If the hint text was ignored before, it is now more difficult to ignore! Notice, that the text of the hint has not changed. Changing the content of the text would be jarring, we are just placing the text in a place where it is more obvious. The subtle change also hints to what is wrong. If requirement messages are attached to labels for fields that weren't correctly filled out, and that information is left in the hint for fields that were, it provides clues as to which fields are problematic. All without changing any of the actual content!</p>
+
+    <p>Finally, we want VoiceOver to place focus on the first element (in order from the beginning of the content to the end) that failed validation. So, in this case, the first focused element would be the Name UITextField. However, if a name were provided, VoiceOver focus would be placed on the Email UITextField. To do this we use the following line of code</p>
+
+    <p><code>UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, _nameField);</code></p>
+
+    <p>This notification tells VoiceOver to send AccessibilityFocus to the _nameField. When focus changes, the label of the new element is read out (not the hint, see alternate design decisions below), and the black VoiceOver box is moved to the element. We move it to the first failing element so that as they flip forward through the remaining items, they will easily find the other items that have failed.</p>
+
+    <h2>
+      <a id="alternate-design-decisions" class="anchor" href="#alternate-design-decisions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternate Design Decisions</h2>
+
+    <p>There are a few other ways we could have done this. I would just like to spend a little bit talking about these design decisions, and why we chose this as the "best" way to do this.</p>
+
+    <h3>
+      <a id="layout-notification-bug" class="anchor" href="#layout-notification-bug" aria-hidden="true"><span class="octicon octicon-link"></span></a>Layout Notification Bug</h3>
+
+    <p>One of the possible ways to handle dynamic content, such as form error validation, is to announce that content has been added to the page. In fact, iOS supports such notifications. Instead of supplying a UIObject to the post notification call we could have done this:</p>
+
+    <p><code>UIAccessibilityPostNotification(UIAccessibilityLayoutChangedNotification, @"Form submission failed, check ##### element");</code></p>
+
+    <p>This should then cause VoiceOver to announce the provided string. However, this behavior is bugged in at least iOS 8.1.3 and prior. So, obviously, this approach isn't going to work. We could instead use the screen changed notification, which provides a similar behavior, but is NOT bugged:</p>
+
+    <p><code>UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, @"Form submission failed, check ##### element");</code></p>
+
+    <p>However, the screen change notification comes with the little "beep-boop" that notifies VoiceOver users that they have changed screens. Hence, "ScreenChangedNotification". This is an misleading representation of what has happened. Ultimately a combination of the two solutions would be best, but given the current framework bugs, we believe our solution to find a good balance.</p>
+
+    <h3>
+      <a id="leave-info-in-the-hint" class="anchor" href="#leave-info-in-the-hint" aria-hidden="true"><span class="octicon octicon-link"></span></a>Leave Info in the Hint</h3>
+
+    <p>Another alternative would be to leave the UITextField accessibility information alone. Instead of moving the AccessibilityHint information onto the end of the AccessibilityLabel, just leave it be!</p>
+
+    <p>This is a reasonable solution, except for one little flaw. When you use the UIAccessibilityLayoutChangedNotification, to move focus to the first failing element, only the AccessibilityLabel for that element is read out.</p>
+
+    <p>Name, text field (pause) <strong>This field is required.</strong> Double tap to edit.</p>
+
+    <p>The bolded portion is left off! If what we aim to do is draw attention to the errors, this is obviously not ideal.</p>
+
+    <p>Thanks for reading. If you're interested in learning more about accessibility, check out our other <a href="index.html">blog posts here</a>!</p>
+
+	<p>This discussion frequently references code in the <a href = "https://github.com/dequelabs/Deque-University-for-iOS">open source repository</a> for the Deque University for iOS app. Note that the information from this post was gathered using an iPad (8.1.3) and iPod Touch (8.1.2). If any mentioned behaviors/bugs have changed, feel free to leave a comment and we will update as necessary.</p>
+        </article>
+      </div>
+    </div>
+  </body>

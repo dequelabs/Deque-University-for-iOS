@@ -44,7 +44,7 @@
                          NSLocalizedString(@"ALERT_BUTTON_VISIT", nil));
     DEQAssertStringEqual(self.controller.modalDialogViewController.close_button.titleLabel.text, NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil));
 }
-/*
+
 - (void)testEmailUsButton {
     DEQAssertStringEqual([self.controller visitWebpage:self.controller.modalDialogViewController.email_us_button], @"mailto:chris.mcmeeking@deque.com");
 }
@@ -56,7 +56,7 @@
 - (void)testCloseButton {
     DEQAssertEmptyString([self.controller visitWebpage:self.controller.modalDialogViewController.close_button]);
 }
-*/
+
 - (void)tearDown {
     [super tearDown];
 }
