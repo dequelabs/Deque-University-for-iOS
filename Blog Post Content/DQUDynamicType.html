@@ -6,7 +6,7 @@
 	<body>
 		<a href = "index.html">BACK HOME</a>
 		<h1>Dynamic Type</h1>
-		<p>Starting in iOS 7, users were given the ability to change their preferred reading font size.  This means that users with sight impairments can increase the size of their text past what users might normally find usable.  It also allows any user the ability to shrink or expand text to a size they are comfortable with.</p> 
+		<p>Starting in iOS 7, users were given the ability to change their preferred reading font size.  This means that users with sight impairments can increase the size of their text past what users might normally find usable.  It also allows any user the ability to shrink or expand text to a size they are comfortable with and customize their experience device-wide.  Apps that do not conform to these expectations may stand out and appear inferior.</p> 
 		<h3>Implementing Dynamic Type</h3>
 		<p>The default type in iOS (System font) does not automatically adjust to a user's preferred font size.  There are two ways to make type dynamic.  Both require the use of the following code in your custom viewController class:
 <blockquote><pre class = "prettyprint"><code>- (void)viewDidLoad {
@@ -16,15 +16,15 @@
 						object:nil];
 	[self didChangePreferredContentSize];
 }</code></pre></blockquote>
-		The first section of code is a listener.  It will notify your app when the user changes the type size.  The <code>[self didChangePreferredContentSize]</code> calls the <code>didChangePreferredContentSize</code> function when the app loads, so if your user already has a content size other than the default set, the label will know to change its size.  After adding the implementation for <code>didChangePreferredContentSize</code>, your app will automatically adjust to changes in the text size.  Instructions to implement Dynamic Type are below.</p>
+		The first method called is a listener.  It will notify your app when the user changes the type size.  The <code>[self didChangePreferredContentSize]</code> calls the <code>didChangePreferredContentSize</code> function (which has instructions to implement it below) when the app loads, so if your user already has set a content size other than the default, the label will know to change its text size.  The instructions below will show you two ways to add Dynamic Type.</p>
 		<h4><i>Pre-Defined Dynamic Types</i></h4>
-		<p>If you would like to use one of iOS's pre-defined dynamic types, using Storyboard Editor is the most efficient.
+		<p>iOS supplies a set of text styles that respond to content size changes so that users do not have to create their own.  Instructions to use these are below.
 		<ol>
-			<li>Open up Storyboard Editor and select one of the UILabels that you would like to make dynamic</li>
-			<li>Click on the Attributes Inspector on the top right bar - the fourth element from the left (see image below on left)</li>
-			<li>Go to the "Label" section.  Next to "Font," click on the image with the T (see image below on left)</li>
-			<li>Next to "Font" in the open menu, select any of the options under "Text Styles" (see image below in the middle)</li>
-			<li>Click "Done" and go down to "Lines" (underneath "Alignment").  Change the number of lines to "0" (see image below on right)</li>
+			<li>Open up Storyboard Editor and select one of the UILabels that you would like to make dynamic.</li>
+			<li>Click on the Attributes Inspector on the top right bar -- the fourth element from the left (see image below on left).</li>
+			<li>Go to the "Label" section.  Next to "Font," click on the image with the T (see image below on left).</li>
+			<li>Next to "Font" in the open menu, click to open the drop-down menu.  Select any of the options under "Text Styles" (see image below in the middle).</li>
+			<li>Click "Done" and go down to "Lines" (underneath "Alignment").  Change the number of lines to "0" (see image below on right).</li>
 			<br>
 			<img src = "Images/DQUDynamicTypeSteps2_3.png" alt = "Screenshot of the Labels section in the Attribute Inspector in XCode with the Font options open">
 			<img src = "Images/DQUDynamicTypeStep4.png" alt = "Screenshot of the Labels section in the Attribute Inspector in XCode.  The Font options is open with the Font drop-down menu open.">
@@ -34,11 +34,11 @@
 			Now that the UILabel is all set up, we can implement <code>didChangePreferredContentSize</code> to make the listener effective.
 			<br>
 			<br>
-			<li>Open up the Assistant Editor (icon of a Venn Diagram in the top right corner of XCode -- see image below)</li>
+			<li>Open up the Assistant Editor (icon of a Venn Diagram in the top right corner of XCode -- see image below).</li>
 			<img src = "Images/DQUDynamicTypeAssistant.png" alt = "Screenshot of the location of the Assistant Editor icon, boxed off in red">
 			<br>
 			<br>
-			<li>On one screen, open the Storyboard Editor, and on the other screen, open your custom viewController class</li>
+			<li>On one screen, open the Storyboard Editor, and on the other screen, open your custom viewController class.</li>
 			<li>Ctrl, click and drag the label that should respond to dynamic type from the Storyboard Editor into the "interface" section of the header file. This will create an IBOutlet.</li>
 			<li>Click on the Standard Editor icon, to the left of the Assistant Editor icon.  Click on the implementation file of the viewController class.</li>
 			<li>Add the following code to your implementation file:</li>
@@ -60,49 +60,56 @@
 		<p>If you would prefer to use your own custom font to design your app but still want it to be dynamic, follow the steps below.
 		<ol>
 			<li>Go to the "Font" attribute in the Label section of the Attributes Inspector for the UILabel you would like to make dynamic (steps 1 - 3 under "Pre-Defined Dynamic Types").</li>
-			<li>Once the menu is open for "Font," open the drop down menu for "Font" and select "Custom" (See image below)</li>
-			<li>Choose the font family, size, and style that you want to be the default for the UILabel. When finished, click "Done"</li>
-			<li>Go down to "Lines" (underneath "Alignment").  Change the number to "0," as similar to Step 5 under "Pre-Defined Dynamic Types"</li>
+			<li>Once the menu is open for "Font," open the drop-down menu for "Font" and select "Custom" (See image below).</li>
+			<li>Choose the font family, size, and style that you want to be the default for that UILabel. When finished, click "Done."</li>
+			<li>Go down to "Lines" (underneath "Alignment").  Change the number to "0," as similar to Step 5 under "Pre-Defined Dynamic Types."</li>
 		</ol></p>
 		<img src = "Images/DQUDynamicTypeCustom.png" alt = "Screenshot of the Labels section in the Attribute Inspector in XCode. The Font options is open with the Font drop-down menu open.">
 		<p>Below is the implementation of <code>didChangePreferredContentSize</code> for custom fonts.
 		<ol>
-			<li>Follow steps 6 - 9 in "Storyboard Editor" to </li>
+			<li>Follow steps 6 - 9 in "Storyboard Editor" to add an IBOutlet of a UILabel to your custom viewController class.</li>
 			<li>In the implementation file, add the following code:</li>
 <blockquote><pre class = "prettyprint"><code>- (void)didChangePreferredContentSize {
 	NSString *contentSize = [UIApplication sharedApplication].preferredContentSizeCategory;
 		        
 	if([contentSize isEqualToString:UIContentSizeCategoryExtraSmall]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:14.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:14.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategorySmall]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:15.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:15.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryMedium]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:16.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:16.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:18.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:18.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryExtraLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:20.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:20.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryExtraExtraLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:22.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:22.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryExtraExtraExtraLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:24.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:24.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryAccessibilityMedium]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:28.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:28.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryAccessibilityLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:32.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:32.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryAccessibilityExtraLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:40.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:40.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryAccessibilityExtraExtraLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:46.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:46.0];
 	} else if ([contentSize isEqualToString:UIContentSizeCategoryAccessibilityExtraExtraExtraLarge]) {
-		self.<i>testLabel</i>.font = [self.testLabel.font fontWithSize:52.0];
+		self.<i>labelName</i>.font = [self.testLabel.font fontWithSize:52.0];
 	}
 }</code></pre></blockquote>
-			where <code><i>testLabel</i></code> is the name of your label. 
+			where <code><i>labelName</i></code> is the name of your label. 
 		</ol></p>
-		<h3>Discussion</h3>
-		<h4><i>Why is this important?</i></h4>
-		<p>Dynamic Type, while it is used as an accessibility feature for those with sight impairments, is also a usability feature.  Controlling text size device-wide allows users to customize their experience.  Apps that do not conform to these expectations will stand out and appear inferior.</p>
-		<p>We hope you found this blog post helpful!  If you would like to go through more accessibility tutorials, check out our other <a href = "index.html">blog posts</a> and our <a href = "https://github.com/dequelabs/Deque-University-for-iOS">Deque University for iOS app</a>!</p>
+		<h4><i>Scroll Views</i></h4>
+		<p>It is also important to embed all elements on a screen into one UIScrollView.  UIScrollViews allow users to scroll down when text and other items are too large to fit onto one screen.  This is useful when text goes past the screen; however, it is also important to include even when everything fits on one screen by default.  Imagine using an app that has text fit all on one screen, but is so small, that it is unreadable.  Now imagine making the text larger until it is readable; however, once it becomes large enough to read, the text gets moved off screen and cannot scroll.  How frustrating would that be?  If no scroll views are added, it may make the user experience very frustrating, especially for those who need Dynamic Type, for there will be no possible way to read all content.</p>    
+		<p>This is not only an accessibility feature, but a usability feature.  If there is too much text to fit onto one screen, it will be impossible for any user to read what is currently off-screen unless there is a scroll view.  An example of this can be seen in our <a href = "https://github.com/dequelabs/Deque-University-for-iOS">Deque University for iOS app</a>, available in the App Store.</p>
+		<h3>Tips</h3>
+		<ul>
+			<li>Labels do not need to support Dynamic Type if they are, by default, 30pt or higher.  30pt is higher than the <code>UIContentSizeCategoryExtraExtraExtraLarge</code>, the largest type available without turning on Larger Accessibility Sizes.</li>
+			<li>Make sure to add scroll views and/or Scrolling TextViews, even if everything fits on one screen of your app!  Dynamic Text may push elements off-screen.</li>
+			<li>Do not forget to change the number of lines on every UILabel with Dynamic Type to 0.  This helps text wrap when the text size is changed to a larger size.</li>
+			<li><code>UIFontTextStyleHeadline</code>, <code>UIFontTextStyleCaption1</code>, and <code>UIFontTextStyleSubheadline</code> do not respond to anything past <code>UIContentSizeCategoryExtraExtraExtraLarge</code>, so do not worry if they do not work on Larger Accessibility Sizes.</li> 
+		</ul>
+		<p>Thank you for reading!  We hope you found this blog post helpful!  If you would like to go through more accessibility tutorials, check out our other <a href = "index.html">blog posts</a> and our <a href = "https://github.com/dequelabs/Deque-University-for-iOS">Deque University for iOS app</a>!</p>
 	<body>
 </html>
