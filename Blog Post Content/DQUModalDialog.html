@@ -4,8 +4,15 @@
 		<title>Modal Dialog</title>
 	</head>
 	<body>
+		<a href = "index.html">BACK HOME</a>
 		<h1>Modal Dialog</h1>
-		<h3>Implementing Modal Dialogs</h3>
-		<h4><i></i></h4>
+		<p>Modal Dialogs are "pop up" notifications that visually alert the user.  This includes error messages, warnings, and operations that require user input.  They usually appear after a user action.</p>
+		<h3>Accessibility Issues</h3>
+		<p>For sighted users, visual alerts work fine; however, VoiceOver, by default, does not make it obvious that a new view has popped up on the screen - it does not automatically focus on these views, and many times, VoiceOver users can still tab behind the Modal Dialog.  VoiceOver users, therefore, may not ever know that the Modal Dialog appeared in the first place and may never receive that important information.</p>
+		<h3>Modal Dialog Example</h3>
+		<h4><i>Broken Version</i></h4>
+		<p>With this version, we used a custom subclass of UIView that gets added and removed from the viewController's view every time the Modal Dialog pops up/disappears.  Doing this, it was very simple to break.  For sighted users, the interface worked great - all links worked and everything, but for unsighted users, VoiceOver would tab underneath the Modal Dialog View, and it did not focus on the Modal Dialog automatically, so users using VoiceOver do not know that the Modal Dialog even exists.  If anything, they may think that the button they clicked on is broken.</p>
+		<h4><i>Fixed Version</i></h4>
+		<p>To fix this, we ended up implementing the Modal Dialog with a View Controller.  Every time a user clicks the button, the Modal Dialog View Controller would get added.  When coding this example, we tried breaking the View Controller way of creating a Modal Dialog, and it did not work.  This method is accessible from the start.  It automatically focuses on the first element in the View Controller and makes everything else in the previous View Controller not able to be accessible until the Modal Dialog is dismissed.  The only addition we had to add was the UIPostAccessibilityNotification to make VoiceOver focus on the button that made the Modal Dialog pop up in the first place.  Using a View Controller for a Modal Dialog is the best way to do it from an accessibility standpoint.  Using a view is very difficult to make accessible.</p>
 	</body>
 </html>

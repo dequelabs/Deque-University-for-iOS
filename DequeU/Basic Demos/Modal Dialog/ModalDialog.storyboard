@@ -58,7 +58,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-5P-T3f">
-                                        <rect key="frame" x="5" y="240" width="590" height="201"/>
+                                        <rect key="frame" x="5" y="240" width="590" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility Issues" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-My-DpZ" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -67,8 +67,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-O5-vwS" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="146"/>
-                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.  "UIAccessibilityScreenChangedNotification" or "UIAccessibilityLayoutChangedNotification" both work well in changing focus when a modal dialog appears/disappears.</string>
+                                                <rect key="frame" x="20" y="35" width="560" height="125"/>
+                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.  "UIAccessibilityScreenChangedNotification" works well in changing focus when a modal dialog appears/disappears.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
