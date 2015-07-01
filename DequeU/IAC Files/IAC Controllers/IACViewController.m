@@ -29,7 +29,7 @@ static UIButton* _IACOverlayButton = NULL;
     self.screenName = NSStringFromClass([self class]);
 }
 
-- (void) viewDidAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [DQViewUtilities findFirstAccessibilityElementInView:self.view].accessibilityTraits |= UIAccessibilityTraitHeader;
