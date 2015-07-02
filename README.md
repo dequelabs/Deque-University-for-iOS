@@ -5,6 +5,7 @@ Welcome to the git repository for Deque University for iOS!
 This app is a set of demos and informational stories that demonstrate best practices when coding for accessibility.
 
 <h2> Getting Started </h2>
+To learn more about contributing to this project, click [here]().
 If you would like documentation about this app, please follow the instructions below:
 
 1. Install and open Doxygen, which was used to create this app’s documentation. You can find Doxygen [here](https://github.com/doxygen/doxygen).
