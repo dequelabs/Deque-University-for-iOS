@@ -39,10 +39,8 @@
     //open modal dialog
     [self.splitViewController presentViewController:_modalDialogViewController animated:YES completion:nil];
     
-    //focus on "Thank You" label - needs delay to be sure it is focused.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalDialogViewController.view);
-    });
+    //focus on "Thank You" label if needed - VoiceOver automatically focuses on Modal Dialog
+    //UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, _modalDialogViewController.view);
 }
 
 -(NSString*)visitWebpage:(id)sender {
