@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nmS-Gg-Umt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nmS-Gg-Umt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -35,7 +35,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJi-EY-gm1" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="138" width="570" height="62"/>
-                                                <string key="text">Modal dialogs are "pop up" notifications that visually alert the user.  Examples include error messages and warnings as well as operations that require input (open dialogs or multiple windows).</string>
+                                                <string key="text">Modal dialogs are "pop up" notifications that visually alert the user.  Examples include error messages, warnings, and operations that require input (for instance, open dialogs or multiple windows).</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqk-5P-T3f">
-                                        <rect key="frame" x="5" y="240" width="590" height="180"/>
+                                        <rect key="frame" x="5" y="240" width="590" height="159"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessibility Issues" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-My-DpZ" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -67,8 +67,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-O5-vwS" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="125"/>
-                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen - it does not move its focus to the notification; therefore, it is important to be sure that VoiceOver clearly communicates this newly-added information to non-sighted users so they can more easily navigate and use the app.  "UIAccessibilityScreenChangedNotification" works well in changing focus when a modal dialog appears/disappears.</string>
+                                                <rect key="frame" x="20" y="35" width="560" height="104"/>
+                                                <string key="text">VoiceOver, by default, does not make it obvious that an alert has popped up on the screen. When an alert pops up, VoiceOver does not automatically move its focus to the notification. It's therefore important to ensure VoiceOver clearly communicates any newly-added information to non-sighted users so they can more easily navigate and use the app.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -146,7 +146,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-IL-vWx" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">When the dialog appears, VoiceOver does not focus on it, which then allows the user to tab the content behind it.  The VoiceOver user may never realize that the dialog box exists.</string>
+                                                <string key="text">When the dialog appears, VoiceOver does not focus on it; this allows the user to tab to the content behind it. The user may never realize that the dialog box exists, thereby never receiving any information from it.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>

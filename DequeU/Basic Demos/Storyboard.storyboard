@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H12-em-6pk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H12-em-6pk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -513,7 +513,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7m-dZ-LGf">
-                                        <rect key="frame" x="5" y="10" width="590" height="221"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="200"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deque University" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpY-He-Bzc">
                                                 <rect key="frame" x="184" y="20" width="223" height="36"/>
@@ -522,8 +522,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N3-1L-jjm" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="76" width="570" height="125"/>
-                                                <string key="text">Welcome to Deque University for iOS!  This app contains a series of demonstrations centering around Apple's basic iOS Accessibility APIs.  Our goal is to demonstrate how the pains of not using these APIs properly effect users with disabilities by placing you in their shoes.  This introductory story provides instructions and introductions to concepts that are important to understand in order to get the most benefit out of our demonstrations.</string>
+                                                <rect key="frame" x="10" y="76" width="570" height="104"/>
+                                                <string key="text">Welcome to Deque University for iOS!  This app contains a series of demonstrations centering around Apple's basic iOS Accessibility APIs.  Our goal is to place you in the shoes of iOS users with disabilities and demonstrate the frustration associated with apps that do not make use of Apple's basic iOS Accessibility APIs.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -540,7 +540,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvF-rD-vYA">
-                                        <rect key="frame" x="5" y="241" width="590" height="117"/>
+                                        <rect key="frame" x="5" y="220" width="590" height="117"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXn-uP-yTS" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="62"/>
@@ -757,11 +757,11 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-GN-lJ4">
-                                        <rect key="frame" x="5" y="10" width="590" height="325"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="397"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJf-rt-4zJ" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="138" width="570" height="167"/>
-                                                <string key="text">Accessibility labels help identify 'What' an object is.  On controls, they provide a text alternative, when the visual text doesn't contain all of the relevant context.  Labels for controls should be short and concise.  If you are tempted to make a label longer than a word or two, it is likely that the information you're adding belongs in the hint.  Labels should start with a capital letter and end with no punctuation.  This helps VoiceOver get the correct inflection.  Labels should not contain information about the type of control.  This information is stored in the trait.</string>
+                                                <rect key="frame" x="10" y="138" width="570" height="104"/>
+                                                <string key="text">Accessibility labels help identify the nature and purpose of an object; they provide a text alternative for controls (such as buttons, switches, textfields, etc) and the visual text they contain.  Labels are necessary because the visual text may not contain the entire relevant context necessary for a user to understand the nature and purpose of an object.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -775,6 +775,13 @@
                                                     <constraint firstAttribute="width" secondItem="fWX-xS-1xS" secondAttribute="height" multiplier="718:283" id="XEg-Iv-gSo"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdS-UD-PZx" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="252" width="570" height="125"/>
+                                                <string key="text">Labels for controls should be short and descriptive. If you are tempted to make the label longer than a word or two, it's likely that the information you are adding belongs in the hint.  To help VoiceOver get the correct inflection, labels should start with a capital letter and end with no punctuation. Finally, labels should not contain information about the type of control; this information is stored in the trait.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -783,8 +790,12 @@
                                             <constraint firstAttribute="trailing" secondItem="WJf-rt-4zJ" secondAttribute="trailing" constant="10" id="Bn8-JY-qGR"/>
                                             <constraint firstItem="fWX-xS-1xS" firstAttribute="top" secondItem="hbl-GN-lJ4" secondAttribute="top" constant="10" id="XTf-oH-Sho"/>
                                             <constraint firstAttribute="centerX" secondItem="fWX-xS-1xS" secondAttribute="centerX" id="Ye7-Tm-hqi"/>
+                                            <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="kdS-UD-PZx" secondAttribute="leading" id="Z7G-N8-COu"/>
                                             <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="hbl-GN-lJ4" secondAttribute="leading" constant="10" id="aIq-iF-Dzy"/>
                                             <constraint firstItem="WJf-rt-4zJ" firstAttribute="top" secondItem="fWX-xS-1xS" secondAttribute="bottom" constant="10" id="hDn-e6-krt"/>
+                                            <constraint firstItem="WJf-rt-4zJ" firstAttribute="trailing" secondItem="kdS-UD-PZx" secondAttribute="trailing" id="hfv-VC-g7n"/>
+                                            <constraint firstAttribute="bottom" secondItem="kdS-UD-PZx" secondAttribute="bottom" constant="20" id="l9l-YW-Zl7"/>
+                                            <constraint firstItem="kdS-UD-PZx" firstAttribute="top" secondItem="WJf-rt-4zJ" secondAttribute="bottom" constant="10" id="nW2-tk-qdV"/>
                                             <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="hbl-GN-lJ4" secondAttribute="leading" constant="15" id="ovm-nj-anv"/>
                                             <constraint firstAttribute="bottom" secondItem="WJf-rt-4zJ" secondAttribute="bottom" constant="20" id="twj-fc-xvM"/>
                                         </constraints>
@@ -792,34 +803,42 @@
                                             <mask key="constraints">
                                                 <exclude reference="6tm-WW-930"/>
                                                 <exclude reference="ovm-nj-anv"/>
+                                                <exclude reference="twj-fc-xvM"/>
                                                 <exclude reference="1wZ-Ya-Mns"/>
                                             </mask>
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUC-IO-ngj">
-                                        <rect key="frame" x="5" y="345" width="590" height="201"/>
+                                        <rect key="frame" x="5" y="417" width="590" height="273"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUG-lc-qPy" customClass="DQLabel">
-                                                <rect key="frame" x="15" y="35" width="565" height="146"/>
-                                                <string key="text">Labels provide information to VoiceOver quickly.  Unlike hints, whose readout is delayed.  When designing accessible applications you want to keep two particular users in mind.  The power user, and the new user.  Think of labels as something to help power users.  The person who knows that a row of buttons are links, or that they play music.  They don't need to be reminded that a button is going to play a song, they just need to know which song they will be playing.</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Practice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PM-kb-G62" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels provide information to VoiceOver quickly; this differentiates them from hints, whose readout it delayed." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-tA-SEq" customClass="DQLabel">
+                                                <rect key="frame" x="15" y="35" width="565" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbU-TV-U2X" customClass="DQLabel">
+                                                <rect key="frame" x="15" y="86" width="565" height="167"/>
+                                                <mutableString key="text">When deciding what content should be in the label versus the hint, it’s helpful to keep two particular users in mind; the power user and the new user. Labels are primary helpful for power users, while hints are more beneficial for the new user. A power user will typically know that a row of buttons represents links or music; they don't need to be reminded that a button will play a song. Rather they are interested in which song will be played. New users, on the other hand, will find the hint's detailed description more helpful in navigating the app.</mutableString>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="5PM-kb-G62" secondAttribute="trailing" constant="10" id="49o-8u-6aa"/>
-                                            <constraint firstItem="iUG-lc-qPy" firstAttribute="top" secondItem="5PM-kb-G62" secondAttribute="bottom" constant="5" id="a2N-MS-SXI"/>
-                                            <constraint firstAttribute="bottom" secondItem="iUG-lc-qPy" secondAttribute="bottom" constant="20" id="fcq-9E-i2W"/>
+                                            <constraint firstItem="GbU-TV-U2X" firstAttribute="top" secondItem="2xc-tA-SEq" secondAttribute="bottom" constant="10" id="hnS-aZ-v8m"/>
                                             <constraint firstItem="5PM-kb-G62" firstAttribute="top" secondItem="gUC-IO-ngj" secondAttribute="top" constant="10" id="md6-Au-oCk"/>
+                                            <constraint firstItem="2xc-tA-SEq" firstAttribute="top" secondItem="5PM-kb-G62" secondAttribute="bottom" constant="5" id="pwS-v8-m8Y"/>
                                             <constraint firstItem="5PM-kb-G62" firstAttribute="leading" secondItem="gUC-IO-ngj" secondAttribute="leading" constant="10" id="und-Zf-kga"/>
+                                            <constraint firstAttribute="bottom" secondItem="GbU-TV-U2X" secondAttribute="bottom" constant="20" id="vDY-H5-TJG"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -831,26 +850,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="GbU-TV-U2X" firstAttribute="trailing" secondItem="WJf-rt-4zJ" secondAttribute="trailing" id="4Y5-2u-1IO"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="top" secondItem="hbl-GN-lJ4" secondAttribute="bottom" constant="10" id="5gG-Rt-af3"/>
-                                    <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="iUG-lc-qPy" secondAttribute="leading" id="85T-9T-QRR"/>
                                     <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="5PM-kb-G62" secondAttribute="leading" id="AC3-s2-2vD"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="leading" secondItem="hbl-GN-lJ4" secondAttribute="leading" id="AMJ-Ck-7wY"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="trailing" secondItem="hbl-GN-lJ4" secondAttribute="trailing" id="D2w-cg-FGm"/>
+                                    <constraint firstItem="GbU-TV-U2X" firstAttribute="leading" secondItem="WJf-rt-4zJ" secondAttribute="leading" constant="5" id="Pbk-Dn-Mdl"/>
                                     <constraint firstAttribute="trailing" secondItem="hbl-GN-lJ4" secondAttribute="trailing" constant="5" id="Si3-JD-KqL"/>
                                     <constraint firstAttribute="bottom" secondItem="gUC-IO-ngj" secondAttribute="bottom" constant="10" id="T4z-gB-RVW"/>
-                                    <constraint firstItem="WJf-rt-4zJ" firstAttribute="trailing" secondItem="iUG-lc-qPy" secondAttribute="trailing" id="bOa-nt-PrE"/>
                                     <constraint firstItem="WJf-rt-4zJ" firstAttribute="trailing" secondItem="5PM-kb-G62" secondAttribute="trailing" id="bp4-ND-IBL"/>
-                                    <constraint firstItem="WJf-rt-4zJ" firstAttribute="leading" secondItem="iUG-lc-qPy" secondAttribute="leading" constant="-5" id="cNG-q2-cUz"/>
-                                    <constraint firstItem="WJf-rt-4zJ" firstAttribute="trailing" secondItem="iUG-lc-qPy" secondAttribute="trailing" id="d3w-1f-xch"/>
+                                    <constraint firstItem="2xc-tA-SEq" firstAttribute="leading" secondItem="WJf-rt-4zJ" secondAttribute="leading" constant="5" id="ddo-kO-hNi"/>
                                     <constraint firstItem="hbl-GN-lJ4" firstAttribute="leading" secondItem="Xdx-uG-HI1" secondAttribute="leading" constant="5" id="fq8-ZW-YKg"/>
+                                    <constraint firstItem="2xc-tA-SEq" firstAttribute="trailing" secondItem="WJf-rt-4zJ" secondAttribute="trailing" id="onH-gP-GB5"/>
                                     <constraint firstItem="hbl-GN-lJ4" firstAttribute="top" secondItem="Xdx-uG-HI1" secondAttribute="top" constant="10" id="rKK-a2-O8m"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="85T-9T-QRR"/>
-                                        <exclude reference="d3w-1f-xch"/>
-                                    </mask>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1080,7 +1093,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb9-Ha-6o2" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="104"/>
-                                                <string key="text">Here we have added the relevant accessibility information.  Now, with VoiceOver turned on, you can easily tell which picture is going to be displayed.  Also notice the subtle hint modification and that we now focus the image after selection.  This technique can be more (or less) accessible, depending on the situation.  </string>
+                                                <string key="text">In this example, we have fixed the accessibility defects. Now, with VoiceOver turned on, you can easily tell which picture is going to be displayed. Additionally, the hints have been slightly modified and the user is now able to focus the image after selection. The latter technique can be more or less accessible, depending on the situation.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1164,11 +1177,10 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ei1-uH-O4p">
-                                        <rect key="frame" x="5" y="10" width="590" height="262"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="334"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqX-0w-Hjk" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="138" width="570" height="104"/>
-                                                <string key="text">Hints identify what an object does.  They provide additional context to users who are not use to using your application.  Hints should start with a capital letter and contain a verb.  Hints should not contain information about the trait, and should avoid duplicating information in the label.  Though, sometimes reiterating the most simple information from the label is helpful.</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The purpose of a hint is to identify what an object does. They provide additional context to new users of your application." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqX-0w-Hjk" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="138" width="570" height="41"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1182,17 +1194,28 @@
                                                     <constraint firstAttribute="width" secondItem="w1c-RX-m0h" secondAttribute="height" multiplier="718:283" id="bvE-uD-H0f"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBt-bU-dDq" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="189" width="570" height="125"/>
+                                                <string key="text">In writing your hints, it’s useful to remember that hints should contain a verb, shouldn't describe the trait, and shouldn't be redundant when read after the label. At times, however, it may be helpful to reiterate the simplest information in the label. At times, however, it may be helpful to reiterate the simplest information in the label. Finally, hints should start with a capital letter to allow VoiceOve to get the correct inflection.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="CqX-0w-Hjk" firstAttribute="leading" secondItem="ei1-uH-O4p" secondAttribute="leading" constant="10" id="1Og-fq-osX"/>
                                             <constraint firstAttribute="trailing" secondItem="CqX-0w-Hjk" secondAttribute="trailing" constant="10" id="2M8-dW-Nlh"/>
+                                            <constraint firstAttribute="bottom" secondItem="TBt-bU-dDq" secondAttribute="bottom" constant="20" id="3u7-Qb-wDi"/>
                                             <constraint firstAttribute="trailing" secondItem="CqX-0w-Hjk" secondAttribute="trailing" constant="20" id="FvF-6Q-vJe"/>
                                             <constraint firstAttribute="trailing" secondItem="CqX-0w-Hjk" secondAttribute="trailing" constant="10" id="HB5-eK-cYD"/>
                                             <constraint firstItem="w1c-RX-m0h" firstAttribute="width" secondItem="w1c-RX-m0h" secondAttribute="height" multiplier="718:283" id="KLF-r2-p1z"/>
+                                            <constraint firstItem="TBt-bU-dDq" firstAttribute="top" secondItem="CqX-0w-Hjk" secondAttribute="bottom" constant="10" id="MSZ-sk-ycg"/>
                                             <constraint firstItem="CqX-0w-Hjk" firstAttribute="leading" secondItem="ei1-uH-O4p" secondAttribute="leading" constant="15" id="N9W-04-51y"/>
                                             <constraint firstAttribute="bottom" secondItem="CqX-0w-Hjk" secondAttribute="bottom" constant="20" id="OQ3-dR-gIV"/>
+                                            <constraint firstItem="TBt-bU-dDq" firstAttribute="trailing" secondItem="CqX-0w-Hjk" secondAttribute="trailing" id="PKy-DU-s9l"/>
                                             <constraint firstAttribute="trailing" secondItem="CqX-0w-Hjk" secondAttribute="trailing" constant="10" id="Quf-6Z-V13"/>
+                                            <constraint firstItem="TBt-bU-dDq" firstAttribute="leading" secondItem="CqX-0w-Hjk" secondAttribute="leading" id="RX6-GC-N1l"/>
                                             <constraint firstAttribute="centerX" secondItem="w1c-RX-m0h" secondAttribute="centerX" id="UkC-QX-Gh9"/>
                                             <constraint firstItem="CqX-0w-Hjk" firstAttribute="leading" secondItem="ei1-uH-O4p" secondAttribute="leading" constant="31" id="W4H-gn-brK"/>
                                             <constraint firstItem="w1c-RX-m0h" firstAttribute="top" secondItem="ei1-uH-O4p" secondAttribute="top" constant="10" id="ajh-9K-UGK"/>
@@ -1203,6 +1226,7 @@
                                                 <exclude reference="2M8-dW-Nlh"/>
                                                 <exclude reference="FvF-6Q-vJe"/>
                                                 <exclude reference="N9W-04-51y"/>
+                                                <exclude reference="OQ3-dR-gIV"/>
                                                 <exclude reference="Quf-6Z-V13"/>
                                                 <exclude reference="W4H-gn-brK"/>
                                                 <exclude reference="KLF-r2-p1z"/>
@@ -1210,18 +1234,18 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r47-dW-Nxj">
-                                        <rect key="frame" x="5" y="282" width="590" height="180"/>
+                                        <rect key="frame" x="5" y="354" width="590" height="180"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVp-hD-aO3" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="125"/>
-                                                <string key="text">Hints provide the information that new users to your application need to help them know what your application does.  Going back to our power users versus new users example, hints help new users.  Ideally as users become accustomed to your application, the information provided in the hint will not be needed.  However, until they've spent enough time using your app, the information contained in the hint is crucial.</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are they important?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRO-cj-xHp" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVp-hD-aO3" customClass="DQLabel">
+                                                <rect key="frame" x="20" y="35" width="560" height="125"/>
+                                                <string key="text">Hints are intended to provide information to new users of your application – they allow such users to more quickly figure out what the application does and feel comfortable using it. As a user becomes accustomed to the program, the information provided in the hint will be less and less necessary. That being said, until the new user has spent enough time using the app, the information contained in the hint is crucial.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1433,11 +1457,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8EN-xJ-0S5">
-                                        <rect key="frame" x="5" y="225" width="590" height="113"/>
+                                        <rect key="frame" x="5" y="225" width="590" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYK-X9-Mj0" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="83"/>
-                                                <string key="text">Frequently, visual representation of buttons are used to suggest their purpose.  For example, the play buttons in a music player.  Without these visual cues, what do these buttons do?  What if we want one of these buttons to do something else?  How do we communicate this to a non-sighted user?</string>
+                                                <rect key="frame" x="10" y="10" width="570" height="104"/>
+                                                <string key="text">The visual representations of buttons are often used to suggest their purpose; an excellent example of this is the set of play buttons above. If this visual cue is removed, however, it's difficult to tell what these buttons do. It's important not to rely on visual cues alone to communicate button function, since such cues will be of little use to users of VoiceOver.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1669,7 +1693,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVV-Jr-FHe" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">Now we have added the hint information back onto the buttons.  With these hints, you know that 'Star Spangled Banner' is a song that is going to be played, and not a website that will be visited for further information.</string>
+                                                <string key="text">We have now added descriptive hint information to the buttons. With these hints, it's clear that "Star Spangled Banner" is a song that will be played, not a website that will be visited, once the user selects a button.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1841,11 +1865,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKo-vb-4eX">
-                                        <rect key="frame" x="5" y="370" width="590" height="134"/>
+                                        <rect key="frame" x="5" y="370" width="590" height="155"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1G-zE-rhO" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="104"/>
-                                                <string key="text">Here we mess with the traits a bit.  The first two objects have no traits, very confusing.  Also, notice the last button appropriately has the trait of a link (because it opens a WebPage), but it also has the trait of a button.  A link is a specialization of a button (an element that expects interaction).  To enable both is redundant, unnecessary, and misleading.</string>
+                                                <rect key="frame" x="10" y="10" width="570" height="125"/>
+                                                <string key="text">In this example, the first two objects have no traits, which is very confusing. The last button, on the other hand, has two traits. It is given the traits of a link, since it opens a web page, but it also has the trait of a button.  However, because a link is a type of button, enabling both is redundant and potentially confusing. There are many other similar examples of traits that should not be paired together, so be careful when giving two traits to one object. </string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2202,11 +2226,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-Jv-Izw">
-                                        <rect key="frame" x="5" y="370" width="590" height="92"/>
+                                        <rect key="frame" x="5" y="370" width="590" height="71"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-P7-Y1v" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">We add the button traits, and remove the misleading button/link combination on the last item.  There are many examples of traits that should not be paired together.</string>
+                                                <rect key="frame" x="10" y="10" width="570" height="41"/>
+                                                <string key="text">To fix the traits, we add the button trait to the top two buttons and remove the misleading button/link combination on the last item.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2468,11 +2492,11 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2H-8l-emM">
-                                        <rect key="frame" x="5" y="285" width="590" height="71"/>
+                                        <rect key="frame" x="5" y="285" width="590" height="92"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGz-l8-g7V" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="41"/>
-                                                <string key="text">By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but a very easy fix!</string>
+                                                <rect key="frame" x="10" y="10" width="570" height="62"/>
+                                                <string key="text">By removing the parent view from the list of 'Accessibility Elements' the buttons within become focusable.  A very serious problem, but it has a very easy fix!</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2601,7 +2625,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bT-ZG-n7y" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="125"/>
-                                                <string key="text">Another way to break your applications is to set up your TextViews properly, but not allow the rest of your UI to adapt accordingly.  For example, look at the heading at the bottom of this view.  We have set it up with constraints to be some odd pixels lower than our TextView.  Now, enable the largest Dynamic Type size!  Our heading at the bottom of the page gets pushed beneath the navigation bar and disappears!  THIS IS BAD!</string>
+                                                <string key="text">Another way to break your applications is to set up your TextViews properly, but not allow the rest of your UI to adapt accordingly.  For example, look at the heading at the bottom of this view.  We have set it up with constraints to be some odd pixels lower than our TextView.  Now, enable the largest Dynamic Type size.  Our heading at the bottom of the page gets pushed beneath the navigation bar and disappears - THIS IS BAD!</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2691,7 +2715,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdd-Zb-fNJ" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">To fix the first issue, we simply have to set up Dynamic Type Sizing for the UITextView.  We do this by grabbing the correct font from the UIFont class.  Also, by listening for Content Size notifications, you can keep your view in sync with the user configurable content size setting within iOS.  Also, be careful to ensure that your views initialize properly.</string>
+                                                <string key="text">To fix the first issue, we must simply set up Dynamic Type Sizing for the UITextView. To do this, grabe the correct font from the UIFont class. Further, by listening for Content Size notifications, you can keep your view in sync with the user configurable content size setting within iOS. Finally, be careful to ensure your views initialize properly.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2726,7 +2750,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-ds-ILu" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="83"/>
-                                                <string key="text">Finally, in order to keep the heading below from disappearing we need to do one of two things.  Either make our UITextViews scrollable, or place everything in a scroll view.  Placing everything in a scroll view is the solution we decided to use in this scene.</string>
+                                                <string key="text">In order to keep the heading below from disappearing, we need to one of two things: either 1) use UITextViews to hold this text and make it scrollable or 2) place everything in a scroll view. Placing everything in a scroll view is the solution we decided to use in this situation.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2816,11 +2840,11 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPd-wO-28N">
-                                        <rect key="frame" x="5" y="10" width="590" height="241"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="262"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVa-gH-igE" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="138" width="570" height="83"/>
-                                                <string key="text">Traits help identify what a button does.  Each trait has a very specific purpose.  Some traits, such as button/link communicate purpose to VoiceOver users, while others like 'Updates Frequently' communicate information about the behavior of an item to VoiceOver, to ensure that it behaves reasonably.</string>
+                                                <rect key="frame" x="10" y="138" width="570" height="104"/>
+                                                <string key="text">Traits help identify what a button does, with each unique trait having a very specific purpose. Some traits, such as "button" or "link", communicate purpose to VoiceOver users, while others like "Updates Frequently" relay information about the behavior of an item to VoiceOver. This is to ensure it behaves reasonably.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2856,7 +2880,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEK-NJ-dqh">
-                                        <rect key="frame" x="5" y="261" width="590" height="117"/>
+                                        <rect key="frame" x="5" y="282" width="590" height="117"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why are they important?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72u-HW-GX3" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -2865,7 +2889,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTg-ZE-D6o" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="62"/>
-                                                <string key="text">When a sighted user uses an application, they get hints about what UI Elements do based on their appearance.  Traits help communicate this same information to non-sighted users.</string>
+                                                <string key="text">A sighted user can get hints about the function of a UI element based on the appearance of the element. Traits help communicate the same information to non-sighted users.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2949,7 +2973,7 @@
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zL-Pd-PIO" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="138" width="570" height="83"/>
-                                                <string key="text">When you mark an element an 'Accessibility Element' you're telling VoiceOver that it is an element that requires user interaction.  You cannot place one such element inside another.  If you do, only the outer element will be focusable using VoiceOver. </string>
+                                                <string key="text">When you mark an element as an “Accessibility Element”, you’re telling VoiceOver that it is an element that requires user interaction. You cannot place one such element inside another. If you do, the user will only be able to focus on the outer element.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2983,7 +3007,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGD-ui-DKh" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="83"/>
-                                                <string key="text">For developers, grouping information in views allows you to conceptually group areas of functionality, and create sleak, easily scalable applications for multiple screen sizes.  Just remember not to make your container views 'Accessibility Elements' and you're all set.</string>
+                                                <string key="text">Grouping information in views allows you to conceptually group areas of functionality to create sleek, easily scalable applications for multiple screen sizes. As long as you remember not to make any of the container views "Accessibility Elements", you will be all set.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3057,7 +3081,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwn-2H-quH" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="138" width="570" height="83"/>
-                                                <string key="text">Starting in iOS 7 users were given the ability to change their preferred reading font.  This allows users with sight impairments to increase the size of their text past what users might normally find usable.  It also allows any user the ability to shrink or expand text to a size they are comfortable with.</string>
+                                                <string key="text">Starting in iOS 7, users have the ability to change their preferred reading font. This has the benefit of allowing users with low vision to increase the size of their text past what users might normally find usable. It also gives any user the ability to shrink or expand text to their preferred size.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3100,7 +3124,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-Qk-lJL" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="62"/>
-                                                <string key="text">Dynamic Text is not only an accessibility, but a usability feature.  Controlling text size device wide allows users to customize their experience.  Apps that do not conform to these expectations will stand out and appear inferior.</string>
+                                                <string key="text">Dynamic text is both an accessibility and usability feature. Controlling text size across a device allows users to customize their experience; apps that do not conform to these expectations will stand out and appear inferior.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
