@@ -31,18 +31,6 @@
     self.translucentUndarkened = YES;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    //Changes font size and color of each element in the tab bar
-    for(UITabBarItem* item in self.tabBar.items) {
-        [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                      [IACUtilities colorWithHexString:BLUE], NSForegroundColorAttributeName,
-                                      [UIFont fontWithName:@"Helvetica" size:15],NSFontAttributeName, nil]
-                            forState:UIControlStateNormal];
-    }
-}
-
 - (void)viewWillLayoutSubviews {
     
     //changing height of tab bar

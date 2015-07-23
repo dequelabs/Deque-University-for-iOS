@@ -14,9 +14,9 @@
 #import "DEQAsserts.h"
 @import CoreGraphics;
 
-#define DEQAssertColorEqualsStoryBoardRed(color) XCTAssertTrue([DQColorUtilities isEqualToColorWithRed:0.919586479 green: 0.055712726  blue: 0.0222684592 alpha:1.0 withColor:color])
+#define DEQAssertColorEqualsStoryBoardRed(color) XCTAssertTrue([DQColorUtilities isEqualToColor:color WithRed:0.919586479 green: 0.055712726 blue: 0.0222684592 alpha:1.0])
 #define DEQAssertColorEqualsRedColor(color) XCTAssertTrue([DQColorUtilities isEqual:[UIColor redColor] To:color]);
-#define DEQAssertColorEqualsBlack(color) XCTAssertTrue([DQColorUtilities isEqualToColorWithRed:0 green: 0  blue: 0 alpha:1.0 withColor:color])
+#define DEQAssertColorEqualsBlack(color) XCTAssertTrue([DQColorUtilities isEqualToColor:color WithRed:0 green:0  blue:0 alpha:1.0])
 
 @interface IACFormsValidationBrokenViewController_test : XCTestCase
 

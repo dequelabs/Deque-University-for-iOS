@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tmd-iF-PE0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tmd-iF-PE0">
     <dependencies>
         <development version="6000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nH-UN-kKn">
-                                        <rect key="frame" x="5" y="10" width="590" height="346"/>
+                                        <rect key="frame" x="5" y="10" width="590" height="376"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="DequeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="lNg-Pd-lY8">
                                                 <rect key="frame" x="145" y="10" width="300" height="118"/>
@@ -35,25 +35,41 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXl-k4-q76" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="138" width="570" height="188"/>
-                                                <string key="text">In this demo we will take you through some advanced native iOS Accessibility topics.  We demo these concepts by creating an accessible and inaccessible version of a basic form.  Forms are essential to many basic applications, and introduce a simple form of dynamic content that needs careful consideration to maintain accessibility.  The broken and fixed demonstration illustrates some common issues with native iOS applications.  It does not cover every type of accessibility barrier or accessibility requirement.  Below is a list of some of the accessibility barriers and repairs that you can find between the broken and fixed versions.  See if you can find others that are not listed here!</string>
+                                                <rect key="frame" x="10" y="138" width="570" height="104"/>
+                                                <string key="text">Forms are essential to many basic applications. They also introduce a simple type of dynamic content that requires careful consideration to maintain accessibility. In this demo, we will take you through some advanced native iOS Accessibility topics. We demo these concepts by creating an accessible and inaccessible version of the same basic form.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XV-eQ-L2S" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="252" width="570" height="104"/>
+                                                <string key="text">This demonstration illustrates some common issues with native iOS applications. Though it does not cover every type of barrier or requirement, it encompasses a good variety of them. A list of the types of issues the demonstration contains can be found below. As a challenge, see if you can find other issues that aren't listed.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="lXl-k4-q76" firstAttribute="top" secondItem="lNg-Pd-lY8" secondAttribute="bottom" constant="10" id="499-4k-OQv"/>
+                                            <constraint firstItem="9XV-eQ-L2S" firstAttribute="trailing" secondItem="lXl-k4-q76" secondAttribute="trailing" id="NRj-vc-45v"/>
+                                            <constraint firstItem="9XV-eQ-L2S" firstAttribute="top" secondItem="lXl-k4-q76" secondAttribute="bottom" constant="10" id="OeI-1d-LvQ"/>
                                             <constraint firstAttribute="trailing" secondItem="lXl-k4-q76" secondAttribute="trailing" constant="10" id="bPe-CT-tIU"/>
+                                            <constraint firstItem="9XV-eQ-L2S" firstAttribute="leading" secondItem="lXl-k4-q76" secondAttribute="leading" id="fS3-lj-6di"/>
                                             <constraint firstItem="lXl-k4-q76" firstAttribute="leading" secondItem="8nH-UN-kKn" secondAttribute="leading" constant="10" id="i3Q-AJ-22f"/>
                                             <constraint firstAttribute="centerX" secondItem="lNg-Pd-lY8" secondAttribute="centerX" id="kXz-uP-OwP"/>
+                                            <constraint firstAttribute="bottom" secondItem="9XV-eQ-L2S" secondAttribute="bottom" constant="20" id="t4c-ho-ggp"/>
                                             <constraint firstItem="lNg-Pd-lY8" firstAttribute="top" secondItem="8nH-UN-kKn" secondAttribute="top" constant="10" id="unk-tD-o0H"/>
                                             <constraint firstAttribute="bottom" secondItem="lXl-k4-q76" secondAttribute="bottom" constant="20" id="zZD-Yw-rDT"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="zZD-Yw-rDT"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwn-Uw-n18">
-                                        <rect key="frame" x="5" y="366" width="590" height="138"/>
+                                        <rect key="frame" x="5" y="396" width="590" height="138"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJK-7e-46J" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -63,7 +79,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-xP-EZU" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="83"/>
-                                                <string key="text">Users who are non-sighted and those with sight impairments may not be able to see the text label next to the form field.  Form entry fields must have a text label that is programmatically associated with the control (see Labels under Basic Demonstrations for more information).</string>
+                                                <string key="text">Unsighted users and users with low vision may not be able to see the text label next to the form field. Form entry fields must have a text label that is programmatically associated with the control. For more information, see "Labels" under "Basic Demonstrations."</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -77,7 +93,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOl-Gi-lBs">
-                                        <rect key="frame" x="5" y="514" width="590" height="159"/>
+                                        <rect key="frame" x="5" y="544" width="590" height="159"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dynamic Type" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBb-Zc-57N" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -87,7 +103,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mS-BS-FQo" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">Users with sight impairments may have difficulty reading the content on the screen.  There are settings on the device that allow users to customize the default text size using the larger text settings.  Native applications should honor these text size changes through Dynamic Type (see Dynamic Type under Basic Demonstrations for more information). </string>
+                                                <string key="text">Users with sight impairments may have difficulty reading the content on the screen. There are settings on the device that allow users to customize text size; native applications should honor these text size changes through "Dynamic Type." For more information, see "Dynamic Type" under "Basic Demonstrations."</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -101,7 +117,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePL-ZL-pWf">
-                                        <rect key="frame" x="5" y="683" width="590" height="159"/>
+                                        <rect key="frame" x="5" y="713" width="590" height="159"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Contrast" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-6i-qcx" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -322,7 +338,7 @@
                                                         <accessibility key="accessibilityConfiguration" hint="" label="">
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                                                     </textField>
@@ -707,7 +723,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGL-zk-pwC" customClass="DQLabel">
                                                 <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">Notice that entering an invalid name, email, or date will result in a visual error message. These error messages (in addition to the Name, Email, and Date labels) are not programmatically defined on the form field (UITextView).  Because of this, VoiceOver users will not hear how the text field is related to the their corresponding labels and/or error messages. </string>
+                                                <string key="text">Notice that entering an invalid name, email, or date will result in a visual error message. Unfortunately, these error messages are not programmatically defined on the form field.  The Name, Email, and Date labels are also not programmatically defined.  Because of this, VoiceOver users will not hear how the text field is related to its visual text labels and/or error messages.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -757,7 +773,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIU-53-lF3">
-                                        <rect key="frame" x="5" y="685" width="590" height="159"/>
+                                        <rect key="frame" x="5" y="685" width="590" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Contrast" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-nT-v7T" customClass="DQLabel">
                                                 <rect key="frame" x="10" y="10" width="570" height="20"/>
@@ -766,8 +782,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfN-Mt-p9V" customClass="DQLabel">
-                                                <rect key="frame" x="20" y="35" width="560" height="104"/>
-                                                <string key="text">Notice that the colors used have a lower color contrast ratio between the text color and the background color.  In addition, the button used for submitting the form does not look like a button and uses color alone to indicate that it is more than just text.  Lastly, the outlines of the form fields are a very light color and may be difficult for some users to see.</string>
+                                                <rect key="frame" x="20" y="35" width="560" height="125"/>
+                                                <string key="text">This form contains a number of errors relating to color contrast. First, the colors used have a lower color contrast ratio between the text and the background color. Second, the button used for submitting the form does not look like a button; it uses color alone to indicate that it is more than just text. Third, the outlines of the form fields are a very light color and may be difficult for some users to see.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
