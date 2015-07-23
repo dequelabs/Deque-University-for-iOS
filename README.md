@@ -1,6 +1,6 @@
 <h1> Deque University for iOS </h1>
 Welcome to the git repository for Deque University for iOS!
-(If you are looking for the Android version, we also have [Accessibility 101 for Android](https://github.com/dequelabs/Accessibility-101-Android).
+If you are looking for the Android version, we also have [Accessibility 101 for Android](https://github.com/dequelabs/Accessibility-101-Android).
 
 This app is a set of demos and informational stories that demonstrate best practices when coding for accessibility.
 
