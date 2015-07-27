@@ -22,7 +22,7 @@
 }
 
 - (BOOL)information:(id)sender {
-    CustomIOS7AlertView *alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
+    CustomIOS7AlertView* alertView = [CustomIOS7AlertView alertWithTitle:NSLocalizedString(@"ALERT_TITLE", nil)
                                                                  message:NSLocalizedString(@"ALERT_PARAGRAPH", nil)];
     
     [alertView setButtonTitles:[NSMutableArray arrayWithObjects:NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil),
@@ -30,23 +30,19 @@
                                 NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil),
                                 nil]];
     
-    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:255.0f/255.0f
-                                                                                green:77.0f/255.0f
-                                                                                 blue:94.0f/255.0f
+    [alertView setButtonColors:[NSMutableArray arrayWithObjects:[UIColor colorWithRed:45.0f/255.0f
+                                                                                green:107.0f/255.0f
+                                                                                 blue:32.0f/255.0f
                                                                                 alpha:1.0f],
-                                [UIColor colorWithRed:0.0f
-                                                green:0.5f
-                                                 blue:1.0f
+                                [UIColor colorWithRed:2.0f/255.0f
+                                                green:27.0f/255.0f
+                                                 blue:63.0f/255.0f
                                                 alpha:1.0f],nil]];
-    
     [alertView setDelegate:self];
     
     [alertView show];
 
-    if(![alertView accessibilityElementIsFocused]) {
-        return YES;
-    }
-    return NO;
+    return ![alertView accessibilityElementIsFocused];
 }
 
 - (NSString*) getURLFromIndex: (NSInteger)buttonIndex {
@@ -61,7 +57,7 @@
     return URL;
 }
 
-//Function in CustomIOS7AlertView
+//Function defined in CustomIOS7AlertView
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOS7AlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex
 {
     NSString* URL = [self getURLFromIndex: buttonIndex];

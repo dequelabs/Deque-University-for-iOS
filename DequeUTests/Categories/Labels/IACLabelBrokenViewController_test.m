@@ -46,21 +46,21 @@
 
 //Tests that image displays correct image, label, and hint when "dogDisplay" is pressed
 - (void)testDogDisplayButtonClick {
-    [_viewController displayImage:_viewController.dogDisplay];
+    [_viewController.dogDisplay sendActionsForControlEvents:UIControlEventTouchDown];
     DEQAssertEmptyString(_viewController.imageView.accessibilityHint);
     DEQAssertStringEqual(_viewController.imageView.accessibilityLabel, @"dog");
 }
 
 //Tests that image displays correct image, label, and hint when "dogDisplay" is pressed
 - (void)testCatDisplayButtonClick {
-    [_viewController displayImage:_viewController.catDisplay];
+    [_viewController.catDisplay sendActionsForControlEvents:UIControlEventTouchDown];
     DEQAssertEmptyString(_viewController.imageView.accessibilityHint);
     DEQAssertStringEqual(_viewController.imageView.accessibilityLabel, @"cat");
 }
 
 //Tests that image displays correct image, label, and hint when "dogDisplay" is pressed
 - (void)testFishDisplayButtonClick {
-    [_viewController displayImage:_viewController.fishDisplay];
+    [_viewController.fishDisplay sendActionsForControlEvents:UIControlEventTouchDown];
     DEQAssertEmptyString(_viewController.imageView.accessibilityHint);
     DEQAssertStringEqual(_viewController.imageView.accessibilityLabel, @"fish");
 }

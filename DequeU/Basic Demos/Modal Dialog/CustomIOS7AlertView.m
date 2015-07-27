@@ -11,14 +11,18 @@
 
 #import "CustomIOS7AlertView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <DQA11y/DQA11y.h>
+#import "IACSplitViewController.h"
 
 
-#define kCustomIOS7DefaultButtonColor [UIColor colorWithRed:0.670f green:0.670f blue:0.670f alpha:1.0f]
+#define kCustomIOS7DefaultButtonColor [UIColor colorWithRed:67.0f/255.0f green:67.0f/255.0f blue:67.0f/255.0f alpha:1.0f]
 
 const static CGFloat kCustomIOS7AlertViewDefaultButtonHeight       = 50;
 const static CGFloat kCustomIOS7AlertViewDefaultButtonSpacerHeight = 1;
 const static CGFloat kCustomIOS7AlertViewCornerRadius              = 0;
 const static CGFloat kCustomIOS7MotionEffectExtent                 = 10.0;
+
+static UIView* _overlayViewForModal;
 
 @implementation CustomIOS7AlertView
 
@@ -47,6 +51,11 @@ CGFloat buttonSpacerHeight = 0;
         useMotionEffects = false;
         buttonTitles = @[@"Close"];
         buttonColors = @[kCustomIOS7DefaultButtonColor];
+        
+        UIViewController* _overlayViewController = [[UIStoryboard storyboardWithName:@"Storyboard" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"Overlay"];
+        
+        _overlayViewController.view.accessibilityElementsHidden = YES;
+        _overlayViewForModal = _overlayViewController.view;
     }
     return self;
 }
@@ -118,8 +127,15 @@ CGFloat buttonSpacerHeight = 0;
 					 }
 					 completion:NULL
      ];
+    
+    [self addSubview:_overlayViewForModal];
+    
+    if([IACSplitViewController overlayIsOn]) {
+        _overlayViewForModal.hidden = NO;
+    } else {
+        _overlayViewForModal.hidden = YES;
+    }
 }
-
 + (CustomIOS7AlertView *) alertWithTitle:(NSString *)title message:(NSString *)message
 {
   CustomIOS7AlertView* alertView = [[CustomIOS7AlertView alloc] init];
@@ -128,9 +144,8 @@ CGFloat buttonSpacerHeight = 0;
   
   // Add some custom content to the alert view
   UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, view.bounds.size.width - 40, 100)];
-  titleLabel.numberOfLines = 0;
   titleLabel.text = title;
-  titleLabel.font = [UIFont boldSystemFontOfSize:25.0f];
+  titleLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
   titleLabel.textAlignment = NSTextAlignmentCenter;
   [titleLabel sizeToFit];
   
@@ -145,7 +160,7 @@ CGFloat buttonSpacerHeight = 0;
 
   messageLabel.numberOfLines = 0;
   messageLabel.text = message;
-  messageLabel.font = [UIFont systemFontOfSize:18.0f];
+  messageLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
   messageLabel.textAlignment = NSTextAlignmentCenter;
   [messageLabel sizeToFit];
   
@@ -203,6 +218,7 @@ CGFloat buttonSpacerHeight = 0;
                          [self removeFromSuperview];
 					 }
 	 ];
+    [_overlayViewForModal removeFromSuperview];
 }
 
 - (void)setSubView: (UIView *)subView
@@ -298,6 +314,10 @@ CGFloat buttonSpacerHeight = 0;
 
         [container addSubview:closeButton];
     }
+}
+
++ (void)setOverlay: (BOOL)overlayIsOn {
+    _overlayViewForModal.hidden = !overlayIsOn;
 }
 
 #if (defined(__IPHONE_7_0))

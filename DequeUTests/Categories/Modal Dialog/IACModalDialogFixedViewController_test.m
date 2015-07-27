@@ -31,16 +31,30 @@
     XCTAssert([self.controller view]);
 }
 
-- (void)testSendLayoutChangedNotification {
-    XCTAssertTrue([self.controller information:self]);
+- (void)testInformationMethod {
+    DEQAssertEmptyString(self.controller.OpenAModalDialog.accessibilityHint);
+    XCTAssert(self.controller.OpenAModalDialog.isAccessibilityElement);
 }
 
-- (void)testInformationButtonAccessibility{
-    XCTAssertTrue([self.controller.OpenAModalDialog isAccessibilityElement]);
-    DEQAssertStringEqual(self.controller.OpenAModalDialog.accessibilityLabel, @"Open a modal dialog");
-    DEQAssertEmptyString(self.controller.OpenAModalDialog.accessibilityHint);
-    DEQAssertStringEqual(self.controller.learnMoreLink.accessibilityLabel, @"I would like to learn more about Deque");
-    
+- (void)testModalDialogText {
+    DEQAssertStringEqual(self.controller.modalDialogViewController.modalDialogTitle.text, NSLocalizedString(@"ALERT_TITLE", nil));
+    DEQAssertStringEqual(self.controller.modalDialogViewController.modalDialogDescription.text, NSLocalizedString(@"ALERT_PARAGRAPH", nil));
+    DEQAssertStringEqual(self.controller.modalDialogViewController.email_us_button.titleLabel.text, NSLocalizedString(@"ALERT_BUTTON_EMAIL_US", nil));
+    DEQAssertStringEqual(self.controller.modalDialogViewController.visit_our_website_button.titleLabel.text,
+                         NSLocalizedString(@"ALERT_BUTTON_VISIT", nil));
+    DEQAssertStringEqual(self.controller.modalDialogViewController.close_button.titleLabel.text, NSLocalizedString(@"ALERT_BUTTON_CLOSE", nil));
+}
+
+- (void)testEmailUsButton {
+    DEQAssertStringEqual([self.controller visitWebpage:self.controller.modalDialogViewController.email_us_button], @"mailto:chris.mcmeeking@deque.com");
+}
+
+- (void)testVisitWebsiteButton {
+    DEQAssertStringEqual([self.controller visitWebpage:self.controller.modalDialogViewController.visit_our_website_button], @"http://www.deque.com");
+}
+
+- (void)testCloseButton {
+    DEQAssertEmptyString([self.controller visitWebpage:self.controller.modalDialogViewController.close_button]);
 }
 
 - (void)tearDown {
