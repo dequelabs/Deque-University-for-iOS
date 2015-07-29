@@ -31,6 +31,5 @@
  * \returns an NSString - the announcement stated by VoiceOver. This is used for testing purposes.
  */
 -(NSString*)clearList;
--(void)textChanged; ///< Changes the textField's accessibilityLabel depending on if it is empty or not.
 
 @end

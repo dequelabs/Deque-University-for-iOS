@@ -10,7 +10,7 @@
 
 @interface IACDynamicNotificationsBrokenViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
-@property IBOutlet UITableView *_tableView; // The tableView that displays all elements in _contactList.
+@property IBOutlet UITableView *tableView; // The tableView that displays all elements in _contactList.
 
 @end
 
@@ -19,15 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _contactList = [[NSMutableArray alloc] init];
-    _contactList.isAccessibilityElement = YES;
-    self._tableView.dataSource = self;
-    self._tableView.delegate = self;
+
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
     _textField.delegate = self;
 }
 
 - (IBAction)clearList {
     [_contactList removeAllObjects];
-    [self._tableView reloadData];
+    [_tableView reloadData];
 }
 
 - (IBAction)saveItem {
@@ -37,11 +37,10 @@
         _item = _textField.text;
         
         [_contactList addObject:_item];
-        [self._tableView reloadData];
+        [_tableView reloadData];
         _textField.text = @"";
     }
     [_textField resignFirstResponder];
-   // _textField.accessibilityLabel = @"";
 }
 
 // Delegate method in UITableView.

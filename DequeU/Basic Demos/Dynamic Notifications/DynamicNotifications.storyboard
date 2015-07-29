@@ -180,7 +180,7 @@
                                                     </button>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dYX-lq-eKd" customClass="DQTextField">
                                                         <rect key="frame" x="20" y="31" width="530" height="30"/>
-                                                        <accessibility key="accessibilityConfiguration" label="blarg"/>
+                                                        <accessibility key="accessibilityConfiguration" label=""/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -312,8 +312,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Broken" image="DequeU_app_icon_broken" id="7ZR-Uz-Crl"/>
                     <connections>
-                        <outlet property="_tableView" destination="5qf-M2-cQG" id="J8t-Eo-0vS"/>
                         <outlet property="_textField" destination="dYX-lq-eKd" id="gTr-cI-SSw"/>
+                        <outlet property="tableView" destination="5qf-M2-cQG" id="7Nq-sd-cQq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIh-bK-KPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -368,12 +368,6 @@
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gPs-7i-dnQ" customClass="DQTextField">
-                                                        <rect key="frame" x="20" y="31" width="530" height="30"/>
-                                                        <accessibility key="accessibilityConfiguration" label=""/>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ic-tb-diN" customClass="DQButton">
                                                         <rect key="frame" x="20" y="0.0" width="36" height="32"/>
                                                         <accessibility key="accessibilityConfiguration" hint=""/>
@@ -382,6 +376,12 @@
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                     </button>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gPs-7i-dnQ" customClass="DQTextField">
+                                                        <rect key="frame" x="20" y="31" width="530" height="30"/>
+                                                        <accessibility key="accessibilityConfiguration" label=""/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.89045516300000005" green="0.89045516300000005" blue="0.89045516300000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -461,10 +461,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Fixed" image="DequeU_app_icon_fixed" id="Ex0-ch-RoU"/>
                     <connections>
-                        <outlet property="_clearContacts" destination="KJK-y6-B3G" id="9QM-Vw-B46"/>
-                        <outlet property="_saveButton" destination="7ic-tb-diN" id="YEi-cu-NKQ"/>
-                        <outlet property="_tableView" destination="V6P-4y-vA5" id="MjG-Tm-z6K"/>
                         <outlet property="_textField" destination="gPs-7i-dnQ" id="GMS-ge-vHy"/>
+                        <outlet property="clearContactsButton" destination="KJK-y6-B3G" id="fPs-vg-Ebj"/>
+                        <outlet property="saveButton" destination="7ic-tb-diN" id="ZVM-jD-7OF"/>
+                        <outlet property="tableView" destination="V6P-4y-vA5" id="ESD-ai-Geo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmI-O2-z2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
