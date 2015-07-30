@@ -779,7 +779,7 @@
                                                 <rect key="frame" x="10" y="252" width="570" height="125"/>
                                                 <string key="text">Labels for controls should be short and descriptive. If you are tempted to make the label longer than a word or two, it's likely that the information you are adding belongs in the hint.  To help VoiceOver get the correct inflection, labels should start with a capital letter and end with no punctuation. Finally, labels should not contain information about the type of control; this information is stored in the trait.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -820,14 +820,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels provide information to VoiceOver quickly; this differentiates them from hints, whose readout it delayed." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-tA-SEq" customClass="DQLabel">
                                                 <rect key="frame" x="15" y="35" width="565" height="41"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbU-TV-U2X" customClass="DQLabel">
                                                 <rect key="frame" x="15" y="86" width="565" height="167"/>
                                                 <string key="text">When deciding what content should be in the label versus the hint, it’s helpful to keep two particular users in mind; the power user and the new user. Labels are primary helpful for power users, while hints are more beneficial for the new user. A power user will typically know that a row of buttons represents links or music; they don't need to be reminded that a button will play a song. Rather they are interested in which song will be played. New users, on the other hand, will find the hint's detailed description more helpful in navigating the app.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1198,7 +1198,7 @@
                                                 <rect key="frame" x="10" y="189" width="570" height="125"/>
                                                 <string key="text">In writing your hints, it’s useful to remember that hints should contain a verb, shouldn't describe the trait, and shouldn't be redundant when read after the label. At times, however, it may be helpful to reiterate the simplest information in the label. At times, however, it may be helpful to reiterate the simplest information in the label. Finally, hints should start with a capital letter to allow VoiceOve to get the correct inflection.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1968,7 +1968,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raC-pl-LQ8">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="Wwr-9j-CRF"/>
                                                                     <constraint firstAttribute="width" constant="45" id="dlG-km-9Wy"/>
@@ -2003,7 +2005,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDD-tp-Mds">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="1d0-aS-J82"/>
                                                                     <constraint firstAttribute="width" constant="45" id="36V-Lz-m7u"/>
@@ -2038,7 +2042,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdT-CG-XDk">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="MEB-mU-xGy"/>
                                                                     <constraint firstAttribute="width" constant="45" id="c8g-IL-wQA"/>
@@ -2330,6 +2336,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-UH-5E9">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                                                     <bool key="isElement" value="NO"/>
                                                                 </accessibility>
                                                                 <constraints>
@@ -2370,6 +2377,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-zo-tfs">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                                                     <bool key="isElement" value="NO"/>
                                                                 </accessibility>
                                                                 <constraints>
@@ -2410,6 +2418,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-iP-2K5">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                                                     <bool key="isElement" value="NO"/>
                                                                 </accessibility>
                                                                 <constraints>

@@ -45,7 +45,7 @@
                                                 <rect key="frame" x="10" y="252" width="570" height="104"/>
                                                 <string key="text">This demonstration illustrates some common issues with native iOS applications. Though it does not cover every type of barrier or requirement, it encompasses a good variety of them. A list of the types of issues the demonstration contains can be found below. As a challenge, see if you can find other issues that aren't listed.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -364,9 +364,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVn-86-yhb" customClass="DQButton">
                                                 <rect key="frame" x="265" y="348" width="61" height="32"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
-                                                </accessibility>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <inset key="contentEdgeInsets" minX="4" minY="6" maxX="4" maxY="6"/>
                                                 <state key="normal" title="Submit"/>
@@ -639,9 +636,6 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w75-Ok-QHb">
                                                 <rect key="frame" x="269" y="348" width="52" height="32"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
-                                                </accessibility>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
