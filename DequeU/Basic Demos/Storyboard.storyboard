@@ -568,7 +568,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686274509803" green="0.24705882352941178" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117647058823" green="0.23529411764705882" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2N3-1L-jjm" secondAttribute="width" constant="-40" id="7KU-WI-T6F"/>
                                     <constraint firstItem="U7m-dZ-LGf" firstAttribute="width" secondItem="fSd-1z-q1X" secondAttribute="width" constant="20" id="80Z-Us-P4u"/>
@@ -704,7 +704,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="SG9-8S-PAc" secondAttribute="bottom" constant="10" id="0bL-xq-m25"/>
                                     <constraint firstAttribute="centerX" secondItem="SG9-8S-PAc" secondAttribute="centerX" id="56Z-ly-Y8E"/>
@@ -779,7 +779,7 @@
                                                 <rect key="frame" x="10" y="252" width="570" height="125"/>
                                                 <string key="text">Labels for controls should be short and descriptive. If you are tempted to make the label longer than a word or two, it's likely that the information you are adding belongs in the hint.  To help VoiceOver get the correct inflection, labels should start with a capital letter and end with no punctuation. Finally, labels should not contain information about the type of control; this information is stored in the trait.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -820,14 +820,14 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels provide information to VoiceOver quickly; this differentiates them from hints, whose readout it delayed." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-tA-SEq" customClass="DQLabel">
                                                 <rect key="frame" x="15" y="35" width="565" height="41"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbU-TV-U2X" customClass="DQLabel">
                                                 <rect key="frame" x="15" y="86" width="565" height="167"/>
-                                                <mutableString key="text">When deciding what content should be in the label versus the hint, it’s helpful to keep two particular users in mind; the power user and the new user. Labels are primary helpful for power users, while hints are more beneficial for the new user. A power user will typically know that a row of buttons represents links or music; they don't need to be reminded that a button will play a song. Rather they are interested in which song will be played. New users, on the other hand, will find the hint's detailed description more helpful in navigating the app.</mutableString>
+                                                <string key="text">When deciding what content should be in the label versus the hint, it’s helpful to keep two particular users in mind; the power user and the new user. Labels are primary helpful for power users, while hints are more beneficial for the new user. A power user will typically know that a row of buttons represents links or music; they don't need to be reminded that a button will play a song. Rather they are interested in which song will be played. New users, on the other hand, will find the hint's detailed description more helpful in navigating the app.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -848,7 +848,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="GbU-TV-U2X" firstAttribute="trailing" secondItem="WJf-rt-4zJ" secondAttribute="trailing" id="4Y5-2u-1IO"/>
                                     <constraint firstItem="gUC-IO-ngj" firstAttribute="top" secondItem="hbl-GN-lJ4" secondAttribute="bottom" constant="10" id="5gG-Rt-af3"/>
@@ -897,6 +897,25 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAA-SA-XwC">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-Cc-dng">
+                                        <rect key="frame" x="5" y="380" width="590" height="92"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46C-15-mSC" customClass="DQLabel">
+                                                <rect key="frame" x="10" y="10" width="570" height="62"/>
+                                                <string key="text">This represents a simple user interface, in which we use buttons to change an image display.  Notice the ambiguity of the "Display" buttons.  What images will they display?</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="46C-15-mSC" firstAttribute="top" secondItem="lGx-Cc-dng" secondAttribute="top" constant="10" id="9hp-DI-6PJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="46C-15-mSC" secondAttribute="bottom" constant="20" id="Xsn-pj-bmj"/>
+                                            <constraint firstAttribute="centerX" secondItem="46C-15-mSC" secondAttribute="centerX" id="d6U-Yl-Xyv"/>
+                                            <constraint firstItem="46C-15-mSC" firstAttribute="width" secondItem="lGx-Cc-dng" secondAttribute="width" constant="-20" id="eyd-m0-O7K"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZh-fd-1PE">
                                         <rect key="frame" x="5" y="10" width="590" height="360"/>
                                         <subviews>
@@ -953,27 +972,8 @@
                                             <constraint firstItem="nDQ-QW-BPq" firstAttribute="top" secondItem="H1Y-sg-g7g" secondAttribute="bottom" constant="20" id="znf-Hg-cd2"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-Cc-dng">
-                                        <rect key="frame" x="5" y="380" width="590" height="92"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46C-15-mSC" customClass="DQLabel">
-                                                <rect key="frame" x="10" y="10" width="570" height="62"/>
-                                                <string key="text">This represents a simple user interface, in which we use buttons to change an image display.  Notice the ambiguity of the "Display" buttons.  What images will they display?</string>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="46C-15-mSC" firstAttribute="top" secondItem="lGx-Cc-dng" secondAttribute="top" constant="10" id="9hp-DI-6PJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="46C-15-mSC" secondAttribute="bottom" constant="20" id="Xsn-pj-bmj"/>
-                                            <constraint firstAttribute="centerX" secondItem="46C-15-mSC" secondAttribute="centerX" id="d6U-Yl-Xyv"/>
-                                            <constraint firstItem="46C-15-mSC" firstAttribute="width" secondItem="lGx-Cc-dng" secondAttribute="width" constant="-20" id="eyd-m0-O7K"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.2156862745" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.20392156862745098" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="lGx-Cc-dng" firstAttribute="leading" secondItem="jZh-fd-1PE" secondAttribute="leading" id="5bk-Dh-zfM"/>
                                     <constraint firstItem="lGx-Cc-dng" firstAttribute="top" secondItem="jZh-fd-1PE" secondAttribute="bottom" constant="10" id="Mqi-dx-fjz"/>
@@ -1108,7 +1108,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.44313725490196076" green="0.73333333333333328" blue="0.19215686274509805" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882352941173" green="0.72941176470588232" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="cga-ck-g0m" firstAttribute="top" secondItem="VP2-GO-vMd" secondAttribute="top" constant="10" id="6KB-iC-XDm"/>
                                     <constraint firstAttribute="bottom" secondItem="mBD-MF-KCI" secondAttribute="bottom" constant="10" id="HqE-GE-mb3"/>
@@ -1198,7 +1198,7 @@
                                                 <rect key="frame" x="10" y="189" width="570" height="125"/>
                                                 <string key="text">In writing your hints, it’s useful to remember that hints should contain a verb, shouldn't describe the trait, and shouldn't be redundant when read after the label. At times, however, it may be helpful to reiterate the simplest information in the label. At times, however, it may be helpful to reiterate the simplest information in the label. Finally, hints should start with a capital letter to allow VoiceOve to get the correct inflection.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -1265,7 +1265,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="r47-dW-Nxj" firstAttribute="leading" secondItem="ei1-uH-O4p" secondAttribute="leading" id="47X-Ed-omm"/>
                                     <constraint firstItem="CqX-0w-Hjk" firstAttribute="leading" secondItem="BVp-hD-aO3" secondAttribute="leading" constant="-10" id="6G0-z5-AO7"/>
@@ -1476,7 +1476,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.2156862745" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.20392156859999999" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="oFT-MX-SWo" firstAttribute="leading" secondItem="8EN-xJ-0S5" secondAttribute="leading" id="7rM-aL-Ndl"/>
                                     <constraint firstAttribute="trailing" secondItem="oFT-MX-SWo" secondAttribute="trailing" constant="5" id="G6E-ZT-beR"/>
@@ -1708,7 +1708,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.4431372549" green="0.73333333329999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.72941176470000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="CTC-GZ-aOl" firstAttribute="trailing" secondItem="rdj-Rs-QYr" secondAttribute="trailing" id="1YS-00-hJ3"/>
                                     <constraint firstItem="CTC-GZ-aOl" firstAttribute="top" secondItem="rdj-Rs-QYr" secondAttribute="bottom" constant="10" id="2S4-24-hyO"/>
@@ -1884,7 +1884,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.2156862745" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.20392156859999999" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="CKo-vb-4eX" firstAttribute="top" secondItem="wFg-vU-LTO" secondAttribute="bottom" constant="10" id="1EG-lV-eeW"/>
                                     <constraint firstAttribute="bottom" secondItem="CKo-vb-4eX" secondAttribute="bottom" constant="10" id="2Lg-yT-KWN"/>
@@ -1968,7 +1968,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raC-pl-LQ8">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Star spangled banner">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="Wwr-9j-CRF"/>
                                                                     <constraint firstAttribute="width" constant="45" id="dlG-km-9Wy"/>
@@ -2003,7 +2005,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDD-tp-Mds">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Amazing grace">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="1d0-aS-J82"/>
                                                                     <constraint firstAttribute="width" constant="45" id="36V-Lz-m7u"/>
@@ -2038,7 +2042,9 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdT-CG-XDk">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
-                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain"/>
+                                                                <accessibility key="accessibilityConfiguration" hint="Plays music" label="Singing in the rain">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
+                                                                </accessibility>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="MEB-mU-xGy"/>
                                                                     <constraint firstAttribute="width" constant="45" id="c8g-IL-wQA"/>
@@ -2118,7 +2124,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.2156862745" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.20392156859999999" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ZjD-dv-Ib7" firstAttribute="top" secondItem="aOe-Ti-aYL" secondAttribute="bottom" constant="10" id="1t4-he-hqo"/>
                                     <constraint firstItem="aOe-Ti-aYL" firstAttribute="trailing" secondItem="ZjD-dv-Ib7" secondAttribute="trailing" id="KeZ-08-dcv"/>
@@ -2245,7 +2251,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.4431372549" green="0.73333333329999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.72941176470000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="yg8-Jv-Izw" secondAttribute="bottom" constant="10" id="Amu-5M-5a0"/>
                                     <constraint firstAttribute="trailing" secondItem="CtU-aQ-9vD" secondAttribute="trailing" constant="5" id="GMY-3j-Ouk"/>
@@ -2330,6 +2336,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caB-UH-5E9">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                                                     <bool key="isElement" value="NO"/>
                                                                 </accessibility>
                                                                 <constraints>
@@ -2370,6 +2377,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-zo-tfs">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                                                     <bool key="isElement" value="NO"/>
                                                                 </accessibility>
                                                                 <constraints>
@@ -2410,6 +2418,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-iP-2K5">
                                                                 <rect key="frame" x="5" y="5" width="45" height="45"/>
                                                                 <accessibility key="accessibilityConfiguration" hint="Plays music" label="">
+                                                                    <accessibilityTraits key="traits" none="YES" button="YES" playsSound="YES"/>
                                                                     <bool key="isElement" value="NO"/>
                                                                 </accessibility>
                                                                 <constraints>
@@ -2517,7 +2526,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.4431372549" green="0.73333333329999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.72941176470000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="I2H-8l-emM" firstAttribute="leading" secondItem="XGk-nR-a8n" secondAttribute="leading" id="0FP-va-k6z"/>
                                     <constraint firstAttribute="bottom" secondItem="I2H-8l-emM" secondAttribute="bottom" constant="10" id="0Pk-gQ-3yt"/>
@@ -2655,7 +2664,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91764705882352937" green="0.21568627450980393" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.20392156862745098" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="9jJ-Vz-omg" secondAttribute="trailing" constant="5" id="0ja-G0-I7j"/>
                                     <constraint firstItem="oP3-AZ-pZA" firstAttribute="top" secondItem="9jJ-Vz-omg" secondAttribute="bottom" constant="10" id="24E-ui-Yb3"/>
@@ -2780,7 +2789,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.4431372549" green="0.73333333329999995" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.72941176470000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="7kS-EX-9Hp" firstAttribute="trailing" secondItem="LTf-1O-KuX" secondAttribute="trailing" id="0AB-hb-ffj"/>
                                     <constraint firstItem="Y70-30-oGY" firstAttribute="leading" secondItem="VKH-Mt-MlQ" secondAttribute="leading" id="0TS-iT-DNX"/>
@@ -2903,7 +2912,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="YPd-wO-28N" firstAttribute="leading" secondItem="pzq-Ua-RWm" secondAttribute="leading" constant="5" id="CqF-fD-GzV"/>
                                     <constraint firstItem="nTg-ZE-D6o" firstAttribute="trailing" secondItem="PVa-gH-igE" secondAttribute="trailing" id="Fs3-eR-VY4"/>
@@ -3021,7 +3030,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ACp-7I-szX" firstAttribute="leading" secondItem="Xcx-7D-ne2" secondAttribute="leading" id="1hU-va-omL"/>
                                     <constraint firstItem="9zL-Pd-PIO" firstAttribute="trailing" secondItem="yGD-ui-DKh" secondAttribute="trailing" id="730-8z-TxQ"/>
@@ -3138,7 +3147,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.039215686270000001" green="0.2470588235" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="mwn-2H-quH" firstAttribute="trailing" secondItem="eVH-Qk-lJL" secondAttribute="trailing" id="05k-Tr-APB"/>
                                     <constraint firstAttribute="trailing" secondItem="8bp-je-R7E" secondAttribute="trailing" constant="5" id="3AA-hE-iiX"/>

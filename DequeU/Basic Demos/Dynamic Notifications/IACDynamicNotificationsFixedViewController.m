@@ -11,9 +11,9 @@
 
 @interface IACDynamicNotificationsFixedViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
-@property IBOutlet UIButton* _clearContacts; ///< The clearContact button. When pressed, calls "clearList" method.
-@property IBOutlet UIButton* _saveButton; ///< The saveButton. When pressed, calls "saveItem" method.
-@property IBOutlet UITableView* _tableView; ///< The tableView that displays all elements in _contactList.
+@property IBOutlet UIButton* clearContactsButton; ///< The clearContact button. When pressed, calls "clearList" method.
+@property IBOutlet UIButton* saveButton; ///< The saveButton. When pressed, calls "saveItem" method.
+@property IBOutlet UITableView* tableView; ///< The tableView that displays all elements in _contactList.
 
 @end
 
@@ -24,19 +24,12 @@
     
     _contactList = [[NSMutableArray alloc] init];
     
-    _contactList.isAccessibilityElement = YES;
-    self._tableView.dataSource = self;
-    self._tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
     _textField.delegate = self;
-    _textField.accessibilityLabel = @"";
     
-    [self._saveButton addTarget:self action:@selector(saveItem) forControlEvents:UIControlEventTouchDown];
-    [self._clearContacts addTarget:self action:@selector(clearList) forControlEvents:UIControlEventTouchDown];
-    
-    // Listener for when the textField's content changes.
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textChanged)
-                                                 name:UITextFieldTextDidChangeNotification object:nil];
+    [_saveButton addTarget:self action:@selector(saveItem) forControlEvents:UIControlEventTouchDown];
+    [_clearContactsButton addTarget:self action:@selector(clearList) forControlEvents:UIControlEventTouchDown];
 }
 
 - (NSString*)clearList {
@@ -50,7 +43,7 @@
     }
     
     [_contactList removeAllObjects];
-    [self._tableView reloadData];
+    [_tableView reloadData];
     [DQUtilities createDynamicNotification:announcement]; // Prompts VoiceOver to announce the change in the list.
     
     return announcement;
@@ -66,24 +59,15 @@
         announcement = [item stringByAppendingString:NSLocalizedString(@"ADDED_CONTACT", nil)]; // Creates announcement that item was added to list.
         
         [_contactList addObject:item];
-        [self._tableView reloadData];
+        [_tableView reloadData];
     } else {
         announcement = NSLocalizedString(@"EMPTY_TEXTFIELD", nil); // Creates announcement that no item was added to list (textField is empty).
     }
     
     [_textField resignFirstResponder];
     [DQUtilities createDynamicNotification:announcement]; // Prompts VoiceOver to announce the change in the list.
-    _textField.accessibilityLabel = @"";
     
     return announcement;
-}
-
-- (void)textChanged {
-    if(_textField.text.length > 0) {
-        _textField.accessibilityLabel = NSLocalizedString(@"FIRST_NAME", nil);
-    } else {
-        _textField.accessibilityLabel = @"";
-    }
 }
 
 //Delegate method for UITableView.
