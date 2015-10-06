@@ -13,12 +13,7 @@
 		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
 		A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */; };
 		A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
-		A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
-		A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C618A2DD4700DC6496 /* UIKit.framework */; };
 		EE6123F91B208F5000E94A7E /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
-		EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36921B22140600EA2514 /* libz.dylib */; };
-		EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B36941B22140E00EA2514 /* libsqlite3.dylib */; };
-		EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE1E8261B1E126600BA4BF6 /* DQA11y.framework */; };
 		EEAC95FC1B2F45D200EAD565 /* IACModalDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAC95FB1B2F45D200EAD565 /* IACModalDialogViewController.m */; };
 		EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2A21B272A2700E23EAB /* FormsValidation.storyboard */; };
 		EEAFD2A81B272A2700E23EAB /* IACFormsValidationBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2A41B272A2700E23EAB /* IACFormsValidationBrokenViewController.m */; };
@@ -38,7 +33,6 @@
 		EEAFD2D61B272A3A00E23EAB /* TopBarContrast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2C41B272A3A00E23EAB /* TopBarContrast.storyboard */; };
 		EEAFD2D71B272A3A00E23EAB /* IACTraitsBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C71B272A3A00E23EAB /* IACTraitsBrokenViewController.m */; };
 		EEAFD2D81B272A3A00E23EAB /* IACTraitsFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2C91B272A3A00E23EAB /* IACTraitsFixedViewController.m */; };
-		EEAFD2F01B272A6500E23EAB /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */; };
 		EEAFD2F11B272A6500E23EAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2E81B272A6500E23EAB /* Images.xcassets */; };
 		EEAFD2F21B272A6500E23EAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD2E91B272A6500E23EAB /* Localizable.strings */; };
 		EEAFD2F31B272A6500E23EAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD2EA1B272A6500E23EAB /* main.m */; };
@@ -53,19 +47,6 @@
 		EEAFD30C1B272B9400E23EAB /* IACTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30B1B272B9400E23EAB /* IACTableViewCell.m */; };
 		EEAFD30F1B272B9D00E23EAB /* IACUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD30E1B272B9D00E23EAB /* IACUtilities.m */; };
 		EEAFD3151B272BF200E23EAB /* IACAboutDequeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3141B272BF200E23EAB /* IACAboutDequeViewController.m */; };
-		EEAFD34D1B2733F100E23EAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEAFD3341B272E6400E23EAB /* InfoPlist.strings */; };
-		EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3521B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m */; };
-		EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3531B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m */; };
-		EEAFD3651B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3551B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m */; };
-		EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3561B27348A00E23EAB /* IACFormValidationFixedViewController_test.m */; };
-		EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3581B27348A00E23EAB /* IACHintBrokenViewController_test.m */; };
-		EEAFD3681B27348A00E23EAB /* IACHintFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3591B27348A00E23EAB /* IACHintFixedViewController_test.m */; };
-		EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35B1B27348A00E23EAB /* IACLabelBrokenViewController_test.m */; };
-		EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35C1B27348A00E23EAB /* IACLabelFixedViewController_test.m */; };
-		EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35E1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m */; };
-		EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD35F1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m */; };
-		EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3611B27348A00E23EAB /* IACTraitsBrokenViewController_test.m */; };
-		EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3621B27348A00E23EAB /* IACTraitsFixedViewController_test.m */; };
 		EEAFD3731B27391E00E23EAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3721B27391E00E23EAB /* AppDelegate.m */; };
 		EEAFD37A1B274C0B00E23EAB /* IACIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD3791B274C0B00E23EAB /* IACIntroductionViewController.m */; };
 		EEAFD37F1B274C2100E23EAB /* IACLabelAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAFD37E1B274C2100E23EAB /* IACLabelAboutViewController.m */; };
@@ -88,8 +69,6 @@
 		EEDE4E121B38AEBF003B6362 /* IACUpdatingContentBrokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E0D1B38AEBF003B6362 /* IACUpdatingContentBrokenViewController.m */; };
 		EEDE4E131B38AEBF003B6362 /* IACUpdatingContentFixedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E0F1B38AEBF003B6362 /* IACUpdatingContentFixedViewController.m */; };
 		EEDE4E141B38AEBF003B6362 /* UpdatingContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDE4E101B38AEBF003B6362 /* UpdatingContent.storyboard */; };
-		EEDE4E251B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E241B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m */; };
-		EEDE4E271B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDE4E261B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,13 +86,6 @@
 			remoteGlobalIDString = EECB14801B18F02300809C96;
 			remoteInfo = DQA11yTests;
 		};
-		A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9D013B718A2DD4700DC6496 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
-			remoteInfo = iosFireEyesInstructions;
-		};
 		EE6B36AD1B2247D700EA2514 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
@@ -128,13 +100,10 @@
 		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = iOSA11yFramework/DQA11y.xcodeproj; sourceTree = "<group>"; };
-		A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deque University for iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility 101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D013C218A2DD4700DC6496 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9D013C418A2DD4700DC6496 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A9D013C618A2DD4700DC6496 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accessibility 101Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE6B36921B22140600EA2514 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		EE6B36941B22140E00EA2514 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		EEAC95FA1B2F45D200EAD565 /* IACModalDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACModalDialogViewController.h; sourceTree = "<group>"; };
 		EEAC95FB1B2F45D200EAD565 /* IACModalDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IACModalDialogViewController.m; sourceTree = "<group>"; };
 		EEAC96181B30879200EAD565 /* IACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IACViewController.h; path = "DequeU/IAC Files/IAC Controllers/IACViewController.h"; sourceTree = "<group>"; };
@@ -180,7 +149,6 @@
 		EEAFD2E41B272A6500E23EAB /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
 		EEAFD2E51B272A6500E23EAB /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
 		EEAFD2E61B272A6500E23EAB /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "DequeU/Supporting Files/Google Analytics Header Files/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
 		EEAFD2E81B272A6500E23EAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EEAFD2E91B272A6500E23EAB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EEAFD2EA1B272A6500E23EAB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -271,26 +239,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE6B36951B22140E00EA2514 /* libsqlite3.dylib in Frameworks */,
-				EE6B36931B22140600EA2514 /* libz.dylib in Frameworks */,
 				EE6123F91B208F5000E94A7E /* DQA11y.framework in Frameworks */,
 				0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */,
 				0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */,
 				0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */,
 				A9D013C518A2DD4700DC6496 /* CoreGraphics.framework in Frameworks */,
-				EEAFD2F01B272A6500E23EAB /* libGoogleAnalyticsServices.a in Frameworks */,
 				A9D013C718A2DD4700DC6496 /* UIKit.framework in Frameworks */,
 				A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9D013D718A2DD4700DC6496 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE6B36981B2215C600EA2514 /* DQA11y.framework in Frameworks */,
-				A9D013DE18A2DD4700DC6496 /* UIKit.framework in Frameworks */,
-				A9D013DD18A2DD4700DC6496 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +322,7 @@
 		A9D013C018A2DD4700DC6496 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */,
-				A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */,
+				A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,9 +331,6 @@
 			isa = PBXGroup;
 			children = (
 				2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */,
-				EE6B36941B22140E00EA2514 /* libsqlite3.dylib */,
-				EE6B36921B22140600EA2514 /* libz.dylib */,
-				EEAFD2E71B272A6500E23EAB /* libGoogleAnalyticsServices.a */,
 				0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */,
 				0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */,
 				0F158F2718D223E500B34CC7 /* AudioToolbox.framework */,
@@ -699,26 +650,8 @@
 			);
 			name = DequeU;
 			productName = iosFireEyesInstructions;
-			productReference = A9D013BF18A2DD4700DC6496 /* Deque University for iOS.app */;
+			productReference = A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A9D013D918A2DD4700DC6496 /* DequeUTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeUTests" */;
-			buildPhases = (
-				A9D013D618A2DD4700DC6496 /* Sources */,
-				A9D013D718A2DD4700DC6496 /* Frameworks */,
-				A9D013D818A2DD4700DC6496 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9D013E018A2DD4700DC6496 /* PBXTargetDependency */,
-			);
-			name = DequeUTests;
-			productName = iosFireEyesInstructionsTests;
-			productReference = A9D013DA18A2DD4700DC6496 /* Accessibility 101Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -727,14 +660,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DQ;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Deque Systems";
 				TargetAttributes = {
 					A9D013BE18A2DD4700DC6496 = {
 						DevelopmentTeam = 2ZZQGXN669;
-					};
-					A9D013D918A2DD4700DC6496 = {
-						TestTargetID = A9D013BE18A2DD4700DC6496;
 					};
 				};
 			};
@@ -758,7 +688,6 @@
 			projectRoot = "";
 			targets = (
 				A9D013BE18A2DD4700DC6496 /* DequeU */,
-				A9D013D918A2DD4700DC6496 /* DequeUTests */,
 			);
 		};
 /* End PBXProject section */
@@ -796,14 +725,6 @@
 				EEAFD2F41B272A6500E23EAB /* AG.mp3 in Resources */,
 				EEAFD2CA1B272A3A00E23EAB /* DynamicNotifications.storyboard in Resources */,
 				EEAFD2D61B272A3A00E23EAB /* TopBarContrast.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9D013D818A2DD4700DC6496 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEAFD34D1B2733F100E23EAB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,35 +782,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9D013D618A2DD4700DC6496 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEAFD36A1B27348A00E23EAB /* IACLabelFixedViewController_test.m in Sources */,
-				EEDE4E271B3AF3F6003B6362 /* IACUpdatingContentFixedViewController_test.m in Sources */,
-				EEAFD36C1B27348A00E23EAB /* IACModalDialogFixedViewController_test.m in Sources */,
-				EEAFD3661B27348A00E23EAB /* IACFormValidationFixedViewController_test.m in Sources */,
-				EEAFD3641B27348A00E23EAB /* IACDynamicNotificationsFixedViewController_test.m in Sources */,
-				EEAFD36E1B27348A00E23EAB /* IACTraitsFixedViewController_test.m in Sources */,
-				EEAFD3631B27348A00E23EAB /* IACDynamicNotificationsBrokenViewController_test.m in Sources */,
-				EEAFD3691B27348A00E23EAB /* IACLabelBrokenViewController_test.m in Sources */,
-				EEDE4E251B3AF3E2003B6362 /* IACUpdatingContentBrokenViewController_test.m in Sources */,
-				EEAFD36D1B27348A00E23EAB /* IACTraitsBrokenViewController_test.m in Sources */,
-				EEAFD3671B27348A00E23EAB /* IACHintBrokenViewController_test.m in Sources */,
-				EEAFD36B1B27348A00E23EAB /* IACModalDialogBrokenViewController_test.m in Sources */,
-				EEAFD3681B27348A00E23EAB /* IACHintFixedViewController_test.m in Sources */,
-				EEAFD3651B27348A00E23EAB /* IACFormValidationBrokenViewController_test.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A9D013E018A2DD4700DC6496 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9D013BE18A2DD4700DC6496 /* DequeU */;
-			targetProxy = A9D013DF18A2DD4700DC6496 /* PBXContainerItemProxy */;
-		};
 		EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DQA11y;
@@ -928,6 +823,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/chrismcmeeking/Repositories/A11yAnalysisFramework/DerivedData/Build/Products/Debug-iphoneos";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -966,10 +863,11 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Deque Systems Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Deque Systems Inc";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "/Users/chrismcmeeking/Repositories/A11yAnalysisFramework/DerivedData/Build/Products/Debug-iphoneos";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -993,9 +891,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/chrismcmeeking/Repositories/A11yAnalysisFramework/DerivedData/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
@@ -1008,7 +909,8 @@
 					"$(PROJECT_DIR)/DequeU/Supporting\\ Files/Google\\ Analytics\\ Header\\ Files",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Deque University for iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Accessibility-101";
+				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1024,9 +926,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/chrismcmeeking/Repositories/A11yAnalysisFramework/DerivedData/Build/Products/Debug-iphoneos",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
@@ -1039,60 +944,11 @@
 					"$(PROJECT_DIR)/DequeU/Supporting\\ Files/Google\\ Analytics\\ Header\\ Files",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "Deque University for iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Accessibility-101";
+				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		A9D013EF18A2DD4700DC6496 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Deque University for iOS.app/Deque University for iOS";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/DequeUTests/Supporting Files/DequeUTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				PRODUCT_NAME = "Accessibility 101Tests";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		A9D013F018A2DD4700DC6496 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Deque University for iOS.app/Deque University for iOS";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DequeU/Supporting Files/DequeU-Prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/DequeUTests/Supporting Files/DequeUTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				PRODUCT_NAME = "Accessibility 101Tests";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -1113,15 +969,6 @@
 			buildConfigurations = (
 				A9D013EC18A2DD4700DC6496 /* Debug */,
 				A9D013ED18A2DD4700DC6496 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9D013EE18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeUTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9D013EF18A2DD4700DC6496 /* Debug */,
-				A9D013F018A2DD4700DC6496 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

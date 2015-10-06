@@ -11,7 +11,7 @@
 
 //! Deque University for iOS View Controller.
 /*! This view controller manages the different sections and tabs on iPhone and iPod touch. */
-@interface IACViewController : GAITrackedViewController
+@interface IACViewController : UIViewController
 
 //! Calls setOverlayOn to turn the VoiceOver simulation on or off.
 /*! This function will turn the simulation on if it is currently off, or off if the simulation is currently on. */
