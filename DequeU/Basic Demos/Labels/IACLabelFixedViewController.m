@@ -7,6 +7,7 @@
 //
 
 #import "IACLabelFixedViewController.h"
+#import <DQA11y/DQA11y.h>
 
 @implementation IACLabelFixedViewController 
 
@@ -27,7 +28,7 @@
     
     //This sets the "shadow" property of the DQButtons to "ON", to help users more easily see that they are buttons.
     [_FishDisplay setShadowed:YES];
-    [_CatDisplay setShadowed:YES];
+    if ([_CatDisplay isMemberOfClass:[DQButton class]])  [_CatDisplay setShadowed:YES];
     [_DogDisplay setShadowed:YES];
    
     [_CatDisplay addTarget:self action:@selector(displayImage:) forControlEvents:UIControlEventTouchDown];

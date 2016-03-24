@@ -61,6 +61,8 @@
 
 - (IBAction)submitButton:(id)sender {
     
+    _emailField.accessibilityTraits |= UIAccessibilityTraitStaticText;
+    
     [self.class validateTextField:_emailField
                        fieldLabel:_emailLabel
                      warningLabel:_emailReq

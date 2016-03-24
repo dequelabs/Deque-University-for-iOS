@@ -74,9 +74,6 @@
     UIStoryboard* dynamic = [UIStoryboard storyboardWithName:@"DynamicNotifications" bundle:nil];
     [basicDemos addObject:[dynamic instantiateViewControllerWithIdentifier:@"DynamicNotifications"]];
     
-    UIStoryboard* form = [UIStoryboard storyboardWithName:@"FormsValidation" bundle:nil];
-    [advancedDemos addObject:[form instantiateViewControllerWithIdentifier:@"FormsValidation"]];
-    
     UIStoryboard* modal = [UIStoryboard storyboardWithName:@"ModalDialog" bundle:nil];
     [basicDemos addObject:[modal instantiateViewControllerWithIdentifier:@"ModalDialog"]];
     
@@ -89,6 +86,12 @@
     
     UIStoryboard* updatingContent = [UIStoryboard storyboardWithName:@"UpdatingContent" bundle:nil];
     [advancedDemos addObject:[updatingContent instantiateViewControllerWithIdentifier:@"UpdatingContent"]];
+    
+    UIStoryboard* form = [UIStoryboard storyboardWithName:@"FormsValidation" bundle:nil];
+    [advancedDemos addObject:[form instantiateViewControllerWithIdentifier:@"FormsValidation"]];
+    
+    storyBoard = [UIStoryboard storyboardWithName:@"InformativeColor" bundle:nil];
+    [advancedDemos addObject:[storyBoard instantiateViewControllerWithIdentifier:@"InformativeColor"]];
     
     _viewControllersBasic = [NSArray arrayWithArray:basicDemos];
     _viewControllersAdvanced = [NSArray arrayWithArray:advancedDemos];

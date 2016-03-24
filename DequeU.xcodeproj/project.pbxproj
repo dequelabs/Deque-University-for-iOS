@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
+		0F658B071BC57745000650C3 /* InformativeColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F658B061BC57745000650C3 /* InformativeColor.storyboard */; settings = {ASSET_TAGS = (); }; };
 		0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */; };
 		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
 		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
@@ -97,6 +98,7 @@
 
 /* Begin PBXFileReference section */
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0F658B061BC57745000650C3 /* InformativeColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InformativeColor.storyboard; sourceTree = "<group>"; };
 		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DQA11y.xcodeproj; path = iOSA11yFramework/DQA11y.xcodeproj; sourceTree = "<group>"; };
@@ -252,6 +254,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F658B031BC5771E000650C3 /* Informative Color */ = {
+			isa = PBXGroup;
+			children = (
+				0F658B061BC57745000650C3 /* InformativeColor.storyboard */,
+			);
+			name = "Informative Color";
+			sourceTree = "<group>";
+		};
 		0F7633741AE00966002D7243 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +297,7 @@
 				0F7633741AE00966002D7243 /* Introduction */,
 				EEAFD2B51B272A3A00E23EAB /* Labels */,
 				EEAFD2B01B272A3A00E23EAB /* Hints */,
+				0F658B031BC5771E000650C3 /* Informative Color */,
 				EEAFD2C51B272A3A00E23EAB /* Traits */,
 				EEAFD3981B274CE600E23EAB /* Nested A11y */,
 				EEAFD3A21B274D2E00E23EAB /* Dynamic Type */,
@@ -660,6 +671,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DQ;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Deque Systems";
 				TargetAttributes = {
@@ -719,6 +731,7 @@
 				EEAFD2F51B272A6500E23EAB /* SIR.mp3 in Resources */,
 				EEAFD2F21B272A6500E23EAB /* Localizable.strings in Resources */,
 				EEAFD2F11B272A6500E23EAB /* Images.xcassets in Resources */,
+				0F658B071BC57745000650C3 /* InformativeColor.storyboard in Resources */,
 				EEAFD2A71B272A2700E23EAB /* FormsValidation.storyboard in Resources */,
 				EEAFD2D51B272A3A00E23EAB /* Storyboard.storyboard in Resources */,
 				EEDE4E141B38AEBF003B6362 /* UpdatingContent.storyboard in Resources */,
@@ -912,6 +925,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Accessibility-101";
 				PRODUCT_NAME = "Accessibility 101";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
