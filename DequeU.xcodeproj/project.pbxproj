@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0F158F2818D223E500B34CC7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F158F2718D223E500B34CC7 /* AudioToolbox.framework */; };
-		0F658B071BC57745000650C3 /* InformativeColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F658B061BC57745000650C3 /* InformativeColor.storyboard */; settings = {ASSET_TAGS = (); }; };
+		0F2325F61D9053810067BF28 /* Accessibility_101Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2325F51D9053810067BF28 /* Accessibility_101Tests.swift */; };
+		0F658B071BC57745000650C3 /* InformativeColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F658B061BC57745000650C3 /* InformativeColor.storyboard */; };
 		0FEB4B8D1AC9C73300F372F8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */; };
 		0FEB4B8F1AC9C73E00F372F8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */; };
 		A9D013C318A2DD4700DC6496 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D013C218A2DD4700DC6496 /* Foundation.framework */; };
@@ -73,6 +74,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0F2325F81D9053810067BF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D013B718A2DD4700DC6496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D013BE18A2DD4700DC6496;
+			remoteInfo = DequeU;
+		};
 		2BE1E8251B1E126600BA4BF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2BE1E8201B1E126500BA4BF6 /* DQA11y.xcodeproj */;
@@ -96,8 +104,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0F00F5041D8C4B51000670A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0F158F2718D223E500B34CC7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0F2325F31D9053810067BF28 /* Accessibility 101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Accessibility 101Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2325F51D9053810067BF28 /* Accessibility_101Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility_101Tests.swift; sourceTree = "<group>"; };
+		0F2325F71D9053810067BF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F658B061BC57745000650C3 /* InformativeColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InformativeColor.storyboard; sourceTree = "<group>"; };
 		0FEB4B8C1AC9C73300F372F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0FEB4B8E1AC9C73E00F372F8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -237,6 +261,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0F2325F01D9053810067BF28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D013BC18A2DD4700DC6496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +285,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2325F41D9053810067BF28 /* Accessibility 101Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2325F51D9053810067BF28 /* Accessibility_101Tests.swift */,
+				0F2325F71D9053810067BF28 /* Info.plist */,
+			);
+			path = "Accessibility 101Tests";
+			sourceTree = "<group>";
+		};
 		0F658B031BC5771E000650C3 /* Informative Color */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +365,7 @@
 			children = (
 				0FEB4C211ACB0F5000F372F8 /* Deque University for iOS */,
 				A9D013E118A2DD4700DC6496 /* Deque University for iOS Tests */,
+				0F2325F41D9053810067BF28 /* Accessibility 101Tests */,
 				A9D013C118A2DD4700DC6496 /* Frameworks */,
 				A9D013C018A2DD4700DC6496 /* Products */,
 			);
@@ -334,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D013BF18A2DD4700DC6496 /* Accessibility 101.app */,
+				0F2325F31D9053810067BF28 /* Accessibility 101Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -646,6 +688,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0F2325F21D9053810067BF28 /* Accessibility 101Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F2326001D9053810067BF28 /* Build configuration list for PBXNativeTarget "Accessibility 101Tests" */;
+			buildPhases = (
+				0F2325EF1D9053810067BF28 /* Sources */,
+				0F2325F01D9053810067BF28 /* Frameworks */,
+				0F2325F11D9053810067BF28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F2325F91D9053810067BF28 /* PBXTargetDependency */,
+			);
+			name = "Accessibility 101Tests";
+			productName = "Accessibility 101Tests";
+			productReference = 0F2325F31D9053810067BF28 /* Accessibility 101Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A9D013BE18A2DD4700DC6496 /* DequeU */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9D013EB18A2DD4700DC6496 /* Build configuration list for PBXNativeTarget "DequeU" */;
@@ -653,6 +713,7 @@
 				A9D013BB18A2DD4700DC6496 /* Sources */,
 				A9D013BC18A2DD4700DC6496 /* Frameworks */,
 				A9D013BD18A2DD4700DC6496 /* Resources */,
+				0F00F5041D8C4B51000670A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -671,10 +732,15 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DQ;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Deque Systems";
 				TargetAttributes = {
+					0F2325F21D9053810067BF28 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
+						TestTargetID = A9D013BE18A2DD4700DC6496;
+					};
 					A9D013BE18A2DD4700DC6496 = {
 						DevelopmentTeam = 2ZZQGXN669;
 					};
@@ -700,6 +766,7 @@
 			projectRoot = "";
 			targets = (
 				A9D013BE18A2DD4700DC6496 /* DequeU */,
+				0F2325F21D9053810067BF28 /* Accessibility 101Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -722,6 +789,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0F2325F11D9053810067BF28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D013BD18A2DD4700DC6496 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -744,6 +818,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0F2325EF1D9053810067BF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2325F61D9053810067BF28 /* Accessibility_101Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D013BB18A2DD4700DC6496 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -798,6 +880,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0F2325F91D9053810067BF28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D013BE18A2DD4700DC6496 /* DequeU */;
+			targetProxy = 0F2325F81D9053810067BF28 /* PBXContainerItemProxy */;
+		};
 		EE6B36AE1B2247D700EA2514 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DQA11y;
@@ -817,6 +904,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0F2325FA1D9053810067BF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Accessibility 101Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chrismcmeeking.Accessibility-101Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accessibility 101.app/Accessibility 101";
+			};
+			name = Debug;
+		};
+		0F2325FB1D9053810067BF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "Accessibility 101Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chrismcmeeking.Accessibility-101Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Accessibility 101.app/Accessibility 101";
+			};
+			name = Release;
+		};
 		A9D013E918A2DD4700DC6496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -837,7 +969,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = "/Users/chrismcmeeking/Repositories/A11yAnalysisFramework/DerivedData/Build/Products/Debug-iphoneos";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -880,7 +1012,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = "/Users/chrismcmeeking/Repositories/A11yAnalysisFramework/DerivedData/Build/Products/Debug-iphoneos";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -969,6 +1101,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F2326001D9053810067BF28 /* Build configuration list for PBXNativeTarget "Accessibility 101Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F2325FA1D9053810067BF28 /* Debug */,
+				0F2325FB1D9053810067BF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A9D013BA18A2DD4700DC6496 /* Build configuration list for PBXProject "DequeU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -114,8 +114,16 @@
     [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionBottom];
 }
 
+- (void)setAccessibilityFocus:(NSIndexPath*)indexPath {
+    UITableViewCell* cell = [self.tableView cellForRowAtIndexPath:indexPath];
+
+    UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, cell);
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+
+    NSLog(@"Table View Did Appear");
     
     [self setState:NO];
 }
