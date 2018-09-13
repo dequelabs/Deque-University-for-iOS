@@ -13,7 +13,7 @@
         <!--Menu-->
         <scene sceneID="HCQ-Te-FUw">
             <objects>
-                <tableViewController title="Menu" clearsSelectionOnViewWillAppear="NO" id="V6q-Z7-mus" customClass="MenuViewController" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Menu" clearsSelectionOnViewWillAppear="NO" id="V6q-Z7-mus" customClass="MenuViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3zn-TB-XTx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,15 +67,15 @@
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
+                                            <exclude reference="2r9-rt-65I"/>
                                             <exclude reference="93D-Dq-Utb"/>
-                                            <exclude reference="eip-Zv-G0C"/>
                                             <exclude reference="G3K-XS-qc4"/>
                                             <exclude reference="Kw5-0E-vW1"/>
-                                            <exclude reference="2r9-rt-65I"/>
+                                            <exclude reference="eip-Zv-G0C"/>
                                             <exclude reference="JAw-Lx-1S6"/>
+                                            <exclude reference="W3z-GZ-keo"/>
                                             <exclude reference="b9D-a5-mFa"/>
                                             <exclude reference="maY-ho-CIN"/>
-                                            <exclude reference="W3z-GZ-keo"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -90,7 +90,7 @@
                             <outlet property="delegate" destination="V6q-Z7-mus" id="SnK-dV-zt2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Worldspace Attest for iOS" id="K7j-YW-O3I"/>
+                    <navigationItem key="navigationItem" title="Deque University for iOS" id="K7j-YW-O3I"/>
                     <connections>
                         <outlet property="view" destination="3zn-TB-XTx" id="wZR-1u-DTt"/>
                     </connections>
@@ -102,7 +102,7 @@
         <!--Main View Controller-->
         <scene sceneID="WWT-lS-DtB">
             <objects>
-                <splitViewController id="82V-YS-58M" customClass="MainViewController" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="82V-YS-58M" customClass="MainViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="FCv-cj-8Xc" kind="relationship" relationship="masterViewController" id="wsN-qV-Ru7"/>
                     </connections>
