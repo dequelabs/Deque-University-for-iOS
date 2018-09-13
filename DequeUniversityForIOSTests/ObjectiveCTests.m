@@ -17,7 +17,7 @@
 /* The most simple test. Load the initial storyboard of main. The default isAccessible() call throws an exception on failure. */
 - (void) testSimple {
     [[Attest thatWithStoryBoardName: @"Main" viewControllerID: NULL bundle: NULL]
-     isAccessible: ^(AttestResult* result) {
+     isAccessible: ^(Result* result) {
         NSLog(@"%s\n %@", "Attest Results", result.description);
      }];
 }
@@ -25,7 +25,7 @@
 /* Ignore a violation for a particular rule. */
 - (void) testAndIgnoreSingleViolation {
     [[Attest thatWithStoryBoardName:@"ConflictingTraits" viewControllerID: NULL bundle:nil]
-     isAccessible: ^(AttestResult* result) {
+     isAccessible: ^(Result* result) {
          for (RuleResult* ruleResult in result.ruleResults) {
              switch (ruleResult.rule.ruleId) {
                  

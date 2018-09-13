@@ -120,11 +120,11 @@
 		0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRules.swift; sourceTree = "<group>"; };
 		0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolations.swift; sourceTree = "<group>"; };
 		0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
-		0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttestiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = AttestiOSApp.app; path = DequeUniversityForIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDE981F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FCBDE9D1F9E6C350059DB83 /* AttestiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCBDE9D1F9E6C350059DB83 /* DequeUniversityForIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DequeUniversityForIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDEA31F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FCBDEA81F9E6C350059DB83 /* AttestiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCBDEA81F9E6C350059DB83 /* DequeUniversityForIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DequeUniversityForIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDEAC1F9E6C350059DB83 /* SimpleUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUITest.swift; sourceTree = "<group>"; };
 		0FCBDEAE1F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBDEBD1F9E6EA70059DB83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -270,8 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */,
-				0FCBDE9D1F9E6C350059DB83 /* AttestiOSAppTests.xctest */,
-				0FCBDEA81F9E6C350059DB83 /* AttestiOSAppUITests.xctest */,
+				0FCBDE9D1F9E6C350059DB83 /* DequeUniversityForIOSTests.xctest */,
+				0FCBDEA81F9E6C350059DB83 /* DequeUniversityForIOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 			);
 			name = DequeUniversityForIOSTests;
 			productName = AttestiOSAppTests;
-			productReference = 0FCBDE9D1F9E6C350059DB83 /* AttestiOSAppTests.xctest */;
+			productReference = 0FCBDE9D1F9E6C350059DB83 /* DequeUniversityForIOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0FCBDEA71F9E6C350059DB83 /* DequeUniversityForIOSUITests */ = {
@@ -401,7 +401,7 @@
 			);
 			name = DequeUniversityForIOSUITests;
 			productName = AttestiOSAppUITests;
-			productReference = 0FCBDEA81F9E6C350059DB83 /* AttestiOSAppUITests.xctest */;
+			productReference = 0FCBDEA81F9E6C350059DB83 /* DequeUniversityForIOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -788,7 +788,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AttestiOSAppTests/AttestiOSAppTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -809,7 +809,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AttestiOSAppTests/AttestiOSAppTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DequeUniversityForIOS.app/DequeUniversityForIOS";
@@ -821,7 +821,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -831,9 +831,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AttestiOSApp;
+				TEST_TARGET_NAME = DequeUniversityForIOS;
 			};
 			name = Debug;
 		};
@@ -842,7 +843,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -852,9 +853,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AttestiOSApp;
+				TEST_TARGET_NAME = DequeUniversityForIOS;
 			};
 			name = Release;
 		};
@@ -973,7 +975,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AttestiOSAppTests/AttestiOSAppTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DequeUniversityForIOS.app/DequeUniversityForIOS";
@@ -985,7 +987,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LQEKUJ838Q;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -995,9 +997,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AttestiOSApp;
+				TEST_TARGET_NAME = DequeUniversityForIOS;
 			};
 			name = FullRelease;
 		};

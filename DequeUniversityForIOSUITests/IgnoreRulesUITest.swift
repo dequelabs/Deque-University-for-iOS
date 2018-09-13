@@ -31,7 +31,7 @@ class IgnoreRulesUITest: XCTestCase {
     ];
     
     //Set up a static function that utilizes the list of ignored IDs
-    static func resultConsumer(attestResult: AttestResult) {
+    static func resultConsumer(attestResult: Attest.Result) {
         for ruleResult in attestResult.ruleResults {
             if (!ignoredRuleIDs.contains(ruleResult.rule.ruleId)) {
                 XCTAssertEqual(Impact.Pass.toString(), ruleResult.impact.toString(), ruleResult.description)

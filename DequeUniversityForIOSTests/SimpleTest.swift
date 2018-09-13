@@ -8,7 +8,7 @@ class SimpleTest: XCTestCase {
      The default isAccessible() call throws an exception on failure.
      */
     func testSimple() {
-        RuleResult.withDetails = true
+        Rule.Result.withDetails = true
         Attest.that(storyBoardName: "Main").isAccessible()
     }
 }

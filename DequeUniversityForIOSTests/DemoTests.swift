@@ -7,7 +7,7 @@ class DemoTests: XCTestCase {
     func testAllDemos() {
 
         //Show all details.
-        RuleResult.withDetails = true
+        Rule.Result.withDetails = true
 
         //For each demo assert that it has one violation on the rule that it demos and is otherwise accessible.
         for demo in Demos.values() {

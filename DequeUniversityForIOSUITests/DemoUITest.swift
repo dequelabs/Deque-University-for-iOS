@@ -57,10 +57,10 @@ class DemoUITest: XCTestCase {
     func testUIAllDemos() {
         
         //Show all details
-        RuleResult.withDetails = true
+        Rule.Result.withDetails = true
         
         //Show all passing nodes
-        RuleResult.withPasses = true
+        Rule.Result.withPasses = true
         
         //Application
         let app = XCUIApplication()
