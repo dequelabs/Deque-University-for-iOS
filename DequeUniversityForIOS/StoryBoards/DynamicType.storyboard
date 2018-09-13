@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wwU-98-FzG">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Type-->
+        <scene sceneID="0Mg-3U-aMm">
+            <objects>
+                <viewController title="Dynamic Type" id="wwU-98-FzG" customClass="RuleViewController" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eE0-AS-2n8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bk6-Oe-eyQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HfI-uh-UKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buU-j8-oga">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yF-3D-bVY">
+                                        <rect key="frame" x="20" y="20" width="280" height="218.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_DynamicType"/>
+                                        <string key="text">Ensures your app's user interface automatically adapts to the user preference change of larger text by scaling appropriately. This allows for your UI to match the accessibility behavior of the system fonts for people who have low vision who want to zoom into the content to be able to read it without disabling any functionality.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h7U-gB-MIU">
+                                        <rect key="frame" x="20" y="248.5" width="280" height="1482.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vJG-oz-0ty" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="387.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHx-0C-rve">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="102"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPH-Hk-o3B" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="206" height="82"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="This text adjusts when app is first opened." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-g5-tKB">
+                                                                        <rect key="frame" x="10" y="10" width="186" height="62"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="NoAutoAdjust_DynamicType"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="n6f-g5-tKB" secondAttribute="bottom" constant="10" id="3Jm-1n-6ul"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="n6f-g5-tKB" secondAttribute="trailing" constant="10" id="EHe-31-6Tc"/>
+                                                                    <constraint firstItem="n6f-g5-tKB" firstAttribute="top" secondItem="aPH-Hk-o3B" secondAttribute="top" constant="10" id="Ri2-MN-BLz"/>
+                                                                    <constraint firstItem="n6f-g5-tKB" firstAttribute="leading" secondItem="aPH-Hk-o3B" secondAttribute="leading" constant="10" id="f4S-Ji-cau"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqs-5d-SNq">
+                                                                <rect key="frame" x="226" y="29.5" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Dqs-5d-SNq" secondAttribute="height" multiplier="1:1" id="g2R-s5-ag1"/>
+                                                                    <constraint firstAttribute="height" constant="44" id="rCa-5z-IYx"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Dqs-5d-SNq" secondAttribute="trailing" constant="10" id="O9M-zR-zKV"/>
+                                                            <constraint firstItem="aPH-Hk-o3B" firstAttribute="top" secondItem="EHx-0C-rve" secondAttribute="top" constant="10" id="Q2N-Xx-wyW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="aPH-Hk-o3B" secondAttribute="bottom" constant="10" id="Y2L-fH-Q3X"/>
+                                                            <constraint firstItem="Dqs-5d-SNq" firstAttribute="leading" secondItem="aPH-Hk-o3B" secondAttribute="trailing" constant="10" id="etB-8z-HDf"/>
+                                                            <constraint firstItem="aPH-Hk-o3B" firstAttribute="leading" secondItem="EHx-0C-rve" secondAttribute="leading" constant="10" id="mTT-kq-tf6"/>
+                                                            <constraint firstItem="Dqs-5d-SNq" firstAttribute="centerY" secondItem="aPH-Hk-o3B" secondAttribute="centerY" id="oti-eW-rt0"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piT-pW-Syq">
+                                                        <rect key="frame" x="0.0" y="102" width="280" height="285.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSG-CT-6ui">
+                                                                <rect key="frame" x="20" y="9.5" width="240" height="138"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation1_NoAutoAdjust_DynamicType"/>
+                                                                <string key="text">By default, UILabels do not automatically adjust size if the user changes the system-wide text size preferences.  This text will not automatically adjust when the user-defined size is changed.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHc-bw-Mpy">
+                                                                <rect key="frame" x="20" y="157.5" width="240" height="118"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation2_NoAutoAdjust_DynamicType"/>
+                                                                <string key="text">Running the Attest Framework on this view will give you the violation help, "For auto font adjustment to work in iOS 10, 'adjustFontForContentSizeCategory' must be set to true."</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="VHc-bw-Mpy" firstAttribute="leading" secondItem="SSG-CT-6ui" secondAttribute="leading" id="0Ug-Ux-qU9"/>
+                                                            <constraint firstItem="SSG-CT-6ui" firstAttribute="top" secondItem="piT-pW-Syq" secondAttribute="top" constant="10" id="4lZ-FO-32L"/>
+                                                            <constraint firstItem="SSG-CT-6ui" firstAttribute="leading" secondItem="piT-pW-Syq" secondAttribute="leading" constant="20" id="JE2-oB-MtI"/>
+                                                            <constraint firstItem="VHc-bw-Mpy" firstAttribute="trailing" secondItem="SSG-CT-6ui" secondAttribute="trailing" id="gKj-2v-XAK"/>
+                                                            <constraint firstItem="VHc-bw-Mpy" firstAttribute="top" secondItem="SSG-CT-6ui" secondAttribute="bottom" constant="10" id="iqD-Nq-bcT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="SSG-CT-6ui" secondAttribute="trailing" constant="20" id="kv3-2x-YBY"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VHc-bw-Mpy" secondAttribute="bottom" constant="10" id="zBD-xx-BXl"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6wj-aI-r6S" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="387.5" width="280" height="567.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-df-SvR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="102"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FF2-Kh-6cs" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="206" height="82"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="This text will never adjust." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwA-dH-BgU">
+                                                                        <rect key="frame" x="10" y="10" width="186" height="62"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="NotTextStyle_DynamicType"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="GwA-dH-BgU" secondAttribute="trailing" constant="10" id="Mze-TH-jLb"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="GwA-dH-BgU" secondAttribute="bottom" constant="10" id="stE-sx-12A"/>
+                                                                    <constraint firstItem="GwA-dH-BgU" firstAttribute="top" secondItem="FF2-Kh-6cs" secondAttribute="top" constant="10" id="uRu-Jw-LvU"/>
+                                                                    <constraint firstItem="GwA-dH-BgU" firstAttribute="leading" secondItem="FF2-Kh-6cs" secondAttribute="leading" constant="10" id="z2z-g8-yvo"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XY-5F-y2M">
+                                                                <rect key="frame" x="226" y="29.5" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="aYQ-Oh-6MP"/>
+                                                                    <constraint firstAttribute="width" secondItem="9XY-5F-y2M" secondAttribute="height" multiplier="1:1" id="uYI-VG-GaG"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="9XY-5F-y2M" secondAttribute="trailing" constant="10" id="36F-2X-FNg"/>
+                                                            <constraint firstItem="9XY-5F-y2M" firstAttribute="centerY" secondItem="FF2-Kh-6cs" secondAttribute="centerY" id="XkW-6T-DOX"/>
+                                                            <constraint firstItem="FF2-Kh-6cs" firstAttribute="leading" secondItem="Dp9-df-SvR" secondAttribute="leading" constant="10" id="bjF-5k-xGc"/>
+                                                            <constraint firstItem="9XY-5F-y2M" firstAttribute="leading" secondItem="FF2-Kh-6cs" secondAttribute="trailing" constant="10" id="iEY-a1-ykH"/>
+                                                            <constraint firstAttribute="bottom" secondItem="FF2-Kh-6cs" secondAttribute="bottom" constant="10" id="piS-a6-vEl"/>
+                                                            <constraint firstItem="FF2-Kh-6cs" firstAttribute="top" secondItem="Dp9-df-SvR" secondAttribute="top" constant="10" id="xTc-Q4-yWb"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3EN-za-ZA9">
+                                                        <rect key="frame" x="0.0" y="102" width="280" height="465.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Js-OD-HMi">
+                                                                <rect key="frame" x="20" y="9.5" width="240" height="158"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation1_NotTextStyle_DynamicType"/>
+                                                                <string key="text">By default, UILabels use "System Font 17.0," which, even if "Automatically Adjusts Font" is selected, does not automatically adjust to a different font size. This text uses the default System Font, with "Automatically Adjusts Font" selected.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5Q-Qf-mdx">
+                                                                <rect key="frame" x="20" y="177.5" width="240" height="278"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation2_NotTextStyle_DynamicType"/>
+                                                                <string key="text">Running the Attest Framework on this view will give you the violation help, "View does not respond to dynamic content size adjustments.  In iOS 10, this is most easily achieved by using a text style that supports dynamic type, and setting 'adjustFontForContentSizeCategory' to true. iOS 9 and earlier, you should respond to \(Notification.Name.UIContentSizeCategoryDidChange) notifications."</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="2Js-OD-HMi" firstAttribute="top" secondItem="3EN-za-ZA9" secondAttribute="top" constant="10" id="UKV-VF-Cim"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2Js-OD-HMi" secondAttribute="trailing" constant="20" id="XR0-rY-1H0"/>
+                                                            <constraint firstItem="C5Q-Qf-mdx" firstAttribute="leading" secondItem="2Js-OD-HMi" secondAttribute="leading" id="bxL-UB-jyA"/>
+                                                            <constraint firstAttribute="bottom" secondItem="C5Q-Qf-mdx" secondAttribute="bottom" constant="10" id="coI-Xa-Nt1"/>
+                                                            <constraint firstItem="C5Q-Qf-mdx" firstAttribute="top" secondItem="2Js-OD-HMi" secondAttribute="bottom" constant="10" id="gzj-9E-k3q"/>
+                                                            <constraint firstItem="2Js-OD-HMi" firstAttribute="leading" secondItem="3EN-za-ZA9" secondAttribute="leading" constant="20" id="kDJ-uB-UzX"/>
+                                                            <constraint firstItem="C5Q-Qf-mdx" firstAttribute="trailing" secondItem="2Js-OD-HMi" secondAttribute="trailing" id="w9S-hE-lib"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MST-0p-qFZ" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="955" width="280" height="527.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vws-0w-afR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="102"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dg3-sf-QQ5" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="206" height="82"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="This text adjusts automatically." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5N-s1-Odh">
+                                                                        <rect key="frame" x="10" y="10" width="186" height="62"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="HasDynamicType_DynamicType"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="M5N-s1-Odh" secondAttribute="trailing" constant="10" id="EYn-Iy-kVr"/>
+                                                                    <constraint firstItem="M5N-s1-Odh" firstAttribute="top" secondItem="Dg3-sf-QQ5" secondAttribute="top" constant="10" id="O4t-8s-k6p"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="M5N-s1-Odh" secondAttribute="bottom" constant="10" id="R2f-U4-h38"/>
+                                                                    <constraint firstItem="M5N-s1-Odh" firstAttribute="leading" secondItem="Dg3-sf-QQ5" secondAttribute="leading" constant="10" id="uuW-8p-qcH"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ks-LG-Wjg">
+                                                                <rect key="frame" x="226" y="29.5" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="D9s-Oo-OVw"/>
+                                                                    <constraint firstAttribute="width" secondItem="4Ks-LG-Wjg" secondAttribute="height" multiplier="1:1" id="SCl-nR-FDt"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="4Ks-LG-Wjg" firstAttribute="centerY" secondItem="Dg3-sf-QQ5" secondAttribute="centerY" id="HAO-hj-MzU"/>
+                                                            <constraint firstItem="4Ks-LG-Wjg" firstAttribute="leading" secondItem="Dg3-sf-QQ5" secondAttribute="trailing" constant="10" id="Isx-TS-ESg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Dg3-sf-QQ5" secondAttribute="bottom" constant="10" id="JD6-eD-e13"/>
+                                                            <constraint firstAttribute="trailing" secondItem="4Ks-LG-Wjg" secondAttribute="trailing" constant="10" id="j97-gr-NxX"/>
+                                                            <constraint firstItem="Dg3-sf-QQ5" firstAttribute="leading" secondItem="vws-0w-afR" secondAttribute="leading" constant="10" id="uyV-AD-03b"/>
+                                                            <constraint firstItem="Dg3-sf-QQ5" firstAttribute="top" secondItem="vws-0w-afR" secondAttribute="top" constant="10" id="yHY-nx-LeJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-1U-a1c">
+                                                        <rect key="frame" x="0.0" y="102" width="280" height="425.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWn-pg-Jzl">
+                                                                <rect key="frame" x="20" y="9.5" width="240" height="406"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation_HasDynamicType_DynamicType"/>
+                                                                <string key="text">There are two fixes to Dynamic Type issues. If the app is running iOS 10, "Automatically Adjusts Font" should be selected.  If the app is running lower than iOS 10, it should automatically respond to Content Size Category notifications, as this text does. In addition, always use font types that automatically adjust to user preference (such as Body, Subheading, etc).  If it is not possible, you will have to manually listen for changes in user preference and adjust the font size.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="QWn-pg-Jzl" firstAttribute="leading" secondItem="bhc-1U-a1c" secondAttribute="leading" constant="20" id="3Jr-Fn-4x1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QWn-pg-Jzl" secondAttribute="trailing" constant="20" id="M1c-34-qgm"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QWn-pg-Jzl" secondAttribute="bottom" constant="10" id="bfV-m7-ScA"/>
+                                                            <constraint firstItem="QWn-pg-Jzl" firstAttribute="top" secondItem="bhc-1U-a1c" secondAttribute="top" constant="10" id="tWo-Zw-Vhn"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-k7-9Ka">
+                                        <rect key="frame" x="20" y="1741" width="280" height="178"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_DynamicType"/>
+                                        <string key="text">Ensures your app's user interface automatically adapts to the user preference change of larger text by scaling appropriately. This allows for your UI to match the accessibility behavior of the system fonts for people who have low vision who want to zoom into the content to be able to read it without disabling any functionality.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bif-wx-obv">
+                                        <rect key="frame" x="20" y="1929" width="280" height="178"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_DynamicType"/>
+                                        <string key="text">Ensures your app's user interface automatically adapts to the user preference change of larger text by scaling appropriately. This allows for your UI to match the accessibility behavior of the system fonts for people who have low vision who want to zoom into the content to be able to read it without disabling any functionality.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Lv-k7-9Ka" firstAttribute="top" secondItem="h7U-gB-MIU" secondAttribute="bottom" constant="10" id="3U9-TH-Z1L"/>
+                                    <constraint firstItem="7yF-3D-bVY" firstAttribute="trailing" secondItem="h7U-gB-MIU" secondAttribute="trailing" id="5ak-00-v30"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yF-3D-bVY" secondAttribute="trailing" constant="20" id="7db-69-DQw"/>
+                                    <constraint firstItem="h7U-gB-MIU" firstAttribute="trailing" secondItem="3Lv-k7-9Ka" secondAttribute="trailing" id="CQ9-wt-ca9"/>
+                                    <constraint firstItem="bif-wx-obv" firstAttribute="trailing" secondItem="3Lv-k7-9Ka" secondAttribute="trailing" id="EBD-qj-oyN"/>
+                                    <constraint firstAttribute="bottom" secondItem="bif-wx-obv" secondAttribute="bottom" constant="10" id="NCt-Fx-nh8"/>
+                                    <constraint firstItem="7yF-3D-bVY" firstAttribute="leading" secondItem="h7U-gB-MIU" secondAttribute="leading" id="NsL-bA-uf5"/>
+                                    <constraint firstItem="7yF-3D-bVY" firstAttribute="top" secondItem="buU-j8-oga" secondAttribute="top" constant="20" id="V03-uK-LjO"/>
+                                    <constraint firstItem="bif-wx-obv" firstAttribute="leading" secondItem="3Lv-k7-9Ka" secondAttribute="leading" id="WZv-xj-6BZ"/>
+                                    <constraint firstItem="bif-wx-obv" firstAttribute="top" secondItem="3Lv-k7-9Ka" secondAttribute="bottom" constant="10" id="dnr-Vc-3Ep"/>
+                                    <constraint firstItem="7yF-3D-bVY" firstAttribute="leading" secondItem="buU-j8-oga" secondAttribute="leading" constant="20" id="dp5-QD-j6B"/>
+                                    <constraint firstItem="h7U-gB-MIU" firstAttribute="leading" secondItem="3Lv-k7-9Ka" secondAttribute="leading" id="hXg-WB-lR4"/>
+                                    <constraint firstItem="h7U-gB-MIU" firstAttribute="top" secondItem="7yF-3D-bVY" secondAttribute="bottom" constant="10" id="niB-Io-7Ia"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bk6-Oe-eyQ" firstAttribute="top" secondItem="buU-j8-oga" secondAttribute="bottom" id="1xe-TZ-VlD"/>
+                            <constraint firstItem="buU-j8-oga" firstAttribute="centerX" secondItem="HfI-uh-UKJ" secondAttribute="centerX" id="Pgc-su-RGQ"/>
+                            <constraint firstItem="buU-j8-oga" firstAttribute="width" secondItem="HfI-uh-UKJ" secondAttribute="width" id="WKQ-Yh-yBU"/>
+                            <constraint firstItem="7yF-3D-bVY" firstAttribute="centerX" secondItem="HfI-uh-UKJ" secondAttribute="centerX" id="diF-FP-4ll"/>
+                            <constraint firstItem="buU-j8-oga" firstAttribute="top" secondItem="eE0-AS-2n8" secondAttribute="bottom" id="kuZ-hF-Iwl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ruleDescription" destination="7yF-3D-bVY" id="b4s-Ix-cxM"/>
+                        <outlet property="ruleHelp" destination="3Lv-k7-9Ka" id="fbN-hj-n64"/>
+                        <outlet property="tags" destination="bif-wx-obv" id="gjK-co-r5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aV7-SO-gMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523.125" y="85"/>
+        </scene>
+    </scenes>
+</document>

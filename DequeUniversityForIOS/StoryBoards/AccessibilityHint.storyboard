@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LJL-W7-K1Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--1y Hint View Controller-->
+        <scene sceneID="2Ck-gL-r8x">
+            <objects>
+                <viewController storyboardIdentifier="AccessibilityHint" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LJL-W7-K1Q" customClass="A11yHintViewController" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Wi-kE-chY"/>
+                        <viewControllerLayoutGuide type="bottom" id="kAp-cZ-duY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B8y-wZ-qdI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CW-UF-2Kp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dg-ra-aae">
+                                        <rect key="frame" x="20" y="20" width="335" height="86.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_A11yHint"/>
+                                        <string key="text">Some controls speakable text contains only State/Value information. Such controls require more information to be shared to be properly accessible.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h60-Wk-b0K">
+                                        <rect key="frame" x="20" y="116.5" width="335" height="818"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3cQ-VU-J2e" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="433"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-Ed-4l3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="99.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G53-1f-AE4" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="261" height="79.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaW-b2-gEU">
+                                                                        <rect key="frame" x="50.5" y="10" width="161" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="Title_Broken_A11yHint"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MTY-SF-Ah9">
+                                                                        <rect key="frame" x="10" y="40.5" width="94" height="29"/>
+                                                                        <color key="tintColor" red="0.0" green="0.46666666666666667" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <connections>
+                                                                            <action selector="valueChanged:" destination="LJL-W7-K1Q" eventType="valueChanged" id="y42-oO-0mv"/>
+                                                                        </connections>
+                                                                    </stepper>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tomatoes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-tj-JVZ">
+                                                                        <rect key="frame" x="161" y="45" width="90" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="TomatoCounter_Broken_A11yHint"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="HaW-b2-gEU" firstAttribute="top" secondItem="G53-1f-AE4" secondAttribute="top" constant="10" id="KXz-6v-P3p"/>
+                                                                    <constraint firstItem="HaW-b2-gEU" firstAttribute="centerX" secondItem="G53-1f-AE4" secondAttribute="centerX" id="Oog-c9-qyP"/>
+                                                                    <constraint firstItem="MTY-SF-Ah9" firstAttribute="leading" secondItem="G53-1f-AE4" secondAttribute="leading" constant="10" id="QLt-gE-FdS"/>
+                                                                    <constraint firstItem="MTY-SF-Ah9" firstAttribute="top" secondItem="HaW-b2-gEU" secondAttribute="bottom" constant="10" id="R0O-kD-XCS"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="xt7-tj-JVZ" secondAttribute="trailing" constant="10" id="c8z-lu-jiR"/>
+                                                                    <constraint firstItem="xt7-tj-JVZ" firstAttribute="centerY" secondItem="MTY-SF-Ah9" secondAttribute="centerY" id="frx-qm-sTJ"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="MTY-SF-Ah9" secondAttribute="bottom" constant="10" id="vcu-dh-6Ub"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9f-Xq-E7G">
+                                                                <rect key="frame" x="281" y="28.5" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="u9f-Xq-E7G" secondAttribute="height" multiplier="1:1" id="Bq7-B2-Ze2"/>
+                                                                    <constraint firstAttribute="height" constant="44" id="Ju0-OV-QA0"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" image="Open"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="u9f-Xq-E7G" secondAttribute="trailing" constant="10" id="8i4-oc-1EF"/>
+                                                            <constraint firstItem="G53-1f-AE4" firstAttribute="leading" secondItem="Wdy-Ed-4l3" secondAttribute="leading" constant="10" id="JL8-ye-0ym"/>
+                                                            <constraint firstItem="G53-1f-AE4" firstAttribute="top" secondItem="Wdy-Ed-4l3" secondAttribute="top" constant="10" id="N4R-iF-o2x"/>
+                                                            <constraint firstAttribute="bottom" secondItem="G53-1f-AE4" secondAttribute="bottom" constant="10" id="WQu-OO-3q3"/>
+                                                            <constraint firstItem="G53-1f-AE4" firstAttribute="centerY" secondItem="u9f-Xq-E7G" secondAttribute="centerY" id="nlp-tu-KLd"/>
+                                                            <constraint firstItem="u9f-Xq-E7G" firstAttribute="leading" secondItem="G53-1f-AE4" secondAttribute="trailing" constant="10" id="rnH-aC-nTb"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0H-AE-JDz">
+                                                        <rect key="frame" x="0.0" y="99.5" width="335" height="333.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHF-IE-ukt">
+                                                                <rect key="frame" x="20" y="9.5" width="295" height="98"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation1_Broken_A11yHint"/>
+                                                                <string key="text">By default, the UIStepper's Accessibility Labels are "Increment" and "Decrement", which is not enough information to tell a VoiceOver user what is incrementing and decrementing.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dO-hf-eyG">
+                                                                <rect key="frame" x="20" y="117.5" width="295" height="78"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation2_Broken_A11yHint"/>
+                                                                <string key="text">In addition, notice how frustrating it is to bounce back and forth between the increment controls and the total number of queued tomatoes.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-fT-JEG">
+                                                                <rect key="frame" x="20" y="205.5" width="295" height="118"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation3_Broken_A11yHint"/>
+                                                                <string key="text">Running the Attest Framework on this view will give you the violation help, "Segment Decrement of UIStepper is missing an AccessibilityHint." and "Segment Increment of UIStepper is missing an AccessibilityHint."</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="l3E-fT-JEG" firstAttribute="trailing" secondItem="UHF-IE-ukt" secondAttribute="trailing" id="9Rr-e5-vaZ"/>
+                                                            <constraint firstItem="UHF-IE-ukt" firstAttribute="leading" secondItem="8dO-hf-eyG" secondAttribute="leading" id="9vm-Ev-2e3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="UHF-IE-ukt" secondAttribute="trailing" constant="20" id="FUv-Ak-3wc"/>
+                                                            <constraint firstItem="UHF-IE-ukt" firstAttribute="leading" secondItem="a0H-AE-JDz" secondAttribute="leading" constant="20" id="GWr-YR-SQB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="l3E-fT-JEG" secondAttribute="bottom" constant="10" id="Tma-Wj-I4e"/>
+                                                            <constraint firstItem="l3E-fT-JEG" firstAttribute="top" secondItem="8dO-hf-eyG" secondAttribute="bottom" constant="10" id="USo-Fh-J4V"/>
+                                                            <constraint firstItem="l3E-fT-JEG" firstAttribute="leading" secondItem="UHF-IE-ukt" secondAttribute="leading" id="Z1c-ic-EZQ"/>
+                                                            <constraint firstItem="UHF-IE-ukt" firstAttribute="trailing" secondItem="8dO-hf-eyG" secondAttribute="trailing" id="pFx-ga-9ye"/>
+                                                            <constraint firstItem="UHF-IE-ukt" firstAttribute="top" secondItem="a0H-AE-JDz" secondAttribute="top" constant="10" id="qRw-JI-nWf"/>
+                                                            <constraint firstItem="8dO-hf-eyG" firstAttribute="top" secondItem="UHF-IE-ukt" secondAttribute="bottom" constant="10" id="yCe-YY-akf"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gKR-vZ-Qev" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="433" width="335" height="385"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUR-NR-p2z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="99.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6Y-Pf-NSJ" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="260.5" height="79.5"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1c-fX-ph8" userLabel="A11y Stepper" customClass="AccessibleStepperView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="260.5" height="79.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNM-zz-cBH">
+                                                                                <rect key="frame" x="50.5" y="10" width="161" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stepper opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TWq-j6-vOS">
+                                                                                <rect key="frame" x="10" y="40.5" width="94" height="29"/>
+                                                                                <color key="tintColor" red="0.0" green="0.46666666670000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <connections>
+                                                                                    <action selector="valueChanged:" destination="LJL-W7-K1Q" eventType="valueChanged" id="cnD-fZ-D2T"/>
+                                                                                </connections>
+                                                                            </stepper>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Tomatoes" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xaq-Ms-HVE">
+                                                                                <rect key="frame" x="160.5" y="45" width="90" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="TomatoCounter_Fixed_A11yHint"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="Xaq-Ms-HVE" firstAttribute="centerY" secondItem="TWq-j6-vOS" secondAttribute="centerY" id="JnP-9Q-aqH"/>
+                                                                            <constraint firstItem="TWq-j6-vOS" firstAttribute="top" secondItem="DNM-zz-cBH" secondAttribute="bottom" constant="10" id="Kao-Oo-qyQ"/>
+                                                                            <constraint firstItem="DNM-zz-cBH" firstAttribute="top" secondItem="b1c-fX-ph8" secondAttribute="top" constant="10" id="KhK-0F-DgK"/>
+                                                                            <constraint firstItem="TWq-j6-vOS" firstAttribute="leading" secondItem="b1c-fX-ph8" secondAttribute="leading" constant="10" id="oYY-0Q-fpR"/>
+                                                                            <constraint firstItem="DNM-zz-cBH" firstAttribute="centerX" secondItem="b1c-fX-ph8" secondAttribute="centerX" id="uDk-0Z-qPg"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="Xaq-Ms-HVE" secondAttribute="trailing" constant="10" id="xhJ-Oh-WBd"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="TWq-j6-vOS" secondAttribute="bottom" constant="10" id="yI1-TX-CRg"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="b1c-fX-ph8" secondAttribute="trailing" id="3rc-Dw-GhJ"/>
+                                                                    <constraint firstItem="b1c-fX-ph8" firstAttribute="top" secondItem="u6Y-Pf-NSJ" secondAttribute="top" id="4Ol-a8-4jw"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="b1c-fX-ph8" secondAttribute="bottom" id="iE6-fp-dJI"/>
+                                                                    <constraint firstItem="b1c-fX-ph8" firstAttribute="leading" secondItem="u6Y-Pf-NSJ" secondAttribute="leading" id="ork-lJ-MJ0"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-zW-y2p">
+                                                                <rect key="frame" x="280.5" y="28" width="44.5" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="M8I-eY-Ri5"/>
+                                                                    <constraint firstAttribute="width" secondItem="b2e-zW-y2p" secondAttribute="height" multiplier="94:95" constant="1" id="tFZ-bI-Xtj"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" image="Open"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="u6Y-Pf-NSJ" firstAttribute="leading" secondItem="HUR-NR-p2z" secondAttribute="leading" constant="10" id="H7V-yJ-szF"/>
+                                                            <constraint firstItem="u6Y-Pf-NSJ" firstAttribute="centerY" secondItem="b2e-zW-y2p" secondAttribute="centerY" id="Iat-YM-3oV"/>
+                                                            <constraint firstItem="u6Y-Pf-NSJ" firstAttribute="top" secondItem="HUR-NR-p2z" secondAttribute="top" constant="10" id="TWl-EC-Aeu"/>
+                                                            <constraint firstAttribute="trailing" secondItem="b2e-zW-y2p" secondAttribute="trailing" constant="10" id="VLh-gH-Wm1"/>
+                                                            <constraint firstItem="b2e-zW-y2p" firstAttribute="leading" secondItem="u6Y-Pf-NSJ" secondAttribute="trailing" constant="10" id="uy4-87-GvE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="u6Y-Pf-NSJ" secondAttribute="bottom" constant="10" id="vRX-xE-geC"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuA-Fy-aGO">
+                                                        <rect key="frame" x="0.0" y="99.5" width="335" height="285.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLW-i3-Zlf">
+                                                                <rect key="frame" x="20" y="9.5" width="295" height="138"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation1_Fixed_A11yHint"/>
+                                                                <string key="text">Here, we have added an accessibility hint to each button in the UIStepper.  Now VoiceOver states, "Increment, button. Increases number of tomatoes by 1."  Add accessibility hints to the two subviews of the UIStepper to make UISteppers accessible.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="810-fW-U0l">
+                                                                <rect key="frame" x="20" y="157.5" width="295" height="118"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation2_Fixed_A11yHint"/>
+                                                                <string key="text">Running the Attest Framework on this view will not report any issues because both Segments (Increment and Decrement) have corresponding AccessibilityHints that tell the user what is being incremented and decremented.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="KLW-i3-Zlf" firstAttribute="leading" secondItem="LuA-Fy-aGO" secondAttribute="leading" constant="20" id="0uk-AH-R2E"/>
+                                                            <constraint firstItem="KLW-i3-Zlf" firstAttribute="top" secondItem="LuA-Fy-aGO" secondAttribute="top" constant="10" id="Bko-Yo-KA4"/>
+                                                            <constraint firstItem="810-fW-U0l" firstAttribute="top" secondItem="KLW-i3-Zlf" secondAttribute="bottom" constant="10" id="RlK-2W-aV3"/>
+                                                            <constraint firstAttribute="bottom" secondItem="810-fW-U0l" secondAttribute="bottom" constant="10" id="Vd7-od-cPG"/>
+                                                            <constraint firstAttribute="trailing" secondItem="KLW-i3-Zlf" secondAttribute="trailing" constant="20" id="cF7-Dq-F3d"/>
+                                                            <constraint firstItem="810-fW-U0l" firstAttribute="trailing" secondItem="KLW-i3-Zlf" secondAttribute="trailing" id="gqT-b3-uiJ"/>
+                                                            <constraint firstItem="810-fW-U0l" firstAttribute="leading" secondItem="KLW-i3-Zlf" secondAttribute="leading" id="iST-qS-2ia"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-FI-bqB">
+                                        <rect key="frame" x="20" y="944.5" width="335" height="78"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_A11yHint"/>
+                                        <string key="text">Some controls speakable text contains only State/Value information. Such controls require more information to be shared to be properly accessible.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVb-0n-OSE">
+                                        <rect key="frame" x="20" y="1032.5" width="335" height="78"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_A11yHint"/>
+                                        <string key="text">Some controls speakable text contains only State/Value information. Such controls require more information to be shared to be properly accessible.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2dg-ra-aae" firstAttribute="leading" secondItem="2CW-UF-2Kp" secondAttribute="leading" constant="20" id="4KR-TO-DfN"/>
+                                    <constraint firstItem="hcr-FI-bqB" firstAttribute="top" secondItem="h60-Wk-b0K" secondAttribute="bottom" constant="10" id="4wB-p1-1MI"/>
+                                    <constraint firstItem="h60-Wk-b0K" firstAttribute="leading" secondItem="2dg-ra-aae" secondAttribute="leading" id="54D-qU-3Br"/>
+                                    <constraint firstItem="hcr-FI-bqB" firstAttribute="leading" secondItem="DVb-0n-OSE" secondAttribute="leading" id="G3x-Cd-1u5"/>
+                                    <constraint firstItem="h60-Wk-b0K" firstAttribute="trailing" secondItem="2dg-ra-aae" secondAttribute="trailing" id="IZh-xk-ZAj"/>
+                                    <constraint firstItem="h60-Wk-b0K" firstAttribute="top" secondItem="2dg-ra-aae" secondAttribute="bottom" constant="10" id="Kvx-Nm-mIS"/>
+                                    <constraint firstItem="hcr-FI-bqB" firstAttribute="trailing" secondItem="h60-Wk-b0K" secondAttribute="trailing" id="LBD-lj-3Wo"/>
+                                    <constraint firstItem="hcr-FI-bqB" firstAttribute="leading" secondItem="h60-Wk-b0K" secondAttribute="leading" id="afo-Gs-2l6"/>
+                                    <constraint firstAttribute="bottom" secondItem="DVb-0n-OSE" secondAttribute="bottom" constant="10" id="cSe-KH-VGa"/>
+                                    <constraint firstItem="hcr-FI-bqB" firstAttribute="trailing" secondItem="DVb-0n-OSE" secondAttribute="trailing" id="hcz-sj-srj"/>
+                                    <constraint firstItem="2dg-ra-aae" firstAttribute="top" secondItem="2CW-UF-2Kp" secondAttribute="top" constant="20" id="p0G-rm-fzq"/>
+                                    <constraint firstAttribute="trailing" secondItem="2dg-ra-aae" secondAttribute="trailing" constant="20" id="t24-AI-hHH"/>
+                                    <constraint firstItem="DVb-0n-OSE" firstAttribute="top" secondItem="hcr-FI-bqB" secondAttribute="bottom" constant="10" id="vaX-5B-zCT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2CW-UF-2Kp" firstAttribute="width" secondItem="B8y-wZ-qdI" secondAttribute="width" id="FDN-6d-Blt"/>
+                            <constraint firstItem="2CW-UF-2Kp" firstAttribute="centerX" secondItem="B8y-wZ-qdI" secondAttribute="centerX" id="Rzw-Hg-bOR"/>
+                            <constraint firstItem="2CW-UF-2Kp" firstAttribute="top" secondItem="8Wi-kE-chY" secondAttribute="bottom" id="axJ-tf-adW"/>
+                            <constraint firstItem="kAp-cZ-duY" firstAttribute="top" secondItem="2CW-UF-2Kp" secondAttribute="bottom" id="mhK-Bs-4uq"/>
+                            <constraint firstItem="2dg-ra-aae" firstAttribute="centerX" secondItem="B8y-wZ-qdI" secondAttribute="centerX" id="mw5-sw-wFT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brokenCounter" destination="xt7-tj-JVZ" id="fQ6-kC-dU8"/>
+                        <outlet property="fixedCounter" destination="Xaq-Ms-HVE" id="fkT-YG-GR5"/>
+                        <outlet property="fixedStepper" destination="TWq-j6-vOS" id="iui-ca-wbF"/>
+                        <outlet property="ruleDescription" destination="2dg-ra-aae" id="x0A-Xo-uRl"/>
+                        <outlet property="ruleHelp" destination="hcr-FI-bqB" id="FkG-6u-tAi"/>
+                        <outlet property="tags" destination="DVb-0n-OSE" id="bGd-r1-r1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeE-0S-ZsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="-15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Open" width="1600" height="1600"/>
+    </resources>
+</document>

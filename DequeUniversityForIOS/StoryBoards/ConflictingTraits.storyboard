@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3an-JZ-S7d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conflicting Traits-->
+        <scene sceneID="HPF-EJ-Kmg">
+            <objects>
+                <viewController title="Conflicting Traits" id="3an-JZ-S7d" customClass="ConflictingTraitsViewController" customModule="AttestiOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QuL-Co-fLa"/>
+                        <viewControllerLayoutGuide type="bottom" id="9A6-wg-mtL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EIy-lj-iaA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jg1-Vy-a2d">
+                                <rect key="frame" x="-0.5" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdX-3e-mZn">
+                                        <rect key="frame" x="19.5" y="20" width="336" height="108.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_ConflictingTraits"/>
+                                        <string key="text">Ensures there are no UIViews with accessibility elements that have conflicting UIAccessibilityTraits to prevent VoiceOver users from becoming confused by the purpose and content of the views.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-ee-f1f">
+                                        <rect key="frame" x="20" y="138.5" width="336" height="639"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EoY-wX-stp" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="336" height="369.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8a-B2-euS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="84"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeE-Pt-ysZ" customClass="BrokenView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="262" height="64"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCw-od-Bdc" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="79.5" y="10" width="104" height="44"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="ButtonAndLink_ConflictingTraits">
+                                                                            <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="ZSM-iD-ean"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <state key="normal" title="Visit this Site!"/>
+                                                                        <connections>
+                                                                            <action selector="openLink" destination="3an-JZ-S7d" eventType="touchUpInside" id="BSy-XD-7US"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="eCw-od-Bdc" secondAttribute="bottom" constant="10" id="WBr-xf-PV3"/>
+                                                                    <constraint firstItem="eCw-od-Bdc" firstAttribute="centerX" secondItem="OeE-Pt-ysZ" secondAttribute="centerX" id="kqs-tL-1hP"/>
+                                                                    <constraint firstItem="eCw-od-Bdc" firstAttribute="top" secondItem="OeE-Pt-ysZ" secondAttribute="top" constant="10" id="wSv-hp-cMK"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkA-lL-cD5">
+                                                                <rect key="frame" x="282" y="20.5" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="P8D-B2-Aj3"/>
+                                                                    <constraint firstAttribute="width" secondItem="WkA-lL-cD5" secondAttribute="height" multiplier="1:1" id="utS-1S-tNB"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="WkA-lL-cD5" firstAttribute="centerY" secondItem="OeE-Pt-ysZ" secondAttribute="centerY" id="1QV-vj-90B"/>
+                                                            <constraint firstItem="WkA-lL-cD5" firstAttribute="leading" secondItem="OeE-Pt-ysZ" secondAttribute="trailing" constant="10" id="3Cv-Hi-Ti9"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WkA-lL-cD5" secondAttribute="trailing" constant="10" id="3DJ-cl-zHn"/>
+                                                            <constraint firstItem="OeE-Pt-ysZ" firstAttribute="top" secondItem="T8a-B2-euS" secondAttribute="top" constant="10" id="9If-lX-ssI"/>
+                                                            <constraint firstItem="OeE-Pt-ysZ" firstAttribute="leading" secondItem="T8a-B2-euS" secondAttribute="leading" constant="10" id="dCS-iP-qte"/>
+                                                            <constraint firstAttribute="bottom" secondItem="OeE-Pt-ysZ" secondAttribute="bottom" constant="10" id="lf5-4E-HVz"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlW-DR-zGa">
+                                                        <rect key="frame" x="0.0" y="84" width="336" height="285.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWS-4J-eVT">
+                                                                <rect key="frame" x="20" y="9.5" width="296" height="178"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation1_ButtonAndLink_ConflictingTraits"/>
+                                                                <string key="text">A link directs the user to a site outside of the app, while a button directs the user to a different page within the app. We have, however, incorrectly listed the UIButton above as a button and a link.  To call an element both a button and a link is very confusing for VoiceOver users, as it will not be apparent if the element opens up an external page or will stay within the app.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soR-qQ-uDi">
+                                                                <rect key="frame" x="20" y="197.5" width="296" height="78"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation2_ButtonAndLink_ConflictingTraits"/>
+                                                                <string key="text">Running the Attest Framework on this view will give you the violation help, "Do not use the traits UIAccessibilityTraitButton and UIAccessibilityTraitLink together."</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="iWS-4J-eVT" firstAttribute="top" secondItem="nlW-DR-zGa" secondAttribute="top" constant="10" id="0Fh-Uu-bKk"/>
+                                                            <constraint firstAttribute="bottom" secondItem="soR-qQ-uDi" secondAttribute="bottom" constant="10" id="2Xm-lM-a5m"/>
+                                                            <constraint firstItem="soR-qQ-uDi" firstAttribute="leading" secondItem="iWS-4J-eVT" secondAttribute="leading" id="71A-Ju-Tm1"/>
+                                                            <constraint firstItem="soR-qQ-uDi" firstAttribute="trailing" secondItem="iWS-4J-eVT" secondAttribute="trailing" id="7NE-1c-170"/>
+                                                            <constraint firstAttribute="trailing" secondItem="iWS-4J-eVT" secondAttribute="trailing" constant="20" id="kGZ-zr-Zi5"/>
+                                                            <constraint firstItem="iWS-4J-eVT" firstAttribute="leading" secondItem="nlW-DR-zGa" secondAttribute="leading" constant="20" id="li9-PL-cyl"/>
+                                                            <constraint firstItem="soR-qQ-uDi" firstAttribute="top" secondItem="iWS-4J-eVT" secondAttribute="bottom" constant="10" id="q60-rv-vm4"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u8v-YH-g0v" userLabel="Expandable" customClass="ExpandableView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="369.5" width="336" height="269.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYU-GW-w9b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="336" height="84"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TD3-pI-pwv" customClass="FixedView" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="262" height="64"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyi-qi-ktb" customClass="DequeButton" customModule="AttestiOSApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="79.5" y="10" width="104" height="44"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="LinkOnly_ConflictingTraits">
+                                                                            <accessibilityTraits key="traits" link="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="daP-jw-uTz"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <state key="normal" title="Visit this Site!"/>
+                                                                        <connections>
+                                                                            <action selector="openLink" destination="3an-JZ-S7d" eventType="touchUpInside" id="ukM-CD-4Ch"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="wyi-qi-ktb" firstAttribute="centerX" secondItem="TD3-pI-pwv" secondAttribute="centerX" id="EFk-4c-xWo"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="wyi-qi-ktb" secondAttribute="bottom" constant="10" id="gpO-CR-NP9"/>
+                                                                    <constraint firstItem="wyi-qi-ktb" firstAttribute="top" secondItem="TD3-pI-pwv" secondAttribute="top" constant="10" id="iHh-Uf-tKc"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7H-IB-6h0">
+                                                                <rect key="frame" x="282" y="20.5" width="44" height="44"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="41L-TT-fKx"/>
+                                                                    <constraint firstAttribute="width" secondItem="g7H-IB-6h0" secondAttribute="height" multiplier="1:1" id="AMX-kV-sck"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.36078431370000003" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="TD3-pI-pwv" firstAttribute="top" secondItem="dYU-GW-w9b" secondAttribute="top" constant="10" id="2Mb-Wa-1BS"/>
+                                                            <constraint firstItem="g7H-IB-6h0" firstAttribute="centerY" secondItem="TD3-pI-pwv" secondAttribute="centerY" id="Azr-eu-ra0"/>
+                                                            <constraint firstAttribute="trailing" secondItem="g7H-IB-6h0" secondAttribute="trailing" constant="10" id="Ejw-7z-p8m"/>
+                                                            <constraint firstItem="TD3-pI-pwv" firstAttribute="leading" secondItem="dYU-GW-w9b" secondAttribute="leading" constant="10" id="Q4Y-OS-y4q"/>
+                                                            <constraint firstAttribute="bottom" secondItem="TD3-pI-pwv" secondAttribute="bottom" constant="10" id="Zww-WR-yfd"/>
+                                                            <constraint firstItem="g7H-IB-6h0" firstAttribute="leading" secondItem="TD3-pI-pwv" secondAttribute="trailing" constant="10" id="baA-7d-sPy"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHv-um-c1O">
+                                                        <rect key="frame" x="0.0" y="84" width="336" height="185.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gns-Em-YfJ">
+                                                                <rect key="frame" x="20" y="9.5" width="296" height="98"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation1_LinkOnly_ConflictingTraits"/>
+                                                                <string key="text">Because the button visits an external site, we made the button have only a "link" trait.  It is much easier for VoiceOver users to understand that the element will lead to an external site.</string>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The UIButton now only has the UIAccessibilityTraitLink, which does not conflict with any other AccessibilityTraits." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIs-IA-CMH">
+                                                                <rect key="frame" x="20" y="117.5" width="296" height="58"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Explanation2_LinkOnly_ConflictingTraits"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="gns-Em-YfJ" secondAttribute="trailing" constant="20" id="7Je-lw-9Md"/>
+                                                            <constraint firstItem="FIs-IA-CMH" firstAttribute="trailing" secondItem="gns-Em-YfJ" secondAttribute="trailing" id="Mxq-Lv-FXj"/>
+                                                            <constraint firstItem="gns-Em-YfJ" firstAttribute="leading" secondItem="ZHv-um-c1O" secondAttribute="leading" constant="20" id="Ofl-5x-FAb"/>
+                                                            <constraint firstItem="gns-Em-YfJ" firstAttribute="top" secondItem="ZHv-um-c1O" secondAttribute="top" constant="10" id="fw3-XJ-Ze5"/>
+                                                            <constraint firstItem="FIs-IA-CMH" firstAttribute="leading" secondItem="gns-Em-YfJ" secondAttribute="leading" id="hgT-iF-kGb"/>
+                                                            <constraint firstItem="FIs-IA-CMH" firstAttribute="top" secondItem="gns-Em-YfJ" secondAttribute="bottom" constant="10" id="kiw-UU-aXE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="FIs-IA-CMH" secondAttribute="bottom" constant="10" id="tnC-Ws-Xwh"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-ie-Dzk">
+                                        <rect key="frame" x="20" y="787.5" width="336" height="98"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_ConflictingTraits"/>
+                                        <string key="text">Ensures there are no UIViews with accessibility elements that have conflicting UIAccessibilityTraits to prevent VoiceOver users from becoming confused by the purpose and content of the views.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf8-92-pd0">
+                                        <rect key="frame" x="19.5" y="895.5" width="336" height="98"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="RuleHelp_ConflictingTraits"/>
+                                        <string key="text">Ensures there are no UIViews with accessibility elements that have conflicting UIAccessibilityTraits to prevent VoiceOver users from becoming confused by the purpose and content of the views.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qdX-3e-mZn" firstAttribute="top" secondItem="Jg1-Vy-a2d" secondAttribute="top" constant="20" id="2qi-nm-VNb"/>
+                                    <constraint firstItem="qdX-3e-mZn" firstAttribute="leading" secondItem="Jg1-Vy-a2d" secondAttribute="leading" constant="20" id="5Ij-hc-w1k"/>
+                                    <constraint firstItem="yf8-92-pd0" firstAttribute="leading" secondItem="aFN-ie-Dzk" secondAttribute="leading" id="Dfz-FD-nnh"/>
+                                    <constraint firstItem="XK4-ee-f1f" firstAttribute="top" secondItem="qdX-3e-mZn" secondAttribute="bottom" constant="10" id="K2e-kB-pYr"/>
+                                    <constraint firstItem="aFN-ie-Dzk" firstAttribute="trailing" secondItem="XK4-ee-f1f" secondAttribute="trailing" id="NNg-rR-Y8H"/>
+                                    <constraint firstItem="aFN-ie-Dzk" firstAttribute="leading" secondItem="XK4-ee-f1f" secondAttribute="leading" id="OF2-5q-oBK"/>
+                                    <constraint firstItem="yf8-92-pd0" firstAttribute="top" secondItem="aFN-ie-Dzk" secondAttribute="bottom" constant="10" id="ORh-yA-Js3"/>
+                                    <constraint firstItem="aFN-ie-Dzk" firstAttribute="top" secondItem="XK4-ee-f1f" secondAttribute="bottom" constant="10" id="Qf6-KV-pqI"/>
+                                    <constraint firstItem="qdX-3e-mZn" firstAttribute="trailing" secondItem="XK4-ee-f1f" secondAttribute="trailing" id="cfV-Z6-T9q"/>
+                                    <constraint firstItem="qdX-3e-mZn" firstAttribute="leading" secondItem="XK4-ee-f1f" secondAttribute="leading" id="m2T-cG-yTz"/>
+                                    <constraint firstAttribute="bottom" secondItem="yf8-92-pd0" secondAttribute="bottom" constant="10" id="oAN-nC-Neq"/>
+                                    <constraint firstItem="yf8-92-pd0" firstAttribute="trailing" secondItem="aFN-ie-Dzk" secondAttribute="trailing" id="vKJ-Bt-Qbv"/>
+                                    <constraint firstAttribute="trailing" secondItem="qdX-3e-mZn" secondAttribute="trailing" constant="20" id="yBz-tV-PcB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qdX-3e-mZn" firstAttribute="centerX" secondItem="EIy-lj-iaA" secondAttribute="centerX" id="BEI-yb-TVu"/>
+                            <constraint firstItem="Jg1-Vy-a2d" firstAttribute="centerX" secondItem="EIy-lj-iaA" secondAttribute="centerX" id="Uqw-5j-2uQ"/>
+                            <constraint firstItem="Jg1-Vy-a2d" firstAttribute="top" secondItem="QuL-Co-fLa" secondAttribute="bottom" id="lM7-Zr-36D"/>
+                            <constraint firstItem="Jg1-Vy-a2d" firstAttribute="width" secondItem="EIy-lj-iaA" secondAttribute="width" id="uOE-yw-b5F"/>
+                            <constraint firstItem="9A6-wg-mtL" firstAttribute="top" secondItem="Jg1-Vy-a2d" secondAttribute="bottom" id="wCb-Ib-tuN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ruleDescription" destination="qdX-3e-mZn" id="qB2-eO-OK9"/>
+                        <outlet property="ruleHelp" destination="aFN-ie-Dzk" id="eJi-hg-yMG"/>
+                        <outlet property="tags" destination="yf8-92-pd0" id="7Dh-Z7-uQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3eA-Pn-UE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-547" y="38"/>
+        </scene>
+    </scenes>
+</document>
