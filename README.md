@@ -60,8 +60,8 @@ Utilize our automated testing API to get accessibility results from your UI Test
 Get a screenshot along with the current hierarchy of elements delivered to Assistive Technologies. This can
 speed up remediation and help you understand why various Accessibility Issues are occuring. 
 
-http://localhost:48485/api/screenshot.html
-
 <p align="center">
   <img src="/screenshots/Attest_XML.png" width="800" alt="Screenshot of an emulator next to a browser with Chrome DevTools showing the views Accessibility Hierarchy.">
 </p>
+
+More information can be found in the [Wiki](https://github.com/dequelabs/Deque-University-for-iOS#advanced-accessibility-debugging-tools).
