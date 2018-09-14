@@ -23,7 +23,7 @@ By utilizing our service you get access to powerful Accessibility Debugging tool
 - Easily Grab screenshots of your application.
 - Screenshots include accessibility hierarchy information.
 - Accessibility Focusable Elements are highlighted as you explore the screenshot.
-- Saving screenshots is as easy as exporting andd saving the html file!
+- Saving screenshots is as easy as exporting and saving the html file!
 
 Try it out! 
 
