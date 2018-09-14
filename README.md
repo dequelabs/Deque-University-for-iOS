@@ -1,8 +1,6 @@
 # Deque University for iOS
 
-A simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications.  
-Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the 
-corresponding best practices are. 
+A simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications. Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the corresponding best practices are. 
 
 <p align="center">
   <img src="/screenshots/side_by_side.png" width="500" alt="Side By side menu and Color Contrast example.">
@@ -10,15 +8,13 @@ corresponding best practices are.
 
 # Also Checkout WorldSpace Attest for iOS
 
-This repository also serves as documentation for Deque's automated accessibility analysis Framework. Utilizing Attest you
-can find Accessibility Issues automatically. You can utilize Attest for iOS to test your app in a lot of different ways:
+This repository also serves as documentation for Deque's automated accessibility analysis Framework. Utilizing Attest you can find Accessibility Issues automatically. You can utilize Attest for iOS to test your app in a lot of different ways:
 
 - As a Service that runs alongside your Application.
 - As an Automated UI Testing Framework
 - To Enhanced a Third Party UI Testing Library (like Calabash) to add an Accessibility Testing Step.
 
-Attest for iOS is very flexible and is built to fit into a multitude of workflows. Each example in Deque University has rules
-in Attest that will help you debug and build the most Accessible behaviors.
+Attest for iOS is very flexible and is built to fit into a multitude of workflows. Each example in Deque University has rules in Attest that will help you debug and build the most Accessible behaviors.
 
 ## New Feature - Share Screenshots with XML!
 
@@ -29,7 +25,14 @@ By utilizing our service you get access to powerful Accessibility Debugging tool
 - Accessibility Focusable Elements are highlighted as you explore the screenshot.
 - Saving screenshots is as easy as exporting andd saving the html file!
 
-Try it out! Open one [of our captured screenshots](https://cdn.rawgit.com/dequelabs/Deque-University-for-iOS/708e1896/screenshots/screenshot.html) from our application and poke around it with your browsers devtools!
+Try it out! 
+
+- [Open your Browsers DevTools](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console) (Ex: CMD + ALT + J on Mac and Chrome)
+- Open the link below
+- Resize your viewport so that the image looks proportionate.
+- Explore the hiearchy of your application in DevTools Elements panel.
+
+[A sample screen capture from Deque University for iOS.](https://cdn.rawgit.com/dequelabs/Deque-University-for-iOS/708e1896/screenshots/screenshot.html)
 
 ## View Results in Browser
 
