@@ -8,7 +8,7 @@ corresponding best practices are.
   <img src="/screenshots/side_by_side.png" width="500" alt="Side By side menu and Color Contrast example.">
 </p>
 
-# WorldSpace Attest for iOS Documentation
+# Also Checkout WorldSpace Attest for iOS
 
 This repository also serves as documentation for Deque's automated accessibility analysis Framework. Utilizing Attest you
 can find Accessibility Issues automatically. You can utilize Attest for iOS to test your app in a lot of different ways:
