@@ -20,6 +20,17 @@ can find Accessibility Issues automatically. You can utilize Attest for iOS to t
 Attest for iOS is very flexible and is built to fit into a multitude of workflows. Each example in Deque University has rules
 in Attest that will help you debug and build the most Accessible behaviors.
 
+## New Feature - Share Screenshots with XML!
+
+By utilizing our service you get access to powerful Accessibility Debugging tools. 
+
+- Easily Grab screenshots of your application.
+- Screenshots include accessibility hierarchy information.
+- Accessibility Focusable Elements are highlighted as you explore the screenshot.
+- Saving screenshots is as easy as exporting andd saving the html file!
+
+Try it out! Open one [of our captured screenshots](https://cdn.rawgit.com/dequelabs/Deque-University-for-iOS/708e1896/screenshots/screenshot.html) from our application and poke around it with your browsers devtools!
+
 ## View Results in Browser
 
 Attach a simple service to your application and view accessibility analysis results in Browser by visiting http://localhost:48485/report/analyze.html. 
