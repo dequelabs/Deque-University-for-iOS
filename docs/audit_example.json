@@ -1,0 +1,118 @@
+{
+  "Totals" : {
+    "Colliding Views" : {
+      "incompletes" : 0,
+      "passes" : 9,
+      "violations" : 0
+    },
+    "Color Contrast" : {
+      "incompletes" : 0,
+      "passes" : 5,
+      "violations" : 4
+    },
+    "Touch Target Size" : {
+      "incompletes" : 0,
+      "passes" : 6,
+      "violations" : 0
+    },
+    "Focusable Text" : {
+      "incompletes" : 0,
+      "passes" : 9,
+      "violations" : 0
+    },
+    "In Highlight" : {
+      "incompletes" : 0,
+      "passes" : 15,
+      "violations" : 0
+    },
+    "Custom" : {
+      "incompletes" : 0,
+      "passes" : 0,
+      "violations" : 0
+    },
+    "Active Control Name" : {
+      "incompletes" : 0,
+      "passes" : 6,
+      "violations" : 0
+    },
+    "Dynamic Type" : {
+      "incompletes" : 0,
+      "passes" : 9,
+      "violations" : 0
+    },
+    "Conflicting Traits" : {
+      "incompletes" : 0,
+      "passes" : 15,
+      "violations" : 0
+    },
+    "ImageView Name" : {
+      "incompletes" : 0,
+      "passes" : 0,
+      "violations" : 0
+    },
+    "Nested A11y Elements" : {
+      "incompletes" : 0,
+      "passes" : 15,
+      "violations" : 0
+    },
+    "Colliding Controls" : {
+      "incompletes" : 0,
+      "passes" : 6,
+      "violations" : 0
+    }
+  },
+  "Audit Entries" : [
+    {
+      "Alpha Blended Text Color" : "#ff555555",
+      "accessibilityIdentifier" : "PoorContrast_ColorContrast",
+      "view" : "<UILabel: 0x7fba9762e1c0; frame = (77.6667 10; 105.667 20.3333); text = 'Gray on Black'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer: 0x60800009ae50>>",
+      "Class Name" : "UILabel",
+      "Visible Text" : "Gray on Black",
+      "impact" : "SERIOUS",
+      "tags" : [
+        "wcag143",
+        "system"
+      ],
+      "Alpha Blended Background Color" : "#ff000000"
+    },
+    {
+      "Alpha Blended Text Color" : "#ffffffff",
+      "accessibilityIdentifier" : "PoorBackgroundAlpha_ColorContrast",
+      "view" : "<UILabel: 0x7fba9cf59a90; frame = (47 10; 167 20.3333); text = 'Background Alpha < 1'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer: 0x60400028f000>>",
+      "Class Name" : "UILabel",
+      "Visible Text" : "Background Alpha < 1",
+      "impact" : "SERIOUS",
+      "tags" : [
+        "wcag143",
+        "system"
+      ],
+      "Alpha Blended Background Color" : "#ffa5a5a5"
+    },
+    {
+      "Alpha Blended Text Color" : "#ff676767",
+      "accessibilityIdentifier" : "PoorTextAlpha_ColorContrast",
+      "view" : "<UILabel: 0x7fba9cf5b9b0; frame = (77 10; 107.333 20.3333); text = 'Text Alpha < 1'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer: 0x60400028fa50>>",
+      "Class Name" : "UILabel",
+      "Visible Text" : "Text Alpha < 1",
+      "impact" : "SERIOUS",
+      "tags" : [
+        "wcag143",
+        "system"
+      ],
+      "Alpha Blended Background Color" : "#ffdadada"
+    },
+    {
+      "Alpha Blended Text Color" : "#ff666666",
+      "accessibilityIdentifier" : "PoorContrastLarge_ColorContrast",
+      "view" : "<UILabel: 0x7fba9cf5d240; frame = (61 10; 139.333 20.3333); text = 'Large Failing Text'; opaque = NO; autoresize = RM+BM; userInteractionEnabled = NO; layer = <_UILabelLayer: 0x6040002904f0>>",
+      "Class Name" : "UILabel",
+      "Visible Text" : "Large Failing Text",
+      "impact" : "SERIOUS",
+      "tags" : [
+        "wcag143",
+        "system"
+      ],
+      "Alpha Blended Background Color" : "#ffaaaaaa"
+    }
+  ]
+}
