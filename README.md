@@ -36,7 +36,7 @@ Try it out!
 
 ## View Results in Browser
 
-Attach a simple service to your application and view accessibility analysis results in Browser by visiting http://localhost:48485/report/analyze.html. 
+Attach a simple service to your application and view accessibility analysis results in Browser. 
 Notice the Color Contrast issue highlighted in the screenshot below.
 
 <p align="center">
