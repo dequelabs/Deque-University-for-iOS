@@ -16,6 +16,8 @@ This repository also serves as documentation for Deque's automated accessibility
 
 Attest for iOS is very flexible and is built to fit into a multitude of workflows. Each example in Deque University has rules in Attest that will help you debug and build the most Accessible behaviors.
 
+For more technical documentation see the [Wiki](https://github.com/dequelabs/Deque-University-for-iOS#advanced-accessibility-debugging-tools).
+
 ## New Feature - Share Screenshots with XML!
 
 By utilizing our service you get access to powerful Accessibility Debugging tools. 
