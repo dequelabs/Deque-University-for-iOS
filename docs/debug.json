@@ -1,0 +1,410 @@
+{
+  "Hierarchy" : {
+    "className" : "AttestiOSApp.MainViewController",
+    "childViewControllers" : [
+      {
+        "className" : "UINavigationController",
+        "childViewControllers" : [
+          {
+            "className" : "AttestiOSApp.MenuViewController",
+            "title" : "Menu"
+          },
+          {
+            "className" : "AttestiOSApp.RuleViewController",
+            "title" : ""
+          }
+        ]
+      }
+    ]
+  },
+  "CurrentlyAnalyzedView" : {
+    "view" : {
+      "class" : "UIView",
+      "subviews" : [
+        {
+          "frame" : "(0.0, 64.0, 375.0, 603.0)",
+          "class" : "UIScrollView",
+          "subviews" : [
+            {
+              "frame" : "(20.0, 84.0, 335.0, 42.5)",
+              "text" : "Text in controls must have adequate contrast with their background.",
+              "class" : "UILabel"
+            },
+            {
+              "frame" : "(20.0, 136.5, 335.0, 363.0)",
+              "class" : "UIStackView",
+              "subviews" : [
+                {
+                  "frame" : "(20.0, 136.5, 335.0, 60.5)",
+                  "class" : "AttestiOSApp.ExpandableView",
+                  "subviews" : [
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "class" : "AttestiOSApp.BrokenView",
+                          "subviews" : [
+                            {
+                              "frame" : "(107.5, 156.5, 106.0, 20.5)",
+                              "text" : "Gray on Black",
+                              "class" : "UILabel"
+                            }
+                          ],
+                          "frame" : "(30.0, 146.5, 261.0, 40.5)",
+                          "background color" : "UIExtendedGrayColorSpace 0 1"
+                        },
+                        {
+                          "frame" : "(301.0, 145.0, 44.0, 44.0)",
+                          "class" : "UIButton",
+                          "subviews" : [
+                            {
+                              "frame" : "(301.0, 145.0, 44.0, 44.0)",
+                              "class" : "UIImageView"
+                            },
+                            {
+                              "frame" : "(301.0, 145.0, 0.0, 0.0)",
+                              "class" : "UIButtonLabel"
+                            }
+                          ]
+                        }
+                      ],
+                      "frame" : "(20.0, 136.5, 335.0, 60.5)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    },
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "frame" : "(40.0, 207.0, 295.0, 0.0)",
+                          "text" : "The text is dark gray on a black background -- this is very difficult to read, as the contrast is very low.",
+                          "class" : "UILabel"
+                        },
+                        {
+                          "frame" : "(40.0, 217.0, 295.0, 0.0)",
+                          "text" : "Running the Attest Framework on this view will give you the violation help, \"Text should have a constrast ratio of at least 4.5:1. Actual contrast ratio: 2.82.\"",
+                          "class" : "UILabel"
+                        }
+                      ],
+                      "frame" : "(20.0, 197.0, 335.0, 30.0)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    }
+                  ]
+                },
+                {
+                  "frame" : "(20.0, 197.0, 335.0, 60.5)",
+                  "class" : "AttestiOSApp.ExpandableView",
+                  "subviews" : [
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "class" : "AttestiOSApp.BrokenView",
+                          "subviews" : [
+                            {
+                              "frame" : "(77.0, 217.0, 167.0, 20.5)",
+                              "text" : "Background Alpha < 1",
+                              "class" : "UILabel"
+                            }
+                          ],
+                          "frame" : "(30.0, 207.0, 261.0, 40.5)",
+                          "background color" : "UIExtendedSRGBColorSpace 0 0 0 0.351952"
+                        },
+                        {
+                          "frame" : "(301.0, 205.5, 44.0, 44.0)",
+                          "class" : "UIButton",
+                          "subviews" : [
+                            {
+                              "frame" : "(301.0, 205.5, 44.0, 44.0)",
+                              "class" : "UIImageView"
+                            },
+                            {
+                              "frame" : "(301.0, 205.5, 0.0, 0.0)",
+                              "class" : "UIButtonLabel"
+                            }
+                          ]
+                        }
+                      ],
+                      "frame" : "(20.0, 197.0, 335.0, 60.5)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    },
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "frame" : "(40.0, 267.5, 295.0, 0.0)",
+                          "text" : "This view's background color was originally set to black, but has an opacity set to less than 1.  When using opacity, it is always important to make sure that the resulting color has decent color contrast against its text.",
+                          "class" : "UILabel"
+                        },
+                        {
+                          "frame" : "(40.0, 277.5, 295.0, 0.0)",
+                          "text" : "Running the Attest Framework on this view will give you the violation help, \"Text should have a constrast ratio of at least 4.5:1. Actual contrast ratio: 2.46.\"",
+                          "class" : "UILabel"
+                        }
+                      ],
+                      "frame" : "(20.0, 257.5, 335.0, 30.0)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    }
+                  ]
+                },
+                {
+                  "frame" : "(20.0, 257.5, 335.0, 60.5)",
+                  "class" : "AttestiOSApp.ExpandableView",
+                  "subviews" : [
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "class" : "AttestiOSApp.BrokenView",
+                          "subviews" : [
+                            {
+                              "frame" : "(107.0, 277.5, 107.5, 20.5)",
+                              "text" : "Text Alpha < 1",
+                              "class" : "UILabel"
+                            }
+                          ],
+                          "frame" : "(30.0, 267.5, 261.0, 40.5)",
+                          "background color" : "UIExtendedGrayColorSpace 0.711806 0.5"
+                        },
+                        {
+                          "frame" : "(301.0, 266.0, 44.0, 44.0)",
+                          "class" : "UIButton",
+                          "subviews" : [
+                            {
+                              "frame" : "(301.0, 266.0, 44.0, 44.0)",
+                              "class" : "UIImageView"
+                            },
+                            {
+                              "frame" : "(301.0, 266.0, 0.0, 0.0)",
+                              "class" : "UIButtonLabel"
+                            }
+                          ]
+                        }
+                      ],
+                      "frame" : "(20.0, 257.5, 335.0, 60.5)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    },
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "frame" : "(40.0, 328.0, 295.0, 0.0)",
+                          "text" : "This view's text color was originally set to black, but has an opacity set to less than 1.  When using opacity, it is always important to make sure that the resulting color has decent color contrast against its background.",
+                          "class" : "UILabel"
+                        },
+                        {
+                          "frame" : "(40.0, 338.0, 295.0, 0.0)",
+                          "text" : "Running the Attest Framework on this view will give you the violation help, \"Text should have a constrast ratio of at least 4.5:1. Actual contrast ratio: 4.01.\"",
+                          "class" : "UILabel"
+                        }
+                      ],
+                      "frame" : "(20.0, 318.0, 335.0, 30.0)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    }
+                  ]
+                },
+                {
+                  "frame" : "(20.0, 318.0, 335.0, 60.5)",
+                  "class" : "AttestiOSApp.ExpandableView",
+                  "subviews" : [
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "class" : "AttestiOSApp.BrokenView",
+                          "subviews" : [
+                            {
+                              "frame" : "(91.0, 338.0, 139.5, 20.5)",
+                              "text" : "Large Failing Text",
+                              "class" : "UILabel"
+                            }
+                          ],
+                          "frame" : "(30.0, 328.0, 261.0, 40.5)",
+                          "background color" : "UIExtendedSRGBColorSpace 0.666667 0.666667 0.666667 1"
+                        },
+                        {
+                          "frame" : "(301.0, 326.5, 44.0, 44.0)",
+                          "class" : "UIButton",
+                          "subviews" : [
+                            {
+                              "frame" : "(301.0, 326.5, 44.0, 44.0)",
+                              "class" : "UIImageView"
+                            },
+                            {
+                              "frame" : "(301.0, 326.5, 0.0, 0.0)",
+                              "class" : "UIButtonLabel"
+                            }
+                          ]
+                        }
+                      ],
+                      "frame" : "(20.0, 318.0, 335.0, 60.5)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    },
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "frame" : "(40.0, 388.5, 295.0, 0.0)",
+                          "text" : "Large text (which is described as 18+ point, or 14+ point bold) needs a color contrast ratio of 3.0:1.",
+                          "class" : "UILabel"
+                        },
+                        {
+                          "frame" : "(40.0, 398.5, 295.0, 0.0)",
+                          "text" : "Running the Attest Framework on this view will give you the violation help, \"Large Text should have a constrast ratio of at least 3.0:1. Actual contrast ratio: 2.47.\"",
+                          "class" : "UILabel"
+                        }
+                      ],
+                      "frame" : "(20.0, 378.5, 335.0, 30.0)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    }
+                  ]
+                },
+                {
+                  "frame" : "(20.0, 378.5, 335.0, 60.5)",
+                  "class" : "AttestiOSApp.ExpandableView",
+                  "subviews" : [
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "class" : "AttestiOSApp.FixedView",
+                          "subviews" : [
+                            {
+                              "frame" : "(112.5, 398.5, 96.0, 20.5)",
+                              "text" : "Passing Text",
+                              "class" : "UILabel"
+                            }
+                          ],
+                          "frame" : "(30.0, 388.5, 261.0, 40.5)",
+                          "background color" : "UIExtendedSRGBColorSpace 0.937255 0.937255 0.956863 1"
+                        },
+                        {
+                          "frame" : "(301.0, 387.0, 44.0, 44.0)",
+                          "class" : "UIButton",
+                          "subviews" : [
+                            {
+                              "frame" : "(301.0, 387.0, 44.0, 44.0)",
+                              "class" : "UIImageView"
+                            },
+                            {
+                              "frame" : "(301.0, 387.0, 0.0, 0.0)",
+                              "class" : "UIButtonLabel"
+                            }
+                          ]
+                        }
+                      ],
+                      "frame" : "(20.0, 378.5, 335.0, 60.5)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    },
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "frame" : "(40.0, 449.0, 295.0, 0.0)",
+                          "text" : "This view has an acceptable color contrast because it is higher than the minimum contrast ratio of 4.5:1.",
+                          "class" : "UILabel"
+                        },
+                        {
+                          "frame" : "(40.0, 459.0, 295.0, 0.0)",
+                          "text" : "Running the Attest Framework on this view will not report any issues, because its contrast ratio is 18.32.",
+                          "class" : "UILabel"
+                        }
+                      ],
+                      "frame" : "(20.0, 439.0, 335.0, 30.0)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    }
+                  ]
+                },
+                {
+                  "frame" : "(20.0, 439.0, 335.0, 60.5)",
+                  "class" : "AttestiOSApp.ExpandableView",
+                  "subviews" : [
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "class" : "AttestiOSApp.FixedView",
+                          "subviews" : [
+                            {
+                              "frame" : "(85.5, 459.0, 150.0, 20.5)",
+                              "text" : "Large Passing Text",
+                              "class" : "UILabel"
+                            }
+                          ],
+                          "frame" : "(30.0, 449.0, 261.0, 40.5)",
+                          "background color" : "UIExtendedSRGBColorSpace 0.666667 0.666667 0.666667 1"
+                        },
+                        {
+                          "frame" : "(301.0, 447.5, 44.0, 44.0)",
+                          "class" : "UIButton",
+                          "subviews" : [
+                            {
+                              "frame" : "(301.0, 447.5, 44.0, 44.0)",
+                              "class" : "UIImageView"
+                            },
+                            {
+                              "frame" : "(301.0, 447.5, 0.0, 0.0)",
+                              "class" : "UIButtonLabel"
+                            }
+                          ]
+                        }
+                      ],
+                      "frame" : "(20.0, 439.0, 335.0, 60.5)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    },
+                    {
+                      "class" : "UIView",
+                      "subviews" : [
+                        {
+                          "frame" : "(40.0, 509.5, 295.0, 0.0)",
+                          "text" : "This view has large text, so it only needs to meet the criteria of 3.0:1.",
+                          "class" : "UILabel"
+                        },
+                        {
+                          "frame" : "(40.0, 519.5, 295.0, 0.0)",
+                          "text" : "Running the Attest Framework on this view will not report any issues because its ratio is 3.21 -- this is higher than the minimum contrast ratio of 3.0:1.",
+                          "class" : "UILabel"
+                        }
+                      ],
+                      "frame" : "(20.0, 499.5, 335.0, 30.0)",
+                      "background color" : "UIExtendedGrayColorSpace 1 1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "frame" : "(20.0, 509.5, 335.0, 118.0)",
+              "text" : "All foreground text must have sufficient contrast between it and the background colors behind it in accordance with WCAG 2 AA contrast ratio thresholds, otherwise your app will be hard to read for everyone, such as when icons and text blend with the background.",
+              "class" : "UILabel"
+            },
+            {
+              "frame" : "(20.0, 637.5, 335.0, 18.0)",
+              "text" : "Applicable Tags: wcag143, system",
+              "class" : "UILabel"
+            },
+            {
+              "frame" : "(369.5, 657.0, 2.5, 7.0)",
+              "class" : "UIImageView"
+            },
+            {
+              "frame" : "(365.0, 661.5, 7.0, 2.5)",
+              "class" : "UIImageView"
+            }
+          ]
+        },
+        {
+          "frame" : "(0.0, 0.0, 0.0, 64.0)",
+          "class" : "_UILayoutGuide"
+        },
+        {
+          "frame" : "(0.0, 667.0, 0.0, 0.0)",
+          "class" : "_UILayoutGuide"
+        }
+      ],
+      "frame" : "(0.0, 0.0, 375.0, 667.0)",
+      "background color" : "UIExtendedGrayColorSpace 1 1"
+    },
+    "className" : "AttestiOSApp.RuleViewController",
+    "title" : ""
+  }
+}
