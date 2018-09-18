@@ -65,5 +65,3 @@ speed up remediation and help you understand why various Accessibility Issues ar
 <p align="center">
   <img src="/screenshots/Attest_XML.png" width="800" alt="Screenshot of an emulator next to a browser with Chrome DevTools showing the views Accessibility Hierarchy.">
 </p>
-
-More information can be found in the [Wiki](https://github.com/dequelabs/Deque-University-for-iOS#advanced-accessibility-debugging-tools).
