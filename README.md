@@ -1,4 +1,4 @@
-# Deque University for iOS
+# Deque University for iOS Native App Demos
 
 A simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications. Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the corresponding best practices are. 
 
