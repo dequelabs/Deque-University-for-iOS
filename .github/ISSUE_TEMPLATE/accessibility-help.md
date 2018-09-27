@@ -16,6 +16,10 @@ For example, if we're considering a VoiceOver issue:
 2. And then swipe right
 3. Focus moves to the button to the left of the image, instead of the button to the right of the image.
 
+### Accessible Behavior
+
+If not Self Evident from the above, include information about the behavior you would like to achieve.
+
 ### Defense
 
 Why you believe the behavior is inaccessible. Any applicable references to Section 508, WCAG 2.1, or iOS guidelines references. A reference to any descriptions provided from Attest or Deque Assessments is also helpful! 
