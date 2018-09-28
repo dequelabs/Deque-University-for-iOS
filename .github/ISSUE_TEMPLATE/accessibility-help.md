@@ -18,7 +18,7 @@ For example, if we're considering a VoiceOver issue:
 
 ### Accessible Behavior
 
-If not Self Evident from the above, include information about the behavior you would like to achieve.
+Include information about the behavior you would like to achieve.
 
 ### Defense
 
