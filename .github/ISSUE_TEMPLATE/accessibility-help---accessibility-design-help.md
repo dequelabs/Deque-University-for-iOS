@@ -1,10 +1,11 @@
 ---
-name: Accessibility Help
-about: Let us help you make your content more Accessible.
+name: Accessibility Help - Accessibility Design Help
+about: My app is behaving one way and I expect it to behave another. How do I accomplish
+  this with minimal changes to the design of my application?
 
 ---
 
-A short summary to get us grounded and started thinking about your issue.
+A short summary to get us grounded and started thinking about your question.
 
 ### Inaccessible Behavior
 
