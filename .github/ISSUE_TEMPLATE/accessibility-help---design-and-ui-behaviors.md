@@ -5,6 +5,8 @@ about: My app is behaving one way and I expect it to behave another. How do I ac
 
 ---
 
+TITLE: [Concise form of the inaccessible behavior. 10 words or less. ]
+
 A short summary to get us grounded and started thinking about your question.
 
 ### Inaccessible Behavior

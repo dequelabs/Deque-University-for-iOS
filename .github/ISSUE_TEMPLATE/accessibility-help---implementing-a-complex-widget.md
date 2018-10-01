@@ -6,6 +6,8 @@ about: There are certain widgets and user interfaces that are common in mobile d
 
 ---
 
+TITLE: Keep Complex Widget Titles Short! Utilize known names if the widget is common.
+
 A short summary of your widget to get us grounded. 
 
 ### App Store Example
