@@ -1,6 +1,6 @@
 ---
 name: Attest Support
-about: 'Problems with Attest? This is the place for that, too. '
+about: 'Problems with Attest? This is the place for that. '
 
 ---
 

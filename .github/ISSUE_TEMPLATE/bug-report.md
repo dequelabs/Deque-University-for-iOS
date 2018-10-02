@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Create a report to help us improve
+about: Generic bug report for when we mess up.
 
 ---
 
