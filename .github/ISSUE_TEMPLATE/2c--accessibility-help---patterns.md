@@ -1,8 +1,8 @@
 ---
 name: '2C: Accessibility Help - Patterns'
-about: Need to implement a complex widget? Certain design patterns are common in mobile
-  development, but difficult to make accessible. Have one in mind that isn't in our
-  list yet... add it here!
+about: Need to implement a complex design pattern? Certain design patterns are common
+  in mobile development, but difficult to make accessible. Have one in mind that isn't
+  in our list yet... add it here!
 
 ---
 
