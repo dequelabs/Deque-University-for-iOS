@@ -1,11 +1,3 @@
-# Deque University for iOS Native App Demos
-
-A simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications. Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the corresponding best practices are. 
-
-<p align="center">
-  <img src="/screenshots/side_by_side.png" width="300" alt="Side By side menu and Color Contrast example.">
-</p>
-
 # Need Help with iOS Accessibility?
 
 Leverage our community of iOS Accessibility Expertise. Post an issue to this repository. Issues can be anything from
@@ -17,7 +9,15 @@ Leverage our community of iOS Accessibility Expertise. Post an issue to this rep
 
 Or anything else you can come up with related to iOS Accessibility. If it's a concern within the topic of iOS Accessibility, we want to hear about it.
 
-# Also Checkout WorldSpace Attest for iOS
+# Deque University for iOS Native App Demos
+
+A simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications. Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the corresponding best practices are. 
+
+<p align="center">
+  <img src="/screenshots/side_by_side.png" width="300" alt="Side By side menu and Color Contrast example.">
+</p>
+
+# Checkout Attest for iOS
 
 This repository also serves as documentation for Deque's automated accessibility analysis Framework. Utilizing Attest you can find Accessibility Issues automatically. You can utilize Attest for iOS to test your app in a lot of different ways:
 
