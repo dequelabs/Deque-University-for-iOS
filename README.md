@@ -1,6 +1,6 @@
 # Need Help with iOS Accessibility?
 
-Leverage our community of iOS Accessibility Expertise. Post an issue to this repository. Issues can be anything from
+The main purpose of this repository is to share iOS Accessibility knowledge. Leverage our community of iOS Accessibility Expertise. Post an issue to this repository. Issues can be anything from
 
 - Requesting a demo be added to the application.
 - Questions about APIs
@@ -9,9 +9,9 @@ Leverage our community of iOS Accessibility Expertise. Post an issue to this rep
 
 Or anything else you can come up with related to iOS Accessibility. If it's a concern within the topic of iOS Accessibility, we want to hear about it.
 
-# Deque University for iOS Native App Demos
+# Native App Demos
 
-A simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications. Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the corresponding best practices are. 
+The main purpose of the application is to build empathy for users with disabilities. It is a simple application that demonstrates the difficulties faced by VoiceOver users in using simple Native iOS Applications. Each demo is composed of a series of examples that show how the concept can be handled inaccessibly, and what the corresponding best practices are. 
 
 <p align="center">
   <img src="/screenshots/side_by_side.png" width="300" alt="Side By side menu and Color Contrast example.">
