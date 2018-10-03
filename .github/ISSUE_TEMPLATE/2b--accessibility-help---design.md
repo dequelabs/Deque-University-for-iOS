@@ -1,7 +1,8 @@
 ---
 name: '2B: Accessibility Help - Design'
-about: My app is behaving one way and I expect it to behave another. How do I accomplish
-  this with minimal changes to the design of my application?
+about: How do I make something accessible with minimal changes to the design of my
+  application? What behavior do users with disabilities expect when interacting with
+  this type of component?
 
 ---
 
