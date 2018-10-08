@@ -29,15 +29,15 @@ extension UIColor {
         // Separate into r, g, and b substrings
         var start = hexString.startIndex
         var end = hexString.index(hexString.startIndex, offsetBy: 2)
-        let rString = hexString[Range(start..<end)]
+        let rString = hexString[start..<end]
         
         start = end
         end = hexString.index(hexString.startIndex, offsetBy: 4)
-        let gString = hexString[Range(start..<end)]
+        let gString = hexString[start..<end]
         
         start = end
         end = hexString.endIndex
-        let bString = hexString[Range(start..<end)]
+        let bString = hexString[start..<end]
         
         // Scan values
         var r: UInt32 = 0

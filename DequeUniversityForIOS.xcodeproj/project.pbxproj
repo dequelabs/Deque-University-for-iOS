@@ -180,7 +180,7 @@
 		0F69FB961FA9AD3C00A07BA4 /* CustomRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRules.swift; sourceTree = "<group>"; };
 		0F69FB981FA9AD6600A07BA4 /* IgnoreViolations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolations.swift; sourceTree = "<group>"; };
 		0F69FB9A1FA9AD7B00A07BA4 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
-		0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = AttestiOSApp.app; path = DequeUniversityForIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCBDE891F9E6C350059DB83 /* DequeUniversityForIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DequeUniversityForIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDE981F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FCBDE9D1F9E6C350059DB83 /* DequeUniversityForIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DequeUniversityForIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCBDEA31F9E6C350059DB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 		0FCBDE8A1F9E6C350059DB83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */,
+				0FCBDE891F9E6C350059DB83 /* DequeUniversityForIOS.app */,
 				0FCBDE9D1F9E6C350059DB83 /* DequeUniversityForIOSTests.xctest */,
 				0FCBDEA81F9E6C350059DB83 /* DequeUniversityForIOSUITests.xctest */,
 				EE015D2D21541DAE000E8D77 /* DequeUniversityForIOS-cal.app */,
@@ -436,7 +436,7 @@
 			);
 			name = DequeUniversityForIOS;
 			productName = AttestiOSApp;
-			productReference = 0FCBDE891F9E6C350059DB83 /* AttestiOSApp.app */;
+			productReference = 0FCBDE891F9E6C350059DB83 /* DequeUniversityForIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0FCBDE9C1F9E6C350059DB83 /* DequeUniversityForIOSTests */ = {
@@ -945,6 +945,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Deque-University-for-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -968,6 +969,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Deque-University-for-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1217,13 +1219,14 @@
 				DEVELOPMENT_TEAM = 2ZZQGXN669;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Framework/Release",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Framework/Release",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/DequeUniversityForIOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Deque-University-for-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
