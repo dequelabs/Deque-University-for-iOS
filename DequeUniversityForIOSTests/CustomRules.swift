@@ -7,14 +7,14 @@ class CustomRules: XCTestCase {
         super.setUp()
 
         //Add a custom rule implementation to custom rules
-        Attest.customRules.append { (node: Rule.Result.Node, view: UIView) in
+        Attest.customRules.append { (node: Node, view: MockedView) in
 
-            let isEvil = view is UILabel
+            let isEvil = view.classType is UILabel.Type
 
             //Add some helpful information to your rule so when it fails, people know why.
             node.checkedProps["The View is Evil"] = isEvil.description
 
-            if view is UILabel {
+            if view.classType is UILabel.Type {
                 node.addCheckResult(impact: Impact.Minor, message: "We don't like static text in this application!")
             } else {
                 //We could jst as easily NOT added a pass. A node with no checks is considered "inapplicable".
@@ -35,7 +35,7 @@ class CustomRules: XCTestCase {
     func testCustomRule() {
 
         //Up the verbosity on these reports just a little bit.
-        Rule.Result.withDetails = true
+        RuleResult.withDetails = true
 
         Attest.that(storyBoardName: "ColorContrast").isAccessible { (result) in
             //This is obviously going to fail hard, so don't assert!

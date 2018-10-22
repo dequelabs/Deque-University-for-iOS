@@ -6,10 +6,10 @@ class IgnoreViolations: XCTestCase {
     /* Ignore a violation for a particular rule. */
     func testAndIgnoreSingleViolation() {
         
-        Attest.that(storyBoardName: "ConflictingTraits").isAccessible({(result:Attest.Result) -> () in
+        Attest.that(storyBoardName: "ConflictingTraits").isAccessible({(result:AttestResult) -> () in
             
-            Rule.Result.withPasses = true
-            Rule.Result.withDetails = true
+            RuleResult.withPasses = true
+            RuleResult.withDetails = true
 
             for ruleResult in result.ruleResults {
                 switch (ruleResult.rule.ruleId) {
