@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DT3-gh-cK8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Active Control Name View Controller-->
+        <scene sceneID="syh-oK-g8f">
+            <objects>
+                <viewController id="DT3-gh-cK8" customClass="ActiveControlNameViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aFr-TE-h7S"/>
+                        <viewControllerLayoutGuide type="bottom" id="MZs-jv-tFw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QEY-Bi-eW4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1z2-nh-nAZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BXx-fU-TBF">
+                                        <rect key="frame" x="20" y="20" width="335" height="477"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpz-jU-WNe" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="94"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgy-nd-bEP" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="74"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kjc-zE-ij5" customClass="FocusOrderedView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="295" height="54"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Worldspace Attest" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoC-LE-3DK" customClass="A11yLabel" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                        <rect key="frame" x="10" y="17" width="226" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="ButtonLabel_NoLabel_ActiveControlName"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akP-rd-6tK">
+                                                                        <rect key="frame" x="241" y="5" width="44" height="44"/>
+                                                                        <color key="backgroundColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="Button_NoLabel_ActiveControlName">
+                                                                            <accessibilityTraits key="traits" link="YES"/>
+                                                                            <bool key="isElement" value="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="akP-rd-6tK" secondAttribute="height" multiplier="1:1" id="Jpy-iz-rd7"/>
+                                                                            <constraint firstAttribute="height" constant="44" id="sh2-LX-kRa"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="openLink" destination="DT3-gh-cK8" eventType="touchUpInside" id="Yqy-EY-W9J"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="akP-rd-6tK" secondAttribute="bottom" constant="5" id="Hkd-sb-dcs"/>
+                                                                    <constraint firstItem="akP-rd-6tK" firstAttribute="top" secondItem="Kjc-zE-ij5" secondAttribute="top" constant="5" id="Mxc-Gg-rF4"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="akP-rd-6tK" secondAttribute="trailing" constant="10" id="baY-xI-9S4"/>
+                                                                    <constraint firstItem="QoC-LE-3DK" firstAttribute="leading" secondItem="Kjc-zE-ij5" secondAttribute="leading" constant="10" id="eUf-Hl-BPF"/>
+                                                                    <constraint firstItem="QoC-LE-3DK" firstAttribute="centerY" secondItem="akP-rd-6tK" secondAttribute="centerY" id="yGB-QX-nwb"/>
+                                                                    <constraint firstItem="akP-rd-6tK" firstAttribute="leading" secondItem="QoC-LE-3DK" secondAttribute="trailing" constant="5" id="zpb-QW-WA2"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="firstElement" destination="QoC-LE-3DK" id="bId-JG-LsX"/>
+                                                                    <outlet property="secondElement" destination="akP-rd-6tK" id="MxP-ax-OhC"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Kjc-zE-ij5" secondAttribute="trailing" constant="10" id="3cZ-ra-9ta"/>
+                                                            <constraint firstItem="Kjc-zE-ij5" firstAttribute="top" secondItem="tgy-nd-bEP" secondAttribute="top" constant="10" id="6jo-GB-Tyl"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Kjc-zE-ij5" secondAttribute="bottom" constant="10" id="Dxs-a3-zc8"/>
+                                                            <constraint firstItem="Kjc-zE-ij5" firstAttribute="leading" secondItem="tgy-nd-bEP" secondAttribute="leading" constant="10" id="M63-S6-h6i"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="tgy-nd-bEP" firstAttribute="top" secondItem="dpz-jU-WNe" secondAttribute="top" constant="10" id="dSd-yA-j5x"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tgy-nd-bEP" secondAttribute="trailing" constant="10" id="fOy-1n-WKd"/>
+                                                    <constraint firstItem="tgy-nd-bEP" firstAttribute="leading" secondItem="dpz-jU-WNe" secondAttribute="leading" constant="10" id="qaG-ue-XV0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tgy-nd-bEP" secondAttribute="bottom" constant="10" id="sQb-gJ-ENe"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Critical WCAG #4.1.2 Issue"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">The button to the right links to the Worldspace Attest Product page. Notice how it does not have an accessibility label. A VoiceOver user may not easily connect the "Worldspace Attest" label with the button next to it.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="tgy-nd-bEP" id="b9J-ai-kQo"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyg-2b-by5" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="94" width="335" height="104"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PB-Wb-pDY" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="84"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K57-4G-XZU" customClass="FocusOrderedView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="295" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Background" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW4-aq-0KI" customClass="A11yLabel" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                        <rect key="frame" x="10" y="22" width="216" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="SwitchLabel_NoLabel_ActiveControlName"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <switch opaque="NO" tag="99" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="iXG-mm-7xb">
+                                                                        <rect key="frame" x="236" y="10" width="51" height="44"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="Switch_NoLabel_ActiveControlName"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="u4b-8w-Cs7"/>
+                                                                        </constraints>
+                                                                        <color key="tintColor" red="0.87843137250000003" green="0.23529411759999999" blue="0.19215686269999999" alpha="1" colorSpace="deviceRGB"/>
+                                                                        <color key="onTintColor" red="0.87843137250000003" green="0.23529411759999999" blue="0.19215686269999999" alpha="1" colorSpace="deviceRGB"/>
+                                                                        <connections>
+                                                                            <action selector="changeBackgroundColor:" destination="DT3-gh-cK8" eventType="valueChanged" id="x6x-mu-DgI"/>
+                                                                        </connections>
+                                                                    </switch>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="bW4-aq-0KI" firstAttribute="centerY" secondItem="iXG-mm-7xb" secondAttribute="centerY" id="T9x-Df-WUM"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="iXG-mm-7xb" secondAttribute="trailing" constant="10" id="ayG-Ze-upE"/>
+                                                                    <constraint firstItem="iXG-mm-7xb" firstAttribute="leading" secondItem="bW4-aq-0KI" secondAttribute="trailing" constant="10" id="jtj-R0-joJ"/>
+                                                                    <constraint firstItem="iXG-mm-7xb" firstAttribute="top" secondItem="K57-4G-XZU" secondAttribute="top" constant="10" id="m4d-9f-C9J"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="iXG-mm-7xb" secondAttribute="bottom" constant="10" id="mza-Kb-Zud"/>
+                                                                    <constraint firstItem="bW4-aq-0KI" firstAttribute="leading" secondItem="K57-4G-XZU" secondAttribute="leading" constant="10" id="oRb-Nc-lao"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="firstElement" destination="bW4-aq-0KI" id="KgD-Lt-bZt"/>
+                                                                    <outlet property="secondElement" destination="iXG-mm-7xb" id="6q9-vm-pvy"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="K57-4G-XZU" secondAttribute="trailing" constant="10" id="49S-5b-YeH"/>
+                                                            <constraint firstAttribute="bottom" secondItem="K57-4G-XZU" secondAttribute="bottom" constant="10" id="Gtj-PU-kmZ"/>
+                                                            <constraint firstItem="K57-4G-XZU" firstAttribute="leading" secondItem="6PB-Wb-pDY" secondAttribute="leading" constant="10" id="Qab-fI-NCr"/>
+                                                            <constraint firstItem="K57-4G-XZU" firstAttribute="top" secondItem="6PB-Wb-pDY" secondAttribute="top" constant="10" id="zHH-E6-TUd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="6PB-Wb-pDY" firstAttribute="leading" secondItem="Lyg-2b-by5" secondAttribute="leading" constant="10" id="b07-cP-dev"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6PB-Wb-pDY" secondAttribute="bottom" constant="10" id="c55-I0-23O"/>
+                                                    <constraint firstItem="6PB-Wb-pDY" firstAttribute="top" secondItem="Lyg-2b-by5" secondAttribute="top" constant="10" id="dRq-di-NgP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6PB-Wb-pDY" secondAttribute="trailing" constant="10" id="yq5-JH-5pD"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">The switch turns the Background Color on and off. Notice how it does not have an accessibility label -- VoiceOver just says "OFF."  A VoiceOver user may not easily make the connection between the label marked "Background" and the Switch.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Critical WCAG #4.1.2 Issue"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="6PB-Wb-pDY" id="SFP-LU-I6v"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMM-Yz-BbC" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="198" width="335" height="94"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEM-ia-nLb" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="74"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUB-Dj-1Zm" customClass="FixedLinkView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="295" height="54"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Worldspace Attest" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjn-2P-7qo" customClass="A11yLabel" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                        <rect key="frame" x="10" y="17" width="226" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="ButtonLabel_ProperlyLabeled_ActiveControlName"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7f-lg-Wjk">
+                                                                        <rect key="frame" x="241" y="5" width="44" height="44"/>
+                                                                        <color key="backgroundColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="Button_ProperlyLabeled_ActiveControlName">
+                                                                            <accessibilityTraits key="traits" link="YES"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="J5e-lW-twA"/>
+                                                                            <constraint firstAttribute="width" secondItem="d7f-lg-Wjk" secondAttribute="height" multiplier="1:1" id="ZEj-Lp-k7Z"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="openLink" destination="DT3-gh-cK8" eventType="touchUpInside" id="DJk-6u-hlO"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="d7f-lg-Wjk" firstAttribute="top" secondItem="QUB-Dj-1Zm" secondAttribute="top" constant="5" id="Nyc-Js-8Fn"/>
+                                                                    <constraint firstItem="d7f-lg-Wjk" firstAttribute="leading" secondItem="Gjn-2P-7qo" secondAttribute="trailing" constant="5" id="a5D-zt-2qx"/>
+                                                                    <constraint firstItem="Gjn-2P-7qo" firstAttribute="leading" secondItem="QUB-Dj-1Zm" secondAttribute="leading" constant="10" id="aMJ-ws-CMA"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="d7f-lg-Wjk" secondAttribute="bottom" constant="5" id="hnK-Cd-uBH"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="d7f-lg-Wjk" secondAttribute="trailing" constant="10" id="m9L-5w-olH"/>
+                                                                    <constraint firstItem="Gjn-2P-7qo" firstAttribute="centerY" secondItem="d7f-lg-Wjk" secondAttribute="centerY" id="zmd-QV-bmz"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="firstElement" destination="Gjn-2P-7qo" id="Lvq-5v-lQZ"/>
+                                                                    <outlet property="secondElement" destination="d7f-lg-Wjk" id="T0F-lM-FUh"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="QUB-Dj-1Zm" firstAttribute="top" secondItem="YEM-ia-nLb" secondAttribute="top" constant="10" id="R1K-cB-guW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QUB-Dj-1Zm" secondAttribute="bottom" constant="10" id="csD-Eq-cLZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QUB-Dj-1Zm" secondAttribute="trailing" constant="10" id="dXy-7Y-6vJ"/>
+                                                            <constraint firstItem="QUB-Dj-1Zm" firstAttribute="leading" secondItem="YEM-ia-nLb" secondAttribute="leading" constant="10" id="eRq-XH-Xuj"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="YEM-ia-nLb" secondAttribute="trailing" constant="10" id="e4L-ll-MIQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YEM-ia-nLb" secondAttribute="bottom" constant="10" id="khX-XA-J5Y"/>
+                                                    <constraint firstItem="YEM-ia-nLb" firstAttribute="top" secondItem="UMM-Yz-BbC" secondAttribute="top" constant="10" id="opb-cn-C5t"/>
+                                                    <constraint firstItem="YEM-ia-nLb" firstAttribute="leading" secondItem="UMM-Yz-BbC" secondAttribute="leading" constant="10" id="tzn-dx-X6f"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="The button to the right now contains an accessibility label. VoiceOver should state &quot;Worldspace Attest, Link.&quot;"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="YEM-ia-nLb" id="g5D-jA-l1G"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-LE-OLc" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="292" width="335" height="94"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhC-Kr-5A4" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="74"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-Y4-EMJ" customClass="AccessibleLinkView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="295" height="54"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Worldspace Attest" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SW-fh-hRy" customClass="A11yLabel" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                        <rect key="frame" x="10" y="17" width="226" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration">
+                                                                            <accessibilityTraits key="traits" staticText="YES"/>
+                                                                            <bool key="isElement" value="NO"/>
+                                                                        </accessibility>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1j-md-DDE">
+                                                                        <rect key="frame" x="241" y="5" width="44" height="44"/>
+                                                                        <color key="backgroundColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <accessibility key="accessibilityConfiguration">
+                                                                            <accessibilityTraits key="traits" link="YES"/>
+                                                                            <bool key="isElement" value="NO"/>
+                                                                        </accessibility>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="Q1j-md-DDE" secondAttribute="height" multiplier="1:1" id="xjO-t7-504"/>
+                                                                        </constraints>
+                                                                        <state key="normal">
+                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="openLink" destination="DT3-gh-cK8" eventType="touchUpInside" id="eXE-zd-dHS"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <accessibility key="accessibilityConfiguration" identifier="AccessibleView_ActiveControlName">
+                                                                    <accessibilityTraits key="traits" link="YES"/>
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="54" id="HHd-vM-4FL"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Q1j-md-DDE" secondAttribute="bottom" constant="5" id="JMj-I2-inp"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Q1j-md-DDE" secondAttribute="trailing" constant="10" id="SDs-3v-yoV"/>
+                                                                    <constraint firstItem="6SW-fh-hRy" firstAttribute="leading" secondItem="2uV-Y4-EMJ" secondAttribute="leading" constant="10" id="XU4-Wm-rJ0"/>
+                                                                    <constraint firstItem="Q1j-md-DDE" firstAttribute="leading" secondItem="6SW-fh-hRy" secondAttribute="trailing" constant="5" id="gTJ-k3-MGF"/>
+                                                                    <constraint firstItem="6SW-fh-hRy" firstAttribute="centerY" secondItem="2uV-Y4-EMJ" secondAttribute="centerY" id="pcj-bB-HUy"/>
+                                                                    <constraint firstItem="Q1j-md-DDE" firstAttribute="top" secondItem="2uV-Y4-EMJ" secondAttribute="top" constant="5" id="r4x-m1-ZlU"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="link" destination="Q1j-md-DDE" id="PZw-KJ-7bj"/>
+                                                                    <outlet property="linkName" destination="6SW-fh-hRy" id="M3s-hM-Ew2"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="2uV-Y4-EMJ" secondAttribute="bottom" constant="10" id="2Nv-Kq-1ie"/>
+                                                            <constraint firstItem="2uV-Y4-EMJ" firstAttribute="leading" secondItem="EhC-Kr-5A4" secondAttribute="leading" constant="10" id="m47-2V-qcF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2uV-Y4-EMJ" secondAttribute="trailing" constant="10" id="mOi-lq-wKB"/>
+                                                            <constraint firstItem="2uV-Y4-EMJ" firstAttribute="top" secondItem="EhC-Kr-5A4" secondAttribute="top" constant="10" id="qF2-sK-6w5"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="EhC-Kr-5A4" firstAttribute="top" secondItem="UD4-LE-OLc" secondAttribute="top" constant="10" id="81y-xN-xxx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EhC-Kr-5A4" secondAttribute="trailing" constant="10" id="Sah-PG-ySt"/>
+                                                    <constraint firstItem="EhC-Kr-5A4" firstAttribute="leading" secondItem="UD4-LE-OLc" secondAttribute="leading" constant="10" id="sew-Mp-hGK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EhC-Kr-5A4" secondAttribute="bottom" constant="10" id="wz7-eE-8Ea"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">Notice that the label and button are grouped and the entire container is accessible by VoiceOver.  When focused, VoiceOver will announce "Worldspace Attest, Link." We recommend this method, so that repeated information can be avoided.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="EhC-Kr-5A4" id="NzU-vz-Pfw"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m5q-gY-ZlA" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="386" width="335" height="91"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CfX-jU-6tu" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="71"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-K6-6Mo" customClass="AccessibleSwitchView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="295" height="51"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Background" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRx-pi-6EV" customClass="A11yLabel" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                        <rect key="frame" x="10" y="15.5" width="216" height="20.5"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="SwitchLabel_ProperlyLabeled_ActiveControlName"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="fill" translatesAutoresizingMaskIntoConstraints="NO" id="Cra-PI-Bij">
+                                                                        <rect key="frame" x="236" y="10" width="51" height="31"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="Switch_ProperlyLabeled_ActiveControlName"/>
+                                                                        <color key="tintColor" red="0.5568627451" green="0.86666666670000003" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="onTintColor" red="0.5568627451" green="0.86666666670000003" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <connections>
+                                                                            <action selector="changeBackgroundColor:" destination="DT3-gh-cK8" eventType="valueChanged" id="WJm-3V-skb"/>
+                                                                        </connections>
+                                                                    </switch>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="AccessibleSwitchView_ActiveControlName"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="nRx-pi-6EV" firstAttribute="centerY" secondItem="Cra-PI-Bij" secondAttribute="centerY" id="Ck3-Hr-Iw6"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Cra-PI-Bij" secondAttribute="bottom" constant="10" id="CzA-Al-1y4"/>
+                                                                    <constraint firstItem="Cra-PI-Bij" firstAttribute="top" secondItem="WMg-K6-6Mo" secondAttribute="top" constant="10" id="HXT-Q1-4OU"/>
+                                                                    <constraint firstItem="Cra-PI-Bij" firstAttribute="leading" secondItem="nRx-pi-6EV" secondAttribute="trailing" constant="10" id="bUI-aT-wB9"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Cra-PI-Bij" secondAttribute="trailing" constant="10" id="mdU-Hm-eiX"/>
+                                                                    <constraint firstItem="nRx-pi-6EV" firstAttribute="leading" secondItem="WMg-K6-6Mo" secondAttribute="leading" constant="10" id="pc7-Jc-cV0"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="a11ySwitch" destination="Cra-PI-Bij" id="W7U-Fg-7fp"/>
+                                                                    <outlet property="switchName" destination="nRx-pi-6EV" id="sYL-VK-lIz"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="WMg-K6-6Mo" firstAttribute="top" secondItem="CfX-jU-6tu" secondAttribute="top" constant="10" id="Adq-tK-bPC"/>
+                                                            <constraint firstItem="WMg-K6-6Mo" firstAttribute="leading" secondItem="CfX-jU-6tu" secondAttribute="leading" constant="10" id="MAQ-nI-DtR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="WMg-K6-6Mo" secondAttribute="bottom" constant="10" id="UHh-xH-KJk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WMg-K6-6Mo" secondAttribute="trailing" constant="10" id="tgM-aH-nD3"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="CfX-jU-6tu" secondAttribute="trailing" constant="10" id="1XO-5u-tcs"/>
+                                                    <constraint firstItem="CfX-jU-6tu" firstAttribute="leading" secondItem="m5q-gY-ZlA" secondAttribute="leading" constant="10" id="6fg-A5-eks"/>
+                                                    <constraint firstAttribute="bottom" secondItem="CfX-jU-6tu" secondAttribute="bottom" constant="10" id="D99-kx-QKl"/>
+                                                    <constraint firstItem="CfX-jU-6tu" firstAttribute="top" secondItem="m5q-gY-ZlA" secondAttribute="top" constant="10" id="iec-kd-YN3"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">The Switch is now enapsulated in a UIView that, when focused by VoiceOver, will announce, "Background, OFF" or "Background, ON."</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="CfX-jU-6tu" id="AP2-d2-A9F"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BXx-fU-TBF" firstAttribute="leading" secondItem="1z2-nh-nAZ" secondAttribute="leading" constant="20" placeholder="YES" id="L33-dq-Ulb"/>
+                                    <constraint firstItem="BXx-fU-TBF" firstAttribute="top" secondItem="1z2-nh-nAZ" secondAttribute="top" constant="20" placeholder="YES" id="LR8-zD-5Sx"/>
+                                    <constraint firstAttribute="trailing" secondItem="BXx-fU-TBF" secondAttribute="trailing" constant="20" placeholder="YES" id="ajI-JS-A5v"/>
+                                    <constraint firstAttribute="bottom" secondItem="BXx-fU-TBF" secondAttribute="bottom" constant="20" placeholder="YES" id="aoM-bo-vJ1"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BXx-fU-TBF" firstAttribute="centerX" secondItem="GOi-VV-Q7Q" secondAttribute="centerX" placeholder="YES" id="CUx-30-l9W"/>
+                            <constraint firstItem="1z2-nh-nAZ" firstAttribute="width" secondItem="QEY-Bi-eW4" secondAttribute="width" id="Dg2-GF-e2S"/>
+                            <constraint firstItem="1z2-nh-nAZ" firstAttribute="centerX" secondItem="QEY-Bi-eW4" secondAttribute="centerX" id="Kd9-kX-Xy5"/>
+                            <constraint firstItem="1z2-nh-nAZ" firstAttribute="top" secondItem="GOi-VV-Q7Q" secondAttribute="top" id="Pzm-81-bqZ"/>
+                            <constraint firstItem="GOi-VV-Q7Q" firstAttribute="bottom" secondItem="1z2-nh-nAZ" secondAttribute="bottom" id="hIa-9R-8QD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GOi-VV-Q7Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="demos" destination="BXx-fU-TBF" id="QbC-FE-Ejs"/>
+                        <outlet property="scrollView" destination="1z2-nh-nAZ" id="o6i-9r-37R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNg-oM-7Eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1505" y="-211"/>
+        </scene>
+    </scenes>
+</document>

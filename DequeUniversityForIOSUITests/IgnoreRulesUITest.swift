@@ -12,7 +12,7 @@ import Attest
 class IgnoreRulesUITest: XCTestCase {
     
     // Accessibililty identifier of ColorContrast Demo
-    let CONFLICTING_TRAITS = "Conflicting Traits"
+    let CONFLICTING_TRAITS = "ConflictingTraits"
         
     override func setUp() {
         super.setUp()
@@ -20,7 +20,7 @@ class IgnoreRulesUITest: XCTestCase {
         continueAfterFailure = false
         XCUIApplication().launch()
         
-        XCUIApplication().tables.cells.matching(identifier: CONFLICTING_TRAITS).firstMatch.tap() // Open Contrast Alpha Blend Demo
+        XCUIApplication().collectionViews.cells.matching(identifier: CONFLICTING_TRAITS).firstMatch.tap() // Open Contrast Alpha Blend Demo
     }
     
     //Set up a list of Rule IDs to ignore.

@@ -10,13 +10,16 @@ import UIKit
 
 extension UIColor {
     
-    static let DequeRed = UIColor.colorWithHexString("E03C31")
-    static let DequeGreen = UIColor.colorWithHexString("8EDD65")
-    static let DequeGray = UIColor.colorWithHexString("4B4F54")
     static let DequeBlue = UIColor.colorWithHexString("0077C8")
     static let DequeDarkGray = UIColor.colorWithHexString("4B4F54")
+    static let DequeNavy = UIColor.colorWithHexString("003349")
+    static let DequeGreen = UIColor.colorWithHexString("8EDD65")
+    static let DequeRed = UIColor.colorWithHexString("E03C31")
+    static let DequeBlack = UIColor.colorWithHexString("1E1E1E")
+    static let DequeGray = UIColor.colorWithHexString("878787")
+    static let DequeWhite = UIColor.colorWithHexString("F5F5F5")
 
-    static func colorWithHexString(_ hex: String) -> UIColor {
+    static private func colorWithHexString(_ hex: String) -> UIColor {
         var hexString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
         
         // String should be 6 or 8 characters

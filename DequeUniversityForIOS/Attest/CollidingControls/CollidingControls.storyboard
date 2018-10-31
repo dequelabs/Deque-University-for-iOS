@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H6C-TW-pLV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rule View Controller-->
+        <scene sceneID="l4m-Tb-5qX">
+            <objects>
+                <viewController id="H6C-TW-pLV" customClass="RuleViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0hf-tZ-OxH"/>
+                        <viewControllerLayoutGuide type="bottom" id="zaf-EQ-8vW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7xl-cs-qb6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wC-JJ-HoD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U7h-gs-gpE">
+                                        <rect key="frame" x="20" y="20" width="335" height="168"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vF3-fb-nUa" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="84"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNM-RI-gB8" customClass="MinorView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7F-lx-MOM" customClass="BorderedButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="233" y="10" width="62" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Smaller_OverlappedButtons_CollidingControls"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="a4r-iZ-ec6"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="5"/>
+                                                                <state key="normal" title="Small"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2z-1H-jvz" customClass="BorderedButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="285" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Bigger_OverlappedButtons_CollidingControls"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Big"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="N7F-lx-MOM" firstAttribute="top" secondItem="nNM-RI-gB8" secondAttribute="top" constant="10" id="2VR-ra-OGF"/>
+                                                            <constraint firstItem="T2z-1H-jvz" firstAttribute="top" secondItem="N7F-lx-MOM" secondAttribute="top" id="5rm-sd-pJa"/>
+                                                            <constraint firstItem="T2z-1H-jvz" firstAttribute="trailing" secondItem="N7F-lx-MOM" secondAttribute="trailing" id="KxO-w6-q5U"/>
+                                                            <constraint firstItem="T2z-1H-jvz" firstAttribute="bottom" secondItem="N7F-lx-MOM" secondAttribute="bottom" id="QAo-EB-G8h"/>
+                                                            <constraint firstItem="T2z-1H-jvz" firstAttribute="leading" secondItem="nNM-RI-gB8" secondAttribute="leading" constant="10" id="W58-U0-ybS"/>
+                                                            <constraint firstAttribute="bottom" secondItem="N7F-lx-MOM" secondAttribute="bottom" constant="10" id="kvB-YI-js2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="N7F-lx-MOM" secondAttribute="trailing" constant="20" id="tzR-Ba-X7C"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="nNM-RI-gB8" secondAttribute="trailing" constant="10" id="E0k-Rq-gfy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nNM-RI-gB8" secondAttribute="bottom" constant="10" id="KyW-KW-biG"/>
+                                                    <constraint firstItem="nNM-RI-gB8" firstAttribute="leading" secondItem="vF3-fb-nUa" secondAttribute="leading" constant="10" id="TOa-Tc-IMg"/>
+                                                    <constraint firstItem="nNM-RI-gB8" firstAttribute="top" secondItem="vF3-fb-nUa" secondAttribute="top" constant="10" id="rBZ-bs-HW6"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="Here, we have outlined the bounds of the buttons.  Notice that the Big Button's bounds overlap the Smaller Button's bounds."/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Minor Platform Issue"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="nNM-RI-gB8" id="Z8a-2O-DIf"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2x-Tb-2J7" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="84" width="335" height="84"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-Wb-3sm" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeE-sm-8wn" customClass="BorderedButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="233" y="10" width="62" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Smaller_NotOverlappedButton_CollidingControls"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="xOf-y9-GtQ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="5"/>
+                                                                <state key="normal" title="Small">
+                                                                    <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-I5-ofY" customClass="BorderedButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="213" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Bigger_NotOverlappedButton_CollidingControls"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Big">
+                                                                    <color key="titleColor" red="0.035294117649999998" green="0.23529411759999999" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="JeE-sm-8wn" secondAttribute="bottom" constant="10" id="4QR-7h-d1H"/>
+                                                            <constraint firstItem="JeE-sm-8wn" firstAttribute="top" secondItem="zcW-Wb-3sm" secondAttribute="top" constant="10" id="DE4-xr-dwu"/>
+                                                            <constraint firstItem="pBc-I5-ofY" firstAttribute="leading" secondItem="zcW-Wb-3sm" secondAttribute="leading" constant="10" id="H3u-WB-X6m"/>
+                                                            <constraint firstItem="JeE-sm-8wn" firstAttribute="bottom" secondItem="pBc-I5-ofY" secondAttribute="bottom" id="PWU-80-WXY"/>
+                                                            <constraint firstItem="JeE-sm-8wn" firstAttribute="leading" secondItem="pBc-I5-ofY" secondAttribute="trailing" constant="10" id="UwB-1E-XM6"/>
+                                                            <constraint firstItem="JeE-sm-8wn" firstAttribute="top" secondItem="pBc-I5-ofY" secondAttribute="top" id="bJx-o0-PBw"/>
+                                                            <constraint firstAttribute="trailing" secondItem="JeE-sm-8wn" secondAttribute="trailing" constant="20" id="ivu-lb-Bv3"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="zcW-Wb-3sm" secondAttribute="bottom" constant="10" id="33d-gp-0E3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zcW-Wb-3sm" secondAttribute="trailing" constant="10" id="KRh-Jz-IyF"/>
+                                                    <constraint firstItem="zcW-Wb-3sm" firstAttribute="top" secondItem="z2x-Tb-2J7" secondAttribute="top" constant="10" id="ZJD-da-5Wp"/>
+                                                    <constraint firstItem="zcW-Wb-3sm" firstAttribute="leading" secondItem="z2x-Tb-2J7" secondAttribute="leading" constant="10" id="lV3-rA-7UB"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">Make sure that constraints prevent active controls from overlapping on all device types. This includes their accessibility frames as well.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="zcW-Wb-3sm" id="Fgn-ry-wZS"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="U7h-gs-gpE" secondAttribute="bottom" constant="20" placeholder="YES" id="BrY-JZ-ohq"/>
+                                    <constraint firstAttribute="trailing" secondItem="U7h-gs-gpE" secondAttribute="trailing" constant="20" placeholder="YES" id="KiY-hJ-vyL"/>
+                                    <constraint firstItem="U7h-gs-gpE" firstAttribute="leading" secondItem="5wC-JJ-HoD" secondAttribute="leading" constant="20" placeholder="YES" id="nbs-EG-xk0"/>
+                                    <constraint firstItem="U7h-gs-gpE" firstAttribute="top" secondItem="5wC-JJ-HoD" secondAttribute="top" constant="20" placeholder="YES" id="vs7-qk-Hr2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U7h-gs-gpE" firstAttribute="centerX" secondItem="XIJ-M5-dlr" secondAttribute="centerX" placeholder="YES" id="Db6-Ce-nYi"/>
+                            <constraint firstItem="5wC-JJ-HoD" firstAttribute="centerX" secondItem="7xl-cs-qb6" secondAttribute="centerX" id="XVk-OO-WNd"/>
+                            <constraint firstItem="XIJ-M5-dlr" firstAttribute="bottom" secondItem="5wC-JJ-HoD" secondAttribute="bottom" id="c5b-hn-Be2"/>
+                            <constraint firstItem="5wC-JJ-HoD" firstAttribute="width" secondItem="7xl-cs-qb6" secondAttribute="width" id="dfD-7v-BLf"/>
+                            <constraint firstItem="5wC-JJ-HoD" firstAttribute="top" secondItem="XIJ-M5-dlr" secondAttribute="top" id="hmO-f0-kbS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XIJ-M5-dlr"/>
+                    </view>
+                    <connections>
+                        <outlet property="demos" destination="U7h-gs-gpE" id="ngj-a5-z9y"/>
+                        <outlet property="scrollView" destination="5wC-JJ-HoD" id="43q-TH-wwQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AlF-Dk-4dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

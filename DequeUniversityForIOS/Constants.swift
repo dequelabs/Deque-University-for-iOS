@@ -9,7 +9,7 @@
 import UIKit
 import Attest
 
-public enum Demos: Int {
+public enum Demos: CaseIterable {
 
     case ActiveControlName
     case CollidingControls
@@ -22,38 +22,6 @@ public enum Demos: Int {
     case InHighlight
     case NestedA11yElements
     case TouchTargetSize
-    
-    public static func count() -> Int {
-        return names().count
-    }
-    
-    public static func values() -> [Demos] {
-        var results: [Demos] = []
-        
-        for index in 0 ... Int.max {
-            if let pattern = Demos(rawValue: index) {
-                results.append(pattern)
-            } else {
-                break
-            }
-        }
-        
-        return results
-    }
-    
-    public static func names() -> [String] {
-        var results: [String] = []
-        
-        for index in 0 ... Int.max {
-            if let pattern = Demos.init(rawValue: index) {
-                results.append("\(pattern)")
-            } else {
-                break
-            }
-        }
-        
-        return results
-    }
     
     public static func applicableRule(_ storyboardName: String) -> RuleID {
         switch storyboardName {
@@ -85,12 +53,12 @@ public enum Demos: Int {
     }
     
     internal func applicableRule() -> RuleID {
-        return Demos.applicableRule(self.storyBoardName())
+        return Demos.applicableRule(self.toString())
     }
     
     internal func numberOfViolations() -> Int {
         switch self {
-            case .ActiveControlName: return 3
+            case .ActiveControlName: return 2
             case .CollidingViews: return 2
             case .ColorContrast: return 4
             case .DynamicType: return 2
@@ -100,10 +68,28 @@ public enum Demos: Int {
     }
 
     public func makeViewController() -> UIViewController {
-        return UIStoryboard(name: self.storyBoardName(), bundle: nil).instantiateInitialViewController()!
+        return UIStoryboard(name: self.toString(), bundle: nil).instantiateInitialViewController()!
     }
     
-    public func storyBoardName() -> String {
-        return String("\(self)")
+    /// Demo enum, as a String (aka RuleID as String)
+    public func toString() -> String {
+        return "\(self)"
+    }
+    
+    /// Name of the demo
+    public func demoTitle() -> String {
+        switch self {
+        case .ActiveControlName: return "Active Controls"
+        case .CollidingControls: return "Colliding Controls"
+        case .CollidingViews: return "Colliding Elements"
+        case .ColorContrast: return "Color Contrast"
+        case .ConflictingTraits: return "Conflicting Traits"
+        case .DynamicType: return "Dynamic Type"
+        case .FocusableText: return "Focusable Text"
+        case .ImageViewName: return "Image Views"
+        case .InHighlight: return "Element Bounds"
+        case .NestedA11yElements: return "Nested Elements"
+        case .TouchTargetSize: return "Target Size"
+        }
     }
 }
