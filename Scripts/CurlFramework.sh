@@ -41,7 +41,7 @@ if [ -z "${DEQUE_ANON_APIKEY}" ]; then
 fi
 
 #Try fetching full version.
-curl -s -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" \
+curl -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" \
     -O "https://agora.dequecloud.com/artifactory/Attest-iOS/framework/$XCODE_VERSION/Attest.framework-$ATTEST_FRAMEWORK_VERSION.zip"
 
 #Try unzipping full version of framework
@@ -52,7 +52,7 @@ fi
 
 rm -rf Framework
 
-curl -s -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" \
+curl -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" \
     -O "https://agora.dequecloud.com/artifactory/AttestIOSFree/framework/$XCODE_VERSION/Attest.framework-$ATTEST_FRAMEWORK_VERSION.zip"
 
 #Try unzipping free version of framework
@@ -63,7 +63,7 @@ else
     LIBRARY="AttestIOSFree"
     echo "Attest Failed to Download"
     echo "\"$XCODE_VERSION\" should match one of the URIs below (Except the /)"
-        curl -s -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" "https://agora.dequecloud.com/artifactory/api/storage/$LIBRARY/framework/"
+        curl -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" "https://agora.dequecloud.com/artifactory/api/storage/$LIBRARY/framework/"
     
     echo ""
 
@@ -76,7 +76,7 @@ else
     echo "Also \"$ATTEST_FRAMEWORK_VERSION\" should be available in the list below." 
     echo "The following artifacts are available for $XCODE_VERSION"
 
-    curl -s -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" "https://agora.dequecloud.com/artifactory/api/storage/$LIBRARY/framework/$XCODE_VERSION"
+    curl -H "X-JFrog-Art-Api: ${DEQUE_ANON_APIKEY}" "https://agora.dequecloud.com/artifactory/api/storage/$LIBRARY/framework/$XCODE_VERSION"
     echo ""
     
     echo "If you're having trouble accessing an Attest framework bundle for your Xcode Version please contact helpdesk@deque.com"
