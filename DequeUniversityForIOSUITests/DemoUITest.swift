@@ -12,17 +12,17 @@ import Attest
 class DemoUITest: XCTestCase {
     
     let DemoToViolationCount = [
-        "ActiveControlName" : (RuleID.ActiveControlName, 2),
-        "CollidingControls" : (RuleID.CollidingControls, 1),
-        "CollidingViews"    : (RuleID.CollidingViews, 2),
-        "ColorContrast"     : (RuleID.ColorContrast, 4),
-        "ConflictingTraits" : (RuleID.ConflictingTraits, 1),
-        "DynamicType"       : (RuleID.DynamicType, 2),
-        "FocusableText"     : (RuleID.FocusableText, 1),
-        "ImageViewName"     : (RuleID.ImageViewName, 1),
-        "InHighlight"       : (RuleID.InHighlight, 1),
-        "NestedA11yElements": (RuleID.NestedA11yElements, 1),
-        "TouchTargetSize"   : (RuleID.TouchTargetSize, 1)
+        "Active Controls" : (RuleID.ActiveControlName, 2),
+        "Colliding Controls" : (RuleID.CollidingControls, 1),
+        "Colliding Elements" : (RuleID.CollidingViews, 2),
+        "Color Contrast" : (RuleID.ColorContrast, 4),
+        "Conflicting Traits" : (RuleID.ConflictingTraits, 1),
+        "Dynamic Type" : (RuleID.DynamicType, 2),
+        "Focusable Text" : (RuleID.FocusableText, 1),
+        "Image Views" : (RuleID.ImageViewName, 1),
+        "Element Bounds" : (RuleID.InHighlight, 1),
+        "Nested Elements" : (RuleID.NestedA11yElements, 1),
+        "Target Size" : (RuleID.TouchTargetSize, 1)
     ]
         
     override func setUp() {

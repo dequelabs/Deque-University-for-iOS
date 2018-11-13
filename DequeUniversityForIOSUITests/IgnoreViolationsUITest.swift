@@ -12,7 +12,7 @@ import Attest
 class IgnoreViolationsUITest: XCTestCase {
     
     // Accessibility Identifier of LabelAssociation Demo
-    let CONFLICTING_TRAITS = "ConflictingTraits"
+    let CONFLICTING_TRAITS = "Conflicting Traits"
         
     override func setUp() {
         super.setUp()
