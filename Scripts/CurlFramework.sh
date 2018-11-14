@@ -20,8 +20,12 @@ else
     XCODE_VERSION=$DEQUE_ATTEST_XCODE_VERSION
 fi
 
+if [ "$XCODE_VERSION" = "Xcode10.1" ]; then
+    XCODE_VERSION="Xcode10.0"
+fi
+
 if [ "$XCODE_VERSION" = "Xcode9.3.1" ]; then
-    XCODE_VERSION = "Xcode9.3"
+    XCODE_VERSION="Xcode9.3"
 fi
 
 if [ "$XCODE_VERSION" = "Xcode9.4.1" ]; then
