@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YqY-sb-Rcr">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Colliding Views-->
+        <scene sceneID="QgN-1n-fIA">
+            <objects>
+                <viewController title="Colliding Views" id="YqY-sb-Rcr" customClass="RuleViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B68-Xb-SVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="yD8-Ub-6yy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qIn-hL-wVz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S0a-AU-SGg">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="acg-Gy-pf3">
+                                        <rect key="frame" x="20" y="20" width="280" height="340"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-6Z-YHY" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MQ-Uh-96x" customClass="MinorView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="260" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intersects with Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDm-54-Myh">
+                                                                <rect key="frame" x="51" y="10" width="158.5" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Label1_OverlappedLabel_CollidingViews"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This intersects." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajx-XU-qab">
+                                                                <rect key="frame" x="71.5" y="15.5" width="117" height="82.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Label2_OverlappedLabel_CollidingVIews"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="IDm-54-Myh" firstAttribute="centerX" secondItem="7MQ-Uh-96x" secondAttribute="centerX" id="5gu-5x-vLu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ajx-XU-qab" secondAttribute="bottom" constant="10" id="6jW-yG-C2F"/>
+                                                            <constraint firstItem="ajx-XU-qab" firstAttribute="top" secondItem="IDm-54-Myh" secondAttribute="bottom" constant="-15" id="XeP-Hb-Mzy"/>
+                                                            <constraint firstItem="ajx-XU-qab" firstAttribute="centerX" secondItem="7MQ-Uh-96x" secondAttribute="centerX" id="aeV-sT-Arw"/>
+                                                            <constraint firstItem="IDm-54-Myh" firstAttribute="top" secondItem="7MQ-Uh-96x" secondAttribute="top" constant="10" id="qQh-Oe-NMb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="7MQ-Uh-96x" firstAttribute="top" secondItem="gEj-6Z-YHY" secondAttribute="top" constant="10" id="DX3-4C-KrG"/>
+                                                    <constraint firstItem="7MQ-Uh-96x" firstAttribute="leading" secondItem="gEj-6Z-YHY" secondAttribute="leading" constant="10" id="QYa-Pw-H67"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7MQ-Uh-96x" secondAttribute="trailing" constant="10" id="enF-3t-s8R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7MQ-Uh-96x" secondAttribute="bottom" constant="10" id="uIQ-xo-30d"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">When two informative controls are too close to each other, it may become more difficult to read/understand them.  Above, two labels are overlapping greatly, making it almost impossible to easily read them.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Minor Best Practice Issue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="7MQ-Uh-96x" id="UFh-aP-KUX"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEK-KT-Vkd" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="128" width="280" height="84"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="th3-Ab-5Yy" customClass="MinorView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="260" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTM-Av-sj8" customClass="A11yButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="10" width="240" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Button_OverlappingMixed_CollidingViews"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="nko-dx-smS"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <state key="normal" title="Intersecting"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intersecting Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO6-Vg-5B5">
+                                                                <rect key="frame" x="10" y="22" width="240" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Label_OverlappingMixed_CollidingViews"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="QTM-Av-sj8" firstAttribute="top" secondItem="th3-Ab-5Yy" secondAttribute="top" constant="10" id="4w5-qj-xVT"/>
+                                                            <constraint firstItem="NO6-Vg-5B5" firstAttribute="trailing" secondItem="QTM-Av-sj8" secondAttribute="trailing" id="Fcn-CC-2lm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QTM-Av-sj8" secondAttribute="trailing" constant="10" id="IB1-oZ-FcS"/>
+                                                            <constraint firstItem="NO6-Vg-5B5" firstAttribute="centerY" secondItem="th3-Ab-5Yy" secondAttribute="centerY" id="LJi-0h-CpK"/>
+                                                            <constraint firstItem="NO6-Vg-5B5" firstAttribute="leading" secondItem="th3-Ab-5Yy" secondAttribute="leading" constant="10" id="V0U-AS-hOI"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QTM-Av-sj8" secondAttribute="bottom" constant="10" id="b1q-zg-Baa"/>
+                                                            <constraint firstItem="QTM-Av-sj8" firstAttribute="leading" secondItem="NO6-Vg-5B5" secondAttribute="leading" id="kuT-BK-QmW"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="th3-Ab-5Yy" firstAttribute="top" secondItem="AEK-KT-Vkd" secondAttribute="top" constant="10" id="Hjr-Ug-bZY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="th3-Ab-5Yy" secondAttribute="trailing" constant="10" id="JfB-f4-Y5P"/>
+                                                    <constraint firstAttribute="bottom" secondItem="th3-Ab-5Yy" secondAttribute="bottom" constant="10" id="tzp-LD-MWM"/>
+                                                    <constraint firstItem="th3-Ab-5Yy" firstAttribute="leading" secondItem="AEK-KT-Vkd" secondAttribute="leading" constant="10" id="vsH-Aq-w5L"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">An active control with an informative control overlapping may cause issues with selecting the active control or reading the informative control.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Minor Best Practice Issue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="th3-Ab-5Yy" id="JTM-HR-HzF"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBp-l9-HiT" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="212" width="280" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOG-nx-8BD" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="260" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="No intersection." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd5-U1-8Yy">
+                                                                <rect key="frame" x="10" y="10" width="240" height="57.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Label1_NotOverlappedLabel_CollidingViews"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Does not intersect." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSP-o5-R7f">
+                                                                <rect key="frame" x="10" y="77.5" width="240" height="20.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="Label2_NotOverlappedLabel_CollidingViews"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="jd5-U1-8Yy" secondAttribute="trailing" constant="10" id="2z4-ct-LIv"/>
+                                                            <constraint firstItem="iSP-o5-R7f" firstAttribute="top" secondItem="jd5-U1-8Yy" secondAttribute="bottom" constant="10" id="C4e-Su-2KO"/>
+                                                            <constraint firstItem="jd5-U1-8Yy" firstAttribute="leading" secondItem="VOG-nx-8BD" secondAttribute="leading" constant="10" id="G2S-Qg-ngP"/>
+                                                            <constraint firstItem="iSP-o5-R7f" firstAttribute="leading" secondItem="jd5-U1-8Yy" secondAttribute="leading" id="kJu-KL-GwR"/>
+                                                            <constraint firstItem="jd5-U1-8Yy" firstAttribute="top" secondItem="VOG-nx-8BD" secondAttribute="top" constant="10" id="sgu-ke-aiG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="iSP-o5-R7f" secondAttribute="bottom" constant="10" id="tSj-YR-ftl"/>
+                                                            <constraint firstItem="iSP-o5-R7f" firstAttribute="trailing" secondItem="jd5-U1-8Yy" secondAttribute="trailing" id="yhW-aA-EDZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="VOG-nx-8BD" firstAttribute="top" secondItem="ZBp-l9-HiT" secondAttribute="top" constant="10" id="7sK-V3-NHn"/>
+                                                    <constraint firstItem="VOG-nx-8BD" firstAttribute="leading" secondItem="ZBp-l9-HiT" secondAttribute="leading" constant="10" id="VZN-2t-uGr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VOG-nx-8BD" secondAttribute="bottom" constant="10" id="XJG-97-Rzs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VOG-nx-8BD" secondAttribute="trailing" constant="10" id="ebq-xI-fyt"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">Here, we simply made sure that constraints were accurately set to prevent elements from overlapping on all device types and dynamic type settings.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="VOG-nx-8BD" id="6SQ-Gh-RTi"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="acg-Gy-pf3" firstAttribute="leading" secondItem="S0a-AU-SGg" secondAttribute="leading" constant="20" placeholder="YES" id="1S9-RQ-cin"/>
+                                    <constraint firstItem="acg-Gy-pf3" firstAttribute="top" secondItem="S0a-AU-SGg" secondAttribute="top" constant="20" placeholder="YES" id="Kg0-Ox-RoB"/>
+                                    <constraint firstAttribute="trailing" secondItem="acg-Gy-pf3" secondAttribute="trailing" constant="20" placeholder="YES" id="ctk-qL-hch"/>
+                                    <constraint firstAttribute="bottom" secondItem="acg-Gy-pf3" secondAttribute="bottom" constant="20" placeholder="YES" id="utg-aS-j6Q"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S0a-AU-SGg" firstAttribute="width" secondItem="qIn-hL-wVz" secondAttribute="width" id="Kbe-TP-kBQ"/>
+                            <constraint firstItem="S0a-AU-SGg" firstAttribute="top" secondItem="B68-Xb-SVc" secondAttribute="bottom" id="dAu-YJ-CfR"/>
+                            <constraint firstItem="yD8-Ub-6yy" firstAttribute="top" secondItem="S0a-AU-SGg" secondAttribute="bottom" id="fry-Cw-OGm"/>
+                            <constraint firstItem="S0a-AU-SGg" firstAttribute="centerX" secondItem="qIn-hL-wVz" secondAttribute="centerX" id="r6Q-mi-23a"/>
+                            <constraint firstItem="acg-Gy-pf3" firstAttribute="centerX" secondItem="qIn-hL-wVz" secondAttribute="centerX" placeholder="YES" id="tZ9-ux-mF0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="demos" destination="acg-Gy-pf3" id="O5p-bx-XsW"/>
+                        <outlet property="scrollView" destination="S0a-AU-SGg" id="2vh-Jg-nES"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YC0-Qz-qJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1300" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>

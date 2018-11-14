@@ -19,7 +19,7 @@ class IgnoreViolationsUITest: XCTestCase {
 
         continueAfterFailure = false
         XCUIApplication().launch()
-        XCUIApplication().tables.cells.matching(identifier: CONFLICTING_TRAITS).firstMatch.tap() // Open Label Association Demo
+        XCUIApplication().collectionViews.cells.matching(identifier: CONFLICTING_TRAITS).firstMatch.tap() // Open Label Association Demo
     }
     
     /* Ignore a violation for a particular rule. */

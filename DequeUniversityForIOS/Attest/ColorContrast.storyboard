@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tw3-5x-l2X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Contrast-->
+        <scene sceneID="MXe-qj-2Ef">
+            <objects>
+                <viewController storyboardIdentifier="ColorContrast" title="Color Contrast" id="Tw3-5x-l2X" customClass="RuleViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z7b-Ea-d4r"/>
+                        <viewControllerLayoutGuide type="bottom" id="bBf-ZQ-kNL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DGI-Ae-5Ey">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-R5-iXA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JVz-ZB-aY9">
+                                        <rect key="frame" x="20" y="20" width="335" height="768"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0t-UM-2Bm" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5sr-F1-leC" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gray on Black" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxo-Q2-oxJ">
+                                                                <rect key="frame" x="104.5" y="10" width="106" height="88"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="PoorContrast_ColorContrast"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="bxo-Q2-oxJ" secondAttribute="bottom" constant="10" id="474-vV-UUe"/>
+                                                            <constraint firstItem="bxo-Q2-oxJ" firstAttribute="centerX" secondItem="5sr-F1-leC" secondAttribute="centerX" id="frh-Co-Vfk"/>
+                                                            <constraint firstItem="bxo-Q2-oxJ" firstAttribute="top" secondItem="5sr-F1-leC" secondAttribute="top" constant="10" id="vZE-kM-Hex"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="5sr-F1-leC" firstAttribute="top" secondItem="G0t-UM-2Bm" secondAttribute="top" constant="10" id="ACI-QL-w5B"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5sr-F1-leC" secondAttribute="trailing" constant="10" id="EDr-ah-HdE"/>
+                                                    <constraint firstItem="5sr-F1-leC" firstAttribute="leading" secondItem="G0t-UM-2Bm" secondAttribute="leading" constant="10" id="R52-uI-Hzt"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5sr-F1-leC" secondAttribute="bottom" constant="10" id="jV6-er-wWf"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="The text is dark gray on a black background -- this is very difficult to read, as the contrast is very low."/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Serious WCAG #1.4.3 Issue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="5sr-F1-leC" id="f3J-Ef-i80"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-5B-WTV" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="128" width="335" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7g0-ub-jLT" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Alpha &lt; 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkS-ht-Q2a">
+                                                                <rect key="frame" x="74" y="10" width="167" height="88"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="PoorBackgroundAlpha_ColorContrast"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35195176844657539" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="ZkS-ht-Q2a" secondAttribute="bottom" constant="10" id="CJj-1R-PEA"/>
+                                                            <constraint firstItem="ZkS-ht-Q2a" firstAttribute="centerX" secondItem="7g0-ub-jLT" secondAttribute="centerX" id="deB-Hw-axv"/>
+                                                            <constraint firstItem="ZkS-ht-Q2a" firstAttribute="top" secondItem="7g0-ub-jLT" secondAttribute="top" constant="10" id="e80-Eu-p5y"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="7g0-ub-jLT" secondAttribute="bottom" constant="10" id="Ah1-Mj-ydU"/>
+                                                    <constraint firstItem="7g0-ub-jLT" firstAttribute="leading" secondItem="Ezp-5B-WTV" secondAttribute="leading" constant="10" id="Gv1-Qe-otm"/>
+                                                    <constraint firstItem="7g0-ub-jLT" firstAttribute="top" secondItem="Ezp-5B-WTV" secondAttribute="top" constant="10" id="WAj-SQ-v8s"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7g0-ub-jLT" secondAttribute="trailing" constant="10" id="jH4-ny-Mtp"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">This view's background color was originally set to black, but has an opacity set to less than 1.  When using opacity, it is always important to make sure that the resulting color has decent color contrast against its text.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Serious WCAG #1.4.3 Issue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="7g0-ub-jLT" id="QT9-Qp-7c7"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zb8-oY-VEZ" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="256" width="335" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rpx-Jt-F5W" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Alpha &lt; 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uel-4Y-npU">
+                                                                <rect key="frame" x="104" y="10" width="107.5" height="88"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="PoorTextAlpha_ColorContrast"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.52453446061643838" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.71180555560000003" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="Uel-4Y-npU" secondAttribute="bottom" constant="10" id="FAA-yo-k2z"/>
+                                                            <constraint firstItem="Uel-4Y-npU" firstAttribute="top" secondItem="Rpx-Jt-F5W" secondAttribute="top" constant="10" id="HEc-6F-Loy"/>
+                                                            <constraint firstItem="Uel-4Y-npU" firstAttribute="centerX" secondItem="Rpx-Jt-F5W" secondAttribute="centerX" id="v3E-ln-drz"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Rpx-Jt-F5W" secondAttribute="bottom" constant="10" id="YQ4-Hc-sXs"/>
+                                                    <constraint firstItem="Rpx-Jt-F5W" firstAttribute="leading" secondItem="Zb8-oY-VEZ" secondAttribute="leading" constant="10" id="ZyO-Q9-m0b"/>
+                                                    <constraint firstItem="Rpx-Jt-F5W" firstAttribute="top" secondItem="Zb8-oY-VEZ" secondAttribute="top" constant="10" id="fH4-3h-2YV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Rpx-Jt-F5W" secondAttribute="trailing" constant="10" id="oWw-Qr-jiv"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">This view's text color was originally set to black, but has an opacity set to less than 1.  When using opacity, it is always important to make sure that the resulting color has decent color contrast against its background.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Serious WCAG #1.4.3 Issue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="Rpx-Jt-F5W" id="oTt-nD-CwN"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHj-hT-pSo" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="384" width="335" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlR-97-ARj" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Failing Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkS-an-tzu">
+                                                                <rect key="frame" x="88" y="10" width="139.5" height="88"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="PoorContrastLarge_ColorContrast"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="pkS-an-tzu" firstAttribute="top" secondItem="RlR-97-ARj" secondAttribute="top" constant="10" id="1mB-K2-Yqo"/>
+                                                            <constraint firstItem="pkS-an-tzu" firstAttribute="centerX" secondItem="RlR-97-ARj" secondAttribute="centerX" id="UCD-6R-DWj"/>
+                                                            <constraint firstAttribute="bottom" secondItem="pkS-an-tzu" secondAttribute="bottom" constant="10" id="V2Z-9c-4uM"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="RlR-97-ARj" firstAttribute="leading" secondItem="AHj-hT-pSo" secondAttribute="leading" constant="10" id="5gB-L6-bYU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RlR-97-ARj" secondAttribute="bottom" constant="10" id="956-tg-3tm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RlR-97-ARj" secondAttribute="trailing" constant="10" id="NAV-3Z-9mN"/>
+                                                    <constraint firstItem="RlR-97-ARj" firstAttribute="top" secondItem="AHj-hT-pSo" secondAttribute="top" constant="10" id="h6b-RO-h1d"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="Large text (which is described as 18+ point, or 14+ point bold) needs a color contrast ratio of 3.0:1."/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Serious WCAG #1.4.3 Issue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="RlR-97-ARj" id="Epa-fc-gQc"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3P-Rj-Yqm" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="512" width="335" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjP-6b-vnZ" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passing Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm2-Qv-3Ox">
+                                                                <rect key="frame" x="109.5" y="10" width="96" height="88"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="GoodContrast_ColorContrast"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="hm2-Qv-3Ox" firstAttribute="centerX" secondItem="cjP-6b-vnZ" secondAttribute="centerX" id="Hej-z5-HlO"/>
+                                                            <constraint firstItem="hm2-Qv-3Ox" firstAttribute="top" secondItem="cjP-6b-vnZ" secondAttribute="top" constant="10" id="Xou-cT-KMa"/>
+                                                            <constraint firstAttribute="bottom" secondItem="hm2-Qv-3Ox" secondAttribute="bottom" constant="10" id="ewA-CB-PSd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="cjP-6b-vnZ" secondAttribute="trailing" constant="10" id="5JQ-A7-Epb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cjP-6b-vnZ" secondAttribute="bottom" constant="10" id="CoC-cj-URS"/>
+                                                    <constraint firstItem="cjP-6b-vnZ" firstAttribute="leading" secondItem="Q3P-Rj-Yqm" secondAttribute="leading" constant="10" id="Q24-JH-JUS"/>
+                                                    <constraint firstItem="cjP-6b-vnZ" firstAttribute="top" secondItem="Q3P-Rj-Yqm" secondAttribute="top" constant="10" id="TwO-Cy-IEV"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="This view has an acceptable color contrast because it is higher than the minimum contrast ratio of 4.5:1."/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="cjP-6b-vnZ" id="4Hw-mR-cVs"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPp-cX-CMv" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="640" width="335" height="128"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTX-A7-EpH" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="108"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Passing Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49q-Oo-sGf">
+                                                                <rect key="frame" x="82.5" y="10" width="150" height="88"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="GoodContrastLarge_ColorContrast"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="49q-Oo-sGf" secondAttribute="bottom" constant="10" id="4l9-GU-FIy"/>
+                                                            <constraint firstItem="49q-Oo-sGf" firstAttribute="top" secondItem="mTX-A7-EpH" secondAttribute="top" constant="10" id="6X0-eA-4eD"/>
+                                                            <constraint firstItem="49q-Oo-sGf" firstAttribute="centerX" secondItem="mTX-A7-EpH" secondAttribute="centerX" id="Y0A-lP-osw"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="mTX-A7-EpH" firstAttribute="leading" secondItem="kPp-cX-CMv" secondAttribute="leading" constant="10" id="3tf-bS-wox"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mTX-A7-EpH" secondAttribute="bottom" constant="10" id="64T-5q-j1j"/>
+                                                    <constraint firstItem="mTX-A7-EpH" firstAttribute="top" secondItem="kPp-cX-CMv" secondAttribute="top" constant="10" id="OR5-Mg-iYi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mTX-A7-EpH" secondAttribute="trailing" constant="10" id="Prw-R3-vP3"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="This view has large text, so it only needs to meet the criteria of 3.0:1."/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="mTX-A7-EpH" id="XUF-70-swN"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="JVz-ZB-aY9" secondAttribute="bottom" constant="20" placeholder="YES" id="OCT-nq-lS5"/>
+                                    <constraint firstAttribute="trailing" secondItem="JVz-ZB-aY9" secondAttribute="trailing" constant="20" placeholder="YES" id="g9J-xb-T46"/>
+                                    <constraint firstItem="JVz-ZB-aY9" firstAttribute="top" secondItem="NfY-R5-iXA" secondAttribute="top" constant="20" placeholder="YES" id="mzF-x3-Km8"/>
+                                    <constraint firstItem="JVz-ZB-aY9" firstAttribute="leading" secondItem="NfY-R5-iXA" secondAttribute="leading" constant="20" placeholder="YES" id="tpC-9P-qw4"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NfY-R5-iXA" firstAttribute="centerX" secondItem="DGI-Ae-5Ey" secondAttribute="centerX" id="C0a-BM-pIP"/>
+                            <constraint firstItem="NfY-R5-iXA" firstAttribute="width" secondItem="DGI-Ae-5Ey" secondAttribute="width" id="Frg-MY-YuZ"/>
+                            <constraint firstItem="bBf-ZQ-kNL" firstAttribute="top" secondItem="NfY-R5-iXA" secondAttribute="bottom" id="IZa-ld-eJ2"/>
+                            <constraint firstItem="JVz-ZB-aY9" firstAttribute="centerX" secondItem="DGI-Ae-5Ey" secondAttribute="centerX" placeholder="YES" id="MI9-e2-RfK"/>
+                            <constraint firstItem="NfY-R5-iXA" firstAttribute="top" secondItem="z7b-Ea-d4r" secondAttribute="bottom" id="S3j-pe-A2w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="demos" destination="JVz-ZB-aY9" id="tx9-uX-jFy"/>
+                        <outlet property="scrollView" destination="NfY-R5-iXA" id="Czc-BT-9wd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abq-MS-3b8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794.39999999999998" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+</document>

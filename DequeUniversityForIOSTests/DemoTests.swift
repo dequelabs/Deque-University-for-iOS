@@ -10,12 +10,12 @@ class DemoTests: XCTestCase {
         RuleResult.withDetails = true
 
         //For each demo assert that it has one violation on the rule that it demos and is otherwise accessible.
-        for demo in Demos.values() {
+        for demo in Demos.allCases {
             Attest.that(viewController: demo.makeViewController()).isAccessible({ (result) in
 
                 for ruleResult in result.ruleResults {
                     
-                    let message = "\(demo.storyBoardName()) \(ruleResult.description)"
+                    let message = "\(demo.toString()) \(ruleResult.description)"
                     
                     if (ruleResult.rule.ruleId == demo.applicableRule()) {
                         XCTAssertEqual(demo.numberOfViolations(), ruleResult.violations.count, message)

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="csS-Ou-MKY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--In Highlight-->
+        <scene sceneID="gjE-QN-paS">
+            <objects>
+                <viewController title="In Highlight" id="csS-Ou-MKY" customClass="InHighlightViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bEw-B2-iMY"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZuP-tQ-nvG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fim-tF-Uso">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5au-FD-rRZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DAM-wM-Umr">
+                                        <rect key="frame" x="20" y="20" width="335" height="168"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opz-HV-K1N" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="84"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xq2-VL-aWf" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xny-h8-72y" customClass="A11yButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="103" y="10" width="109" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="PoorFocusBox_InHighlight"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="ocb-st-eb9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <state key="normal" title="Broken Button"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Xny-h8-72y" firstAttribute="top" secondItem="Xq2-VL-aWf" secondAttribute="top" constant="10" id="SbU-KO-rP7"/>
+                                                            <constraint firstItem="Xny-h8-72y" firstAttribute="centerX" secondItem="Xq2-VL-aWf" secondAttribute="centerX" id="Vdd-Ga-rzP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Xny-h8-72y" secondAttribute="bottom" constant="10" id="bKl-R1-3AB"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Xq2-VL-aWf" secondAttribute="trailing" constant="10" id="2y2-vA-3rn"/>
+                                                    <constraint firstItem="Xq2-VL-aWf" firstAttribute="top" secondItem="opz-HV-K1N" secondAttribute="top" constant="10" id="GSd-Ao-Ehz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Xq2-VL-aWf" secondAttribute="bottom" constant="10" id="eyT-WX-Gc7"/>
+                                                    <constraint firstItem="Xq2-VL-aWf" firstAttribute="leading" secondItem="opz-HV-K1N" secondAttribute="leading" constant="10" id="wb5-gd-n1i"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Critical Best Practice Issue"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">Here, the accessibility path of the above button is not set correctly.  Using a screen reader, you can see that the element is not correctly outlined, especially when scrolling.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="Xq2-VL-aWf" id="04z-tY-fQ6"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLE-35-8n6" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="84" width="335" height="84"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8PL-bQ-j2Q" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erj-p5-drX" customClass="A11yButton" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                                <rect key="frame" x="111" y="10" width="93" height="44"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="GoodFocusBox_InHighlight">
+                                                                    <accessibilityTraits key="traits" link="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="44" id="WDs-Yz-iVb"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <state key="normal" title="No Violation"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="erj-p5-drX" firstAttribute="centerX" secondItem="8PL-bQ-j2Q" secondAttribute="centerX" id="1Sf-hE-wOc"/>
+                                                            <constraint firstAttribute="bottom" secondItem="erj-p5-drX" secondAttribute="bottom" constant="10" id="Aca-XE-jVV"/>
+                                                            <constraint firstItem="erj-p5-drX" firstAttribute="top" secondItem="8PL-bQ-j2Q" secondAttribute="top" constant="10" id="RaJ-sy-GqQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="8PL-bQ-j2Q" firstAttribute="top" secondItem="cLE-35-8n6" secondAttribute="top" constant="10" id="b4r-Yx-ccE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8PL-bQ-j2Q" secondAttribute="trailing" constant="10" id="bPm-N7-uF9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8PL-bQ-j2Q" secondAttribute="bottom" constant="10" id="lqB-ef-jsG"/>
+                                                    <constraint firstItem="8PL-bQ-j2Q" firstAttribute="leading" secondItem="cLE-35-8n6" secondAttribute="leading" constant="10" id="ylR-m5-V8H"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">Here, we did not set an accessibility path. It is better to use accessible parent views to fully encapsulate all information, as seen in other examples.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="8PL-bQ-j2Q" id="yKB-48-8F4"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DAM-wM-Umr" secondAttribute="bottom" constant="20" placeholder="YES" id="Cg0-oA-38S"/>
+                                    <constraint firstItem="DAM-wM-Umr" firstAttribute="leading" secondItem="5au-FD-rRZ" secondAttribute="leading" constant="20" placeholder="YES" id="Wid-8r-TWO"/>
+                                    <constraint firstItem="DAM-wM-Umr" firstAttribute="top" secondItem="5au-FD-rRZ" secondAttribute="top" constant="20" placeholder="YES" id="YC7-pO-J4k"/>
+                                    <constraint firstAttribute="trailing" secondItem="DAM-wM-Umr" secondAttribute="trailing" constant="20" placeholder="YES" id="stR-X3-cJo"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZuP-tQ-nvG" firstAttribute="top" secondItem="5au-FD-rRZ" secondAttribute="bottom" id="1x0-Q1-pPX"/>
+                            <constraint firstItem="DAM-wM-Umr" firstAttribute="centerX" secondItem="Fim-tF-Uso" secondAttribute="centerX" placeholder="YES" id="8q4-vF-cNV"/>
+                            <constraint firstItem="5au-FD-rRZ" firstAttribute="width" secondItem="Fim-tF-Uso" secondAttribute="width" id="CHn-Jv-T61"/>
+                            <constraint firstItem="5au-FD-rRZ" firstAttribute="top" secondItem="bEw-B2-iMY" secondAttribute="bottom" id="X1d-mh-Yo1"/>
+                            <constraint firstItem="5au-FD-rRZ" firstAttribute="centerX" secondItem="Fim-tF-Uso" secondAttribute="centerX" id="df9-tT-UGC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="brokenButton" destination="Xny-h8-72y" id="rcz-cG-YR6"/>
+                        <outlet property="demos" destination="DAM-wM-Umr" id="YLd-Al-6G7"/>
+                        <outlet property="scrollView" destination="5au-FD-rRZ" id="dEv-r8-ded"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aU8-IZ-bkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-525.60000000000002" y="-317.09145427286359"/>
+        </scene>
+    </scenes>
+</document>

@@ -20,7 +20,7 @@ class IgnoreRulesUITest: XCTestCase {
         continueAfterFailure = false
         XCUIApplication().launch()
         
-        XCUIApplication().tables.cells.matching(identifier: CONFLICTING_TRAITS).firstMatch.tap() // Open Contrast Alpha Blend Demo
+        XCUIApplication().collectionViews.cells.matching(identifier: CONFLICTING_TRAITS).firstMatch.tap() // Open Contrast Alpha Blend Demo
     }
     
     //Set up a list of Rule IDs to ignore.

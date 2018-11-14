@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0US-wl-hPv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image View Name-->
+        <scene sceneID="qlL-8k-igC">
+            <objects>
+                <viewController title="Image View Name" id="0US-wl-hPv" customClass="RuleViewController" customModule="DequeUniversityForIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b6C-5w-hd3"/>
+                        <viewControllerLayoutGuide type="bottom" id="g3m-c8-3kF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h0H-AO-dcQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnf-uh-KmR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="i8R-Nc-NVb">
+                                        <rect key="frame" x="20" y="20" width="335" height="317"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxw-Aq-ddb" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="105.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t13-0e-7ml" customClass="CriticalView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="85.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deque_Logo_HeroBlue" translatesAutoresizingMaskIntoConstraints="NO" id="1dJ-aw-j0i">
+                                                                <rect key="frame" x="79" y="10" width="157.5" height="65.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="ImageNoLabel_ImageViewName">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="1dJ-aw-j0i" secondAttribute="height" multiplier="12:5" id="jCP-bM-YpE"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="1dJ-aw-j0i" secondAttribute="bottom" constant="10" id="H11-Dp-olf"/>
+                                                            <constraint firstItem="1dJ-aw-j0i" firstAttribute="centerX" secondItem="t13-0e-7ml" secondAttribute="centerX" id="Jx8-xJ-nFx"/>
+                                                            <constraint firstItem="1dJ-aw-j0i" firstAttribute="top" secondItem="t13-0e-7ml" secondAttribute="top" constant="10" id="tql-uv-RTI"/>
+                                                            <constraint firstItem="1dJ-aw-j0i" firstAttribute="width" secondItem="t13-0e-7ml" secondAttribute="width" multiplier="0.5" id="vGu-Qf-oAE"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="t13-0e-7ml" firstAttribute="top" secondItem="Sxw-Aq-ddb" secondAttribute="top" constant="10" id="Jw3-ay-Ckp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="t13-0e-7ml" secondAttribute="bottom" constant="10" id="j1q-eW-YbA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="t13-0e-7ml" secondAttribute="trailing" constant="10" id="rUx-aH-ZYA"/>
+                                                    <constraint firstItem="t13-0e-7ml" firstAttribute="leading" secondItem="Sxw-Aq-ddb" secondAttribute="leading" constant="10" id="wLm-ry-z3S"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Critical WCAG #1.1.1 Issue"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">This UIImageView is marked as an accessibility element, but it does not have an accessibility label.  VoiceOver users will not receive any useful information about this element.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="t13-0e-7ml" id="MNP-LR-myh"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b5-uw-51D" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="105.5" width="335" height="106"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yY9-qa-4uY" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="86"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deque_Logo_HeroBlue" translatesAutoresizingMaskIntoConstraints="NO" id="vRh-ge-4ok">
+                                                                <rect key="frame" x="79" y="10" width="157.5" height="66"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="ImageHasLabel_ImageViewName" label="DQ Logo">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="vRh-ge-4ok" secondAttribute="height" multiplier="12:5" id="vvC-ip-r5e"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="vRh-ge-4ok" firstAttribute="width" secondItem="yY9-qa-4uY" secondAttribute="width" multiplier="0.5" id="3KL-Uk-ggX"/>
+                                                            <constraint firstItem="vRh-ge-4ok" firstAttribute="centerX" secondItem="yY9-qa-4uY" secondAttribute="centerX" id="G2D-Um-7D5"/>
+                                                            <constraint firstItem="vRh-ge-4ok" firstAttribute="top" secondItem="yY9-qa-4uY" secondAttribute="top" constant="10" id="ISG-OT-iKc"/>
+                                                            <constraint firstAttribute="bottom" secondItem="vRh-ge-4ok" secondAttribute="bottom" constant="10" id="JSo-tN-Dtz"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="yY9-qa-4uY" firstAttribute="top" secondItem="9b5-uw-51D" secondAttribute="top" constant="10" id="LKW-7b-X37"/>
+                                                    <constraint firstItem="yY9-qa-4uY" firstAttribute="leading" secondItem="9b5-uw-51D" secondAttribute="leading" constant="10" id="SeC-xd-H5R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yY9-qa-4uY" secondAttribute="bottom" constant="10" id="a0c-AM-3YY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yY9-qa-4uY" secondAttribute="trailing" constant="10" id="vfO-5v-5s5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription">
+                                                        <string key="value">This UIImageView portrays essential information to the user, so it must be marked as an accessibility element.  To portray this important information to VoiceOver users, an accessibility label has been added.</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="yY9-qa-4uY" id="2FY-fy-tru"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVJ-jB-NQ2" customClass="DQDemoView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="211.5" width="335" height="105.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-vN-Rt6" customClass="PassingView" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                        <rect key="frame" x="10" y="10" width="315" height="85.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deque_Logo_HeroBlue" translatesAutoresizingMaskIntoConstraints="NO" id="cvm-PV-fkE">
+                                                                <rect key="frame" x="79" y="10" width="157.5" height="65.5"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="ImageNotFocusable_ImageViewName">
+                                                                    <bool key="isElement" value="NO"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="cvm-PV-fkE" secondAttribute="height" multiplier="12:5" id="toT-0e-TIS"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="cvm-PV-fkE" firstAttribute="centerX" secondItem="2R7-vN-Rt6" secondAttribute="centerX" id="Fc6-jl-gve"/>
+                                                            <constraint firstItem="cvm-PV-fkE" firstAttribute="width" secondItem="2R7-vN-Rt6" secondAttribute="width" multiplier="0.5" id="Is4-fx-yRe"/>
+                                                            <constraint firstAttribute="bottom" secondItem="cvm-PV-fkE" secondAttribute="bottom" constant="10" id="KEK-YP-pDP"/>
+                                                            <constraint firstItem="cvm-PV-fkE" firstAttribute="top" secondItem="2R7-vN-Rt6" secondAttribute="top" constant="10" id="R7k-2Q-TDr"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="2R7-vN-Rt6" secondAttribute="trailing" constant="10" id="0lv-Vm-46b"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2R7-vN-Rt6" secondAttribute="bottom" constant="10" id="VsK-lD-d1g"/>
+                                                    <constraint firstItem="2R7-vN-Rt6" firstAttribute="leading" secondItem="UVJ-jB-NQ2" secondAttribute="leading" constant="10" id="m9I-l3-PPV"/>
+                                                    <constraint firstItem="2R7-vN-Rt6" firstAttribute="top" secondItem="UVJ-jB-NQ2" secondAttribute="top" constant="10" id="uTh-BD-MYd"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="demoDescription" value="This UIImageView does not have any information that is essential for a user, so it is not marked as an accessibility element."/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Passing"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCollapsable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="demo" destination="2R7-vN-Rt6" id="9N8-Jk-4uI"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="i8R-Nc-NVb" secondAttribute="trailing" constant="20" placeholder="YES" id="GER-9K-TcL"/>
+                                    <constraint firstItem="i8R-Nc-NVb" firstAttribute="top" secondItem="Bnf-uh-KmR" secondAttribute="top" constant="20" placeholder="YES" id="RSx-v5-HYx"/>
+                                    <constraint firstAttribute="bottom" secondItem="i8R-Nc-NVb" secondAttribute="bottom" constant="20" placeholder="YES" id="b48-gF-0cr"/>
+                                    <constraint firstItem="i8R-Nc-NVb" firstAttribute="leading" secondItem="Bnf-uh-KmR" secondAttribute="leading" constant="20" placeholder="YES" id="zhQ-5m-7WO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i8R-Nc-NVb" firstAttribute="centerX" secondItem="T66-zq-tly" secondAttribute="centerX" placeholder="YES" id="Adg-EV-Fek"/>
+                            <constraint firstItem="Bnf-uh-KmR" firstAttribute="top" secondItem="T66-zq-tly" secondAttribute="top" id="QAf-DL-tbo"/>
+                            <constraint firstItem="T66-zq-tly" firstAttribute="bottom" secondItem="Bnf-uh-KmR" secondAttribute="bottom" id="Qdx-5v-L25"/>
+                            <constraint firstItem="Bnf-uh-KmR" firstAttribute="width" secondItem="h0H-AO-dcQ" secondAttribute="width" id="ahK-ZY-pnD"/>
+                            <constraint firstItem="Bnf-uh-KmR" firstAttribute="centerX" secondItem="h0H-AO-dcQ" secondAttribute="centerX" id="efH-Hm-4vN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="T66-zq-tly"/>
+                    </view>
+                    <connections>
+                        <outlet property="demos" destination="i8R-Nc-NVb" id="aQs-Ny-cxk"/>
+                        <outlet property="scrollView" destination="Bnf-uh-KmR" id="lau-tk-oXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8B-UY-2sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63" y="-81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Deque_Logo_HeroBlue" width="600" height="250"/>
+    </resources>
+</document>

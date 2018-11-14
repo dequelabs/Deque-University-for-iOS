@@ -12,17 +12,17 @@ import Attest
 class DemoUITest: XCTestCase {
     
     let DemoToViolationCount = [
-        "Active Control Name": (RuleID.ActiveControlName, 3),
+        "Active Controls" : (RuleID.ActiveControlName, 2),
         "Colliding Controls" : (RuleID.CollidingControls, 1),
-        "Colliding Views"    : (RuleID.CollidingViews, 2),
-        "Color Contrast"     : (RuleID.ColorContrast, 4),
+        "Colliding Elements" : (RuleID.CollidingViews, 2),
+        "Color Contrast" : (RuleID.ColorContrast, 4),
         "Conflicting Traits" : (RuleID.ConflictingTraits, 1),
-        "Dynamic Type"       : (RuleID.DynamicType, 2),
-        "Focusable Text"     : (RuleID.FocusableText, 1),
-        "ImageView Name"     : (RuleID.ImageViewName, 1),
-        "In Highlight"       : (RuleID.InHighlight, 1),
-        "Nested A11y Elements": (RuleID.NestedA11yElements, 1),
-        "Touch Target Size"   : (RuleID.TouchTargetSize, 1)
+        "Dynamic Type" : (RuleID.DynamicType, 2),
+        "Focusable Text" : (RuleID.FocusableText, 1),
+        "Image Views" : (RuleID.ImageViewName, 1),
+        "Element Bounds" : (RuleID.InHighlight, 1),
+        "Nested Elements" : (RuleID.NestedA11yElements, 1),
+        "Target Size" : (RuleID.TouchTargetSize, 1)
     ]
         
     override func setUp() {
@@ -69,7 +69,7 @@ class DemoUITest: XCTestCase {
         for (a11yIdentifier, pair) in DemoToViolationCount {
             
             // Open a demo
-            app.tables.cells.matching(identifier: a11yIdentifier).firstMatch.tap()
+            app.collectionViews.cells.matching(identifier: a11yIdentifier).firstMatch.tap()
             
             sleep(1) // Have to wait one second to avoid race conditions in some simulators
             
