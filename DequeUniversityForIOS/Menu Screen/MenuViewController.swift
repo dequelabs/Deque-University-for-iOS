@@ -15,6 +15,10 @@ class MenuViewController: UICollectionViewController {
         "Deque University Demos"
     ]
     
+    private static let DequeUDemos: [String] = [
+        "Carousel"
+    ]
+    
     let DEMO_REUSE_ID = "demo"
     let HEADER_REUSE_ID = "sectionHeader"
     let DQU_SECTION = 1
@@ -101,7 +105,7 @@ class MenuViewController: UICollectionViewController {
         if indexPath.section == ATTEST_SECTION {
             return Demos.allCases[indexPath.item].demoTitle()
         } else {
-            return "TEMP TITLE"
+            return MenuViewController.DequeUDemos[indexPath.item]
         }
     }
     
@@ -131,7 +135,7 @@ extension MenuViewController {
         if section == ATTEST_SECTION {
             return Demos.allCases.count
         } else {
-            return 0
+            return MenuViewController.DequeUDemos.count
         }
     }
     
@@ -168,7 +172,14 @@ extension MenuViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController = Demos.allCases[indexPath.item].makeViewController()
+        
+        var viewController: UIViewController = self
+        
+        if indexPath.section == ATTEST_SECTION {
+            viewController = Demos.allCases[indexPath.item].makeViewController()
+        } else {
+            viewController = UIStoryboard(name: MenuViewController.DequeUDemos[indexPath.item], bundle: nil).instantiateInitialViewController()!
+        }
         self.navigationController!.pushViewController(viewController, animated: true)
     }
 }

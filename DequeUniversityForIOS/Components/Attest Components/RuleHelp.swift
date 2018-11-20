@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RuleHelp: DQView {
+class RuleHelp: RoundedView {
     
     let heading = Heading()
     let help = A11yLabel()
@@ -26,10 +26,6 @@ class RuleHelp: DQView {
     private func setup() {
         self.addSubview(heading)
         self.addSubview(help)
-        self.backgroundColor = UIColor.DequeWhite
-        
-        self.layer.cornerRadius = 10
-        self.layer.masksToBounds = true
         
         setupHeading()
         setupRuleHelp()
@@ -46,10 +42,7 @@ class RuleHelp: DQView {
     }
     
     private func setupRuleHelp() {
-        
-        help.adjustsFontForContentSizeCategory = true
         help.font = UIFont.preferredFont(forTextStyle: .subheadline)
-        help.numberOfLines = 0
         
         help.translatesAutoresizingMaskIntoConstraints = false
         help.leadingAnchor.constraint(equalTo: heading.leadingAnchor).isActive = true
