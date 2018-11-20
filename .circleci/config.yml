@@ -1,0 +1,79 @@
+build_save_and_test: &build_save_and_test
+  steps:
+    - checkout
+    - test
+    - save_repo
+
+#TODO: sign_app: &sign_app
+
+deploy: &deploy
+  steps:
+    - load_repo
+    #TODO: Deploy to App Store
+    
+configure_machine: &configure_machine
+  macos:
+    xcode: "10.1.0"
+
+version: 2.1
+commands:
+
+  checkout:
+    steps:
+      - checkout
+      - run: sh ./Scripts/checkout.sh
+
+  test:
+    steps:
+      - run:
+          name: Open Accessibility Inspector
+          command: open /Applications/Xcode.app/Contents/Applications/Accessibility\ Inspector.app
+      - run:
+          name: Run Tests
+          command: sh ./Scripts/test.sh
+
+  save_repo:
+    description: "Save repository to Workspace"
+    steps:
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  load_repo:
+    description: "Load repository from Workspace"
+    steps:
+      - attach_workspace:
+          at: .
+
+  deploy_app:
+    steps:
+      - deploy: 
+          name: Deploy App
+          command: sh ./Scripts/deploy.sh
+
+jobs:
+  build-test:
+    <<: *configure_machine
+    <<: *build_save_and_test
+
+  deploy:
+    <<: *configure_machine
+    <<: *deploy
+
+workflows:
+  version: 2
+  build_test_deploy:
+    jobs:
+      - build-test
+      - hold:
+          type: approval
+          requires:
+            - build-test
+          filters:
+            branches:
+              only:
+                - master
+      - deploy:
+          requires:
+            - hold

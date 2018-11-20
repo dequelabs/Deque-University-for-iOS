@@ -7,7 +7,10 @@
 //
 
 import UIKit
+
+#if DEBUG
 import Attest
+#endif
 
 @UIApplicationMain
 
@@ -17,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    #if DEBUG
     func applicationDidBecomeActive(_ application: UIApplication) {
         Attest.startHTTPServer(AppDelegate.HTTP_PORT_NUMBER)
     }
+    #endif
 }

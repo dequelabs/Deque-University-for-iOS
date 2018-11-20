@@ -727,7 +727,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#If it already exists, leave it alone\nif [ -d \"./Framework/Release/Attest.framework\" ]; then\nexit 0\nfi\n\nif [ -d \"../AttestIOS.xcodeproj\" ]; then\n#If the direcotry is there build the framework from Attest IOS project.\npushd ..\nsh ./Scripts/build.sh -c FullRelease\nelse\n#If the directory isn't there fetch the framework from Agora.\nsh ./Scripts/CurlFramework.sh\nfi\n\n\n";
+			shellScript = "#If the Framework already exists, leave it alone\nif [ -d \"./Framework/Release/Attest.framework\" ]; then\n    exit 0\nfi\n\n# Fetch the framework from Agora\nsh ./Scripts/CurlFramework.sh\n";
 		};
 		0F4249F61FB0C87100B8CCD7 /* Open Accessibility Inspector */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1204,29 +1204,6 @@
 			};
 			name = Release;
 		};
-		EE015D2C21541DAE000E8D77 /* FullRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Framework/Release",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "DequeUniversityForIOS-calInfo.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Deque-University-for-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = FullRelease;
-		};
 		EE6D5FB0202A351E001CFE9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1254,138 +1231,6 @@
 			};
 			name = Release;
 		};
-		EEB87B54212DFC1600C07049 /* FullRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = $PROJECT_DIR/Framework/Release;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = FullRelease;
-		};
-		EEB87B55212DFC1600C07049 /* FullRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Framework/Release",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/DequeUniversityForIOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.deque.Deque-University-for-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = FullRelease;
-		};
-		EEB87B56212DFC1600C07049 /* FullRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DequeUniversityForIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DequeUniversityForIOS.app/DequeUniversityForIOS";
-			};
-			name = FullRelease;
-		};
-		EEB87B57212DFC1600C07049 /* FullRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZZQGXN669;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Framework/Release",
-				);
-				INFOPLIST_FILE = DequeUniversityForIOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.deque.DequeUniversityForIOSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DequeUniversityForIOS;
-			};
-			name = FullRelease;
-		};
-		EEB87B58212DFC1600C07049 /* FullRelease */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = LQEKUJ838Q;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = FullRelease;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1394,60 +1239,54 @@
 			buildConfigurations = (
 				0FCBDEAF1F9E6C350059DB83 /* Debug */,
 				0FCBDEB01F9E6C350059DB83 /* Release */,
-				EEB87B54212DFC1600C07049 /* FullRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = FullRelease;
+			defaultConfigurationName = Debug;
 		};
 		0FCBDEB11F9E6C350059DB83 /* Build configuration list for PBXNativeTarget "DequeUniversityForIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0FCBDEB21F9E6C350059DB83 /* Debug */,
 				0FCBDEB31F9E6C350059DB83 /* Release */,
-				EEB87B55212DFC1600C07049 /* FullRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = FullRelease;
+			defaultConfigurationName = Debug;
 		};
 		0FCBDEB41F9E6C350059DB83 /* Build configuration list for PBXNativeTarget "DequeUniversityForIOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0FCBDEB51F9E6C350059DB83 /* Debug */,
 				0FCBDEB61F9E6C350059DB83 /* Release */,
-				EEB87B56212DFC1600C07049 /* FullRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = FullRelease;
+			defaultConfigurationName = Debug;
 		};
 		0FCBDEB71F9E6C350059DB83 /* Build configuration list for PBXNativeTarget "DequeUniversityForIOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0FCBDEB81F9E6C350059DB83 /* Debug */,
 				0FCBDEB91F9E6C350059DB83 /* Release */,
-				EEB87B57212DFC1600C07049 /* FullRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = FullRelease;
+			defaultConfigurationName = Debug;
 		};
 		EE015D2921541DAE000E8D77 /* Build configuration list for PBXNativeTarget "DequeUniversityForIOS-cal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE015D2A21541DAE000E8D77 /* Debug */,
 				EE015D2B21541DAE000E8D77 /* Release */,
-				EE015D2C21541DAE000E8D77 /* FullRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = FullRelease;
+			defaultConfigurationName = Debug;
 		};
 		EE6D5FB2202A351E001CFE9C /* Build configuration list for PBXLegacyTarget "Clean" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE6D5FB0202A351E001CFE9C /* Debug */,
 				EE6D5FB1202A351E001CFE9C /* Release */,
-				EEB87B58212DFC1600C07049 /* FullRelease */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = FullRelease;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

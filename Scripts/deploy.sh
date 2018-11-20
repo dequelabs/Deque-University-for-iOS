@@ -19,8 +19,9 @@ for plist in "DequeUniversityForIOS/Info.plist"; do
     fi
 done
 
+### Unsure if Clean is needed or not
 # Clean
-xcodebuild clean -project DequeUniversityForIOS.xcodeproj -configuration Release -alltargets
+# xcodebuild clean -project DequeUniversityForIOS.xcodeproj -configuration Release -alltargets
 
 # Archive the app
 xcodebuild archive -project DequeUniversityForIOS.xcodeproj -configuration FullRelease -scheme DequeUniversityForIOS -archivePath DequeUniversityForIOS.xcarchive
