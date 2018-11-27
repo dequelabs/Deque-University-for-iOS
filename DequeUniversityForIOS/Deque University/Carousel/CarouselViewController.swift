@@ -10,7 +10,7 @@ import UIKit
 
 class CarouselViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    static let NUM_CELLS = 7
+    static let NUM_CELLS = 7 // There are 7 cat pictures available for this carousel
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -27,6 +27,7 @@ class CarouselViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         
+        // Each "row" of the Collection View is a new cat picture.
         return CarouselViewController.NUM_CELLS
     }
     
@@ -50,29 +51,24 @@ class CarouselViewController: UIViewController, UICollectionViewDataSource, UICo
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = self.view.frame.width - 60
+        let width = self.view.frame.width - (sectionInsets.left + sectionInsets.right) - 40
         let height = width
         
         return CGSize(width: width, height: height)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         
         return sectionInsets
     }
-    
+ 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        
+        return sectionInsets.left + sectionInsets.right
     }
     
     private func getCellData(_ indexPath: IndexPath) -> UIImage {
@@ -106,6 +102,4 @@ class CarouselViewController: UIViewController, UICollectionViewDataSource, UICo
         
         return a11yLabel
     }
-    
-    
 }

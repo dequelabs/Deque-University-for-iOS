@@ -10,6 +10,12 @@ import UIKit
 
 class CarouselView: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
+    
+    // Overriding this property allows Switch Control users the ability to scroll between images.
+    override public var isAccessibilityElement: Bool {
+        get { return true }
+        set { }
+    }
 }
 
 class A11yCarousel: UICollectionView {
@@ -17,6 +23,7 @@ class A11yCarousel: UICollectionView {
     private let numCells = CarouselViewController.NUM_CELLS
     public var currentItem = IndexPath(row: 0, section: 0)
     
+    // VoiceOver users have the ability to swipe up/down to scroll through the images, or can use the typical "three finger swipe" to scroll to the next image.  This acts very similarly to using VoiceOver on the home screen.
     override public var accessibilityTraits: UIAccessibilityTraits {
         get { return UIAccessibilityTraits.adjustable }
         set { }
@@ -46,6 +53,7 @@ class A11yCarousel: UICollectionView {
         self.isAccessibilityElement = true
     }
     
+    // The Carousel only has one Accessibility Element being displayed at a time.
     override func accessibilityElementCount() -> Int {
         return 1
     }
@@ -54,6 +62,7 @@ class A11yCarousel: UICollectionView {
         return currentItem.row
     }
     
+    // Three finger swipe left/right
     override public func accessibilityScroll(_ direction: UIAccessibilityScrollDirection) -> Bool {
         if direction == .right {
             return scrollToPreviousItem()
@@ -64,15 +73,17 @@ class A11yCarousel: UICollectionView {
         return false
     }
     
+    // This ability is given when the trait "adjustable" is used. Swipe up with one finger to increment the page number.
     override public func accessibilityIncrement() {
         _ = scrollToNextItem()
     }
     
+    // This ability is given when the trait "adjustable" is used. Swipe down with one finger to decrement the page number.
     override public func accessibilityDecrement() {
         _ = scrollToPreviousItem()
     }
     
-    public func scrollToNextItem() -> Bool {
+    private func scrollToNextItem() -> Bool {
         let maxRow = numCells - 1
         let nextRow = currentItem.row + 1
         
@@ -82,7 +93,7 @@ class A11yCarousel: UICollectionView {
         return true
     }
     
-    public func scrollToPreviousItem() -> Bool {
+    private func scrollToPreviousItem() -> Bool {
         let minRow = 0
         let prevRow = currentItem.row - 1
         
