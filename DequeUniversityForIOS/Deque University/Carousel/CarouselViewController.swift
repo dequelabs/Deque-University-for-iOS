@@ -12,7 +12,8 @@ class CarouselViewController: UIViewController, UICollectionViewDataSource, UICo
     
     static let NUM_CELLS = 7 // There are 7 cat pictures available for this carousel
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var carousel: A11yCarousel!
+    @IBOutlet weak var pageControl: CarouselPager!
     
     private let cellID = "CarouselView"
     private let sectionInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
@@ -70,6 +71,15 @@ class CarouselViewController: UIViewController, UICollectionViewDataSource, UICo
         
         return sectionInsets.left + sectionInsets.right
     }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        willDisplay cell: UICollectionViewCell,
+                        forItemAt indexPath: IndexPath) {
+        
+        if UIAccessibility.isVoiceOverRunning { return }
+        self.pageControl.currentPage = indexPath.row
+    }
+
     
     private func getCellData(_ indexPath: IndexPath) -> UIImage {
         let index = indexPath.row + 1

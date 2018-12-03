@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHs-Hk-BOG" customClass="RoundedView" customModule="DequeUniversityForIOS" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="355" height="416"/>
+                                        <rect key="frame" x="10" y="10" width="355" height="443"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWm-Xc-sa1" customClass="A11yLabel" customModule="DequeUniversityForIOS" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="20" width="335" height="21"/>
@@ -72,6 +72,9 @@
                                                     <outlet property="delegate" destination="rlc-VL-uIv" id="aTp-bJ-CPy"/>
                                                 </connections>
                                             </collectionView>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="ti3-mO-YwT" customClass="CarouselPager" customModule="DequeUniversityForIOS" customModuleProvider="target">
+                                                <rect key="frame" x="126" y="401" width="103" height="37"/>
+                                            </pageControl>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -81,11 +84,13 @@
                                             <constraint firstAttribute="trailing" secondItem="vWm-Xc-sa1" secondAttribute="trailing" constant="10" id="H5K-Jz-pgV"/>
                                             <constraint firstItem="vWm-Xc-sa1" firstAttribute="leading" secondItem="vHs-Hk-BOG" secondAttribute="leading" constant="10" id="Lm7-2M-eHa"/>
                                             <constraint firstAttribute="trailing" secondItem="ltZ-Fb-D0p" secondAttribute="trailing" constant="10" id="PvY-0A-yDd"/>
-                                            <constraint firstAttribute="bottom" secondItem="ltZ-Fb-D0p" secondAttribute="bottom" constant="20" id="TSw-lM-dlh"/>
+                                            <constraint firstItem="ti3-mO-YwT" firstAttribute="centerX" secondItem="ltZ-Fb-D0p" secondAttribute="centerX" id="asD-zA-uRK"/>
+                                            <constraint firstAttribute="bottom" secondItem="ti3-mO-YwT" secondAttribute="bottom" constant="5" id="cDc-CR-6a3"/>
+                                            <constraint firstItem="ti3-mO-YwT" firstAttribute="top" secondItem="ltZ-Fb-D0p" secondAttribute="bottom" constant="5" id="tSF-52-Dty"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbp-4a-jPZ" customClass="RoundedView" customModule="DequeUniversityForIOS" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="436" width="355" height="91.5"/>
+                                        <rect key="frame" x="10" y="463" width="355" height="91.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does this work?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WH1-2t-ql5" customClass="Heading" customModule="DequeUniversityForIOS" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="20" width="335" height="21"/>
@@ -135,7 +140,8 @@
                         <viewLayoutGuide key="safeArea" id="ES4-F4-cuO"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="ltZ-Fb-D0p" id="0Nw-rh-ore"/>
+                        <outlet property="carousel" destination="ltZ-Fb-D0p" id="0Nw-rh-ore"/>
+                        <outlet property="pageControl" destination="ti3-mO-YwT" id="zdG-3t-6AE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOK-eI-m97" userLabel="First Responder" sceneMemberID="firstResponder"/>
