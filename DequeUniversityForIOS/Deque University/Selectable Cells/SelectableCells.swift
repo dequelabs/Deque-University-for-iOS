@@ -25,21 +25,42 @@ class SelectableCells: UIViewController, UITableViewDelegate, UITableViewDataSou
     @IBOutlet weak var descriptiveHeader: UISwitch!
     @IBOutlet weak var touchTargetSize: UISwitch!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var rating: AccessibilityRating!
     
     @IBAction func reloadTableView() {
         self.tableView.reloadData()
+        
+        if touchTargetSize.isOn {
+            rating.addStar()
+        } else {
+            rating.removeStar()
+        }
     }
     
     @IBAction func updateHeaderTraits() {
         updateSectionHeaderTraits()
+        
+        if headerA11yTrait.isOn {
+            rating.addStar()
+        } else {
+            rating.removeStar()
+        }
     }
     
     @IBAction func reloadSectionHeader() {
         updateSectionHeader()
+        
+        if descriptiveHeader.isOn {
+            rating.addStar()
+        } else {
+            rating.removeStar()
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Selectable Cells"
         
         descriptiveHeader.onTintColor = UIColor.DequeGreen
         headerA11yTrait.onTintColor = UIColor.DequeGreen

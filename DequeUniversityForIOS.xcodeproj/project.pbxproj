@@ -99,6 +99,7 @@
 		EEB17C9D21B8805A003A8747 /* Demos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Demos.swift */; };
 		EEB1849721CAEFD0003A8747 /* SelectableCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB1849621CAEFD0003A8747 /* SelectableCells.storyboard */; };
 		EEB1849921CC095D003A8747 /* SelectableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1849821CC095D003A8747 /* SelectableCells.swift */; };
+		EED3351121CD63E500BC1AFA /* AccessibilityRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3351021CD63E500BC1AFA /* AccessibilityRating.swift */; };
 		EED83609201935DF002C5D1C /* IgnoreRulesUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */; };
 		EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */; };
 		EED8361020193B41002C5D1C /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
@@ -246,6 +247,7 @@
 		EEB17B9421B4D9D9003A8747 /* CarouselPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPager.swift; sourceTree = "<group>"; };
 		EEB1849621CAEFD0003A8747 /* SelectableCells.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectableCells.storyboard; sourceTree = "<group>"; };
 		EEB1849821CC095D003A8747 /* SelectableCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCells.swift; sourceTree = "<group>"; };
+		EED3351021CD63E500BC1AFA /* AccessibilityRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityRating.swift; sourceTree = "<group>"; };
 		EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRulesUITest.swift; sourceTree = "<group>"; };
 		EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolationsUITest.swift; sourceTree = "<group>"; };
 		EEE2FC202034EE44004F3913 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -391,6 +393,7 @@
 				EEEA6B202192021600EB6D2E /* Accessibility Components */,
 				EEEA6B14218B9B3E00EB6D2E /* Attest Components */,
 				EEEA6B12218B9AE100EB6D2E /* Demo Components */,
+				EED3351221CD63E900BC1AFA /* Deque University Components */,
 				EEEA6B222192029700EB6D2E /* Design Components */,
 			);
 			path = Components;
@@ -414,6 +417,14 @@
 				EEB1849821CC095D003A8747 /* SelectableCells.swift */,
 			);
 			path = "Selectable Cells";
+			sourceTree = "<group>";
+		};
+		EED3351221CD63E900BC1AFA /* Deque University Components */ = {
+			isa = PBXGroup;
+			children = (
+				EED3351021CD63E500BC1AFA /* AccessibilityRating.swift */,
+			);
+			path = "Deque University Components";
 			sourceTree = "<group>";
 		};
 		EEE2FC1F2034EE44004F3913 /* Frameworks */ = {
@@ -862,6 +873,7 @@
 				0FCBDF061F9E6EDD0059DB83 /* BorderedView.swift in Sources */,
 				EEEA6B0F218B8BF300EB6D2E /* DQView.swift in Sources */,
 				EE614AE52189230B00BCEFF6 /* RuleDescription.swift in Sources */,
+				EED3351121CD63E500BC1AFA /* AccessibilityRating.swift in Sources */,
 				EEEA6B0B218B889900EB6D2E /* A11yLabel.swift in Sources */,
 				0FCBDECB1F9E6EA80059DB83 /* Demos.swift in Sources */,
 				EE2501E720CEE63D001B9E0B /* Color.swift in Sources */,
