@@ -61,6 +61,7 @@ class SelectableCells: UIViewController, UITableViewDelegate, UITableViewDataSou
         super.viewDidLoad()
         
         self.title = "Selectable Cells"
+        tableView.backgroundColor = UIColor.DequeWhite
         
         descriptiveHeader.onTintColor = UIColor.DequeGreen
         headerA11yTrait.onTintColor = UIColor.DequeGreen

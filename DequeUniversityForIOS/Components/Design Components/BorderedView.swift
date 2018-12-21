@@ -10,8 +10,17 @@ import UIKit
 
 @IBDesignable internal class BorderedView: RoundedView {
     
-    internal var borderColor: UIColor = UIColor.DequeGray
-    internal var borderWidth: CGFloat = 2.0
+    @IBInspectable var borderWidth: CGFloat = 2.0 {
+        didSet {
+            setUp()
+        }
+    }
+    
+    @IBInspectable var borderColor: UIColor = UIColor.DequeGray {
+        didSet {
+            setUp()
+        }
+    }
     
     override var cornerRadius: CGFloat {
         return 20
