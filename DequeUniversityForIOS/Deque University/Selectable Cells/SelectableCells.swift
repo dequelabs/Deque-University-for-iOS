@@ -103,6 +103,7 @@ class SelectableCells: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         updateSectionHeader()
         
+        sectionHeader.textColor = UIColor.DequeNavy
         sectionHeader.font = UIFont.preferredFont(forTextStyle: .headline)
         
         sectionHeader.translatesAutoresizingMaskIntoConstraints = false
