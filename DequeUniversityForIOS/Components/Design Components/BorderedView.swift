@@ -8,10 +8,14 @@
 
 import UIKit
 
-@IBDesignable internal class BorderedView: UIView {
+@IBDesignable internal class BorderedView: RoundedView {
     
     internal var borderColor: UIColor = UIColor.DequeGray
     internal var borderWidth: CGFloat = 2.0
+    
+    override var cornerRadius: CGFloat {
+        return 20
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,8 +28,6 @@ import UIKit
     }
     
     private func setUp() {
-        self.layer.cornerRadius = 20
-        self.layer.masksToBounds = true
         self.layer.borderWidth = borderWidth
         self.layer.borderColor = borderColor.cgColor
     }

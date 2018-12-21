@@ -96,6 +96,9 @@
 		EEAFAC6820D45E710070AF58 /* ConflictingTraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFAC6720D45E710070AF58 /* ConflictingTraitsViewController.swift */; };
 		EEAFAC6A20D832EB0070AF58 /* RuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAFAC6920D832EB0070AF58 /* RuleViewController.swift */; };
 		EEB17B9521B4D9D9003A8747 /* CarouselPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB17B9421B4D9D9003A8747 /* CarouselPager.swift */; };
+		EEB17C9D21B8805A003A8747 /* Demos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCBDEBE1F9E6EA70059DB83 /* Demos.swift */; };
+		EEB1849721CAEFD0003A8747 /* SelectableCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEB1849621CAEFD0003A8747 /* SelectableCells.storyboard */; };
+		EEB1849921CC095D003A8747 /* SelectableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB1849821CC095D003A8747 /* SelectableCells.swift */; };
 		EED83609201935DF002C5D1C /* IgnoreRulesUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */; };
 		EED8360B201935ED002C5D1C /* IgnoreViolationsUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */; };
 		EED8361020193B41002C5D1C /* Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4F11991FA265E6005D6D4B /* Attest.framework */; };
@@ -241,6 +244,8 @@
 		EEAFAC6720D45E710070AF58 /* ConflictingTraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConflictingTraitsViewController.swift; sourceTree = "<group>"; };
 		EEAFAC6920D832EB0070AF58 /* RuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleViewController.swift; sourceTree = "<group>"; };
 		EEB17B9421B4D9D9003A8747 /* CarouselPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPager.swift; sourceTree = "<group>"; };
+		EEB1849621CAEFD0003A8747 /* SelectableCells.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectableCells.storyboard; sourceTree = "<group>"; };
+		EEB1849821CC095D003A8747 /* SelectableCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCells.swift; sourceTree = "<group>"; };
 		EED83608201935DF002C5D1C /* IgnoreRulesUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreRulesUITest.swift; sourceTree = "<group>"; };
 		EED8360A201935ED002C5D1C /* IgnoreViolationsUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreViolationsUITest.swift; sourceTree = "<group>"; };
 		EEE2FC202034EE44004F3913 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -402,6 +407,15 @@
 			path = "Menu Screen";
 			sourceTree = "<group>";
 		};
+		EEB1849521CAEE43003A8747 /* Selectable Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1849621CAEFD0003A8747 /* SelectableCells.storyboard */,
+				EEB1849821CC095D003A8747 /* SelectableCells.swift */,
+			);
+			path = "Selectable Cells";
+			sourceTree = "<group>";
+		};
 		EEE2FC1F2034EE44004F3913 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +492,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2DC202219C7C560076F2E6 /* Carousel */,
+				EEB1849521CAEE43003A8747 /* Selectable Cells */,
 			);
 			path = "Deque University";
 			sourceTree = "<group>";
@@ -690,6 +705,7 @@
 				0F5E4FB21F9E85290054CB04 /* ConflictingTraits.storyboard in Resources */,
 				0F5E4FB31F9E85290054CB04 /* CollidingViews.storyboard in Resources */,
 				EE2DC20E219F5E560076F2E6 /* Carousel.storyboard in Resources */,
+				EEB1849721CAEFD0003A8747 /* SelectableCells.storyboard in Resources */,
 				0F5E4FB41F9E85290054CB04 /* DynamicType.storyboard in Resources */,
 				EEEFCC9220DB83E500BDBA23 /* ActiveControlName.storyboard in Resources */,
 				0F5E4FB51F9E85290054CB04 /* InHighlight.storyboard in Resources */,
@@ -825,6 +841,7 @@
 				EEEA6B0D218B8B0000EB6D2E /* Heading.swift in Sources */,
 				0FCBDECA1F9E6EA80059DB83 /* AppDelegate.swift in Sources */,
 				EEEA6B3221925BB400EB6D2E /* FixedLinkView.swift in Sources */,
+				EEB1849921CC095D003A8747 /* SelectableCells.swift in Sources */,
 				EE8B231020F69313005A3A13 /* ActiveControlNameViewController.swift in Sources */,
 				EE2DC1FD2193A7910076F2E6 /* SectionHeader.swift in Sources */,
 				EEEFCC9F20DC24F700BDBA23 /* FocusOrderedView.swift in Sources */,
@@ -861,6 +878,7 @@
 				EE74858D200E644200A9E571 /* ObjectiveCTests.m in Sources */,
 				0F69FB991FA9AD6600A07BA4 /* IgnoreViolations.swift in Sources */,
 				0F69FB951FA9AD2F00A07BA4 /* SimpleTest.swift in Sources */,
+				EEB17C9D21B8805A003A8747 /* Demos.swift in Sources */,
 				0F12A7071FBB4DAD00932780 /* IgnoreRules.swift in Sources */,
 				0F69FB9B1FA9AD7B00A07BA4 /* DemoTests.swift in Sources */,
 				0F69FB971FA9AD3C00A07BA4 /* CustomRules.swift in Sources */,

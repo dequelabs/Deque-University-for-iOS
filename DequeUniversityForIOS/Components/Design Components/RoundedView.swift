@@ -9,6 +9,10 @@
 import UIKit
 
 class RoundedView: DQView {
+    
+    var cornerRadius: CGFloat {
+        return 10
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,7 +25,7 @@ class RoundedView: DQView {
     }
     
     private func setup() {
-        self.layer.cornerRadius = 10
+        self.layer.cornerRadius = cornerRadius
         self.layer.masksToBounds = true
     }
 
