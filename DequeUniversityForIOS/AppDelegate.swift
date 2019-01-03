@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Attest
+//import Attest
 
 @UIApplicationMain
 
@@ -18,6 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        Attest.startHTTPServer(AppDelegate.HTTP_PORT_NUMBER)
+        //Attest.startHTTPServer(AppDelegate.HTTP_PORT_NUMBER)
     }
 }

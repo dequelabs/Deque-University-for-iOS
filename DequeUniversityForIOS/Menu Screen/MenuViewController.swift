@@ -15,6 +15,11 @@ class MenuViewController: UICollectionViewController {
         "Deque University Demos"
     ]
     
+    private static let DequeUDemos: [String] = [
+        "Carousel",
+        "Selectable Cells"
+    ]
+    
     let DEMO_REUSE_ID = "demo"
     let HEADER_REUSE_ID = "sectionHeader"
     let DQU_SECTION = 1
@@ -36,7 +41,7 @@ class MenuViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(updateForContentSize),
                                                name: UIContentSizeCategory.didChangeNotification,
@@ -56,7 +61,7 @@ class MenuViewController: UICollectionViewController {
         return _cellWidth!
     }
     
-    private func getCellHeight(forSection section: Int) -> CGFloat {
+    private func getCellHeight(for section: Int) -> CGFloat {
         if _cellHeightPerSection[section] == nil {
             _cellHeightPerSection[section] = calculateCellHeight(forSection: section)
         }
@@ -85,7 +90,7 @@ class MenuViewController: UICollectionViewController {
         var maxHeight: CGFloat = 0
         
         for itemID in 0 ..< numItemsInSection {
-            let cellTitle = getCellName(forIndexPath: IndexPath(item: itemID, section: section))
+            let cellTitle = getCellName(for: IndexPath(item: itemID, section: section))
             let mockedHeading = MockedHeading(text: cellTitle, width: cellWidth - (sectionInsets.left + sectionInsets.right))
             let height = mockedHeading.height + 30 + heightOfImage
             
@@ -97,15 +102,26 @@ class MenuViewController: UICollectionViewController {
         return maxHeight
     }
     
-    private func getCellName(forIndexPath indexPath: IndexPath) -> String {
+    private func getCellName(for indexPath: IndexPath) -> String {
         if indexPath.section == ATTEST_SECTION {
             return Demos.allCases[indexPath.item].demoTitle()
         } else {
-            return "TEMP TITLE"
+            return MenuViewController.DequeUDemos[indexPath.item]
         }
     }
     
-    private func getCellImage(forIndexPath indexPath: IndexPath) -> UIImage {
+    private func getDemo(for indexPath: IndexPath) -> UIViewController {
+        if indexPath.section == ATTEST_SECTION {
+            return Demos.allCases[indexPath.item].makeViewController()
+        } else {
+            var demoName = getCellName(for: indexPath)
+            demoName = demoName.replacingOccurrences(of: " ", with: "")
+            
+            return UIStoryboard(name: demoName, bundle: nil).instantiateInitialViewController()!
+        }
+    }
+    
+    private func getCellImage(for indexPath: IndexPath) -> UIImage {
         if indexPath.section == ATTEST_SECTION {
             let rule = Demos.allCases[indexPath.item].toString()
             let imageName = "Rule_\(rule)_Icon.png"
@@ -115,7 +131,7 @@ class MenuViewController: UICollectionViewController {
         }
     }
     
-    private func getHeaderTitle(forSection section: Int) -> String {
+    private func getHeaderTitle(for section: Int) -> String {
         return MenuViewController.SectionHeaders[section]
     }
 }
@@ -127,11 +143,12 @@ extension MenuViewController {
         return 2
     }
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 numberOfItemsInSection section: Int) -> Int {
         if section == ATTEST_SECTION {
             return Demos.allCases.count
         } else {
-            return 0
+            return MenuViewController.DequeUDemos.count
         }
     }
     
@@ -144,7 +161,7 @@ extension MenuViewController {
             let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                              withReuseIdentifier: HEADER_REUSE_ID,
                                                                              for: indexPath) as! SectionHeader
-            let sectionData = getHeaderTitle(forSection: indexPath.section)
+            let sectionData = getHeaderTitle(for: indexPath.section)
             headerView.title.text = sectionData
             
             return headerView
@@ -154,21 +171,25 @@ extension MenuViewController {
         }
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView,
+                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DEMO_REUSE_ID,
                                                       for: indexPath) as! DemoCell
-        let cellName = getCellName(forIndexPath: indexPath)
+        let cellName = getCellName(for: indexPath)
         
         cell.title.text = cellName
-        cell.imageView.image = getCellImage(forIndexPath: indexPath)
+        cell.imageView.image = getCellImage(for: indexPath)
         cell.imageView.tintColor = UIColor.DequeNavy
         cell.accessibilityIdentifier = cellName
         
         return cell
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController = Demos.allCases[indexPath.item].makeViewController()
+    override func collectionView(_ collectionView: UICollectionView,
+                                 didSelectItemAt indexPath: IndexPath) {
+        
+        let viewController = getDemo(for: indexPath)
         self.navigationController!.pushViewController(viewController, animated: true)
     }
 }
@@ -180,7 +201,7 @@ extension MenuViewController : UICollectionViewDelegateFlowLayout {
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = getCellWidth()
-        let height = getCellHeight(forSection: indexPath.section)
+        let height = getCellHeight(for: indexPath.section)
         return CGSize(width: width, height: height)
     }
 
