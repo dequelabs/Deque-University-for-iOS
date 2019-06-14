@@ -1,4 +1,5 @@
-# We do not recommend using this for Attest 2.0
+### Please Note
+This repository is out of date with the newest Xcode and Attest 2.0.  We do not recommend using this repository to try Attest 2.0.
 
 # Need Help with iOS Accessibility?
 
