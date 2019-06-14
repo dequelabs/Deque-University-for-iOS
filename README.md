@@ -1,3 +1,6 @@
+### Please Note
+This repository is out of date with the newest Xcode and Attest 2.0.  We do not recommend using this repository to try Attest 2.0.
+
 # Need Help with iOS Accessibility?
 
 The main purpose of this repository is to share iOS Accessibility knowledge. Leverage our community of iOS Accessibility Expertise. Post an issue to this repository. Issues can be anything from
@@ -16,15 +19,3 @@ The main purpose of the application is to build empathy for users with disabilit
 <p align="center">
   <img src="/screenshots/side_by_side.png" width="300" alt="Side By side menu and Color Contrast example.">
 </p>
-
-# Checkout Attest for iOS
-
-This repository also serves as documentation for Deque's automated accessibility analysis Framework. Utilizing Attest you can find Accessibility Issues automatically. You can utilize Attest for iOS to test your app in a lot of different ways:
-
-- As a Service that runs alongside your Application.
-- As an Automated UI Testing Framework
-- To Enhanced a Third Party UI Testing Library (like Calabash) to add an Accessibility Testing Step.
-
-Attest for iOS is very flexible and is built to fit into a multitude of workflows. Each example in Deque University has rules in Attest that will help you debug and build the most Accessible behaviors.
-
-For more technical documentation see the [Attest for iOS Documentation Wiki](https://github.com/dequelabs/Deque-University-for-iOS/wiki).
