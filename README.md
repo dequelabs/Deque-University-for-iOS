@@ -1,5 +1,5 @@
 ### Please Note
-This repository is out of date with the newest Xcode and Attest 2.0.  We do not recommend using this repository to try Attest 2.0.
+This repository is out of date with the newest Xcode and Attest 2.0.  We do not recommend using this repository to try Attest 2.0.  If you are a paying Attest iOS customer, please talk to your Deque representative about getting access to our new documentation.
 
 # Need Help with iOS Accessibility?
 
